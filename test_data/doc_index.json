@@ -1,0 +1,5647 @@
+[
+  {
+    "doc_id": 1,
+    "identifier": "mn.116.piya.html",
+    "title": "Isigili Sutta"
+  },
+  {
+    "doc_id": 2,
+    "identifier": "mn.007.nypo.html",
+    "title": "Vatthupama Sutta"
+  },
+  {
+    "doc_id": 3,
+    "identifier": "mn.036.than.html",
+    "title": "Maha-Saccaka Sutta"
+  },
+  {
+    "doc_id": 4,
+    "identifier": "mn.058.than.html",
+    "title": "Abhaya Sutta"
+  },
+  {
+    "doc_id": 5,
+    "identifier": "mn.022.than.html",
+    "title": "Alagaddupama Sutta"
+  },
+  {
+    "doc_id": 6,
+    "identifier": "mn.107.horn.html",
+    "title": "Ganakamoggallana Sutta"
+  },
+  {
+    "doc_id": 7,
+    "identifier": "mn.074.than.html",
+    "title": "Dighanaka Sutta"
+  },
+  {
+    "doc_id": 8,
+    "identifier": "mn.148.than.html",
+    "title": "Chachakka Sutta"
+  },
+  {
+    "doc_id": 9,
+    "identifier": "mn.057.nymo.html",
+    "title": "Kukkuravatika Sutta"
+  },
+  {
+    "doc_id": 10,
+    "identifier": "mn.060.than.html",
+    "title": "Apannaka  Sutta"
+  },
+  {
+    "doc_id": 11,
+    "identifier": "mn.126.than.html",
+    "title": "Bhumija Sutta"
+  },
+  {
+    "doc_id": 12,
+    "identifier": "mn.041.than.html",
+    "title": "Saleyyaka Sutta"
+  },
+  {
+    "doc_id": 13,
+    "identifier": "mn.113.than.html",
+    "title": "Sappurisa Sutta"
+  },
+  {
+    "doc_id": 14,
+    "identifier": "mn.030.than.html",
+    "title": "Cula Saropama Sutta"
+  },
+  {
+    "doc_id": 15,
+    "identifier": "mn.024.than.html",
+    "title": "Ratha-vinita Sutta"
+  },
+  {
+    "doc_id": 16,
+    "identifier": "mn.118.than.html",
+    "title": "Anapanasati Sutta"
+  },
+  {
+    "doc_id": 17,
+    "identifier": "mn.097.than.html",
+    "title": "Dhanañjani Sutta"
+  },
+  {
+    "doc_id": 18,
+    "identifier": "mn.143.than.html",
+    "title": "Anathapindikovada Sutta"
+  },
+  {
+    "doc_id": 19,
+    "identifier": "mn.010.soma.html",
+    "title": "Satipatthana Sutta"
+  },
+  {
+    "doc_id": 20,
+    "identifier": "mn.095x.than.html",
+    "title": "Canki Sutta"
+  },
+  {
+    "doc_id": 21,
+    "identifier": "mn.101.than.html",
+    "title": "Devadaha Sutta"
+  },
+  {
+    "doc_id": 22,
+    "identifier": "mn.002.bpit.html",
+    "title": "Sabbasava Sutta"
+  },
+  {
+    "doc_id": 23,
+    "identifier": "mn.136.nymo.html",
+    "title": "Maha Kammavibhanga Sutta"
+  },
+  {
+    "doc_id": 24,
+    "identifier": "mn.029.than.html",
+    "title": "Maha Saropama Sutta"
+  },
+  {
+    "doc_id": 25,
+    "identifier": "mn.053.than.html",
+    "title": "Sekha-patipada Sutta"
+  },
+  {
+    "doc_id": 26,
+    "identifier": "mn.072.than.html",
+    "title": "Aggi-Vacchagotta Sutta"
+  },
+  {
+    "doc_id": 27,
+    "identifier": "mn.066.than.html",
+    "title": "Latukikopama Sutta"
+  },
+  {
+    "doc_id": 28,
+    "identifier": "mn.034x.olen.html",
+    "title": "Culagopalika Sutta"
+  },
+  {
+    "doc_id": 29,
+    "identifier": "mn.078.than.html",
+    "title": "Samana-Mundika Sutta"
+  },
+  {
+    "doc_id": 30,
+    "identifier": "mn.002.than.html",
+    "title": "Sabbasava Sutta"
+  },
+  {
+    "doc_id": 31,
+    "identifier": "mn.090.than.html",
+    "title": "Kannakatthala Sutta"
+  },
+  {
+    "doc_id": 32,
+    "identifier": "mn.059.than.html",
+    "title": "Bahuvedaniya Sutta"
+  },
+  {
+    "doc_id": 33,
+    "identifier": "mn.061.than.html",
+    "title": "Ambalatthika-rahulovada Sutta"
+  },
+  {
+    "doc_id": 34,
+    "identifier": "mn.149.than.html",
+    "title": "Maha-salayatanika Sutta"
+  },
+  {
+    "doc_id": 35,
+    "identifier": "mn.141.piya.html",
+    "title": "Saccavibhanga Sutta"
+  },
+  {
+    "doc_id": 36,
+    "identifier": "mn.010.nysa.html",
+    "title": "Satipatthana Sutta"
+  },
+  {
+    "doc_id": 37,
+    "identifier": "mn.106.than.html",
+    "title": "Aneñja-sappaya Sutta"
+  },
+  {
+    "doc_id": 38,
+    "identifier": "mn.119.than.html",
+    "title": "Kayagata-sati Sutta"
+  },
+  {
+    "doc_id": 39,
+    "identifier": "mn.082.than.html",
+    "title": "Ratthapala Sutta"
+  },
+  {
+    "doc_id": 40,
+    "identifier": "mn.012.ntbb.html",
+    "title": "Maha-sihanada Sutta"
+  },
+  {
+    "doc_id": 41,
+    "identifier": "mn.021x.than.html",
+    "title": "Kakacupama Sutta"
+  },
+  {
+    "doc_id": 42,
+    "identifier": "mn.010.than.html",
+    "title": "Satipatthana Sutta"
+  },
+  {
+    "doc_id": 43,
+    "identifier": "mn.004.than.html",
+    "title": "Bhaya-bherava Sutta"
+  },
+  {
+    "doc_id": 44,
+    "identifier": "mn.138.than.html",
+    "title": "Uddesa-vibhanga Sutta"
+  },
+  {
+    "doc_id": 45,
+    "identifier": "mn.028.than.html",
+    "title": "Maha-hatthipadopama Sutta"
+  },
+  {
+    "doc_id": 46,
+    "identifier": "mn.052.than.html",
+    "title": "Atthakanagara Sutta"
+  },
+  {
+    "doc_id": 47,
+    "identifier": "mn.121.than.html",
+    "title": "Cula-suññata Sutta"
+  },
+  {
+    "doc_id": 48,
+    "identifier": "mn.009.than.html",
+    "title": "Sammaditthi Sutta"
+  },
+  {
+    "doc_id": 49,
+    "identifier": "mn.135.than.html",
+    "title": "Cula-kammavibhanga Sutta"
+  },
+  {
+    "doc_id": 50,
+    "identifier": "mn.108.than.html",
+    "title": "Gopaka Moggallana Sutta"
+  },
+  {
+    "doc_id": 51,
+    "identifier": "mn.087.than.html",
+    "title": "Piyajatika Sutta"
+  },
+  {
+    "doc_id": 52,
+    "identifier": "mn.093.than.html",
+    "title": "Assalayana Sutta"
+  },
+  {
+    "doc_id": 53,
+    "identifier": "mn.020.than.html",
+    "title": "Vitakkasanthana Sutta"
+  },
+  {
+    "doc_id": 54,
+    "identifier": "mn.147.than.html",
+    "title": "Cula-Rahulovada Sutta"
+  },
+  {
+    "doc_id": 55,
+    "identifier": "mn.001.than.html",
+    "title": "Mulapariyaya Sutta"
+  },
+  {
+    "doc_id": 56,
+    "identifier": "mn.039.than.html",
+    "title": "Maha-Assapura Sutta"
+  },
+  {
+    "doc_id": 57,
+    "identifier": "mn.043.than.html",
+    "title": "Mahavedalla Sutta"
+  },
+  {
+    "doc_id": 58,
+    "identifier": "mn.105.than.html",
+    "title": "Sunakkhatta Sutta"
+  },
+  {
+    "doc_id": 59,
+    "identifier": "mn.111.than.html",
+    "title": "Anupada Sutta"
+  },
+  {
+    "doc_id": 60,
+    "identifier": "mn.130.than.html",
+    "title": "Devaduta Sutta"
+  },
+  {
+    "doc_id": 61,
+    "identifier": "mn.041.nymo.html",
+    "title": "Saleyyaka Sutta"
+  },
+  {
+    "doc_id": 62,
+    "identifier": "mn.143x.olen.html",
+    "title": "Anathapindikovada Sutta"
+  },
+  {
+    "doc_id": 63,
+    "identifier": "mn.008.nypo.html",
+    "title": "Sallekha Sutta"
+  },
+  {
+    "doc_id": 64,
+    "identifier": "mn.018.than.html",
+    "title": "Madhupindika Sutta"
+  },
+  {
+    "doc_id": 65,
+    "identifier": "mn.062.than.html",
+    "title": "Maha-Rahulovada Sutta"
+  },
+  {
+    "doc_id": 66,
+    "identifier": "mn.141.than.html",
+    "title": "Saccavibhanga Sutta"
+  },
+  {
+    "doc_id": 67,
+    "identifier": "mn.013.than.html",
+    "title": "Maha-dukkhakkhandha Sutta"
+  },
+  {
+    "doc_id": 68,
+    "identifier": "mn.011.ntbb.html",
+    "title": "Cula-sihanada Sutta"
+  },
+  {
+    "doc_id": 92,
+    "identifier": "mn.131.than.html",
+    "title": "Bhaddekaratta Sutta"
+  },
+  {
+    "doc_id": 69,
+    "identifier": "mn.022.nypo.html",
+    "title": "Alagaddupama Sutta"
+  },
+  {
+    "doc_id": 70,
+    "identifier": "mn.095x.nymo.html",
+    "title": "Canki Sutta"
+  },
+  {
+    "doc_id": 71,
+    "identifier": "mn.026.than.html",
+    "title": "Ariyapariyesana Sutta"
+  },
+  {
+    "doc_id": 72,
+    "identifier": "mn.054x.than.html",
+    "title": "Potaliya Sutta"
+  },
+  {
+    "doc_id": 73,
+    "identifier": "mn.070.than.html",
+    "title": "Kitagiri Sutta"
+  },
+  {
+    "doc_id": 74,
+    "identifier": "mn.136.than.html",
+    "title": "Maha Kammavibhanga Sutta"
+  },
+  {
+    "doc_id": 75,
+    "identifier": "mn.122.than.html",
+    "title": "Maha-suññata Sutta"
+  },
+  {
+    "doc_id": 76,
+    "identifier": "mn.045.than.html",
+    "title": "Cula-dhammasamadana Sutta"
+  },
+  {
+    "doc_id": 77,
+    "identifier": "mn.117.than.html",
+    "title": "Maha-cattarisaka Sutta"
+  },
+  {
+    "doc_id": 78,
+    "identifier": "mn.035.than.html",
+    "title": "Cula-Saccaka Sutta"
+  },
+  {
+    "doc_id": 79,
+    "identifier": "mn.131.nana.html",
+    "title": "Bhaddekaratta Sutta"
+  },
+  {
+    "doc_id": 80,
+    "identifier": "mn.086.than.html",
+    "title": "Angulimala Sutta"
+  },
+  {
+    "doc_id": 81,
+    "identifier": "mn.109.than.html",
+    "title": "Maha-punnama Sutta"
+  },
+  {
+    "doc_id": 82,
+    "identifier": "mn.020.soma.html",
+    "title": "Vitakkasanthana Sutta"
+  },
+  {
+    "doc_id": 83,
+    "identifier": "mn.152.than.html",
+    "title": "Indriya-bhavana Sutta"
+  },
+  {
+    "doc_id": 84,
+    "identifier": "mn.014.than.html",
+    "title": "Cula-dukkhakkhandha Sutta"
+  },
+  {
+    "doc_id": 85,
+    "identifier": "mn.125.horn.html",
+    "title": "Dantabhumi Sutta"
+  },
+  {
+    "doc_id": 86,
+    "identifier": "mn.075x.than.html",
+    "title": "Magandiya Sutta"
+  },
+  {
+    "doc_id": 87,
+    "identifier": "mn.146.than.html",
+    "title": "Nandakovada Sutta"
+  },
+  {
+    "doc_id": 88,
+    "identifier": "mn.110.than.html",
+    "title": "Cula-punnama Sutta"
+  },
+  {
+    "doc_id": 89,
+    "identifier": "mn.038.than.html",
+    "title": "Mahatanhasankhaya Sutta"
+  },
+  {
+    "doc_id": 90,
+    "identifier": "mn.019.than.html",
+    "title": "Dvedhavitakka Sutta"
+  },
+  {
+    "doc_id": 91,
+    "identifier": "mn.063.than.html",
+    "title": "Cula-Malunkyovada Sutta"
+  },
+  {
+    "doc_id": 93,
+    "identifier": "mn.140.than.html",
+    "title": "Dhatu-vibhanga Sutta"
+  },
+  {
+    "doc_id": 94,
+    "identifier": "mn.027.than.html",
+    "title": "Cula-hatthipadopama Sutta"
+  },
+  {
+    "doc_id": 95,
+    "identifier": "mn.049.than.html",
+    "title": "Brahma-nimantanika Sutta"
+  },
+  {
+    "doc_id": 96,
+    "identifier": "mn.059.nypo.html",
+    "title": "Bahuvedaniya Sutta"
+  },
+  {
+    "doc_id": 97,
+    "identifier": "mn.021x.budd.html",
+    "title": "Kakacupama Sutta"
+  },
+  {
+    "doc_id": 98,
+    "identifier": "mn.033.than.html",
+    "title": "Maha-gopalaka Sutta"
+  },
+  {
+    "doc_id": 99,
+    "identifier": "mn.137.than.html",
+    "title": "Salayatana-vibhanga Sutta"
+  },
+  {
+    "doc_id": 100,
+    "identifier": "mn.009.ntbb.html",
+    "title": "Sammaditthi Sutta"
+  },
+  {
+    "doc_id": 101,
+    "identifier": "mn.044.than.html",
+    "title": "Culavedalla Sutta"
+  },
+  {
+    "doc_id": 102,
+    "identifier": "mn.135.nymo.html",
+    "title": "Cula-kammavibhanga Sutta"
+  },
+  {
+    "doc_id": 103,
+    "identifier": "iti.3.050-099.than.html",
+    "title": "Itivuttaka"
+  },
+  {
+    "doc_id": 104,
+    "identifier": "iti.intro.than.html",
+    "title": "Itivuttaka"
+  },
+  {
+    "doc_id": 105,
+    "identifier": "iti.3.072-090x.irel.html",
+    "title": "Itivuttaka"
+  },
+  {
+    "doc_id": 106,
+    "identifier": "iti.2.028-049.than.html",
+    "title": "Itivuttaka"
+  },
+  {
+    "doc_id": 107,
+    "identifier": "iti.intro.irel.html",
+    "title": "Itivuttaka"
+  },
+  {
+    "doc_id": 108,
+    "identifier": "iti.1.024-027.irel.html",
+    "title": "Itivuttaka"
+  },
+  {
+    "doc_id": 109,
+    "identifier": "iti.1.001-027.than.html",
+    "title": "Itivuttaka"
+  },
+  {
+    "doc_id": 110,
+    "identifier": "iti.2.042-049x.irel.html",
+    "title": "Itivuttaka"
+  },
+  {
+    "doc_id": 112,
+    "identifier": "iti.4.100-112.than.html",
+    "title": "Itivuttaka"
+  },
+  {
+    "doc_id": 113,
+    "identifier": "iti.4.106-112x.irel.html",
+    "title": "Itivuttaka"
+  },
+  {
+    "doc_id": 114,
+    "identifier": "khp.9.budd.html",
+    "title": "Karaniya Metta Sutta"
+  },
+  {
+    "doc_id": 115,
+    "identifier": "khp.9.nymo.html",
+    "title": "Karaniya Metta Sutta"
+  },
+  {
+    "doc_id": 116,
+    "identifier": "khp.1-9x.piya.html",
+    "title": "The Khuddakapatha"
+  },
+  {
+    "doc_id": 117,
+    "identifier": "khp.1-9.than.html",
+    "title": "The Khuddakapatha"
+  },
+  {
+    "doc_id": 118,
+    "identifier": "khp.5.soni.html",
+    "title": "Mangala Sutta"
+  },
+  {
+    "doc_id": 119,
+    "identifier": "khp.5.nara.html",
+    "title": "Mangala Sutta"
+  },
+  {
+    "doc_id": 337,
+    "identifier": "thag.03.14.than.html",
+    "title": "Gotama"
+  },
+  {
+    "doc_id": 120,
+    "identifier": "khp.9.amar.html",
+    "title": "Karaniya Metta Sutta"
+  },
+  {
+    "doc_id": 121,
+    "identifier": "miln.2x.kell.html",
+    "title": "Questions on Distinguishing Characteristics"
+  },
+  {
+    "doc_id": 122,
+    "identifier": "miln.5x.olen.html",
+    "title": "The Healing Medicine of the Dhamma"
+  },
+  {
+    "doc_id": 123,
+    "identifier": "miln.3x.kell.html",
+    "title": "Questions on Distinguishing Characteristics"
+  },
+  {
+    "doc_id": 124,
+    "identifier": "miln.intro.kell.html",
+    "title": "Milindapañha"
+  },
+  {
+    "doc_id": 125,
+    "identifier": "miln.5x.horn.html",
+    "title": "A Question (Solved by) Inference"
+  },
+  {
+    "doc_id": 137,
+    "identifier": "ud.6.07.than.html",
+    "title": "Subhūti Sutta"
+  },
+  {
+    "doc_id": 126,
+    "identifier": "ud.7.09.irel.html",
+    "title": "Udapāna Sutta"
+  },
+  {
+    "doc_id": 127,
+    "identifier": "ud.2.09.than.html",
+    "title": "Visākhā Sutta"
+  },
+  {
+    "doc_id": 128,
+    "identifier": "ud.5.09.than.html",
+    "title": "Sadhāyamāna Sutta"
+  },
+  {
+    "doc_id": 129,
+    "identifier": "ud.8.03.than.html",
+    "title": "Nibbāna Sutta"
+  },
+  {
+    "doc_id": 130,
+    "identifier": "ud.1.02.irel.html",
+    "title": "Bodhi Sutta"
+  },
+  {
+    "doc_id": 144,
+    "identifier": "ud.8.05.than.html",
+    "title": "Cunda Sutta"
+  },
+  {
+    "doc_id": 131,
+    "identifier": "ud.2.01.irel.html",
+    "title": "Muccalinda Sutta"
+  },
+  {
+    "doc_id": 132,
+    "identifier": "ud.2.04.than.html",
+    "title": "Sakkāra Sutta"
+  },
+  {
+    "doc_id": 133,
+    "identifier": "ud.3.02.than.html",
+    "title": "Nanda Sutta"
+  },
+  {
+    "doc_id": 134,
+    "identifier": "ud.1.07.than.html",
+    "title": "Aja Sutta"
+  },
+  {
+    "doc_id": 135,
+    "identifier": "ud.7.01.than.html",
+    "title": "Bhaddiya Sutta"
+  },
+  {
+    "doc_id": 136,
+    "identifier": "ud.5.04.than.html",
+    "title": "Kumāra Sutta"
+  },
+  {
+    "doc_id": 926,
+    "identifier": "sn47.010.olen.html",
+    "title": "Bhikkhunupassaya Sutta"
+  },
+  {
+    "doc_id": 138,
+    "identifier": "ud.4.02.than.html",
+    "title": "Uddhata Sutta"
+  },
+  {
+    "doc_id": 139,
+    "identifier": "ud.6.09.olen.html",
+    "title": "Adhipataka Sutta"
+  },
+  {
+    "doc_id": 140,
+    "identifier": "ud.5.10.than.html",
+    "title": "Panthaka Sutta"
+  },
+  {
+    "doc_id": 141,
+    "identifier": "ud.2.10.than.html",
+    "title": "Kāḷigodha Sutta"
+  },
+  {
+    "doc_id": 142,
+    "identifier": "ud.4.09.than.html",
+    "title": "Upasena Vaṅgantaputta Sutta"
+  },
+  {
+    "doc_id": 143,
+    "identifier": "ud.3.09.than.html",
+    "title": "Sippa Sutta"
+  },
+  {
+    "doc_id": 145,
+    "identifier": "ud.5.02.than.html",
+    "title": "Appāyuka Sutta"
+  },
+  {
+    "doc_id": 146,
+    "identifier": "ud.7.07.than.html",
+    "title": "Papañcakhaya Sutta"
+  },
+  {
+    "doc_id": 147,
+    "identifier": "ud.4.04.than.html",
+    "title": "Juñha Sutta"
+  },
+  {
+    "doc_id": 148,
+    "identifier": "ud.6.01.than.html",
+    "title": "Āyusama-osajjana Sutta"
+  },
+  {
+    "doc_id": 149,
+    "identifier": "ud.2.02.than.html",
+    "title": "Rājā Sutta"
+  },
+  {
+    "doc_id": 150,
+    "identifier": "ud.1.01.than.html",
+    "title": "Bodhi Sutta"
+  },
+  {
+    "doc_id": 151,
+    "identifier": "ud.3.04.than.html",
+    "title": "Sāriputta Sutta"
+  },
+  {
+    "doc_id": 152,
+    "identifier": "ud.3.10.than.html",
+    "title": "Loka Sutta"
+  },
+  {
+    "doc_id": 153,
+    "identifier": "ud.8.08.than.html",
+    "title": "Visākhā Sutta"
+  },
+  {
+    "doc_id": 154,
+    "identifier": "ud.4.10.than.html",
+    "title": "Sāriputta Sutta"
+  },
+  {
+    "doc_id": 155,
+    "identifier": "ud.3.01.irel.html",
+    "title": "Kamma Sutta"
+  },
+  {
+    "doc_id": 156,
+    "identifier": "ud.6.04.irel.html",
+    "title": "Tittha Sutta"
+  },
+  {
+    "doc_id": 157,
+    "identifier": "ud.4.01.irel.html",
+    "title": "Meghiya Sutta"
+  },
+  {
+    "doc_id": 158,
+    "identifier": "ud.1.10.irel.html",
+    "title": "Bahiya Sutta"
+  },
+  {
+    "doc_id": 159,
+    "identifier": "ud.8.02.than.html",
+    "title": "Nibbāna Sutta"
+  },
+  {
+    "doc_id": 160,
+    "identifier": "ud.2.08.than.html",
+    "title": "Suppavāsā Sutta"
+  },
+  {
+    "doc_id": 179,
+    "identifier": "ud.3.05.than.html",
+    "title": "Kolita Sutta"
+  },
+  {
+    "doc_id": 511,
+    "identifier": "an05.049.hekh.html",
+    "title": "Kosala Sutta"
+  },
+  {
+    "doc_id": 161,
+    "identifier": "ud.5.08.than.html",
+    "title": "Ānanda Sutta"
+  },
+  {
+    "doc_id": 162,
+    "identifier": "ud.1.03.irel.html",
+    "title": "Bodhi Sutta"
+  },
+  {
+    "doc_id": 163,
+    "identifier": "ud.2.05.than.html",
+    "title": "Upāsaka Sutta"
+  },
+  {
+    "doc_id": 164,
+    "identifier": "ud.3.03.than.html",
+    "title": "Yasoja Sutta"
+  },
+  {
+    "doc_id": 165,
+    "identifier": "ud.1.06.than.html",
+    "title": "Kassapa Sutta"
+  },
+  {
+    "doc_id": 166,
+    "identifier": "ud.5.05.than.html",
+    "title": "Uposatha Sutta"
+  },
+  {
+    "doc_id": 191,
+    "identifier": "ud.8.02.irel.html",
+    "title": "Nibbāna Sutta"
+  },
+  {
+    "doc_id": 512,
+    "identifier": "an05.049.than.html",
+    "title": "Kosala Sutta"
+  },
+  {
+    "doc_id": 167,
+    "identifier": "ud.6.06.than.html",
+    "title": "Tittha Sutta"
+  },
+  {
+    "doc_id": 168,
+    "identifier": "ud.4.03.than.html",
+    "title": "Gopāla Sutta"
+  },
+  {
+    "doc_id": 169,
+    "identifier": "ud.8.04.than.html",
+    "title": "Nibbāna Sutta"
+  },
+  {
+    "doc_id": 170,
+    "identifier": "ud.8.10.than.html",
+    "title": "Dabba Sutta"
+  },
+  {
+    "doc_id": 171,
+    "identifier": "ud.4.08.than.html",
+    "title": "Sundarī Sutta"
+  },
+  {
+    "doc_id": 209,
+    "identifier": "ud.5.07.than.html",
+    "title": "Revata Sutta"
+  },
+  {
+    "doc_id": 172,
+    "identifier": "ud.3.08.than.html",
+    "title": "Pinda Sutta"
+  },
+  {
+    "doc_id": 173,
+    "identifier": "ud.8.01.irel.html",
+    "title": "Nibbāna Sutta"
+  },
+  {
+    "doc_id": 174,
+    "identifier": "ud.8.09.than.html",
+    "title": "Dabba Sutta"
+  },
+  {
+    "doc_id": 175,
+    "identifier": "ud.5.03.than.html",
+    "title": "Kuṭṭhi Sutta"
+  },
+  {
+    "doc_id": 176,
+    "identifier": "ud.7.06.than.html",
+    "title": "Taṇhākhaya Sutta"
+  },
+  {
+    "doc_id": 177,
+    "identifier": "ud.4.05.than.html",
+    "title": "Nāga Sutta"
+  },
+  {
+    "doc_id": 178,
+    "identifier": "ud.2.03.than.html",
+    "title": "Daṇḍa Sutta"
+  },
+  {
+    "doc_id": 180,
+    "identifier": "ud.7.05.niza.html",
+    "title": "Apara Lakuntaka Bhaddiya Sutta"
+  },
+  {
+    "doc_id": 181,
+    "identifier": "ud.1.08.than.html",
+    "title": "Saṅgāmaji Sutta"
+  },
+  {
+    "doc_id": 182,
+    "identifier": "ud.6.08.than.html",
+    "title": "Gaṇika Sutta"
+  },
+  {
+    "doc_id": 183,
+    "identifier": "ud.8.01.than.html",
+    "title": "Nibbāna Sutta"
+  },
+  {
+    "doc_id": 184,
+    "identifier": "ud.8.04.irel.html",
+    "title": "Nibbāna Sutta"
+  },
+  {
+    "doc_id": 185,
+    "identifier": "ud.1.05.than.html",
+    "title": "Brāhmaṇa Sutta"
+  },
+  {
+    "doc_id": 186,
+    "identifier": "ud.2.06.than.html",
+    "title": "Gabbhini Sutta"
+  },
+  {
+    "doc_id": 187,
+    "identifier": "ud.6.05.than.html",
+    "title": "Tittha Sutta"
+  },
+  {
+    "doc_id": 188,
+    "identifier": "ud.5.06.than.html",
+    "title": "Soṇa Sutta"
+  },
+  {
+    "doc_id": 189,
+    "identifier": "ud.7.03.than.html",
+    "title": "Kāmesu Satta Sutta"
+  },
+  {
+    "doc_id": 190,
+    "identifier": "ud.4.05.irel.html",
+    "title": "Naga Sutta"
+  },
+  {
+    "doc_id": 216,
+    "identifier": "ud.3.02.irel.html",
+    "title": "Nanda Sutta"
+  },
+  {
+    "doc_id": 1005,
+    "identifier": "sn03.013.olen.html",
+    "title": "Donapaka Sutta"
+  },
+  {
+    "doc_id": 192,
+    "identifier": "ud.7.08.than.html",
+    "title": "Kaccāyana Sutta"
+  },
+  {
+    "doc_id": 193,
+    "identifier": "ud.8.07.than.html",
+    "title": "Dvidhapatha Sutta"
+  },
+  {
+    "doc_id": 194,
+    "identifier": "ud.5.05.irel.html",
+    "title": "Uposatha Sutta"
+  },
+  {
+    "doc_id": 195,
+    "identifier": "ud.6.03.than.html",
+    "title": "Ahu Sutta"
+  },
+  {
+    "doc_id": 196,
+    "identifier": "ud.4.06.than.html",
+    "title": "Piṇḍola Sutta"
+  },
+  {
+    "doc_id": 238,
+    "identifier": "snp.1.06.piya.html",
+    "title": "Parabhava Sutta"
+  },
+  {
+    "doc_id": 197,
+    "identifier": "ud.7.05.than.html",
+    "title": "Lakuṇṭha Sutta"
+  },
+  {
+    "doc_id": 198,
+    "identifier": "ud.3.06.than.html",
+    "title": "Pilinda Sutta"
+  },
+  {
+    "doc_id": 199,
+    "identifier": "ud.1.03.than.html",
+    "title": "Bodhi Sutta"
+  },
+  {
+    "doc_id": 200,
+    "identifier": "ud.1.09.than.html",
+    "title": "Jaṭila Sutta"
+  },
+  {
+    "doc_id": 201,
+    "identifier": "ud.6.09.than.html",
+    "title": "Upāti Sutta"
+  },
+  {
+    "doc_id": 202,
+    "identifier": "ud.6.10.than.html",
+    "title": "Uppajjanti Sutta"
+  },
+  {
+    "doc_id": 203,
+    "identifier": "ud.1.10.than.html",
+    "title": "Bāhiya Sutta"
+  },
+  {
+    "doc_id": 204,
+    "identifier": "ud.1.04.than.html",
+    "title": "Huhuṅka Sutta"
+  },
+  {
+    "doc_id": 205,
+    "identifier": "ud.3.01.than.html",
+    "title": "Kamma Sutta"
+  },
+  {
+    "doc_id": 206,
+    "identifier": "ud.2.07.than.html",
+    "title": "Ekaputta Sutta"
+  },
+  {
+    "doc_id": 207,
+    "identifier": "ud.4.01.than.html",
+    "title": "Meghiya Sutta"
+  },
+  {
+    "doc_id": 208,
+    "identifier": "ud.6.04.than.html",
+    "title": "Tittha Sutta"
+  },
+  {
+    "doc_id": 261,
+    "identifier": "snp.5.04.irel.html",
+    "title": "Mettagu-manava-puccha"
+  },
+  {
+    "doc_id": 210,
+    "identifier": "ud.7.02.than.html",
+    "title": "Bhaddiya Sutta"
+  },
+  {
+    "doc_id": 211,
+    "identifier": "ud.1.01.irel.html",
+    "title": "Bodhi Sutta"
+  },
+  {
+    "doc_id": 212,
+    "identifier": "ud.8.03.irel.html",
+    "title": "Nibbāna Sutta"
+  },
+  {
+    "doc_id": 213,
+    "identifier": "ud.8.06.than.html",
+    "title": "Pāṭaligāma Sutta"
+  },
+  {
+    "doc_id": 214,
+    "identifier": "ud.7.09.than.html",
+    "title": "Udapāna Sutta"
+  },
+  {
+    "doc_id": 215,
+    "identifier": "ud.2.10.irel.html",
+    "title": "Bhaddiya Kaligodha Sutta"
+  },
+  {
+    "doc_id": 217,
+    "identifier": "ud.7.10.than.html",
+    "title": "Udena Sutta"
+  },
+  {
+    "doc_id": 218,
+    "identifier": "ud.6.02.than.html",
+    "title": "Paṭisalla Sutta"
+  },
+  {
+    "doc_id": 219,
+    "identifier": "ud.4.07.than.html",
+    "title": "Sāriputta Sutta"
+  },
+  {
+    "doc_id": 220,
+    "identifier": "ud.7.04.than.html",
+    "title": "Kāmesu Satta Sutta"
+  },
+  {
+    "doc_id": 221,
+    "identifier": "ud.5.01.than.html",
+    "title": "Rājan Sutta"
+  },
+  {
+    "doc_id": 222,
+    "identifier": "ud.3.07.than.html",
+    "title": "Kassapa Sutta"
+  },
+  {
+    "doc_id": 223,
+    "identifier": "ud.1.02.than.html",
+    "title": "Bodhi Sutta"
+  },
+  {
+    "doc_id": 224,
+    "identifier": "ud.2.01.than.html",
+    "title": "Muccalinda Sutta"
+  },
+  {
+    "doc_id": 225,
+    "identifier": "snp.1.08.than.html",
+    "title": "Karaniya Metta Sutta"
+  },
+  {
+    "doc_id": 226,
+    "identifier": "snp.3.08.irel.html",
+    "title": "Salla Sutta"
+  },
+  {
+    "doc_id": 227,
+    "identifier": "snp.4.14.than.html",
+    "title": "Tuvataka Sutta"
+  },
+  {
+    "doc_id": 228,
+    "identifier": "snp.5.12.than.html",
+    "title": "Bhadravudha-manava-puccha"
+  },
+  {
+    "doc_id": 283,
+    "identifier": "snp.4.02.than.html",
+    "title": "Guhatthaka Sutta"
+  },
+  {
+    "doc_id": 284,
+    "identifier": "snp.5.04.than.html",
+    "title": "Mettagu-manava-puccha"
+  },
+  {
+    "doc_id": 285,
+    "identifier": "snp.4.09.than.html",
+    "title": "Magandiya Sutta"
+  },
+  {
+    "doc_id": 229,
+    "identifier": "snp.1.11.than.html",
+    "title": "Vijaya Sutta"
+  },
+  {
+    "doc_id": 230,
+    "identifier": "snp.1.01.nypo.html",
+    "title": "Uraga Sutta"
+  },
+  {
+    "doc_id": 231,
+    "identifier": "snp.1.05.than.html",
+    "title": "Cunda Sutta"
+  },
+  {
+    "doc_id": 232,
+    "identifier": "snp.5.06.than.html",
+    "title": "Upasiva-manava-puccha"
+  },
+  {
+    "doc_id": 286,
+    "identifier": "snp.1.04.piya.html",
+    "title": "Kasi Bharadvaja Sutta"
+  },
+  {
+    "doc_id": 287,
+    "identifier": "snp.1.10.piya.html",
+    "title": "Alavaka Sutta"
+  },
+  {
+    "doc_id": 233,
+    "identifier": "snp.2.04.soni.html",
+    "title": "Maha-mangala Sutta"
+  },
+  {
+    "doc_id": 234,
+    "identifier": "snp.4.11.irel.html",
+    "title": "Kalaha-vivada Sutta"
+  },
+  {
+    "doc_id": 235,
+    "identifier": "snp.4.05.irel.html",
+    "title": "Paramatthaka Sutta"
+  },
+  {
+    "doc_id": 236,
+    "identifier": "snp.5.03.irel.html",
+    "title": "Punnaka-manava-puccha"
+  },
+  {
+    "doc_id": 237,
+    "identifier": "snp.2.03.irel.html",
+    "title": "Hiri Sutta"
+  },
+  {
+    "doc_id": 239,
+    "identifier": "snp.2.08.irel.html",
+    "title": "Nava Sutta"
+  },
+  {
+    "doc_id": 241,
+    "identifier": "snp.2.11.irel.html",
+    "title": "Rahula Sutta"
+  },
+  {
+    "doc_id": 242,
+    "identifier": "snp.3.12.than.html",
+    "title": "Dvayatanupassana Sutta"
+  },
+  {
+    "doc_id": 243,
+    "identifier": "snp.4.12.than.html",
+    "title": "Cula-viyuha Sutta"
+  },
+  {
+    "doc_id": 244,
+    "identifier": "snp.5.14.than.html",
+    "title": "Posala-manava-puccha"
+  },
+  {
+    "doc_id": 245,
+    "identifier": "snp.4.06.than.html",
+    "title": "Jara Sutta"
+  },
+  {
+    "doc_id": 246,
+    "identifier": "snp.1.03.than.html",
+    "title": "Khaggavisana Sutta"
+  },
+  {
+    "doc_id": 288,
+    "identifier": "snp.1.06.nara.html",
+    "title": "Parabhava Sutta"
+  },
+  {
+    "doc_id": 247,
+    "identifier": "snp.1.08.amar.html",
+    "title": "Karaniya Metta Sutta"
+  },
+  {
+    "doc_id": 248,
+    "identifier": "snp.3.01.than.html",
+    "title": "Pabbaja Sutta"
+  },
+  {
+    "doc_id": 249,
+    "identifier": "snp.1.04.than.html",
+    "title": "Kasi Bharadvaja Sutta"
+  },
+  {
+    "doc_id": 250,
+    "identifier": "snp.5.07.than.html",
+    "title": "Nanda-manava-puccha"
+  },
+  {
+    "doc_id": 251,
+    "identifier": "snp.4.01.than.html",
+    "title": "Kama Sutta"
+  },
+  {
+    "doc_id": 252,
+    "identifier": "snp.4.15.than.html",
+    "title": "Attadanda Sutta"
+  },
+  {
+    "doc_id": 289,
+    "identifier": "snp.5.16.than.html",
+    "title": "Pingiya-manava-puccha"
+  },
+  {
+    "doc_id": 253,
+    "identifier": "snp.5.13.than.html",
+    "title": "Udaya-manava-puccha"
+  },
+  {
+    "doc_id": 254,
+    "identifier": "snp.1.10.than.html",
+    "title": "Alavaka Sutta"
+  },
+  {
+    "doc_id": 255,
+    "identifier": "snp.4.04.irel.html",
+    "title": "Suddhatthaka Sutta"
+  },
+  {
+    "doc_id": 256,
+    "identifier": "snp.5.16.irel.html",
+    "title": "Pingiya-manava-puccha"
+  },
+  {
+    "doc_id": 257,
+    "identifier": "snp.2.09.irel.html",
+    "title": "Kimsila Sutta"
+  },
+  {
+    "doc_id": 258,
+    "identifier": "snp.2.04.piya.html",
+    "title": "Maha-mangala Sutta"
+  },
+  {
+    "doc_id": 259,
+    "identifier": "snp.1.07.piya.html",
+    "title": "Vasala Sutta"
+  },
+  {
+    "doc_id": 260,
+    "identifier": "snp.3.02.irel.html",
+    "title": "Padhana Sutta"
+  },
+  {
+    "doc_id": 290,
+    "identifier": "snp.4.10.than.html",
+    "title": "Purabheda Sutta"
+  },
+  {
+    "doc_id": 262,
+    "identifier": "snp.2.10.irel.html",
+    "title": "Utthana Sutta"
+  },
+  {
+    "doc_id": 263,
+    "identifier": "snp.5.01.than.html",
+    "title": "Ajita-manava-puccha"
+  },
+  {
+    "doc_id": 264,
+    "identifier": "snp.4.07.than.html",
+    "title": "Tissa Metteyya Sutta"
+  },
+  {
+    "doc_id": 265,
+    "identifier": "snp.2.01.than.html",
+    "title": "Ratana Sutta"
+  },
+  {
+    "doc_id": 266,
+    "identifier": "snp.1.02.than.html",
+    "title": "Dhaniya Sutta"
+  },
+  {
+    "doc_id": 267,
+    "identifier": "snp.4.13.than.html",
+    "title": "Maha-viyuha Sutta"
+  },
+  {
+    "doc_id": 268,
+    "identifier": "snp.5.15.than.html",
+    "title": "Mogharaja-manava-puccha"
+  },
+  {
+    "doc_id": 291,
+    "identifier": "snp.4.04.than.html",
+    "title": "Suddhatthaka Sutta"
+  },
+  {
+    "doc_id": 345,
+    "identifier": "thag.06.12.than.html",
+    "title": "Brahmadatta"
+  },
+  {
+    "doc_id": 269,
+    "identifier": "snp.1.08.budd.html",
+    "title": "Karaniya Metta Sutta"
+  },
+  {
+    "doc_id": 270,
+    "identifier": "snp.2.01.piya.html",
+    "title": "Ratana Sutta"
+  },
+  {
+    "doc_id": 271,
+    "identifier": "snp.1.08.nymo.html",
+    "title": "Karaniya Metta Sutta"
+  },
+  {
+    "doc_id": 272,
+    "identifier": "snp.1.04.olen.html",
+    "title": "Kasi Bharadvaja Sutta"
+  },
+  {
+    "doc_id": 273,
+    "identifier": "snp.2.09.than.html",
+    "title": "Kimsila Sutta"
+  },
+  {
+    "doc_id": 274,
+    "identifier": "snp.5.09.than.html",
+    "title": "Todeyya-manava-puccha"
+  },
+  {
+    "doc_id": 275,
+    "identifier": "snp.4.15.olen.html",
+    "title": "Attadanda Sutta"
+  },
+  {
+    "doc_id": 304,
+    "identifier": "snp.1.12.than.html",
+    "title": "Muni Sutta"
+  },
+  {
+    "doc_id": 372,
+    "identifier": "thig.05.09.hekh.html",
+    "title": "Bhadda Kundalakesa"
+  },
+  {
+    "doc_id": 276,
+    "identifier": "snp.5.15.irel.html",
+    "title": "Mogharaja-manava-puccha"
+  },
+  {
+    "doc_id": 277,
+    "identifier": "snp.5.01.irel.html",
+    "title": "Ajita-manava-puccha"
+  },
+  {
+    "doc_id": 278,
+    "identifier": "snp.5.10.than.html",
+    "title": "Kappa-manava-puccha"
+  },
+  {
+    "doc_id": 279,
+    "identifier": "snp.4.16.than.html",
+    "title": "Sariputta Sutta"
+  },
+  {
+    "doc_id": 280,
+    "identifier": "snp.2.10.than.html",
+    "title": "Utthana Sutta"
+  },
+  {
+    "doc_id": 281,
+    "identifier": "snp.3.02.than.html",
+    "title": "Padhana Sutta"
+  },
+  {
+    "doc_id": 282,
+    "identifier": "snp.2.04.than.html",
+    "title": "Maha-mangala Sutta"
+  },
+  {
+    "doc_id": 292,
+    "identifier": "snp.5.02.than.html",
+    "title": "Tissa-metteyya-manava-puccha"
+  },
+  {
+    "doc_id": 293,
+    "identifier": "snp.1.01.than.html",
+    "title": "Uraga Sutta"
+  },
+  {
+    "doc_id": 294,
+    "identifier": "snp.4.15.irel.html",
+    "title": "Attadanda Sutta"
+  },
+  {
+    "doc_id": 295,
+    "identifier": "snp.2.08.than.html",
+    "title": "Nava Sutta"
+  },
+  {
+    "doc_id": 296,
+    "identifier": "snp.5.08.than.html",
+    "title": "Hemaka-manava-puccha"
+  },
+  {
+    "doc_id": 318,
+    "identifier": "thag.06.09.than.html",
+    "title": "Jenta, the Royal Chaplain's Son"
+  },
+  {
+    "doc_id": 297,
+    "identifier": "snp.4.06.irel.html",
+    "title": "Jara Sutta"
+  },
+  {
+    "doc_id": 298,
+    "identifier": "snp.3.12.irel.html",
+    "title": "Dvayatanupassana Sutta"
+  },
+  {
+    "doc_id": 299,
+    "identifier": "snp.2.14.irel.html",
+    "title": "Dhammika Sutta"
+  },
+  {
+    "doc_id": 300,
+    "identifier": "snp.3.03.than.html",
+    "title": "Subhasita Sutta"
+  },
+  {
+    "doc_id": 301,
+    "identifier": "snp.4.03.than.html",
+    "title": "Dutthatthaka Sutta"
+  },
+  {
+    "doc_id": 302,
+    "identifier": "snp.5.05.than.html",
+    "title": "Dhotaka-manava-puccha"
+  },
+  {
+    "doc_id": 303,
+    "identifier": "snp.5.11.than.html",
+    "title": "Jatukanni-manava-puccha"
+  },
+  {
+    "doc_id": 319,
+    "identifier": "thag.06.13.olen.html",
+    "title": "Sirimanda Thera"
+  },
+  {
+    "doc_id": 305,
+    "identifier": "snp.4.08.than.html",
+    "title": "Pasura Sutta"
+  },
+  {
+    "doc_id": 306,
+    "identifier": "snp.3.12.olen.html",
+    "title": "Dvayatanupassana Sutta"
+  },
+  {
+    "doc_id": 307,
+    "identifier": "snp.3.08.than.html",
+    "title": "Salla Sutta"
+  },
+  {
+    "doc_id": 308,
+    "identifier": "snp.4.05.than.html",
+    "title": "Paramatthaka Sutta"
+  },
+  {
+    "doc_id": 328,
+    "identifier": "thag.03.15.than.html",
+    "title": "Harita (2)"
+  },
+  {
+    "doc_id": 309,
+    "identifier": "snp.5.03.than.html",
+    "title": "Punnaka-manava-puccha"
+  },
+  {
+    "doc_id": 310,
+    "identifier": "snp.2.03.than.html",
+    "title": "Hiri Sutta"
+  },
+  {
+    "doc_id": 311,
+    "identifier": "snp.3.11.than.html",
+    "title": "Nalaka Sutta"
+  },
+  {
+    "doc_id": 312,
+    "identifier": "snp.2.04.nara.html",
+    "title": "Maha-mangala Sutta"
+  },
+  {
+    "doc_id": 313,
+    "identifier": "snp.4.11.than.html",
+    "title": "Kalaha-vivada Sutta"
+  },
+  {
+    "doc_id": 314,
+    "identifier": "snp.2.06.irel.html",
+    "title": "Dhammacariya Sutta"
+  },
+  {
+    "doc_id": 315,
+    "identifier": "snp.1.08.piya.html",
+    "title": "Karaniya Metta Sutta"
+  },
+  {
+    "doc_id": 329,
+    "identifier": "thag.10.02.olen.html",
+    "title": "Ekavihariya Thera"
+  },
+  {
+    "doc_id": 320,
+    "identifier": "thag.12.02.than.html",
+    "title": "Sunita the Outcaste"
+  },
+  {
+    "doc_id": 321,
+    "identifier": "thag.18.00x.olen.html",
+    "title": "Maha Kassapa Thera"
+  },
+  {
+    "doc_id": 322,
+    "identifier": "thag.11.01.than.html",
+    "title": "Sankicca"
+  },
+  {
+    "doc_id": 323,
+    "identifier": "thag.16.01.than.html",
+    "title": "Adhimutta"
+  },
+  {
+    "doc_id": 324,
+    "identifier": "thag.02.26.than.html",
+    "title": "Punnamasa"
+  },
+  {
+    "doc_id": 325,
+    "identifier": "thag.02.46.olen.html",
+    "title": "Culaka"
+  },
+  {
+    "doc_id": 326,
+    "identifier": "thag.06.10.than.html",
+    "title": "Sumana the Novice"
+  },
+  {
+    "doc_id": 327,
+    "identifier": "thag.02.13.than.html",
+    "title": "Heraññakani"
+  },
+  {
+    "doc_id": 330,
+    "identifier": "thag.17.02.olen.html",
+    "title": "Sariputta Thera"
+  },
+  {
+    "doc_id": 331,
+    "identifier": "thag.06.02.than.html",
+    "title": "Tekicchakani"
+  },
+  {
+    "doc_id": 332,
+    "identifier": "thag.05.01.than.html",
+    "title": "Rajadatta"
+  },
+  {
+    "doc_id": 333,
+    "identifier": "thag.03.13.than.html",
+    "title": "Abhibhuta"
+  },
+  {
+    "doc_id": 334,
+    "identifier": "thag.16.07.than.html",
+    "title": "Bhaddiya Kaligodhayaputta"
+  },
+  {
+    "doc_id": 335,
+    "identifier": "thag.14.02.than.html",
+    "title": "Godatta"
+  },
+  {
+    "doc_id": 336,
+    "identifier": "thag.02.27.than.html",
+    "title": "Nandaka"
+  },
+  {
+    "doc_id": 338,
+    "identifier": "thag.17.03.olen.html",
+    "title": "Ananda Thera"
+  },
+  {
+    "doc_id": 339,
+    "identifier": "thag.16.08.olen.html",
+    "title": "Angulimala Thera"
+  },
+  {
+    "doc_id": 340,
+    "identifier": "thag.05.08.than.html",
+    "title": "Vakkali"
+  },
+  {
+    "doc_id": 341,
+    "identifier": "thag.21.00.irel.html",
+    "title": "Vangisa"
+  },
+  {
+    "doc_id": 342,
+    "identifier": "thag.05.09.norm.html",
+    "title": "Vijitasena"
+  },
+  {
+    "doc_id": 343,
+    "identifier": "thag.19.00.khan.html",
+    "title": "Talaputa Thera"
+  },
+  {
+    "doc_id": 344,
+    "identifier": "thag.06.06.than.html",
+    "title": "Sappadasa"
+  },
+  {
+    "doc_id": 346,
+    "identifier": "thag.10.05.than.html",
+    "title": "Kappa"
+  },
+  {
+    "doc_id": 347,
+    "identifier": "thag.02.30.than.html",
+    "title": "Kanhadinna"
+  },
+  {
+    "doc_id": 348,
+    "identifier": "thag.02.24.than.html",
+    "title": "Valliya"
+  },
+  {
+    "doc_id": 349,
+    "identifier": "thag.16.08.than.html",
+    "title": "Angulimala"
+  },
+  {
+    "doc_id": 350,
+    "identifier": "thag.04.08.than.html",
+    "title": "Rahula"
+  },
+  {
+    "doc_id": 351,
+    "identifier": "thag.03.08.than.html",
+    "title": "Yasoja"
+  },
+  {
+    "doc_id": 352,
+    "identifier": "thag.17.03.hekh.html",
+    "title": "Ananda"
+  },
+  {
+    "doc_id": 353,
+    "identifier": "thag.01.00x.than.html",
+    "title": "Single Verses"
+  },
+  {
+    "doc_id": 354,
+    "identifier": "thag.03.05.than.html",
+    "title": "Matangaputta"
+  },
+  {
+    "doc_id": 355,
+    "identifier": "thag.01.00x.hekh.html",
+    "title": "Single Verses"
+  },
+  {
+    "doc_id": 356,
+    "identifier": "thag.09.00x.olen.html",
+    "title": "Bhuta Thera"
+  },
+  {
+    "doc_id": 357,
+    "identifier": "thag.21.00x.hekh.html",
+    "title": "Vangisa"
+  },
+  {
+    "doc_id": 358,
+    "identifier": "thag.15.02.olen.html",
+    "title": "Udayin Thera"
+  },
+  {
+    "doc_id": 359,
+    "identifier": "thag.06.13.than.html",
+    "title": "Sirimanda"
+  },
+  {
+    "doc_id": 360,
+    "identifier": "thag.05.10.than.html",
+    "title": "Yasadatta"
+  },
+  {
+    "doc_id": 361,
+    "identifier": "thag.07.01.than.html",
+    "title": "Sundara Samudda and the Courtesan"
+  },
+  {
+    "doc_id": 362,
+    "identifier": "thag.10.01.olen.html",
+    "title": "Kaludayin Thera"
+  },
+  {
+    "doc_id": 363,
+    "identifier": "thag.18.00.than.html",
+    "title": "Maha Kassapa"
+  },
+  {
+    "doc_id": 373,
+    "identifier": "thig.05.10.hekh.html",
+    "title": "Patacara"
+  },
+  {
+    "doc_id": 364,
+    "identifier": "thag.08.01.bodh.html",
+    "title": "Maha-Kaccana"
+  },
+  {
+    "doc_id": 365,
+    "identifier": "thag.14.01.than.html",
+    "title": "Revata's Farewell"
+  },
+  {
+    "doc_id": 366,
+    "identifier": "thag.16.04.than.html",
+    "title": "Ratthapala"
+  },
+  {
+    "doc_id": 367,
+    "identifier": "thag.02.37.than.html",
+    "title": "Sona Potiriyaputta"
+  },
+  {
+    "doc_id": 368,
+    "identifier": "thag.10.02.than.html",
+    "title": "Ekavihariya"
+  },
+  {
+    "doc_id": 369,
+    "identifier": "thag.02.16.than.html",
+    "title": "Mahakala"
+  },
+  {
+    "doc_id": 370,
+    "identifier": "thag.04.10.than.html",
+    "title": "Dhammika"
+  },
+  {
+    "doc_id": 371,
+    "identifier": "thag.19.00x.olen.html",
+    "title": "Talaputa Thera"
+  },
+  {
+    "doc_id": 420,
+    "identifier": "dn.32.0.piya.html",
+    "title": "Atanatiya Sutta"
+  },
+  {
+    "doc_id": 374,
+    "identifier": "thig.06.07.than.html",
+    "title": "Gutta"
+  },
+  {
+    "doc_id": 375,
+    "identifier": "thig.05.04.than.html",
+    "title": "Nanda"
+  },
+  {
+    "doc_id": 376,
+    "identifier": "thig.03.02.than.html",
+    "title": "Uttama"
+  },
+  {
+    "doc_id": 377,
+    "identifier": "thig.05.10.than.html",
+    "title": "Patacara"
+  },
+  {
+    "doc_id": 378,
+    "identifier": "thig.05.04.hekh.html",
+    "title": "Nanda"
+  },
+  {
+    "doc_id": 379,
+    "identifier": "thig.12.01.than.html",
+    "title": "Punnika"
+  },
+  {
+    "doc_id": 380,
+    "identifier": "thig.13.01.than.html",
+    "title": "Ambapali"
+  },
+  {
+    "doc_id": 381,
+    "identifier": "thig.14.01.than.html",
+    "title": "Subha Jivakambavanika"
+  },
+  {
+    "doc_id": 382,
+    "identifier": "thig.03.04.than.html",
+    "title": "Dantika and the Elephant"
+  },
+  {
+    "doc_id": 383,
+    "identifier": "thig.06.01.than.html",
+    "title": "Pañcasata Patacara"
+  },
+  {
+    "doc_id": 384,
+    "identifier": "thig.05.02.than.html",
+    "title": "Vimala"
+  },
+  {
+    "doc_id": 385,
+    "identifier": "thig.05.08.hekh.html",
+    "title": "Sona"
+  },
+  {
+    "doc_id": 386,
+    "identifier": "thig.05.08.than.html",
+    "title": "Sona"
+  },
+  {
+    "doc_id": 387,
+    "identifier": "thig.05.11.than.html",
+    "title": "Patacara's Thirty Students"
+  },
+  {
+    "doc_id": 388,
+    "identifier": "thig.05.11.hekh.html",
+    "title": "Patacara's Thirty Students"
+  },
+  {
+    "doc_id": 421,
+    "identifier": "dn.21.2x.than.html",
+    "title": "Sakka-pañha Sutta"
+  },
+  {
+    "doc_id": 389,
+    "identifier": "thig.01.00x.than.html",
+    "title": "Chapter 1"
+  },
+  {
+    "doc_id": 390,
+    "identifier": "thig.03.05.than.html",
+    "title": "Ubbiri"
+  },
+  {
+    "doc_id": 391,
+    "identifier": "thig.02.03.than.html",
+    "title": "Chapter 2"
+  },
+  {
+    "doc_id": 392,
+    "identifier": "thig.06.06.olen.html",
+    "title": "Maha Pajapati (Gotami) Theri"
+  },
+  {
+    "doc_id": 393,
+    "identifier": "thig.13.05.than.html",
+    "title": "Subha"
+  },
+  {
+    "doc_id": 394,
+    "identifier": "thig.05.06.than.html",
+    "title": "Mittakali"
+  },
+  {
+    "doc_id": 395,
+    "identifier": "thig.06.05.than.html",
+    "title": "Anopama, the Millionaire's Daughter"
+  },
+  {
+    "doc_id": 396,
+    "identifier": "thig.05.12.than.html",
+    "title": "Canda"
+  },
+  {
+    "doc_id": 422,
+    "identifier": "an01.021-040.than.html",
+    "title": "Ekadhamma Suttas"
+  },
+  {
+    "doc_id": 397,
+    "identifier": "thig.04.01.hekh.html",
+    "title": "Bhadda Kapilani"
+  },
+  {
+    "doc_id": 398,
+    "identifier": "thig.06.04.hekh.html",
+    "title": "The Verses of Final Knowledge of Bhikkhuni Sujata"
+  },
+  {
+    "doc_id": 399,
+    "identifier": "thig.06.01.olen.html",
+    "title": "Pañcasata Patacara"
+  },
+  {
+    "doc_id": 400,
+    "identifier": "thig.03.04.rhyc.html",
+    "title": "Dantika and the Elephant"
+  },
+  {
+    "doc_id": 401,
+    "identifier": "thig.06.02.than.html",
+    "title": "Vasitthi the Madwoman"
+  },
+  {
+    "doc_id": 402,
+    "identifier": "thig.10.01.hekh.html",
+    "title": "Kisagotami Theri"
+  },
+  {
+    "doc_id": 403,
+    "identifier": "thig.13.02.than.html",
+    "title": "Rohini"
+  },
+  {
+    "doc_id": 404,
+    "identifier": "thig.10.01.than.html",
+    "title": "Kisagotami Theri"
+  },
+  {
+    "doc_id": 405,
+    "identifier": "dn.01.0.bodh.html",
+    "title": "Brahmajāla Sutta"
+  },
+  {
+    "doc_id": 406,
+    "identifier": "dn.09.0.than.html",
+    "title": "Potthapada Sutta"
+  },
+  {
+    "doc_id": 407,
+    "identifier": "dn.20.0.piya.html",
+    "title": "Maha-samaya Sutta"
+  },
+  {
+    "doc_id": 408,
+    "identifier": "dn.15.0.than.html",
+    "title": "Maha-nidana Sutta"
+  },
+  {
+    "doc_id": 409,
+    "identifier": "dn.31.0.nara.html",
+    "title": "Sigalovada Sutta"
+  },
+  {
+    "doc_id": 410,
+    "identifier": "dn.22.0.than.html",
+    "title": "Maha-satipatthana Sutta"
+  },
+  {
+    "doc_id": 411,
+    "identifier": "dn.22.0.bpit.html",
+    "title": "Maha-satipatthana Sutta"
+  },
+  {
+    "doc_id": 412,
+    "identifier": "dn.16.1-6.vaji.html",
+    "title": "Maha-parinibbana Sutta"
+  },
+  {
+    "doc_id": 413,
+    "identifier": "dn.16.5-6.than.html",
+    "title": "Maha-parinibbana Sutta"
+  },
+  {
+    "doc_id": 414,
+    "identifier": "dn.11.0.than.html",
+    "title": "Kevatta (Kevaddha) Sutta"
+  },
+  {
+    "doc_id": 415,
+    "identifier": "dn.31.0.ksw0.html",
+    "title": "Sigalovada Sutta"
+  },
+  {
+    "doc_id": 416,
+    "identifier": "dn.26.0.than.html",
+    "title": "Cakkavatti Sutta"
+  },
+  {
+    "doc_id": 417,
+    "identifier": "dn.02.0.than.html",
+    "title": "Samaññaphala Sutta"
+  },
+  {
+    "doc_id": 418,
+    "identifier": "dn.20.0.than.html",
+    "title": "Maha-samaya Sutta"
+  },
+  {
+    "doc_id": 419,
+    "identifier": "dn.12.0.than.html",
+    "title": "Lohicca Sutta"
+  },
+  {
+    "doc_id": 423,
+    "identifier": "an01.045-046.than.html",
+    "title": "Udakarahaka Suttas"
+  },
+  {
+    "doc_id": 424,
+    "identifier": "an01.047.than.html",
+    "title": "Mudu Sutta"
+  },
+  {
+    "doc_id": 425,
+    "identifier": "an01.049.than.html",
+    "title": "Pabhassara Sutta"
+  },
+  {
+    "doc_id": 427,
+    "identifier": "an01.031-040x.wood.html",
+    "title": "Adanta Suttas"
+  },
+  {
+    "doc_id": 442,
+    "identifier": "an03.066.nymo.html",
+    "title": "Salha Sutta"
+  },
+  {
+    "doc_id": 443,
+    "identifier": "an03.070.than.html",
+    "title": "Muluposatha Sutta"
+  },
+  {
+    "doc_id": 444,
+    "identifier": "an03.065.soma.html",
+    "title": "Kalama Sutta"
+  },
+  {
+    "doc_id": 431,
+    "identifier": "an03.015.than.html",
+    "title": "Rathakara (Pacetana) Sutta"
+  },
+  {
+    "doc_id": 432,
+    "identifier": "an03.034.than.html",
+    "title": "Hatthaka Sutta"
+  },
+  {
+    "doc_id": 433,
+    "identifier": "an03.062.than.html",
+    "title": "Bhaya Sutta"
+  },
+  {
+    "doc_id": 434,
+    "identifier": "an03.130.than.html",
+    "title": "Lekha Sutta"
+  },
+  {
+    "doc_id": 445,
+    "identifier": "an03.086.than.html",
+    "title": "Sekhin Sutta"
+  },
+  {
+    "doc_id": 435,
+    "identifier": "an03.076.than.html",
+    "title": "Bhava Sutta"
+  },
+  {
+    "doc_id": 436,
+    "identifier": "an03.057.than.html",
+    "title": "Vaccha Sutta"
+  },
+  {
+    "doc_id": 437,
+    "identifier": "an03.105.than.html",
+    "title": "Kuta Sutta"
+  },
+  {
+    "doc_id": 438,
+    "identifier": "an03.081.than.html",
+    "title": "Gadrabha Sutta"
+  },
+  {
+    "doc_id": 439,
+    "identifier": "an03.048.than.html",
+    "title": "Pabbata Sutta"
+  },
+  {
+    "doc_id": 440,
+    "identifier": "an03.069.than.html",
+    "title": "Mula Sutta"
+  },
+  {
+    "doc_id": 441,
+    "identifier": "an03.051.than.html",
+    "title": "Dvejana Sutta"
+  },
+  {
+    "doc_id": 446,
+    "identifier": "an03.077.than.html",
+    "title": "Bhava Sutta"
+  },
+  {
+    "doc_id": 447,
+    "identifier": "an03.038.than.html",
+    "title": "Sukhamala Sutta"
+  },
+  {
+    "doc_id": 448,
+    "identifier": "an03.033.than.html",
+    "title": "Nidana Sutta"
+  },
+  {
+    "doc_id": 449,
+    "identifier": "an03.094.than.html",
+    "title": "Ajaniya Sutta"
+  },
+  {
+    "doc_id": 450,
+    "identifier": "an03.068.than.html",
+    "title": "Titthiya Sutta"
+  },
+  {
+    "doc_id": 451,
+    "identifier": "an03.099.than.html",
+    "title": "Lonaphala Sutta"
+  },
+  {
+    "doc_id": 470,
+    "identifier": "an03.040.than.html",
+    "title": "Adhipateyya Sutta"
+  },
+  {
+    "doc_id": 498,
+    "identifier": "an05.029.than.html",
+    "title": "Cankama Sutta"
+  },
+  {
+    "doc_id": 452,
+    "identifier": "an03.071.than.html",
+    "title": "Channa Sutta"
+  },
+  {
+    "doc_id": 453,
+    "identifier": "an03.065.than.html",
+    "title": "Kalama Sutta"
+  },
+  {
+    "doc_id": 454,
+    "identifier": "an03.123.than.html",
+    "title": "Gotamaka-cetiya Sutta"
+  },
+  {
+    "doc_id": 455,
+    "identifier": "an03.022.than.html",
+    "title": "Gilana Sutta"
+  },
+  {
+    "doc_id": 456,
+    "identifier": "an03.091.than.html",
+    "title": "Accayika Sutta"
+  },
+  {
+    "doc_id": 479,
+    "identifier": "an05.037.than.html",
+    "title": "Bhojana Sutta"
+  },
+  {
+    "doc_id": 457,
+    "identifier": "an03.085.than.html",
+    "title": "Sekhin Sutta"
+  },
+  {
+    "doc_id": 458,
+    "identifier": "an03.088.than.html",
+    "title": "Sikkha Sutta"
+  },
+  {
+    "doc_id": 459,
+    "identifier": "an03.060.than.html",
+    "title": "Sangarava Sutta"
+  },
+  {
+    "doc_id": 460,
+    "identifier": "an03.126.than.html",
+    "title": "Katuviya Sutta"
+  },
+  {
+    "doc_id": 461,
+    "identifier": "an03.083.than.html",
+    "title": "Vajjiputta Sutta"
+  },
+  {
+    "doc_id": 462,
+    "identifier": "an03.120.than.html",
+    "title": "Moneyya Sutta"
+  },
+  {
+    "doc_id": 463,
+    "identifier": "an03.072.than.html",
+    "title": "Ajivaka Sutta"
+  },
+  {
+    "doc_id": 464,
+    "identifier": "an03.134.than.html",
+    "title": "Dhamma-niyama Sutta"
+  },
+  {
+    "doc_id": 465,
+    "identifier": "an03.047.than.html",
+    "title": "Sankhata Sutta"
+  },
+  {
+    "doc_id": 466,
+    "identifier": "an03.100.01-10.than.html",
+    "title": "Pansadhovaka Sutta"
+  },
+  {
+    "doc_id": 467,
+    "identifier": "an03.002.than.html",
+    "title": "Lakkhana Sutta"
+  },
+  {
+    "doc_id": 468,
+    "identifier": "an03.078.than.html",
+    "title": "Silabbata Sutta"
+  },
+  {
+    "doc_id": 469,
+    "identifier": "an03.100.11-15.than.html",
+    "title": "Nimitta Sutta"
+  },
+  {
+    "doc_id": 471,
+    "identifier": "an03.089.than.html",
+    "title": "Sikkha Sutta"
+  },
+  {
+    "doc_id": 472,
+    "identifier": "an03.061.than.html",
+    "title": "Tittha Sutta"
+  },
+  {
+    "doc_id": 473,
+    "identifier": "an03.073.than.html",
+    "title": "Sakka Sutta"
+  },
+  {
+    "doc_id": 474,
+    "identifier": "an03.067.than.html",
+    "title": "Kathavatthu Sutta"
+  },
+  {
+    "doc_id": 475,
+    "identifier": "an03.052.than.html",
+    "title": "Dvejana Sutta"
+  },
+  {
+    "doc_id": 476,
+    "identifier": "an05.075.than.html",
+    "title": "Yodhajiva Sutta"
+  },
+  {
+    "doc_id": 477,
+    "identifier": "an05.180.than.html",
+    "title": "Gavesin Sutta"
+  },
+  {
+    "doc_id": 478,
+    "identifier": "an05.165.than.html",
+    "title": "Pañhapuccha Sutta"
+  },
+  {
+    "doc_id": 480,
+    "identifier": "an05.199.than.html",
+    "title": "Kula Sutta"
+  },
+  {
+    "doc_id": 481,
+    "identifier": "an05.078.than.html",
+    "title": "Anagata-bhayani Sutta"
+  },
+  {
+    "doc_id": 482,
+    "identifier": "an05.002.than.html",
+    "title": "Vitthara Sutta"
+  },
+  {
+    "doc_id": 483,
+    "identifier": "an05.121.than.html",
+    "title": "Gilana Sutta"
+  },
+  {
+    "doc_id": 484,
+    "identifier": "an05.073.than.html",
+    "title": "Dhamma-viharin Sutta"
+  },
+  {
+    "doc_id": 485,
+    "identifier": "an05.028.than.html",
+    "title": "Samadhanga Sutta"
+  },
+  {
+    "doc_id": 486,
+    "identifier": "an05.114.than.html",
+    "title": "Andhakavinda Sutta"
+  },
+  {
+    "doc_id": 487,
+    "identifier": "an05.095.niza.html",
+    "title": "Akuppa Sutta"
+  },
+  {
+    "doc_id": 488,
+    "identifier": "an05.161.nymo.html",
+    "title": "Aghatavinaya Sutta"
+  },
+  {
+    "doc_id": 489,
+    "identifier": "an05.025.than.html",
+    "title": "Anuggahita Sutta"
+  },
+  {
+    "doc_id": 490,
+    "identifier": "an05.096.than.html",
+    "title": "Sutadhara Sutta"
+  },
+  {
+    "doc_id": 491,
+    "identifier": "an05.177.than.html",
+    "title": "Vanijja Sutta"
+  },
+  {
+    "doc_id": 497,
+    "identifier": "an05.198.than.html",
+    "title": "Vaca Sutta"
+  },
+  {
+    "doc_id": 492,
+    "identifier": "an05.041.than.html",
+    "title": "Adiya Sutta"
+  },
+  {
+    "doc_id": 493,
+    "identifier": "an05.148.than.html",
+    "title": "Sappurisadana Sutta"
+  },
+  {
+    "doc_id": 494,
+    "identifier": "an05.036.than.html",
+    "title": "Kaladana Sutta"
+  },
+  {
+    "doc_id": 495,
+    "identifier": "an05.200.than.html",
+    "title": "Nissaraniya Sutta"
+  },
+  {
+    "doc_id": 496,
+    "identifier": "an05.079.than.html",
+    "title": "Anagata-bhayani Sutta"
+  },
+  {
+    "doc_id": 499,
+    "identifier": "an05.053.than.html",
+    "title": "Anga Sutta"
+  },
+  {
+    "doc_id": 500,
+    "identifier": "an05.139.than.html",
+    "title": "Akkhama Sutta"
+  },
+  {
+    "doc_id": 501,
+    "identifier": "an05.030.than.html",
+    "title": "Nagita Sutta"
+  },
+  {
+    "doc_id": 502,
+    "identifier": "an05.176.than.html",
+    "title": "Piti Sutta"
+  },
+  {
+    "doc_id": 503,
+    "identifier": "an05.162.than.html",
+    "title": "Aghatavinaya Sutta"
+  },
+  {
+    "doc_id": 504,
+    "identifier": "an05.097.than.html",
+    "title": "Katha Sutta"
+  },
+  {
+    "doc_id": 505,
+    "identifier": "an05.196.than.html",
+    "title": "Supina Sutta"
+  },
+  {
+    "doc_id": 506,
+    "identifier": "an05.077.than.html",
+    "title": "Anagata-bhayani Sutta"
+  },
+  {
+    "doc_id": 507,
+    "identifier": "an05.038.than.html",
+    "title": "Saddha Sutta"
+  },
+  {
+    "doc_id": 508,
+    "identifier": "an05.159.than.html",
+    "title": "Udayi Sutta"
+  },
+  {
+    "doc_id": 509,
+    "identifier": "an05.027.than.html",
+    "title": "Samadhi Sutta"
+  },
+  {
+    "doc_id": 510,
+    "identifier": "an05.161.than.html",
+    "title": "Aghatavinaya Sutta"
+  },
+  {
+    "doc_id": 513,
+    "identifier": "an05.080.than.html",
+    "title": "Anagata-bhayani Sutta"
+  },
+  {
+    "doc_id": 514,
+    "identifier": "an05.175.than.html",
+    "title": "Candala Sutta"
+  },
+  {
+    "doc_id": 515,
+    "identifier": "an05.140.than.html",
+    "title": "Sotar Sutta"
+  },
+  {
+    "doc_id": 516,
+    "identifier": "an05.076.than.html",
+    "title": "Yodhajiva Sutta"
+  },
+  {
+    "doc_id": 517,
+    "identifier": "an05.130.than.html",
+    "title": "Sampada Sutta"
+  },
+  {
+    "doc_id": 518,
+    "identifier": "an05.254.than.html",
+    "title": "Macchariya Suttas"
+  },
+  {
+    "doc_id": 519,
+    "identifier": "an05.029.agku.html",
+    "title": "Cankama Sutta"
+  },
+  {
+    "doc_id": 525,
+    "identifier": "an05.020.than.html",
+    "title": "Hita Sutta"
+  },
+  {
+    "doc_id": 520,
+    "identifier": "an05.043.than.html",
+    "title": "Ittha Sutta"
+  },
+  {
+    "doc_id": 521,
+    "identifier": "an05.057.than.html",
+    "title": "Upajjhatthana Sutta"
+  },
+  {
+    "doc_id": 522,
+    "identifier": "an05.129.than.html",
+    "title": "Parikuppa Sutta"
+  },
+  {
+    "doc_id": 523,
+    "identifier": "an05.034.than.html",
+    "title": "Siha Sutta"
+  },
+  {
+    "doc_id": 524,
+    "identifier": "an05.202.than.html",
+    "title": "Dhammassavana Sutta"
+  },
+  {
+    "doc_id": 526,
+    "identifier": "an05.179.than.html",
+    "title": "Gihi Sutta"
+  },
+  {
+    "doc_id": 810,
+    "identifier": "sn01.071.than.html",
+    "title": "Ghatva Sutta"
+  },
+  {
+    "doc_id": 527,
+    "identifier": "an05.098.than.html",
+    "title": "Arañña Sutta"
+  },
+  {
+    "doc_id": 528,
+    "identifier": "an05.051.than.html",
+    "title": "Avarana Sutta"
+  },
+  {
+    "doc_id": 529,
+    "identifier": "an05.064.than.html",
+    "title": "Vuddhi Sutta"
+  },
+  {
+    "doc_id": 530,
+    "identifier": "an07.034.than.html",
+    "title": "Sovacassata Sutta"
+  },
+  {
+    "doc_id": 531,
+    "identifier": "an07.015.than.html",
+    "title": "Udakupama Sutta"
+  },
+  {
+    "doc_id": 532,
+    "identifier": "an07.060.nymo.html",
+    "title": "Kodhana Sutta"
+  },
+  {
+    "doc_id": 540,
+    "identifier": "an07.021.than.html",
+    "title": "Bhikkhu-aparihaniya Sutta"
+  },
+  {
+    "doc_id": 533,
+    "identifier": "an07.007.than.html",
+    "title": "Ugga Sutta"
+  },
+  {
+    "doc_id": 534,
+    "identifier": "an07.048.than.html",
+    "title": "Saññoga Sutta"
+  },
+  {
+    "doc_id": 535,
+    "identifier": "an07.032.than.html",
+    "title": "Hirima Sutta"
+  },
+  {
+    "doc_id": 536,
+    "identifier": "an07.064.than.html",
+    "title": "Dhammaññu Sutta"
+  },
+  {
+    "doc_id": 537,
+    "identifier": "an07.070.than.html",
+    "title": "Arakenanusasani Sutta"
+  },
+  {
+    "doc_id": 538,
+    "identifier": "an07.051.than.html",
+    "title": "Avyakata Sutta"
+  },
+  {
+    "doc_id": 539,
+    "identifier": "an07.035.than.html",
+    "title": "Mitta Sutta"
+  },
+  {
+    "doc_id": 548,
+    "identifier": "an07.058.than.html",
+    "title": "Capala (Pacala) Sutta"
+  },
+  {
+    "doc_id": 549,
+    "identifier": "an07.060.than.html",
+    "title": "Kodhana Sutta"
+  },
+  {
+    "doc_id": 541,
+    "identifier": "an07.056.than.html",
+    "title": "Kimila Sutta"
+  },
+  {
+    "doc_id": 542,
+    "identifier": "an07.063.than.html",
+    "title": "Nagara Sutta"
+  },
+  {
+    "doc_id": 543,
+    "identifier": "an07.006.than.html",
+    "title": "Dhana Sutta"
+  },
+  {
+    "doc_id": 544,
+    "identifier": "an07.012.than.html",
+    "title": "Anusaya Sutta"
+  },
+  {
+    "doc_id": 545,
+    "identifier": "an07.049.than.html",
+    "title": "Dana Sutta"
+  },
+  {
+    "doc_id": 546,
+    "identifier": "an07.033.than.html",
+    "title": "Sovacassata Sutta"
+  },
+  {
+    "doc_id": 547,
+    "identifier": "an07.079.than.html",
+    "title": "Satthusasana Sutta"
+  },
+  {
+    "doc_id": 550,
+    "identifier": "an07.011.than.html",
+    "title": "Anusaya Sutta"
+  },
+  {
+    "doc_id": 551,
+    "identifier": "an07.031.than.html",
+    "title": "Appamada Sutta"
+  },
+  {
+    "doc_id": 552,
+    "identifier": "an07.068.yaho.html",
+    "title": "Aggikkhandopama Sutta"
+  },
+  {
+    "doc_id": 553,
+    "identifier": "an07.046.than.html",
+    "title": "Sañña Sutta"
+  },
+  {
+    "doc_id": 554,
+    "identifier": "an09.044.than.html",
+    "title": "Paññavimutti Sutta"
+  },
+  {
+    "doc_id": 555,
+    "identifier": "an09.033.than.html",
+    "title": "Vihāra Sutta"
+  },
+  {
+    "doc_id": 556,
+    "identifier": "an09.038.than.html",
+    "title": "Brahmana Sutta"
+  },
+  {
+    "doc_id": 557,
+    "identifier": "an09.042.than.html",
+    "title": "Pañcala Sutta"
+  },
+  {
+    "doc_id": 578,
+    "identifier": "an09.036.than.html",
+    "title": "Jhana Sutta"
+  },
+  {
+    "doc_id": 811,
+    "identifier": "sn01.003.wlsh.html",
+    "title": "Upaneyya.m Sutta"
+  },
+  {
+    "doc_id": 558,
+    "identifier": "an09.063.than.html",
+    "title": "Sikkha-dubbalya Sutta"
+  },
+  {
+    "doc_id": 559,
+    "identifier": "an09.035.than.html",
+    "title": "Gavi Sutta"
+  },
+  {
+    "doc_id": 560,
+    "identifier": "an09.014.than.html",
+    "title": "Samiddhi Sutta"
+  },
+  {
+    "doc_id": 561,
+    "identifier": "an09.064.than.html",
+    "title": "Nivarana Sutta"
+  },
+  {
+    "doc_id": 562,
+    "identifier": "an09.045.than.html",
+    "title": "Ubhatobhaga Sutta"
+  },
+  {
+    "doc_id": 563,
+    "identifier": "an09.013.than.html",
+    "title": "Kotthita Sutta"
+  },
+  {
+    "doc_id": 564,
+    "identifier": "an09.007.than.html",
+    "title": "Sutava Sutta"
+  },
+  {
+    "doc_id": 565,
+    "identifier": "an09.032.than.html",
+    "title": "Vihāra Sutta"
+  },
+  {
+    "doc_id": 566,
+    "identifier": "an09.039.than.html",
+    "title": "Deva Sutta"
+  },
+  {
+    "doc_id": 567,
+    "identifier": "an09.043.than.html",
+    "title": "Kayasakkhi Sutta"
+  },
+  {
+    "doc_id": 568,
+    "identifier": "an09.062.than.html",
+    "title": "Bhabba Sutta"
+  },
+  {
+    "doc_id": 569,
+    "identifier": "an09.020.than.html",
+    "title": "Velāma Sutta"
+  },
+  {
+    "doc_id": 579,
+    "identifier": "an11.010.than.html",
+    "title": "Sandha Sutta"
+  },
+  {
+    "doc_id": 580,
+    "identifier": "an11.016.than.html",
+    "title": "Metta (Mettanisamsa) Sutta"
+  },
+  {
+    "doc_id": 570,
+    "identifier": "an09.034.than.html",
+    "title": "Nibbana Sutta"
+  },
+  {
+    "doc_id": 571,
+    "identifier": "an09.015.than.html",
+    "title": "Ganda Sutta"
+  },
+  {
+    "doc_id": 572,
+    "identifier": "an09.001.than.html",
+    "title": "Sambodhi Sutta"
+  },
+  {
+    "doc_id": 573,
+    "identifier": "an09.031.than.html",
+    "title": "Anupubbanirodha Sutta"
+  },
+  {
+    "doc_id": 574,
+    "identifier": "an09.040.than.html",
+    "title": "Naga Sutta"
+  },
+  {
+    "doc_id": 575,
+    "identifier": "an09.016.than.html",
+    "title": "Sañña Sutta"
+  },
+  {
+    "doc_id": 576,
+    "identifier": "an09.037.than.html",
+    "title": "Ananda Sutta"
+  },
+  {
+    "doc_id": 577,
+    "identifier": "an09.041.than.html",
+    "title": "Tapussa Sutta"
+  },
+  {
+    "doc_id": 581,
+    "identifier": "an11.002.than.html",
+    "title": "Cetana Sutta"
+  },
+  {
+    "doc_id": 582,
+    "identifier": "an11.017.than.html",
+    "title": "Dasama Sutta"
+  },
+  {
+    "doc_id": 583,
+    "identifier": "an11.012.than.html",
+    "title": "Mahanama Sutta"
+  },
+  {
+    "doc_id": 584,
+    "identifier": "an11.013.than.html",
+    "title": "Mahanama Sutta"
+  },
+  {
+    "doc_id": 585,
+    "identifier": "an11.016.piya.html",
+    "title": "Metta (Mettanisamsa) Sutta"
+  },
+  {
+    "doc_id": 586,
+    "identifier": "an11.001.than.html",
+    "title": "Kimattha Sutta"
+  },
+  {
+    "doc_id": 587,
+    "identifier": "an11.018.than.html",
+    "title": "Gopalaka Sutta"
+  },
+  {
+    "doc_id": 588,
+    "identifier": "an02.025.than.html",
+    "title": "Neyyatha Sutta"
+  },
+  {
+    "doc_id": 589,
+    "identifier": "an02.119.than.html",
+    "title": "Dullabha Sutta"
+  },
+  {
+    "doc_id": 590,
+    "identifier": "an02.031.than.html",
+    "title": "Kataññu Suttas"
+  },
+  {
+    "doc_id": 591,
+    "identifier": "an02.046.than.html",
+    "title": "Ukkacita Sutta"
+  },
+  {
+    "doc_id": 592,
+    "identifier": "an02.009.than.html",
+    "title": "Lokapala Sutta"
+  },
+  {
+    "doc_id": 593,
+    "identifier": "an02.023.than.html",
+    "title": "Abhasita Sutta"
+  },
+  {
+    "doc_id": 594,
+    "identifier": "an02.030.than.html",
+    "title": "Vijja-bhagiya Sutta"
+  },
+  {
+    "doc_id": 595,
+    "identifier": "an02.033.niza.html",
+    "title": "Aññataro Brāhmaṇo Sutta"
+  },
+  {
+    "doc_id": 596,
+    "identifier": "an02.005.than.html",
+    "title": "Appativana Sutta"
+  },
+  {
+    "doc_id": 597,
+    "identifier": "an02.125-126.than.html",
+    "title": "Ghosa Suttas"
+  },
+  {
+    "doc_id": 598,
+    "identifier": "an02.021.than.html",
+    "title": "Bala-pandita Sutta"
+  },
+  {
+    "doc_id": 627,
+    "identifier": "an04.094.than.html",
+    "title": "Samadhi Sutta"
+  },
+  {
+    "doc_id": 599,
+    "identifier": "an02.038.than.html",
+    "title": "Kandarayana Sutta"
+  },
+  {
+    "doc_id": 600,
+    "identifier": "an02.019.than.html",
+    "title": "Kusala Sutta"
+  },
+  {
+    "doc_id": 602,
+    "identifier": "an02.009.irel.html",
+    "title": "Lokapala Sutta"
+  },
+  {
+    "doc_id": 603,
+    "identifier": "an02.018.than.html",
+    "title": "Ekamsena Sutta"
+  },
+  {
+    "doc_id": 604,
+    "identifier": "an04.252.than.html",
+    "title": "Pariyesana Sutta"
+  },
+  {
+    "doc_id": 635,
+    "identifier": "an04.115.than.html",
+    "title": "Thana Sutta"
+  },
+  {
+    "doc_id": 605,
+    "identifier": "an04.179.than.html",
+    "title": "Nibbana Sutta"
+  },
+  {
+    "doc_id": 606,
+    "identifier": "an04.045.than.html",
+    "title": "Rohitassa Sutta"
+  },
+  {
+    "doc_id": 607,
+    "identifier": "an04.095.than.html",
+    "title": "Chavalata Sutta"
+  },
+  {
+    "doc_id": 608,
+    "identifier": "an04.010.niza.html",
+    "title": "Yoga Sutta"
+  },
+  {
+    "doc_id": 609,
+    "identifier": "an04.174.than.html",
+    "title": "Kotthita Sutta"
+  },
+  {
+    "doc_id": 610,
+    "identifier": "an04.032.than.html",
+    "title": "Sangaha Sutta"
+  },
+  {
+    "doc_id": 611,
+    "identifier": "an04.126.nymo.html",
+    "title": "Metta Sutta"
+  },
+  {
+    "doc_id": 612,
+    "identifier": "an04.111.than.html",
+    "title": "Kesi Sutta"
+  },
+  {
+    "doc_id": 613,
+    "identifier": "an04.062.than.html",
+    "title": "Anana Sutta"
+  },
+  {
+    "doc_id": 614,
+    "identifier": "an04.124.than.html",
+    "title": "Jhana Sutta"
+  },
+  {
+    "doc_id": 615,
+    "identifier": "an04.183.than.html",
+    "title": "Suta Sutta"
+  },
+  {
+    "doc_id": 655,
+    "identifier": "an04.073.than.html",
+    "title": "Sappurisa Sutta"
+  },
+  {
+    "doc_id": 616,
+    "identifier": "an04.067.piya.html",
+    "title": "Ahi Sutta"
+  },
+  {
+    "doc_id": 617,
+    "identifier": "an04.259.than.html",
+    "title": "Araññika Sutta"
+  },
+  {
+    "doc_id": 618,
+    "identifier": "an04.001.than.html",
+    "title": "Anubuddha Sutta"
+  },
+  {
+    "doc_id": 619,
+    "identifier": "an04.184.than.html",
+    "title": "Abhaya Sutta"
+  },
+  {
+    "doc_id": 620,
+    "identifier": "an04.159.than.html",
+    "title": "Bhikkhuni Sutta"
+  },
+  {
+    "doc_id": 647,
+    "identifier": "an04.079.than.html",
+    "title": "Vanijja Sutta"
+  },
+  {
+    "doc_id": 621,
+    "identifier": "an04.123.than.html",
+    "title": "Jhana Sutta"
+  },
+  {
+    "doc_id": 622,
+    "identifier": "an04.178.than.html",
+    "title": "Jambali Sutta"
+  },
+  {
+    "doc_id": 623,
+    "identifier": "an04.102.than.html",
+    "title": "Valahaka Sutta"
+  },
+  {
+    "doc_id": 624,
+    "identifier": "an04.099.than.html",
+    "title": "Sikkha Sutta"
+  },
+  {
+    "doc_id": 625,
+    "identifier": "an04.050.than.html",
+    "title": "Upakkilesa Sutta"
+  },
+  {
+    "doc_id": 626,
+    "identifier": "an04.049.than.html",
+    "title": "Vipallasa Sutta"
+  },
+  {
+    "doc_id": 656,
+    "identifier": "an04.192.than.html",
+    "title": "Thana Sutta"
+  },
+  {
+    "doc_id": 657,
+    "identifier": "an04.067.than.html",
+    "title": "Ahina Sutta"
+  },
+  {
+    "doc_id": 628,
+    "identifier": "an04.042.than.html",
+    "title": "Pañha Sutta"
+  },
+  {
+    "doc_id": 629,
+    "identifier": "an04.077.than.html",
+    "title": "Acintita Sutta"
+  },
+  {
+    "doc_id": 630,
+    "identifier": "an04.125.than.html",
+    "title": "Metta Sutta"
+  },
+  {
+    "doc_id": 631,
+    "identifier": "an04.255.than.html",
+    "title": "Kula Sutta"
+  },
+  {
+    "doc_id": 632,
+    "identifier": "an04.019.than.html",
+    "title": "Agati Sutta"
+  },
+  {
+    "doc_id": 633,
+    "identifier": "an04.035.than.html",
+    "title": "Vassakara Sutta"
+  },
+  {
+    "doc_id": 634,
+    "identifier": "an04.049.olen.html",
+    "title": "Vipallasa Sutta"
+  },
+  {
+    "doc_id": 852,
+    "identifier": "sn41.010.wlsh.html",
+    "title": "Gilaana-dassana.m Sutta"
+  },
+  {
+    "doc_id": 636,
+    "identifier": "an04.024.than.html",
+    "title": "Kalaka Sutta"
+  },
+  {
+    "doc_id": 637,
+    "identifier": "an04.162.than.html",
+    "title": "Vitthara Sutta"
+  },
+  {
+    "doc_id": 638,
+    "identifier": "an04.113.wood.html",
+    "title": "Patoda Sutta"
+  },
+  {
+    "doc_id": 639,
+    "identifier": "an04.095.budd.html",
+    "title": "Chavalata Sutta"
+  },
+  {
+    "doc_id": 640,
+    "identifier": "an04.005.than.html",
+    "title": "Anusota Sutta"
+  },
+  {
+    "doc_id": 853,
+    "identifier": "sn41.005.niza.html",
+    "title": "Pathama Kamabhu"
+  },
+  {
+    "doc_id": 641,
+    "identifier": "an04.126.than.html",
+    "title": "Metta Sutta"
+  },
+  {
+    "doc_id": 642,
+    "identifier": "an04.181.than.html",
+    "title": "Yodhajiva Sutta"
+  },
+  {
+    "doc_id": 643,
+    "identifier": "an04.113.than.html",
+    "title": "Patoda Sutta"
+  },
+  {
+    "doc_id": 644,
+    "identifier": "an04.055.than.html",
+    "title": "Samajivina Sutta"
+  },
+  {
+    "doc_id": 645,
+    "identifier": "an04.041.than.html",
+    "title": "Samadhi Sutta"
+  },
+  {
+    "doc_id": 646,
+    "identifier": "an04.235.than.html",
+    "title": "Ariyamagga Sutta"
+  },
+  {
+    "doc_id": 648,
+    "identifier": "an04.164.than.html",
+    "title": "Khama Sutta"
+  },
+  {
+    "doc_id": 649,
+    "identifier": "an04.085.than.html",
+    "title": "Tamonata Sutta"
+  },
+  {
+    "doc_id": 650,
+    "identifier": "an04.036.than.html",
+    "title": "Dona Sutta"
+  },
+  {
+    "doc_id": 651,
+    "identifier": "an04.200.than.html",
+    "title": "Pema Sutta"
+  },
+  {
+    "doc_id": 652,
+    "identifier": "an04.170.than.html",
+    "title": "Yuganaddha Sutta"
+  },
+  {
+    "doc_id": 653,
+    "identifier": "an04.028.than.html",
+    "title": "Ariya-vamsa Sutta"
+  },
+  {
+    "doc_id": 654,
+    "identifier": "an04.245.than.html",
+    "title": "Sikkha Sutta"
+  },
+  {
+    "doc_id": 854,
+    "identifier": "sn41.006.than.html",
+    "title": "Kamabhu Sutta"
+  },
+  {
+    "doc_id": 658,
+    "identifier": "an04.031.than.html",
+    "title": "Cakka Sutta"
+  },
+  {
+    "doc_id": 659,
+    "identifier": "an04.096.than.html",
+    "title": "Raga-vinaya Sutta"
+  },
+  {
+    "doc_id": 660,
+    "identifier": "an04.163.than.html",
+    "title": "Asubha Sutta"
+  },
+  {
+    "doc_id": 661,
+    "identifier": "an04.010.than.html",
+    "title": "Yoga Sutta"
+  },
+  {
+    "doc_id": 662,
+    "identifier": "an04.125.nymo.html",
+    "title": "Metta Sutta"
+  },
+  {
+    "doc_id": 663,
+    "identifier": "an04.144.than.html",
+    "title": "Obhasa Sutta"
+  },
+  {
+    "doc_id": 664,
+    "identifier": "an04.199.than.html",
+    "title": "Tanha Sutta"
+  },
+  {
+    "doc_id": 855,
+    "identifier": "sn41.003.than.html",
+    "title": "Isidatta Sutta"
+  },
+  {
+    "doc_id": 665,
+    "identifier": "an04.037.than.html",
+    "title": "Aparihani Sutta"
+  },
+  {
+    "doc_id": 666,
+    "identifier": "an04.165.than.html",
+    "title": "Khama Sutta"
+  },
+  {
+    "doc_id": 667,
+    "identifier": "an08.008.than.html",
+    "title": "Uttara Sutta"
+  },
+  {
+    "doc_id": 668,
+    "identifier": "an08.054.nara.html",
+    "title": "Dighajanu (Vyagghapajja) Sutta"
+  },
+  {
+    "doc_id": 669,
+    "identifier": "an08.053.than.html",
+    "title": "Gotami Sutta"
+  },
+  {
+    "doc_id": 670,
+    "identifier": "an08.030.than.html",
+    "title": "Anuruddha Sutta"
+  },
+  {
+    "doc_id": 677,
+    "identifier": "an08.028.than.html",
+    "title": "Bala Sutta"
+  },
+  {
+    "doc_id": 671,
+    "identifier": "an08.024.than.html",
+    "title": "Hatthaka Sutta"
+  },
+  {
+    "doc_id": 672,
+    "identifier": "an08.054.than.html",
+    "title": "Dighajanu (Vyagghapajja) Sutta"
+  },
+  {
+    "doc_id": 673,
+    "identifier": "an08.040.than.html",
+    "title": "Vipaka Sutta"
+  },
+  {
+    "doc_id": 674,
+    "identifier": "an08.023.than.html",
+    "title": "Hatthaka Sutta"
+  },
+  {
+    "doc_id": 675,
+    "identifier": "an08.002.than.html",
+    "title": "Pañña Sutta"
+  },
+  {
+    "doc_id": 676,
+    "identifier": "an08.009.than.html",
+    "title": "Nanda Sutta"
+  },
+  {
+    "doc_id": 691,
+    "identifier": "an10.020.than.html",
+    "title": "Ariyavasa Sutta"
+  },
+  {
+    "doc_id": 692,
+    "identifier": "an10.093.than.html",
+    "title": "Ditthi Sutta"
+  },
+  {
+    "doc_id": 856,
+    "identifier": "sn41.004.than.html",
+    "title": "Mahaka Sutta"
+  },
+  {
+    "doc_id": 678,
+    "identifier": "an08.039.than.html",
+    "title": "Abhisanda Sutta"
+  },
+  {
+    "doc_id": 679,
+    "identifier": "an08.041.vaka.html",
+    "title": "Uposatha Sutta"
+  },
+  {
+    "doc_id": 680,
+    "identifier": "an08.026.than.html",
+    "title": "Jivaka Sutta"
+  },
+  {
+    "doc_id": 681,
+    "identifier": "an08.007.than.html",
+    "title": "Devadatta Sutta"
+  },
+  {
+    "doc_id": 682,
+    "identifier": "an08.013.than.html",
+    "title": "Ajañña Sutta"
+  },
+  {
+    "doc_id": 683,
+    "identifier": "an08.063.than.html",
+    "title": "Sankhitta Sutta"
+  },
+  {
+    "doc_id": 684,
+    "identifier": "an08.043.khan.html",
+    "title": "Visakhuposatha Sutta"
+  },
+  {
+    "doc_id": 724,
+    "identifier": "an10.177.than.html",
+    "title": "Janussonin Sutta"
+  },
+  {
+    "doc_id": 857,
+    "identifier": "sn41.010.than.html",
+    "title": "Gilana Sutta"
+  },
+  {
+    "doc_id": 685,
+    "identifier": "an08.014.than.html",
+    "title": "Khalunga Sutta"
+  },
+  {
+    "doc_id": 686,
+    "identifier": "an08.025.kuma.html",
+    "title": "Mahanama Sutta"
+  },
+  {
+    "doc_id": 687,
+    "identifier": "an08.086.than.html",
+    "title": "Yasa Sutta"
+  },
+  {
+    "doc_id": 688,
+    "identifier": "an08.059.kuma.html",
+    "title": "Pathama Atthapuggala Sutta"
+  },
+  {
+    "doc_id": 689,
+    "identifier": "an08.080.than.html",
+    "title": "Kusita-Arambhavatthu Sutta"
+  },
+  {
+    "doc_id": 690,
+    "identifier": "an08.006.than.html",
+    "title": "Lokavipatti Sutta"
+  },
+  {
+    "doc_id": 693,
+    "identifier": "an10.108.than.html",
+    "title": "Virecana (Tikicchaka) Sutta"
+  },
+  {
+    "doc_id": 694,
+    "identifier": "an10.015.than.html",
+    "title": "Appamada Sutta"
+  },
+  {
+    "doc_id": 695,
+    "identifier": "an10.013.than.html",
+    "title": "Sanyojana Sutta"
+  },
+  {
+    "doc_id": 696,
+    "identifier": "an10.069.than.html",
+    "title": "Kathavatthu Sutta"
+  },
+  {
+    "doc_id": 697,
+    "identifier": "an10.007.than.html",
+    "title": "Sariputta Sutta"
+  },
+  {
+    "doc_id": 698,
+    "identifier": "an10.095.than.html",
+    "title": "Uttiya Sutta"
+  },
+  {
+    "doc_id": 699,
+    "identifier": "an10.048.than.html",
+    "title": "Dasadhamma Sutta"
+  },
+  {
+    "doc_id": 700,
+    "identifier": "an10.081.than.html",
+    "title": "Bahuna Sutta"
+  },
+  {
+    "doc_id": 701,
+    "identifier": "an10.070.than.html",
+    "title": "Kathavatthu Sutta"
+  },
+  {
+    "doc_id": 702,
+    "identifier": "an10.051.than.html",
+    "title": "Sacitta Sutta"
+  },
+  {
+    "doc_id": 703,
+    "identifier": "an10.103.than.html",
+    "title": "Micchatta Sutta"
+  },
+  {
+    "doc_id": 704,
+    "identifier": "an10.092.than.html",
+    "title": "Vera Sutta"
+  },
+  {
+    "doc_id": 705,
+    "identifier": "an10.104.than.html",
+    "title": "Bija Sutta"
+  },
+  {
+    "doc_id": 706,
+    "identifier": "an10.006.than.html",
+    "title": "Samadhi Sutta"
+  },
+  {
+    "doc_id": 707,
+    "identifier": "an10.118.niza.html",
+    "title": "Orimatīra Sutta"
+  },
+  {
+    "doc_id": 708,
+    "identifier": "an10.060.piya.html",
+    "title": "Girimananda Sutta"
+  },
+  {
+    "doc_id": 709,
+    "identifier": "an10.080.than.html",
+    "title": "Aghata Sutta"
+  },
+  {
+    "doc_id": 710,
+    "identifier": "an10.094.than.html",
+    "title": "Vajjiya Sutta"
+  },
+  {
+    "doc_id": 711,
+    "identifier": "an10.071.than.html",
+    "title": "Akankha Sutta"
+  },
+  {
+    "doc_id": 712,
+    "identifier": "an10.208.than.html",
+    "title": "Brahmavihara Sutta"
+  },
+  {
+    "doc_id": 713,
+    "identifier": "an10.066.niza.html",
+    "title": "Dutiya Sukha Sutta"
+  },
+  {
+    "doc_id": 714,
+    "identifier": "an10.017.than.html",
+    "title": "Natha Sutta"
+  },
+  {
+    "doc_id": 715,
+    "identifier": "an10.027x.nypo.html",
+    "title": "Mahapañha Sutta"
+  },
+  {
+    "doc_id": 716,
+    "identifier": "an10.058.than.html",
+    "title": "Mula Sutta"
+  },
+  {
+    "doc_id": 717,
+    "identifier": "an10.060.than.html",
+    "title": "Girimananda Sutta"
+  },
+  {
+    "doc_id": 718,
+    "identifier": "an10.024.than.html",
+    "title": "Cunda Sutta"
+  },
+  {
+    "doc_id": 719,
+    "identifier": "an10.176.than.html",
+    "title": "Cunda Kammaraputta Sutta"
+  },
+  {
+    "doc_id": 720,
+    "identifier": "an10.065.niza.html",
+    "title": "Pathama Sukha Sutta"
+  },
+  {
+    "doc_id": 721,
+    "identifier": "an10.029.than.html",
+    "title": "Kosala Sutta"
+  },
+  {
+    "doc_id": 722,
+    "identifier": "an10.048.piya.html",
+    "title": "Dasadhamma Sutta"
+  },
+  {
+    "doc_id": 723,
+    "identifier": "an10.054.than.html",
+    "title": "Samatha Sutta"
+  },
+  {
+    "doc_id": 725,
+    "identifier": "an10.096.than.html",
+    "title": "Kokanuda Sutta"
+  },
+  {
+    "doc_id": 726,
+    "identifier": "an10.046.than.html",
+    "title": "Sakka Sutta"
+  },
+  {
+    "doc_id": 757,
+    "identifier": "sn38.014.than.html",
+    "title": "Dukkha Sutta"
+  },
+  {
+    "doc_id": 758,
+    "identifier": "sn07.011.than.html",
+    "title": "Kasi Bharadvaja Sutta"
+  },
+  {
+    "doc_id": 779,
+    "identifier": "sn36.008.nypo.html",
+    "title": "Gelañña Sutta"
+  },
+  {
+    "doc_id": 984,
+    "identifier": "sn22.007.wlsh.html",
+    "title": "Upaadaaparitassanaa Sutta"
+  },
+  {
+    "doc_id": 759,
+    "identifier": "sn07.021.wlsh.html",
+    "title": "Sangaarava Sutta"
+  },
+  {
+    "doc_id": 760,
+    "identifier": "sn07.012.olen.html",
+    "title": "Udaya Sutta"
+  },
+  {
+    "doc_id": 761,
+    "identifier": "sn07.017.than.html",
+    "title": "Navakammika Sutta"
+  },
+  {
+    "doc_id": 762,
+    "identifier": "sn07.001.wlsh.html",
+    "title": "Dhanañjaanii Sutta"
+  },
+  {
+    "doc_id": 763,
+    "identifier": "sn07.018.olen.html",
+    "title": "Katthaharaka Sutta"
+  },
+  {
+    "doc_id": 764,
+    "identifier": "sn07.002.than.html",
+    "title": "Akkosa Sutta"
+  },
+  {
+    "doc_id": 765,
+    "identifier": "sn07.002.wlsh.html",
+    "title": "Akkoso Sutta"
+  },
+  {
+    "doc_id": 766,
+    "identifier": "sn07.018.than.html",
+    "title": "Katthaharaka Sutta"
+  },
+  {
+    "doc_id": 987,
+    "identifier": "sn22.090.than.html",
+    "title": "Channa Sutta"
+  },
+  {
+    "doc_id": 767,
+    "identifier": "sn07.006.than.html",
+    "title": "Jata Sutta"
+  },
+  {
+    "doc_id": 768,
+    "identifier": "sn07.002.budd.html",
+    "title": "Akkosa Sutta"
+  },
+  {
+    "doc_id": 769,
+    "identifier": "sn07.014.than.html",
+    "title": "Maha-sala Sutta"
+  },
+  {
+    "doc_id": 770,
+    "identifier": "sn07.011.piya.html",
+    "title": "Kasi Bharadvaja Sutta"
+  },
+  {
+    "doc_id": 771,
+    "identifier": "sn09.009.than.html",
+    "title": "Vajjiputta Sutta"
+  },
+  {
+    "doc_id": 772,
+    "identifier": "sn09.014.olen.html",
+    "title": "Gandhatthena Sutta"
+  },
+  {
+    "doc_id": 773,
+    "identifier": "sn09.011.than.html",
+    "title": "Ayoniso-manasikara Sutta"
+  },
+  {
+    "doc_id": 774,
+    "identifier": "sn09.014.than.html",
+    "title": "Gandhatthena Sutta"
+  },
+  {
+    "doc_id": 775,
+    "identifier": "sn09.006.than.html",
+    "title": "Anuruddha Sutta"
+  },
+  {
+    "doc_id": 776,
+    "identifier": "sn09.001.than.html",
+    "title": "Viveka Sutta"
+  },
+  {
+    "doc_id": 777,
+    "identifier": "sn36.005.nypo.html",
+    "title": "Datthabba Sutta"
+  },
+  {
+    "doc_id": 778,
+    "identifier": "sn36.011.nypo.html",
+    "title": "Rahogata Sutta"
+  },
+  {
+    "doc_id": 780,
+    "identifier": "sn36.003.nypo.html",
+    "title": "Pahana Sutta"
+  },
+  {
+    "doc_id": 781,
+    "identifier": "sn36.007.than.html",
+    "title": "Gelañña Sutta"
+  },
+  {
+    "doc_id": 782,
+    "identifier": "sn36.022.nypo.html",
+    "title": "Atthasatapariyaya Sutta"
+  },
+  {
+    "doc_id": 783,
+    "identifier": "sn36.031.nypo.html",
+    "title": "Niramisa Sutta"
+  },
+  {
+    "doc_id": 784,
+    "identifier": "sn36.021.than.html",
+    "title": "Sivaka Sutta"
+  },
+  {
+    "doc_id": 785,
+    "identifier": "sn36.010.nypo.html",
+    "title": "Phassamulaka Sutta"
+  },
+  {
+    "doc_id": 794,
+    "identifier": "sn36.001.nypo.html",
+    "title": "Samadhi Sutta"
+  },
+  {
+    "doc_id": 786,
+    "identifier": "sn36.004.nypo.html",
+    "title": "Patala Sutta"
+  },
+  {
+    "doc_id": 787,
+    "identifier": "sn36.019.than.html",
+    "title": "Pañcakanga Sutta"
+  },
+  {
+    "doc_id": 788,
+    "identifier": "sn36.009.nypo.html",
+    "title": "Anicca Sutta"
+  },
+  {
+    "doc_id": 789,
+    "identifier": "sn36.006.than.html",
+    "title": "Sallatha Sutta"
+  },
+  {
+    "doc_id": 790,
+    "identifier": "sn36.002.nypo.html",
+    "title": "Sukha Sutta"
+  },
+  {
+    "doc_id": 791,
+    "identifier": "sn36.007.nypo.html",
+    "title": "Gelañña Sutta"
+  },
+  {
+    "doc_id": 792,
+    "identifier": "sn36.022.than.html",
+    "title": "Atthasata Sutta"
+  },
+  {
+    "doc_id": 793,
+    "identifier": "sn36.011.than.html",
+    "title": "Rahogata Sutta"
+  },
+  {
+    "doc_id": 809,
+    "identifier": "sn37.034.than.html",
+    "title": "Vaddha Sutta"
+  },
+  {
+    "doc_id": 795,
+    "identifier": "sn36.015.nypo.html",
+    "title": "Santaka Sutta"
+  },
+  {
+    "doc_id": 796,
+    "identifier": "sn36.012.nypo.html",
+    "title": "Akasa Sutta"
+  },
+  {
+    "doc_id": 797,
+    "identifier": "sn36.006.nypo.html",
+    "title": "Sallatha Sutta"
+  },
+  {
+    "doc_id": 798,
+    "identifier": "sn36.023.than.html",
+    "title": "Bhikkhu Sutta"
+  },
+  {
+    "doc_id": 808,
+    "identifier": "sn08.004.than.html",
+    "title": "Ananda Sutta"
+  },
+  {
+    "doc_id": 799,
+    "identifier": "sn36.031.than.html",
+    "title": "Niramisa Sutta"
+  },
+  {
+    "doc_id": 800,
+    "identifier": "sn36.021.nypo.html",
+    "title": "Sivaka Sutta"
+  },
+  {
+    "doc_id": 801,
+    "identifier": "sn36.014.nypo.html",
+    "title": "Agara Sutta"
+  },
+  {
+    "doc_id": 802,
+    "identifier": "sn36.004.than.html",
+    "title": "Patala Sutta"
+  },
+  {
+    "doc_id": 803,
+    "identifier": "sn36.019.nypo.html",
+    "title": "Pañcakanga Sutta"
+  },
+  {
+    "doc_id": 804,
+    "identifier": "sn54.009.than.html",
+    "title": "Vesali Sutta"
+  },
+  {
+    "doc_id": 805,
+    "identifier": "sn54.008.than.html",
+    "title": "Dipa Sutta"
+  },
+  {
+    "doc_id": 806,
+    "identifier": "sn54.006.than.html",
+    "title": "Arittha Sutta"
+  },
+  {
+    "doc_id": 807,
+    "identifier": "sn54.013.than.html",
+    "title": "Ananda Sutta"
+  },
+  {
+    "doc_id": 812,
+    "identifier": "sn01.017.wlsh.html",
+    "title": "Dukkara.m (Kummo) Sutta"
+  },
+  {
+    "doc_id": 813,
+    "identifier": "sn01.038.than.html",
+    "title": "Sakalika Sutta"
+  },
+  {
+    "doc_id": 814,
+    "identifier": "sn01.042.than.html",
+    "title": "Kindada Sutta"
+  },
+  {
+    "doc_id": 815,
+    "identifier": "sn01.010.olen.html",
+    "title": "Arañña Sutta"
+  },
+  {
+    "doc_id": 816,
+    "identifier": "sn01.069.than.html",
+    "title": "Iccha Sutta"
+  },
+  {
+    "doc_id": 817,
+    "identifier": "sn01.025.wlsh.html",
+    "title": "Araha.m Sutta"
+  },
+  {
+    "doc_id": 818,
+    "identifier": "sn01.018.than.html",
+    "title": "Hiri Sutta"
+  },
+  {
+    "doc_id": 819,
+    "identifier": "sn01.009.wlsh.html",
+    "title": "Maanakaamo Sutta"
+  },
+  {
+    "doc_id": 820,
+    "identifier": "sn01.010.irel.html",
+    "title": "Arañña Sutta"
+  },
+  {
+    "doc_id": 821,
+    "identifier": "sn01.020.than.html",
+    "title": "Samiddhi Sutta"
+  },
+  {
+    "doc_id": 822,
+    "identifier": "sn01.001.than.html",
+    "title": "Ogha-tarana Sutta"
+  },
+  {
+    "doc_id": 823,
+    "identifier": "sn01.020.wlsh.html",
+    "title": "Samiddhi Sutta"
+  },
+  {
+    "doc_id": 824,
+    "identifier": "sn01.010.than.html",
+    "title": "Arañña Sutta"
+  },
+  {
+    "doc_id": 825,
+    "identifier": "sn01.041.than.html",
+    "title": "Aditta Sutta"
+  },
+  {
+    "doc_id": 826,
+    "identifier": "sn06.001.than.html",
+    "title": "Ayacana Sutta"
+  },
+  {
+    "doc_id": 858,
+    "identifier": "sn48.044.than.html",
+    "title": "Pubbakotthaka Sutta"
+  },
+  {
+    "doc_id": 827,
+    "identifier": "sn06.015.than.html",
+    "title": "Parinibbana Sutta"
+  },
+  {
+    "doc_id": 828,
+    "identifier": "sn06.002.than.html",
+    "title": "Garava Sutta"
+  },
+  {
+    "doc_id": 829,
+    "identifier": "sn06.013.olen.html",
+    "title": "Andhakavinda Sutta"
+  },
+  {
+    "doc_id": 830,
+    "identifier": "sn52.010.than.html",
+    "title": "Gilana Sutta"
+  },
+  {
+    "doc_id": 831,
+    "identifier": "sn55.001.than.html",
+    "title": "Raja Sutta"
+  },
+  {
+    "doc_id": 832,
+    "identifier": "sn55.032.than.html",
+    "title": "Abhisanda Sutta"
+  },
+  {
+    "doc_id": 833,
+    "identifier": "sn55.024.wlsh.html",
+    "title": "Sarakaani Sutta"
+  },
+  {
+    "doc_id": 834,
+    "identifier": "sn55.021.than.html",
+    "title": "Mahanama Sutta"
+  },
+  {
+    "doc_id": 835,
+    "identifier": "sn55.033.than.html",
+    "title": "Abhisanda Sutta"
+  },
+  {
+    "doc_id": 836,
+    "identifier": "sn55.022.than.html",
+    "title": "Mahanama Sutta"
+  },
+  {
+    "doc_id": 837,
+    "identifier": "sn55.030.than.html",
+    "title": "Licchavi Sutta"
+  },
+  {
+    "doc_id": 838,
+    "identifier": "sn55.040.than.html",
+    "title": "Nandiya Sutta"
+  },
+  {
+    "doc_id": 839,
+    "identifier": "sn55.054.than.html",
+    "title": "Gilana Sutta"
+  },
+  {
+    "doc_id": 840,
+    "identifier": "sn55.031.than.html",
+    "title": "Abhisanda Sutta"
+  },
+  {
+    "doc_id": 841,
+    "identifier": "sn46.001.than.html",
+    "title": "Himavanta Sutta"
+  },
+  {
+    "doc_id": 842,
+    "identifier": "sn46.051.than.html",
+    "title": "Ahara Sutta"
+  },
+  {
+    "doc_id": 843,
+    "identifier": "sn46.016.piya.html",
+    "title": "Gilana Sutta"
+  },
+  {
+    "doc_id": 844,
+    "identifier": "sn46.053.wlsh.html",
+    "title": "Aggi Sutta"
+  },
+  {
+    "doc_id": 845,
+    "identifier": "sn46.014.than.html",
+    "title": "Gilana Sutta"
+  },
+  {
+    "doc_id": 846,
+    "identifier": "sn46.055.wlsh.html",
+    "title": "Sangaravo Sutta"
+  },
+  {
+    "doc_id": 847,
+    "identifier": "sn46.053.than.html",
+    "title": "Aggi Sutta"
+  },
+  {
+    "doc_id": 848,
+    "identifier": "sn46.014.piya.html",
+    "title": "Gilana Sutta"
+  },
+  {
+    "doc_id": 849,
+    "identifier": "sn46.054.than.html",
+    "title": "Metta Sutta"
+  },
+  {
+    "doc_id": 850,
+    "identifier": "sn46.054x.wlsh.html",
+    "title": "Mettam Sutta"
+  },
+  {
+    "doc_id": 851,
+    "identifier": "sn41.007.than.html",
+    "title": "Godatta Sutta"
+  },
+  {
+    "doc_id": 859,
+    "identifier": "sn48.038.than.html",
+    "title": "Vibhanga Sutta"
+  },
+  {
+    "doc_id": 860,
+    "identifier": "sn48.056.than.html",
+    "title": "Patitthita Sutta"
+  },
+  {
+    "doc_id": 861,
+    "identifier": "sn48.054.wlsh.html",
+    "title": "Pade Sutta"
+  },
+  {
+    "doc_id": 862,
+    "identifier": "sn48.039.than.html",
+    "title": "Katthopama Sutta"
+  },
+  {
+    "doc_id": 863,
+    "identifier": "sn48.010.than.html",
+    "title": "Indriya-vibhanga Sutta"
+  },
+  {
+    "doc_id": 864,
+    "identifier": "sn48.042.wlsh.html",
+    "title": "Unnabho Brahmano Sutta"
+  },
+  {
+    "doc_id": 865,
+    "identifier": "sn48.053.than.html",
+    "title": "Sekha Sutta"
+  },
+  {
+    "doc_id": 866,
+    "identifier": "sn48.041.than.html",
+    "title": "Jara Sutta"
+  },
+  {
+    "doc_id": 867,
+    "identifier": "sn23.002.than.html",
+    "title": "Satta Sutta"
+  },
+  {
+    "doc_id": 868,
+    "identifier": "sn15.014.than.html",
+    "title": "Mata Sutta"
+  },
+  {
+    "doc_id": 869,
+    "identifier": "sn15.012.than.html",
+    "title": "Sukhita Sutta"
+  },
+  {
+    "doc_id": 870,
+    "identifier": "sn15.013.than.html",
+    "title": "Timsa Sutta"
+  },
+  {
+    "doc_id": 871,
+    "identifier": "sn15.009.than.html",
+    "title": "Danda Sutta"
+  },
+  {
+    "doc_id": 872,
+    "identifier": "sn15.003.than.html",
+    "title": "Assu Sutta"
+  },
+  {
+    "doc_id": 873,
+    "identifier": "sn15.011.than.html",
+    "title": "Duggata Sutta"
+  },
+  {
+    "doc_id": 874,
+    "identifier": "sn12.044.than.html",
+    "title": "Loka Sutta"
+  },
+  {
+    "doc_id": 875,
+    "identifier": "sn12.065.than.html",
+    "title": "Nagara Sutta"
+  },
+  {
+    "doc_id": 876,
+    "identifier": "sn12.068.than.html",
+    "title": "Kosambi Sutta"
+  },
+  {
+    "doc_id": 877,
+    "identifier": "sn12.012.than.html",
+    "title": "Phagguna Sutta"
+  },
+  {
+    "doc_id": 1006,
+    "identifier": "sn03.023.than.html",
+    "title": "Loka Sutta"
+  },
+  {
+    "doc_id": 878,
+    "identifier": "sn12.023.bodh.html",
+    "title": "Upanisa Sutta"
+  },
+  {
+    "doc_id": 879,
+    "identifier": "sn12.019.than.html",
+    "title": "Bala-pandita Sutta"
+  },
+  {
+    "doc_id": 880,
+    "identifier": "sn12.063.than.html",
+    "title": "Puttamansa Sutta"
+  },
+  {
+    "doc_id": 881,
+    "identifier": "sn12.038.than.html",
+    "title": "Cetana Sutta"
+  },
+  {
+    "doc_id": 882,
+    "identifier": "sn12.017x.wlsh.html",
+    "title": "Acela Sutta"
+  },
+  {
+    "doc_id": 883,
+    "identifier": "sn12.035.than.html",
+    "title": "Avijjapaccaya Sutta"
+  },
+  {
+    "doc_id": 1007,
+    "identifier": "sn03.013.wlsh.html",
+    "title": "Do.napaaka Sutta"
+  },
+  {
+    "doc_id": 884,
+    "identifier": "sn12.016.wlsh.html",
+    "title": "Dhammakathiko Sutta"
+  },
+  {
+    "doc_id": 885,
+    "identifier": "sn12.070.than.html",
+    "title": "Susima Sutta"
+  },
+  {
+    "doc_id": 886,
+    "identifier": "sn12.064.than.html",
+    "title": "Atthi Raga Sutta"
+  },
+  {
+    "doc_id": 887,
+    "identifier": "sn12.048.than.html",
+    "title": "Lokayatika Sutta"
+  },
+  {
+    "doc_id": 888,
+    "identifier": "sn12.010.wlsh.html",
+    "title": "Mahaa Sakyamuni Gotamo Sutta"
+  },
+  {
+    "doc_id": 889,
+    "identifier": "sn12.061.niza.html",
+    "title": "Assutavā Sutta"
+  },
+  {
+    "doc_id": 890,
+    "identifier": "sn12.011.nypo.html",
+    "title": "Ahara Sutta"
+  },
+  {
+    "doc_id": 904,
+    "identifier": "sn12.060x.wlsh.html",
+    "title": "Nidaana.m Sutta"
+  },
+  {
+    "doc_id": 891,
+    "identifier": "sn12.015.than.html",
+    "title": "Kaccayanagotta Sutta"
+  },
+  {
+    "doc_id": 892,
+    "identifier": "sn12.031x.nypo.html",
+    "title": "Bhutamidam Sutta"
+  },
+  {
+    "doc_id": 893,
+    "identifier": "sn12.022x.wlsh.html",
+    "title": "Dasabalaa (2) Sutta"
+  },
+  {
+    "doc_id": 894,
+    "identifier": "sn12.020.than.html",
+    "title": "Paccaya Sutta"
+  },
+  {
+    "doc_id": 895,
+    "identifier": "sn12.067.than.html",
+    "title": "Nalakalapiyo Sutta"
+  },
+  {
+    "doc_id": 896,
+    "identifier": "sn12.063.nypo.html",
+    "title": "Puttamansa Sutta"
+  },
+  {
+    "doc_id": 897,
+    "identifier": "sn12.052.than.html",
+    "title": "Upadana Sutta"
+  },
+  {
+    "doc_id": 898,
+    "identifier": "sn12.046.than.html",
+    "title": "Aññatra Sutta"
+  },
+  {
+    "doc_id": 899,
+    "identifier": "sn12.015.wlsh.html",
+    "title": "Kaccaayanagotto Sutta"
+  },
+  {
+    "doc_id": 900,
+    "identifier": "sn12.025.than.html",
+    "title": "Bhumija Sutta"
+  },
+  {
+    "doc_id": 901,
+    "identifier": "sn12.031.than.html",
+    "title": "Bhutamidam Sutta"
+  },
+  {
+    "doc_id": 902,
+    "identifier": "sn12.061.than.html",
+    "title": "Assutavā Sutta"
+  },
+  {
+    "doc_id": 903,
+    "identifier": "sn12.023.than.html",
+    "title": "Upanisa Sutta"
+  },
+  {
+    "doc_id": 905,
+    "identifier": "sn12.002.than.html",
+    "title": "Paticca-samuppada-vibhanga Sutta"
+  },
+  {
+    "doc_id": 906,
+    "identifier": "sn12.012.nypo.html",
+    "title": "Phagguna Sutta"
+  },
+  {
+    "doc_id": 907,
+    "identifier": "sn12.038.wlsh.html",
+    "title": "Cetanaa Sutta"
+  },
+  {
+    "doc_id": 908,
+    "identifier": "sn12.011.than.html",
+    "title": "Ahara Sutta"
+  },
+  {
+    "doc_id": 909,
+    "identifier": "sn12.023x.wlsh.html",
+    "title": "Upanisaa Sutta"
+  },
+  {
+    "doc_id": 910,
+    "identifier": "sn12.064.nypo.html",
+    "title": "Atthi Raga Sutta"
+  },
+  {
+    "doc_id": 911,
+    "identifier": "sn12.017.than.html",
+    "title": "Acela Sutta"
+  },
+  {
+    "doc_id": 912,
+    "identifier": "sn40.009.wlsh.html",
+    "title": "Animitto Sutta"
+  },
+  {
+    "doc_id": 913,
+    "identifier": "sn47.007.olen.html",
+    "title": "Makkata Sutta"
+  },
+  {
+    "doc_id": 1025,
+    "identifier": "sn35.133.wlsh.html",
+    "title": "Verahaccaani Sutta"
+  },
+  {
+    "doc_id": 914,
+    "identifier": "sn47.014.nypo.html",
+    "title": "Cunda Sutta"
+  },
+  {
+    "doc_id": 915,
+    "identifier": "sn47.040.than.html",
+    "title": "Satipatthana-vibhanga Sutta"
+  },
+  {
+    "doc_id": 916,
+    "identifier": "sn47.037.than.html",
+    "title": "Chanda Sutta"
+  },
+  {
+    "doc_id": 917,
+    "identifier": "sn47.008.than.html",
+    "title": "Suda Sutta"
+  },
+  {
+    "doc_id": 918,
+    "identifier": "sn47.041.than.html",
+    "title": "Amata Sutta"
+  },
+  {
+    "doc_id": 919,
+    "identifier": "sn47.013.nypo.html",
+    "title": "Cunda Sutta"
+  },
+  {
+    "doc_id": 925,
+    "identifier": "sn47.035.than.html",
+    "title": "Sata Sutta"
+  },
+  {
+    "doc_id": 920,
+    "identifier": "sn47.019.olen.html",
+    "title": "Sedaka Sutta"
+  },
+  {
+    "doc_id": 921,
+    "identifier": "sn47.006.than.html",
+    "title": "Sakunagghi Sutta"
+  },
+  {
+    "doc_id": 922,
+    "identifier": "sn47.019.than.html",
+    "title": "Sedaka Sutta"
+  },
+  {
+    "doc_id": 923,
+    "identifier": "sn47.038.than.html",
+    "title": "Pariñña Sutta"
+  },
+  {
+    "doc_id": 924,
+    "identifier": "sn47.042.than.html",
+    "title": "Samudaya Sutta"
+  },
+  {
+    "doc_id": 927,
+    "identifier": "sn47.007.than.html",
+    "title": "Makkata Sutta"
+  },
+  {
+    "doc_id": 928,
+    "identifier": "sn47.013.than.html",
+    "title": "Cunda Sutta"
+  },
+  {
+    "doc_id": 929,
+    "identifier": "sn47.010.wlsh.html",
+    "title": "Bhikkhunivasako Sutta"
+  },
+  {
+    "doc_id": 930,
+    "identifier": "sn47.046.wlsh.html",
+    "title": "Paa.timokkha Sutta"
+  },
+  {
+    "doc_id": 931,
+    "identifier": "sn47.020.than.html",
+    "title": "Sedaka Sutta"
+  },
+  {
+    "doc_id": 932,
+    "identifier": "sn13.008.than.html",
+    "title": "Samudda Sutta"
+  },
+  {
+    "doc_id": 933,
+    "identifier": "sn13.002.than.html",
+    "title": "Pokkharani Sutta"
+  },
+  {
+    "doc_id": 934,
+    "identifier": "sn13.001.than.html",
+    "title": "Nakhasikha Sutta"
+  },
+  {
+    "doc_id": 935,
+    "identifier": "sn14.011.than.html",
+    "title": "Sattadhatu Sutta"
+  },
+  {
+    "doc_id": 936,
+    "identifier": "sn22.122.than.html",
+    "title": "Silavant Sutta"
+  },
+  {
+    "doc_id": 937,
+    "identifier": "sn22.095.than.html",
+    "title": "Phena Sutta"
+  },
+  {
+    "doc_id": 938,
+    "identifier": "sn22.081.than.html",
+    "title": "Parileyyaka Sutta"
+  },
+  {
+    "doc_id": 939,
+    "identifier": "sn22.048.than.html",
+    "title": "Khandha Sutta"
+  },
+  {
+    "doc_id": 940,
+    "identifier": "sn22.057.than.html",
+    "title": "Sattatthana Sutta"
+  },
+  {
+    "doc_id": 941,
+    "identifier": "sn22.039.than.html",
+    "title": "Anudhamma Sutta"
+  },
+  {
+    "doc_id": 942,
+    "identifier": "sn22.093.than.html",
+    "title": "Nadi Sutta"
+  },
+  {
+    "doc_id": 943,
+    "identifier": "sn22.001.than.html",
+    "title": "Nakulapita Sutta"
+  },
+  {
+    "doc_id": 944,
+    "identifier": "sn22.022.wlsh.html",
+    "title": "Bhāra Sutta"
+  },
+  {
+    "doc_id": 945,
+    "identifier": "sn22.099.than.html",
+    "title": "Gaddula Sutta"
+  },
+  {
+    "doc_id": 946,
+    "identifier": "sn22.080.than.html",
+    "title": "Pindolya Sutta"
+  },
+  {
+    "doc_id": 947,
+    "identifier": "sn22.042.than.html",
+    "title": "Anudhamma Sutta"
+  },
+  {
+    "doc_id": 948,
+    "identifier": "sn22.084x.wlsh.html",
+    "title": "Tisso Sutta"
+  },
+  {
+    "doc_id": 949,
+    "identifier": "sn22.056.than.html",
+    "title": "Parivatta Sutta"
+  },
+  {
+    "doc_id": 950,
+    "identifier": "sn22.089x.wlsh.html",
+    "title": "Khemo Sutta"
+  },
+  {
+    "doc_id": 951,
+    "identifier": "sn22.086.than.html",
+    "title": "Anuradha Sutta"
+  },
+  {
+    "doc_id": 952,
+    "identifier": "sn22.059.nymo.html",
+    "title": "Anatta-lakkhana Sutta"
+  },
+  {
+    "doc_id": 953,
+    "identifier": "sn22.047.wlsh.html",
+    "title": "Samanupassanaa Sutta"
+  },
+  {
+    "doc_id": 954,
+    "identifier": "sn22.022.niza.html",
+    "title": "Bhāra Sutta"
+  },
+  {
+    "doc_id": 955,
+    "identifier": "sn22.059.mend.html",
+    "title": "Anatta-lakkhana Sutta"
+  },
+  {
+    "doc_id": 956,
+    "identifier": "sn22.053.than.html",
+    "title": "Upaya Sutta"
+  },
+  {
+    "doc_id": 957,
+    "identifier": "sn22.047.than.html",
+    "title": "Samanupassana Sutta"
+  },
+  {
+    "doc_id": 958,
+    "identifier": "sn22.101.than.html",
+    "title": "Nava Sutta"
+  },
+  {
+    "doc_id": 959,
+    "identifier": "sn22.087x.wlsh.html",
+    "title": "Vakkali Sutta"
+  },
+  {
+    "doc_id": 960,
+    "identifier": "sn22.109.wlsh.html",
+    "title": "Sotaapanno Sutta"
+  },
+  {
+    "doc_id": 961,
+    "identifier": "sn22.086.wlsh.html",
+    "title": "Anuraadho Sutta"
+  },
+  {
+    "doc_id": 1026,
+    "identifier": "sn35.127.wlsh.html",
+    "title": "Bhaaradvaajo Sutta"
+  },
+  {
+    "doc_id": 962,
+    "identifier": "sn22.097.than.html",
+    "title": "Nakhasikha Sutta"
+  },
+  {
+    "doc_id": 963,
+    "identifier": "sn22.083.than.html",
+    "title": "Ananda Sutta"
+  },
+  {
+    "doc_id": 964,
+    "identifier": "sn22.063.wlsh.html",
+    "title": "Upaadiyamaano Sutta"
+  },
+  {
+    "doc_id": 965,
+    "identifier": "sn22.110.wlsh.html",
+    "title": "Araha.m Sutta"
+  },
+  {
+    "doc_id": 966,
+    "identifier": "sn22.005.than.html",
+    "title": "Samadhi Sutta"
+  },
+  {
+    "doc_id": 967,
+    "identifier": "sn22.049.wlsh.html",
+    "title": "So.no Sutta"
+  },
+  {
+    "doc_id": 968,
+    "identifier": "sn22.080.wlsh.html",
+    "title": "Pi.n.dolya.m Sutta"
+  },
+  {
+    "doc_id": 969,
+    "identifier": "sn22.060.than.html",
+    "title": "Mahali Sutta"
+  },
+  {
+    "doc_id": 970,
+    "identifier": "sn22.055.than.html",
+    "title": "Udana Sutta"
+  },
+  {
+    "doc_id": 971,
+    "identifier": "sn22.041.than.html",
+    "title": "Anudhamma Sutta"
+  },
+  {
+    "doc_id": 972,
+    "identifier": "sn22.079.than.html",
+    "title": "Khajjaniya Sutta"
+  },
+  {
+    "doc_id": 973,
+    "identifier": "sn22.003.than.html",
+    "title": "Haliddakani Sutta"
+  },
+  {
+    "doc_id": 974,
+    "identifier": "sn22.058.than.html",
+    "title": "Buddha Sutta"
+  },
+  {
+    "doc_id": 1028,
+    "identifier": "sn35.203x.wlsh.html",
+    "title": "Dukkhadhammaa Sutta"
+  },
+  {
+    "doc_id": 975,
+    "identifier": "sn22.022.than.html",
+    "title": "Bhāra Sutta"
+  },
+  {
+    "doc_id": 976,
+    "identifier": "sn22.036.than.html",
+    "title": "Bhikkhu Sutta"
+  },
+  {
+    "doc_id": 977,
+    "identifier": "sn22.085.than.html",
+    "title": "Yamaka Sutta"
+  },
+  {
+    "doc_id": 978,
+    "identifier": "sn22.100.than.html",
+    "title": "Gaddula Sutta"
+  },
+  {
+    "doc_id": 979,
+    "identifier": "sn22.121.than.html",
+    "title": "Upadana Sutta"
+  },
+  {
+    "doc_id": 980,
+    "identifier": "sn22.043.wlsh.html",
+    "title": "Attadiipaa Sutta"
+  },
+  {
+    "doc_id": 981,
+    "identifier": "sn22.040.than.html",
+    "title": "Anudhamma Sutta"
+  },
+  {
+    "doc_id": 982,
+    "identifier": "sn22.089.than.html",
+    "title": "Khemaka Sutta"
+  },
+  {
+    "doc_id": 983,
+    "identifier": "sn22.054.than.html",
+    "title": "Bija Sutta"
+  },
+  {
+    "doc_id": 985,
+    "identifier": "sn22.002.than.html",
+    "title": "Devadaha Sutta"
+  },
+  {
+    "doc_id": 986,
+    "identifier": "sn22.084.than.html",
+    "title": "Tissa Sutta"
+  },
+  {
+    "doc_id": 988,
+    "identifier": "sn22.059.than.html",
+    "title": "Pañcavaggi Sutta"
+  },
+  {
+    "doc_id": 989,
+    "identifier": "sn22.023.than.html",
+    "title": "Pariñña Sutta"
+  },
+  {
+    "doc_id": 990,
+    "identifier": "sn25.001.than.html",
+    "title": "Cakkhu Sutta"
+  },
+  {
+    "doc_id": 991,
+    "identifier": "sn25.007.than.html",
+    "title": "Cetana Sutta"
+  },
+  {
+    "doc_id": 992,
+    "identifier": "sn25.006.than.html",
+    "title": "Sañña Sutta"
+  },
+  {
+    "doc_id": 1029,
+    "identifier": "sn35.197.than.html",
+    "title": "Asivisa Sutta"
+  },
+  {
+    "doc_id": 993,
+    "identifier": "sn25.003.than.html",
+    "title": "Viññana Sutta"
+  },
+  {
+    "doc_id": 994,
+    "identifier": "sn25.005.than.html",
+    "title": "Vedana Sutta"
+  },
+  {
+    "doc_id": 995,
+    "identifier": "sn25.008.than.html",
+    "title": "Tanha Sutta"
+  },
+  {
+    "doc_id": 996,
+    "identifier": "sn25.002.than.html",
+    "title": "Rupa Sutta"
+  },
+  {
+    "doc_id": 1003,
+    "identifier": "sn03.004.than.html",
+    "title": "Piya Sutta"
+  },
+  {
+    "doc_id": 997,
+    "identifier": "sn25.004.than.html",
+    "title": "Phassa Sutta"
+  },
+  {
+    "doc_id": 998,
+    "identifier": "sn25.010.than.html",
+    "title": "Khandha Sutta"
+  },
+  {
+    "doc_id": 999,
+    "identifier": "sn25.009.than.html",
+    "title": "Dhatu Sutta"
+  },
+  {
+    "doc_id": 1000,
+    "identifier": "sn03.005.than.html",
+    "title": "Atta-rakkhita Sutta"
+  },
+  {
+    "doc_id": 1001,
+    "identifier": "sn03.024.than.html",
+    "title": "Issattha Sutta"
+  },
+  {
+    "doc_id": 1002,
+    "identifier": "sn03.017.than.html",
+    "title": "Appamada Sutta"
+  },
+  {
+    "doc_id": 1004,
+    "identifier": "sn03.025.than.html",
+    "title": "Pabbatopama Sutta"
+  },
+  {
+    "doc_id": 1008,
+    "identifier": "sn03.007.than.html",
+    "title": "Atthakarana Sutta"
+  },
+  {
+    "doc_id": 1009,
+    "identifier": "sn03.025.olen.html",
+    "title": "Pabbatopama Sutta"
+  },
+  {
+    "doc_id": 1010,
+    "identifier": "sn03.015.than.html",
+    "title": "Sangama Sutta"
+  },
+  {
+    "doc_id": 1011,
+    "identifier": "sn03.001.than.html",
+    "title": "Dahara Sutta"
+  },
+  {
+    "doc_id": 1012,
+    "identifier": "sn03.020.than.html",
+    "title": "Aputtaka Sutta"
+  },
+  {
+    "doc_id": 1013,
+    "identifier": "sn03.006.than.html",
+    "title": "Appaka Sutta"
+  },
+  {
+    "doc_id": 1014,
+    "identifier": "sn03.014.than.html",
+    "title": "Sangama Sutta"
+  },
+  {
+    "doc_id": 1030,
+    "identifier": "sn35.093.than.html",
+    "title": "Dvaya Sutta"
+  },
+  {
+    "doc_id": 1015,
+    "identifier": "sn03.008.wlsh.html",
+    "title": "Mallikaa Sutta"
+  },
+  {
+    "doc_id": 1016,
+    "identifier": "sn03.019.than.html",
+    "title": "Aputtaka Sutta"
+  },
+  {
+    "doc_id": 1017,
+    "identifier": "sn04.008.than.html",
+    "title": "Nandana Sutta"
+  },
+  {
+    "doc_id": 1018,
+    "identifier": "sn04.020.than.html",
+    "title": "Rajja Sutta"
+  },
+  {
+    "doc_id": 1031,
+    "identifier": "sn35.202.than.html",
+    "title": "Avassuta Sutta"
+  },
+  {
+    "doc_id": 1032,
+    "identifier": "sn35.153.than.html",
+    "title": "Indriya Sutta"
+  },
+  {
+    "doc_id": 1019,
+    "identifier": "sn04.013.than.html",
+    "title": "Sakalika Sutta"
+  },
+  {
+    "doc_id": 1020,
+    "identifier": "sn04.019.than.html",
+    "title": "Kassaka Sutta"
+  },
+  {
+    "doc_id": 1021,
+    "identifier": "sn35.191.than.html",
+    "title": "Kotthita Sutta"
+  },
+  {
+    "doc_id": 1022,
+    "identifier": "sn35.069.than.html",
+    "title": "Upasena Sutta"
+  },
+  {
+    "doc_id": 1023,
+    "identifier": "sn35.206x.wlsh.html",
+    "title": "Chapaa.na Sutta"
+  },
+  {
+    "doc_id": 1024,
+    "identifier": "sn35.095.than.html",
+    "title": "Malunkyaputta Sutta"
+  },
+  {
+    "doc_id": 1027,
+    "identifier": "sn35.204.than.html",
+    "title": "Kimsuka Sutta"
+  },
+  {
+    "doc_id": 1033,
+    "identifier": "sn35.028.nymo.html",
+    "title": "Adittapariyaya Sutta"
+  },
+  {
+    "doc_id": 1034,
+    "identifier": "sn35.145.wlsh.html",
+    "title": "Kamma.m Sutta"
+  },
+  {
+    "doc_id": 1035,
+    "identifier": "sn35.099.than.html",
+    "title": "Samadhi Sutta"
+  },
+  {
+    "doc_id": 1036,
+    "identifier": "sn35.189.than.html",
+    "title": "Balisika Sutta"
+  },
+  {
+    "doc_id": 1037,
+    "identifier": "sn35.205.than.html",
+    "title": "Vina Sutta"
+  },
+  {
+    "doc_id": 1038,
+    "identifier": "sn35.080.than.html",
+    "title": "Avijja Sutta"
+  },
+  {
+    "doc_id": 1039,
+    "identifier": "sn35.132.wlsh.html",
+    "title": "Lohicco Sutta"
+  },
+  {
+    "doc_id": 1055,
+    "identifier": "sn35.200.than.html",
+    "title": "Daruka-khandha Sutta"
+  },
+  {
+    "doc_id": 1040,
+    "identifier": "sn35.063.than.html",
+    "title": "Migajala Sutta"
+  },
+  {
+    "doc_id": 1041,
+    "identifier": "sn35.120.wlsh.html",
+    "title": "Sariputto Sutta"
+  },
+  {
+    "doc_id": 1042,
+    "identifier": "sn35.187.wlsh.html",
+    "title": "Samuddo (1) Sutta"
+  },
+  {
+    "doc_id": 1043,
+    "identifier": "sn35.115.than.html",
+    "title": "Marapasa Sutta"
+  },
+  {
+    "doc_id": 1044,
+    "identifier": "sn35.152.wlsh.html",
+    "title": "Atthinukhopariyaayo Sutta"
+  },
+  {
+    "doc_id": 1045,
+    "identifier": "sn35.101.than.html",
+    "title": "Na Tumhaka Sutta"
+  },
+  {
+    "doc_id": 1046,
+    "identifier": "sn35.193.than.html",
+    "title": "Udayin Sutta"
+  },
+  {
+    "doc_id": 1047,
+    "identifier": "sn35.097.than.html",
+    "title": "Pamadaviharin Sutta"
+  },
+  {
+    "doc_id": 1048,
+    "identifier": "sn35.024.than.html",
+    "title": "Pahanaya Sutta"
+  },
+  {
+    "doc_id": 1049,
+    "identifier": "sn35.206.than.html",
+    "title": "Chappana Sutta"
+  },
+  {
+    "doc_id": 1050,
+    "identifier": "sn35.063.wlsh.html",
+    "title": "Migajaalena Sutta"
+  },
+  {
+    "doc_id": 1051,
+    "identifier": "sn35.074.than.html",
+    "title": "Gilana Sutta"
+  },
+  {
+    "doc_id": 1052,
+    "identifier": "sn35.088.than.html",
+    "title": "Punna Sutta"
+  },
+  {
+    "doc_id": 1053,
+    "identifier": "sn35.145.than.html",
+    "title": "Kamma Sutta"
+  },
+  {
+    "doc_id": 1054,
+    "identifier": "sn35.085.than.html",
+    "title": "Suñña Sutta"
+  },
+  {
+    "doc_id": 1056,
+    "identifier": "sn35.028.than.html",
+    "title": "Adittapariyaya Sutta"
+  },
+  {
+    "doc_id": 1057,
+    "identifier": "sn35.135.than.html",
+    "title": "Khana Sutta"
+  },
+  {
+    "doc_id": 1058,
+    "identifier": "sn35.207.than.html",
+    "title": "Yavakalapi Sutta"
+  },
+  {
+    "doc_id": 1059,
+    "identifier": "sn35.082.than.html",
+    "title": "Loka Sutta"
+  },
+  {
+    "doc_id": 1060,
+    "identifier": "sn35.095.wlsh.html",
+    "title": "Maalunkyaputta Sutta"
+  },
+  {
+    "doc_id": 1061,
+    "identifier": "sn35.075.than.html",
+    "title": "Gilana Sutta"
+  },
+  {
+    "doc_id": 1062,
+    "identifier": "sn35.127.than.html",
+    "title": "Bharadvaja Sutta"
+  },
+  {
+    "doc_id": 1063,
+    "identifier": "sn35.204.wlsh.html",
+    "title": "Ki.msukaa Sutta"
+  },
+  {
+    "doc_id": 1064,
+    "identifier": "sn35.199.than.html",
+    "title": "Kumma Sutta"
+  },
+  {
+    "doc_id": 1065,
+    "identifier": "sn35.205x.wlsh.html",
+    "title": "Vii.naa Sutta"
+  },
+  {
+    "doc_id": 1066,
+    "identifier": "sn35.191.wlsh.html",
+    "title": "Ko.t.thiko Sutta"
+  },
+  {
+    "doc_id": 1067,
+    "identifier": "sn35.023.than.html",
+    "title": "Sabba Sutta"
+  },
+  {
+    "doc_id": 1068,
+    "identifier": "sn56.011.nymo.html",
+    "title": "Dhammacakkappavattana Sutta"
+  },
+  {
+    "doc_id": 1069,
+    "identifier": "sn56.048.than.html",
+    "title": "Chiggala Sutta"
+  },
+  {
+    "doc_id": 1070,
+    "identifier": "sn56.045.than.html",
+    "title": "Vala Sutta"
+  },
+  {
+    "doc_id": 1071,
+    "identifier": "sn56.009.wlsh.html",
+    "title": "Viggahika Sutta"
+  },
+  {
+    "doc_id": 1072,
+    "identifier": "sn56.020.than.html",
+    "title": "Tatha Sutta"
+  },
+  {
+    "doc_id": 1073,
+    "identifier": "sn56.031.wlsh.html",
+    "title": "Simsapa Sutta"
+  },
+  {
+    "doc_id": 1074,
+    "identifier": "sn56.044.than.html",
+    "title": "Kuta Sutta"
+  },
+  {
+    "doc_id": 1075,
+    "identifier": "sn56.035.than.html",
+    "title": "Sattisata Sutta"
+  },
+  {
+    "doc_id": 1076,
+    "identifier": "sn56.042.than.html",
+    "title": "Papata Sutta"
+  },
+  {
+    "doc_id": 1077,
+    "identifier": "sn56.011.piya.html",
+    "title": "Dhammacakkappavattana Sutta"
+  },
+  {
+    "doc_id": 1078,
+    "identifier": "sn56.011.than.html",
+    "title": "Dhammacakkappavattana Sutta"
+  },
+  {
+    "doc_id": 1079,
+    "identifier": "sn56.011.harv.html",
+    "title": "Dhammacakkappavattana Sutta"
+  },
+  {
+    "doc_id": 1080,
+    "identifier": "sn56.102-113.than.html",
+    "title": "Pansu Suttas"
+  },
+  {
+    "doc_id": 1081,
+    "identifier": "sn56.036.than.html",
+    "title": "Pana Sutta"
+  },
+  {
+    "doc_id": 1082,
+    "identifier": "sn56.022x.wlsh.html",
+    "title": "Vijja Sutta"
+  },
+  {
+    "doc_id": 1083,
+    "identifier": "sn56.031.than.html",
+    "title": "Simsapa Sutta"
+  },
+  {
+    "doc_id": 1084,
+    "identifier": "sn56.046.than.html",
+    "title": "Andhakara Sutta"
+  },
+  {
+    "doc_id": 1085,
+    "identifier": "sn51.020.than.html",
+    "title": "Iddhipada-vibhanga Sutta"
+  },
+  {
+    "doc_id": 1086,
+    "identifier": "sn51.015.than.html",
+    "title": "Brahmana Sutta"
+  },
+  {
+    "doc_id": 1087,
+    "identifier": "sn05.002.bodh.html",
+    "title": "Soma Sutta"
+  },
+  {
+    "doc_id": 1088,
+    "identifier": "sn05.006.than.html",
+    "title": "Cala Sutta"
+  },
+  {
+    "doc_id": 1089,
+    "identifier": "sn05.009.bodh.html",
+    "title": "Sela Sutta"
+  },
+  {
+    "doc_id": 1090,
+    "identifier": "sn05.004.bodh.html",
+    "title": "Vijaya Sutta"
+  },
+  {
+    "doc_id": 1091,
+    "identifier": "sn05.010.bodh.html",
+    "title": "Vajira Sutta"
+  },
+  {
+    "doc_id": 1146,
+    "identifier": "sn17.008.than.html",
+    "title": "Sigala Sutta"
+  },
+  {
+    "doc_id": 1092,
+    "identifier": "sn05.003.bodh.html",
+    "title": "Gotami Sutta"
+  },
+  {
+    "doc_id": 1093,
+    "identifier": "sn05.007.than.html",
+    "title": "Upacala Sutta"
+  },
+  {
+    "doc_id": 1094,
+    "identifier": "sn05.002.olen.html",
+    "title": "Soma Sutta"
+  },
+  {
+    "doc_id": 1095,
+    "identifier": "sn05.008.bodh.html",
+    "title": "Sisupacala Sutta"
+  },
+  {
+    "doc_id": 1096,
+    "identifier": "sn05.001.than.html",
+    "title": "Alavika Sutta"
+  },
+  {
+    "doc_id": 1097,
+    "identifier": "sn05.005.bodh.html",
+    "title": "Uppalavanna Sutta"
+  },
+  {
+    "doc_id": 1098,
+    "identifier": "sn05.009.than.html",
+    "title": "Sela Sutta"
+  },
+  {
+    "doc_id": 1099,
+    "identifier": "sn05.010.than.html",
+    "title": "Vajira Sutta"
+  },
+  {
+    "doc_id": 1100,
+    "identifier": "sn05.004.than.html",
+    "title": "Vijaya Sutta"
+  },
+  {
+    "doc_id": 1101,
+    "identifier": "sn05.006.bodh.html",
+    "title": "Cala Sutta"
+  },
+  {
+    "doc_id": 1102,
+    "identifier": "sn05.002.than.html",
+    "title": "Soma Sutta"
+  },
+  {
+    "doc_id": 1103,
+    "identifier": "sn05.008.than.html",
+    "title": "Sisupacala Sutta"
+  },
+  {
+    "doc_id": 1104,
+    "identifier": "sn05.005.than.html",
+    "title": "Uppalavanna Sutta"
+  },
+  {
+    "doc_id": 1105,
+    "identifier": "sn05.001.bodh.html",
+    "title": "Alavika Sutta"
+  },
+  {
+    "doc_id": 1106,
+    "identifier": "sn05.007.bodh.html",
+    "title": "Upacala Sutta"
+  },
+  {
+    "doc_id": 1107,
+    "identifier": "sn05.003.than.html",
+    "title": "Gotami Sutta"
+  },
+  {
+    "doc_id": 1108,
+    "identifier": "sn02.008.wlsh.html",
+    "title": "Taayano Sutta"
+  },
+  {
+    "doc_id": 1109,
+    "identifier": "sn02.019.than.html",
+    "title": "Uttara Sutta"
+  },
+  {
+    "doc_id": 1110,
+    "identifier": "sn02.009.piya.html",
+    "title": "Candima Sutta"
+  },
+  {
+    "doc_id": 1111,
+    "identifier": "sn02.010.piya.html",
+    "title": "Suriya Sutta"
+  },
+  {
+    "doc_id": 1112,
+    "identifier": "sn02.025.wlsh.html",
+    "title": "Jantu Sutta"
+  },
+  {
+    "doc_id": 1113,
+    "identifier": "sn02.007.than.html",
+    "title": "Pañcalacanda Sutta"
+  },
+  {
+    "doc_id": 1114,
+    "identifier": "sn02.026.than.html",
+    "title": "Rohitassa Sutta"
+  },
+  {
+    "doc_id": 1115,
+    "identifier": "sn02.006.olen.html",
+    "title": "Kamada Sutta"
+  },
+  {
+    "doc_id": 1116,
+    "identifier": "sn20.004.than.html",
+    "title": "Okkha Sutta"
+  },
+  {
+    "doc_id": 1117,
+    "identifier": "sn20.002.than.html",
+    "title": "Nakhasikha Sutta"
+  },
+  {
+    "doc_id": 1118,
+    "identifier": "sn20.005.than.html",
+    "title": "Satti Sutta"
+  },
+  {
+    "doc_id": 1119,
+    "identifier": "sn20.006.than.html",
+    "title": "Dhanuggaha Sutta"
+  },
+  {
+    "doc_id": 1120,
+    "identifier": "sn20.007.than.html",
+    "title": "Ani Sutta"
+  },
+  {
+    "doc_id": 1121,
+    "identifier": "sn27.001-010.than.html",
+    "title": "Upakkilesa Samyutta"
+  },
+  {
+    "doc_id": 1122,
+    "identifier": "sn11.003.piya.html",
+    "title": "Dhajagga Sutta"
+  },
+  {
+    "doc_id": 1123,
+    "identifier": "sn11.004.olen.html",
+    "title": "Vepacitti Sutta"
+  },
+  {
+    "doc_id": 1124,
+    "identifier": "sn11.003.than.html",
+    "title": "Dhajagga Sutta"
+  },
+  {
+    "doc_id": 1125,
+    "identifier": "sn11.005.than.html",
+    "title": "Subhasita-jaya Sutta"
+  },
+  {
+    "doc_id": 1126,
+    "identifier": "sn16.002.wlsh.html",
+    "title": "Anottaapi Sutta"
+  },
+  {
+    "doc_id": 1127,
+    "identifier": "sn16.013.than.html",
+    "title": "Saddhammapatirupaka Sutta"
+  },
+  {
+    "doc_id": 1128,
+    "identifier": "sn16.001.wlsh.html",
+    "title": "Santu.t.tha.m Sutta"
+  },
+  {
+    "doc_id": 1129,
+    "identifier": "sn16.013.wlsh.html",
+    "title": "Saddhamma-pa.tiruupaka.m Sutta"
+  },
+  {
+    "doc_id": 1130,
+    "identifier": "sn16.005.than.html",
+    "title": "Jinna Sutta"
+  },
+  {
+    "doc_id": 1131,
+    "identifier": "sn42.006.than.html",
+    "title": "Paccha-bhumika Sutta"
+  },
+  {
+    "doc_id": 1132,
+    "identifier": "sn42.003.than.html",
+    "title": "Yodhajiva Sutta"
+  },
+  {
+    "doc_id": 1133,
+    "identifier": "sn42.008.than.html",
+    "title": "Sankha Sutta"
+  },
+  {
+    "doc_id": 1139,
+    "identifier": "sn45.165.wlsh.html",
+    "title": "Dukkhata Sutta"
+  },
+  {
+    "doc_id": 1134,
+    "identifier": "sn42.011.than.html",
+    "title": "Gandhabhaka (Bhadraka) Sutta"
+  },
+  {
+    "doc_id": 1135,
+    "identifier": "sn42.007.wlsh.html",
+    "title": "Desanaa Sutta"
+  },
+  {
+    "doc_id": 1136,
+    "identifier": "sn42.002.than.html",
+    "title": "Talaputa Sutta"
+  },
+  {
+    "doc_id": 1137,
+    "identifier": "sn42.009.than.html",
+    "title": "Kula Sutta"
+  },
+  {
+    "doc_id": 1138,
+    "identifier": "sn42.010.than.html",
+    "title": "Maniculaka Sutta"
+  },
+  {
+    "doc_id": 1140,
+    "identifier": "sn45.001.than.html",
+    "title": "Avijja Sutta"
+  },
+  {
+    "doc_id": 1141,
+    "identifier": "sn45.008.than.html",
+    "title": "Magga-vibhanga Sutta"
+  },
+  {
+    "doc_id": 1142,
+    "identifier": "sn45.159.wlsh.html",
+    "title": "Agantuka Sutta"
+  },
+  {
+    "doc_id": 1143,
+    "identifier": "sn45.002.than.html",
+    "title": "Upaddha Sutta"
+  },
+  {
+    "doc_id": 1144,
+    "identifier": "sn45.171.than.html",
+    "title": "Ogha Sutta"
+  },
+  {
+    "doc_id": 1145,
+    "identifier": "sn17.003.than.html",
+    "title": "Kumma Sutta"
+  },
+  {
+    "doc_id": 1147,
+    "identifier": "sn17.005.than.html",
+    "title": "Pilahaka Sutta"
+  },
+  {
+    "doc_id": 1148,
+    "identifier": "sn17.005.wlsh.html",
+    "title": "Piḷhika Sutta"
+  },
+  {
+    "doc_id": 1149,
+    "identifier": "sn10.008.than.html",
+    "title": "Sudatta Sutta"
+  },
+  {
+    "doc_id": 1150,
+    "identifier": "sn10.012.piya.html",
+    "title": "Alavaka Sutta"
+  },
+  {
+    "doc_id": 1151,
+    "identifier": "sn10.012.than.html",
+    "title": "Alavaka Sutta"
+  },
+  {
+    "doc_id": 1152,
+    "identifier": "sn21.001.than.html",
+    "title": "Kolita Sutta"
+  },
+  {
+    "doc_id": 1153,
+    "identifier": "sn21.008.wlsh.html",
+    "title": "Nando Sutta"
+  },
+  {
+    "doc_id": 1154,
+    "identifier": "sn21.006.niza.html",
+    "title": "Lakuntaka Bhaddiya Sutta"
+  },
+  {
+    "doc_id": 1155,
+    "identifier": "sn21.002.than.html",
+    "title": "Upatissa Sutta"
+  },
+  {
+    "doc_id": 1156,
+    "identifier": "sn21.010.than.html",
+    "title": "Theranama Sutta"
+  },
+  {
+    "doc_id": 1157,
+    "identifier": "sn44.002.than.html",
+    "title": "Anuradha Sutta"
+  },
+  {
+    "doc_id": 1158,
+    "identifier": "sn44.010.than.html",
+    "title": "Ananda Sutta"
+  },
+  {
+    "doc_id": 1159,
+    "identifier": "sn44.004.than.html",
+    "title": "Sariputta-Kotthita Sutta"
+  },
+  {
+    "doc_id": 1160,
+    "identifier": "sn44.009.than.html",
+    "title": "Kutuhalasala Sutta"
+  },
+  {
+    "doc_id": 1161,
+    "identifier": "sn44.003.than.html",
+    "title": "Sariputta-Kotthita Sutta"
+  },
+  {
+    "doc_id": 1162,
+    "identifier": "sn44.005.than.html",
+    "title": "Sariputta-Kotthita Sutta"
+  },
+  {
+    "doc_id": 1163,
+    "identifier": "sn44.011.than.html",
+    "title": "Sabhiya Sutta"
+  },
+  {
+    "doc_id": 1164,
+    "identifier": "sn44.008.than.html",
+    "title": "Vacchagotta Sutta"
+  },
+  {
+    "doc_id": 1165,
+    "identifier": "sn44.006.than.html",
+    "title": "Sariputta-Kotthita Sutta"
+  },
+  {
+    "doc_id": 1166,
+    "identifier": "sn44.intro.than.html",
+    "title": "Introduction to the Avyakata Samyutta"
+  },
+  {
+    "doc_id": 1167,
+    "identifier": "sn44.001.than.html",
+    "title": "Khema Sutta"
+  },
+  {
+    "doc_id": 1168,
+    "identifier": "sn44.007.than.html",
+    "title": "Moggallana Sutta"
+  }
+]

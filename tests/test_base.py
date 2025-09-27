@@ -22,8 +22,8 @@ doc_index = builder.doc_ids
 v.save(bundle_dir, X=X, docs=doc_index)             # writes vectorizer.joblib / X.npz / doc_index.json
 
 assert X.shape[0] == len(doc_index)
-bundle_dir = "test_data"
 
+bundle_dir = "test_data"
 # Load everything from the SAME bundle (and fail fast if missing)
 v2 = Vectorizer.load(bundle_dir, strict=True, require_matrix=True, require_index=True)
 

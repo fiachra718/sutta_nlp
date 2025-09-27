@@ -1,0 +1,18 @@
+{
+  "created": "2025-09-24T13:51:27.880019+00:00Z",
+  "shape": [
+    1129,
+    7001
+  ],
+  "dtype": "float32",
+  "nnz": 200828,
+  "vectorizer_class": "TfidfVectorizer",
+  "norm": "l2",
+  "ngram_range": [
+    1,
+    2
+  ],
+  "min_df": 8,
+  "max_df": 0.9,
+  "stop_words": "custom"
+}
