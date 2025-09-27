@@ -1,0 +1,28 @@
+# venv & caches
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+.DS_Store
+
+# notebooks checkpoints (if any)
+.ipynb_checkpoints/
+
+# local settings & env
+.env
+settings/local.py
+settings/*.local.py
+
+# build artifacts
+*.joblib
+*.npz
+*.npz.tmp
+*.npy
+*.pkl
+
+# your TF-IDF bundles (change if you use a different dir/prefix)
+tfidf_*/
+bundles/
+**/doc_index.json
+**/manifest.json
