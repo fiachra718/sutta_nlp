@@ -1,6 +1,9 @@
 from __future__ import annotations
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
+from sklearn.decomposition import TruncatedSVD
+from sklearn.cluster import KMeans
+from sklearn.metrics import silhouette_score
 
 from sklearn.decomposition import TruncatedSVD
 from scipy import sparse
@@ -58,6 +61,15 @@ class Vectorizer:
         self._sk = None          # fitted sklearn TfidfVectorizer
         self._x_csr = None       # csr_matrix of TF-IDF rows
         self.doc_index: List[Dict[str, Any]] = []  # [{"doc_id", "identifier", "title"}, ...]
+
+    
+    def feature_names(self) -> list[str]:
+        """Return feature names aligned with X columns."""
+        assert self._sk is not None, "Vectorizer not fitted/loaded"
+        try:
+            return self._sk.get_feature_names_out().tolist()  # sklearn ≥1.0
+        except AttributeError:
+            return self._sk.get_feature_names()               # older sklearn
 
     # ---------- doc index helpers ----------
     def set_doc_index(self, doc_index: Iterable[Dict[str, Any]]) -> None:
@@ -133,7 +145,7 @@ class Vectorizer:
 
         return self
 
-    # ---------- core ops ----------
+    # ---- transformer methods
     def fit(self, corpus: Iterable[str]):
         from sklearn.feature_extraction.text import TfidfVectorizer
         self._sk = TfidfVectorizer(**self.params).fit(corpus)
@@ -147,7 +159,11 @@ class Vectorizer:
         # single-pass fit+transform; does NOT store _x_csr unless you want to
         from sklearn.feature_extraction.text import TfidfVectorizer
         self._sk = TfidfVectorizer(**self.params)
-        X = self._sk.fit_transform(corpus)
+        texts = list(corpus)
+        if not texts or not any(t.strip() for t in texts):
+            raise ValueError("Corpus appears empty (no raw_text). Check your SELECT and iterator.")
+
+        X = self._sk.fit_transform(texts)
         return X
 
     def _fit_transform_inplace(self, corpus: Iterable[str]) -> None:
@@ -190,7 +206,22 @@ class Vectorizer:
 
         return out
 
-    # ---------- utilities ----------
+    # ---------- vocab utilities ----------
+    @property
+    def terms(self) -> list[str]:
+        # convenience alias; lets you do v.terms
+        return self.feature_names()
+    
+    def vocab(self) -> dict[str, int]:
+        """term -> column index mapping"""
+        assert self._sk is not None, "Vectorizer not fitted/loaded"
+        return self._sk.vocabulary_
+
+    def term_at(self, j: int) -> str:
+        """column index -> term"""
+        return self.feature_names()[j]
+    
+    #------- save/load utilities
     def _timestamped_dir(self) -> Path:
         stamp = datetime.now(tz=timezone.utc).strftime("%Y%m%dT%H%M%SZ")
         return self.default_dir or Path(f"tfidf_{stamp}")
@@ -208,22 +239,32 @@ class Vectorizer:
         return m
 
 
-class Reducer:
-    def __init__(self, n_components=200, random_state=0):
-        self.n_components = n_components
-        self.random_state = random_state
+def fit_lsa(X_csr: sparse.csr_matrix, n_components=200, random_state=0):
+    svd = TruncatedSVD(n_components=n_components, random_state=random_state)
+    Z = svd.fit_transform(X_csr)
+    components = svd.components_                  # == V^T (components × terms)
+    evr = svd.explained_variance_ratio_          # per-component variance share
+    return Z, components, evr, svd
 
-    def fit_lsa(self, X_csr: sparse.csr_matrix):
-        svd = TruncatedSVD(n_components=self.n_components, random_state=self.random_state)
-        Z = svd.fit_transform(X_csr)
-        
-        return Z, svd.components, svd.explained_variance_ratio_
+def top_terms_for_component(components, terms, j, n=12, with_weights=False):
+    w = components[j]
+    pos = np.argsort(w)[-n:][::-1]
+    neg = np.argsort(w)[:n]
+    fmt = (lambda i: f"{terms[i]}:{w[i]:.3f}") if with_weights else (lambda i: terms[i])
+    return [fmt(i) for i in pos], [fmt(i) for i in neg]
+    
+def top_docs_for_component(Z, docs, j, n=8, side="pos"):
+    """Docs most aligned with component j. Z = svd.fit_transform(X)."""
+    col = Z[:, j]
+    order = np.argsort(-col) if side == "pos" else np.argsort(col)
+    idxs = order[:n]
+    return [(i, docs[i]["identifier"], docs[i]["title"], float(col[i])) for i in idxs]
 
 
+def k_means_on(Z, k):
+    """Cluster reduced features; return (labels, model, silhouette)."""
+    km = KMeans(n_clusters=k, n_init="auto", random_state=0).fit(Z)
+    labels = km.labels_
+    sil = silhouette_score(Z, labels, metric="euclidean")
+    return labels, km, sil
 
-class Clusterer:
-    def __init__(self, k):
-        pass
-
-    def k_means_on(self, random_state=0):
-        pass
