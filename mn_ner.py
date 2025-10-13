@@ -56,5 +56,5 @@ if __name__ == "__main__":
                     examples_by_ent[norm].append(doc[ent.sent.start:ent.sent.end].text)
 
     # Look at the top candidates
-    for ent, freq in counts.most_common(50):
+    for ent, freq in counts.most_common(100):
         print(freq, ent, "— e.g.", examples_by_ent[ent][0])

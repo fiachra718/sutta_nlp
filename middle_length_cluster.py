@@ -21,12 +21,16 @@ ruler = nlp.add_pipe("entity_ruler", before="ner")
 
 names = [
     ("PERSON", "Sāriputta"), ("PERSON", "Sariputta"),
-    ("PERSON", "Ānanda"),    ("PERSON", "Ananda"),
+    ("PERSON", "Ānanda"), ("PERSON", "Ananda"),
     ("PERSON", "Moggallāna"),("PERSON", "Moggallana"),
     ("PERSON", "Master Gotama"), ("PERSON", "Gotama"),
     ("PERSON", "King Pasenadi"), ("PERSON", "Bimbisara"),
     ("PERSON", "Malunkyaputta"), ("PERSON", "Maha Kotthita"),
-    ("TITLE",  "the Blessed One"),
+    ("PERSON", "Ratthapala"), ("PERSON", "Mara"),
+    ("PERSON", "Rahula"),     ("PERSON", "Anathapindika"),
+    ("PERSON", "Dhanañjanin"),  ("PERSON", "Angulimala"),
+    ("PERSON", "Assalayana"), ("PERSON", "Sāti"),
+    ("GPE", "Rajagaha"),
     ("GPE", "Rājagaha"), ("GPE", "Rajagaha"),
     ("GPE", "Deer Park"), ("GPE", "Udañña"),
     ("GPE", "Salavatika"),
@@ -88,7 +92,7 @@ def run_from_bundle(bundle_dir: Path, k_topics=20, sparsity=False):
         for row in top_docs(W, docs, j, 5):
             print(f"{row['identifier']:<22} {row['title'][:48]:48}  w={row['weight']:.3f}")
 
-def build_then_run(conn, sql: str, out_dir: Path, k_topics=20, sparsity=False):
+def build_then_run(conn, sql: str, out_dir: Path, k_topics=25, sparsity=False):
     # Build corpus once (materialize to avoid exhausted iterators)
     builder = CorpusBuilder(conn, sql)
     texts = list(builder)
@@ -114,15 +118,15 @@ if __name__ == "__main__":
     # --- choose ONE path below ---
 
     # A) from existing bundle
-    run_from_bundle(Path("mn"), k_topics=20, sparsity=False)
+    # run_from_bundle(Path("mn"), k_topics=20, sparsity=False)
 
     # B) or build fresh from SQL, then run
-    # import psycopg
-    # with psycopg.connect("dbname=tipitaka user=alee") as conn:
-    #     sql = """
-    #       SELECT doc_id, identifier, title, raw_text
-    #       FROM suttas
-    #       WHERE LENGTH(raw_text) > 1000
-    #         AND translator ILIKE '%hanissaro%'
-    #     """
-    #     build_then_run(conn, sql, Path("tfidf_run"), k_topics=20, sparsity=False)
+    import psycopg
+    with psycopg.connect("dbname=tipitaka user=alee") as conn:
+        sql = """
+          SELECT doc_id, identifier, title, raw_text
+          FROM suttas
+          WHERE nikaya = 'Majjhima'
+            AND translator = 'Thanissaro Bhikkhu'
+        """
+        build_then_run(conn, sql, Path("tfidf_run"), k_topics=45, sparsity=False)
