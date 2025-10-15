@@ -65,7 +65,7 @@ def try_lsa():
 
 def run_pipeline():
     sql = """
-         select doc_id, identifier, title, raw_text from suttas where LENGTH(raw_text) > 1000 AND translator = 'Thanissaro Bhikkhu';
+         select id, identifier, title, body from ati_suttas where translator = 'Thanissaro Bhikkhu';
         """
     
     texts = list(CorpusBuilder(conn, sql))  # list of strings
@@ -76,11 +76,11 @@ def run_pipeline():
     return Z
 
 if __name__ == "__main__":
-    build_small_matrix()
-    some_queries()
-    pos, neg = try_lsa()
-    print("Comp 0 ++", ", ".join(pos))
-    print("Comp 0 --", ", ".join(neg))
+    # build_small_matrix()
+    # some_queries()
+    # pos, neg = try_lsa()
+    # print("Comp 0 ++", ", ".join(pos))
+    # print("Comp 0 --", ", ".join(neg))
 
     Z = run_pipeline()
     print(Z)
