@@ -39,7 +39,7 @@ sql = """
     )
     SELECT regexp_replace(trim(ptext), E'[\\t\\n\\r]+', ' ', 'g') AS paragraph
     FROM hits
-    ORDER BY rank DESC, length(ptext) DESC LIMIT 100;
+    ORDER BY rank DESC, length(ptext) DESC LIMIT 1000;
 """
 
 params = {"term": term}

@@ -126,3 +126,13 @@
 {"label": "PERSON", "pattern": "Kokanuda"}
 {"label": "LOC", "pattern": [{"LOWER": "tapoda"}, {"LOWER": {"IN": ["monastery", "vihara"]}}]}
 {"label": "LOC", "pattern": [{"LOWER": "tapoda"}, {"LOWER": "hot"}, {"LOWER": {"IN": ["spring", "springs"]}}]}
+{"label":"LOC","pattern":[{"LOWER":{"IN":["simsapa","simsapā","bamboo","bhesakala","blind","anathapindika","anāthapiṇḍika","isipatana","banyan","varanasi","vāraṇasī"]}},{"LOWER":{"IN":["grove","park","refuge","sanctuary","monastery"]}}]}
+{"label":"LOC","pattern":[{"LOWER":"squirrels'"},{"LOWER":{"IN":["sanctuary","park","refuge"]}}]}
+{"label":"LOC","pattern":[{"LOWER":"squirrel's"},{"LOWER":{"IN":["sanctuary","park","refuge"]}}]}
+{"label":"LOC","pattern":[{"LOWER":"squirrel"},{"LOWER":{"IN":["sanctuary","park","refuge"]}}]}
+{"label":"NORP","pattern":[{"LOWER":"brahman"}]}
+{"label":"NORP","pattern":[{"LOWER":"brahmans"}]}
+{"label":"NORP","pattern":[{"LOWER":"brahman"},{"LOWER":"householders"}]}
+{"label":"NORP","pattern":[{"LOWER":"brahman"},{"LOWER":"householder"}]}
+{"label":"LOC","pattern":[{"LOWER":"anathapindika's"},{"LOWER":{"IN":["park","grove","monastery"]}}]}
+{"label":"LOC","pattern":[{"LOWER":"anāthapiṇḍika's"},{"LOWER":{"IN":["park","grove","monastery"]}}]}

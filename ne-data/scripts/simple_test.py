@@ -18,6 +18,11 @@ tests = [
     "The brahman householders of Icchanangala heard it said, 'Gotama the contemplative — the son of the Sakyans, having gone forth from the Sakyan clan — on a wandering tour among the Kosalans with a large community of monks — has arrived at Icchanangala and is staying in the Icchanangala forest grove.'",
     "I have heard that on one occasion the Blessed One was staying near Rājagaha at the Bamboo Grove, the Squirrels' Sanctuary.",
     "Then Ven. Upasena said, \"Quick, friends, lift this body of mine onto a couch and carry it outside before it is scattered like a fistful of chaff!\"",
+    "He walked near Squirrels' Refuge in Rajagaha.",
+    "The monks gathered in the Deer Park at Isipatana.",
+    "Anāthapiṇḍika's Monastery was quiet at dawn.",
+    "The brahman householders of Savatthi offered alms.",
+    "Ven. Kesi was teaching at Jeta’s Grove near Sāvatthī.",
 ]   
 
 for text in tests:
