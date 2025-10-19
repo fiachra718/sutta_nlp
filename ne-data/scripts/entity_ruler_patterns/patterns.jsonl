@@ -1,0 +1,128 @@
+{"label": "NORP", "pattern": [{"TEXT": {"REGEX": "(?i)^brahmans?$"}}]}
+{"label": "NORP", "pattern": [{"LOWER": "ajivakas"}]}
+{"label": "NORP", "pattern": "Bhaggas"}
+{"label": "NORP", "pattern": "Sakyans"}
+{"label": "NORP", "pattern": "Sākyā"}
+{"label": "PERSON", "pattern": "Blessed One"}
+{"label": "PERSON", "pattern": [{"LOWER": "sariputta"}]}
+{"label": "PERSON", "pattern": [{"LOWER": "ven."}, {"LOWER": "sariputta"}]}
+{"label": "PERSON", "pattern": "Ananda"}
+{"label": "PERSON", "pattern": "Ānanda"}
+{"label": "PERSON", "pattern": [{"LOWER": "ven."}, {"LOWER": "ananda"}]}
+{"label": "PERSON", "pattern": [{"LOWER": "master"}, {"LOWER": "ananda"}]}
+{"label": "PERSON", "pattern": "Dhanañjanin"}
+{"label": "PERSON", "pattern": "Cunda"}
+{"label": "PERSON", "pattern": "Gotama"}
+{"label": "PERSON", "pattern": "Tathagata"}
+{"label": "PERSON", "pattern": "Aggivessana"}
+{"label": "PERSON", "pattern": "Moggallana"}
+{"label": "PERSON", "pattern": "Tissa"}
+{"label": "PERSON", "pattern": "Lohicca"}
+{"label": "PERSON", "pattern": "Visakha"}
+{"label": "PERSON", "pattern": "Anathapindika"}
+{"label": "PERSON", "pattern": "Anāthapiṇḍika"}
+{"label": "PERSON", "pattern": "Jivaka Komarabhacca"}
+{"label": "PERSON", "pattern": "King Ajatasattu"}
+{"label": "PERSON", "pattern": "King Ajatasattu of Magadha"}
+{"label": "PERSON", "pattern": "Queen Videha"}
+{"label": "PERSON", "pattern": "Kevatta"}
+{"label": "PERSON", "pattern": "Arittha"}
+{"label": "PERSON", "pattern": "Kesi"}
+{"label": "PERSON", "pattern": "Kesī"}
+{"label": "PERSON", "pattern": [{"LOWER": "māra"}]}
+{"label": "PERSON", "pattern": [{"LOWER": "mara"}]}
+{"label": "PERSON", "pattern": "Sujātā"}
+{"label": "PERSON", "pattern": "Suppabuddha"}
+{"label": "PERSON", "pattern": "Tagarasikhin"}
+{"label": "PERSON", "pattern": [{"LOWER": "kesi"}, {"LOWER": "the"}, {"LOWER": {"IN": ["horse-trainer", "horse", "trainer"]}}]}
+{"label": "PERSON", "pattern": [{"LOWER": "kesi"}, {"LOWER": "the"}, {"LOWER": "horse"}, {"LOWER": "trainer"}]}
+{"label": "GPE", "pattern": [{"LOWER": "icchanangala"}]}
+{"label": "NORP", "pattern": [{"LOWER": {"IN": ["brahman", "brahmin", "brāhmaṇa", "brahmans"]}}, {"LOWER": {"IN": ["householder", "householders"]}}]}
+{"label": "NORP", "pattern": [{"LOWER": "householders of icchanangala"}]}
+{"label": "GPE", "pattern": "Savatthi"}
+{"label": "GPE", "pattern": "Sāvatthī"}
+{"label": "GPE", "pattern": "Rajagaha"}
+{"label": "GPE", "pattern": "Rājagaha"}
+{"label": "GPE", "pattern": "Kosambi"}
+{"label": "GPE", "pattern": "Veluvagamaka"}
+{"label": "GPE", "pattern": "Vesali"}
+{"label": "GPE", "pattern": "Vesālī"}
+{"label": "GPE", "pattern": "Atthakanagara"}
+{"label": "GPE", "pattern": "Pataliputta"}
+{"label": "GPE", "pattern": "Nalanda"}
+{"label": "GPE", "pattern": "Benares"}
+{"label": "LOC", "pattern": [{"LOWER": "jetavana"}]}
+{"label": "LOC", "pattern": [{"LOWER": "veluvana"}]}
+{"label": "LOC", "pattern": [{"LOWER": "nigrodhārāma"}]}
+{"label": "LOC", "pattern": [{"LOWER": "ambapālivana"}]}
+{"label": "LOC", "pattern": [{"LOWER": "ambapāli’s"}, {"LOWER": "grove"}]}
+{"label": "LOC", "pattern": [{"LOWER": "jīvaka’s"}, {"LOWER": "mango"}, {"LOWER": "grove"}]}
+{"label": "LOC", "pattern": [{"LOWER": "bhesakaḷāvana"}]}
+{"label": "LOC", "pattern": [{"LOWER": "sītavana"}]}
+{"label": "LOC", "pattern": [{"LOWER": "nandavana"}]}
+{"label": "LOC", "pattern": [{"LOWER": "isipatana"}, {"LOWER": "deer"}, {"LOWER": "park"}]}
+{"label": "LOC", "pattern": [{"LOWER": "deer"}, {"LOWER": "park"}, {"LOWER": "at"}, {"LOWER": "isipatana"}]}
+{"label": "LOC", "pattern": [{"LOWER": "migadāya"}]}
+{"label": "LOC", "pattern": [{"LOWER": "vulture"}, {"LOWER": "peak"}]}
+{"label": "LOC", "pattern": [{"LOWER": "vulture's"}, {"LOWER": "peak"}, {"LOWER": "mountain"}]}
+{"label": "LOC", "pattern": "Gijjhakūṭa"}
+{"label": "LOC", "pattern": [{"LOWER": "cāpāla"}, {"LOWER": "shrine"}]}
+{"label": "LOC", "pattern": [{"LOWER": "pipphali"}, {"LOWER": "cave"}]}
+{"label": "LOC", "pattern": [{"LOWER": "pigeon"}, {"LOWER": "cave"}]}
+{"label": "LOC", "pattern": "Kukkutārāma"}
+{"label": "LOC", "pattern": "Pubbārāma"}
+{"label": "LOC", "pattern": [{"LOWER": "anāthapiṇḍika"}, {"LOWER": {"IN": ["'s", "’s"]}}, {"LOWER": {"IN": ["park", "monastery"]}}]}
+{"label": "LOC", "pattern": [{"LOWER": "anathapindika"}, {"LOWER": {"IN": ["'s", "’s"]}}, {"LOWER": {"IN": ["park", "monastery"]}}]}
+{"label": "LOC", "pattern": [{"LOWER": "ivory"}, {"LOWER": {"IN": ["grove", "park"]}}]}
+{"label": "LOC", "pattern": "Simsapā Grove"}
+{"label": "LOC", "pattern": "Simsapa Grove"}
+{"label": "LOC", "pattern": "Banyan Grove"}
+{"label": "LOC", "pattern": "Banyan Park"}
+{"label": "LOC", "pattern": "Gosingasālavana"}
+{"label": "LOC", "pattern": "Sālavana"}
+{"label": "LOC", "pattern": "Kalandaka Nivāpa"}
+{"label": "LOC", "pattern": "Bamboo Grove"}
+{"label": "LOC", "pattern": "Bamboo Park"}
+{"label": "LOC", "pattern": [{"LOWER": "vediyaka"}, {"LOWER": "rock"}]}
+{"label": "LOC", "pattern": "Mallans' sal-grove"}
+{"label": "LOC", "pattern": "Hiraññavati River"}
+{"label": "LOC", "pattern": "Kukkata Monastery"}
+{"label": "LOC", "pattern": "Blind Man's Grove"}
+{"label": "LOC", "pattern": "Blind Man’s Grove"}
+{"label": "LOC", "pattern": [{"LOWER": "blind"}, {"LOWER": "man"}, {"LOWER": {"IN": ["'s", "’s"]}}, {"LOWER": "grove"}]}
+{"label": "LOC", "pattern": "Bhesakala Grove"}
+{"label": "LOC", "pattern": [{"LOWER": "bhesakala"}, {"LOWER": "grove"}]}
+{"label": "LOC", "pattern": "Isipatana Deer Park"}
+{"label": "LOC", "pattern": "Vārāṇasī’s Deer Park"}
+{"label": "LOC", "pattern": "Varanasi's Deer Park"}
+{"label": "LOC", "pattern": [{"LOWER": "vārāṇasī"}, {"LOWER": {"IN": ["'s", "’s"]}}, {"LOWER": "deer"}, {"LOWER": "park"}]}
+{"label": "LOC", "pattern": [{"LOWER": "varanasi"}, {"LOWER": {"IN": ["'s", "’s"]}}, {"LOWER": "deer"}, {"LOWER": "park"}]}
+{"label": "LOC", "pattern": [{"LOWER": "jeta"}, {"LOWER": {"IN": ["'s", "’s"]}}, {"LOWER": {"IN": ["grove", "park"]}}]}
+{"label": "PERSON", "pattern": "Maha Kotthita"}
+{"label": "PERSON", "pattern": "Khema"}
+{"label": "PERSON", "pattern": "Sumana"}
+{"label": "PERSON", "pattern": "Vassakara"}
+{"label": "GPE", "pattern": "Magadha"}
+{"label": "LOC", "pattern": [{"LOWER": "bamboo"}, {"LOWER": "grove"}, {"IS_PUNCT": true, "OP": "?"}, {"LOWER": "the"}, {"LOWER": {"IN": ["squirrels'", "squirrels’"]}}, {"LOWER": "sanctuary"}]}
+{"label": "LOC", "pattern": [{"LOWER": "the"}, {"LOWER": {"IN": ["squirrels'", "squirrels’"]}}, {"LOWER": "sanctuary"}]}
+{"label": "LOC", "pattern": [{"LOWER": "deer"}, {"LOWER": "park"}]}
+{"label": "LOC", "pattern": [{"LOWER": "crocodile"}, {"LOWER": "haunt"}]}
+{"label": "PERSON", "pattern": [{"LOWER": "nakula's"}, {"LOWER": "father"}]}
+{"label": "PERSON", "pattern": [{"LOWER": "nakula's"}, {"LOWER": "mother"}]}
+{"label": "NORP", "pattern": [{"LOWER": {"IN": ["white-clad", "white", "white-clad"]}}, {"LOWER": {"IN": ["householder", "householders"]}}, {"LOWER": {"IN": ["female", "women"]}}, {"LOWER": {"IN": ["disciple", "disciples"]}}]}
+{"label": "NORP", "pattern": [{"LOWER": "white"}, {"LOWER": "clad"}, {"LOWER": {"IN": ["householder", "householders"]}}, {"LOWER": {"IN": ["female", "women"]}}, {"LOWER": {"IN": ["disciple", "disciples"]}}]}
+{"label": "NORP", "pattern": [{"LOWER": {"IN": ["white-clad", "white", "white-clad"]}}, {"LOWER": {"IN": ["lay", "laity", "laywoman", "laywomen"]}}, {"LOWER": {"IN": ["disciple", "disciples"]}}]}
+{"label": "GPE", "pattern": [{"LOWER": {"IN": ["giribbaja", "girivraja"]}}]}
+{"label": "PERSON", "pattern": "Sutavan"}
+{"label": "GPE", "pattern": "Giribbaja"}
+{"label": "LOC", "pattern": [{"LOWER": "vulture"}, {"LOWER": "peak"}, {"LOWER": "mountain"}]}
+{"label": "LOC", "pattern": [{"LOWER": "vulture"}, {"LOWER": "peak"}]}
+{"label": "GPE", "pattern": "Saketa"}
+{"label": "LOC", "pattern": [{"LOWER": "game"}, {"LOWER": "refuge"}]}
+{"label": "LOC", "pattern": [{"LOWER": "black"}, {"LOWER": "forest"}]}
+{"label": "PERSON", "pattern": "Jatila Bhagika"}
+{"label": "NORP", "pattern": [{"LOWER": {"IN": ["wanderer", "wanderers"]}}, {"LOWER": "of"}, {"LOWER": "other"}, {"LOWER": {"IN": ["persuasion", "persuasions"]}}]}
+{"label": "NORP", "pattern": [{"LOWER": {"IN": ["disciple", "disciples"]}}, {"LOWER": "of"}, {"LOWER": "gotama"}, {"LOWER": {"IN": [",", "the"]}, "OP": "?"}, {"LOWER": {"IN": ["contemplative", "buddha"]}, "OP": "?"}, {"LOWER": ",", "OP": "?"}, {"LOWER": {"IN": ["clad", "who"]}, "OP": "?"}, {"LOWER": "in", "OP": "?"}, {"LOWER": "white", "OP": "?"}]}
+{"label": "PERSON", "pattern": "Kokanuda"}
+{"label": "LOC", "pattern": [{"LOWER": "tapoda"}, {"LOWER": {"IN": ["monastery", "vihara"]}}]}
+{"label": "LOC", "pattern": [{"LOWER": "tapoda"}, {"LOWER": "hot"}, {"LOWER": {"IN": ["spring", "springs"]}}]}
