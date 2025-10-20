@@ -1,0 +1,1 @@
+{"label":"LOC","id":"hermitage_of_person_brahman","pattern":[ {"LOWER":"the"}, {"LOWER":"hermitage"}, {"LOWER":"of"}, {"IS_TITLE":true}, {"LOWER":"the"}, {"LOWER":{"REGEX":"brahman|brāhmaṇa"}} ]}

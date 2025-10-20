@@ -20,6 +20,7 @@ MODELS_DIR  = NE_DATA / "models" / "model-more" / "model-best"
 PATTERNS    = NE_DATA / "patterns" / "entity_ruler" / "patterns.jsonl"
 
 # frequently used files
+SPAN_PATTERNS = NE_DATA / "patterns" / "span_ruler"
 TRAIN_SPACY = WORK / "train.spacy"
 DEV_SPACY   = WORK / "dev.spacy"
 MERGED_SPACY= WORK / "train_merged.spacy"

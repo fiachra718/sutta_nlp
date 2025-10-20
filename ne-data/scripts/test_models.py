@@ -1,44 +1,58 @@
 import spacy
+from spacy.pipeline import EntityRuler
+import json
 from pathlib import Path
-import os
+from local_settings import MODELS_DIR, WORK  # , PATTERNS, SPAN_PATTERNS
 
-from local_settings import MODELS_DIR, PATTERNS
-print(PATTERNS)
-print(MODELS_DIR)
+ENTITY_PATTERNS = Path("ne-data/patterns/entity_ruler/patterns.jsonl")
+SPAN_PATTERNS = Path("ne-data/patterns/span_ruler/loc_phrases.json")
+
+def entity_pos(model, text):
+    doc = nlp(text)
+    results = {}
+    entities = []
+    for ent in doc.ents:
+        entities.append({"start": ent.start_char, "end": ent.end_char,"label": ent.label_})
+    if len(entities):
+        results = {"text": text, "spans": [ent for ent in entities]}
+    return (results)
+
+def load_my_ner():
+    ''' becasue SpaCy is finicky, I am going to leave this here '''
+    ## load the model
+    nlp = spacy.load(MODELS_DIR)
+    # clear the pipe
+    for name in ("entity_ruler", "span_ruler"):
+        if name in nlp.pipe_names:
+            nlp.remove_pipe(name)
+    # add the entity rules
+    er = nlp.add_pipe(
+        "entity_ruler",
+        after="ner",
+        config={"overwrite_ents": True}
+    )
+    er.from_disk(str(ENTITY_PATTERNS))            # load patterns so no [W036] warning
+    # add the LOC/span patterns
+    sr = nlp.add_pipe(
+        "span_ruler",
+        last=True,
+        config={"spans_key": "LOC_PHRASES", "overwrite": True}
+    )
+    sr.from_disk("ne-data/patterns/span_ruler")  # folder; contains a file named 'patterns'
+    print("Pipeline:", nlp.pipe_names)
+    return (nlp)
 
 
-sentences = [
-    "At that time the Venerable Upavana was standing before the Blessed One, fanning him. And the Blessed One rebuked him, saying: Move aside, bhikkhu, do not stand in front of me.",
-    "Then Brahma Sahampati, thinking, The Blessed One has given his consent to teach the Dhamma, bowed down to the Blessed One and, circling him on the right, disappeared right there.",
-     "Then King Pasenadi Kosala, delighting in and approving of the Blessed One's words, got up from his seat, bowed down to the Blessed One and — keeping him to his right — departed.",
-""" I have heard that on one occasion the Blessed One was living among the Sumbhas . Now there is a Sumbhan town named Sedaka . There the Blessed One addressed the monks, "Monks!" """,
-""" I have heard that on one occasion the Blessed One was living among the Sumbhas . Now there is a Sumbhan town named Sedaka . There the Blessed One addressed the monks, "Monks!" """,
-""" So King Pasenadi Kosala, delighting in and approving of the Blessed One's words, got up from his seat, bowed down to the Blessed One and — keeping him to his right — departed. """,
-""" I have heard that on one occasion the Blessed One was staying among the Angas . Now, the Angas have a town named Assapura . There the Blessed One addressed the monks, "Monks!" """,
-""" That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words. And while this explanation was being given, the ten-thousand fold cosmos quaked. """,
-""" "Yes, indeed, friends. I understand the Dhamma taught by the Blessed One, and those acts the Blessed One says are obstructive, when indulged in are not genuine obstructions." """,
-""" I have heard that on one occasion the Blessed One was staying at Ukkattha , in the shade of a royal Sal tree in the Very Blessed Grove. There he addressed the monks, "Monks!" """,
-"""Thus it was heard by me. At one time the Blessed One was living in the deer park of Isipatana near Benares. There, indeed, the Blessed One addressed the group of five monks.""",
-]
+sentences = []
+with open(WORK / "evaluate_these.txt", "r", encoding="utf-8") as f:
+    for line in f:
+        sentences.append(line.strip())
 
-nlp = spacy.load(MODELS_DIR)
-nlp.remove_pipe("entity_ruler")
-ruler = nlp.add_pipe("entity_ruler", before="ner")
-ruler.from_disk(PATTERNS)
+nlp = load_my_ner()
 
 for s in sentences:
     doc = nlp(s)
-    print(s)
-    print([(ent.text, ent.label_) for ent in doc.ents])
-
-nlp = spacy.load(MODELS_DIR)
-nlp.remove_pipe("entity_ruler")
-ruler = nlp.add_pipe("entity_ruler", after="ner")
-ruler.from_disk(PATTERNS)
-
-print("------------------\n\n")
-for s in sentences:
-    doc = nlp(s)
-    print(s)
-    print([(ent.text, ent.label_) for ent in doc.ents])
-
+    training_jsonl = entity_pos(nlp, s.strip())
+    if training_jsonl:
+        print(json.dumps(training_jsonl, ensure_ascii=False))
+    
