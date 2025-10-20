@@ -1,3 +1,5 @@
+{"label": "PERSON", "pattern": [ {"TEXT": {"REGEX": "(?i)^ven(?:\\.|erable)?$"}}, {"IS_TITLE": true, "OP": "+"} ]}
+{"label": "PERSON", "pattern": [ {"TEXT": {"REGEX": "(?i)^king$"}}, {"IS_TITLE": true, "OP": "+"} ]}
 {"label": "NORP", "pattern": [{"TEXT": {"REGEX": "(?i)^brahmans?$"}}]}
 {"label": "NORP", "pattern": [{"LOWER": "ajivakas"}]}
 {"label": "NORP", "pattern": "Bhaggas"}
@@ -92,7 +94,6 @@
 {"label": "LOC", "pattern": [{"LOWER": "blind"}, {"LOWER": "man"}, {"LOWER": {"IN": ["'s", "’s"]}}, {"LOWER": "grove"}]}
 {"label": "LOC", "pattern": "Bhesakala Grove"}
 {"label": "LOC", "pattern": [{"LOWER": "bhesakala"}, {"LOWER": "grove"}]}
-{"label": "LOC", "pattern": "Isipatana Deer Park"}
 {"label": "LOC", "pattern": "Vārāṇasī’s Deer Park"}
 {"label": "LOC", "pattern": "Varanasi's Deer Park"}
 {"label": "LOC", "pattern": [{"LOWER": "vārāṇasī"}, {"LOWER": {"IN": ["'s", "’s"]}}, {"LOWER": "deer"}, {"LOWER": "park"}]}
@@ -126,7 +127,8 @@
 {"label": "PERSON", "pattern": "Kokanuda"}
 {"label": "LOC", "pattern": [{"LOWER": "tapoda"}, {"LOWER": {"IN": ["monastery", "vihara"]}}]}
 {"label": "LOC", "pattern": [{"LOWER": "tapoda"}, {"LOWER": "hot"}, {"LOWER": {"IN": ["spring", "springs"]}}]}
-{"label":"LOC","pattern":[{"LOWER":{"IN":["simsapa","simsapā","bamboo","bhesakala","blind","anathapindika","anāthapiṇḍika","isipatana","banyan","varanasi","vāraṇasī"]}},{"LOWER":{"IN":["grove","park","refuge","sanctuary","monastery"]}}]}
+{"label":"LOC","pattern":[{"LOWER":{"IN":["simsapa","simsapā","bamboo","bhesakala","blind","anathapindika","anāthapiṇḍika","banyan","varanasi","vāraṇasī"]}},{"LOWER":{"IN":["grove","park","refuge","sanctuary","monastery"]}}]}
+{"label": "GPE","pattern":"Isipatana"}
 {"label":"LOC","pattern":[{"LOWER":"squirrels'"},{"LOWER":{"IN":["sanctuary","park","refuge"]}}]}
 {"label":"LOC","pattern":[{"LOWER":"squirrel's"},{"LOWER":{"IN":["sanctuary","park","refuge"]}}]}
 {"label":"LOC","pattern":[{"LOWER":"squirrel"},{"LOWER":{"IN":["sanctuary","park","refuge"]}}]}
@@ -136,3 +138,7 @@
 {"label":"NORP","pattern":[{"LOWER":"brahman"},{"LOWER":"householder"}]}
 {"label":"LOC","pattern":[{"LOWER":"anathapindika's"},{"LOWER":{"IN":["park","grove","monastery"]}}]}
 {"label":"LOC","pattern":[{"LOWER":"anāthapiṇḍika's"},{"LOWER":{"IN":["park","grove","monastery"]}}]}
+{"label":"NORP","pattern":[{"LOWER":"sumbhas","IS_PUNCT":false}]}
+{"label":"NORP","pattern":[{"LOWER":"angas","IS_PUNCT":false}]}
+{"label":"GPE","pattern":[{"LOWER":"sedaka","IS_PUNCT":false}]}
+{"label":"LOC","pattern":[{"LOWER":"deer"},{"LOWER":"park"}]}

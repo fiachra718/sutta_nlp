@@ -16,7 +16,7 @@ REPO_ROOT = next(p for p in Path(__file__).resolve().parents if p.name == "ne-da
 # then *all* things are good in the world
 TRAIN_JSONL = REPO_ROOT / "work/train.jsonl"
 DEV_JSONL   = REPO_ROOT / "work/dev.jsonl"
-PATTERNS    = REPO_ROOT / "scripts/entity_ruler_patterns/patterns.jsonl"
+PATTERNS    = REPO_ROOT / "patterns/entity_ruler/patterns.jsonl"
 OUTDIR      = REPO_ROOT / "work/model_minimal"
 
 # ---- helper: load JSONL into Examples ----

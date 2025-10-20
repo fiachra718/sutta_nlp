@@ -15,8 +15,9 @@ REPO_ROOT = Path(os.environ.get("REPO_ROOT", REPO_ROOT))
 NE_DATA     = REPO_ROOT / "ne-data"
 WORK        = NE_DATA / "work"
 SCRIPTS     = NE_DATA / "scripts"
-PATTERNS    = SCRIPTS / "entity_ruler_patterns" / "patterns.jsonl"
-MODELS_DIR  = WORK / "model_minimal" 
+
+MODELS_DIR  = NE_DATA / "models" / "model-more" / "model-best"
+PATTERNS    = NE_DATA / "patterns" / "entity_ruler" / "patterns.jsonl"
 
 # frequently used files
 TRAIN_SPACY = WORK / "train.spacy"
@@ -25,5 +26,11 @@ MERGED_SPACY= WORK / "train_merged.spacy"
 PARAS_TXT   = WORK / "paras.txt"
 
 # helpful: ensure dirs exist (no-ops if they already do)
-for p in (NE_DATA, WORK, SCRIPTS, MODELS_DIR, PATTERNS.parent):
+for p in (
+    NE_DATA,
+    WORK,
+    SCRIPTS,
+    MODELS_DIR,
+    PATTERNS.parent,
+):
     p.mkdir(parents=True, exist_ok=True)

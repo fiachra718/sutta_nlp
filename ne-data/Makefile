@@ -4,7 +4,7 @@ REPO_ROOT := $(abspath $(dir $(lastword $(MAKEFILE_LIST))))
 WORK    := $(REPO_ROOT)/work
 SCRIPTS := $(REPO_ROOT)/scripts
 MODEL   := $(WORK)/model_minimal
-PATTERNS := $(SCRIPTS)/entity_ruler_patterns/patterns.jsonl
+PATTERNS := $(REPO_ROOT)/patterns/entity_ruler/patterns.jsonl
 
 TRAIN_JSONL := $(WORK)/train.jsonl
 DEV_JSONL := $(WORK)/dev.jsonl

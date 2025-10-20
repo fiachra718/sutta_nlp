@@ -34,9 +34,18 @@ sutta_nlp/
 │  └─ gold/
 │     └─ hand_picks.jsonl          # hand picks promoted to JSONL with spans
 ├─ models/
-│  ├─ sutta_ner-v2/
-│  │  └─ ruler_patterns(_nfc|_nfc_clean)/
-│  └─ sutta_ner-v3/                 # new outputs land here
+│  ├─ model-more/
+│  │  ├─ model-best/
+│  │  └─ model-last/
+│  └─ archive/
+│     ├─ sutta_ner-v1/
+│     ├─ sutta_ner-v2/
+│     │  └─ ruler_patterns(_nfc|_nfc_clean)/
+│     └─ sutta_ner-v3/              # new outputs landed here previously
+├─ patterns/
+│  └─ entity_ruler/
+│     ├─ cfg
+│     └─ patterns.jsonl
 ├─ scripts/
 │  ├─ batch_add_spans.py
 │  ├─ clean_and_validate_jsonl.py
