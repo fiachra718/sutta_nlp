@@ -37,28 +37,24 @@
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "sutavan"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "jatila"}, {"IS_TITLE": true, "LOWER": "bhagika"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "kokanuda"}]}
+{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "udayin"}]}
+{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "mahaka"}]}
 {"label":"PERSON","pattern":[{"LOWER":{"REGEX":"^(ven\\.?|venerable)$"}},{"IS_TITLE":true},{"IS_TITLE":true,"OP":"?"}]} 
 
-{"label": "NORP", "pattern": [{"TEXT": {"REGEX": "(?i)^brahmans?$"}}]}
-{"label": "NORP","pattern":[{"LOWER":{"REGEX":"^devas?$"}}]}
-{"label": "NORP", "pattern": [{"LOWER": "ajivakas"}]}
-{"label": "NORP", "pattern": [{"LOWER": {"IN": ["brahman", "brahmin", "brāhmaṇa", "brahmans"]}}, {"LOWER": {"IN": ["householder", "householders"]}}]}
-{"label": "NORP", "pattern": [{"LOWER": "householders of icchanangala"}]}
-{"label": "NORP", "pattern": "Bhaggas"}
-{"label": "NORP", "pattern": "Sakyans"}
-{"label": "NORP", "pattern": "Sākyān"}
-{"label": "NORP", "pattern": "Sākyā"}
-{"label": "NORP", "pattern": "Cetis"}
-{"label": "NORP", "pattern": "Cetis"}
-{"label": "NORP", "pattern": [{"LOWER": {"IN": ["white-clad", "white", "white-clad"]}}, {"LOWER": {"IN": ["householder", "householders"]}}, {"LOWER": {"IN": ["female", "women"]}}, {"LOWER": {"IN": ["disciple", "disciples"]}}]}
-{"label": "NORP", "pattern": [{"LOWER": "white"}, {"LOWER": "clad"}, {"LOWER": {"IN": ["householder", "householders"]}}, {"LOWER": {"IN": ["female", "women"]}}, {"LOWER": {"IN": ["disciple", "disciples"]}}]}
-{"label": "NORP", "pattern": [{"LOWER": {"IN": ["white-clad", "white", "white-clad"]}}, {"LOWER": {"IN": ["lay", "laity", "laywoman", "laywomen"]}}, {"LOWER": {"IN": ["disciple", "disciples"]}}]}
-{"label": "NORP", "pattern": [{"LOWER": {"IN": ["wanderer", "wanderers"]}}, {"LOWER": "of"}, {"LOWER": "other"}, {"LOWER": {"IN": ["persuasion", "persuasions"]}}]}
-{"label": "NORP", "pattern": [{"LOWER": {"IN": ["disciple", "disciples"]}}, {"LOWER": "of"}, {"LOWER": "gotama"}, {"LOWER": {"IN": [",", "the"]}, "OP": "?"}, {"LOWER": {"IN": ["contemplative", "buddha"]}, "OP": "?"}, {"LOWER": ",", "OP": "?"}, {"LOWER": {"IN": ["clad", "who"]}, "OP": "?"}, {"LOWER": "in", "OP": "?"}, {"LOWER": "white", "OP": "?"}]}
-{"label":"NORP","pattern":[{"LOWER":"brahman"},{"LOWER":"householders"}]}
-{"label":"NORP","pattern":[{"LOWER":"brahman"},{"LOWER":"householder"}]}
-{"label":"NORP","pattern":[{"LOWER":"sumbhas","IS_PUNCT":false}]}
-{"label":"NORP","pattern":[{"LOWER":"angas","IS_PUNCT":false}]}
+{"label":"NORP","id":"Sakyans","pattern":[{"LOWER":{"REGEX":"sakyan(s)?|sākyan(s)?"}}]}
+{"label":"NORP","id":"Kurus","pattern":[{"LOWER":{"REGEX":"kuru(s)?"}}]}
+{"label":"NORP","id":"Sumbhas","pattern":[{"LOWER":{"REGEX":"sumbha(s)?"}}]}
+{"label":"NORP","id":"Angas","pattern":[{"LOWER":{"REGEX":"anga(s)?"}}]}
+{"label":"NORP","id":"Vajjis","pattern":[{"LOWER":{"REGEX":"vajji(s)?"}}]}
+{"label":"NORP","id":"Licchavis","pattern":[{"LOWER":{"REGEX":"licchavi(s)?"}}]}
+{"label":"NORP","id":"Koliyans","pattern":[{"LOWER":{"REGEX":"koliya(n|ns)?"}}]}
+{"label":"NORP","id":"Kosalans","pattern":[{"LOWER":{"REGEX":"kosalan(s)?"}}]}
+{"label":"NORP","id":"Magadhans","pattern":[{"LOWER":{"REGEX":"magadhan(s)?"}}]}
+{"label":"NORP","id":"Brahman","pattern":[{"LOWER":{"REGEX":"brahman|brāhmaṇa"} }]}
+{"label":"NORP","id":"Brahmans","pattern":[{"LOWER":{"REGEX":"brahmans|brāhmaṇas"} }]}
+{"label":"NORP","id":"Ajivikas","pattern":[{"LOWER":{"REGEX":"ajivika(s)?|ājīvika(s)?"}}]}
+{"label":"NORP","id":"Niganthas","pattern":[{"LOWER":{"REGEX":"nigantha(s)?|nirgrantha(s)?"}}]}
+
 
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["savatthi", "sāvatthī"]}}]}
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["rajagaha", "rājagaha"]}}]}

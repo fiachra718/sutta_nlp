@@ -1,4 +1,5 @@
 import spacy
+import config_helpers  # registers custom registry hooks for the exported model
 from spacy.pipeline import EntityRuler
 import json
 from pathlib import Path
@@ -12,7 +13,7 @@ def entity_pos(model, text):
     results = {}
     entities = []
     for ent in doc.ents:
-        entities.append({"start": ent.start_char, "end": ent.end_char,"label": ent.label_})
+        entities.append({"start": ent.start_char, "end": ent.end_char,"label": ent.label_, "text": ent.text})
     if len(entities):
         results = {"text": text, "spans": [ent for ent in entities]}
     return (results)
@@ -55,4 +56,5 @@ for s in sentences:
     training_jsonl = entity_pos(nlp, s.strip())
     if training_jsonl:
         print(json.dumps(training_jsonl, ensure_ascii=False))
-    
+    else: # we may have a negative training example
+        print("Negative example? : {}\n".format(s))
