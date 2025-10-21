@@ -1,25 +1,14 @@
 import json, re, sys
 from pathlib import Path
 
-TEXT = """And furthermore, with the fading of rapture, he remains equanimous, mindful, & alert, and senses pleasure with the body. He enters & remains in the third jhana, of which the Noble Ones declare, 'Equanimous & mindful, he has a pleasant abiding.'"""
-# Add the phrases you want labeled, in order they appear:
+TEXT = """What do you think, monks? Which would in fact be the better? If a strong man, having twisted a firm horse-hair rope around both calves, were to rub, so that the rope cut the skin, and having cut the skin it cut the under-skin, and having cut the under-skin it cut the flesh, and having cut the flesh it cut the sinew, and having cut the sinew it cut the bone, and having cut the bone it left the marrow exposed? Or, to derive enjoyment from the homage of rich kshatriyas, or rich brahmans, or rich householders?\" — \"This, venerable Sir, is surely the better: To derive enjoyment from the homage of rich kshatriyas, or rich brahmans, or rich householders. For it would be painful, venerable Sir, if a strong man, having twisted a firm hair-rope around both calves, were to rub, so that the rope cut the skin and so on until it left the marrow exposed. '"""
 TARGETS = [
-    ("NORP", "Noble Ones"),
-    # ("PERSON", "Vyagghapajja"),
-    # ("GPE", "Macchikasanda"),
-    # ("LOC", "Wild Mango Grove"),
-    # ("PERSON", "Citta"),
-    # ("PERSON", "Ratthapala"),
-
-    # ("GPE", "Rājagaha"),
-    # ("LOC", "Bamboo Grove"),
-    # ("LOC", "Squirrels' Sanctuary"),
-    # ("GPE", "Rājagaha"),
-    # ("PERSON", "Suppabuddha"),
-    # ("PERSON", "Blessed One"),
-    # ("PERSON", "Suppabuddha"),
-    # ("PERSON", "Blessed One"),
-    # ("PERSON", "Gotama"),
+    ("NORP", "kshatriyas"),
+    ("NORP", "brahmans"),
+    ("PERSON", "venerable Sir"),
+    ("NORP", "kshatriyas"),
+    ("NORP", "brahmans"),
+    ("PERSON", "venerable Sir"),
 ]
 
 def find_spans(text, targets):
