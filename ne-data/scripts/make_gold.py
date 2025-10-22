@@ -1,16 +1,6 @@
 import json, re, sys
 from pathlib import Path
 
-TEXT = """What do you think, monks? Which would in fact be the better? If a strong man, having twisted a firm horse-hair rope around both calves, were to rub, so that the rope cut the skin, and having cut the skin it cut the under-skin, and having cut the under-skin it cut the flesh, and having cut the flesh it cut the sinew, and having cut the sinew it cut the bone, and having cut the bone it left the marrow exposed? Or, to derive enjoyment from the homage of rich kshatriyas, or rich brahmans, or rich householders?\" — \"This, venerable Sir, is surely the better: To derive enjoyment from the homage of rich kshatriyas, or rich brahmans, or rich householders. For it would be painful, venerable Sir, if a strong man, having twisted a firm hair-rope around both calves, were to rub, so that the rope cut the skin and so on until it left the marrow exposed. '"""
-TARGETS = [
-    ("NORP", "kshatriyas"),
-    ("NORP", "brahmans"),
-    ("PERSON", "venerable Sir"),
-    ("NORP", "kshatriyas"),
-    ("NORP", "brahmans"),
-    ("PERSON", "venerable Sir"),
-]
-
 def find_spans(text, targets):
     spans = []
     pos = 0
@@ -28,6 +18,35 @@ def find_spans(text, targets):
         spans.append({"start": start, "end": end, "label": label})
         pos = end
     return spans
+
+
+TEXT = """The two sages Jali [6] and Atthaka, then Kosala, the enlightened one, then Subahu, Upanemisa, Nemisa, Santacitta, Sacca, Tatha, Viraja, and Pandita."""
+TARGETS = [
+    ("PERSON", "Jali"),
+    ("PERSON", "Atthaka"),
+    ("PERSON", "Kosala"),
+    ("PERSON", "Subahu"),
+    ("PERSON", "Upanemisa"),
+    ("PERSON", "Nemisa"),
+    ("PERSON", "Santacitta"),
+    ("PERSON", "Sacca"),
+    ("PERSON", "Tatha"),
+    ("PERSON", "Viraja"),
+    ("PERSON", "Pandita"),
+    # ("PERSON", "Subahu"),
+    # ("PERSON", "Subahu"),
+]
+
+
+spans = find_spans(TEXT, TARGETS)
+print(json.dumps({"text": TEXT, "spans": spans}, ensure_ascii=False))
+
+
+TEXT = "Pilgrims visited Isipatana Deer Park."
+TARGETS = [
+    ("NORP", "Pilgrims"),
+    ("LOC", "Isipatana Deer Park"),
+]
 
 spans = find_spans(TEXT, TARGETS)
 print(json.dumps({"text": TEXT, "spans": spans}, ensure_ascii=False))

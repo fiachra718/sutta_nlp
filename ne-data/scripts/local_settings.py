@@ -1,6 +1,9 @@
 # local_settings.py
 from pathlib import Path
 import os
+import spacy
+import config_helpers
+
 
 # ----- choose your anchor -----
 # A) anchor at this file's location (recommended)
@@ -35,3 +38,28 @@ for p in (
     PATTERNS.parent,
 ):
     p.mkdir(parents=True, exist_ok=True)
+
+def load_model():
+    nlp = spacy.load(MODELS_DIR)
+    # clear the pipe
+    for name in ("entity_ruler", "span_ruler"):
+        if name in nlp.pipe_names:
+            nlp.remove_pipe(name)
+
+    # add the entity rules
+    er = nlp.add_pipe(
+        "entity_ruler",
+        after="ner",
+        config={"overwrite_ents": True}
+    )
+    er.from_disk(str(PATTERNS))  
+
+    # add the LOC/span patterns
+    sr = nlp.add_pipe(
+        "span_ruler",
+        last=True,
+        config={"spans_key": "LOC_PHRASES", "overwrite": True}
+    )
+    sr.from_disk("ne-data/patterns/span_ruler")  # folder; contains a file named 'patterns'
+
+    return nlp

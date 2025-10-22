@@ -52,7 +52,10 @@ tests = [
     "Ven. Kesi was teaching at Jeta’s Grove near Sāvatthī.",
     "Once, friend, when I was staying in Saketa at the Game Refuge in the Black Forest, the nun Jatila Bhagika went to where I was staying, and on arrival — having bowed to me — stood to one side.",
     "As she was standing there, she said to me: 'The concentration whereby — neither pressed down nor forced back, nor with fabrication kept blocked or suppressed — still as a result of release, contented as a result of standing still, and as a result of contentment one is not agitated: This concentration is said by the Blessed One to be the fruit of what?'",
-    "Then Tapussa the householder went to Ven. Ananda and, on arrival, having bowed down to him, sat to one side. As he was sitting there he said to Ven. Ananda: \"Venerable Ananda, sir,"
+    "Then Tapussa the householder went to Ven. Ananda and, on arrival, having bowed down to him, sat to one side. As he was sitting there he said to Ven. Ananda: \"Venerable Ananda, sir,",
+    "Now it may be that you are thinking, 'Nakula's mother will not be able to support the children or maintain the household after I'm gone,' but you shouldn't see things in that way.",
+    "There is the case, Bharadvaja, where a monk lives in dependence on a certain village or town.",
+    "What do you think, monks? Which would in fact be the better? If a strong man were to strike the nether-quarters with a sharp, oil-cleaned sword? Or, to derive enjoyment when rich kshatriyas, brahmans, or householders press the palms together in prayer?",
 ]   
 
 for text in tests:

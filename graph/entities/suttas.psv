@@ -1,0 +1,858 @@
+     identifier      | nikaya | vagga | book_number |              title              |                   subtitle                   
+---------------------+--------+-------+-------------+---------------------------------+----------------------------------------------
+ mn.001.than.html    | MN     |       | 1           | Mulapariyaya Sutta              | The Root Sequence
+ mn.002.bpit.html    | MN     |       | 2           | Sabbasava Sutta                 | Discourse on All Āsavas
+ mn.002.than.html    | MN     |       | 2           | Sabbasava Sutta                 | All the Fermentations
+ mn.004.than.html    | MN     |       | 4           | Bhaya-bherava Sutta             | Fear & Terror
+ mn.007.nypo.html    | MN     |       | 7           | Vatthupama Sutta                | The Simile of the Cloth
+ mn.008.nypo.html    | MN     |       | 8           | Sallekha Sutta                  | The Discourse on Effacement
+ mn.009.ntbb.html    | MN     |       | 9           | Sammaditthi Sutta               | The Discourse on Right View
+ mn.009.than.html    | MN     |       | 9           | Sammaditthi Sutta               | Right View
+ mn.010.nysa.html    | MN     |       | 10          | Satipatthana Sutta              | The Foundations of Mindfulness
+ mn.010.soma.html    | MN     |       | 10          | Satipatthana Sutta              | The Discourse on the Arousing of Mindfulness
+ mn.010.than.html    | MN     |       | 10          | Satipatthana Sutta              | Frames of Reference
+ mn.011.ntbb.html    | MN     |       | 11          | Cula-sihanada Sutta             | The Shorter Discourse on the Lion's Roar
+ mn.012.ntbb.html    | MN     |       | 12          | Maha-sihanada Sutta             | The Great Discourse on the Lion's Roar
+ mn.013.than.html    | MN     |       | 13          | Maha-dukkhakkhandha Sutta       | The Great Mass of Stress
+ mn.014.than.html    | MN     |       | 14          | Cula-dukkhakkhandha Sutta       | The Lesser Mass of Stress
+ mn.018.than.html    | MN     |       | 18          | Madhupindika Sutta              | The Ball of Honey
+ mn.019.than.html    | MN     |       | 19          | Dvedhavitakka Sutta             | Two Sorts of Thinking
+ mn.020.soma.html    | MN     |       | 20          | Vitakkasanthana Sutta           | The Removal of Distracting Thoughts
+ mn.020.than.html    | MN     |       | 20          | Vitakkasanthana Sutta           | The Relaxation of Thoughts
+ mn.021x.than.html   | MN     |       | 21          | Kakacupama Sutta                | The Simile of the Saw
+ mn.022.nypo.html    | MN     |       | 22          | Alagaddupama Sutta              | The Snake Simile
+ mn.022.than.html    | MN     |       | 22          | Alagaddupama Sutta              | The Water-Snake Simile
+ mn.024.than.html    | MN     |       | 24          | Ratha-vinita Sutta              | Relay Chariots
+ mn.026.than.html    | MN     |       | 26          | Ariyapariyesana Sutta           | The Noble Search
+ mn.027.than.html    | MN     |       | 27          | Cula-hatthipadopama Sutta       | The Shorter Elephant Footprint Simile
+ mn.028.than.html    | MN     |       | 28          | Maha-hatthipadopama Sutta       | The Great Elephant Footprint Simile
+ mn.029.than.html    | MN     |       | 29          | Maha Saropama Sutta             | The Longer Heartwood-simile Discourse
+ mn.030.than.html    | MN     |       | 30          | Cula Saropama Sutta             | The Shorter Heartwood-simile Discourse
+ mn.033.than.html    | MN     |       | 33          | Maha-gopalaka Sutta             | The Greater Cowherd Discourse
+ mn.034x.olen.html   | MN     |       | 34          | Culagopalika Sutta              | The Shorter Discourse on the Cowherd
+ mn.035.than.html    | MN     |       | 35          | Cula-Saccaka Sutta              | The Shorter Discourse to Saccaka
+ mn.036.than.html    | MN     |       | 36          | Maha-Saccaka Sutta              | The Longer Discourse to Saccaka
+ mn.038.than.html    | MN     |       | 38          | Mahatanhasankhaya Sutta         | The Greater Craving-Destruction Discourse
+ mn.039.than.html    | MN     |       | 39          | Maha-Assapura Sutta             | The Greater Discourse at Assapura
+ mn.041.nymo.html    | MN     |       | 41          | Saleyyaka Sutta                 | The Brahmans of Sala
+ mn.041.than.html    | MN     |       | 41          | Saleyyaka Sutta                 | (Brahmans) of Sala
+ mn.043.than.html    | MN     |       | 43          | Mahavedalla Sutta               | The Greater Set of Questions-and-Answers
+ mn.044.than.html    | MN     |       | 44          | Culavedalla Sutta               | The Shorter Set of Questions-and-Answers
+ mn.045.than.html    | MN     |       | 45          | Cula-dhammasamadana Sutta       | The Shorter Discourse on Taking on Practices
+ mn.049.than.html    | MN     |       | 49          | Brahma-nimantanika Sutta        | The Brahma Invitation
+ mn.052.than.html    | MN     |       | 52          | Atthakanagara Sutta             | To the Man from Atthakanagara
+ mn.053.than.html    | MN     |       | 53          | Sekha-patipada Sutta            | The Practice for One in Training
+ mn.054x.than.html   | MN     |       | 54          | Potaliya Sutta                  | To Potaliya
+ mn.057.nymo.html    | MN     |       | 57          | Kukkuravatika Sutta             | The Dog-duty Ascetic
+ mn.058.than.html    | MN     |       | 58          | Abhaya Sutta                    | To Prince Abhaya
+ mn.059.nypo.html    | MN     |       | 59          | Bahuvedaniya Sutta              | The Many Kinds of Feeling
+ mn.059.than.html    | MN     |       | 59          | Bahuvedaniya Sutta              | Many Things to be Experienced
+ mn.060.than.html    | MN     |       | 60          | Apannaka  Sutta                 | A Safe Bet
+ mn.061.than.html    | MN     |       | 61          | Ambalatthika-rahulovada Sutta   | Instructions to Rahula at Mango Stone
+ mn.062.than.html    | MN     |       | 62          | Maha-Rahulovada Sutta           | The Greater Exhortation to Rahula
+ mn.063.than.html    | MN     |       | 63          | Cula-Malunkyovada Sutta         | The Shorter Instructions to Malunkya
+ mn.066.than.html    | MN     |       | 66          | Latukikopama Sutta              | The Quail Simile
+ mn.070.than.html    | MN     |       | 70          | Kitagiri Sutta                  | At Kitagiri
+ mn.072.than.html    | MN     |       | 72          | Aggi-Vacchagotta Sutta          | To Vacchagotta on Fire
+ mn.074.than.html    | MN     |       | 74          | Dighanaka Sutta                 | To LongNails
+ mn.075x.than.html   | MN     |       | 75          | Magandiya Sutta                 | To Magandiya
+ mn.078.than.html    | MN     |       | 78          | Samana-Mundika Sutta            | Mundika the Contemplative
+ mn.082.than.html    | MN     |       | 82          | Ratthapala Sutta                | About Ratthapala
+ mn.086.than.html    | MN     |       | 86          | Angulimala Sutta                | About Angulimala
+ mn.087.than.html    | MN     |       | 87          | Piyajatika Sutta                | From One Who Is Dear
+ mn.090.than.html    | MN     |       | 90          | Kannakatthala Sutta             | At Kannakatthala
+ mn.093.than.html    | MN     |       | 93          | Assalayana Sutta                | With Assalayana
+ mn.095x.nymo.html   | MN     |       | 95          | Canki Sutta                     | With Canki
+ mn.095x.than.html   | MN     |       | 95          | Canki Sutta                     | With Canki
+ mn.097.than.html    | MN     |       | 97          | Dhanañjani Sutta                | To Dhanañjanin
+ mn.101.than.html    | MN     |       | 101         | Devadaha Sutta                  | At Devadaha
+ mn.105.than.html    | MN     |       | 105         | Sunakkhatta Sutta               | To Sunakkhatta
+ mn.106.than.html    | MN     |       | 106         | Aneñja-sappaya Sutta            | Conducive to the Imperturbable
+ mn.107.horn.html    | MN     |       | 107         | Ganakamoggallana Sutta          | The Discourse to Ganaka-Moggallana
+ mn.108.than.html    | MN     |       | 108         | Gopaka Moggallana Sutta         | Moggallana the Guardsman
+ mn.109.than.html    | MN     |       | 109         | Maha-punnama Sutta              | The Great Full-moon Night Discourse
+ mn.110.than.html    | MN     |       | 110         | Cula-punnama Sutta              | The Shorter Discourse on the Full-moon Night
+ mn.111.than.html    | MN     |       | 111         | Anupada Sutta                   | One After Another
+ mn.113.than.html    | MN     |       | 113         | Sappurisa Sutta                 | A Person of Integrity
+ mn.116.piya.html    | MN     |       | 116         | Isigili Sutta                   | The Discourse at Isigili
+ mn.117.than.html    | MN     |       | 117         | Maha-cattarisaka Sutta          | The Great Forty
+ mn.118.than.html    | MN     |       | 118         | Anapanasati Sutta               | Mindfulness of Breathing
+ mn.119.than.html    | MN     |       | 119         | Kayagata-sati Sutta             | Mindfulness Immersed in the Body
+ mn.121.than.html    | MN     |       | 121         | Cula-suññata Sutta              | The Lesser Discourse on Emptiness
+ mn.122.than.html    | MN     |       | 122         | Maha-suññata Sutta              | The Greater Discourse on Emptiness
+ mn.125.horn.html    | MN     |       | 125         | Dantabhumi Sutta                | The Discourse on the 'Tamed Stage'
+ mn.126.than.html    | MN     |       | 126         | Bhumija Sutta                   | To Bhumija
+ mn.130.than.html    | MN     |       | 130         | Devaduta Sutta                  | The Deva Messengers
+ mn.131.nana.html    | MN     |       | 131         | Bhaddekaratta Sutta             | The Discourse on the Ideal Lover of Solitude
+ mn.131.than.html    | MN     |       | 131         | Bhaddekaratta Sutta             | An Auspicious Day
+ mn.135.nymo.html    | MN     |       | 135         | Cula-kammavibhanga Sutta        | The Shorter Exposition of Kamma
+ mn.135.than.html    | MN     |       | 135         | Cula-kammavibhanga Sutta        | The Shorter Analysis of Action
+ mn.136.nymo.html    | MN     |       | 136         | Maha Kammavibhanga Sutta        | The Great Exposition of Kamma
+ mn.136.than.html    | MN     |       | 136         | Maha Kammavibhanga Sutta        | The Greater Analysis of Action
+ mn.137.than.html    | MN     |       | 137         | Salayatana-vibhanga Sutta       | An Analysis of the Six Sense-media
+ mn.138.than.html    | MN     |       | 138         | Uddesa-vibhanga Sutta           | An Analysis of the Statement
+ mn.140.than.html    | MN     |       | 140         | Dhatu-vibhanga Sutta            | An Analysis of the Properties
+ mn.141.piya.html    | MN     |       | 141         | Saccavibhanga Sutta             | Discourse on The Analysis of the Truths
+ mn.141.than.html    | MN     |       | 141         | Saccavibhanga Sutta             | An Analysis of the Truths
+ mn.143.than.html    | MN     |       | 143         | Anathapindikovada Sutta         | Instructions to Anathapindika
+ mn.143x.olen.html   | MN     |       | 143         | Anathapindikovada Sutta         | Advice to A Dying Man
+ mn.146.than.html    | MN     |       | 146         | Nandakovada Sutta               | Nandaka's Exhortation
+ mn.147.than.html    | MN     |       | 147         | Cula-Rahulovada Sutta           | The Shorter Exposition to Rahula
+ mn.148.than.html    | MN     |       | 148         | Chachakka Sutta                 | The Six Sextets
+ mn.149.than.html    | MN     |       | 149         | Maha-salayatanika Sutta         | The Great Six Sense-media Discourse
+ mn.152.than.html    | MN     |       | 152         | Indriya-bhavana Sutta           | The Development of the Faculties
+ dn.01.0.bodh.html   | DN     |       | 1           | Brahmajāla Sutta         | The All-embracing Net of Views
+ dn.02.0.than.html   | DN     |       | 2           | Samaññaphala Sutta       | The Fruits of the Contemplative Life
+ dn.09.0.than.html   | DN     |       | 9           | Potthapada Sutta         | About Potthapada
+ dn.11.0.than.html   | DN     |       | 11          | Kevatta (Kevaddha) Sutta | To Kevatta
+ dn.12.0.than.html   | DN     |       | 12          | Lohicca Sutta            | To Lohicca
+ dn.15.0.than.html   | DN     |       | 15          | Maha-nidana Sutta        | The Great Causes Discourse
+ dn.16.1-6.vaji.html | DN     |       | 16          | Maha-parinibbana Sutta   | Last Days of the Buddha
+ dn.16.5-6.than.html | DN     |       | 16          | Maha-parinibbana Sutta   | The Great Discourse on the Total Unbinding
+ dn.20.0.piya.html   | DN     |       | 20          | Maha-samaya Sutta        | The Great Assembly
+ dn.20.0.than.html   | DN     |       | 20          | Maha-samaya Sutta        | The Great Meeting
+ dn.21.2x.than.html  | DN     |       | 21          | Sakka-pañha Sutta        | Sakka's Questions
+ dn.22.0.bpit.html   | DN     |       | 22          | Maha-satipatthana Sutta  | The Great Frames of Reference
+ dn.22.0.than.html   | DN     |       | 22          | Maha-satipatthana Sutta  | The Great Frames of Reference
+ dn.26.0.than.html   | DN     |       | 26          | Cakkavatti Sutta         | The Wheel-turning Emperor
+ dn.31.0.ksw0.html   | DN     |       | 31          | Sigalovada Sutta         | The Buddha's Advice to Sigalaka
+ dn.31.0.nara.html   | DN     |       | 31          | Sigalovada Sutta         | The Discourse to Sigala
+ dn.32.0.piya.html   | DN     |       | 32          | Atanatiya Sutta          | Discourse on Atanatiya
+ an01.021-040.than.html   | AN     | 1     | 21-40       | Ekadhamma Suttas               | A Single Thing
+ an01.031-040x.wood.html  | AN     | 1     | 31-40       | Adanta Suttas                  | Untamed
+ an01.045-046.than.html   | AN     | 1     | 45-46       | Udakarahaka Suttas             | A Pool of Water
+ an01.047.than.html       | AN     | 1     | 47          | Mudu Sutta                     | Soft
+ an01.048.than.html       | AN     | 1     | 48          | Lahu-parivatta Sutta           | Quick to Reverse Itself
+ an01.049.than.html       | AN     | 1     | 49-52       | Pabhassara Sutta               | Luminous
+ an02.005.than.html       | AN     | 2     | 5           | Appativana Sutta               | Relentlessly
+ an02.009.irel.html       | AN     | 2     | 9           | Lokapala Sutta                 | The Bright Protectors
+ an02.009.than.html       | AN     | 2     | 9           | Lokapala Sutta                 | Guardians of the World
+ an02.018.than.html       | AN     | 2     | 18          | Ekamsena Sutta                 | Categorically
+ an02.019.than.html       | AN     | 2     | 19          | Kusala Sutta                   | Skillful
+ an02.021.than.html       | AN     | 2     | 21          | Bala-pandita Sutta             | Fools & Wise People
+ an02.023.than.html       | AN     | 2     | 23          | Abhasita Sutta                 | What Was Not Said
+ an02.025.than.html       | AN     | 2     | 25          | Neyyatha Sutta                 | A Meaning to be Inferred
+ an02.030.than.html       | AN     | 2     | 30          | Vijja-bhagiya Sutta            | A Share in Clear Knowing
+ an02.031.than.html       | AN     | 2     | 31-32       | Kataññu Suttas                 | Gratitude
+ an02.033.niza.html       | AN     | 2     | 33          | Aññataro Brāhmaṇo Sutta        | A Certain Brahman
+ an02.038.than.html       | AN     | 2     | 38          | Kandarayana Sutta              | To Kandarayana
+ an02.046.than.html       | AN     | 2     | 46          | Ukkacita Sutta                 | Bombast
+ an02.098.than.html       | AN     | 2     | 98          | Bala Sutta                     | Fools
+ an02.119.than.html       | AN     | 2     | 119         | Dullabha Sutta                 | Hard to Find
+ an02.125-126.than.html   | AN     | 2     | 125-126     | Ghosa Suttas                   | Voice
+ an03.002.than.html       | AN     | 3     | 2           | Lakkhana Sutta                 | Characterized (by Action)
+ an03.015.than.html       | AN     | 3     | 15          | Rathakara (Pacetana) Sutta     | The Chariot Maker
+ an03.022.than.html       | AN     | 3     | 22          | Gilana Sutta                   | Sick People
+ an03.033.than.html       | AN     | 3     | 33          | Nidana Sutta                   | Causes
+ an03.034.than.html       | AN     | 3     | 34          | Hatthaka Sutta                 | To Hatthaka
+ an03.038.than.html       | AN     | 3     | 38          | Sukhamala Sutta                | Refinement
+ an03.040.than.html       | AN     | 3     | 40          | Adhipateyya Sutta              | Governing Principles
+ an03.047.than.html       | AN     | 3     | 47          | Sankhata Sutta                 | Fabricated
+ an03.048.than.html       | AN     | 3     | 48          | Pabbata Sutta                  | A Mountain
+ an03.051.than.html       | AN     | 3     | 51          | Dvejana Sutta                  | Two People (1)
+ an03.052.than.html       | AN     | 3     | 52          | Dvejana Sutta                  | Two People (2)
+ an03.057.than.html       | AN     | 3     | 57          | Vaccha Sutta                   | To Vaccha
+ an03.060.than.html       | AN     | 3     | 60          | Sangarava Sutta                | To Sangarava
+ an03.061.than.html       | AN     | 3     | 61          | Tittha Sutta                   | Sectarians
+ an03.062.than.html       | AN     | 3     | 62          | Bhaya Sutta                    | Dangers
+ an03.065.soma.html       | AN     | 3     | 65          | Kalama Sutta                   | The Instruction to the Kalamas
+ an03.065.than.html       | AN     | 3     | 65          | Kalama Sutta                   | To the Kalamas
+ an03.066.nymo.html       | AN     | 3     | 66          | Salha Sutta                    | To Salha
+ an03.067.than.html       | AN     | 3     | 67          | Kathavatthu Sutta              | Topics for Discussion
+ an03.068.than.html       | AN     | 3     | 68          | Titthiya Sutta                 | Sectarians
+ an03.069.than.html       | AN     | 3     | 69          | Mula Sutta                     | Roots
+ an03.070.than.html       | AN     | 3     | 70          | Muluposatha Sutta              | The Roots of the Uposatha
+ an03.071.than.html       | AN     | 3     | 71          | Channa Sutta                   | To Channa the Wanderer
+ an03.072.than.html       | AN     | 3     | 72          | Ajivaka Sutta                  | To the Fatalists' Student
+ an03.073.than.html       | AN     | 3     | 73          | Sakka Sutta                    | To the Sakyan
+ an03.076.than.html       | AN     | 3     | 76          | Bhava Sutta                    | Becoming (1)
+ an03.077.than.html       | AN     | 3     | 77          | Bhava Sutta                    | Becoming (2)
+ an03.078.than.html       | AN     | 3     | 78          | Silabbata Sutta                | Precept & Practice
+ an03.081.than.html       | AN     | 3     | 81          | Gadrabha Sutta                 | The Donkey
+ an03.083.than.html       | AN     | 3     | 83          | Vajjiputta Sutta               | The Vajjian Monk
+ an03.085.than.html       | AN     | 3     | 85          | Sekhin Sutta                   | One in Training (1)
+ an03.086.than.html       | AN     | 3     | 86          | Sekhin Sutta                   | One in Training (2)
+ an03.088.than.html       | AN     | 3     | 88          | Sikkha Sutta                   | Trainings (1)
+ an03.089.than.html       | AN     | 3     | 89          | Sikkha Sutta                   | Trainings (2)
+ an03.091.than.html       | AN     | 3     | 91          | Accayika Sutta                 | Urgent
+ an03.094.than.html       | AN     | 3     | 94          | Ajaniya Sutta                  | The Thoroughbred
+ an03.099.than.html       | AN     | 3     | 99          | Lonaphala Sutta                | The Salt Crystal
+ an03.100.01-10.than.html | AN     | 3     | 100 (i-x)   | Pansadhovaka Sutta             | The Dirt-washer
+ an03.100.11-15.than.html | AN     | 3     | 100 (xi-xv) | Nimitta Sutta                  | Themes
+ an03.105.than.html       | AN     | 3     | 105         | Kuta Sutta                     | The Peak of the Roof
+ an03.120.than.html       | AN     | 3     | 120         | Moneyya Sutta                  | Sagacity
+ an03.123.than.html       | AN     | 3     | 123         | Gotamaka-cetiya Sutta          | At Gotamaka Shrine
+ an03.126.than.html       | AN     | 3     | 126         | Katuviya Sutta                 | Putrid
+ an03.130.than.html       | AN     | 3     | 130         | Lekha Sutta                    | Inscriptions
+ an03.134.than.html       | AN     | 3     | 134         | Dhamma-niyama Sutta            | The Discourse on the Orderliness of the Dhamma
+ an04.001.than.html       | AN     | 4     | 1           | Anubuddha Sutta                | Understanding
+ an04.005.than.html       | AN     | 4     | 5           | Anusota Sutta                  | With the Flow
+ an04.010.niza.html       | AN     | 4     | 10          | Yoga Sutta                     | Bondage
+ an04.010.than.html       | AN     | 4     | 10          | Yoga Sutta                     | Yokes
+ an04.019.than.html       | AN     | 4     | 19          | Agati Sutta                    | Off Course
+ an04.024.than.html       | AN     | 4     | 24          | Kalaka Sutta                   | At Kalaka's Park
+ an04.028.than.html       | AN     | 4     | 28          | Ariya-vamsa Sutta              | The Discourse on the Traditions of the Noble Ones
+ an04.031.than.html       | AN     | 4     | 31          | Cakka Sutta                    | Wheels
+ an04.032.than.html       | AN     | 4     | 32          | Sangaha Sutta                  | The Bonds of Fellowship
+ an04.035.than.html       | AN     | 4     | 35          | Vassakara Sutta                | With Vassakara
+ an04.036.than.html       | AN     | 4     | 36          | Dona Sutta                     | With Dona
+ an04.037.than.html       | AN     | 4     | 37          | Aparihani Sutta                | No Falling Away
+ an04.041.than.html       | AN     | 4     | 41          | Samadhi Sutta                  | Concentration
+ an04.042.than.html       | AN     | 4     | 42          | Pañha Sutta                    | Questions
+ an04.045.than.html       | AN     | 4     | 45          | Rohitassa Sutta                | To Rohitassa
+ an04.049.olen.html       | AN     | 4     | 49          | Vipallasa Sutta                | Distortions of the Mind
+ an04.049.than.html       | AN     | 4     | 49          | Vipallasa Sutta                | Perversions
+ an04.050.than.html       | AN     | 4     | 50          | Upakkilesa Sutta               | Obscurations
+ an04.055.than.html       | AN     | 4     | 55          | Samajivina Sutta               | Living in Tune
+ an04.062.than.html       | AN     | 4     | 62          | Anana Sutta                    | Debtless
+ an04.067.piya.html       | AN     | 4     | 67          | Ahi Sutta                      | A Snake
+ an04.067.than.html       | AN     | 4     | 67          | Ahina Sutta                    | By a Snake
+ an04.073.than.html       | AN     | 4     | 73          | Sappurisa Sutta                | A Person of Integrity
+ an04.077.than.html       | AN     | 4     | 77          | Acintita Sutta                 | Unconjecturable
+ an04.079.than.html       | AN     | 4     | 79          | Vanijja Sutta                  | Trade
+ an04.085.than.html       | AN     | 4     | 85          | Tamonata Sutta                 | Darkness
+ an04.094.than.html       | AN     | 4     | 94          | Samadhi Sutta                  | Concentration (Tranquillity and Insight)
+ an04.095.budd.html       | AN     | 4     | 95          | Chavalata Sutta                | Wood from a Pyre
+ an04.095.than.html       | AN     | 4     | 95          | Chavalata Sutta                | The Firebrand
+ an04.096.than.html       | AN     | 4     | 96          | Raga-vinaya Sutta              | The Subduing of Passion
+ an04.099.than.html       | AN     | 4     | 99          | Sikkha Sutta                   | Trainings
+ an04.102.than.html       | AN     | 4     | 102         | Valahaka Sutta                 | Thunderheads
+ an04.111.than.html       | AN     | 4     | 111         | Kesi Sutta                     | To Kesi the Horsetrainer
+ an04.113.than.html       | AN     | 4     | 113         | Patoda Sutta                   | The Goad-stick
+ an04.113.wood.html       | AN     | 4     | 113         | Patoda Sutta                   | The Goad
+ an04.115.than.html       | AN     | 4     | 115         | Thana Sutta                    | Courses of Action
+ an04.123.than.html       | AN     | 4     | 123         | Jhana Sutta                    | Mental Absorption (1)
+ an04.124.than.html       | AN     | 4     | 124         | Jhana Sutta                    | Mental Absorption (2)
+ an04.125.nymo.html       | AN     | 4     | 125         | Metta Sutta                    | Loving-kindness (1)
+ an04.125.than.html       | AN     | 4     | 125         | Metta Sutta                    | Good Will (1)
+ an04.126.nymo.html       | AN     | 4     | 126         | Metta Sutta                    | Loving-kindness (2)
+ an04.126.than.html       | AN     | 4     | 126         | Metta Sutta                    | Good Will (2)
+ an04.144.than.html       | AN     | 4     | 144         | Obhasa Sutta                   | Brightness
+ an04.159.than.html       | AN     | 4     | 159         | Bhikkhuni Sutta                | The Nun
+ an04.162.than.html       | AN     | 4     | 162         | Vitthara Sutta                 | (Modes of Practice) in Detail
+ an04.163.than.html       | AN     | 4     | 163         | Asubha Sutta                   | Unattractiveness
+ an04.164.than.html       | AN     | 4     | 164         | Khama Sutta                    | Tolerant (1)
+ an04.165.than.html       | AN     | 4     | 165         | Khama Sutta                    | Tolerant (2)
+ an04.170.than.html       | AN     | 4     | 170         | Yuganaddha Sutta               | In Tandem
+ an04.174.than.html       | AN     | 4     | 174         | Kotthita Sutta                 | To Kotthita
+ an04.178.than.html       | AN     | 4     | 178         | Jambali Sutta                  | The Waste-water Pool
+ an04.179.than.html       | AN     | 4     | 179         | Nibbana Sutta                  | Unbinding
+ an04.181.than.html       | AN     | 4     | 181         | Yodhajiva Sutta                | The Warrior
+ an04.183.than.html       | AN     | 4     | 183         | Suta Sutta                     | On What is Heard
+ an04.184.than.html       | AN     | 4     | 184         | Abhaya Sutta                   | Fearless
+ an04.192.than.html       | AN     | 4     | 192         | Thana Sutta                    | Traits
+ an04.199.than.html       | AN     | 4     | 199         | Tanha Sutta                    | Craving
+ an04.200.than.html       | AN     | 4     | 200         | Pema Sutta                     | Affection
+ an04.235.than.html       | AN     | 4     | 235         | Ariyamagga Sutta               | The Noble Path
+ an04.245.than.html       | AN     | 4     | 245         | Sikkha Sutta                   | Training
+ an04.252.than.html       | AN     | 4     | 252         | Pariyesana Sutta               | Searches
+ an04.255.than.html       | AN     | 4     | 255         | Kula Sutta                     | On Families
+ an04.259.than.html       | AN     | 4     | 259         | Araññika Sutta                 | A Wilderness Dweller
+ an05.002.than.html       | AN     | 5     | 2           | Vitthara Sutta                 | (Strengths) in Detail
+ an05.020.than.html       | AN     | 5     | 20          | Hita Sutta                     | Benefit
+ an05.025.than.html       | AN     | 5     | 25          | Anuggahita Sutta               | Supported
+ an05.027.than.html       | AN     | 5     | 27          | Samadhi Sutta                  | (Immeasurable) Concentration
+ an05.028.than.html       | AN     | 5     | 28          | Samadhanga Sutta               | The Factors of Concentration
+ an05.029.agku.html       | AN     | 5     | 29          | Cankama Sutta                  | Walking
+ an05.029.than.html       | AN     | 5     | 29          | Cankama Sutta                  | Walking
+ an05.030.than.html       | AN     | 5     | 30          | Nagita Sutta                   | To Nagita
+ an05.034.than.html       | AN     | 5     | 34          | Siha Sutta                     | To General Siha (On Generosity)
+ an05.036.than.html       | AN     | 5     | 36          | Kaladana Sutta                 | Seasonable Gifts
+ an05.037.than.html       | AN     | 5     | 37          | Bhojana Sutta                  | A Meal
+ an05.038.than.html       | AN     | 5     | 38          | Saddha Sutta                   | Conviction
+ an05.041.than.html       | AN     | 5     | 41          | Adiya Sutta                    | Benefits to be Obtained (from Wealth)
+ an05.043.than.html       | AN     | 5     | 43          | Ittha Sutta                    | What is Welcome
+ an05.049.hekh.html       | AN     | 5     | 49          | Kosala Sutta                   | The Kosalan
+ an05.049.than.html       | AN     | 5     | 49          | Kosala Sutta                   | The Kosalan
+ an05.051.than.html       | AN     | 5     | 51          | Avarana Sutta                  | Obstacles
+ an05.053.than.html       | AN     | 5     | 53          | Anga Sutta                     | Factors (for Exertion)
+ an05.057.than.html       | AN     | 5     | 57          | Upajjhatthana Sutta            | Subjects for Contemplation
+ an05.064.than.html       | AN     | 5     | 64          | Vuddhi Sutta                   | Growth
+ an05.073.than.html       | AN     | 5     | 73          | Dhamma-viharin Sutta           | One Who Dwells in the Dhamma
+ an05.075.than.html       | AN     | 5     | 75          | Yodhajiva Sutta                | The Warrior (1)
+ an05.076.than.html       | AN     | 5     | 76          | Yodhajiva Sutta                | The Warrior (2)
+ an05.077.than.html       | AN     | 5     | 77          | Anagata-bhayani Sutta          | The Discourse on Future Dangers (1)
+ an05.078.than.html       | AN     | 5     | 78          | Anagata-bhayani Sutta          | The Discourse on Future Dangers (2)
+ an05.079.than.html       | AN     | 5     | 79          | Anagata-bhayani Sutta          | The Discourse on Future Dangers (3)
+ an05.080.than.html       | AN     | 5     | 80          | Anagata-bhayani Sutta          | The Discourse on Future Dangers (4)
+ an05.095.niza.html       | AN     | 5     | 95          | Akuppa Sutta                   | Discourse on the Unshakeable
+ an05.096.than.html       | AN     | 5     | 96          | Sutadhara Sutta                | One Who Retains What He Has Heard
+ an05.097.than.html       | AN     | 5     | 97          | Katha Sutta                    | Talk
+ an05.098.than.html       | AN     | 5     | 98          | Arañña Sutta                   | Wilderness
+ an05.114.than.html       | AN     | 5     | 114         | Andhakavinda Sutta             | At Andhakavinda
+ an05.121.than.html       | AN     | 5     | 121         | Gilana Sutta                   | To a Sick Man
+ an05.129.than.html       | AN     | 5     | 129         | Parikuppa Sutta                | In Agony
+ an05.130.than.html       | AN     | 5     | 130         | Sampada Sutta                  | Being Consummate
+ an05.139.than.html       | AN     | 5     | 139         | Akkhama Sutta                  | Not Resilient
+ an05.140.than.html       | AN     | 5     | 140         | Sotar Sutta                    | The Listener
+ an05.148.than.html       | AN     | 5     | 148         | Sappurisadana Sutta            | A Person of Integrity's Gifts
+ an05.159.than.html       | AN     | 5     | 159         | Udayi Sutta                    | About Udayin
+ an05.161.nymo.html       | AN     | 5     | 161         | Aghatavinaya Sutta             | Removing Annoyance
+ an05.161.than.html       | AN     | 5     | 161         | Aghatavinaya Sutta             | Subduing Hatred (1)
+ an05.162.than.html       | AN     | 5     | 162         | Aghatavinaya Sutta             | Subduing Hatred (2)
+ an05.165.than.html       | AN     | 5     | 165         | Pañhapuccha Sutta              | On Asking Questions
+ an05.175.than.html       | AN     | 5     | 175         | Candala Sutta                  | The Outcaste
+ an05.176.than.html       | AN     | 5     | 176         | Piti Sutta                     | Rapture
+ an05.177.than.html       | AN     | 5     | 177         | Vanijja Sutta                  | Business (Wrong Livelihood)
+ an05.179.than.html       | AN     | 5     | 179         | Gihi Sutta                     | The Householder
+ an05.180.than.html       | AN     | 5     | 180         | Gavesin Sutta                  | About Gavesin
+ an05.196.than.html       | AN     | 5     | 196         | Supina Sutta                   | Dreams
+ an05.198.than.html       | AN     | 5     | 198         | Vaca Sutta                     | A Statement
+ an05.199.than.html       | AN     | 5     | 199         | Kula Sutta                     | A Family
+ an05.200.than.html       | AN     | 5     | 200         | Nissaraniya Sutta              | Leading to Escape
+ an05.202.than.html       | AN     | 5     | 202         | Dhammassavana Sutta            | Listening to the Dhamma
+ an05.254.than.html       | AN     | 5     | 254-271     | Macchariya Suttas              | Stinginess
+ an06.012.than.html       | AN     | 6     | 12          | Saraniya Sutta                 | Conducive to Amiability
+ an06.013.than.html       | AN     | 6     | 13          | Nissaraniya Sutta              | Means of Escape
+ an06.016.than.html       | AN     | 6     | 16          | Nakula Sutta                   | Nakula's Parents
+ an06.019.than.html       | AN     | 6     | 19          | Maranassati Sutta              | Mindfulness of Death (1)
+ an06.020.than.html       | AN     | 6     | 20          | Maranassati Sutta              | Mindfulness of Death (2)
+ an06.037.than.html       | AN     | 6     | 37          | Dana Sutta                     | Giving
+ an06.038.niza.html       | AN     | 6     | 38          | Attakārī Sutta                 | The Self-Doer
+ an06.041.than.html       | AN     | 6     | 41          | Daruka-khandha Sutta           | The Wood Pile
+ an06.042.than.html       | AN     | 6     | 42          | Nagita Sutta                   | To Nagita
+ an06.045.than.html       | AN     | 6     | 45          | Ina Sutta                      | Debt
+ an06.046.than.html       | AN     | 6     | 46          | Cunda Sutta                    | Cunda
+ an06.047.than.html       | AN     | 6     | 47          | Sanditthika Sutta              | Visible Here-&-Now
+ an06.049.than.html       | AN     | 6     | 49          | Khema Sutta                    | With Khema
+ an06.051.than.html       | AN     | 6     | 51          | Ananda Sutta                   | Ven. Ananda
+ an06.054.olen.html       | AN     | 6     | 54          | Dhammika Sutta                 | Dhammika
+ an06.055.than.html       | AN     | 6     | 55          | Sona Sutta                     | About Sona
+ an06.063.than.html       | AN     | 6     | 63          | Nibbedhika Sutta               | Penetrative
+ an06.085.than.html       | AN     | 6     | 85          | Siti Sutta                     | Cooled
+ an06.086.than.html       | AN     | 6     | 86          | Avaranata Sutta                | Obstructions
+ an06.087.than.html       | AN     | 6     | 87          | Kammavaranata Sutta            | Kamma Obstructions
+ an06.088.than.html       | AN     | 6     | 88          | Sussusa Sutta                  | Listening Well
+ an06.097.than.html       | AN     | 6     | 97          | Anisansa Sutta                 | Rewards
+ an06.102.than.html       | AN     | 6     | 102         | Anodhi Sutta                   | Without Exception (1)
+ an06.103.than.html       | AN     | 6     | 103         | Anodhi Sutta                   | Without Exception (2)
+ an06.104.than.html       | AN     | 6     | 104         | Anodhi Sutta                   | Without Exception (3)
+ an07.006.than.html       | AN     | 7     | 6           | Dhana Sutta                    | Treasure
+ an07.007.than.html       | AN     | 7     | 7           | Ugga Sutta                     | To Ugga
+ an07.011.than.html       | AN     | 7     | 11          | Anusaya Sutta                  | Obsessions (1)
+ an07.012.than.html       | AN     | 7     | 12          | Anusaya Sutta                  | Obsessions (2)
+ an07.015.than.html       | AN     | 7     | 15          | Udakupama Sutta                | The Water Simile
+ an07.021.than.html       | AN     | 7     | 21          | Bhikkhu-aparihaniya Sutta      | Conditions for No Decline Among the Monks
+ an07.031.than.html       | AN     | 7     | 31          | Appamada Sutta                 | Heedfulness
+ an07.032.than.html       | AN     | 7     | 32          | Hirima Sutta                   | A Sense of Shame
+ an07.033.than.html       | AN     | 7     | 33          | Sovacassata Sutta              | Compliance (1)
+ an07.034.than.html       | AN     | 7     | 34          | Sovacassata Sutta              | Compliance (2)
+ an07.035.than.html       | AN     | 7     | 35          | Mitta Sutta                    | A Friend
+ an07.046.than.html       | AN     | 7     | 46          | Sañña Sutta                    | Perceptions
+ an07.048.than.html       | AN     | 7     | 48          | Saññoga Sutta                  | Bondage
+ an07.049.than.html       | AN     | 7     | 49          | Dana Sutta                     | Giving
+ an07.051.than.html       | AN     | 7     | 51          | Avyakata Sutta                 | Undeclared
+ an07.056.than.html       | AN     | 7     | 56          | Kimila Sutta                   | To Kimila
+ an07.058.than.html       | AN     | 7     | 58          | Capala (Pacala) Sutta          | Nodding
+ an07.060.nymo.html       | AN     | 7     | 60          | Kodhana Sutta                  | The Wretchedness of Anger
+ an07.060.than.html       | AN     | 7     | 60          | Kodhana Sutta                  | An Angry Person
+ an07.063.than.html       | AN     | 7     | 63          | Nagara Sutta                   | The Fortress
+ an07.064.than.html       | AN     | 7     | 64          | Dhammaññu Sutta                | One With a Sense of Dhamma
+ an07.068.yaho.html       | AN     | 7     | 68          | Aggikkhandopama Sutta          | The Mass of Fire Comparison
+ an07.070.than.html       | AN     | 7     | 70          | Arakenanusasani Sutta          | Araka's Teaching
+ an07.079.than.html       | AN     | 7     | 79          | Satthusasana Sutta             | To Upali
+ an08.002.than.html       | AN     | 8     | 2           | Pañña Sutta                    | Discernment
+ an08.006.than.html       | AN     | 8     | 6           | Lokavipatti Sutta              | The Failings of the World
+ an08.007.than.html       | AN     | 8     | 7           | Devadatta Sutta                | About Devadatta
+ an08.008.than.html       | AN     | 8     | 8           | Uttara Sutta                   | About Uttara
+ an08.009.than.html       | AN     | 8     | 9           | Nanda Sutta                    | About Nanda
+ an08.013.than.html       | AN     | 8     | 13          | Ajañña Sutta                   | The Thoroughbred
+ an08.014.than.html       | AN     | 8     | 14          | Khalunga Sutta                 | Unruly
+ an08.023.than.html       | AN     | 8     | 23          | Hatthaka Sutta                 | About Hatthaka (1)
+ an08.024.than.html       | AN     | 8     | 24          | Hatthaka Sutta                 | About Hatthaka (2)
+ an08.025.kuma.html       | AN     | 8     | 25          | Mahanama Sutta                 | Being a Lay Buddhist
+ an08.026.than.html       | AN     | 8     | 26          | Jivaka Sutta                   | To Jivaka
+ an08.028.than.html       | AN     | 8     | 28          | Bala Sutta                     | Strengths
+ an08.030.than.html       | AN     | 8     | 30          | Anuruddha Sutta                | To Anuruddha
+ an08.039.than.html       | AN     | 8     | 39          | Abhisanda Sutta                | Rewards
+ an08.040.than.html       | AN     | 8     | 40          | Vipaka Sutta                   | Results
+ an08.041.vaka.html       | AN     | 8     | 41          | Uposatha Sutta                 | The Uposatha Observance
+ an08.043.khan.html       | AN     | 8     | 43          | Visakhuposatha Sutta           | The Discourse to Visakha on the Uposatha with the Eight Practices
+ an08.053.than.html       | AN     | 8     | 53          | Gotami Sutta                   | To Gotami
+ an08.054.nara.html       | AN     | 8     | 54          | Dighajanu (Vyagghapajja) Sutta | Conditions of Welfare
+ an08.054.than.html       | AN     | 8     | 54          | Dighajanu (Vyagghapajja) Sutta | To Dighajanu
+ an08.059.kuma.html       | AN     | 8     | 59          | Pathama Atthapuggala Sutta     | Eight Individuals (a)
+ an08.063.than.html       | AN     | 8     | 63          | Sankhitta Sutta                | In Brief
+ an08.080.than.html       | AN     | 8     | 80          | Kusita-Arambhavatthu Sutta     | The Grounds for Laziness & the Arousal of Energy
+ an08.086.than.html       | AN     | 8     | 86          | Yasa Sutta                     | Honor
+ an09.001.than.html       | AN     | 9     | 1           | Sambodhi Sutta                 | Self-awakening
+ an09.007.than.html       | AN     | 9     | 7           | Sutava Sutta                   | To Sutavan
+ an09.013.than.html       | AN     | 9     | 13          | Kotthita Sutta                 | With Kotthita
+ an09.014.than.html       | AN     | 9     | 14          | Samiddhi Sutta                 | About Samiddhi
+ an09.015.than.html       | AN     | 9     | 15          | Ganda Sutta                    | A Boil
+ an09.016.than.html       | AN     | 9     | 16          | Sañña Sutta                    | Perception
+ an09.020.than.html       | AN     | 9     | 20          | Velāma Sutta                   | About Velāma
+ an09.031.than.html       | AN     | 9     | 31          | Anupubbanirodha Sutta          | Step-by-step Stopping
+ an09.032.than.html       | AN     | 9     | 32          | Vihāra Sutta                   | Dwellings (1)
+ an09.033.than.html       | AN     | 9     | 33          | Vihāra Sutta                   | Dwellings (2)
+ an09.034.than.html       | AN     | 9     | 34          | Nibbana Sutta                  | Unbinding
+ an09.035.than.html       | AN     | 9     | 35          | Gavi Sutta                     | The Cow
+ an09.036.than.html       | AN     | 9     | 36          | Jhana Sutta                    | Mental Absorption
+ an09.037.than.html       | AN     | 9     | 37          | Ananda Sutta                   | With Ananda
+ an09.038.than.html       | AN     | 9     | 38          | Brahmana Sutta                 | To Two Brahmans
+ an09.039.than.html       | AN     | 9     | 39          | Deva Sutta                     | The Devas (About Jhāna)
+ an09.040.than.html       | AN     | 9     | 40          | Naga Sutta                     | The Tusker
+ an09.041.than.html       | AN     | 9     | 41          | Tapussa Sutta                  | To Tapussa
+ an09.042.than.html       | AN     | 9     | 42          | Pañcala Sutta                  | Pañcala's Verse
+ an09.043.than.html       | AN     | 9     | 43          | Kayasakkhi Sutta               | Bodily Witness
+ an09.044.than.html       | AN     | 9     | 44          | Paññavimutti Sutta             | Released Through Discernment
+ an09.045.than.html       | AN     | 9     | 45          | Ubhatobhaga Sutta              | (Released) Both Ways
+ an09.062.than.html       | AN     | 9     | 62          | Bhabba Sutta                   | Capable
+ an09.063.than.html       | AN     | 9     | 63          | Sikkha-dubbalya Sutta          | Things That Weaken the Training
+ an09.064.than.html       | AN     | 9     | 64          | Nivarana Sutta                 | Hindrances
+ an10.006.than.html       | AN     | 10    | 6           | Samadhi Sutta                  | Concentration
+ an10.007.than.html       | AN     | 10    | 7           | Sariputta Sutta                | With Sariputta
+ an10.013.than.html       | AN     | 10    | 13          | Sanyojana Sutta                | Fetters
+ an10.015.than.html       | AN     | 10    | 15          | Appamada Sutta                 | Heedfulness
+ an10.017.than.html       | AN     | 10    | 17          | Natha Sutta                    | Protectors
+ an10.020.than.html       | AN     | 10    | 20          | Ariyavasa Sutta                | Dwellings of the Noble Ones
+ an10.024.than.html       | AN     | 10    | 24          | Cunda Sutta                    | Cunda
+ an10.027x.nypo.html      | AN     | 10    | 27          | Mahapañha Sutta                | The Great Questions
+ an10.029.than.html       | AN     | 10    | 29          | Kosala Sutta                   | The Kosalan
+ an10.046.than.html       | AN     | 10    | 46          | Sakka Sutta                    | To the Sakyans (on the Uposatha)
+ an10.048.piya.html       | AN     | 10    | 48          | Dasadhamma Sutta               | Discourse on The Ten Dhammas
+ an10.048.than.html       | AN     | 10    | 48          | Dasadhamma Sutta               | Ten Things
+ an10.051.than.html       | AN     | 10    | 51          | Sacitta Sutta                  | One's Own Mind
+ an10.054.than.html       | AN     | 10    | 54          | Samatha Sutta                  | With Regard to Tranquility
+ an10.058.than.html       | AN     | 10    | 58          | Mula Sutta                     | Rooted
+ an10.060.piya.html       | AN     | 10    | 60          | Girimananda Sutta              | Discourse to Girimananda Thera
+ an10.060.than.html       | AN     | 10    | 60          | Girimananda Sutta              | To Girimananda
+ an10.065.niza.html       | AN     | 10    | 65          | Pathama Sukha Sutta            | First Discourse on the Pleasant
+ an10.066.niza.html       | AN     | 10    | 66          | Dutiya Sukha Sutta             | Second Discourse on the Pleasant
+ an10.069.than.html       | AN     | 10    | 69          | Kathavatthu Sutta              | Topics of Conversation (1)
+ an10.070.than.html       | AN     | 10    | 70          | Kathavatthu Sutta              | Topics of Conversation (2)
+ an10.071.than.html       | AN     | 10    | 71          | Akankha Sutta                  | Wishes
+ an10.080.than.html       | AN     | 10    | 80          | Aghata Sutta                   | Hatred
+ an10.081.than.html       | AN     | 10    | 81          | Bahuna Sutta                   | To Bahuna
+ an10.092.than.html       | AN     | 10    | 92          | Vera Sutta                     | Animosity
+ an10.093.than.html       | AN     | 10    | 93          | Ditthi Sutta                   | Views
+ an10.094.than.html       | AN     | 10    | 94          | Vajjiya Sutta                  | About Vajjiya
+ an10.095.than.html       | AN     | 10    | 95          | Uttiya Sutta                   | To Uttiya
+ an10.096.than.html       | AN     | 10    | 96          | Kokanuda Sutta                 | To Kokanuda
+ an10.103.than.html       | AN     | 10    | 103         | Micchatta Sutta                | Wrongness
+ an10.104.than.html       | AN     | 10    | 104         | Bija Sutta                     | The Seed
+ an10.108.than.html       | AN     | 10    | 108         | Virecana (Tikicchaka) Sutta    | A Purgative
+ an10.118.niza.html       | AN     | 10    | 118         | Orimatīra Sutta                | The Near Shore
+ an10.176.than.html       | AN     | 10    | 176         | Cunda Kammaraputta Sutta       | To Cunda the Silversmith
+ an10.177.than.html       | AN     | 10    | 177         | Janussonin Sutta               | To Janussonin
+ an10.208.than.html       | AN     | 10    | 208         | Brahmavihara Sutta             | The Sublime Attitudes
+ an11.001.than.html       | AN     | 11    | 1           | Kimattha Sutta                 | What is the Purpose?
+ an11.002.than.html       | AN     | 11    | 2           | Cetana Sutta                   | An Act of Will
+ an11.010.than.html       | AN     | 11    | 10          | Sandha Sutta                   | To Sandha
+ an11.012.than.html       | AN     | 11    | 12          | Mahanama Sutta                 | To Mahanama (1)
+ an11.013.than.html       | AN     | 11    | 13          | Mahanama Sutta                 | To Mahanama (2)
+ an11.016.piya.html       | AN     | 11    | 16          | Metta (Mettanisamsa) Sutta     | Discourse on Advantages of Loving-kindness
+ an11.016.than.html       | AN     | 11    | 16          | Metta (Mettanisamsa) Sutta     | Good Will
+ an11.017.than.html       | AN     | 11    | 17          | Dasama Sutta                   | To Dasama
+ an11.018.than.html       | AN     | 11    | 18          | Gopalaka Sutta                 | The Cowherd
+ sn01.001.than.html     | SN     | 1     | 1           | Ogha-tarana Sutta                     | Crossing over the Flood
+ sn01.003.wlsh.html     | SN     | 1     | 3           | Upaneyya.m Sutta                      | Doomed
+ sn01.009.wlsh.html     | SN     | 1     | 9           | Maanakaamo Sutta                      | Vain Conceits
+ sn01.010.irel.html     | SN     | 1     | 10          | Arañña Sutta                          | The Wilderness
+ sn01.010.olen.html     | SN     | 1     | 10          | Arañña Sutta                          | A Face So Calm
+ sn01.010.than.html     | SN     | 1     | 10          | Arañña Sutta                          | The Wilderness
+ sn01.017.wlsh.html     | SN     | 1     | 17          | Dukkara.m (Kummo) Sutta               | Difficult
+ sn01.018.than.html     | SN     | 1     | 18          | Hiri Sutta                            | Conscience
+ sn01.020.than.html     | SN     | 1     | 20          | Samiddhi Sutta                        | About Samiddhi
+ sn01.020.wlsh.html     | SN     | 1     | 20          | Samiddhi Sutta                        | Samiddhi
+ sn01.025.wlsh.html     | SN     | 1     | 25          | Araha.m Sutta                         | The Arahant
+ sn01.038.than.html     | SN     | 1     | 38          | Sakalika Sutta                        | The Stone Sliver
+ sn01.041.than.html     | SN     | 1     | 41          | Aditta Sutta                          | (The House) On Fire
+ sn01.042.than.html     | SN     | 1     | 42          | Kindada Sutta                         | A Giver of What
+ sn01.069.than.html     | SN     | 1     | 69          | Iccha Sutta                           | Desire
+ sn01.071.than.html     | SN     | 1     | 71          | Ghatva Sutta                          | Having Killed
+ sn02.006.olen.html     | SN     | 2     | 6           | Kamada Sutta                          | Kamada's Lament
+ sn02.007.than.html     | SN     | 2     | 7           | Pañcalacanda Sutta                    | Pañcalacanda the Deva's Son
+ sn02.008.wlsh.html     | SN     | 2     | 8           | Taayano Sutta                         | Taayana
+ sn02.009.piya.html     | SN     | 2     | 9           | Candima Sutta                         | The Moon Deity's Prayer for Protection
+ sn02.010.piya.html     | SN     | 2     | 10          | Suriya Sutta                          | The Sun Deity's Prayer for Protection
+ sn02.019.than.html     | SN     | 2     | 19          | Uttara Sutta                          | Uttara the Deva's Son
+ sn02.025.wlsh.html     | SN     | 2     | 25          | Jantu Sutta                           | Jantu
+ sn02.026.than.html     | SN     | 2     | 26          | Rohitassa Sutta                       | To Rohitassa
+ sn03.001.than.html     | SN     | 3     | 1           | Dahara Sutta                          | Young
+ sn03.004.than.html     | SN     | 3     | 4           | Piya Sutta                            | Dear
+ sn03.005.than.html     | SN     | 3     | 5           | Atta-rakkhita Sutta                   | Self-protected
+ sn03.006.than.html     | SN     | 3     | 6           | Appaka Sutta                          | Few
+ sn03.007.than.html     | SN     | 3     | 7           | Atthakarana Sutta                     | In Judgment
+ sn03.008.wlsh.html     | SN     | 3     | 8           | Mallikaa Sutta                        | Mallikaa
+ sn03.013.olen.html     | SN     | 3     | 13          | Donapaka Sutta                        | King Pasenadi Goes on a Diet
+ sn03.013.wlsh.html     | SN     | 3     | 13          | Do.napaaka Sutta                      | A Heavy Meal
+ sn03.014.than.html     | SN     | 3     | 14          | Sangama Sutta                         | A Battle (1)
+ sn03.015.than.html     | SN     | 3     | 15          | Sangama Sutta                         | A Battle (2)
+ sn03.017.than.html     | SN     | 3     | 17          | Appamada Sutta                        | Heedfulness
+ sn03.019.than.html     | SN     | 3     | 19          | Aputtaka Sutta                        | Heirless (1)
+ sn03.020.than.html     | SN     | 3     | 20          | Aputtaka Sutta                        | Heirless (2)
+ sn03.023.than.html     | SN     | 3     | 23          | Loka Sutta                            | (Qualities of) the World
+ sn03.024.than.html     | SN     | 3     | 24          | Issattha Sutta                        | Archery Skills
+ sn03.025.olen.html     | SN     | 3     | 25          | Pabbatopama Sutta                     | Irresistible Force
+ sn03.025.than.html     | SN     | 3     | 25          | Pabbatopama Sutta                     | The Simile of the Mountains
+ sn04.008.than.html     | SN     | 4     | 8           | Nandana Sutta                         | Delight
+ sn04.013.than.html     | SN     | 4     | 13          | Sakalika Sutta                        | The Stone Sliver
+ sn04.019.than.html     | SN     | 4     | 19          | Kassaka Sutta                         | The Farmer
+ sn04.020.than.html     | SN     | 4     | 20          | Rajja Sutta                           | Rulership
+ sn05.001.bodh.html     | SN     | 5     | 1           | Alavika Sutta                         | Alavika
+ sn05.001.than.html     | SN     | 5     | 1           | Alavika Sutta                         | Sister Alavika
+ sn05.002.bodh.html     | SN     | 5     | 2           | Soma Sutta                            | Soma
+ sn05.002.olen.html     | SN     | 5     | 2           | Soma Sutta                            | Mara Meets His Match
+ sn05.002.than.html     | SN     | 5     | 2           | Soma Sutta                            | Sister Soma
+ sn05.003.bodh.html     | SN     | 5     | 3           | Gotami Sutta                          | Gotami
+ sn05.003.than.html     | SN     | 5     | 3           | Gotami Sutta                          | Sister Gotami
+ sn05.004.bodh.html     | SN     | 5     | 4           | Vijaya Sutta                          | Vijaya
+ sn05.004.than.html     | SN     | 5     | 4           | Vijaya Sutta                          | Sister Vijaya
+ sn05.005.bodh.html     | SN     | 5     | 5           | Uppalavanna Sutta                     | Uppalavanna
+ sn05.005.than.html     | SN     | 5     | 5           | Uppalavanna Sutta                     | Sister Uppalavanna
+ sn05.006.bodh.html     | SN     | 5     | 6           | Cala Sutta                            | Cala
+ sn05.006.than.html     | SN     | 5     | 6           | Cala Sutta                            | Sister Cala
+ sn05.007.bodh.html     | SN     | 5     | 7           | Upacala Sutta                         | Upacala
+ sn05.007.than.html     | SN     | 5     | 7           | Upacala Sutta                         | Sister Upacala
+ sn05.008.bodh.html     | SN     | 5     | 8           | Sisupacala Sutta                      | Sisupacala
+ sn05.008.than.html     | SN     | 5     | 8           | Sisupacala Sutta                      | Sister Sisupacala
+ sn05.009.bodh.html     | SN     | 5     | 9           | Sela Sutta                            | Sela
+ sn05.009.than.html     | SN     | 5     | 9           | Sela Sutta                            | Sister Sela
+ sn05.010.bodh.html     | SN     | 5     | 10          | Vajira Sutta                          | Vajira
+ sn05.010.than.html     | SN     | 5     | 10          | Vajira Sutta                          | Sister Vajira
+ sn06.001.than.html     | SN     | 6     | 1           | Ayacana Sutta                         | The Request
+ sn06.002.than.html     | SN     | 6     | 2           | Garava Sutta                          | Reverence
+ sn06.013.olen.html     | SN     | 6     | 13          | Andhakavinda Sutta                    | Let the Wilderness Serve!
+ sn06.015.than.html     | SN     | 6     | 15          | Parinibbana Sutta                     | Total Unbinding
+ sn07.001.wlsh.html     | SN     | 7     | 1           | Dhanañjaanii Sutta                    | Dhanañjaani
+ sn07.002.budd.html     | SN     | 7     | 2           | Akkosa Sutta                          | Insult
+ sn07.002.than.html     | SN     | 7     | 2           | Akkosa Sutta                          | Insult
+ sn07.002.wlsh.html     | SN     | 7     | 2           | Akkoso Sutta                          | Abuse
+ sn07.006.than.html     | SN     | 7     | 6           | Jata Sutta                            | The Tangle
+ sn07.011.piya.html     | SN     | 7     | 11          | Kasi Bharadvaja Sutta                 | Discourse to Bharadvaja, the Farmer
+ sn07.011.than.html     | SN     | 7     | 11          | Kasi Bharadvaja Sutta                 | To the Plowing Bharadvaja
+ sn07.012.olen.html     | SN     | 7     | 12          | Udaya Sutta                           | Breaking the Cycle
+ sn07.014.than.html     | SN     | 7     | 14          | Maha-sala Sutta                       | Very Rich
+ sn07.017.than.html     | SN     | 7     | 17          | Navakammika Sutta                     | The Builder
+ sn07.018.olen.html     | SN     | 7     | 18          | Katthaharaka Sutta                    | Buddha in the Forest
+ sn07.018.than.html     | SN     | 7     | 18          | Katthaharaka Sutta                    | Firewood-gathering
+ sn07.021.wlsh.html     | SN     | 7     | 21          | Sangaarava Sutta                      | Sangaarava
+ sn08.004.than.html     | SN     | 8     | 4           | Ananda Sutta                          | Ananda
+ sn09.001.than.html     | SN     | 9     | 1           | Viveka Sutta                          | Seclusion
+ sn09.006.than.html     | SN     | 9     | 6           | Anuruddha Sutta                       | Anuruddha
+ sn09.009.than.html     | SN     | 9     | 9           | Vajjiputta Sutta                      | The Vajjian Princeling
+ sn09.011.than.html     | SN     | 9     | 11          | Ayoniso-manasikara Sutta              | Inappropriate Attention
+ sn09.014.olen.html     | SN     | 9     | 14          | Gandhatthena Sutta                    | Stealing the Scent
+ sn09.014.than.html     | SN     | 9     | 14          | Gandhatthena Sutta                    | The Thief of a Scent
+ sn10.008.than.html     | SN     | 10    | 8           | Sudatta Sutta                         | About Sudatta (Anathapindika)
+ sn10.012.piya.html     | SN     | 10    | 12          | Alavaka Sutta                         | Discourse to Alavaka
+ sn10.012.than.html     | SN     | 10    | 12          | Alavaka Sutta                         | To the Alavaka Yakkha
+ sn11.003.piya.html     | SN     | 11    | 3           | Dhajagga Sutta                        | Banner Protection
+ sn11.003.than.html     | SN     | 11    | 3           | Dhajagga Sutta                        | The Top of the Standard
+ sn11.004.olen.html     | SN     | 11    | 4           | Vepacitti Sutta                       | Calm in the Face of Anger
+ sn11.005.than.html     | SN     | 11    | 5           | Subhasita-jaya Sutta                  | Victory Through What is Well Spoken
+ sn12.002.than.html     | SN     | 12    | 2           | Paticca-samuppada-vibhanga Sutta      | Analysis of Dependent Co-arising
+ sn12.010.wlsh.html     | SN     | 12    | 10          | Mahaa Sakyamuni Gotamo Sutta          | Gotama the Great Sage of the Sakya
+ sn12.011.nypo.html     | SN     | 12    | 11          | Ahara Sutta                           | Nutriment
+ sn12.011.than.html     | SN     | 12    | 11          | Ahara Sutta                           | Nutriment
+ sn12.012.nypo.html     | SN     | 12    | 12          | Phagguna Sutta                        | To Phagguna
+ sn12.012.than.html     | SN     | 12    | 12          | Phagguna Sutta                        | To Phagguna
+ sn12.015.than.html     | SN     | 12    | 15          | Kaccayanagotta Sutta                  | To Kaccayana Gotta (on Right View)
+ sn12.015.wlsh.html     | SN     | 12    | 15          | Kaccaayanagotto Sutta                 | Kaccaayana
+ sn12.016.wlsh.html     | SN     | 12    | 16          | Dhammakathiko Sutta                   | The Teacher of the Dhamma
+ sn12.017.than.html     | SN     | 12    | 17          | Acela Sutta                           | To the Clothless Ascetic
+ sn12.017x.wlsh.html    | SN     | 12    | 17          | Acela Sutta                           | Naked Kassapa
+ sn12.019.than.html     | SN     | 12    | 19          | Bala-pandita Sutta                    | The Fool & the Wise Person
+ sn12.020.than.html     | SN     | 12    | 20          | Paccaya Sutta                         | Requisite Conditions
+ sn12.022x.wlsh.html    | SN     | 12    | 22          | Dasabalaa (2) Sutta                   | Ten Powers
+ sn12.023.bodh.html     | SN     | 12    | 23          | Upanisa Sutta                         | Discourse on Supporting Conditions
+ sn12.023.than.html     | SN     | 12    | 23          | Upanisa Sutta                         | Prerequisites
+ sn12.023x.wlsh.html    | SN     | 12    | 23          | Upanisaa Sutta                        | Upanisaa
+ sn12.025.than.html     | SN     | 12    | 25          | Bhumija Sutta                         | To Bhumija
+ sn12.031.than.html     | SN     | 12    | 31          | Bhutamidam Sutta                      | This Has Come Into Being
+ sn12.031x.nypo.html    | SN     | 12    | 31          | Bhutamidam Sutta                      | This Has Come Into Being
+ sn12.035.than.html     | SN     | 12    | 35          | Avijjapaccaya Sutta                   | From Ignorance as a Requisite Condition
+ sn12.038.than.html     | SN     | 12    | 38          | Cetana Sutta                          | Intention
+ sn12.038.wlsh.html     | SN     | 12    | 38          | Cetanaa Sutta                         | Volition
+ sn12.044.than.html     | SN     | 12    | 44          | Loka Sutta                            | The World
+ sn12.046.than.html     | SN     | 12    | 46          | Aññatra Sutta                         | A Certain Brahman
+ sn12.048.than.html     | SN     | 12    | 48          | Lokayatika Sutta                      | The Cosmologist
+ sn12.052.than.html     | SN     | 12    | 52          | Upadana Sutta                         | Clinging
+ sn12.060x.wlsh.html    | SN     | 12    | 60          | Nidaana.m Sutta                       | Aananda's Mistake
+ sn12.061.niza.html     | SN     | 12    | 61          | Assutavā Sutta                        | The Spiritually-Unlearned (1)
+ sn12.061.than.html     | SN     | 12    | 61          | Assutavā Sutta                        | Uninstructed (1)
+ sn12.063.nypo.html     | SN     | 12    | 63          | Puttamansa Sutta                      | A Son's Flesh
+ sn12.063.than.html     | SN     | 12    | 63          | Puttamansa Sutta                      | A Son's Flesh
+ sn12.064.nypo.html     | SN     | 12    | 64          | Atthi Raga Sutta                      | Where There is Passion
+ sn12.064.than.html     | SN     | 12    | 64          | Atthi Raga Sutta                      | Where There is Passion
+ sn12.065.than.html     | SN     | 12    | 65          | Nagara Sutta                          | The City
+ sn12.067.than.html     | SN     | 12    | 67          | Nalakalapiyo Sutta                    | Sheaves of Reeds
+ sn12.068.than.html     | SN     | 12    | 68          | Kosambi Sutta                         | At Kosambi (On Knowing Dependent Co-arising)
+ sn12.070.than.html     | SN     | 12    | 70          | Susima Sutta                          | About Susima
+ sn13.001.than.html     | SN     | 13    | 1           | Nakhasikha Sutta                      | The Tip of the Fingernail
+ sn13.002.than.html     | SN     | 13    | 2           | Pokkharani Sutta                      | The Pond
+ sn13.008.than.html     | SN     | 13    | 8           | Samudda Sutta                         | The Ocean
+ sn14.011.than.html     | SN     | 14    | 11          | Sattadhatu Sutta                      | Seven Properties
+ sn15.003.than.html     | SN     | 15    | 3           | Assu Sutta                            | Tears
+ sn15.009.than.html     | SN     | 15    | 9           | Danda Sutta                           | The Stick
+ sn15.011.than.html     | SN     | 15    | 11          | Duggata Sutta                         | Fallen on Hard Times
+ sn15.012.than.html     | SN     | 15    | 12          | Sukhita Sutta                         | Happy
+ sn15.013.than.html     | SN     | 15    | 13          | Timsa Sutta                           | Thirty
+ sn15.014.than.html     | SN     | 15    | 14-19       | Mata Sutta                            | Mother
+ sn16.001.wlsh.html     | SN     | 16    | 1           | Santu.t.tha.m Sutta                   | Contentment
+ sn16.002.wlsh.html     | SN     | 16    | 2           | Anottaapi Sutta                       | Carelessness
+ sn16.005.than.html     | SN     | 16    | 5           | Jinna Sutta                           | Old
+ sn16.013.than.html     | SN     | 16    | 13          | Saddhammapatirupaka Sutta             | A Counterfeit of the True Dhamma
+ sn16.013.wlsh.html     | SN     | 16    | 13          | Saddhamma-pa.tiruupaka.m Sutta        | False Dhamma
+ sn17.003.than.html     | SN     | 17    | 3           | Kumma Sutta                           | The Turtle
+ sn17.005.than.html     | SN     | 17    | 5           | Pilahaka Sutta                        | The Dung Beetle
+ sn17.005.wlsh.html     | SN     | 17    | 5           | Piḷhika Sutta                         | The Dung Beetle
+ sn17.008.than.html     | SN     | 17    | 8           | Sigala Sutta                          | The Jackal
+ sn20.002.than.html     | SN     | 20    | 2           | Nakhasikha Sutta                      | The Tip of the Fingernail
+ sn20.004.than.html     | SN     | 20    | 4           | Okkha Sutta                           | Serving Dishes
+ sn20.005.than.html     | SN     | 20    | 5           | Satti Sutta                           | The Spear
+ sn20.006.than.html     | SN     | 20    | 6           | Dhanuggaha Sutta                      | The Archer
+ sn20.007.than.html     | SN     | 20    | 7           | Ani Sutta                             | The Peg
+ sn21.001.than.html     | SN     | 21    | 1           | Kolita Sutta                          | Kolita
+ sn21.002.than.html     | SN     | 21    | 2           | Upatissa Sutta                        | About Upatissa (Sariputta)
+ sn21.006.niza.html     | SN     | 21    | 6           | Lakuntaka Bhaddiya Sutta              | About Bhaddiya the Dwarf
+ sn21.008.wlsh.html     | SN     | 21    | 8           | Nando Sutta                           | Nanda
+ sn21.010.than.html     | SN     | 21    | 10          | Theranama Sutta                       | [A Monk] by the Name of Elder
+ sn22.001.than.html     | SN     | 22    | 1           | Nakulapita Sutta                      | To Nakulapita
+ sn22.002.than.html     | SN     | 22    | 2           | Devadaha Sutta                        | At Devadaha
+ sn22.003.than.html     | SN     | 22    | 3           | Haliddakani Sutta                     | To Haliddakani
+ sn22.005.than.html     | SN     | 22    | 5           | Samadhi Sutta                         | Concentration
+ sn22.007.wlsh.html     | SN     | 22    | 7           | Upaadaaparitassanaa Sutta             | Grasping and Worry
+ sn22.022.niza.html     | SN     | 22    | 22          | Bhāra Sutta                           | The Burden
+ sn22.022.than.html     | SN     | 22    | 22          | Bhāra Sutta                           | The Burden
+ sn22.022.wlsh.html     | SN     | 22    | 22          | Bhāra Sutta                           | The Burden
+ sn22.023.than.html     | SN     | 22    | 23          | Pariñña Sutta                         | Comprehension
+ sn22.036.than.html     | SN     | 22    | 36          | Bhikkhu Sutta                         | The Monk
+ sn22.039.than.html     | SN     | 22    | 39          | Anudhamma Sutta                       | In Accordance with the Dhamma (1)
+ sn22.040.than.html     | SN     | 22    | 40          | Anudhamma Sutta                       | In Accordance with the Dhamma (2)
+ sn22.041.than.html     | SN     | 22    | 41          | Anudhamma Sutta                       | In Accordance with the Dhamma (3)
+ sn22.042.than.html     | SN     | 22    | 42          | Anudhamma Sutta                       | In Accordance with the Dhamma (4)
+ sn22.043.wlsh.html     | SN     | 22    | 43          | Attadiipaa Sutta                      | An Island to Oneself
+ sn22.047.than.html     | SN     | 22    | 47          | Samanupassana Sutta                   | Assumptions
+ sn22.047.wlsh.html     | SN     | 22    | 47          | Samanupassanaa Sutta                  | Ways of Regarding
+ sn22.048.than.html     | SN     | 22    | 48          | Khandha Sutta                         | Aggregates
+ sn22.049.wlsh.html     | SN     | 22    | 49          | So.no Sutta                           | So.na
+ sn22.053.than.html     | SN     | 22    | 53          | Upaya Sutta                           | Attached
+ sn22.054.than.html     | SN     | 22    | 54          | Bija Sutta                            | Means of Propagation
+ sn22.055.than.html     | SN     | 22    | 55          | Udana Sutta                           | Exclamation
+ sn22.056.than.html     | SN     | 22    | 56          | Parivatta Sutta                       | The (Fourfold) Round
+ sn22.057.than.html     | SN     | 22    | 57          | Sattatthana Sutta                     | Seven Bases
+ sn22.058.than.html     | SN     | 22    | 58          | Buddha Sutta                          | Awakened
+ sn22.059.mend.html     | SN     | 22    | 59          | Anatta-lakkhana Sutta                 | The Discourse on the Not-self Characteristic
+ sn22.059.nymo.html     | SN     | 22    | 59          | Anatta-lakkhana Sutta                 | The Discourse on the Not-self Characteristic
+ sn22.059.than.html     | SN     | 22    | 59          | Pañcavaggi Sutta                      | Five Brethren
+ sn22.060.than.html     | SN     | 22    | 60          | Mahali Sutta                          | To Mahali
+ sn22.063.wlsh.html     | SN     | 22    | 63          | Upaadiyamaano Sutta                   | Clinging
+ sn22.079.than.html     | SN     | 22    | 79          | Khajjaniya Sutta                      | Chewed Up
+ sn22.080.than.html     | SN     | 22    | 80          | Pindolya Sutta                        | Almsgoers
+ sn22.080.wlsh.html     | SN     | 22    | 80          | Pi.n.dolya.m Sutta                    | Going Begging
+ sn22.081.than.html     | SN     | 22    | 81          | Parileyyaka Sutta                     | At Parileyyaka
+ sn22.083.than.html     | SN     | 22    | 83          | Ananda Sutta                          | Ananda
+ sn22.084.than.html     | SN     | 22    | 84          | Tissa Sutta                           | Tissa
+ sn22.084x.wlsh.html    | SN     | 22    | 84          | Tisso Sutta                           | Tissa the Waverer
+ sn22.085.than.html     | SN     | 22    | 85          | Yamaka Sutta                          | To Yamaka
+ sn22.086.than.html     | SN     | 22    | 86          | Anuradha Sutta                        | To Anuradha
+ sn22.086.wlsh.html     | SN     | 22    | 86          | Anuraadho Sutta                       | Anuraadha is Caught Out
+ sn22.087x.wlsh.html    | SN     | 22    | 87          | Vakkali Sutta                         | Vakkali
+ sn22.089.than.html     | SN     | 22    | 89          | Khemaka Sutta                         | About Khemaka
+ sn22.089x.wlsh.html    | SN     | 22    | 89          | Khemo Sutta                           | Khemaka
+ sn22.090.than.html     | SN     | 22    | 90          | Channa Sutta                          | To Channa
+ sn22.093.than.html     | SN     | 22    | 93          | Nadi Sutta                            | The River
+ sn22.095.than.html     | SN     | 22    | 95          | Phena Sutta                           | Foam
+ sn22.097.than.html     | SN     | 22    | 97          | Nakhasikha Sutta                      | The Tip of the Fingernail
+ sn22.099.than.html     | SN     | 22    | 99          | Gaddula Sutta                         | The Leash (1)
+ sn22.100.than.html     | SN     | 22    | 100         | Gaddula Sutta                         | The Leash (2)
+ sn22.101.than.html     | SN     | 22    | 101         | Nava Sutta                            | The Ship
+ sn22.109.wlsh.html     | SN     | 22    | 109         | Sotaapanno Sutta                      | The Sotaapanna ('Stream-winner')
+ sn22.110.wlsh.html     | SN     | 22    | 110         | Araha.m Sutta                         | The Arahant
+ sn22.121.than.html     | SN     | 22    | 121         | Upadana Sutta                         | Clinging
+ sn22.122.than.html     | SN     | 22    | 122         | Silavant Sutta                        | Virtuous
+ sn23.002.than.html     | SN     | 23    | 2           | Satta Sutta                           | A Being
+ sn25.001.than.html     | SN     | 25    | 1           | Cakkhu Sutta                          | The Eye
+ sn25.002.than.html     | SN     | 25    | 2           | Rupa Sutta                            | Forms
+ sn25.003.than.html     | SN     | 25    | 3           | Viññana Sutta                         | Consciousness
+ sn25.004.than.html     | SN     | 25    | 4           | Phassa Sutta                          | Contact
+ sn25.005.than.html     | SN     | 25    | 5           | Vedana Sutta                          | Feeling
+ sn25.006.than.html     | SN     | 25    | 6           | Sañña Sutta                           | Perception
+ sn25.007.than.html     | SN     | 25    | 7           | Cetana Sutta                          | Intention
+ sn25.008.than.html     | SN     | 25    | 8           | Tanha Sutta                           | Craving
+ sn25.009.than.html     | SN     | 25    | 9           | Dhatu Sutta                           | Properties
+ sn25.010.than.html     | SN     | 25    | 10          | Khandha Sutta                         | Aggregates
+ sn27.001-010.than.html | SN     | 27    | 1-10        | Upakkilesa Samyutta                   | Defilements
+ sn35.023.than.html     | SN     | 35    | 23          | Sabba Sutta                           | The All
+ sn35.024.than.html     | SN     | 35    | 24          | Pahanaya Sutta                        | To Be Abandoned
+ sn35.028.nymo.html     | SN     | 35    | 28          | Adittapariyaya Sutta                  | The Fire Sermon
+ sn35.028.than.html     | SN     | 35    | 28          | Adittapariyaya Sutta                  | The Fire Sermon
+ sn35.063.than.html     | SN     | 35    | 63          | Migajala Sutta                        | To Migajala
+ sn35.063.wlsh.html     | SN     | 35    | 63          | Migajaalena Sutta                     | Migajaala
+ sn35.069.than.html     | SN     | 35    | 69          | Upasena Sutta                         | Upasena
+ sn35.074.than.html     | SN     | 35    | 74          | Gilana Sutta                          | Ill (1)
+ sn35.075.than.html     | SN     | 35    | 75          | Gilana Sutta                          | Ill (2)
+ sn35.080.than.html     | SN     | 35    | 80          | Avijja Sutta                          | Ignorance
+ sn35.082.than.html     | SN     | 35    | 82          | Loka Sutta                            | The World
+ sn35.085.than.html     | SN     | 35    | 85          | Suñña Sutta                           | Empty
+ sn35.088.than.html     | SN     | 35    | 88          | Punna Sutta                           | To Punna
+ sn35.093.than.html     | SN     | 35    | 93          | Dvaya Sutta                           | A Pair
+ sn35.095.than.html     | SN     | 35    | 95          | Malunkyaputta Sutta                   | To Malunkyaputta
+ sn35.095.wlsh.html     | SN     | 35    | 95          | Maalunkyaputta Sutta                  | Maalunkyaputta
+ sn35.097.than.html     | SN     | 35    | 97          | Pamadaviharin Sutta                   | Dwelling in Heedlessness
+ sn35.099.than.html     | SN     | 35    | 99          | Samadhi Sutta                         | Concentration
+ sn35.101.than.html     | SN     | 35    | 101         | Na Tumhaka Sutta                      | Not Yours
+ sn35.115.than.html     | SN     | 35    | 115         | Marapasa Sutta                        | Mara's Power
+ sn35.120.wlsh.html     | SN     | 35    | 120         | Sariputto Sutta                       | Sariputta
+ sn35.127.than.html     | SN     | 35    | 127         | Bharadvaja Sutta                      | About Bharadvaja
+ sn35.127.wlsh.html     | SN     | 35    | 127         | Bhaaradvaajo Sutta                    | Bhaaradvaaja Instructs a King
+ sn35.132.wlsh.html     | SN     | 35    | 132         | Lohicco Sutta                         | Lohicca
+ sn35.133.wlsh.html     | SN     | 35    | 133         | Verahaccaani Sutta                    | Verahaccaani
+ sn35.135.than.html     | SN     | 35    | 135         | Khana Sutta                           | The Opportunity
+ sn35.145.than.html     | SN     | 35    | 145         | Kamma Sutta                           | Action
+ sn35.145.wlsh.html     | SN     | 35    | 145         | Kamma.m Sutta                         | Kamma
+ sn35.152.wlsh.html     | SN     | 35    | 152         | Atthinukhopariyaayo Sutta             | Is There a Criterion?
+ sn35.153.than.html     | SN     | 35    | 153         | Indriya Sutta                         | Faculties
+ sn35.187.wlsh.html     | SN     | 35    | 187         | Samuddo (1) Sutta                     | The Ocean (1)
+ sn35.189.than.html     | SN     | 35    | 189         | Balisika Sutta                        | The Fisherman
+ sn35.191.than.html     | SN     | 35    | 191         | Kotthita Sutta                        | To Kotthita
+ sn35.191.wlsh.html     | SN     | 35    | 191         | Ko.t.thiko Sutta                      | Ko.t.thika
+ sn35.193.than.html     | SN     | 35    | 193         | Udayin Sutta                          | With Udayin
+ sn35.197.than.html     | SN     | 35    | 197         | Asivisa Sutta                         | Vipers
+ sn35.199.than.html     | SN     | 35    | 199         | Kumma Sutta                           | The Tortoise
+ sn35.200.than.html     | SN     | 35    | 200         | Daruka-khandha Sutta                  | The Log
+ sn35.202.than.html     | SN     | 35    | 202         | Avassuta Sutta                        | Soggy
+ sn35.203x.wlsh.html    | SN     | 35    | 203         | Dukkhadhammaa Sutta                   | Things Productive of Suffering
+ sn35.204.than.html     | SN     | 35    | 204         | Kimsuka Sutta                         | The Riddle Tree
+ sn35.204.wlsh.html     | SN     | 35    | 204         | Ki.msukaa Sutta                       | The 'What's It' Tree (Ki.msuka)
+ sn35.205.than.html     | SN     | 35    | 205         | Vina Sutta                            | The Lute
+ sn35.205x.wlsh.html    | SN     | 35    | 205         | Vii.naa Sutta                         | The Lute
+ sn35.206.than.html     | SN     | 35    | 206         | Chappana Sutta                        | The Six Animals
+ sn35.206x.wlsh.html    | SN     | 35    | 206         | Chapaa.na Sutta                       | The Six Animals
+ sn35.207.than.html     | SN     | 35    | 207         | Yavakalapi Sutta                      | The Sheaf of Barley
+ sn36.001.nypo.html     | SN     | 36    | 1           | Samadhi Sutta                         | Concentration
+ sn36.002.nypo.html     | SN     | 36    | 2           | Sukha Sutta                           | Happiness
+ sn36.003.nypo.html     | SN     | 36    | 3           | Pahana Sutta                          | Giving Up
+ sn36.004.nypo.html     | SN     | 36    | 4           | Patala Sutta                          | The Bottomless Pit
+ sn36.004.than.html     | SN     | 36    | 4           | Patala Sutta                          | The Bottomless Chasm
+ sn36.005.nypo.html     | SN     | 36    | 5           | Datthabba Sutta                       | To Be Known
+ sn36.006.nypo.html     | SN     | 36    | 6           | Sallatha Sutta                        | The Dart
+ sn36.006.than.html     | SN     | 36    | 6           | Sallatha Sutta                        | The Arrow
+ sn36.007.nypo.html     | SN     | 36    | 7           | Gelañña Sutta                         | At the Sick Room (1)
+ sn36.007.than.html     | SN     | 36    | 7           | Gelañña Sutta                         | The Sick Ward (1)
+ sn36.008.nypo.html     | SN     | 36    | 8           | Gelañña Sutta                         | At the Sick Room (2)
+ sn36.009.nypo.html     | SN     | 36    | 9           | Anicca Sutta                          | Impermanent
+ sn36.010.nypo.html     | SN     | 36    | 10          | Phassamulaka Sutta                    | Rooted in Sense-impression
+ sn36.011.nypo.html     | SN     | 36    | 11          | Rahogata Sutta                        | Secluded
+ sn36.011.than.html     | SN     | 36    | 11          | Rahogata Sutta                        | Alone
+ sn36.012.nypo.html     | SN     | 36    | 12          | Akasa Sutta                           | In the Sky (1)
+ sn36.014.nypo.html     | SN     | 36    | 14          | Agara Sutta                           | The Guest House
+ sn36.015.nypo.html     | SN     | 36    | 15          | Santaka Sutta                         | To Ananda (1)
+ sn36.019.nypo.html     | SN     | 36    | 19          | Pañcakanga Sutta                      | Carpenter Fivetools
+ sn36.019.than.html     | SN     | 36    | 19          | Pañcakanga Sutta                      | With Pañcakanga
+ sn36.021.nypo.html     | SN     | 36    | 21          | Sivaka Sutta                          | To Sivaka
+ sn36.021.than.html     | SN     | 36    | 21          | Sivaka Sutta                          | To Sivaka
+ sn36.022.nypo.html     | SN     | 36    | 22          | Atthasatapariyaya Sutta               | One Hundred Eight Feelings
+ sn36.022.than.html     | SN     | 36    | 22          | Atthasata Sutta                       | The One-hundred-and-eight Exposition
+ sn36.023.than.html     | SN     | 36    | 23          | Bhikkhu Sutta                         | To a Certain Bhikkhu
+ sn36.031.nypo.html     | SN     | 36    | 31          | Niramisa Sutta                        | Unworldly
+ sn36.031.than.html     | SN     | 36    | 31          | Niramisa Sutta                        | Not of the Flesh
+ sn37.034.than.html     | SN     | 37    | 4           | Vaddha Sutta                          | Growth
+ sn38.014.than.html     | SN     | 38    | 14          | Dukkha Sutta                          | Stress
+ sn40.009.wlsh.html     | SN     | 40    | 9           | Animitto Sutta                        | The Signless
+ sn41.003.than.html     | SN     | 41    | 3           | Isidatta Sutta                        | About Isidatta
+ sn41.004.than.html     | SN     | 41    | 4           | Mahaka Sutta                          | About Mahaka
+ sn41.005.niza.html     | SN     | 41    | 5           | Pathama Kamabhu                       | About Kamabhu (1)
+ sn41.006.than.html     | SN     | 41    | 6           | Kamabhu Sutta                         | With Kamabhu (2)
+ sn41.007.than.html     | SN     | 41    | 7           | Godatta Sutta                         | To Godatta
+ sn41.010.than.html     | SN     | 41    | 10          | Gilana Sutta                          | Sick
+ sn41.010.wlsh.html     | SN     | 41    | 10          | Gilaana-dassana.m Sutta               | Seeing the Sick (Citta)
+ sn42.002.than.html     | SN     | 42    | 2           | Talaputa Sutta                        | To Talaputa the Actor
+ sn42.003.than.html     | SN     | 42    | 3           | Yodhajiva Sutta                       | To Yodhajiva (The Warrior)
+ sn42.006.than.html     | SN     | 42    | 6           | Paccha-bhumika Sutta                  | [Brahmans] of the Western Land
+ sn42.007.wlsh.html     | SN     | 42    | 7           | Desanaa Sutta                         | Teaching
+ sn42.008.than.html     | SN     | 42    | 8           | Sankha Sutta                          | The Conch Trumpet
+ sn42.009.than.html     | SN     | 42    | 9           | Kula Sutta                            | Families
+ sn42.010.than.html     | SN     | 42    | 10          | Maniculaka Sutta                      | To Maniculaka
+ sn42.011.than.html     | SN     | 42    | 11          | Gandhabhaka (Bhadraka) Sutta          | To Gandhabhaka (Bhadraka)
+ sn44.001.than.html     | SN     | 44    | 1           | Khema Sutta                           | With Khema
+ sn44.002.than.html     | SN     | 44    | 2           | Anuradha Sutta                        | To Anuradha
+ sn44.003.than.html     | SN     | 44    | 3           | Sariputta-Kotthita Sutta              | Sariputta and Kotthita (1)
+ sn44.004.than.html     | SN     | 44    | 4           | Sariputta-Kotthita Sutta              | Sariputta and Kotthita (2)
+ sn44.005.than.html     | SN     | 44    | 5           | Sariputta-Kotthita Sutta              | Sariputta and Kotthita (3)
+ sn44.006.than.html     | SN     | 44    | 6           | Sariputta-Kotthita Sutta              | Sariputta and Kotthita (4)
+ sn44.007.than.html     | SN     | 44    | 7           | Moggallana Sutta                      | With Moggallana
+ sn44.008.than.html     | SN     | 44    | 8           | Vacchagotta Sutta                     | With Vacchagotta
+ sn44.009.than.html     | SN     | 44    | 9           | Kutuhalasala Sutta                    | With Vacchagotta
+ sn44.010.than.html     | SN     | 44    | 10          | Ananda Sutta                          | To Ananda
+ sn44.011.than.html     | SN     | 44    | 11          | Sabhiya Sutta                         | With Sabhiya
+ sn45.001.than.html     | SN     | 45    | 1           | Avijja Sutta                          | Ignorance
+ sn45.002.than.html     | SN     | 45    | 2           | Upaddha Sutta                         | Half (of the Holy Life)
+ sn45.008.than.html     | SN     | 45    | 8           | Magga-vibhanga Sutta                  | An Analysis of the Path
+ sn45.159.wlsh.html     | SN     | 45    | 159         | Agantuka Sutta                        | For All Comers
+ sn45.165.wlsh.html     | SN     | 45    | 165         | Dukkhata Sutta                        | Suffering
+ sn45.171.than.html     | SN     | 45    | 171         | Ogha Sutta                            | Floods (1)
+ sn46.001.than.html     | SN     | 46    | 1           | Himavanta Sutta                       | The Himalayas
+ sn46.014.piya.html     | SN     | 46    | 14          | Gilana Sutta                          | Ill
+ sn46.014.than.html     | SN     | 46    | 14          | Gilana Sutta                          | Ill
+ sn46.016.piya.html     | SN     | 46    | 16          | Gilana Sutta                          | Ill
+ sn46.051.than.html     | SN     | 46    | 51          | Ahara Sutta                           | Food
+ sn46.053.than.html     | SN     | 46    | 53          | Aggi Sutta                            | Fire
+ sn46.053.wlsh.html     | SN     | 46    | 53          | Aggi Sutta                            | Fire
+ sn46.054.than.html     | SN     | 46    | 54          | Metta Sutta                           | Good Will
+ sn46.054x.wlsh.html    | SN     | 46    | 54          | Mettam Sutta                          | The Brahma-viharas
+ sn46.055.wlsh.html     | SN     | 46    | 55          | Sangaravo Sutta                       | Sangarava
+ sn47.006.than.html     | SN     | 47    | 6           | Sakunagghi Sutta                      | The Hawk
+ sn47.007.olen.html     | SN     | 47    | 7           | Makkata Sutta                         | The Foolish Monkey
+ sn47.007.than.html     | SN     | 47    | 7           | Makkata Sutta                         | The Monkey
+ sn47.008.than.html     | SN     | 47    | 8           | Suda Sutta                            | The Cook
+ sn47.010.olen.html     | SN     | 47    | 10          | Bhikkhunupassaya Sutta                | Directed and Undirected Meditation
+ sn47.010.wlsh.html     | SN     | 47    | 10          | Bhikkhunivasako Sutta                 | Mindfulness
+ sn47.013.nypo.html     | SN     | 47    | 13          | Cunda Sutta                           | About Cunda
+ sn47.013.than.html     | SN     | 47    | 13          | Cunda Sutta                           | About Cunda
+ sn47.014.nypo.html     | SN     | 47    | 14          | Cunda Sutta                           | At Ukkacela
+ sn47.019.olen.html     | SN     | 47    | 19          | Sedaka Sutta                          | The Bamboo Acrobat
+ sn47.019.than.html     | SN     | 47    | 19          | Sedaka Sutta                          | At Sedaka
+ sn47.020.than.html     | SN     | 47    | 20          | Sedaka Sutta                          | At Sedaka
+ sn47.035.than.html     | SN     | 47    | 35          | Sata Sutta                            | Mindful
+ sn47.037.than.html     | SN     | 47    | 37          | Chanda Sutta                          | Desire
+ sn47.038.than.html     | SN     | 47    | 38          | Pariñña Sutta                         | Comprehension
+ sn47.040.than.html     | SN     | 47    | 40          | Satipatthana-vibhanga Sutta           | Analysis of the Frames of Reference
+ sn47.041.than.html     | SN     | 47    | 41          | Amata Sutta                           | Deathless
+ sn47.042.than.html     | SN     | 47    | 42          | Samudaya Sutta                        | Origination
+ sn47.046.wlsh.html     | SN     | 47    | 46          | Paa.timokkha Sutta                    | Obligation
+ sn48.010.than.html     | SN     | 48    | 10          | Indriya-vibhanga Sutta                | Analysis of the Mental Faculties
+ sn48.038.than.html     | SN     | 48    | 38          | Vibhanga Sutta                        | An Analysis
+ sn48.039.than.html     | SN     | 48    | 39          | Katthopama Sutta                      | The Fire-stick
+ sn48.041.than.html     | SN     | 48    | 41          | Jara Sutta                            | Old Age
+ sn48.042.wlsh.html     | SN     | 48    | 42          | Unnabho Brahmano Sutta                | The Brahman Unnabha
+ sn48.044.than.html     | SN     | 48    | 44          | Pubbakotthaka Sutta                   | Eastern Gatehouse
+ sn48.053.than.html     | SN     | 48    | 53          | Sekha Sutta                           | The Learner
+ sn48.054.wlsh.html     | SN     | 48    | 54          | Pade Sutta                            | In the Foot
+ sn48.056.than.html     | SN     | 48    | 56          | Patitthita Sutta                      | Established
+ sn51.015.than.html     | SN     | 51    | 15          | Brahmana Sutta                        | To Unnabha the Brahman
+ sn51.020.than.html     | SN     | 51    | 20          | Iddhipada-vibhanga Sutta              | Analysis of the Bases of Power
+ sn52.010.than.html     | SN     | 52    | 10          | Gilana Sutta                          | Illness
+ sn54.006.than.html     | SN     | 54    | 6           | Arittha Sutta                         | To Arittha
+ sn54.008.than.html     | SN     | 54    | 8           | Dipa Sutta                            | The Lamp
+ sn54.009.than.html     | SN     | 54    | 9           | Vesali Sutta                          | At Vesali
+ sn54.013.than.html     | SN     | 54    | 13          | Ananda Sutta                          | To Ananda
+ sn55.001.than.html     | SN     | 55    | 1           | Raja Sutta                            | The Emperor
+ sn55.021.than.html     | SN     | 55    | 21          | Mahanama Sutta                        | To Mahanama (1)
+ sn55.022.than.html     | SN     | 55    | 22          | Mahanama Sutta                        | To Mahanama (2)
+ sn55.024.wlsh.html     | SN     | 55    | 24          | Sarakaani Sutta                       | Sarakaani (Who Took to Drink)
+ sn55.030.than.html     | SN     | 55    | 30          | Licchavi Sutta                        | To the Licchavi
+ sn55.031.than.html     | SN     | 55    | 31          | Abhisanda Sutta                       | Bonanzas (1)
+ sn55.032.than.html     | SN     | 55    | 32          | Abhisanda Sutta                       | Bonanzas (2)
+ sn55.033.than.html     | SN     | 55    | 33          | Abhisanda Sutta                       | Bonanzas (3)
+ sn55.040.than.html     | SN     | 55    | 40          | Nandiya Sutta                         | To Nandiya
+ sn55.054.than.html     | SN     | 55    | 54          | Gilana Sutta                          | Ill
+ sn56.009.wlsh.html     | SN     | 56    | 9           | Viggahika Sutta                       | Wordy Warfare
+ sn56.011.harv.html     | SN     | 56    | 11          | Dhammacakkappavattana Sutta           | The Discourse on the Setting in Motion of the Wheel (of Vision) of the Basic Pattern: the Four True Realities for the Spiritually Ennobled Ones
+ sn56.011.nymo.html     | SN     | 56    | 11          | Dhammacakkappavattana Sutta           | Setting Rolling the Wheel of Truth
+ sn56.011.piya.html     | SN     | 56    | 11          | Dhammacakkappavattana Sutta           | Setting in Motion the Wheel of Truth
+ sn56.011.than.html     | SN     | 56    | 11          | Dhammacakkappavattana Sutta           | Setting the Wheel of Dhamma in Motion
+ sn56.020.than.html     | SN     | 56    | 20          | Tatha Sutta                           | Real
+ sn56.022x.wlsh.html    | SN     | 56    | 22          | Vijja Sutta                           | Knowledge
+ sn56.031.than.html     | SN     | 56    | 31          | Simsapa Sutta                         | The Simsapa Leaves
+ sn56.031.wlsh.html     | SN     | 56    | 31          | Simsapa Sutta                         | The Simsapa Leaves
+ sn56.035.than.html     | SN     | 56    | 35          | Sattisata Sutta                       | One Hundred Spears
+ sn56.036.than.html     | SN     | 56    | 36          | Pana Sutta                            | Animals
+ sn56.042.than.html     | SN     | 56    | 42          | Papata Sutta                          | The Drop-off
+ sn56.044.than.html     | SN     | 56    | 44          | Kuta Sutta                            | Gabled
+ sn56.045.than.html     | SN     | 56    | 45          | Vala Sutta                            | The Horsehair
+ sn56.046.than.html     | SN     | 56    | 46          | Andhakara Sutta                       | Darkness
+ sn56.048.than.html     | SN     | 56    | 48          | Chiggala Sutta                        | The Hole
+ sn56.102-113.than.html | SN     | 56    | 102-113     | Pansu Suttas                          | Dust
