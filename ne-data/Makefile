@@ -3,7 +3,7 @@ SCRIPTS := ne-data/scripts
 REPO_ROOT := $(abspath $(dir $(lastword $(MAKEFILE_LIST))))
 WORK    := $(REPO_ROOT)/work
 SCRIPTS := $(REPO_ROOT)/scripts
-MODEL   := $(WORK)/model_minimal
+MODEL   := ne-data/models/1022_model/model-best/
 PATTERNS := $(REPO_ROOT)/patterns/entity_ruler/patterns.jsonl
 
 TRAIN_JSONL := $(WORK)/train.jsonl

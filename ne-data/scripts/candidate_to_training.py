@@ -55,15 +55,17 @@ def candidates_to_training(record, nlp=None, allow_possessive=True):
 
 
 if __name__ == "__main__":
-    with open("./ne-data/work/1021.candidates.jsonl", "r", encoding="utf-8") as f:
-        input_json = {}
-        for i, line in enumerate(f):
-            # print("Line: {}".format(i+1))
-            try:
-                # print("line: {}".format(line))
-                input_json = json.loads(line.strip())
-            except JSONDecodeError as e:
-                print(e)
+    for filename in ["./ne-data/work/1021.candidates.jsonl",
+                     "./ne-data/work/1022_candidates.jsonl"]:
+        with open(filename, "r", encoding="utf-8") as f:
+            input_json = {}
+            for i, line in enumerate(f):
+                # print("Line: {}".format(i+1))
+                try:
+                    # print("line: {}".format(line))
+                    input_json = json.loads(line.strip())
+                except JSONDecodeError as e:
+                    print(e)
 
-            training_span = candidates_to_training(input_json)
-            print(json.dumps(training_span))
+                training_span = candidates_to_training(input_json)
+                print(json.dumps(training_span))

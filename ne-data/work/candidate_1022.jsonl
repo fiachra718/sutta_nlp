@@ -111,11 +111,8 @@
     [
       "PERSON",
       "Blessed One"
-    ],
-    [
-      "DOCTRINE",
-      "the Dhamma"
     ]
+   
   ]
 }
 {
@@ -535,15 +532,8 @@
     [
       "NORP",
       "monks"
-    ],
-    [
-      "DOCTRINE",
-      "Unbinding"
-    ],
-    [
-      "DOCTRINE",
-      "Unbinding"
-    ],
+    ]
+    
 
   ]
 }
@@ -657,10 +647,6 @@
 {
   "text": "\"I will teach you the penetrative explanation that is a Dhamma explanation. Listen & pay close attention. I will speak.\"",
   "entities": [
-    [
-      "DOCTRINE",
-      "Dhamma"
-    ]
   ]
 }
 {
@@ -889,18 +875,12 @@
       "PERSON",
       "Ananda"
     ],
-    [
-      "DOCTRINE",
-      "Dhamma"
-    ],
+    
     [
       "PERSON",
       "Blessed One"
     ],
-    [
-      "DOCTRINE",
-      "Dhamma"
-    ],
+  
     [
       "PERSON",
       "Blessed One"
@@ -977,10 +957,7 @@
       "PERSON",
       "Blessed One"
     ],
-    [
-      "DOCTRINE",
-      "the Dhamma"
-    ],
+   
     [
       "PERSON",
       "Blessed One"
@@ -1192,10 +1169,6 @@
     [
       "NORP",
       "brahmans"
-    ],
-    [
-      "DOCTRINE",
-      "the Dhamma"
     ]
   ]
 }
@@ -1255,34 +1228,6 @@
     [
       "PERSON",
       "Ven. Anuruddha"
-    ],
-    [
-      "DOCTRINE",
-      "Dhamma"
-    ],
-    [
-      "DOCTRINE",
-      "Dhamma"
-    ],
-    [
-      "DOCTRINE",
-      "Dhamma"
-    ],
-    [
-      "DOCTRINE",
-      "Dhamma"
-    ],
-    [
-      "DOCTRINE",
-      "Dhamma"
-    ],
-    [
-      "DOCTRINE",
-      "Dhamma"
-    ],
-    [
-      "DOCTRINE",
-      "Dhamma"
     ]
   ]
 }
@@ -1304,10 +1249,6 @@
     [
       "LOC",
       "Anathapindika 's monastery"
-    ],
-    [
-      "NORP",
-      "monks"
     ],
     [
       "NORP",
@@ -1339,10 +1280,6 @@
 {
   "text": "\"There are these three governing principles. Which three? The self as a governing principle, the cosmos as a governing principle, and the Dhamma as a governing principle.",
   "entities": [
-    [
-      "DOCTRINE",
-      "the Dhamma"
-    ]
   ]
 }
 {
@@ -1615,10 +1552,6 @@
     [
       "NORP",
       "brahmans"
-    ],
-    [
-      "DOCTRINE",
-      "the Dhamma"
     ]
   ]
 }
@@ -2193,10 +2126,7 @@
 {
   "text": "\"Endowed with these six qualities, a person is incapable of alighting on the lawfulness, the rightness of skillful mental qualities even when listening to the true Dhamma. Which six?",
   "entities": [
-    [
-      "DOCTRINE",
-      "Dhamma"
-    ]
+  
   ]
 }
 {
@@ -2500,10 +2430,7 @@
       "LOC",
       "Jeta's Grove"
     ],
-    [
-      "DOCTRINE",
-      "the Dhamma"
-    ]
+  
   ]
 }
 {
@@ -2734,10 +2661,7 @@
 {
   "text": "\"Endowed with these six qualities, a person is incapable of alighting on the lawfulness, the rightness of skillful mental qualities even when listening to the true Dhamma. Which six?",
   "entities": [
-    [
-      "DOCTRINE",
-      "Dhamma"
-    ]
+  
   ]
 }
 {
@@ -3455,10 +3379,7 @@
 {
   "text": "\"Endowed with these six qualities, a person is incapable of alighting on the lawfulness, the rightness of skillful mental qualities even when listening to the true Dhamma. Which six?",
   "entities": [
-    [
-      "DOCTRINE",
-      "Dhamma"
-    ]
+  
   ]
 }
 {
@@ -3555,18 +3476,12 @@
       "PERSON",
       "Blessed One"
     ],
-    [
-      "DOCTRINE",
-      "the Dhamma"
-    ],
+  
     [
       "PERSON",
       "Blessed One"
     ],
-    [
-      "DOCTRINE",
-      "the Dhamma"
-    ],
+
     [
       "PERSON",
       "Blessed One"
@@ -3588,12 +3503,7 @@
     [
       "NORP",
       "Monks"
-    ],
-    [
-      "DOCTRINE",
-      "Dhamma"
     ]
-  ]
 }
 {
   "text": "\"Monks, there are these five hindrances. Which five? Sensual desire as a hindrance, ill will as a hindrance, sloth & drowsiness as a hindrance, restlessness & anxiety as a hindrance, and uncertainty as a hindrance. These are the five hindrances.",
@@ -3664,10 +3574,7 @@
       "LOC",
       "Anāthapiṇḍika's park"
     ],
-    [
-      "DOCTRINE",
-      "the Dhamma"
-    ],
+    
     [
       "PERSON",
       "Blessed One"
@@ -3676,18 +3583,12 @@
       "NORP",
       "monks"
     ],
-    [
-      "DOCTRINE",
-      "the Dhamma"
-    ],
+  
     [
       "PERSON",
       "Blessed One"
     ],
-    [
-      "DOCTRINE",
-      "the Dhamma"
-    ],
+   
     [
       "PERSON",
       "Blessed One"
@@ -3822,10 +3723,7 @@
       "NORP",
       "householders"
     ],
-    [
-      "DOCTRINE",
-      "the Dhamma"
-    ],
+  
     [
       "PERSON",
       "Ven. Ananda"
@@ -3838,10 +3736,7 @@
       "NORP",
       "householders"
     ],
-    [
-      "DOCTRINE",
-      "the Dhamma"
-    ],
+  
     [
       "PERSON",
       "Blessed One"
@@ -3861,10 +3756,6 @@
     [
       "NORP",
       "householders"
-    ],
-    [
-      "DOCTRINE",
-      "the Dhamma"
     ]
   ]
 }
@@ -4374,10 +4265,7 @@
 {
   "text": "\"There are these five rewards in listening to the Dhamma. Which five?",
   "entities": [
-    [
-      "DOCTRINE",
-      "the Dhamma"
-    ]
+  
   ]
 }
 {
@@ -4645,14 +4533,8 @@
       "PERSON",
       "Master Gotama"
     ],
-    [
-      "DOCTRINE",
-      "the Dhamma"
-    ],
-    [
-      "DOCTRINE",
-      "the Dhamma"
-    ],
+   
+    
     [
       "PERSON",
       "Master Gotama"
@@ -4716,15 +4598,7 @@
     [
       "PERSON",
       "Blessed One"
-    ],
-    [
-      "DOCTRINE",
-      "the Dhamma"
-    ],
-    [
-      "DOCTRINE",
-      "the Dhamma"
-    ],
+    ]
     [
       "PERSON",
       "Blessed One"
