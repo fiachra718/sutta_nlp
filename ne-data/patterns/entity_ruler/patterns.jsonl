@@ -13,6 +13,8 @@
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "mahaka"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "nakula"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "nakula's"}, {"LOWER": {"IN": ["son", "daughter", "wife", "mother", "father", "husband"]}}]}
+{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "uttara"}]} 
+{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "parasiri"}]} 
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "queen"}, {"IS_TITLE": true, "LOWER": "videha"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "suppabuddha"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "sutavan"}]}
@@ -44,7 +46,10 @@
 {"label": "PERSON","pattern":[{"LOWER":{"REGEX":"^(king|venerable|master|ven\\.?)$"}},{"IS_PUNCT":true,"OP":"?"},{"IS_TITLE":true,"OP":"+"}]}
 {"label":"PERSON","pattern":[{"LOWER":"the","OP":"?"}, {"LOWER":{"REGEX":"^arahants?$"},"IS_TITLE":true} ]}
 {"label":"PERSON","pattern":[{"LOWER":{"REGEX":"^(ven\\.?|venerable)$"}},{"IS_TITLE":true},{"IS_TITLE":true,"OP":"?"}]} 
-{ "label": "PERSON", "id": "paccekabuddhas", "pattern": [ {"LOWER": {"IN": ["uparittha", "tagarasikhi", "yasassi", "sudassana", "piyadassi", "gandhara", "Pindola", "Upasabha", "Nitha", "Tatha", "Sutava", "Bhavitatta", "Sumbha", "Subha", "Methula", "Atthama", "Megha", "Anigha", "Sudatha" ] } } ] }
+{"label": "PERSON", "id": "paccekabuddhas", "pattern": [ {"LOWER": {"IN": ["uparittha", "tagarasikhi", "yasassi", "sudassana", "piyadassi", "gandhara", "Pindola", "Upasabha", "Nitha", "Tatha", "Sutava", "Bhavitatta", "Sumbha", "Subha", "Methula", "Atthama", "Megha", "Anigha", "Sudatha" ] } } ] }
+{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "moliyasivaka"}]}
+{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "janussonin"}]}
+
 
 {"label":"NORP","id":"Sakyans","pattern":[{"LOWER":{"REGEX":"sakyan(s)?|sākyan(s)?"}}]}
 {"label":"NORP","id":"Kurus","pattern":[{"LOWER":{"REGEX":"kuru(s)?"}}]}
@@ -60,20 +65,29 @@
 {"label":"NORP","id":"Kshatriya","pattern":[ {"LOWER": {"REGEX":"kshatriyas|kṣatriyas"} } ] }
 {"label":"NORP","id":"kings", "pattern": [ {"LOWER":"kings" } ] }
 {"label":"NORP","id":"nobles", "pattern" : [ {"LOWER":"nobles" } ] }
+{"label": "NORP", "patterns": [ {"LOWER": "noble ones" } ]}
 {"label":"NORP","id":"recluses", "pattern": [ {"LOWER":"recluses" } ] }
 {"label":"NORP","id":"wanderers", "pattern":[{"LOWER":"wanderers" }]}
 {"label":"NORP","id":"householders","pattern":[{"LOWER":"householders" }]}
 {"label":"NORP","id":"monks","pattern":[{"LOWER": {"IN": ["monks", "bhikkhus"] }}]}
 {"label":"NORP","id":"Ajivikas","pattern":[{"LOWER":{"REGEX":"ajivika(s)?|ājīvika(s)?"}}]}
 {"label":"NORP","id":"Niganthas","pattern":[{"LOWER":{"REGEX":"nigantha(s)?|nirgrantha(s)?"}}]}
+{"label":"NORP","id":"Kajjangalas","pattern":[{"LOWER":{"REGEX":"^kajjangala(?:n|s|ns)?$"}}]}
+{"label": "NORP", "id":"Arhants", "pattern":[{"LOWER": "arahants"}]}
+{"label": "NORP", "id":"devetas", "pattern":[{"LOWER": "devatas"}]}
 
 
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["savatthi", "sāvatthī"]}}]}
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["rajagaha", "rājagaha"]}}]}
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["kosambi", "kosambī"]}}]}
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": "veluvagamaka"}]}
+{"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": "sanjatiya"}]}
+{"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": "kammasadhamma"}]} 
+{"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": "sahajati"}]} 
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["vesali", "vesālī"]}}]}
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": "atthakanagara"}]}
+{"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": "kapilavatthu"}]}
+{"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": "kammasadhamma"}]}
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["pataliputta", "pāṭaliputta"]}}]}
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["nalanda", "nālandā"]}}]}
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["benares", "varanasi", "vāraṇasī"]}}]}
@@ -84,10 +98,12 @@
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["giribbaja", "girivraja"]}}]}
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": "saketa"}]}
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": "sedaka"}]}
+{"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": "salavatika"}]} 
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["vebhara", "pandava", "vepulla", "gijjhakuta", "isigili"]}}, {"LOWER": "mountain"}]}
 
 
-{"label": "LOC", "pattern": "Bamboo Grove"}
+{"label": "LOC", "pattern": [{"LOWER" : "bamboo grove"}]}
+{"label": "LOC", "pattern": [{"LOWER": "gotamaka shrine"}]}
 {"label": "LOC", "pattern": "Bamboo Park"}
 {"label": "LOC", "pattern": "Banyan Grove"}
 {"label": "LOC", "pattern": "Banyan Park"}
@@ -142,7 +158,7 @@
 {"label":"LOC", "pattern": [{"LOWER": "tapoda"}, {"LOWER": "hot"}, {"LOWER": {"IN": ["spring", "springs"]}}]}
 {"label":"LOC", "pattern": [{"LOWER": "tapoda"}, {"LOWER": {"IN": ["monastery", "vihara"]}}]}
 {"label":"LOC", "pattern": [{"LOWER": "the"}, {"LOWER": {"IN": ["squirrels'", "squirrels’"]}}, {"LOWER": "sanctuary"}]}
-{"label":"LOC","pattern":[{"IS_TITLE": true, "LOWER":{"IN":["simsapa","simsapā","bamboo","bhesakala","blind","anathapindika","anāthapiṇḍika","banyan","varanasi","vāraṇasī","deer","eastern","western"]}},{"LOWER":{"IN":["grove","park","sanctuary","monastery"]}}]}
+{"label":"LOC","pattern":[{"IS_TITLE": true, "LOWER":{"IN":["simsapa","simsapā","bamboo","bhesakala","blind","anathapindika","anāthapiṇḍika","banyan","varanasi","vāraṇasī","deer","eastern","western","nigrodha"]}},{"LOWER":{"IN":["grove","park","sanctuary","monastery"]}}]}
 {"label":"LOC","pattern":[{"IS_TITLE": true,"IS_ALPHA": true},{"LOWER":{"IN":["'s","’s"]}},{"LOWER":{"IN":["grove","park","sanctuary","monastery"]}}]}
 {"label":"LOC","pattern":[{"LOWER":"abhassara"}]}
 {"label":"LOC","pattern":[{"LOWER":"akanittha"}]}
@@ -173,3 +189,17 @@
 {"label":"LOC","pattern":[{"LOWER":"vehapphala"}]}
 {"label":"LOC","pattern":[{"LOWER":"vulture"}, {"LOWER":{"IN":["’s","'s"]},"OP":"?"}, {"LOWER":"peak"}, {"LOWER":"mountain","OP":"?"} ]} 
 {"label":"LOC","pattern":[{"LOWER":"yama"}]}
+{"label": "LOC", "pattern":[{"LOWER": "pure abodes"}]}
+{"label": "LOC", "pattern":[{"LOWER": "ten world-systems"}]}
+
+
+{"label":"EVENT","pattern":[{"LOWER":"rains"},{"LOWER":"retreat"}]}
+{"label":"EVENT","pattern":"Rains Retreat"}
+{"label":"EVENT","pattern":"Rainy Season Retreat"}
+{"label":"EVENT","pattern":"Vassa"}
+{"label":"EVENT","pattern":"vassa"}
+
+{"label":"DOCTRINE","pattern":"Dhamma"}
+{"label":"DOCTRINE","pattern":"Vinaya"}
+{"label":"DOCTRINE","pattern":[{"LOWER":"the"},{"ORTH":"Dhamma"}]}
+{"label":"DOCTRINE","pattern":[{"LOWER":"the"},{"ORTH":"Vinaya"}]}

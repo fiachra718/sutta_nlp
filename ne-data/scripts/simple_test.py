@@ -56,6 +56,7 @@ tests = [
     "Now it may be that you are thinking, 'Nakula's mother will not be able to support the children or maintain the household after I'm gone,' but you shouldn't see things in that way.",
     "There is the case, Bharadvaja, where a monk lives in dependence on a certain village or town.",
     "What do you think, monks? Which would in fact be the better? If a strong man were to strike the nether-quarters with a sharp, oil-cleaned sword? Or, to derive enjoyment when rich kshatriyas, brahmans, or householders press the palms together in prayer?",
+    "I have heard that on one occasion, while the Blessed One was on a wandering tour among the Kosalans with a large community of monks, he arrived at Salavatika.",
 ]   
 
 for text in tests:

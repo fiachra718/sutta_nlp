@@ -19,7 +19,7 @@ NE_DATA     = REPO_ROOT / "ne-data"
 WORK        = NE_DATA / "work"
 SCRIPTS     = NE_DATA / "scripts"
 
-MODELS_DIR  = NE_DATA / "models" / "model-more" / "model-last"
+MODELS_DIR  = NE_DATA / "models" / "1022_model" / "model-best"
 PATTERNS    = NE_DATA / "patterns" / "entity_ruler" / "patterns.jsonl"
 
 # frequently used files

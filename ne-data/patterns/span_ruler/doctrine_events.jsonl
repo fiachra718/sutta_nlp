@@ -1,0 +1,4 @@
+{"label":"DOCTRINE","pattern":[{"LOWER":"the"},{"ORTH":"Dhamma"}]}
+{"label":"DOCTRINE","pattern":[{"LOWER":"noble"},{"LOWER":"eightfold"},{"LOWER":"path"}]}
+{"label":"EVENT","pattern":[{"LOWER":"rains"},{"LOWER":{"IN":["retreat","season"]}}]}
+{"label":"EVENT","pattern":[{"LOWER":"uposatha"}]}

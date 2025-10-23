@@ -1,0 +1,36 @@
+{
+  "token_acc":1.0,
+  "token_p":1.0,
+  "token_r":1.0,
+  "token_f":1.0,
+  "ents_p":0.8292682927,
+  "ents_r":0.9189189189,
+  "ents_f":0.8717948718,
+  "ents_per_type":{
+    "PERSON":{
+      "p":0.8461538462,
+      "r":0.88,
+      "f":0.862745098
+    },
+    "NORP":{
+      "p":0.7142857143,
+      "r":1.0,
+      "f":0.8333333333
+    },
+    "GPE":{
+      "p":1.0,
+      "r":1.0,
+      "f":1.0
+    },
+    "LOC":{
+      "p":0.6666666667,
+      "r":1.0,
+      "f":0.8
+    }
+  },
+  "spans_ruler_p":null,
+  "spans_ruler_r":null,
+  "spans_ruler_f":null,
+  "spans_ruler_per_type":null,
+  "speed":60708.0918757648
+}

@@ -19,7 +19,7 @@ def random_sutta_paragraph():
                 verses
                     FROM ati_suttas WHERE nikaya in ( 'MN', 'DN', 'AN' )
                 ORDER BY random()
-                LIMIT 100
+                LIMIT 250
             """
         cur.execute(sql)
         return cur.fetchall()
@@ -29,16 +29,16 @@ def ne_tag(text, nlp, tag="ALL"):
     results = {}
     entities = []
     for ent in doc.ents:
-        if tag == "ALL":
-            entities.append({"label": ent.label_, "text": ent.text})
+        # if tag == "ALL":
+        entities.append( (ent.label_, ent.text ) )
             # {"start": ent.start_char, "end": ent.end_char,"label": ent.label_, "text": ent.text})
-        else:
-            if tag == ent.label_:
-                entities.append({"start": ent.start_char, "end": ent.end_char,"label": ent.label_, "text": ent.text})
+        # else:
+        #     if tag == ent.label_:
+        #         entities.append({"start": ent.start_char, "end": ent.end_char,"label": ent.label_, "text": ent.text})
         if len(entities):
-            results = {"text": text, "spans": [ent for ent in entities]}
+            results = {"text": text, "entities": [ent for ent in entities]}
        
-    return (results)
+    return results
 
 
 nlp = load_model()
@@ -50,4 +50,4 @@ for verse in verses:
         text = verse["verses"][0]["text"]
         jsonl = ne_tag(text.strip(),nlp, tag="ALL")
         if jsonl:
-            print(json.dumps(jsonl, indent=4, ensure_ascii=False))
+            print(json.dumps(jsonl, indent=2, ensure_ascii=False))
