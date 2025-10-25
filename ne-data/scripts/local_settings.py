@@ -21,6 +21,7 @@ SCRIPTS     = NE_DATA / "scripts"
 
 MODELS_DIR  = NE_DATA / "models" / "1023_merged_v4" / "model-best"
 PATTERNS    = NE_DATA / "patterns" / "entity_ruler" / "patterns.jsonl"
+LOC_EVENT_PATTERNS    = NE_DATA / "patterns" / "span_ruler"
 
 # frequently used files
 SPAN_PATTERNS = NE_DATA / "patterns" / "span_ruler"
@@ -40,6 +41,7 @@ for p in (
     p.mkdir(parents=True, exist_ok=True)
 
 def load_model():
+    # expect ['entity_ruler', 'span_ruler', 'ner'] (or similar, with ner last)
     nlp = spacy.load(MODELS_DIR)
     # clear the pipe
     for name in ("entity_ruler", "span_ruler"):
@@ -49,17 +51,17 @@ def load_model():
     # add the entity rules
     er = nlp.add_pipe(
         "entity_ruler",
-        after="ner",
-        config={"overwrite_ents": True}
+        before="ner",
+        config={"overwrite_ents": False}
     )
     er.from_disk(str(PATTERNS))  
 
     # add the LOC/span patterns
     sr = nlp.add_pipe(
         "span_ruler",
-        last=True,
-        config={"spans_key": "LOC_PHRASES", "overwrite": True}
+        after="ner",
+        config={"spans_key": "LOC_PHRASES", "overwrite": False}
     )
-    sr.from_disk("ne-data/patterns/span_ruler")  # folder; contains a file named 'patterns'
-
+    sr.from_disk(LOC_EVENT_PATTERNS)  # folder; contains a file named 'patterns'
+    
     return nlp

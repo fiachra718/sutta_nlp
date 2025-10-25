@@ -1,6 +1,6 @@
 import spacy
 from spacy.matcher import PhraseMatcher
-import json
+import json, sys
 from json import JSONDecodeError
 
 def candidates_to_training(record, nlp=None, allow_possessive=True):
@@ -18,11 +18,15 @@ def candidates_to_training(record, nlp=None, allow_possessive=True):
     # Build a matcher for THIS sentence
     matcher = PhraseMatcher(nlp.vocab, attr="LOWER")
     key_to_label = {}
+    # Check if there is an empty list of lists, len == 1
+    if len(record["entities"]) == 1:
+        return {"text" : text, "entities" : []}
+
     for label, phrase in record["entities"]:
         key = f"{label}__{phrase}"
         matcher.add(key, [nlp.make_doc(phrase)])
         key_to_label[key] = label
-
+    
     matches = matcher(doc)
 
     # Collect raw spans
@@ -55,17 +59,18 @@ def candidates_to_training(record, nlp=None, allow_possessive=True):
 
 
 if __name__ == "__main__":
-    for filename in ["./ne-data/work/1021.candidates.jsonl",
-                     "./ne-data/work/1022_candidates.jsonl"]:
-        with open(filename, "r", encoding="utf-8") as f:
-            input_json = {}
-            for i, line in enumerate(f):
-                # print("Line: {}".format(i+1))
-                try:
-                    # print("line: {}".format(line))
-                    input_json = json.loads(line.strip())
-                except JSONDecodeError as e:
-                    print(e)
+    # for filename in ["./ne-data/work/1021.candidates.jsonl",
+    #                  "./ne-data/work/1022_candidates.jsonl"]:
+    filename = sys.argv[1]
+    with open(filename, "r", encoding="utf-8") as f:
+        input_json = {}
+        for i, line in enumerate(f):
+            # print("Line: {}".format(i+1))
+            try:
+                # print("line: {}".format(line))
+                input_json = json.loads(line.strip())
+            except JSONDecodeError as e:
+                print(e)
 
-                training_span = candidates_to_training(input_json)
-                print(json.dumps(training_span))
+            training_span = candidates_to_training(input_json)
+            print(json.dumps(training_span, ensure_ascii=False))

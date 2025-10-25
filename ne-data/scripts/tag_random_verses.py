@@ -17,7 +17,7 @@ def random_sutta_paragraph():
                 book_number, 
                 title,
                 verses
-                    FROM ati_suttas WHERE nikaya in ( 'MN', 'DN', 'AN' )
+                    FROM ati_suttas WHERE nikaya in ( 'MN', 'DN', 'AN', 'SN' )
                 ORDER BY random()
                 LIMIT 250
             """

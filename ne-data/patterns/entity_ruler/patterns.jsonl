@@ -27,9 +27,10 @@
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["anathapindika", "anāthapiṇḍika"]}}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["dhanañjanin", "dhananjanin"]}}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["jivaka", "jīvaka"]}}, {"IS_TITLE": true, "LOWER": {"IN": ["komarabhacca", "komārabhacca"]}}]}
+{"label": "PERSON", "pattern": [{"ORTH": "Kesi"}]}
+{"label": "PERSON", "pattern": [{"ORTH": "Kesī"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["kesi", "kesī"]}}, {"LOWER": "the"}, {"LOWER": "horse"}, {"LOWER": "trainer"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["kesi", "kesī"]}}, {"LOWER": "the"}, {"LOWER": "horse-trainer"}]}
-{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["kesi", "kesī"]}}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["khema", "khemā"]}}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["maha", "mahā"]}}, {"IS_TITLE": true, "LOWER": "kotthita"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["mara", "māra"]}}]}
@@ -49,13 +50,16 @@
 {"label": "PERSON", "id": "paccekabuddhas", "pattern": [ {"LOWER": {"IN": ["uparittha", "tagarasikhi", "yasassi", "sudassana", "piyadassi", "gandhara", "Pindola", "Upasabha", "Nitha", "Tatha", "Sutava", "Bhavitatta", "Sumbha", "Subha", "Methula", "Atthama", "Megha", "Anigha", "Sudatha" ] } } ] }
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "moliyasivaka"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "janussonin"}]}
-{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "vacchagotta"}]}
-{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "migara"}]}
-{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "migara's mother"}]}
 
+{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "vacchagotta"}]}
+{"label":"PERSON","id":"vaccagotta_the_wanderer_all", "pattern":[ {"LOWER":"vaccagotta"}, {"ORTH":",","OP":"?"}, {"LOWER":"the"}, {"LOWER":"wanderer"}, {"ORTH":{"IN":["'s","’s"]},"OP":"?"} ]}
+{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "migara"}]}
+{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "devadatta"}]}
+{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "assalayana"}]}
+{"label": "PERSON","id":"possessive_kin","pattern":[ {"IS_TITLE": true}, {"ORTH": "'s"}, {"LOWER": {"IN": ["mother","father","son","daughter","aunt","uncle","niece","nephew", "wife", "husband","sister","brother"]}} ]}
 
 {"label":"NORP","id":"Sakyans","pattern":[{"LOWER":{"REGEX":"sakyan(s)?|sākyan(s)?"}}]}
-{"label":"NORP","id":"Kurus","pattern":[{"LOWER":{"REGEX":"kuru(s)?"}}]}
+{"label":"NORP","id":"Kurus","pattern":[{"LOWER": "kurus"}]}
 {"label":"NORP","id":"Sumbhas","pattern":[{"LOWER":{"REGEX":"sumbha(s)?"}}]}
 {"label":"NORP","id":"Angas","pattern":[{"LOWER":{"REGEX":"anga(s)?"}}]}
 {"label":"NORP","id":"Vajjis","pattern":[{"LOWER":{"REGEX":"vajji(s)?"}}]}
@@ -63,22 +67,23 @@
 {"label":"NORP","id":"Koliyans","pattern":[{"LOWER":{"REGEX":"koliya(n|ns)?"}}]}
 {"label":"NORP","id":"Kosalans","pattern":[{"LOWER":{"REGEX":"kosalan(s)?"}}]}
 {"label":"NORP","id":"Magadhans","pattern":[{"LOWER":{"REGEX":"magadhan(s)?"}}]}
-{"label":"NORP","id":"Brahman","pattern":[{"LOWER":{"REGEX":"brahman|brāhmaṇa"} }]}
-{"label":"NORP","id":"Brahmans","pattern":[{"LOWER":{"REGEX":"brahmans|brāhmaṇas"} }]}
+{"label":"NORP","id":"Uppercase Brahman","pattern":[{"IS_TITLE": true, "LOWER": { "IN": ["brahman", "brāhmaṇa" ]} }]}
+{"label":"NORP","id":"Brahmans","pattern":[{"LOWER": {"IN" : ["brahmans", "brāhmaṇas" ] } } ] }
 {"label":"NORP","id":"Kshatriya","pattern":[ {"LOWER": {"REGEX":"kshatriyas|kṣatriyas"} } ] }
 {"label":"NORP","id":"kings", "pattern": [ {"LOWER":"kings" } ] }
 {"label":"NORP","id":"nobles", "pattern" : [ {"LOWER":"nobles" } ] }
-{"label": "NORP", "pattern": [ {"LOWER": "noble"}, {"LOWER": "ones"} ]}
+{"label":"NORP", "pattern": [ {"LOWER": "noble"}, {"LOWER": "ones"} ]}
 {"label":"NORP","id":"Bhikkhu_Sangha","pattern":[{"IS_TITLE":true,"LOWER":"bhikkhu"},{"IS_TITLE":true,"LOWER":{"IN":["saṅgha","sangha"]}}]}
-{"label":"NORP","id":"Monks",        "pattern":[{"IS_TITLE": true, "LOWER":{"IN":["monks","bhikkhus"]}}]}
-{"label":"NORP","id":"Recluses",     "pattern":[{"IS_TITLE": true, "LOWER":"recluses"}]}
-{"label":"NORP","id":"Wanderers",    "pattern":[{"IS_TITLE": true, "LOWER":"wanderers"}]}
-{"label":"NORP","id":"Householders", "pattern":[{"IS_TITLE": true, "LOWER":"householders"}]}
-{"label":"NORP","id":"Ajivikas","pattern":[{"LOWER":{"REGEX":"ajivika(s)?|ājīvika(s)?"}}]}
-{"label":"NORP","id":"Niganthas","pattern":[{"LOWER":{"REGEX":"nigantha(s)?|nirgrantha(s)?"}}]}
+{"label":"NORP","id":"Monks_cap","pattern":[ {"IS_SENT_START": false, "IS_TITLE": true, "LOWER":{"IN":["monks","bhikkhus"]}} ]}
+{"label":"NORP","id":"Recluses",     "pattern":[{"LOWER":"recluses"}]}
+{"label":"NORP","id":"Wanderers",    "pattern":[{"LOWER":"wanderers"}]}
+{"label":"NORP","id":"Householders", "pattern":[{"LOWER":"householders"}]}
+{"label":"NORP","id":"Ajivikas","pattern":[{"LOWER":{"REGEX":"ajivikas|ājīvikas"}}]}
+{"label":"NORP","id":"Niganthas","pattern":[{"LOWER":{"REGEX":"niganthas|nirgranthas"}}]}
 {"label":"NORP","id":"Kajjangalas","pattern":[{"LOWER":{"REGEX":"^kajjangala(?:n|s|ns)?$"}}]}
-{"label": "NORP", "id":"Arhants", "pattern":[{"LOWER": "arahants"}]}
-{"label": "NORP", "id":"devetas", "pattern":[{"LOWER": "devatas"}]}
+{"label":"NORP", "id":"Arhants", "pattern":[{"LOWER": "arahants"}]}
+{"label":"NORP", "id":"devetas", "pattern":[{"LOWER": "devatas"}]}
+{"label":"NORP","pattern":[{"LOWER":"brahman"},{"LOWER":"cosmologists"}]}
 
 
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["savatthi", "sāvatthī"]}}]}
@@ -104,6 +109,7 @@
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": "sedaka"}]}
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": "salavatika"}]} 
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["vebhara", "pandava", "vepulla", "gijjhakuta", "isigili"]}}, {"LOWER": "mountain"}]}
+{"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": "haliddavasana"}]}
 
 
 {"label": "LOC", "pattern": [{"LOWER" : "bamboo grove"}]}
@@ -113,7 +119,6 @@
 {"label": "LOC", "pattern": "Banyan Park"}
 {"label": "LOC", "pattern": "Bhesakala Grove"}
 {"label": "LOC", "pattern": "Blind Man's Grove"}
-{"label": "LOC", "pattern": "Blind Man’s Grove"}
 {"label": "LOC", "pattern": "Gijjhakūṭa"}
 {"label": "LOC", "pattern": "Gosingasālavana"}
 {"label": "LOC", "pattern": "Hiraññavati River"}
@@ -133,7 +138,6 @@
 {"label": "LOC", "pattern": [{"LOWER": "anāthapiṇḍika"}, {"LOWER": {"IN": ["'s", "’s"]}}, {"LOWER": {"IN": ["park", "monastery"]}}]}
 {"label": "LOC", "pattern": [{"LOWER": "bhesakala"}, {"LOWER": "grove"}]}
 {"label": "LOC", "pattern": [{"LOWER": "bhesakaḷāvana"}]}
-{"label": "LOC", "pattern": [{"LOWER": "blind"}, {"LOWER": "man"}, {"LOWER": {"IN": ["'s", "’s"]}}, {"LOWER": "grove"}]}
 {"label": "LOC", "pattern": [{"LOWER": "catummaharajika"}]}
 {"label": "LOC", "pattern": [{"LOWER": "cāpāla"}, {"LOWER": "shrine"}]}
 {"label": "LOC", "pattern": [{"LOWER": "deer"}, {"LOWER": "park"}, {"LOWER": "at"}, {"LOWER": "isipatana"}]}
