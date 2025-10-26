@@ -1,0 +1,21 @@
+{
+  "18": {
+    "items": [
+      {"text": "Aggivessana", "label": "PERSON"}
+    ],
+    "meta": {"source": "Cula-Saccaka", "nikaya": "MN"}
+  },
+  "193": {
+    "items": [
+      {"text": "Kalama", "label": "PERSON"}  // or NORP/PEOPLE if you decide later
+    ],
+    "meta": {"title": "Kalama Sutta"}
+  },
+  "221": {
+    "items": [
+      {"text": "Sword-leaf Forest", "label": "LOC"},
+      {"text": "Lye-water River", "label": "LOC"}
+    ],
+    "meta": {"title": "Devaduta Sutta"}
+  }
+}

@@ -1,0 +1,8 @@
+{"label":"DOCTRINE","pattern":[{"LOWER":"the"},{"ORTH":"Dhamma"}]}
+{"label":"DOCTRINE","pattern":[{"LOWER":"noble"},{"LOWER":"eightfold"},{"LOWER":"path"}]}
+{"label":"DOCTRINE","pattern":[{"LOWER":"unbinding"}]}
+{"label":"EVENT","pattern":[{"LOWER":"rains"},{"LOWER":{"IN":["retreat","season"]}}]}
+{"label":"EVENT","pattern":[{"LOWER":"uposatha"}]}
+{"label":"LOC","id":"hermitage_of_person_brahman","pattern":[{"LOWER":"the"},{"LOWER":"hermitage"},{"LOWER":"of"},{"IS_TITLE":true},{"LOWER":"the"},{"LOWER":{"REGEX":"brahman|br\u0101hma\u1e47a"}}]}
+{"label":"LOC","id":"palace_of_person_mother","pattern":[{"LOWER":"the"},{"LOWER":"palace"},{"LOWER":"of"},{"IS_TITLE":true},{"TEXT":"'s"},{"LOWER":"mother"}]}
+{"label":"LOC","id":"kuru_country","pattern":[{"LOWER":"kuru"},{"LOWER":"country"}]}

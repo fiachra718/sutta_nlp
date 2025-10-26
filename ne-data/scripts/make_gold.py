@@ -1,5 +1,8 @@
-import json, re, sys
+import json
+import re
+import sys
 from pathlib import Path
+from typing import TextIO
 
 
 def find_spans(text, targets):
@@ -21,42 +24,33 @@ def find_spans(text, targets):
     return spans
 
 
-TEXT = """The two sages Jali [6] and Atthaka, then Kosala, the enlightened one, then Subahu, Upanemisa, Nemisa, Santacitta, Sacca, Tatha, Viraja, and Pandita."""
-TARGETS = [
-    ("PERSON", "Jali"),
-    ("PERSON", "Atthaka"),
-    ("PERSON", "Kosala"),
-    ("PERSON", "Subahu"),
-    ("PERSON", "Upanemisa"),
-    ("PERSON", "Nemisa"),
-    ("PERSON", "Santacitta"),
-    ("PERSON", "Sacca"),
-    ("PERSON", "Tatha"),
-    ("PERSON", "Viraja"),
-    ("PERSON", "Pandita"),
-    # ("PERSON", "Subahu"),
-    # ("PERSON", "Subahu"),
-]
+DEFAULT_INPUT = Path("ne-data/work/1025_candidates.jsonl")
 
-# print(sys.argv)
-# spans = []
+input_arg = Path(sys.argv[1]) if len(sys.argv) > 1 else DEFAULT_INPUT
+output_arg = sys.argv[2] if len(sys.argv) > 2 else "-"
 
-# spans = find_spans(TEXT, TARGETS)                     
+output_handle: TextIO
+if output_arg == "-":
+    output_handle = sys.stdout
+else:
+    output_path = Path(output_arg)
+    output_handle = output_path.open("w", encoding="utf-8")
 
-# print(json.dumps({"text": TEXT, "spans": spans}, ensure_ascii=False))
-
-
-# TEXT = "Pilgrims visited Isipatana Deer Park."
-# TARGETS = [
-#     ("NORP", "Pilgrims"),
-#     ("LOC", "Isipatana Deer Park"),
-# ]
-
-
-
-TEXT = "I have heard that on one occasion Ven. Ananda was staying near Vesali at Veluvagamaka. Now on that occasion Dasama the householder from Atthakanagara had arrived at Pataliputta on some business. Then he went to a certain monk at Kukkata Monastery and on arrival, having bowed down to him, sat to one side. As he was sitting there he said to the monk, \"Where is Ven. Ananda staying now? I'd like to see him.\""
-
-TARGETS = [ [ "PERSON", "Ven. Ananda" ], [ "GPE", "Vesali" ], [ "GPE", "Veluvagamaka" ], [ "PERSON", "Dasama" ], [ "GPE", "Atthakanagara" ], [ "GPE", "Pataliputta" ], [ "LOC", "Kukkata Monastery" ], [ "PERSON", "Ven. Ananda" ] ] 
-
-spans = find_spans(TEXT, TARGETS)
-print(json.dumps({"text": TEXT, "spans": spans}, ensure_ascii=False))
+try:
+    with input_arg.open(encoding="utf-8") as f:
+        for line in f:
+            text = line.strip()
+            if not text:
+                continue
+            data = json.loads(text)
+            doc_text = data.get("text", "")
+            targets = data.get("entities", [])
+            if doc_text and len(targets) > 1:
+                spans = find_spans(doc_text, targets)
+                print(
+                    json.dumps({"text": doc_text, "spans": spans}, ensure_ascii=False),
+                    file=output_handle,
+                )
+finally:
+    if output_handle is not sys.stdout:
+        output_handle.close()

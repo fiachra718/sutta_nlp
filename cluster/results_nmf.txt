@@ -1,0 +1,602 @@
+% python ati_paragraph_matrices.py
+/Users/alee/sutta_nlp/venv/lib/python3.13/site-packages/sklearn/feature_extraction/text.py:2044: UserWarning: Only (<class 'numpy.float64'>, <class 'numpy.float32'>, <class 'numpy.float16'>) 'dtype' should be used. float32 'dtype' will be converted to np.float64.
+  warnings.warn(
+Topic 00:
+  teach (1.371), teach dhamma (1.274), dhamma (1.191), blessed teach (0.992), ardent resolute (0.756), resolute (0.742), heedful (0.684), heedful ardent (0.678), ardent (0.645), dwell (0.637), lord blessed (0.619), heard (0.587), good (0.557), blessed (0.475), having (0.385)
+
+Topic 01:
+  blessed (1.401), bowed (1.371), having bowed (1.327), arrival having (1.296), sat (1.227), bowed sat (1.226), sat sitting (1.189), sitting (1.187), arrival (1.177), went blessed (1.157), blessed arrival (1.154), went (1.054), sitting said (0.822), having (0.814), said (0.812)
+
+Topic 02:
+  death tathagata (2.412), tathagata exists (2.253), exists (2.215), exist death (2.153), does exist (2.120), tathagata (2.116), exist (2.032), exists does (1.799), death (1.687), does (1.343), thought tathagata (1.210), tathagata does (1.169), exists death (1.069), actually present (0.768), present cessation (0.738)
+
+Topic 03:
+  exists (1.071), declared blessed (1.028), exist death (1.000), exist (0.989), does exist (0.974), declared (0.914), tathagata exists (0.906), tathagata (0.888), exists does (0.881), death (0.774), asked (0.764), exists death (0.662), death exists (0.650), does (0.649), cause reason (0.489)
+
+Topic 04:
+  withdrawn (1.482), accompanied (1.075), rapture pleasure (1.069), pleasure born (1.069), accompanied directed (1.054), withdrawal (1.029), born withdrawal (1.029), evaluation (0.997), thought evaluation (0.983), directed thought (0.964), jhana rapture (0.938), born (0.911), directed (0.902), rapture (0.890), qualities enters (0.890)
+
+Topic 05:
+  magnificent (5.009), refuge (4.573), lines (2.971), lines reasoning (2.971), refuge dhamma (2.962), dhamma clear (2.958), overturned reveal (2.958), overturned (2.958), eyes forms (2.958), carry lamp (2.958), magnificent just (2.958), forms way (2.958), way lost (2.958), lost carry (2.958), place upright (2.958)
+
+Topic 06:
+  master (1.065), gotama (1.016), master gotama (0.859), gotama contemplative (0.229), contemplative (0.207), teacher (0.158), astounding (0.130), gotama lines (0.125), gotama magnificent (0.125), magnificent master (0.123), way master (0.123), brahman (0.114), amazing (0.110), group (0.110), gotama refuge (0.109)
+
+Topic 07:
+  noble ones (0.874), ones (0.873), noble (0.872), disciple noble (0.859), disciple (0.859), instructed disciple (0.197), instructed (0.194), case disciple (0.181), cleansed (0.162), called (0.108), generosity (0.097), way (0.096), obtained (0.092), ones endowed (0.079), joy (0.061)
+
+Topic 08:
+  incapable (0.707), plane (0.659), entered (0.658), orderliness rightness (0.436), incapable passing (0.436), integrity transcended (0.436), doing deed (0.436), plane run (0.436), plane people (0.436), entered plane (0.436), entered orderliness (0.436), follower entered (0.436), phenomena way (0.436), run incapable (0.436), deed reborn (0.436)
+
+Topic 09:
+  focused (1.416), remains focused (1.263), reference world (1.227), distress reference (1.218), ardent alert (1.163), greed distress (1.130), alert mindful (1.098), ardent (1.081), mindful (1.063), greed (1.046), reference (1.033), putting (1.016), putting aside (1.004), mindful putting (0.978), alert (0.956)
+
+Topic 10:
+  cognizable (1.322), agreeable pleasing (1.041), charming endearing (1.039), endearing fostering (1.039), desire enticing (1.039), enticing (1.039), fostering desire (1.039), pleasing charming (1.034), endearing (1.032), agreeable (1.030), fostering (1.004), charming (0.975), pleasing (0.897), fastened (0.894), desire (0.812)
+
+Topic 11:
+  right (4.484), livelihood (2.390), resolve (2.315), view (2.290), right mindfulness (2.238), right effort (2.215), right livelihood (2.211), right speech (2.211), right action (2.211), right resolve (2.195), right concentration (2.150), action right (2.128), mindfulness right (2.128), effort right (2.128), livelihood right (2.128)
+
+Topic 12:
+  growth increase (1.984), arising unarisen (1.965), food arising (1.965), unarisen (1.925), growth (1.921), increase (1.878), arisen (1.552), arising (1.525), food (1.503), lack food (1.072), attention (1.022), awakening growth (1.021), foster (0.948), lack (0.765), attention food (0.662)
+
+Topic 13:
+  knows (2.018), knows sees (1.886), sees (1.776), blessed knows (1.689), sees worthy (1.689), self awakened (1.444), rightly self (1.386), awakened (1.382), worthy rightly (1.340), worthy (1.300), quality (1.213), rightly (1.197), yoke (1.193), total (1.145), mind monk (1.112)
+
+Topic 14:
+  greetings (1.906), exchange friendly (1.159), exchange (1.159), courtesies (1.159), friendly (1.147), friendly greetings (1.139), greetings courtesies (1.139), courtesies sat (1.111), courteous (1.087), exchanged (1.085), exchanged courteous (1.085), courteous greetings (1.085), greetings exchange (1.063), arrival exchanged (0.980), sat (0.778)
+
+Topic 15:
+  disenchanted (1.721), fully released (1.124), fully (1.056), released (0.941), task world (0.824), discerns birth (0.824), life fulfilled (0.771), fulfilled (0.759), fulfilled task (0.758), released discerns (0.757), dispassionate dispassion (0.747), released release (0.744), ended holy (0.743), birth ended (0.738), release knowledge (0.736)
+
+Topic 16:
+  break (0.692), break body (0.689), body (0.576), body death (0.533), destination (0.498), death (0.452), heavenly (0.416), good destination (0.384), heavenly world (0.350), destination heavenly (0.327), good (0.296), bad destination (0.198), reappear (0.188), bad (0.182), reappears (0.179)
+
+Topic 17:
+  root (3.259), conditions (3.241), stump (3.205), destined future (3.205), future arising (3.205), like palmyra (3.205), development destined (3.205), palmyra stump (3.205), conditions development (3.205), stump deprived (3.205), palmyra (3.205), deprived conditions (3.205), deprived (3.186), root destroyed (3.107), destroyed like (3.107)
+
+Topic 18:
+  breathe (8.367), focusing (8.253), trains breathe (7.914), trains (7.160), relinquishment (4.828), inconstancy (4.786), dispassion (3.718), cessation (2.887), mind (0.708), 10 (0.487), dependent (0.399), fading (0.342), occasion monk (0.296), acquisitions ending (0.267), acquisitions (0.267)
+
+Topic 19:
+  breathe (1.776), trains breathe (1.740), trains (1.573), breathe sensitive (1.496), sensitive (1.454), calming (0.858), breathe calming (0.858), fabrication (0.781), breathing (0.685), sensitive pleasure (0.501), entire body (0.410), bodily fabrication (0.392), discerns (0.343), entire (0.313), rapture (0.279)
+
+Topic 20:
+  overcome (8.048), gains (7.776), gains sense (7.763), ease (7.151), straight (6.493), sense (5.285), mind (5.050), dhamma gains (4.681), gains joy (4.681), connected dhamma (4.666), joy connected (4.666), overcome passion (4.628), rapturous body (4.585), rapturous (4.585), joyful (4.585)
+
+Topic 21:
+  pleasure pain (5.202), contact (4.431), pleasure (4.315), pain (4.141), pain pleasure (3.341), experienced pleasure (3.339), arises dependence (3.210), eye (2.719), dependence (2.594), intellect (2.581), arises (2.476), experienced (2.216), consciousness (1.873), dependence contact (1.621), ideas (1.341)
+
+Topic 22:
+  cessation stress (5.887), stress (5.644), cessation (3.783), leading cessation (3.187), leading (3.138), origination stress (3.122), practice leading (3.091), path practice (2.665), practice (2.572), stress cessation (2.326), origination (2.316), path (2.256), stress path (2.173), actually (1.658), stress origination (1.647)
+
+Topic 23:
+  king elephant (6.568), elephant (6.415), resilient (5.046), king (4.842), elephant resilient (4.344), battle (3.535), case king (3.193), elephant having (2.871), gone battle (2.857), battle king (2.260), having gone (2.095), gone (1.671), elephants (1.502), case (1.285), having (1.242)
+
+Topic 24:
+  mind (0.967), delusion mind (0.579), released mind (0.559), scattered (0.552), unconcentrated (0.539), restricted (0.536), unreleased (0.527), unreleased mind (0.525), discerns (0.499), concentrated (0.481), unexcelled (0.424), released (0.386), mind released (0.349), mind concentrated (0.338), aversion (0.338)
+
+Topic 25:
+  training (1.015), rules (0.978), training rules (0.978), accomplished (0.935), virtue (0.767), holy life (0.590), holy (0.586), reference (0.539), basic holy (0.516), basic (0.516), proper (0.490), life proper (0.485), life (0.481), having undertaken (0.460), falls (0.430)
+
+Topic 26:
+  pervading (2.076), awareness imbued (2.070), imbued (2.070), likewise (1.698), keeps pervading (1.552), direction (1.507), awareness (1.299), keeps (1.282), immeasurable (1.251), pervading direction (1.242), encompassing cosmos (1.242), expansive (1.242), cosmos awareness (1.242), expansive immeasurable (1.242), abundant expansive (1.242)
+
+Topic 27:
+  grove blind (8.223), alms (7.958), blind (7.878), savatthi (6.941), day (5.715), grove (5.642), gone (4.955), day abiding (4.862), blind spend (4.857), blind sat (4.857), returned alms (4.857), savatthi returned (4.857), meal went (4.857), savatthi early (4.857), alms gone (4.857)
+
+Topic 28:
+  long (1.400), time (0.965), long time (0.780), tears (0.158), stay (0.146), certain individual (0.146), wandering (0.141), transmigrating (0.136), transmigrating wandering (0.136), anger (0.135), long term (0.134), wandering long (0.131), greater (0.130), term (0.130), just (0.121)
+
+Topic 29:
+  practiced (1.752), sangha (1.514), worthy (1.446), disciples (1.371), sangha blessed (1.356), blessed disciples (1.339), types (0.980), taken (0.879), field merit (0.867), merit world (0.867), field (0.857), hospitality (0.843), worthy offerings (0.838), worthy hospitality (0.837), worthy respect (0.837)
+
+Topic 30:
+  mental qualities (10.060), mental (8.348), skillful mental (8.234), qualities (6.715), skillful (6.117), unskillful mental (4.989), regard skillful (3.580), abandoning unskillful (3.371), unskillful (3.220), abandoning (3.082), shirking (2.767), shirking duties (2.767), duties (2.709), solid (2.697), steadfast (1.962)
+
+Topic 31:
+  comes cessation (2.533), cessation (2.239), comes (1.781), cessation clinging (1.529), cessation birth (1.518), cessation craving (1.311), sustenance (1.284), clinging sustenance (1.261), cessation sense (1.237), cessation feeling (1.223), cessation form (1.143), cessation consciousness (1.126), cessation contact (1.123), media (1.105), clinging (1.105)
+
+Topic 32:
+  requisite condition (3.330), requisite (3.326), condition (3.236), condition comes (2.854), comes (1.830), clinging (1.069), sustenance (1.050), clinging sustenance (1.031), condition come (0.986), contact (0.937), birth requisite (0.925), craving (0.918), sense media (0.872), come (0.869), comes birth (0.860)
+
+Topic 33:
+  faculty intellect (11.912), intellect (10.341), restraint (9.671), faculty (8.550), intellect evil (5.769), idea intellect (5.744), cognizing idea (5.744), cognizing (5.744), idea (5.474), qualities greed (5.147), assail (5.147), distress assail (5.147), restraint faculty (5.092), grasp theme (4.882), dwell restraint (4.882)
+
+Topic 34:
+  maras (0.698), maras brahmas (0.698), brahman (0.694), brahmas (0.693), devas maras (0.674), royalty (0.669), brahman contemplative (0.661), contemplative (0.617), dwell (0.527), common (0.524), world devas (0.485), dependence (0.480), devas (0.466), contemplatives (0.384), brahmans (0.367)
+
+Topic 35:
+  pain distress (0.951), lamentation (0.932), sorrow lamentation (0.932), lamentation pain (0.905), distress despair (0.895), sorrow (0.889), despair (0.872), distress (0.824), pain (0.755), birth (0.336), freed (0.299), aging (0.285), change alteration (0.262), alteration (0.258), death sorrow (0.249)
+
+Topic 36:
+  beginning (2.424), transmigrating (1.759), transmigrating wandering (1.759), beings hindered (1.647), hindered ignorance (1.647), hindered (1.647), fettered craving (1.647), ignorance fettered (1.647), craving transmigrating (1.607), comes transmigration (1.593), beginning point (1.593), beginning comes (1.593), transmigration beginning (1.593), point evident (1.593), evident (1.593)
+
+Topic 37:
+  jeta (0.679), jeta grove (0.679), anathapindika (0.672), near savatthi (0.660), savatthi jeta (0.654), grove anathapindika (0.653), anathapindika monastery (0.653), savatthi (0.603), monastery (0.597), grove (0.576), staying near (0.498), near (0.460), blessed staying (0.413), occasion blessed (0.388), staying (0.386)
+
+Topic 38:
+  self (4.948), self self (4.712), self possessing (3.088), possessing (3.075), form self (2.642), form (2.478), versed disciplined (2.292), disciplined dhamma (2.292), disciplined (2.282), consciousness self (2.253), versed (2.170), assumes (1.807), self form (1.774), assume (1.764), form form (1.708)
+
+Topic 39:
+  experienced (84.768), contact experienced (81.794), dependence contact (64.749), contact (58.259), faculty (54.349), dependence (50.799), discerns (48.414), ceases (38.606), coming (36.080), cessation contact (32.703), grows (31.780), arises (26.649), arising (26.476), equanimity (24.095), cessation (21.950)
+
+Topic 40:
+  individual (0.883), sort (0.841), trifling (0.770), undeveloped (0.749), deed (0.568), certain individual (0.562), evil (0.531), case certain (0.465), certain (0.455), dwelling (0.389), moment (0.384), virtue (0.382), takes (0.360), appears (0.359), developed (0.328)
+
+Topic 41:
+  human (2.024), human beings (1.764), beings (1.656), non human (1.163), non (0.896), thinking (0.745), shore (0.600), hearing (0.475), certain (0.396), high (0.374), exactly (0.372), ground (0.312), thoughts (0.306), devas (0.303), means (0.276)
+
+Topic 42:
+  death reborn (0.671), reborn (0.641), teaching (0.610), ancient (0.585), company (0.554), body death (0.450), lord (0.445), passed (0.436), devas (0.404), midst (0.390), battle (0.356), reality (0.338), stage (0.332), body (0.318), delight (0.310)
+
+Topic 43:
+  monk (1.337), case monk (0.869), case (0.714), does monk (0.231), called (0.184), called monk (0.143), does (0.106), dwells (0.103), seclusion (0.100), tranquillity (0.084), develops (0.070), monk endowed (0.066), perceiving (0.065), hand (0.064), certain monk (0.060)
+
+Topic 44:
+  firm seeing (4.432), seeing peace (4.432), steadfast firm (4.363), firm (4.245), confident steadfast (3.967), confident (3.920), peace (3.798), heart (3.576), steadfast (3.538), seeing (3.127), seen drawback (3.077), understood reward (3.077), leap (3.012), grow confident (3.012), understood (2.976)
+
+Topic 45:
+  leads (1.303), developed pursued (0.864), pursued (0.825), developed (0.798), pursued leads (0.796), rebirth common (0.536), results (0.522), rebirth (0.496), realm (0.484), slightest (0.482), realm hungry (0.475), common (0.465), hungry shades (0.442), hungry (0.442), shades (0.442)
+
+Topic 46:
+  faculty eye (12.448), eye (11.230), restraint (10.313), faculty (9.285), seeing form (6.034), form eye (6.034), eye evil (5.977), distress assail (5.277), assail (5.277), qualities greed (5.277), restraint faculty (5.246), dwell restraint (4.963), grasp theme (4.963), grasp (4.827), restraint regard (4.641)
+
+Topic 47:
+  insight (1.089), internal (0.934), heightened discernment (0.843), tranquillity (0.798), phenomena (0.754), heightened (0.717), tranquillity awareness (0.695), awareness (0.677), discernment (0.506), attained (0.470), achieves (0.332), seen (0.317), individual (0.259), steadied (0.206), way (0.206)
+
+Topic 48:
+  pleasure (1.113), obtain difficulty (0.715), difficulty trouble (0.712), obtain (0.697), difficulty (0.692), trouble (0.683), self awakening (0.609), honor (0.604), renunciation (0.593), peace (0.528), seclusion (0.510), awakening (0.494), torpor (0.491), self (0.410), excrement (0.388)
+
+Topic 49:
+  factor awakening (1.524), factor (1.368), awakening (1.301), analysis (0.545), analysis qualities (0.545), qualities factor (0.520), rapture factor (0.515), persistence factor (0.499), dependent (0.472), awakening persistence (0.435), awakening rapture (0.435), qualities (0.430), equanimity factor (0.398), concentration factor (0.340), resulting (0.323)
+
+Topic 50:
+  perceptions (1.238), space (1.039), infinitude space (0.783), infinitude (0.749), perceiving infinite (0.713), heeding (0.707), dimension infinitude (0.699), resistance heeding (0.695), disappearance perceptions (0.695), perceptions resistance (0.695), perceptions diversity (0.695), transcending perceptions (0.695), heeding perceptions (0.695), infinite space (0.695), form disappearance (0.695)
+
+Topic 51:
+  stressful (1.027), disease cancer (0.903), arrow painful (0.903), painful affliction (0.903), emptiness self (0.903), stressful disease (0.903), cancer arrow (0.903), alien (0.903), affliction alien (0.903), inconstant stressful (0.883), inconstant (0.874), cancer (0.866), emptiness (0.864), disease (0.817), arrow (0.813)
+
+Topic 52:
+  misconduct (1.756), mental misconduct (1.025), verbal misconduct (1.025), bodily misconduct (1.025), misconduct mental (0.876), misconduct verbal (0.876), verbal (0.859), bodily (0.785), mental (0.595), deprivation bad (0.363), plane deprivation (0.363), conduct (0.357), hell (0.347), lower realms (0.334), realms (0.332)
+
+Topic 53:
+  known (1.251), cessation (0.947), diversity (0.907), play (0.863), result (0.850), fermentations (0.720), cause (0.709), path practice (0.682), comes play (0.652), practice (0.645), path (0.603), way (0.452), sensuality (0.426), come play (0.349), comes (0.326)
+
+Topic 54:
+  arisen (1.549), arisen evil (0.859), gain (0.858), evil (0.693), status (0.564), lack (0.511), friendship (0.488), offerings (0.400), existence (0.399), abandons (0.267), train (0.241), fevers (0.189), thought (0.164), conquered (0.151), evil unskillful (0.140)
+
+Topic 55:
+  householder (2.730), householder householder (0.834), householder son (0.834), wanderers (0.803), son (0.631), anathapindika householder (0.572), anathapindika (0.450), householder went (0.448), got (0.338), gotama contemplative (0.310), states (0.263), contemplative (0.250), white (0.240), said (0.239), attain (0.238)
+
+Topic 56:
+  direct knowledge (1.263), direct (1.235), knowledge (1.161), self (0.717), self awakening (0.692), unbinding (0.672), awakening (0.630), taught (0.625), calm (0.598), lead (0.443), instruction (0.330), disenchantment dispassion (0.248), dhamma vinaya (0.224), vinaya (0.222), connected (0.217)
+
+Topic 57:
+  heightened (1.349), training heightened (0.969), training (0.825), heightened virtue (0.752), heightened discernment (0.748), discernment (0.725), heightened mind (0.719), virtue (0.712), mind (0.480), train (0.435), undeveloped (0.300), undertaking (0.275), gathered (0.156), comes (0.146), strong (0.133)
+
+Topic 58:
+  lay (1.537), 500 (1.270), 500 lay (1.208), gavesin (1.172), lay followers (1.172), followers (1.172), terms (1.148), terms virtue (1.142), practice (0.918), virtue (0.896), lay follower (0.884), follower (0.810), leader (0.705), extra (0.642), occurred (0.627)
+
+Topic 59:
+  praise (1.523), people (1.449), crowd (1.382), great (1.139), palm (1.048), oil (0.885), gathering (0.809), hands (0.665), palm palm (0.639), hands palm (0.639), palm heart (0.604), saying (0.583), heart (0.533), lake (0.482), think (0.460)
+
+Topic 60:
+  turns (1.178), brahman contemplative (1.150), contemplative (1.117), need (1.089), brahman (1.045), sir (1.039), terms (1.017), person having (1.003), makes (0.954), engages (0.934), certain person (0.934), certain (0.917), requisites (0.912), having gone (0.839), gives (0.727)
+
+Topic 61:
+  action (2.270), course (2.046), leads (1.446), doing (1.136), reasons (0.709), pleasant (0.703), worth (0.667), wise (0.390), light (0.229), reflects (0.219), non (0.210), reflect (0.205), effort (0.169), caused (0.169), terms (0.163)
+
+Topic 62:
+  vision (1.855), knowledge vision (1.765), knowledge (1.632), release (1.500), vision release (1.302), concentration (1.069), consummate (0.560), talk (0.537), things (0.506), virtue (0.449), purpose (0.449), consummate knowledge (0.442), serenity (0.433), aggregate (0.380), disenchantment (0.350)
+
+Topic 63:
+  admirable (2.796), heard (1.486), beginning admirable (1.120), admirable middle (1.120), admirable end (1.120), admirable beginning (1.120), middle admirable (1.120), stored (0.996), middle (0.974), beginning (0.968), penetrated (0.959), pure (0.948), proclaim (0.937), entirely (0.937), terms (0.928)
+
+Topic 64:
+  away (2.378), passing (2.179), passing away (2.179), arising (1.637), arising passing (1.341), disappearance (0.700), obsessions (0.661), extent (0.642), origination (0.619), aggregates (0.490), obsession (0.484), fetters (0.481), conceit (0.433), doubt (0.412), stress (0.393)
+
+Topic 65:
+  percipient (3.629), percipient non (1.692), non (1.442), form (1.417), train (1.196), cancer (0.937), disease (0.874), arrow (0.865), awareness free (0.865), dwell (0.805), free (0.770), awareness (0.613), monks (0.548), formless (0.389), conceit (0.332)
+
+Topic 66:
+  views (1.728), held (1.455), right views (1.403), views break (1.392), wrong views (1.350), actions (1.347), wrong (1.347), speech mind (1.339), influence (1.299), appeared (1.290), beautiful (1.278), ugly (1.277), body speech (1.264), surpassing (1.244), superior (1.220)
+
+Topic 67:
+  support (2.249), come (2.114), place (1.497), born (1.473), physical food (1.368), intention (1.340), food (1.224), beings (1.212), physical (1.211), refined (1.102), contact (0.871), fourth (0.839), second (0.828), savatthi (0.757), consciousness (0.716)
+
+Topic 68:
+  meaning (2.064), sense (1.343), know (0.982), dhamma (0.862), sense dhamma (0.712), monk knows (0.589), knows (0.579), does know (0.547), amazing (0.519), didn (0.450), wouldn (0.446), plain (0.418), statement (0.416), does (0.385), vinaya (0.376)
+
+Topic 69:
+  wealth (3.433), strength (1.329), righteous (1.213), arm (1.192), righteously (1.190), sweat (1.176), gained (1.102), using (0.861), obtained (0.809), satisfaction (0.566), use (0.536), kings (0.507), furthermore disciple (0.486), family (0.428), property (0.409)
+
+Topic 70:
+  inconstant (3.206), nature (1.294), constant (0.942), consciousness inconstant (0.761), consciousness (0.739), cause requisite (0.655), dependence (0.594), stressful (0.562), intellect consciousness (0.488), intellect (0.485), eye consciousness (0.453), subject change (0.375), eye (0.370), cause (0.370), dependently (0.367)
+
+Topic 71:
+  offerings fame (43.287), gains offerings (43.287), fame (43.265), gains (42.722), offerings (41.468), stands (16.292), dwelling (11.787), bondage (11.760), harsh (11.601), honor (10.705), attainment (10.191), unexcelled (9.949), village (7.430), goes (6.968), mara (6.957)
+
+Topic 72:
+  taking (2.096), taking life (1.946), abstains (1.568), cause heedlessness (1.501), heedlessness (1.486), stealing (1.225), lying (1.214), life (1.126), undertaking (1.047), cause (1.046), sexual (1.019), abstain (0.934), illicit (0.616), misconduct (0.514), refrains (0.449)
+
+Topic 73:
+  right ending (1.747), ending (1.598), stress (1.456), right (1.287), ending stress (1.125), suffering (1.030), suffering stress (0.734), entirely (0.580), holy (0.572), holy life (0.570), disciples (0.451), life (0.401), stress suffering (0.391), fetter (0.336), says (0.290)
+
+Topic 74:
+  money (2.247), son (1.587), sakyan (1.584), gold (1.226), contemplatives (1.058), assembly (0.861), accept (0.819), palace (0.769), consent (0.753), royal (0.643), arose (0.448), just lord (0.416), able (0.397), rice (0.385), lord (0.384)
+
+Topic 75:
+  sensual (2.252), sensual pleasures (1.919), pleasures (1.919), young (0.512), sensuality (0.401), greedy (0.325), don (0.306), black (0.290), perfect (0.280), youth (0.280), pure (0.253), bharadvaja (0.248), chaste (0.247), chaste life (0.247), life (0.237)
+
+Topic 76:
+  thoroughbred (30.709), excellent thoroughbred (30.155), excellent (28.426), stirred (18.398), thoroughbred horse (17.475), agitated (16.247), horse (15.324), goad (14.032), stick (13.696), type (10.887), existing world (10.726), existing (9.783), world (7.964), like (6.845), today (6.704)
+
+Topic 77:
+  conversation (1.513), food drink (0.867), gathered (0.843), drink (0.835), meeting (0.813), hall (0.781), clothing (0.762), drink clothing (0.749), vehicles (0.741), garlands (0.734), engaged (0.707), towns (0.696), meal returning (0.678), countryside (0.669), food (0.660)
+
+Topic 78:
+  severely ill (17.455), severely (17.455), pain severely (17.455), diseased (16.234), diseased pain (15.896), ill (15.326), pain (10.844), certain monk (7.870), visit (7.667), sympathy (7.253), certain (6.228), dwelling (4.891), hope (4.646), lord (4.196), blessed lord (4.071)
+
+Topic 79:
+  man (2.666), think (1.086), suppose (1.050), come (0.644), man come (0.630), good man (0.624), heat (0.522), sharp (0.511), afraid (0.449), south (0.410), east (0.338), wind (0.319), way (0.317), strong (0.316), hand (0.311)
+
+Topic 80:
+  awakened (20.931), awakened blessed (17.353), unexcelled trainer (13.198), conduct gone (13.121), awakened consummate (13.121), beings awakened (13.121), tamed teacher (12.989), tamed (12.872), knowledge conduct (12.817), trainer (12.742), consummate knowledge (12.730), expert (12.244), fit tamed (12.190), expert regard (12.190), trainer people (12.190)
+
+Topic 81:
+  intellect (1.076), tongue (1.049), eye (1.021), nose (0.935), ear (0.927), body (0.673), nose tongue (0.663), ear nose (0.663), tongue body (0.663), body intellect (0.581), sphere (0.323), mara (0.305), contact (0.273), gain (0.247), disagreeable (0.209)
+
+Topic 82:
+  occasion (1.944), occasion blessed (1.802), staying (1.698), blessed staying (1.660), heard occasion (1.344), near (1.316), heard (1.275), staying near (1.247), blessed (1.076), rajagaha (0.904), near rajagaha (0.811), vesali (0.414), bamboo grove (0.407), bamboo (0.398), near vesali (0.387)
+
+Topic 83:
+  kamma (2.075), result (1.483), bright (1.390), fabrication (1.316), dark (0.940), bodily fabrication (0.649), touched (0.437), non (0.400), experiences (0.379), fabricated (0.366), bodily (0.364), called (0.348), world (0.341), feelings (0.285), verbal (0.247)
+
+Topic 84:
+  individual (1.443), affection (1.324), charming (1.231), aversion (1.142), born (1.136), displeasing (0.995), aversion born (0.978), born aversion (0.953), appealing (0.920), case individual (0.706), pleasing (0.705), rise (0.677), thinks (0.611), gives (0.571), case (0.325)
+
+Topic 85:
+  subject (3.783), subject death (1.898), death (1.518), subject aging (1.331), person subject (1.326), aging (1.121), illness (1.073), breast (1.038), disease (0.924), terror (0.776), afraid (0.730), beat breast (0.694), grieve (0.694), beat (0.659), comes (0.561)
+
+Topic 86:
+  day (2.468), night (2.305), day night (1.778), means (1.484), arahants (1.393), live (1.165), uposatha (1.155), observed (1.054), today (1.043), abstain (0.959), factor (0.614), abandoning (0.610), develops (0.578), open (0.461), power (0.386)
+
+Topic 87:
+  sensations (1.672), tactile sensations (1.672), sounds (1.623), tactile (1.603), flavors (1.591), aromas (1.585), ideas (1.201), forms (1.159), cognizable (0.737), fetter (0.700), nose (0.553), ear (0.522), tongue (0.503), called (0.487), sensuality (0.476)
+
+Topic 88:
+  inviting (1.619), pertinent (1.619), timeless inviting (1.581), timeless (1.581), verification pertinent (1.581), verification (1.581), inviting verification (1.581), pertinent realized (1.581), realized wise (1.581), dhamma (1.431), wise (1.406), realized (1.265), seen timeless (1.148), blessed seen (1.148), expounded blessed (1.143)
+
+Topic 89:
+  perception (3.605), unattractiveness (0.955), perception self (0.817), world (0.756), inconstancy (0.683), cessation perception (0.571), self (0.499), called perception (0.476), perception perception (0.378), fabrications (0.375), abandoning (0.338), sought (0.265), unbinding (0.259), unattractive (0.242), sphere (0.225)
+
+Topic 90:
+  good (1.857), individual (1.776), coming (1.701), concern (1.551), conscience (1.444), skillful qualities (1.381), skillful (1.298), case individual (1.238), conviction (1.235), regard skillful (1.049), persistence (0.924), qualities (0.799), discernment (0.792), seeing (0.669), comes (0.586)
+
+Topic 91:
+  tree (1.167), wilderness (1.114), gone wilderness (0.995), gone (0.830), having gone (0.799), building (0.795), tree building (0.783), sits (0.722), wilderness foot (0.715), foot tree (0.650), foot (0.636), legs (0.618), monk having (0.583), having (0.500), dwelling (0.424)
+
+Topic 92:
+  king (3.281), king pasenadi (1.339), pasenadi (1.339), great king (1.005), great (0.770), deva (0.659), kosala (0.575), pasenadi kosala (0.514), raising (0.429), son (0.291), savatthi (0.274), caught (0.234), battle battle (0.233), battle (0.221), raised (0.206)
+
+Topic 93:
+  does (7.088), faculties (4.837), bondage (4.616), delighting (4.026), caught (3.874), arise (3.874), outside (3.436), pleasure happiness (3.219), inwardly (3.139), based (3.112), desires (3.025), happiness (2.792), woman (2.743), want (2.601), attends (2.472)
+
+Topic 94:
+  desire (3.605), passion (2.677), passion desire (2.062), fever craving (1.468), thirst fever (1.453), fever (1.389), thirst (1.383), fetter (1.148), subduing (1.049), craving (1.018), desire passion (0.932), love (0.660), teacher (0.642), taken (0.641), free (0.625)
+
+Topic 95:
+  qualities (2.560), unskillful (1.750), unskillful qualities (1.731), skillful qualities (1.712), sort (1.363), skillful (1.296), grow (0.748), evil unskillful (0.588), tell (0.547), mindfulness alertness (0.546), alertness (0.540), know (0.469), abandon (0.462), pursued (0.454), lead (0.415)
+
+Topic 96:
+  nakula (1.553), nakula mother (1.298), mother (1.229), criticized (1.033), die (0.958), things way (0.866), householder (0.857), painful (0.826), shouldn (0.824), bhesakala grove (0.818), bhesakala (0.818), bhaggas (0.818), crocodile haunt (0.818), crocodile (0.817), blessed (0.812)
+
+Topic 97:
+  equanimous mindful (9.020), equanimous (8.820), mindful (7.889), mindful alert (5.658), fading rapture (5.613), pleasant abiding (5.483), declare equanimous (5.334), ones declare (5.334), mindful pleasant (5.334), jhana noble (5.334), pleasant (5.308), abiding (5.300), fading (5.086), pleasure body (5.047), declare (5.022)
+
+Topic 98:
+  soul (2.643), cosmos (2.418), exist (1.924), tathagata (1.836), death tathagata (1.794), exist death (1.684), soul body (1.603), eternal (1.602), body soul (1.572), finite (1.554), death (1.481), thing (1.445), cosmos eternal (1.441), cosmos infinite (1.429), cosmos finite (1.429)
+
+Topic 99:
+  water (5.043), cow (1.851), grass (1.367), drink (1.128), elephants (0.982), just (0.858), way (0.830), cow dung (0.655), dung (0.649), use (0.647), ocean (0.643), cool (0.573), cut (0.564), way person (0.473), milk (0.468)
+
+Topic 100:
+  finished (3.525), months (3.163), days (2.821), set (2.797), faults (1.741), chariot (1.726), far (1.655), stands (1.251), ground (1.249), fixed (1.097), goes (1.088), going (0.929), making (0.911), robes (0.904), work (0.899)
+
+Topic 101:
+  step (1.675), pulls (1.310), step step (1.195), arrived (1.067), realize (1.033), away (1.010), fruit (0.953), distinction (0.948), equanimity (0.900), developed (0.890), awareness (0.862), development (0.833), alert (0.796), remains (0.786), perception (0.759)
+
+Topic 102:
+  mother (2.313), danger (1.376), villages (1.279), towns (1.096), villages towns (1.092), towns cities (1.060), cities (1.060), comes time (1.034), run people (1.002), thing (0.889), great (0.822), happens (0.775), people (0.691), run (0.663), time (0.609)
+
+Topic 103:
+  state (2.166), destined (1.921), deprivation (1.644), hell (1.432), lies (0.924), states (0.877), doing (0.835), nigantha (0.823), view (0.704), ended (0.654), stream (0.608), rebirth (0.606), woe (0.588), stream winner (0.562), winner (0.562)
+
+Topic 104:
+  effluents (2.804), effluents ended (2.345), monk effluents (2.164), ended (1.753), ending effluents (1.201), ending (0.857), strength (0.845), monk (0.789), right discernment (0.675), fact (0.651), reference (0.514), seen (0.503), developed (0.459), furthermore (0.355), explained (0.288)
+
+Topic 105:
+  factors awakening (16.388), lack (16.317), developing (15.561), lack clinging (15.471), seven factors (15.057), seven (15.015), factors (14.462), mind released (13.972), frames (13.659), frames reference (13.659), effluents (12.259), clinging (11.028), wish (10.848), released (10.684), awakening (10.552)
+
+Topic 106:
+  confining place (2.859), confining (2.859), place (2.212), described blessed (1.236), sequel (1.232), described (1.166), followed (1.135), ceased (1.131), opening (1.068), attaining (0.963), blessed (0.681), just (0.601), enters remains (0.528), enters (0.518), monk complete (0.493)
+
+Topic 107:
+  equanimity (7.008), fourth jhana (6.838), pleasure pain (6.825), earlier (6.659), purity equanimity (6.631), equanimity mindfulness (6.631), jhana purity (6.631), mindfulness pleasure (6.631), abandoning pleasure (6.631), earlier disappearance (6.631), elation distress (6.382), elation (6.382), disappearance elation (6.382), disappearance (6.145), purity (6.034)
+
+Topic 108:
+  fortress (2.617), abandons (2.409), ward (2.339), royal frontier (2.311), frontier fortress (2.311), frontier (2.311), royal (2.274), develops (2.239), ward way (1.796), just royal (1.796), way disciple (1.796), protection (1.691), abandons unskillful (1.456), develops skillful (1.456), skillful abandons (1.456)
+
+Topic 109:
+  lend (2.408), listen (2.390), worth (2.183), deep (2.151), set (1.964), knowing (1.836), ear (1.750), words (1.695), connected (1.216), meaning (1.213), tathagata (1.122), teachings (1.115), emptiness (1.085), don (1.038), sound (1.011)
+
+Topic 110:
+  like (3.254), just like (2.883), ordered (2.835), fault (2.748), horse (2.581), men (2.511), monks (2.444), told (2.363), tell (1.918), just (1.667), man (1.476), chariot (1.241), committed (0.892), monk (0.884), goes (0.844)
+
+Topic 111:
+  gift (4.561), freedom (2.537), giving (2.107), gives (1.922), animosity (1.846), danger (1.462), reward (1.177), great (1.041), merit (0.975), gains (0.873), given (0.869), doing (0.618), beings (0.609), abstains (0.572), clothing (0.523)
+
+Topic 112:
+  doesn (125.911), having abandoned (16.009), bound (15.432), doesn exist (14.595), sorrow (12.365), death doesn (9.764), tathagata doesn (8.659), abandoned (7.747), overcome (7.585), experiences (6.454), experience (5.886), having (5.659), stress (5.633), dhamma (5.320), discern actually (5.206)
+
+Topic 113:
+  heedfulness (3.490), foremost (2.673), reckoned (2.546), rooted (1.619), skillful qualities (1.381), skillful (1.187), just (0.958), way (0.885), qualities (0.809), ocean (0.752), elephant (0.482), animals (0.475), light (0.466), terms (0.450), sky (0.447)
+
+Topic 114:
+  clinging (37.138), clinging aggregate (33.998), aggregate (32.429), clinging aggregates (31.761), aggregates (30.732), regard clinging (18.588), aggregate feeling (16.694), consciousness clinging (16.552), form clinging (16.543), khemaka (15.931), self (14.219), concerning (12.794), assume (12.752), described blessed (11.478), described (10.790)
+
+Topic 115:
+  stopping (21.306), repeatedly stopping (21.199), statement (20.844), repeatedly (20.719), palm (19.273), dwell (16.689), don (14.501), dwell surely (12.794), approve (12.371), know don (12.346), delighting approving (12.154), approving (12.154), paying (12.072), don know (12.059), told case (12.049)
+
+Topic 116:
+  thousand (7.547), arose (7.102), clan (7.001), experience (6.268), past (5.899), manifold (5.897), lives (5.865), end (5.608), state (5.472), pleasure pain (5.103), food (4.804), passing (4.612), passing away (4.612), recollecting (4.287), pain (4.179)
+
+Topic 117:
+  feelings (3.561), fellows holy (2.625), fellows (2.625), holy life (2.598), holy (2.585), endearment (2.507), life (2.232), respect (2.204), leading (2.142), conducive (2.044), lack (1.707), condition (1.574), sense (1.565), state (1.406), acts (1.358)
+
+Topic 118:
+  fermentations (37.061), mental fermentations (29.297), fermentations ended (27.955), totally (24.718), ended (23.610), mental (19.451), gnosis (18.292), laid (16.584), arahant (16.326), fetter (15.959), right (15.203), task (14.846), reached (13.500), attained (13.415), destroyed (12.973)
+
+Topic 119:
+  life span (5.925), span (5.765), span devas (4.744), devas (4.688), used (4.590), run person (3.578), state (3.277), run (3.245), life (3.205), distinguishing factor (3.034), difference distinction (3.034), distinction distinguishing (3.034), distinguishing (3.034), difference (2.965), having (2.916)
+
+Topic 120:
+  question (16.290), answer (12.882), asked (9.166), talk (4.847), fit (4.461), sects (3.406), question answer (3.150), aside (2.762), case person (2.648), questions (2.346), verse (2.098), wanderers (2.064), wanderers sects (1.987), vacchagotta (1.856), answering (1.689)
+
+Topic 121:
+  regard (58.237), focused (8.461), remains focused (5.913), arose (4.986), stressful (3.758), regard form (3.738), remains (3.419), regard world (3.345), truth (3.176), astounding (3.050), diversity (2.904), amazing (2.436), versed disciplined (2.312), disciplined dhamma (2.312), disciplined (2.246)
+
+Topic 122:
+  frequents dwellings (3.859), endowed insight (3.859), precepts perfection (3.859), brings precepts (3.859), perfection committed (3.859), neglect jhana (3.859), does neglect (3.859), committed inner (3.859), jhana endowed (3.859), insight frequents (3.859), perfection (3.817), frequents (3.809), inner (3.794), monk wish (3.738), precepts (3.701)
+
+Topic 123:
+  contemplatives (25.688), brahmans (25.319), brahmans contemplatives (25.286), declare (8.744), kamma (6.520), arise (5.399), self (5.208), spontaneously (5.118), knowledgeable (4.982), pleasure pain (4.959), dhamma taught (4.262), blameless (4.166), contact (3.867), directly (3.714), caused (3.350)
+
+Topic 124:
+  battle (416.752), warrior (401.551), type warrior (230.250), taking sword (217.696), bow quiver (217.696), bow (217.696), strapping bow (217.696), strapping (217.696), shield strapping (217.696), shield (217.696), sword shield (217.696), goes battle (217.696), quiver goes (217.696), warrior taking (217.696), existing (216.754)
+
+Topic 125:
+  sariputta (96.144), ven (91.048), ven sariputta (86.291), maha (45.810), ven maha (45.237), went ven (38.028), kotthita (36.788), said ven (32.105), friend (29.788), friend sariputta (29.671), sariputta arrival (27.095), sariputta friend (21.707), varanasi (20.768), isipatana (20.571), occasion ven (17.678)
+
+Topic 126:
+  delusion (35.173), aversion (31.038), passion (24.701), passion aversion (10.984), aversion delusion (10.617), subduing (9.553), free (6.382), ending (3.887), abandoning (3.810), experience (2.994), bound (2.947), practicing (2.921), fermentations ended (2.876), venerable (2.734), wanderers sects (2.692)
+
+Topic 127:
+  death does (15.426), superlative (15.310), exist death (14.168), does exist (13.883), exist (13.499), described (12.292), death (10.866), does (10.762), exists (10.734), tathagata (9.892), anuradha (9.676), tathagata supreme (9.043), attainer superlative (9.043), supreme man (9.043), attainer (9.043)
+
+Topic 128:
+  release (4.510), release having (3.642), free awareness (3.642), fermentation (3.454), known (3.436), fermentation free (3.429), free (3.377), awareness release (3.312), release discernment (3.247), discernment release (3.184), ending (2.842), fermentations (2.642), having (2.201), awareness (2.186), having known (2.127)
+
+Topic 129:
+  like (9.680), bad (4.688), dependent (3.195), comes (3.077), craving (3.061), does monk (2.873), good (2.304), does (1.942), means (1.772), external (1.510), come (1.234), spread (1.178), woe (1.144), destinations (1.091), internal (1.018)
+
+Topic 130:
+  develop (30.893), mindfulness (21.470), takes (20.065), breathing (16.578), attend (14.601), accomplished (13.817), live (12.990), addressed (11.713), great (10.942), death (10.934), food (9.544), breathe (8.045), blessed (7.910), think (7.090), thinking (6.532)
+
+Topic 131:
+  patimokkha (10.381), consummate (10.136), accordance patimokkha (9.875), seeing danger (9.854), danger slightest (9.837), rules seeing (9.322), patimokkha consummate (9.322), consummate behavior (9.322), undertaken training (9.322), restrained accordance (9.322), behavior sphere (9.322), sphere activity (9.322), activity (9.291), slightest (9.239), behavior (9.194)
+
+Topic 132:
+  enemy (8.910), anger (6.301), angry (5.569), overcome (4.542), man woman (3.236), pleased (3.194), woman (3.184), aim (3.179), thing (3.016), person (2.400), pleasing (2.302), comes (1.985), man (1.954), furthermore (1.593), gained (1.074)
+
+Topic 133:
+  passion regard (13.005), defilement mind (12.883), defilement (12.464), renunciation (11.445), desire passion (11.171), mind (10.080), desire (8.609), regard (8.158), passion (7.913), qualities worth (7.782), regard bases (7.681), renunciation feels (7.681), fostered (7.681), mind desire (7.681), mind fostered (7.681)
+
+Topic 134:
+  worlds (5.988), brahma worlds (5.988), powers (5.917), body far (5.917), influence body (5.917), far brahma (5.917), sun moon (5.776), moon (5.756), sun (5.720), brahma (5.548), mighty (5.456), mighty powerful (5.456), water (5.454), influence (5.430), walls (5.381)
+
+Topic 135:
+  path (6.229), origination (4.452), cessation (3.722), practice leading (3.676), path practice (3.480), leading cessation (3.429), practice (3.336), contact comes (3.267), leading (3.237), path path (2.991), comes origination (2.964), comes (2.647), just noble (2.622), contact (2.592), eightfold path (2.447)
+
+Topic 136:
+  manifest (5.613), joy (5.061), serenity (4.988), dwells (4.859), mind (4.455), phenomena (4.390), centered (4.277), rapture (4.023), centered mind (3.550), manifest phenomena (3.429), joy rapture (3.422), rapture serenity (2.994), simply (2.418), mind uncentered (2.241), uncentered (2.153)
+
+Topic 137:
+  practices benefit (3.648), benefit (3.555), practices (3.536), subduing (1.359), individual (1.071), types (0.694), existing world (0.634), individuals (0.633), existing (0.589), certain individual (0.537), practice (0.478), case certain (0.453), monks (0.412), certain (0.403), undertaking (0.372)
+
+Topic 138:
+  asuras (12.810), devas (9.208), battle (6.845), lost (5.271), won (4.020), time (3.581), thought (3.036), occurred (2.907), thought occurred (2.855), second (2.492), simply (2.450), having (2.081), did (2.048), don (1.804), shelter (1.600)
+
+Topic 139:
+  infinitude (3.822), dimension (3.818), dimension infinitude (3.348), infinitude consciousness (2.749), nothingness (2.300), infinitude space (2.162), dimension nothingness (2.039), space (2.019), consciousness (1.951), non perception (1.352), perception non (1.315), jhana (1.152), dimension perception (1.091), perception (1.060), property (1.035)
+
+Topic 140:
+  renewed future (6.754), renewed (6.754), production renewed (6.754), production (6.736), future (6.385), consciousness (4.486), future birth (3.877), growth (3.691), lands (3.137), birth aging (2.874), aging death (2.830), nutriment (2.713), aging (2.576), fabrications (2.569), form (2.505)
+
+Topic 141:
+  dispassion cessation (5.725), disenchantment (5.707), dispassion (5.096), disenchantment dispassion (4.909), cessation (4.148), cessation lack (3.387), lack clinging (3.173), released (2.822), lack (2.692), cessation regard (2.479), right discernment (2.449), clinging (2.352), sustenance (2.108), clinging sustenance (2.051), sake (1.911)
+
+Topic 142:
+  release (6.441), awareness (5.569), awareness release (4.867), qualities arisen (4.795), release discernment (4.010), discernment release (3.979), ideas (3.859), cease (3.684), pleasing (3.502), evil unskillful (3.472), evil (3.148), arisen (3.111), present (3.040), mindfulness (2.993), remains (2.607)
+
+Topic 143:
+  respect (3.709), seven (3.701), extreme (3.195), decline (2.924), lead (2.587), night (2.514), stood standing (2.435), stood (2.353), standing (2.349), standing said (2.330), bowed stood (2.302), devata (2.225), radiance (2.139), non (1.978), lord (1.957)
+
+Topic 144:
+  person integrity (4.587), points (3.870), integrity (3.743), asked (3.161), person (2.684), speaks (2.531), know venerable (2.470), pressed (2.437), holding (2.405), questions (2.394), venerable person (2.391), venerable (2.093), know (1.734), furthermore (1.515), bad (1.389)
+
+Topic 145:
+  fabrications (5.121), feeling perception (5.102), perception fabrications (5.019), consciousness (4.977), form (4.691), feeling (4.509), perception (3.879), fabrications consciousness (3.564), form feeling (2.437), regard form (0.805), focused (0.613), disappearance (0.606), totally (0.541), keeps (0.527), savatthi (0.483)
+
+Topic 146:
+  say (15.453), don (5.079), don say (4.485), khemaka (3.123), friend (2.352), speak (1.770), elders (1.449), dasaka (1.383), cognized (1.362), elder monks (1.208), elder (1.127), sensed cognized (1.025), heard sensed (1.025), sensed (1.014), hope (0.992)
+
+Topic 147:
+  forth (2.373), homelessness (2.055), forth home (2.055), holy life (2.033), rightly forth (2.023), clansmen rightly (2.023), supreme goal (2.023), life clansmen (2.023), knowing realizing (2.023), homelessness knowing (2.023), home homelessness (2.020), holy (2.020), clansmen (2.006), task sake (1.989), sake world (1.989)
+
+Topic 148:
+  conquered (4.836), evil (3.617), does come (3.453), developed (3.075), greed (3.035), anger (2.848), venerable (2.780), hostility (2.772), aversion delusion (2.757), discerns (2.455), mind (2.301), come (2.249), developing (2.229), remains (2.161), aversion (1.985)
+
+Topic 149:
+  line (12.215), line dhamma (10.528), unfactual (6.190), dhamma thinking (5.836), dhamma grounds (5.763), thinking line (5.763), dhamma (5.527), wandering sectarians (5.229), grounds (5.073), sectarians (5.021), thinking (4.968), wandering (4.262), blessed (4.246), blessed said (4.068), answer (3.990)
+
+Topic 150:
+  directed (3.673), directed thoughts (2.525), directed thought (2.433), thoughts (2.386), evaluations (2.343), thoughts evaluations (2.343), second jhana (2.225), stilling directed (2.220), stilling (2.197), evaluation (2.148), internal assurance (2.116), unification awareness (2.116), evaluation internal (2.116), free directed (2.116), assurance (2.116)
+
+Topic 151:
+  appropriately (3.547), appear (2.690), past (2.362), external (2.085), future (1.909), past future (1.853), subtle (1.831), present (1.697), examines (1.640), seeing (1.604), man good (1.572), internal (1.520), far (1.507), common (1.465), sees (1.334)
+
+Topic 152:
+  power (2.474), consumed (1.771), person (1.709), imprisonment (1.693), mind (1.622), caused (1.603), blame (1.587), mind overcome (1.574), want (1.537), greed (1.499), overcome (1.453), unskillful (1.356), born (1.350), come play (1.280), suffering (1.276)
+
+Topic 153:
+  speech (2.856), refrains (1.910), engages (1.900), false speech (1.834), divisive speech (1.821), chatter (1.821), idle chatter (1.821), divisive (1.812), false (1.809), idle (1.797), abusive (1.707), covetous (1.505), views (1.479), bears (1.425), takes (1.322)
+
+Topic 154:
+  sick (2.396), requisites (2.222), medicinal requisites (1.875), medicinal (1.875), robes (1.639), requisites curing (1.419), curing (1.419), lodgings (1.397), food (1.342), almsfood (1.218), content (1.041), alms (0.990), old (0.866), receives (0.720), cloth (0.595)
+
+Topic 155:
+  stinginess (4.310), entering (2.394), remaining (2.357), abandoning (1.998), jhana (1.918), family (1.700), lodgings (1.651), status (1.624), incapable (1.473), gains (1.407), monastery (1.404), qualities (1.134), returning (1.056), fruit (1.033), capable (0.905)
+
+Topic 156:
+  actions (4.553), bodily (4.153), verbal (4.112), mental (2.849), unprotected (1.158), good (1.047), behavior (0.965), impure (0.678), don (0.676), conduct (0.589), pay attention (0.557), deeds (0.497), mind (0.492), pay (0.476), view (0.471)
+
+Topic 157:
+  faculty (2.230), conviction (1.488), faculty conviction (1.254), discernment (0.988), faculties faculty (0.963), conviction faculty (0.923), persistence (0.922), practice (0.858), faculty persistence (0.825), concentration (0.824), nature (0.817), faculties (0.807), mindfulness (0.767), leads ending (0.696), quick (0.684)
+
+Topic 158:
+  feeling (2.958), feeling pleasure (2.677), pleasure (1.886), pain (1.754), feeling pain (1.694), pleasure pain (1.448), senses (1.030), limited (0.911), discerns (0.839), disjoined (0.809), body (0.730), dependent (0.528), cold (0.452), obsession (0.450), touched (0.390)
+
+Topic 159:
+  devas (5.225), raised (3.446), devas thirty (3.339), set (3.301), thirty (3.236), kings (2.292), mind (2.100), brahma (1.784), refined (1.707), told (1.647), friend (1.321), great (1.043), good (0.958), power (0.954), contented (0.743)
+
+Topic 160:
+  returner (1.378), reappears company (1.357), sovereignty (1.291), exhausted (1.245), company (1.245), power (1.175), status (1.149), death reappears (1.132), reappears (1.105), gift (1.076), break body (0.891), body death (0.877), action (0.867), break (0.856), instead (0.822)
+
+Topic 161:
+  understand (2.258), benefit (2.257), weaken discernment (1.458), awareness weaken (1.458), hindrances (1.452), weaken (1.450), discernment (1.376), truly (1.331), superior (1.302), realize (1.206), distinction (1.123), state (1.081), knowledge vision (1.053), river (1.011), vision (1.003)
+
+Topic 162:
+  follow holy (1.010), freedom death (1.009), trifling stress (1.009), sage skillful (1.009), sage (1.009), despairs touch (1.009), born freedom (1.009), stress despairs (1.009), limited trifling (1.009), touch truth (1.009), like sage (1.009), truth like (1.009), skillful follow (1.009), life born (1.009), life human (0.982)
+
+Topic 163:
+  cosmos (2.058), end (2.041), traveling (1.682), reach (1.304), far (1.206), die (1.201), age (1.187), reappear (1.131), possible (1.009), tell (0.959), know (0.932), speed (0.867), reaching (0.785), said blessed (0.782), birth (0.697)
+
+Topic 164:
+  said (2.982), reference said (2.904), said reference (2.885), reference (2.437), said case (0.999), blameless (0.494), dhamma (0.483), knowledgeable (0.350), delights (0.344), mindfulness established (0.323), dhamma taught (0.312), sister (0.269), taught (0.266), property (0.261), blessed said (0.254)
+
+Topic 165:
+  distresses (1.545), pains distresses (1.545), sorrows lamentations (1.545), lamentations pains (1.545), distresses despairs (1.545), lamentations (1.545), aging death (1.534), pains (1.526), sorrows (1.517), aging (1.504), despairs (1.445), death sorrows (1.430), birth aging (1.388), suffering stress (1.302), tell suffering (1.224)
+
+Topic 166:
+  large (3.327), number (2.265), large number (2.265), monks (1.893), number monks (1.840), drop (0.707), ve (0.621), aren (0.587), torpor (0.560), saw (0.543), went (0.469), occasion (0.468), told (0.444), teachings (0.441), body (0.437)
+
+Topic 167:
+  dealing (1.427), affliction (1.413), attention perceptions (1.365), perceptions dealing (1.365), beset (1.325), perceptions (1.180), attention (1.139), beset attention (1.027), dimension (0.469), furthermore case (0.463), remains (0.413), remained (0.340), furthermore (0.334), arises (0.334), dimension nothingness (0.281)
+
+Topic 168:
+  cause (2.330), reason (2.291), reason cause (1.589), unarisen (1.412), attends (1.017), ask (1.006), arisen (0.943), arise (0.854), friends (0.839), theme (0.772), arises (0.624), growth (0.615), abandoned (0.477), cause reason (0.449), said (0.441)
+
+Topic 169:
+  remain (1.300), enter (1.294), enter remain (1.217), thought (0.876), attend (0.762), thought occurs (0.633), occurs (0.620), don (0.587), way don (0.556), firmly (0.452), instruction (0.438), develops pursues (0.435), pursues (0.435), concentration (0.430), establishes (0.401)
+
+Topic 170:
+  drowsiness (1.354), sloth (1.252), uncertainty (1.251), sloth drowsiness (1.238), restlessness (0.822), ill (0.759), dwells (0.634), devoid (0.582), abandoning (0.492), awareness (0.478), mind (0.374), anger (0.368), perplexity (0.311), living beings (0.288), inwardly (0.282)
+
+Topic 171:
+  developed (1.252), grounding (1.228), reins (1.228), awareness release (1.212), basis (1.207), handed (1.189), steadied (1.175), pursued (1.113), developed pursued (1.066), given (1.028), release (0.990), undertaken (0.981), taken (0.979), misrepresent blessed (0.806), misrepresent (0.799)
+
+Topic 172:
+  reflect (1.527), intoxication (1.188), line reasoning (0.872), speech mind (0.853), body speech (0.800), entirely (0.793), grow (0.774), based (0.737), reasoning (0.735), fact (0.702), line (0.702), conduct (0.695), speech (0.686), bad (0.657), abandoned (0.634)
+
+Topic 173:
+  away allure (1.069), origination passing (1.066), allure (0.981), present origination (0.956), escape (0.950), drawbacks (0.924), origination (0.769), passing away (0.764), passing (0.764), actually present (0.648), sensuality (0.628), away (0.607), actually (0.587), discerns actually (0.571), present (0.541)
+
+Topic 174:
+  aroused (2.285), persistence (1.759), persistence aroused (1.572), established (0.518), content (0.515), mindfulness (0.487), centered (0.468), uncentered (0.409), practice (0.377), mindfulness established (0.306), mind centered (0.264), discerning (0.260), conviction (0.257), shirking duties (0.252), shirking (0.252)
+
+Topic 175:
+  true dhamma (1.288), live (1.106), lay (1.078), true (1.067), followers (1.059), lay followers (1.059), nuns (0.914), female (0.890), dhamma (0.797), respect (0.677), dhamma sangha (0.552), sangha (0.502), disappearance (0.494), monks (0.404), totally unbound (0.404)
+
+Topic 176:
+  tathagata worthy (0.940), just unawakened (0.865), unawakened bodhisatta (0.857), bodhisatta (0.857), unawakened (0.857), awakened just (0.856), awakened (0.848), self awakened (0.847), rightly self (0.825), worthy rightly (0.779), tathagata (0.767), worthy (0.752), rightly (0.742), self (0.687), great dream (0.631)
+
+Topic 177:
+  uninstructed (1.482), uninstructed run (1.482), run person (1.419), run (1.276), person (0.902), touched (0.322), ignorance (0.254), fabrication (0.217), breast (0.215), instructed disciple (0.200), dependently (0.197), versed disciplined (0.194), disciplined dhamma (0.194), gain (0.193), instructed (0.193)
+
+Topic 178:
+  happiness (1.390), welfare (1.283), monks (1.025), jhana (0.878), human divine (0.784), divine beings (0.699), practicing (0.635), divine (0.626), dhamma (0.595), human (0.482), praise (0.389), beings (0.350), good (0.337), purpose (0.261), saying (0.253)
+
+Topic 179:
+  alms (0.959), early (0.913), robes (0.882), carrying (0.864), early morning (0.857), morning (0.857), outer (0.809), robe (0.758), robes carrying (0.754), carrying bowl (0.696), bowl (0.690), bowl outer (0.626), outer robe (0.622), having (0.490), having robes (0.485)
+
+Topic 180:
+  little (1.245), tip (1.154), great (1.145), dust (1.010), earth (0.912), greater (0.791), compared (0.712), blessed (0.506), far (0.504), lord (0.448), great benefit (0.197), ocean (0.135), remaining (0.109), monks (0.085), mass suffering (0.076)
+
+Topic 181:
+  extreme refined (1.003), pleasure extreme (1.003), refined (0.915), extreme (0.906), pleasure (0.686), ananda pleasure (0.483), pleasure beings (0.483), highest (0.444), experience (0.382), ananda (0.357), beings (0.312), say (0.289), monk complete (0.218), enters remains (0.190), remains dimension (0.187)
+
+Topic 182:
+  dhamma (1.642), discipline (1.409), dhamma discipline (0.776), forth (0.534), doctrine discipline (0.482), doctrine (0.482), taught (0.478), dhamma taught (0.354), susima (0.335), gone forth (0.293), accept (0.282), accordance dhamma (0.272), foolish (0.255), undeveloped (0.240), new (0.224)
+
+Topic 183:
+  hold (1.625), getting (0.297), forth (0.291), qualities (0.279), mind (0.252), placed (0.251), experiences (0.244), reasons (0.229), sitting (0.228), night (0.220), foot (0.219), mindful alert (0.203), shouldn (0.196), caused (0.194), instruction (0.182)
+
+Topic 184:
+  ananda (1.901), ven ananda (1.700), ven (1.540), said ven (0.394), ghosita (0.350), kosambi (0.347), kosambi ghosita (0.304), sir (0.298), occasion ven (0.298), venerable (0.260), said (0.260), went ven (0.254), venerable sir (0.249), ananda went (0.221), went (0.218)
+
+Topic 185:
+  attending (0.767), confident (0.704), confident steadfast (0.689), steadfast (0.624), mind (0.512), rightly (0.462), doesn leap (0.460), released (0.450), grow confident (0.405), leap (0.405), grow (0.382), release (0.352), grows (0.336), fevers (0.332), disjoined (0.321)
+
+Topic 186:
+  disenchanted (0.860), supreme (0.762), disenchanted disenchanted (0.537), grows disenchanted (0.519), ones grows (0.509), seeing instructed (0.508), inferior (0.496), instructed disciple (0.491), disenchanted dispassionate (0.488), instructed (0.485), dispassionate (0.469), change (0.462), grows (0.457), beings (0.435), seeing (0.368)
+
+Topic 187:
+  endowed (0.957), factors (0.632), endowed factors (0.583), skilled (0.540), monk endowed (0.435), endowed qualities (0.338), road (0.327), drunk (0.327), extra (0.322), respect (0.313), capable (0.290), elder (0.283), elder monks (0.275), versed (0.274), dry (0.267)
+
+Topic 188:
+  years (0.836), old (0.708), deeds (0.619), stage life (0.477), stage (0.469), having come (0.382), come (0.327), life (0.310), men (0.225), illness (0.216), admirable (0.204), long term (0.174), brahmans (0.171), term (0.169), skillful (0.160)
+
+Topic 189:
+  person (1.912), case person (0.492), living (0.400), case (0.359), certain person (0.188), wrong (0.162), type (0.135), poor (0.132), thoughts (0.127), talk (0.126), thinking (0.111), case certain (0.109), beat (0.108), sort (0.105), thrown (0.102)
+
+Topic 190:
+  bonanza (0.920), bliss (0.689), merit (0.581), merit bonanza (0.544), bonanza merit (0.544), skillfulness nourishment (0.474), skillfulness (0.474), nourishment (0.472), nourishment bliss (0.439), bonanza skillfulness (0.439), furthermore disciple (0.295), ones endowed (0.284), endowed (0.218), furthermore (0.212), leading (0.170)
+
+Topic 191:
+  unattained (0.662), unrealized (0.662), effort attaining (0.659), unattained reaching (0.659), unreached realization (0.659), unreached (0.659), reaching unreached (0.659), realization unrealized (0.659), attaining unattained (0.659), realization (0.646), reaching (0.630), attaining (0.623), make effort (0.541), effort (0.518), make (0.462)
+
+Topic 192:
+  discern (1.158), does discern (0.938), actually (0.814), present (0.766), actually present (0.660), does (0.569), discern actually (0.350), form does (0.336), form (0.238), consciousness (0.143), fabricated (0.141), feeling (0.122), fabrications (0.109), inconstant (0.103), overcome (0.085)
+
+Topic 193:
+  periodically (1.291), good (0.580), monks (0.373), monk (0.368), addressed monks (0.309), monks monks (0.298), addressed (0.291), mountain (0.288), friends (0.205), seat (0.185), sir (0.175), arm (0.167), venerable sir (0.160), possible (0.157), venerable (0.134)
+
+Topic 194:
+  perception (0.680), perception feeling (0.579), cessation perception (0.566), dimension perception (0.538), perception non (0.530), non perception (0.512), non (0.471), dimension (0.424), transcending dimension (0.357), remains cessation (0.345), perception enters (0.345), feeling (0.344), cessation (0.343), complete (0.337), complete transcending (0.337)
+
+Topic 195:
+  training (0.605), lower life (0.509), weakness (0.474), weakness training (0.466), lower (0.427), life (0.420), declaring (0.409), cloud (0.354), holy life (0.348), holy (0.346), dust (0.284), village town (0.275), individual (0.264), individuals like (0.260), individual tell (0.260)
+
+Topic 196:
+  wilderness (0.658), dwellings (0.594), forest wilderness (0.575), wilderness dwellings (0.574), isolated (0.574), isolated forest (0.574), forest (0.549), living (0.330), neglect (0.305), fine (0.231), easy (0.189), let make (0.164), reminds (0.164), endowed (0.163), future monks (0.152)
+
+Topic 197:
+  formless (0.663), single (0.643), sees (0.561), forms (0.497), just (0.402), white (0.401), having (0.346), red (0.295), know (0.292), perception (0.270), mental (0.229), dimension (0.218), way (0.216), sixth (0.095), fifth (0.089)
+
+Topic 198:
+  flesh (1.352), mind released (0.766), released (0.600), fermentation (0.366), mind (0.360), equanimity (0.282), arises (0.273), called (0.249), ended (0.229), rapture (0.215), skin (0.183), pleasure (0.144), blood (0.140), dry (0.093), striving (0.092)
+
+Topic 199:
+  ll (1.190), practiced (0.434), mindfulness (0.400), thought (0.329), thinking (0.311), different (0.179), animals (0.161), afraid (0.116), snake (0.113), pleasing (0.107), right (0.103), bird (0.097), crocodile (0.095), monks (0.090), strong (0.082)`

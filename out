@@ -1,0 +1,134 @@
+[1] match
+[2] match
+[3] mismatch
+  text: "In have heard that on one occasion the Blessed One was staying near Rājagaha on Vulture Peak mountain, not long after Devadatta had left. Referring to Devadatta , the Blessed One addressed the monks:"
+  nlp_result: [['PERSON', 'Blessed One'], ['GPE', 'Rājagaha'], ['LOC', 'Vulture Peak mountain'], ['PERSON', 'Devadatta'], ['PERSON', 'Devadatta'], ['PERSON', 'Blessed One'], ['NORP', 'monks']]
+  train_data:  [['PERSON', 'Blessed One'], ['GPE', 'Rājagaha'], ['LOC', 'Vulture Peak mountain'], ['PERSON', 'Devadatta'], ['PERSON', 'Devadatta'], ['PERSON', 'Blessed One']]
+  ents_raw:  [['PERSON', 'Blessed One'], ['GPE', 'Rājagaha'], ['LOC', 'Vulture Peak mountain'], ['PERSON', 'Devadatta'], ['PERSON', 'Devadatta'], ['PERSON', 'Blessed One'], ['NORP', 'monks']]
+
+
+
+ER: [('Blessed One', 'PERSON'), ('Rājagaha', 'GPE'), ('Vulture Peak mountain', 'LOC'), ('Devadatta', 'PERSON'), ('Devadatta', 'PERSON'), ('Blessed One', 'PERSON')]
+SR: []
+NER: [('Blessed One', 'PERSON'), ('Rājagaha', 'GPE'), ('Vulture Peak mountain', 'LOC'), ('Blessed One', 'PERSON'), ('monks', 'NORP')]
+
+
+
+[4] mismatch
+  text: "I have heard that on one occasion the Blessed One was staying in the Kuru country. Now there is a town of the Kurus called Kammasadhamma . There the Blessed One addressed the monks: \"Monks.\""
+  nlp_result: [['PERSON', 'Blessed One'], ['LOC', 'Kuru country'], ['NORP', 'Kurus'], ['GPE', 'Kammasadhamma'], ['PERSON', 'Blessed One']]
+  train_data:  [['PERSON', 'Blessed One'], ['LOC', 'Kuru country'], ['NORP', 'Kurus'], ['PERSON', 'Blessed One'], ['GPE', 'Kammasadhamma'], ['NORP', 'Monks']]
+  loc_spans: [['LOC', 'Kuru country']]
+  ents_raw:  [['PERSON', 'Blessed One'], ['NORP', 'Kuru'], ['NORP', 'Kurus'], ['GPE', 'Kammasadhamma'], ['PERSON', 'Blessed One']]
+
+
+
+ER: [('Blessed One', 'PERSON'), ('Kurus', 'NORP'), ('Kammasadhamma', 'GPE'), ('Blessed One', 'PERSON')]
+SR: []
+NER: [('Blessed One', 'PERSON'), ('Kuru', 'NORP'), ('Kurus', 'NORP'), ('Kammasadhamma', 'GPE'), ('Blessed One', 'PERSON')]
+
+
+
+[5] mismatch
+  text: "I have heard that on one occasion the Blessed One was staying near Savatthi in Jeta's Grove, Anathapindika's monstery. And on that occasion five hundred brahmans from various provinces were staying at Savatthi on some business or other. The thought occurred to them, This Gotama the contemplative prescribes purity for the four castes. Now who is capable of disputing with him on this statement? And on that occasion the brahman student Assalayana was staying at Savatthi. Young, shaven-headed, sixteen years old, he was a master of the Three Vedas with their vocabularies, liturgy, phonology, etymology, & histories as a fifth; skilled in philology & grammar, he was fully versed in cosmology and in the marks of a Great Man. The thought occurred to the brahmans, This brahman student Assalayana is staying in Savatthi... He is capable of disputing with Gotama the contemplative on this statement."
+  nlp_result: [['PERSON', 'Blessed One'], ['GPE', 'Savatthi'], ['LOC', "Jeta's Grove"], ['PERSON', 'Anathapindika'], ['NORP', 'brahmans'], ['GPE', 'Savatthi'], ['PERSON', 'Gotama'], ['NORP', 'brahman'], ['PERSON', 'Assalayana'], ['GPE', 'Savatthi'], ['LOC', 'Great Man'], ['NORP', 'brahmans'], ['NORP', 'brahman'], ['PERSON', 'Assalayana'], ['GPE', 'Savatthi'], ['PERSON', 'Gotama']]
+  train_data:  [['PERSON', 'Blessed One'], ['GPE', 'Savatthi'], ['LOC', "Jeta's Grove"], ['PERSON', 'Anathapindika'], ['NORP', 'brahmans'], ['GPE', 'Savatthi'], ['PERSON', 'Gotama'], ['PERSON', 'Assalayana'], ['GPE', 'Savatthi'], ['NORP', 'brahmans'], ['PERSON', 'Assalayana'], ['GPE', 'Savatthi'], ['PERSON', 'Gotama']]
+  ents_raw:  [['PERSON', 'Blessed One'], ['GPE', 'Savatthi'], ['LOC', "Jeta's Grove"], ['PERSON', 'Anathapindika'], ['NORP', 'brahmans'], ['GPE', 'Savatthi'], ['PERSON', 'Gotama'], ['NORP', 'brahman'], ['PERSON', 'Assalayana'], ['GPE', 'Savatthi'], ['LOC', 'Great Man'], ['NORP', 'brahmans'], ['NORP', 'brahman'], ['PERSON', 'Assalayana'], ['GPE', 'Savatthi'], ['PERSON', 'Gotama']]
+
+
+
+ER: [('Blessed One', 'PERSON'), ('Savatthi', 'GPE'), ("Jeta's Grove", 'LOC'), ('Anathapindika', 'PERSON'), ('brahmans', 'NORP'), ('Savatthi', 'GPE'), ('Gotama', 'PERSON'), ('brahman', 'NORP'), ('Assalayana', 'PERSON'), ('Savatthi', 'GPE'), ('brahmans', 'NORP'), ('brahman', 'NORP'), ('Assalayana', 'PERSON'), ('Savatthi', 'GPE'), ('Gotama', 'PERSON')]
+SR: []
+NER: [('Blessed One', 'PERSON'), ('Savatthi', 'GPE'), ("Jeta's Grove", 'LOC'), ("Anathapindika's monstery", 'LOC'), ('brahmans', 'NORP'), ('Savatthi', 'GPE'), ('Gotama', 'PERSON'), ('Savatthi', 'GPE'), ('Great Man', 'LOC'), ('brahmans', 'NORP'), ('Savatthi', 'GPE'), ('Gotama', 'PERSON')]
+
+
+
+[6] match
+[7] mismatch
+  text: "Then a certain monk went to the Blessed One and, on arrival, having bowed down to him, sat to one side. As he was sitting there he said to the Blessed One: \"It would be good if the Blessed One would teach me the Dhamma in brief so that, having heard the Dhamma from the Blessed One, I might dwell alone in seclusion: heedful, ardent, & resolute.\""
+  nlp_result: [['PERSON', 'Blessed One'], ['PERSON', 'Blessed One'], ['PERSON', 'Blessed One'], ['PERSON', 'Blessed One'], ['PERSON', 'resolute.\\']]
+  train_data:  [['PERSON', 'Blessed One'], ['PERSON', 'Blessed One'], ['PERSON', 'Blessed One'], ['PERSON', 'Blessed One']]
+  ents_raw:  [['PERSON', 'Blessed One'], ['PERSON', 'Blessed One'], ['PERSON', 'Blessed One'], ['PERSON', 'Blessed One'], ['PERSON', 'resolute.\\']]
+
+
+
+ER: [('Blessed One', 'PERSON'), ('Blessed One', 'PERSON'), ('Blessed One', 'PERSON'), ('Blessed One', 'PERSON')]
+SR: []
+NER: [('Blessed One', 'PERSON'), ('Blessed One', 'PERSON'), ('Blessed One', 'PERSON'), ('Blessed One', 'PERSON'), ('resolute.\\', 'PERSON')]
+
+
+
+[8] match
+[9] mismatch
+  text: "Then Kesi the horsetrainer went to the Blessed One and, on arrival, having bowed down, sat to one side"
+  nlp_result: [['PERSON', 'Kesi'], ['PERSON', 'Blessed One']]
+  train_data:  [['PERSON', 'Kesi the horsetrainer'], ['PERSON', 'Blessed One']]
+  ents_raw:  [['PERSON', 'Kesi'], ['PERSON', 'Blessed One']]
+
+
+
+ER: [('Kesi', 'PERSON'), ('Blessed One', 'PERSON')]
+SR: []
+NER: [('Kesi the horsetrainer', 'PERSON'), ('Blessed One', 'PERSON')]
+
+
+
+[10] mismatch
+  text: "Then two brahman cosmologists went to the Blessed One and, on arrival, exchanged courteous greetings with him."
+  nlp_result: [['NORP', 'brahman'], ['PERSON', 'Blessed One']]
+  train_data:  [['NORP', 'brahman cosmologists'], ['PERSON', 'Blessed One']]
+  ents_raw:  [['NORP', 'brahman'], ['PERSON', 'Blessed One']]
+
+
+
+ER: [('brahman', 'NORP'), ('Blessed One', 'PERSON')]
+SR: []
+NER: [('brahman cosmologists', 'NORP'), ('Blessed One', 'PERSON')]
+
+
+
+[11] mismatch
+  text: "After an exchange of friendly greetings & courtesies, they sat to one side. As they were sitting there, they said to the Blessed One, \"Master Gotama, Purana Kassapa — all-knowing, all-seeing — claims exhaustive knowledge & vision: 'Whether I am standing or walking, awake or asleep, continual, unflagging knowledge & vision is established within me.' He says, 'I dwell with infinite knowledge, knowing & seeing the finite cosmos.' Yet Nigantha Nataputta — all-knowing, all-seeing — also claims exhaustive knowledge & vision: 'Whether I am standing or walking, awake or asleep, continual, unflagging knowledge & vision is established within me.' He says, 'I dwell with infinite knowledge, knowing & seeing the infinite cosmos.' Of these two speakers of knowledge, these two who contradict each other, which is telling the truth, and which is lying?\""
+  nlp_result: [['PERSON', 'Blessed One'], ['PERSON', 'Gotama'], ['PERSON', 'Purana Kassapa'], ['NORP', 'Nigantha']]
+  train_data:  [['PERSON', 'Blessed One'], ['PERSON', 'Master Gotama'], ['PERSON', 'Purana Kassapa'], ['PERSON', 'Nigantha Nataputta']]
+  ents_raw:  [['PERSON', 'Blessed One'], ['PERSON', 'Gotama'], ['PERSON', 'Purana Kassapa'], ['NORP', 'Nigantha']]
+
+
+
+ER: [('Blessed One', 'PERSON'), ('Gotama', 'PERSON'), ('Nigantha', 'NORP')]
+SR: []
+NER: [('Blessed One', 'PERSON'), ('Gotama', 'PERSON'), ('Purana Kassapa', 'PERSON'), ('Nigantha Nataputta', 'PERSON')]
+
+
+
+[12] mismatch
+  text: "I have heard that on one occasion the Blessed One was staying near Savatthi in Jeta's Grove, Anathapindika 's monastery. There he said to the monks: \"Monks, if wanderers who are members of other sects should ask you, ' What , friend, are the prerequisites for the development of the wings to self-awakening?' how would you answer them?\""
+  nlp_result: [['PERSON', 'Blessed One'], ['GPE', 'Savatthi'], ['LOC', "Jeta's Grove"], ['LOC', "Anathapindika 's monastery"], ['NORP', 'monks'], ['NORP', 'wanderers']]
+  train_data:  [['PERSON', 'Blessed One'], ['GPE', 'Savatthi'], ['LOC', "Jeta's Grove"], ['LOC', "Anathapindika 's monastery"], ['NORP', 'Monks'], ['NORP', 'wanderers']]
+  ents_raw:  [['PERSON', 'Blessed One'], ['GPE', 'Savatthi'], ['LOC', "Jeta's Grove"], ['LOC', "Anathapindika 's monastery"], ['NORP', 'monks'], ['NORP', 'wanderers']]
+
+
+
+ER: [('Blessed One', 'PERSON'), ('Savatthi', 'GPE'), ("Jeta's Grove", 'LOC'), ("Anathapindika 's monastery", 'LOC')]
+SR: []
+NER: [('Blessed One', 'PERSON'), ('Savatthi', 'GPE'), ("Jeta's Grove", 'LOC'), ("Anathapindika 's monastery", 'LOC'), ('monks', 'NORP'), ('wanderers', 'NORP')]
+
+
+
+[13] match
+[14] mismatch
+  text: "Thus have I heard: At one time the Exalted One was staying near Savatthi at the Eastern monastery in the mansion (given by) Migara's mother."
+  nlp_result: [['PERSON', 'Exalted One'], ['GPE', 'Savatthi'], ['LOC', 'Eastern monastery'], ['LOC', 'the mansion'], ['PERSON', 'Migara']]
+  train_data:  [['PERSON', 'Exalted One'], ['GPE', 'Savatthi'], ['LOC', 'Eastern monastery'], ['LOC', 'the mansion'], ['PERSON', "Migara 's mother"]]
+  ents_raw:  [['PERSON', 'Exalted One'], ['GPE', 'Savatthi'], ['LOC', 'Eastern monastery'], ['LOC', 'the mansion'], ['PERSON', 'Migara']]
+
+
+
+ER: [('Savatthi', 'GPE'), ('Eastern monastery', 'LOC'), ('Migara', 'PERSON')]
+SR: []
+NER: [('Exalted One', 'PERSON'), ('Savatthi', 'GPE'), ('Eastern monastery', 'LOC'), ('the mansion', 'LOC'), ("Migara's mother", 'PERSON')]
+
+
+
+
+Summary: 5/14 matched.

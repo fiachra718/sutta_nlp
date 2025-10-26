@@ -1,0 +1,14 @@
+[
+  {"phrase":"Reverend Gotama","label":"PERSON"},
+  {"phrase":"Blessed One","label":"PERSON"},
+  {"phrase":"Buddha","label":"PERSON"},
+  {"phrase":"Kesaputta","label":"GPE"},
+  {"phrase":"Kalama people","label":"NORP"},
+  {"phrase":"Kalamas","label":"NORP"},
+  {"phrase":"Sakyans","label":"NORP"},
+  {"phrase":"Kosala","label":"GPE"},
+  {"phrase":"Rajagaha", "lable":"GPE"},
+  {"phrase":"Bamboo Grove", "lable":"LOC"},
+  {"phrase":"Sword-leaf Forest", "lable":"LOC"},
+  {"phrase":"Tusita Heaven", "lable":"LOC"},
+]

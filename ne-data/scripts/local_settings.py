@@ -19,7 +19,7 @@ NE_DATA     = REPO_ROOT / "ne-data"
 WORK        = NE_DATA / "work"
 SCRIPTS     = NE_DATA / "scripts"
 
-MODELS_DIR  = NE_DATA / "models" / "1023_merged_v4" / "model-best"
+MODELS_DIR  = NE_DATA / "models" / "1025" / "model-best"
 PATTERNS    = NE_DATA / "patterns" / "entity_ruler" / "patterns.jsonl"
 LOC_EVENT_PATTERNS    = NE_DATA / "patterns" / "span_ruler"
 

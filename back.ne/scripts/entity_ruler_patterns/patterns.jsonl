@@ -1,0 +1,63 @@
+{"label":"PERSON","pattern":[{"LOWER":"ven."},{"LOWER":"sariputta"}]}
+{"label":"NORP","pattern":[{"TEXT":{"REGEX":"^(B|b)rahman(s)?$"}}]}
+{"label":"PERSON","pattern":"Saccaka"}
+{"label":"GPE","pattern":"Savatthi"}
+{"label":"GPE","pattern":"Rajagaha"}
+{"label":"LOC","pattern":"Jeta's Grove"}
+{"label":"LOC","pattern":"Squirrels' Sanctuary"}
+{"label":"PERSON","pattern":"Saccaka"}
+{"label":"NORP","pattern":[{"TEXT":{"REGEX":"(?i)^brahmans?$"}}]}
+{"label":"PERSON","pattern":[{"LOWER":"ven."},{"LOWER":"sariputta"}]}
+{"label":"LOC","pattern":"Jetavana"}
+{"label":"LOC","pattern":"Veluvana"}
+{"label":"LOC","pattern":"Nigrodhārāma"}
+{"label":"LOC","pattern":"Ambapālivana"}
+{"label":"LOC","pattern":"Ambapāli’s Grove"}
+{"label":"LOC","pattern":"Jīvaka’s Mango Grove"}
+{"label":"LOC","pattern":"Bhesakaḷāvana"}
+{"label":"LOC","pattern":"Sītavana"}
+{"label":"LOC","pattern":"Nandavana"}
+{"label":"LOC","pattern":"Isipatana Deer Park"}
+{"label":"LOC","pattern":"Deer Park at Isipatana"}
+{"label":"LOC","pattern":"Migadāya"}
+{"label":"LOC","pattern":"Vulture Peak"}
+{"label":"LOC","pattern":"Gijjhakūṭa"}
+{"label":"LOC","pattern":"Cāpāla Shrine"}
+{"label":"LOC","pattern":"Kukkutārāma"}
+{"label":"LOC","pattern":"Pubbārāma"}
+{"label":"LOC","pattern":"Anāthapiṇḍika’s Park"}
+{"label":"LOC","pattern":"Anathapindika’s Park"}
+{"label":"LOC","pattern":"Ivory Grove"}
+{"label":"LOC","pattern":"Simsapā Grove"}
+{"label":"LOC","pattern":"Banyan Grove"}
+{"label":"LOC","pattern":"Jeta’s Grove"}
+{"label":"LOC","pattern":"Gosingasālavana"}
+{"label":"LOC","pattern":"Sālavana"}
+{"label":"LOC","pattern":"Kalandaka Nivāpa"}
+{"label":"LOC","pattern":"Bamboo Grove"}
+{"label":"LOC","pattern":"Bamboo Park"}
+{"label":"LOC","pattern":"Vārāṇasī’s Deer Park"}
+{"label":"LOC","pattern":[{"LOWER":"vediyaka"},{"LOWER":"rock"}]}
+{"label":"GPE","pattern":"Veluvagamaka"}
+{"label":"GPE","pattern":"Vesali"}
+{"label":"GPE","pattern":"Atthakanagara"}
+{"label":"GPE","pattern":"Pataliputta"}
+{"label":"LOC","pattern":"Kukkata Monastery"}
+{"label":"PERSON","pattern":"Jivaka Komarabhacca"}
+{"label":"PERSON","pattern":"King Ajatasattu of Magadha"}
+{"label":"PERSON","pattern":"King Ajatasattu"}
+{"label":"PERSON","pattern":"Queen Videha"}
+{"label":"PERSON","pattern":"Kevatta"}
+{"label":"GPE","pattern":"Nalanda"}
+{"label":"LOC","pattern":"Mallans' sal-grove"}
+{"label":"LOC","pattern":"Hiraññavati River"}
+{"label":"PERSON","pattern":"Arittha"}
+{"label":"LOC","pattern":"Blind Man's Grove"}
+{"label":"LOC","pattern":"Bhesakala Grove"}
+{"label":"LOC","pattern":"Crocodile Haunt"}
+{"label":"LOC","pattern":"Tapoda Hot Springs"}
+{"label":"LOC","pattern":"Banyan Park"}
+{"label":"LOC","pattern":"Queen Mallika's park"}
+{"label":"NORP","pattern":"Bhaggas"}
+{"label":"NORP","pattern":"Sakyans"}
+{"label":"NORP","pattern":"Sākyā"}

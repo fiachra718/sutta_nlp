@@ -1,0 +1,27 @@
+Matched: ['What', 'Aggivessana', 'Feeling', 'May', 'Cula-', 'Saccaka Sutta'] at Line 18
+Matched: ['Thus', 'Tissa', 'This', 'Tissa Sutta'] at Line 38
+Matched: ['Then', 'King Yama', 'My', 'Devaduta Sutta'] at Line 85
+Matched: ['Then', 'Susima', 'Susima Sutta'] at Line 86
+Matched: ['Monks', 'Himalayas', 'Himalayas', 'Pabbata Sutta'] at Line 87
+Matched: ['In', 'Magandiya', 'Dhamma', 'Dhamma', 'Dhamma', 'Dhamma', 'Dhamma', 'Dhamma', 'These', 'Magandiya Sutta'] at Line 96
+Matched: ['If', 'Pajapati', 'Pajapati', 'Dhajagga Sutta'] at Line 99
+Matched: ['Buddha', 'Candima', 'Candima', 'Therefore', 'Candima', 'Candima Sutta'] at Line 115
+Matched: ['It', 'Dhamma', 'Apart', 'But', 'Sāti', 'Fisherman', 'Son', 'Dhamma', 'Mahatanhasankhaya Sutta'] at Line 116
+Matched: ['And', 'Migajaala', 'Why', 'Migajaalena Sutta'] at Line 123
+Matched: ['By', 'Kaccayana', 'Kaccayanagotta Sutta'] at Line 131
+Matched: ['Then', 'Mara', 'Mara', 'Evil One', 'Ariyapariyesana Sutta'] at Line 135
+Matched: ['Thus', 'Susima', 'This', 'Susima Sutta'] at Line 140
+Matched: ['Now', 'Tissa', 'In', 'Tissa Sutta'] at Line 146
+Matched: ['It', 'Kotthita', 'Nalakalapiyo Sutta'] at Line 152
+Matched: ['That', 'Visakha', 'Tusita', 'Tusita', 'Uposatha', 'Tusita', 'Visakha', 'Miserable', 'Visakhuposatha Sutta'] at Line 171
+Matched: ['He', 'Indra', 'Brahmas', 'Pajapati', 'Sandha Sutta'] at Line 173
+Matched: ['If', 'Brahma', 'Pansadhovaka Sutta'] at Line 174
+Matched: ['What', 'Assalayana', 'Assalayana Sutta'] at Line 177
+Matched: ['Very', 'And', 'Ven', 'Citta', 'Now', 'Kamabhu Sutta'] at Line 178
+Matched: ['Thus', 'Visakha', 'Uposatha', 'How', 'Visakhuposatha Sutta'] at Line 188
+Matched: ['Then', 'There', 'Mara', 'Mara', 'Evil One', 'Ariyapariyesana Sutta'] at Line 190
+Matched: ['Now', 'King Pasenadi Kosala', 'There', 'Angulimala', 'Angulimala Sutta'] at Line 191
+Matched: ['So', 'Kalamas', 'Don', 'This', 'When', 'These', 'Thus', 'Kalama Sutta'] at Line 193
+Matched: ['Then', 'Soma', 'Now', 'Then', 'This', 'Mara', 'Evil One', 'Soma Sutta'] at Line 203
+Matched: ['Thus', 'Nibbaana', 'Evil', 'Skilled', 'As', 'The', 'Nibbaana', 'Anottaapi Sutta'] at Line 219
+Matched: ['Right', 'Sword-leaf Forest', 'Lye-water River', 'Devaduta Sutta'] at Line 221

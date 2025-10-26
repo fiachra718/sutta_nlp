@@ -27,10 +27,9 @@
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["anathapindika", "anāthapiṇḍika"]}}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["dhanañjanin", "dhananjanin"]}}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["jivaka", "jīvaka"]}}, {"IS_TITLE": true, "LOWER": {"IN": ["komarabhacca", "komārabhacca"]}}]}
-{"label": "PERSON", "pattern": [{"ORTH": "Kesi"}]}
-{"label": "PERSON", "pattern": [{"ORTH": "Kesī"}]}
-{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["kesi", "kesī"]}}, {"LOWER": "the"}, {"LOWER": "horse"}, {"LOWER": "trainer"}]}
-{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["kesi", "kesī"]}}, {"LOWER": "the"}, {"LOWER": "horse-trainer"}]}
+{"label":"PERSON","pattern":[{"IS_TITLE":true,"LOWER":{"IN":["kesi","kesī"]}}]}
+{"label":"PERSON","pattern":[ {"IS_TITLE":true,"LOWER":{"IN":["kesi","kesī"]}}, {"LOWER":"the","OP":"?"}, {"LOWER":{"IN":["horsetrainer","horse-trainer"]}} ]}
+{"label":"PERSON","pattern":[ {"IS_TITLE":true,"LOWER":{"IN":["kesi","kesī"]}}, {"LOWER":"the","OP":"?"}, {"LOWER":"horse"}, {"LOWER":"trainer"} ]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["khema", "khemā"]}}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["maha", "mahā"]}}, {"IS_TITLE": true, "LOWER": "kotthita"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["mara", "māra"]}}]}
@@ -200,6 +199,8 @@
 {"label": "LOC", "pattern":[{"LOWER": "pure abodes"}]}
 {"label": "LOC", "pattern":[{"LOWER": "ten world-systems"}]}
 {"label": "LOC", "pattern": [ {"LOWER": "migara"}, {"LOWER": "'s", "OP": "?"}, {"LOWER": "mother"}, {"LOWER": "'s", "OP": "?"}, {"LOWER": "palace"} ]}
+{"label": "LOC", "pattern": [ {"LOWER": {"IN": ["mallika", "mallika’s", "mallikas"]}}, {"LOWER": {"IN": ["park", "garden", "grove"]}} ]}
+{"label": "LOC", "pattern": [{"LOWER": "river"}, {"LOWER": "ganges"}]}
 
 {"label":"EVENT","pattern":[{"LOWER":"rains"},{"LOWER":"retreat"}]}
 {"label":"EVENT","pattern":"Rains Retreat"}
