@@ -14,8 +14,21 @@ cp .env.example .env
 edit local_settings.py
 
 ## Run NER training
+# NER Training
 ```
-Directory layout (suggested)
+Candidate JSON files
+   ↓
+Span JSON files (adds or cleans annotated entities)
+   ↓
+spaCy DocBin files (.spacy)
+   ↓
+Train/Test split → nlp.train()
+   ↓
+Evaluation & scoring
+```
+# File Directory Layout
+```
+(TODO, FIXME) 
 ----------------------------
 sutta_nlp/
 ├─ data/
@@ -54,7 +67,6 @@ sutta_nlp/
 │  ├─ train_small_ner.py
 │  └─ generate_negatives.py
 └─ Makefile (optional)
-
 ```
 
 ------
@@ -74,4 +86,9 @@ sutta_nlp/
 -- using NMF/TF-IDF/SVD
 -- embeded person/place/location
 -- transaltor's "see also" notes
+- Representation
+-- Neo4j
+-- Semantic Neighborhoods
+-- REST interface
+-- Web presentation of Docs w/ Graph/Cluster overlays
 ```

@@ -45,7 +45,7 @@ def load_my_ner():
 
 
 sentences = []
-with open(WORK / "evaluate_these.txt", "r", encoding="utf-8") as f:
+with open(WORK / "text" / "evaluate_these.txt", "r", encoding="utf-8") as f:
     for line in f:
         sentences.append(line.strip())
 

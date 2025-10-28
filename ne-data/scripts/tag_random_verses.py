@@ -30,11 +30,13 @@ def ne_tag(text, nlp, tag="ALL"):
     entities = []
     for ent in doc.ents:
         # if tag == "ALL":
-        entities.append( (ent.label_, ent.text ) )
-            # {"start": ent.start_char, "end": ent.end_char,"label": ent.label_, "text": ent.text})
-        # else:
-        #     if tag == ent.label_:
-        #         entities.append({"start": ent.start_char, "end": ent.end_char,"label": ent.label_, "text": ent.text})
+        entities.append({"start": ent.start_char, "end":ent.end_char, "label":ent.label_, "text":ent.text})
+        # entities.append( (ent.label_, ent.text ) )
+        #     {"start":e.start_char,"end":e.end_char,"label":e.label_,"text":e.text} for e in doc.ents]
+        #     # {"start": ent.start_char, "end": ent.end_char,"label": ent.label_, "text": ent.text})
+        # # else:
+        # #     if tag == ent.label_:
+        # #         entities.append({"start": ent.start_char, "end": ent.end_char,"label": ent.label_, "text": ent.text})
         if len(entities):
             results = {"text": text, "entities": [ent for ent in entities]}
        
