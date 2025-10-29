@@ -10,16 +10,12 @@ conn = psycopg.connect("dbname=tipitaka user=alee")
 def random_sutta_paragraph():
     with conn.cursor(row_factory=dict_row) as cur:
         sql = """ 
-            SELECT 
-                identifier, 
-                nikaya, 
-                vagga, 
-                book_number, 
-                title,
-                verses
-                    FROM ati_suttas WHERE nikaya in ( 'MN', 'DN', 'AN', 'SN' )
-                ORDER BY random()
-                LIMIT 250
+        SELECT s.identifier, s.title, t.ord AS verse_num, t.v->>'text' AS verse_text
+        FROM ati_suttas s
+        CROSS JOIN LATERAL jsonb_array_elements(s.verses) WITH ORDINALITY AS t(v, ord)
+        WHERE s.nikaya IN ('MN','DN','AN','SN')
+        ORDER BY gen_random_uuid()
+        LIMIT 50;
             """
         cur.execute(sql)
         return cur.fetchall()
@@ -29,14 +25,8 @@ def ne_tag(text, nlp, tag="ALL"):
     results = {}
     entities = []
     for ent in doc.ents:
-        # if tag == "ALL":
-        entities.append({"start": ent.start_char, "end":ent.end_char, "label":ent.label_, "text":ent.text})
-        # entities.append( (ent.label_, ent.text ) )
-        #     {"start":e.start_char,"end":e.end_char,"label":e.label_,"text":e.text} for e in doc.ents]
-        #     # {"start": ent.start_char, "end": ent.end_char,"label": ent.label_, "text": ent.text})
-        # # else:
-        # #     if tag == ent.label_:
-        # #         entities.append({"start": ent.start_char, "end": ent.end_char,"label": ent.label_, "text": ent.text})
+        entities.append( [ent.label_, ent.text] )
+        # entities.append({"start": ent.start_char, "end":ent.end_char, "label":ent.label_, "text":ent.text})
         if len(entities):
             results = {"text": text, "entities": [ent for ent in entities]}
        
@@ -47,9 +37,11 @@ nlp = load_model()
 verses = random_sutta_paragraph()
 # print(verses)
 for verse in verses:
-    if len(verse.get("verses")):
+    if len(verse.get("verse_text")):
         # print(json.dumps(verse["verses"][0]["text"].strip(), indent=2, ensure_ascii=False))
-        text = verse["verses"][0]["text"]
-        jsonl = ne_tag(text.strip(),nlp, tag="ALL")
+        text = verse["verse_text"]
+        # print(text)
+        # ["text"]
+        jsonl = ne_tag(text.strip(), nlp, tag="ALL")
         if jsonl:
             print(json.dumps(jsonl, indent=2, ensure_ascii=False))

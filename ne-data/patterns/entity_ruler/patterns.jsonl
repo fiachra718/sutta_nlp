@@ -54,7 +54,6 @@
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "citta the householder"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "vajjiya mahita"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "ugga"}]}
-
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "vacchagotta"}]}
 {"label": "PERSON","id":"vaccagotta_the_wanderer_all", "pattern":[ {"LOWER":"vaccagotta"}, {"ORTH":",","OP":"?"}, {"LOWER":"the"}, {"LOWER":"wanderer"}, {"ORTH":{"IN":["'s","’s"]},"OP":"?"} ]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "migara"}]}
@@ -62,6 +61,7 @@
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "devadatta"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "assalayana"}]}
 {"label": "PERSON","id":"possessive_kin","pattern":[ {"IS_TITLE": true}, {"ORTH": "'s"}, {"LOWER": {"IN": ["mother","father","son","daughter","aunt","uncle","niece","nephew", "wife", "husband","sister","brother"]}} ]}
+{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "navakammika bharadvaja"}]}
 
 {"label":"NORP","id":"Sakyans","pattern":[{"LOWER":{"REGEX":"sakyan(s)?|sākyan(s)?"}}]}
 {"label":"NORP","id":"Kurus","pattern":[{"LOWER": "kurus"}]}
@@ -118,27 +118,27 @@
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": "haliddavasana"}]}
 
 
-{"label": "LOC", "pattern": [{"LOWER" : "bamboo grove"}]}
+{"label": "LOC", "pattern": [{"LOWER" :"bamboo grove"}]}
 {"label": "LOC", "pattern": [{"LOWER": "gotamaka shrine"}]}
-{"label": "LOC", "pattern": "Bamboo Park"}
-{"label": "LOC", "pattern": "Banyan Grove"}
-{"label": "LOC", "pattern": "Banyan Park"}
-{"label": "LOC", "pattern": "Bhesakala Grove"}
-{"label": "LOC", "pattern": "Blind Man's Grove"}
-{"label": "LOC", "pattern": "Gijjhakūṭa"}
-{"label": "LOC", "pattern": "Gosingasālavana"}
-{"label": "LOC", "pattern": "Hiraññavati River"}
-{"label": "LOC", "pattern": "Kalandaka Nivāpa"}
-{"label": "LOC", "pattern": "Kukkata Monastery"}
-{"label": "LOC", "pattern": "Kukkutārāma"}
-{"label": "LOC", "pattern": "Mallans' sal-grove"}
-{"label": "LOC", "pattern": "Pubbārāma"}
-{"label": "LOC", "pattern": "Simsapa Grove"}
-{"label": "LOC", "pattern": "Simsapā Grove"}
-{"label": "LOC", "pattern": "Sālavana"}
-{"label": "LOC", "pattern": "Varanasi's Deer Park"}
-{"label": "LOC", "pattern": "Vārāṇasī’s Deer Park"}
-{"label": "LOC", "pattern": "Wild Mango Grove"}
+{"label": "LOC", "pattern": [{"LOWER" :"bamboo park"}]}
+{"label": "LOC", "pattern": [{"LOWER" :"banyan grove"}]}
+{"label": "LOC", "pattern": [{"LOWER" :"banyan park"}]}
+{"label": "LOC", "pattern": [{"LOWER" :"bhesakala grove"}]}
+{"label": "LOC", "pattern": [{"LOWER" :"blind man's grove"}]}
+{"label": "LOC", "pattern": [{"LOWER" :"gijjhakūṭa"}]}
+{"label": "LOC", "pattern": [{"LOWER" :"gosingasālavana"}]}
+{"label": "LOC", "pattern": [{"LOWER" :"hiraññavati river"}]}
+{"label": "LOC", "pattern": [{"LOWER" :"kalandaka nivāpa"}]}
+{"label": "LOC", "pattern": [{"LOWER" :"kukkata monastery"}]}
+{"label": "LOC", "pattern": [{"LOWER" :"kukkutārāma"}]}
+{"label": "LOC", "pattern": [{"LOWER" :"mallans' sal-grove"}]}
+{"label": "LOC", "pattern": [{"LOWER" :"pubbārāma"}]}
+{"label": "LOC", "pattern": [{"LOWER" :"simsapa grove"}]}
+{"label": "LOC", "pattern": [{"LOWER" :"simsapā grove"}]}
+{"label": "LOC", "pattern": [{"LOWER" :"sālavana"}]}
+{"label": "LOC", "pattern": [{"LOWER" :"varanasi's deer park"}]}
+{"label": "LOC", "pattern": [{"LOWER" :"vārāṇasī’s deer park"}]}
+{"label": "LOC", "pattern": [{"LOWER" :"wild mango grove"}]}
 {"label": "LOC", "pattern": [{"LOWER": "ambapālivana"}]}
 {"label": "LOC", "pattern": [{"LOWER": "ambapāli’s"}, {"LOWER": "grove"}]}
 {"label": "LOC", "pattern": [{"LOWER": "anathapindika"}, {"LOWER": {"IN": ["'s", "’s"]}}, {"LOWER": {"IN": ["park", "monastery"]}}]}

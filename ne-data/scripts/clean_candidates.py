@@ -10,7 +10,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 NE_DATA_DIR = SCRIPT_DIR.parent
 WORK = NE_DATA_DIR / "work"
 
-DEFAULT_INPUT = WORK / "candidates" / "sorted_combined.entities.jsonl"
+DEFAULT_INPUT = WORK / "candidates" / "candidate_training.jsonl"
 DEFAULT_NEGATIVE = WORK / "no_entities.jsonl"
 
 TRAILING_PUNCT = ",.;:!?)}]\"'›”"

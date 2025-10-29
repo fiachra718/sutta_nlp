@@ -2,7 +2,7 @@ import spacy
 import config_helpers  # registers custom registry hooks for spaCy
 from pathlib import Path
 
-from local_settings import MODELS_DIR, PATTERNS
+from local_settings import MODELS_DIR
 
 ENTITY_PATTERNS = Path("ne-data/patterns/entity_ruler/patterns.jsonl")
 SPAN_PATTERNS = Path("ne-data/patterns/span_ruler/loc_phrases.json")
@@ -35,7 +35,7 @@ def load_my_ner():
 
 nlp = load_my_ner()
 
-tests = [
+texts = [
     "They met at Simsapā Grove.",
     "He meditated in Bamboo Park near Varanasi's Deer Park.",
     "We walked to Jeta’s Grove and later to Anathapindika's Park.",
@@ -57,9 +57,14 @@ tests = [
     "There is the case, Bharadvaja, where a monk lives in dependence on a certain village or town.",
     "What do you think, monks? Which would in fact be the better? If a strong man were to strike the nether-quarters with a sharp, oil-cleaned sword? Or, to derive enjoyment when rich kshatriyas, brahmans, or householders press the palms together in prayer?",
     "I have heard that on one occasion, while the Blessed One was on a wandering tour among the Kosalans with a large community of monks, he arrived at Salavatika.",
-]   
+    "On one occasion the Blessed One was staying among the Magadhans at Andhakavinda. Then Ven. Ananda went to him and, having bowed down to him, sat to one side. As he was sitting there the Blessed One said to him, \"Ananda, the new monks — those who have not long gone forth, who are newcomers in this Dhamma & Discipline — should be encouraged, exhorted, and established in these five things. Which five?\"", 
+    "Then Mara, the Evil One, knowing with his awareness the train of thought in the Blessed One's awareness, went to him and on arrival said to him: Exercise rulership, Blessed One! Exercise rulership, O One Well-gone! — without killing or causing others to kill, without confiscating or causing others to confiscate, without sorrowing or causing others sorrow — righteously!",
+    "I have heard that on one occasion Ven. Maha Kaccana was staying in Avanti at Osprey's Haunt, on Sheer-face Peak. Then Haliddakani the householder went to him and, on arrival, having bowed down to him, sat to one side. As he was sitting there he said to Ven. Maha Kaccana: \"Venerable sir, this was said by the Blessed One in Magandiya's Questions in the Atthaka Vagga\"",
+    "Then, having given this exhortation to Ven. Anuruddha, the Blessed One — as a strong man might extend his flexed arm or flex his extended arm — disappeared from the Eastern Bamboo Park of the Cetis and reappeared among the Bhaggas in the Deer Park at Bhesakala Grove, near Crocodile Haunt."
+]
 
-for text in tests:
+
+for text in texts:
     doc = nlp(text)
     print(text)
     print([(ent.text, ent.label_) for ent in doc.ents])

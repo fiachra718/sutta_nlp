@@ -41,10 +41,20 @@ class SplitArtifacts:
 
 def jsonl_reader(path: Path) -> Iterator[dict]:
     with path.open("r", encoding="utf-8") as f:
-        for line in f:
-            if not line.strip():
+        for line_no, line in enumerate(f, start=1):
+            text = line.strip()
+            if not text:
                 continue
-            yield json.loads(line)
+            try:
+                yield json.loads(text)
+            except json.JSONDecodeError as exc:
+                snippet_start = max(0, exc.pos - 40)
+                snippet_end = exc.pos + 40
+                snippet = text[snippet_start:snippet_end]
+                raise ValueError(
+                    f"Malformed JSON in {path} line {line_no}: {exc.msg} "
+                    f"(char {exc.pos}). Near: {snippet!r}"
+                ) from None
 
 
 def write_jsonl(path: Path, records: Iterable[dict]) -> None:
