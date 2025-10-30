@@ -1,0 +1,4 @@
+('monks', 'NORP')
+( 'brahman', 'NORP')
+('Great Man', 'LOC')
+( "PERSON", "Abandon" )

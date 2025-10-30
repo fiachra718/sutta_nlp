@@ -1,0 +1,29 @@
+At that time the Venerable Upavana was standing before the Blessed One, fanning him. And the Blessed One rebuked him, saying: Move aside, bhikkhu, do not stand in front of me.
+[('Venerable Upavana', 'PERSON'), ('Blessed One', 'PERSON'), ('Blessed One', 'PERSON')]
+
+Then Brahma Sahampati, thinking, The Blessed One has given his consent to teach the Dhamma, bowed down to the Blessed One and, circling him on the right, disappeared right there.
+[('Brahma Sahampati', 'PERSON'), ('Blessed One', 'PERSON'), ('Blessed One', 'PERSON')]
+
+Then King Pasenadi Kosala, delighting in and approving of the Blessed One's words, got up from his seat, bowed down to the Blessed One and — keeping him to his right — departed.
+[('King Pasenadi Kosala', 'PERSON'), ('Blessed One', 'PERSON'), ('Blessed One', 'PERSON')]
+
+ I have heard that on one occasion the Blessed One was living among the Sumbhas . Now there is a Sumbhan town named Sedaka . There the Blessed One addressed the monks, "Monks!"
+[('Blessed One', 'PERSON'), ('Sumbhas', 'NORP'), ('Sedaka', 'GPE'), ('Blessed One', 'PERSON')]
+
+ I have heard that on one occasion the Blessed One was living among the Sumbhas . Now there is a Sumbhan town named Sedaka . There the Blessed One addressed the monks, "Monks!"
+[('Blessed One', 'PERSON'), ('Sumbhas', 'NORP'), ('Sedaka', 'GPE'), ('Blessed One', 'PERSON')]
+
+ So King Pasenadi Kosala, delighting in and approving of the Blessed One's words, got up from his seat, bowed down to the Blessed One and — keeping him to his right — departed.
+[('King Pasenadi Kosala', 'PERSON'), ('Blessed One', 'PERSON'), ('Blessed One', 'PERSON')]
+
+ I have heard that on one occasion the Blessed One was staying among the Angas . Now, the Angas have a town named Assapura . There the Blessed One addressed the monks, "Monks!"
+[('Blessed One', 'PERSON'), ('Angas', 'NORP'), ('Angas', 'NORP'), ('Blessed One', 'PERSON')]
+
+ That is what the Blessed One said. Gratified, the monks delighted in the Blessed One's words. And while this explanation was being given, the ten-thousand fold cosmos quaked.
+[('Blessed One', 'PERSON'), ('monks', 'NORP'), ('Blessed One', 'PERSON')]
+ "Yes, indeed, friends. I understand the Dhamma taught by the Blessed One, and those acts the Blessed One says are obstructive, when indulged in are not genuine obstructions."
+[('Blessed One', 'PERSON'), ('Blessed One', 'PERSON')]
+ I have heard that on one occasion the Blessed One was staying at Ukkattha , in the shade of a royal Sal tree in the Very Blessed Grove. There he addressed the monks, "Monks!"
+[('Blessed One', 'PERSON')]
+Thus it was heard by me. At one time the Blessed One was living in the deer park of Isipatana near Benares. There, indeed, the Blessed One addressed the group of five monks.
+[('Blessed One', 'PERSON'), ('deer park', 'LOC'), ('Isipatana', 'GPE'), ('Benares', 'GPE'), ('Blessed One', 'PERSON')]

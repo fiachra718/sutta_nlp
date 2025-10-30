@@ -14,15 +14,15 @@ random.seed(42); np.random.seed(42)
 # --  MUST rerun this code first --
 REPO_ROOT = next(p for p in Path(__file__).resolve().parents if p.name == "ne-data")
 # then *all* things are good in the world
-TRAIN_JSONL = REPO_ROOT / "work/train.jsonl"
+TRAIN_JSONL = REPO_ROOT / "work" / "checked" / "corrected_verses.jsonl"
 DEV_JSONL   = REPO_ROOT / "work/dev.jsonl"
 TRAIN = REPO_ROOT / "work/train.spacy"
 DEV   = REPO_ROOT / "work/dev.spacy"
 TEST   = REPO_ROOT / "work/test.spacy"
 PATTERNS    = REPO_ROOT / "patterns/entity_ruler/patterns.jsonl"
-OUTDIR      = REPO_ROOT / "work" / "models" / "1029"
+OUTDIR      = REPO_ROOT / "work" / "models" / "1030"
 
-MODELS_DIR  = REPO_ROOT / "work" / "models" / "latest"
+MODELS_DIR  = REPO_ROOT / "work" / "models" / "1030"
 
 # ---- helper: load JSONL into Examples ----
 def jsonl_to_examples(jsonl_path, nlp):
@@ -51,19 +51,16 @@ def docbin_to_examples(docbin_path, nlp):
         examples.append(Example(predicted, reference))
     return examples
 
-# ---- try this English pipeline ----
 nlp = spacy.load(MODELS_DIR)
 
-
-# ---- add and load entity_ruler ----
 ruler = nlp.add_pipe("entity_ruler", first=True)
 ruler.from_disk(PATTERNS)
 print(f"Loaded {len(ruler.patterns)} patterns")
 
-# ---- add / get NER ----
 # ner = nlp.add_pipe("ner")
 ner = nlp.get_pipe("ner")
-examples = docbin_to_examples(TRAIN, nlp)
+# examples = docbin_to_examples(TRAIN, nlp)
+examples = jsonl_to_examples(TRAIN_JSONL, nlp)
 for eg in examples:
     for ent in eg.reference.ents:
     # for span in eg.get_aligned_ner():

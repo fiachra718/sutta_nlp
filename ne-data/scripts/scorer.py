@@ -48,7 +48,7 @@ def extract_entities(record: dict) -> List[SpanTuple]:
 
 nlp = load_model()
 examples = []
-with open(WORK / "spans/candidate_training.jsonl", "r", encoding="utf-8") as f:
+with open(WORK / "test.jsonl", "r", encoding="utf-8") as f:
     for line_no, line in enumerate(f, start=1):
         if not line.strip():
             continue

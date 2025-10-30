@@ -116,6 +116,8 @@
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": "salavatika"}]} 
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["vebhara", "pandava", "vepulla", "gijjhakuta", "isigili"]}}, {"LOWER": "mountain"}]}
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": "haliddavasana"}]}
+{"label": "GPE", "pattern": "Ñatika"}
+
 
 
 {"label": "LOC", "pattern": [{"LOWER" :"bamboo grove"}]}
