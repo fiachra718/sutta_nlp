@@ -1,5 +1,6 @@
+```
 sutta_nlp/
-├─ ne-data/                      # your existing NER code
+├─ ne-data/                     
 └─ web/
    ├─ app/                       # Python application code (Flask)
    │  ├─ __init__.py             # create_app(), register blueprints, CORS, logging
@@ -23,24 +24,20 @@ sutta_nlp/
    │  │  └─ queries.sql          # raw SQL you already use
    │  ├─ config.py               # Settings (loads .env)
    │  └─ cli.py                  # manage tasks (seed, snapshot, eval)
-   │
+   |  |
+   │  ├─ templates/               # Jinja
+   │  └─ index.html              # simple UI shell (or a docs landing)
    ├─ static/                    # served at /static
    │  ├─ css/                    # styles (vanilla or Tailwind build output)
    │  ├─ js/                     # tiny UI scripts
    │  └─ img/                    # icons, logos
    │
-   ├─ templates/                 # only if you render pages (Jinja); ok to omit
-   │  └─ index.html              # simple UI shell (or a docs landing)
-   │
-   ├─ openapi/                   # API docs
-   │  ├─ openapi.yaml            # hand-written or generated
-   │  └─ schemas/                # fragments referenced by the spec
    │
    ├─ tests/                     # pytest
    │  ├─ test_api_tag.py
    │  └─ test_api_examples.py
    │
-   ├─ scripts/                   # dev helpers
+   ├─ commands/                   # dev helpers
    │  ├─ run_dev.sh              # FLASK_DEBUG=1, auto-reload
    │  └─ seed_demo_data.py
    │
@@ -50,4 +47,4 @@ sutta_nlp/
    ├─ Dockerfile                 # (optional) prod image
    ├─ nginx.conf                 # (optional) if you front it
    └─ README.md                  # how to run/dev/test
-   
+   ```
