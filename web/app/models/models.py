@@ -1,11 +1,17 @@
 # models.py
-from pydantic import BaseModel, Field
 from datetime import datetime
 from typing import List, Literal, Optional, ClassVar
+
 from pydantic import BaseModel, Field, field_validator, model_validator
 from hashlib import md5
+import hashlib
 import unicodedata
 import json
+import uuid
+
+from psycopg.types.json import Json
+
+from ..db import db
 from .manager import Manager
 
 
@@ -98,26 +104,94 @@ class TrainingDoc(BaseModel):
     spans_hash: Optional[str] = None
     source: Optional[str] | None = None
     from_file: Optional[str] | None = None
+    created_at: Optional[datetime] = None
     objects: ClassVar[Manager] = Manager(
         table="gold_training",
         columns=TRAINING_COLUMNS,
         row_processor=_training_row_processor,
+        save_handler=lambda manager, doc, **kwargs: _save_training_doc(manager, doc, **kwargs),
     )
 
+    @model_validator(mode="before")
+    @classmethod
+    def normalize_text(cls, data):
+        if not isinstance(data, dict):
+            return data
+        text = data.get("text")
+        if isinstance(text, str):
+            norm = unicodedata.normalize("NFC", text)
+            data = {**data, "text": norm}
+            if not data.get("text_hash"):
+                data["text_hash"] = md5(norm.encode("utf-8")).hexdigest()
+        return data
 
-    def finalize(self):
-        """Fill in derived fields (hashes, timestamp) without being a control freak."""
-        txt = unicodedata.normalize("NFC", self.text)
-        self.text = txt
-        self.text_hash = md5(txt.encode("utf-8")).hexdigest()
-        payload = json.dumps(
-            [s.model_dump() for s in sorted(self.spans, key=lambda x: (x.start, x.end, x.label))],
-            separators=(",", ":"),
-            ensure_ascii=False,
-        )
-        if not self.created_at:
-            self.created_at = datetime.utcnow()
+    @field_validator("spans")
+    @classmethod
+    def validate_span_bounds(cls, spans, info):
+        text = info.data.get("text") or ""
+        length = len(text)
+        if not spans:
+            raise ValueError("At least one span is required")
+        for idx, span in enumerate(spans, start=1):
+            if span.end > length:
+                raise ValueError(f"Span {idx} extends past text length {length}")
+        spans_sorted = sorted(spans, key=lambda s: (s.start, s.end))
+        for prev, curr in zip(spans_sorted, spans_sorted[1:]):
+            if curr.start < prev.end:
+                raise ValueError(f"Spans {prev} and {curr} overlap")
+        return spans
+
+    @model_validator(mode="after")
+    def compute_hashes(self):
+        computed_text_hash = md5(self.text.encode("utf-8")).hexdigest()
+        if self.text_hash and self.text_hash != computed_text_hash:
+            raise ValueError("text_hash does not match normalized text")
+        self.text_hash = computed_text_hash
+
+        canonical = self.canonical_spans()
+        computed_spans_hash = hashlib.sha256(
+            json.dumps(canonical, separators=(",", ":")).encode("utf-8")
+        ).hexdigest()
+        if self.spans_hash and self.spans_hash != computed_spans_hash:
+            raise ValueError("spans_hash does not match canonical spans")
+        self.spans_hash = computed_spans_hash
         return self
+
+    def canonical_spans(self) -> list[dict[str, int | str]]:
+        spans_sorted = sorted(self.spans, key=lambda s: (s.start, s.end, s.label))
+        return [
+            {"start": int(span.start), "end": int(span.end), "label": span.label}
+            for span in spans_sorted
+        ]
+
+    def to_record(self, *, source: Optional[str] = None, from_file: Optional[str] = None) -> dict:
+        if not self.id:
+            self.id = f"manual:{uuid.uuid4().hex[:12]}"
+        source_value = source or self.source or "manual"
+        self.source = source_value
+        if from_file is not None:
+            self.from_file = from_file
+        record = {
+            "id": self.id,
+            "text": self.text,
+            "text_hash": self.text_hash,
+            "spans": Json(self.canonical_spans()),
+            "spans_hash": self.spans_hash,
+            "source": source_value,
+            "from_file": self.from_file,
+        }
+        return record
+
+
+def _save_training_doc(manager, doc, *, source: Optional[str] = None, from_file: Optional[str] = None):
+    if not isinstance(doc, TrainingDoc):
+        doc = TrainingDoc.model_validate(doc)
+
+    record = doc.to_record(source=source, from_file=from_file)
+
+    result = db.save_training_record(record, dsn=manager.dsn_value)
+    result["doc"] = doc
+    return result
 
 
 # sanity check
@@ -140,4 +214,5 @@ if __name__ == "__main__":
     }
     doc = TrainingDoc.model_validate(record)
     print(doc.spans[0].label)   # PERSON
+    print(doc.text)
     print(doc.model_dump())   # prints record + hash

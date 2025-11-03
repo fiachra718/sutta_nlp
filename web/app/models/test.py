@@ -1,64 +1,73 @@
-from app.models.models import CandidateDoc, TrainingDoc
-import psycopg
-from psycopg.rows import dict_row
-from hashlib import md5
+import unittest
+from unittest.mock import patch
 
-conn = psycopg.connect("dbname=tipitaka user=alee", row_factory=dict_row)
+from ..app import app
 
-sql = ''' SELECT id, text, spans FROM gold_training ORDER BY gen_random_uuid() 
-        LIMIT 5
-    '''
 
-cur = conn.execute(sql)
-docs = []
+class AppApiTests(unittest.TestCase):
+    def setUp(self):
+        app.config.update({"TESTING": True})
+        self.client = app.test_client()
 
-for row in cur.fetchall():
-    try:
-        doc = TrainingDoc.model_validate({
-            "id": row["id"],
-            "text": row["text"],
-            "spans": row["spans"],   # jsonb → dict/list already via row_factory
-            "spans_hash": md5(row["spans"]).hexdigest()
-        })
-        docs.append(doc)
-        print("Loaded training doc: {}{}".format(doc.id, doc.spans))
-    except Exception as e:
-        print("VALIDATION FAIL id=", row["id"], "->", e)
-    print(docs)
+    @patch("app.app.run_ner")
+    def test_predict_post(self, mock_run_ner):
+        mock_run_ner.return_value = {
+            "text": "Blessed One",
+            "spans": [{"start": 0, "end": 7, "label": "PERSON"}],
+        }
 
-sql = ''' SELECT 
-            id, 
-            source_identifier, 
-            text, 
-            text_hash, 
-            entities, 
-            created_at 
-        FROM candidates ORDER BY gen_random_uuid() 
-        LIMIT 5
-    '''
-cur = conn.execute(sql)
-docs = []
+        response = self.client.post("/predict", json={"text": "Blessed One"})
+        self.assertEqual(response.status_code, 200)
 
-for row in cur.fetchall():
-    try:
-        doc = CandidateDoc.model_validate({
-            "id": row.get("id"),
-            "source_identifier": row.get("source_identier"),
-            "text": row.get("text"),
-            "text_hash": row.get("text_hash"),
-            "entities": row.get("entities"),
-            "created_at": row.get("created_at")
-        })
-        docs.append(doc)
-    except Exception as e:
-        print("VALIDATION FAIL id=", row["id"], "->", e)
-    print("Loaded candidate doc: {}{}".format(doc.id, doc.entities))
+        data = response.get_json()
+        self.assertTrue(data["ok"])
+        self.assertEqual(data["text"], "Blessed One")
+        self.assertEqual(data["spans"], mock_run_ner.return_value["spans"])
+        mock_run_ner.assert_called_once_with("Blessed One")
 
-######  That was all hideous, is there are prettier way to get Candidate Docs?? 
-###### YES!!!
-docs = CandidateDoc.objects.sample(5)     # ← descriptor triggers DB
-print(docs)
-one  = CandidateDoc.objects.get(279)
-print(one)
-td = TrainingDoc.objects.get("sorted_combined.entities:256")
-print(td)
+    @patch("app.models.models.db.save_training_record")
+    def test_api_training_save_success(self, mock_save_training):
+        mock_save_training.return_value = {
+            "ok": True,
+            "id": "manual:testdoc",
+            "created": True,
+        }
+        payload = {
+            "text": "Blessed One",
+            "spans": [{"start": 0, "end": 7, "label": "PERSON"}],
+        }
+
+        response = self.client.post("/api/training", json=payload)
+        self.assertEqual(response.status_code, 201)
+
+        data = response.get_json()
+        self.assertTrue(data["ok"])
+        self.assertEqual(data["id"], "manual:testdoc")
+        self.assertEqual(data["message"], "Saved to training data.")
+        mock_save_training.assert_called_once()
+
+    @patch("app.models.models.db.save_training_record")
+    def test_api_training_conflict(self, mock_save_training):
+        mock_save_training.return_value = {
+            "ok": False,
+            "id": "existing-doc",
+            "created": False,
+            "message": "duplicate entry",
+        }
+        payload = {
+            "text": "Blessed One",
+            "spans": [{"start": 0, "end": 7, "label": "PERSON"}],
+        }
+
+        response = self.client.post("/api/training", json=payload)
+        self.assertEqual(response.status_code, 409)
+
+        data = response.get_json()
+        self.assertFalse(data["ok"])
+        self.assertEqual(data["id"], "existing-doc")
+        self.assertEqual(data["message"], "duplicate entry")
+        mock_save_training.assert_called_once()
+
+
+if __name__ == "__main__":
+    unittest.main()

@@ -1,69 +1,30 @@
 # app/models/manager.py
 from __future__ import annotations
 
-from functools import lru_cache
-from importlib import import_module
-from typing import Any, Dict, Iterable
+from typing import Iterable
 
-from psycopg import connect
-from psycopg.rows import dict_row
-
-
-@lru_cache(maxsize=1)
-def _default_dsn() -> str:
-    """
-    Build a psycopg-compatible connection string from local_settings.
-    Falls back to an empty string (lib default search order) if settings
-    cannot be imported.
-    """
-    settings: Dict[str, Any] | None = None
-    for module_name in ("app.local_settings", "local_settings"):
-        try:
-            module = import_module(module_name)
-        except ImportError:
-            continue
-        candidate = getattr(module, "settings", None)
-        if isinstance(candidate, dict):
-            settings = candidate
-            break
-    if not isinstance(settings, dict):
-        settings = {}
-
-    db = settings.get("DB", {})
-    if not isinstance(db, dict):
-        db = {}
-
-    url = db.get("URL")
-    if isinstance(url, str) and url:
-        # SQLAlchemy-style URLs often include the driver suffix.
-        if url.startswith("postgresql+"):
-            return "postgresql://" + url.split("://", 1)[1]
-        return url
-
-    parts = []
-    mapping = {
-        "NAME": "dbname",
-        "USER": "user",
-        "PASSWORD": "password",
-        "HOST": "host",
-        "PORT": "port",
-    }
-    for key, conn_key in mapping.items():
-        value = db.get(key)
-        if value:
-            parts.append(f"{conn_key}={value}")
-
-    return " ".join(parts)
+from ..db import db
 
 
 class _BoundManager:
-    def __init__(self, model, dsn: str, *, table: str, columns: tuple[str, ...], id_column: str, row_processor):
+    def __init__(
+        self,
+        model,
+        dsn: str,
+        *,
+        table: str,
+        columns: tuple[str, ...],
+        id_column: str,
+        row_processor,
+        save_handler=None,
+    ):
         self.model = model
         self.dsn = dsn
         self.table = table
         self.columns = columns
         self.id_column = id_column
         self.row_processor = row_processor
+        self._save_handler = save_handler
 
     def using(self, dsn: str) -> "_BoundManager":
         return _BoundManager(
@@ -73,6 +34,7 @@ class _BoundManager:
             columns=self.columns,
             id_column=self.id_column,
             row_processor=self.row_processor,
+            save_handler=self._save_handler,
         )
 
     def _select_sql(self) -> str:
@@ -81,17 +43,25 @@ class _BoundManager:
 
     def sample(self, n: int = 5):
         sql = self._select_sql() + " ORDER BY gen_random_uuid() LIMIT %(n)s"
-        with connect(self.dsn, row_factory=dict_row) as cx, cx.cursor() as cur:
-            cur.execute(sql, {"n": n})
-            rows = cur.fetchall()
+        rows = db.fetch_all(sql, {"n": n}, dsn=self.dsn)
         return [self.model(**self.row_processor(row)) for row in rows]
 
     def get(self, id_value):
         sql = self._select_sql() + f" WHERE {self.id_column} = %(id)s"
-        with connect(self.dsn, row_factory=dict_row) as cx, cx.cursor() as cur:
-            cur.execute(sql, {"id": id_value})
-            row = cur.fetchone()
+        row = db.fetch_one(sql, {"id": id_value}, dsn=self.dsn)
         return self.model(**self.row_processor(row)) if row else None
+
+    def save(self, obj, **kwargs):
+        if not self._save_handler:
+            raise NotImplementedError("Save operation not configured for this manager")
+        return self._save_handler(self, obj, **kwargs)
+
+    def connect(self):
+        return db.connect(self.dsn)
+
+    @property
+    def dsn_value(self) -> str:
+        return self.dsn
 
 
 class Manager:
@@ -104,6 +74,7 @@ class Manager:
         columns: Iterable[str],
         id_column: str = "id",
         row_processor=None,
+        save_handler=None,
         dsn: str | None = None,
     ):
         self._configured_dsn = dsn
@@ -111,6 +82,7 @@ class Manager:
         self._columns = tuple(columns)
         self._id_column = id_column
         self._row_processor = row_processor
+        self._save_handler = save_handler
 
     def _default_row_processor(self):
         selected = self._columns
@@ -128,7 +100,7 @@ class Manager:
         return self
 
     def _resolve_dsn(self) -> str:
-        return self._configured_dsn or _default_dsn()
+        return self._configured_dsn or db.default_dsn()
 
     def __get__(self, instance, owner):
         # called as CandidateDoc.objects (instance is None, owner is the class)
@@ -139,4 +111,5 @@ class Manager:
             columns=self._columns,
             id_column=self._id_column,
             row_processor=self.row_processor(),
+            save_handler=self._save_handler,
         )
