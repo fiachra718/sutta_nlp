@@ -57,7 +57,7 @@ BATCH_SIZE = 16
 DROPOUT = 0.1
 DEV_RATIO = 0.1
 CONN = psycopg.connect("dbname=tipitaka user=alee")
-OUTPUT_DIR = WORK / "models" / "1106.v2"
+OUTPUT_DIR = WORK / "models" / "1107"
 
 
 nlp = load_model()

@@ -2,7 +2,7 @@ import spacy
 import config_helpers  # registers custom registry hooks for spaCy
 from pathlib import Path
 
-from local_settings import MODELS_DIR
+from local_settings import MODELS_DIR, load_model
 
 ENTITY_PATTERNS = Path("ne-data/patterns/entity_ruler/patterns.jsonl")
 SPAN_PATTERNS = Path("ne-data/patterns/span_ruler/loc_phrases.json")
@@ -33,7 +33,7 @@ def load_my_ner():
     print("Pipeline:", nlp.pipe_names)
     return nlp
 
-nlp = load_my_ner()
+nlp = load_model()
 
 texts = [
     "They met at Simsapā Grove.",

@@ -1,8 +1,8 @@
 from spacy.tokens import DocBin
 from spacy.training import Example
+import spacy
 
 from local_settings import WORK, load_model
-
 
 def docbin_to_examples(path, nlp):
     if not path.exists():

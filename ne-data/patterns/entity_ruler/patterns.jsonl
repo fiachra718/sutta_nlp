@@ -63,41 +63,6 @@
 {"label": "PERSON","id":"possessive_kin","pattern":[ {"IS_TITLE": true}, {"ORTH": "'s"}, {"LOWER": {"IN": ["mother","father","son","daughter","aunt","uncle","niece","nephew", "wife", "husband","sister","brother"]}} ]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "navakammika bharadvaja"}]}
 
-{"label":"NORP","id":"Sakyans","pattern":[{"LOWER":{"REGEX":"sakyan(s)?|sākyan(s)?"}}]}
-{"label":"NORP","id":"Kurus","pattern":[{"LOWER": "kurus"}]}
-{"label":"NORP","id":"Sumbhas","pattern":[{"LOWER":{"REGEX":"sumbha(s)?"}}]}
-{"label":"NORP","id":"Angas","pattern":[{"LOWER":{"REGEX":"anga(s)?"}}]}
-{"label":"NORP","id":"Vajjis","pattern":[{"LOWER":{"REGEX":"vajji(s)?"}}]}
-{"label":"NORP","id":"Licchavis","pattern":[{"LOWER":{"REGEX":"licchavi(s)?"}}]}
-{"label":"NORP","id":"Koliyans","pattern":[{"LOWER":{"REGEX":"koliya(n|ns)?"}}]}
-{"label":"NORP","id":"Kosalans","pattern":[{"LOWER":{"REGEX":"kosalan(s)?"}}]}
-{"label":"NORP","id":"Magadhans","pattern":[{"LOWER":{"REGEX":"magadhan(s)?"}}]}
-{"label":"NORP","id":"Uppercase Brahman","pattern":[{"IS_TITLE": true, "LOWER": { "IN": ["brahman", "brāhmaṇa" ]} }]}
-{"label":"NORP","id":"Brahmans","pattern":[{"LOWER": {"IN" : ["brahmans", "brāhmaṇas" ] } } ] }
-{"label":"NORP","pattern":[{"LOWER":{"IN":["brahmin","brahmins","brahman","brahmans"]}}]}
-{"label":"NORP","id":"Kshatriya","pattern":[ {"LOWER": {"REGEX":"kshatriyas|kṣatriyas"} } ] }
-{"label":"NORP","id":"kings", "pattern": [ {"LOWER":"kings" } ] }
-{"label":"NORP","id":"nobles", "pattern" : [ {"LOWER":"nobles" } ] }
-{"label":"NORP", "pattern": [ {"LOWER": "noble"}, {"LOWER": "ones"} ]}
-{"label":"NORP","id":"Bhikkhu_Sangha","pattern":[{"IS_TITLE":true,"LOWER":"bhikkhu"},{"IS_TITLE":true,"LOWER":{"IN":["saṅgha","sangha"]}}]}
-{"label":"NORP","id":"Monks_cap","pattern":[ {"IS_SENT_START": false, "IS_TITLE": true, "LOWER":{"IN":["monks","bhikkhus"]}} ]}
-{"label":"NORP","id":"Recluses",     "pattern":[{"LOWER":"recluses"}]}
-{"label":"NORP","id":"Wanderers",    "pattern":[{"LOWER":"wanderers"}]}
-{"label":"NORP","id":"Householders", "pattern":[{"LOWER":"householders"}]}
-{"label":"NORP","id":"Ajivikas","pattern":[{"LOWER":{"REGEX":"ajivikas|ājīvikas"}}]}
-{"label":"NORP","id":"Niganthas","pattern":[{"LOWER":{"REGEX":"niganthas|nirgranthas"}}]}
-{"label":"NORP","id":"Kajjangalas","pattern":[{"LOWER":{"REGEX":"^kajjangala(?:n|s|ns)?$"}}]}
-{"label":"NORP", "id":"Arhants", "pattern":[{"LOWER": "arahants"}]}
-{"label":"NORP", "id":"devetas", "pattern":[{"LOWER": "devatas"}]}
-{"label":"NORP","pattern":[{"LOWER":"brahman"},{"LOWER":"cosmologists"}]}
-{"label":"NORP","pattern":[{"LOWER":{"REGEX":"kumbhanda(s)?"}}]}
-{"label":"NORP","pattern":[{"LOWER":{"REGEX":"kumbhaṇḍa(s)?"}}]}
-{"label":"NORP","pattern":[{"LOWER":{"REGEX":"^g[h]?andhabba(s)?$"}}]}
-{"label":"NORP","pattern":[{"LOWER":{"REGEX":"yakkha(s)?"}}]}
-{"label":"NORP","pattern":[{"LOWER":{"REGEX":"nāga(s)?"}}]}
-{"label":"NORP","pattern":[{"LOWER":{"REGEX":"naga(s)?"}}]}
-
-
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["savatthi", "sāvatthī"]}}]}
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["rajagaha", "rājagaha"]}}]}
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["kosambi", "kosambī"]}}]}
@@ -130,9 +95,7 @@
 {"label":"LOC","id":"icchānangala_forest_grove","pattern":[{"LOWER":{"REGEX":"icch[aā]na?ṅgala"}},{"LOWER":"forest"},{"LOWER":"grove"}]}
 {"label":"LOC","id":"jetavana","pattern":[{"LOWER":{"REGEX":"jetavana"}}]}
 {"label":"LOC","id":"jeta_possessive_grove_park","pattern":[{"LOWER":"jeta"},{"LOWER":{"IN":["'s","’s"]}},{"LOWER":{"IN":["grove","park"]}}]}
-
 {"label":"LOC","id":"anathapindika_possessive","pattern":[{"LOWER":{"REGEX":"an[aā]thapiṇḍika|anathapindika"}},{"LOWER":{"IN":["'s","’s"]}},{"LOWER":{"IN":["park","grove","monastery"]}}]}
-
 {"label":"LOC","id":"jīvaka_mango_grove","pattern":[{"LOWER":{"REGEX":"j[īi]vaka"}},{"LOWER":{"IN":["'s","’s"]}},{"LOWER":"mango"},{"LOWER":"grove"}]}
 {"label":"LOC","id":"cunda_silversmith_mango_grove","pattern":[{"LOWER":"cunda"},{"LOWER":"the"},{"LOWER":"silversmith"},{"LOWER":{"IN":["'s","’s"]}},{"LOWER":"mango"},{"LOWER":"grove"}]}
 {"label":"LOC","id":"bamboo_grove","pattern":[{"LOWER":"bamboo"},{"LOWER":{"IN":["grove","park"]}}]}
@@ -143,53 +106,49 @@
 {"label":"LOC","id":"deer_park_generic","pattern":[{"LOWER":"deer"},{"LOWER":"park"}]}
 {"label":"LOC","id":"deer_park_isipatana","pattern":[{"LOWER":"deer"},{"LOWER":"park"},{"LOWER":"at"},{"LOWER":{"REGEX":"isipatana"}}]}
 {"label":"LOC","id":"varanasi_deer_park","pattern":[{"LOWER":{"REGEX":"v[āa]r[āa]ṇas[īi]|varanasi"}},{"LOWER":{"IN":["'s","’s"]}},{"LOWER":"deer"},{"LOWER":"park"}]}
-
+{"label":"LOC","pattern":[{"LOWER":{"IN":["capala","sarandada","bahuputta","sattambaka","gotamaka","cāpāla"]}},{"LOWER":{"IN":["shrine","shrines","sanctuary","park","grove"]}}]}
 {"label":"LOC","id":"squirrels_sanctuary","pattern":[{"LOWER":{"REGEX":"squirrel|squirrels|squirrel's|squirrels'"}},{"LOWER":{"IN":["sanctuary","park","refuge"]}}]}
-
 {"label":"LOC","id":"tapoda_springs","pattern":[{"LOWER":"tapoda"},{"LOWER":{"IN":["spring","springs"]}}]}
 {"label":"LOC","id":"tapoda_monastery","pattern":[{"LOWER":"tapoda"},{"LOWER":{"IN":["monastery","vihara"]}}]}
-
 {"label":"LOC","id":"vultures_peak","pattern":[{"LOWER":"vulture"},{"LOWER":{"IN":["'s","’s"]},"OP":"?"},{"LOWER":"peak"},{"LOWER":"mountain","OP":"?"}]}
-
 {"label":"LOC","id":"gotamaka_shrine","pattern":[{"LOWER":"gotamaka"},{"LOWER":"shrine"}]}
 {"label":"LOC","id":"cāpāla_shrine","pattern":[{"LOWER":{"REGEX":"c[āa]p[āa]la"}},{"LOWER":"shrine"}]}
-
 {"label":"LOC","id":"crocodile_haunt","pattern":[{"LOWER":"crocodile"},{"LOWER":"haunt"}]}
 {"label":"LOC","id":"game_refuge","pattern":[{"LOWER":"game"},{"LOWER":"refuge"}]}
 {"label":"LOC","id":"pigeon_cave","pattern":[{"LOWER":"pigeon"},{"LOWER":"cave"}]}
 {"label":"LOC","id":"pipphali_cave","pattern":[{"LOWER":"pipphali"},{"LOWER":"cave"}]}
-
 {"label":"LOC","id":"eastern_monastery","pattern":[{"LOWER":"eastern"},{"LOWER":"monastery"}]}
 {"label":"LOC","id":"western_monastery","pattern":[{"LOWER":"western"},{"LOWER":"monastery"}]}
-
 {"label":"LOC","id":"tusita_realm","pattern":[{"LOWER":{"REGEX":"tusita"}}]}
 {"label":"LOC","id":"tavatimsa_realm","pattern":[{"LOWER":{"REGEX":"t[āa]vatiṃsa|tavatimsa"}}]}
 {"label":"LOC","id":"nimmanarati_realm","pattern":[{"LOWER":{"REGEX":"nimm[āa]narati|nimmanarati"}}]}
 {"label":"LOC","id":"paranimmitavasavatti_realm","pattern":[{"LOWER":{"REGEX":"paranimmita-?vasavatti"}}]}
 {"label":"LOC","id":"yama_realm","pattern":[{"LOWER":"yama"}]}
 {"label":"LOC","id":"brahma_worlds_generic","pattern":[{"LOWER":"brahma"},{"LOWER":{"IN":["parisajja","purohita","maha"]},"OP":"?"}]}
-
 {"label":"LOC","id":"hermitage_of_person_brahman","pattern":[{"LOWER":"the"},{"LOWER":"hermitage"},{"LOWER":"of"},{"IS_TITLE":true},{"LOWER":"the"},{"LOWER":{"REGEX":"br[āa]hmaṇa|brahman"}}]}
 {"label":"LOC","id":"palace_of_person_mother","pattern":[{"LOWER":"the"},{"LOWER":"palace"},{"LOWER":"of"},{"IS_TITLE":true},{"LOWER":{"IN":["'s","’s"]}},{"LOWER":"mother"}]}
-
-{"label":"EVENT","id":"uposatha","pattern":[{"LOWER":"uposatha"}]}
-{"label":"EVENT","id":"rains_retreat","pattern":[{"LOWER":"rains"},{"LOWER":{"IN":["retreat","season"]}}]}
-
 {"label": "LOC", "pattern":[{"LOWER": "ten world-systems"}]}
 {"label": "LOC", "pattern": [ {"LOWER": "migara"}, {"LOWER": "'s", "OP": "?"}, {"LOWER": "mother"}, {"LOWER": "'s", "OP": "?"}, {"LOWER": "palace"} ]}
 {"label": "LOC", "pattern": [ {"LOWER": {"IN": ["mallika", "mallika’s", "mallikas"]}}, {"LOWER": {"IN": ["park", "garden", "grove"]}} ]}
 {"label": "LOC", "pattern": [{"LOWER": "river"}, {"LOWER": "ganges"}]}
+{"label":"LOC","pattern":[{"LOWER":"realm"},{"LOWER":"of"},{"LOWER":"the"},{"LOWER":{"REGEX":"thirty[- ]three"}}]}
+{"label":"LOC","pattern":[{"LOWER":{"REGEX":"suddhav[āa]sa"}},{"ORTH":"(","OP":"?"},{"LOWER":{"IN":["pure","of","abodes","abode"]},"OP":"*"},{"ORTH":")","OP":"?"}]}
+{"label":"LOC","pattern":[{"LOWER":"brahma"},{"LOWER":{"IN":["world","heaven","retinue"]}}]}
+{"label":"LOC","pattern":[{"LOWER":"heaven"},{"LOWER":"of"},{"LOWER":"the"},{"LOWER":"thirty-three"}]}
 
-{"label":"EVENT","pattern":[{"LOWER":"rains"},{"LOWER":"retreat"}]}
-{"label":"EVENT","pattern":"Rains Retreat"}
-{"label":"EVENT","pattern":"Rainy Season Retreat"}
-{"label":"EVENT","pattern":"Vassa"}
-{"label":"EVENT","pattern":"vassa"}
+{"label":"EVENT","id":"uposatha","pattern":[{"LOWER":{"REGEX":"^uposatha$"}}]}
+{"label":"EVENT","id":"vassa","pattern":[{"LOWER":{"REGEX":"^vassa$"}}]}
+{"label":"EVENT","id":"rains_retreat","pattern":[{"LOWER":{"REGEX":"^rains$"}},{"LOWER":{"IN":["retreat","season"]}}]}
+{"label":"EVENT","id":"rainy_season_retreat","pattern":[{"LOWER":{"REGEX":"^rainy$"}},{"LOWER":{"REGEX":"^season$"}},{"LOWER":{"REGEX":"^retreat$"}}]}
+{"label":"EVENT","id":"rains_season_retreat_hyphen","pattern":[{"LOWER":{"REGEX":"^rains(-|)$"}},{"LOWER":{"REGEX":"^season$"}},{"LOWER":{"REGEX":"^retreat$"}}]}
 
-{"label": "UNIT", "pattern":[{"LOWER": {"REGEX": "yojana(s)?"}}]}
-{"label": "UNIT", "pattern":[{"LOWER": {"REGEX": "fingerbreadth(s)?"}}]}
-{"label": "UNIT", "pattern":[{"LOWER": {"REGEX": "league(s)?"}}]}
-{"label": "UNIT", "pattern":[{"LOWER": {"REGEX": "fathom(s)?"}}]}
-{"label": "UNIT", "pattern":[{"LOWER": {"REGEX": "(a)?eon(s)?"}}]}
-{"label": "UNIT", "pattern":[{"LOWER": {"REGEX": "kahāpaṇa(s)?"}}]}
-{"label": "UNIT", "pattern":[{"LOWER": {"REGEX": "kahapaṇa(s)?"}}]}
+{"label":"UNIT","id":"yojana","pattern":[{"LOWER":{"REGEX":"^yojana(s)?$"}}]}
+{"label":"UNIT","id":"fingerbreadth","pattern":[{"LOWER":{"REGEX":"^finger-?breadth(s)?$"}}]}
+{"label":"UNIT","id":"league","pattern":[{"LOWER":{"REGEX":"^league(s)?$"}}]}
+{"label":"UNIT","id":"fathom","pattern":[{"LOWER":{"REGEX":"^fathom(s)?$"}}]}
+{"label":"UNIT","id":"aeon_eon","pattern":[{"LOWER":{"REGEX":"^a?eon(s)?$"}}]}
+{"label":"UNIT","id":"kalpa","pattern":[{"LOWER":{"REGEX":"^kalpa(s)?$"}}]}
+{"label":"UNIT","id":"kappa","pattern":[{"LOWER":{"REGEX":"^kappa(s)?$"}}]}
+{"label":"UNIT","id":"kahapana_diacritic","pattern":[{"LOWER":{"REGEX":"^kahāpaṇa(s)?$"}}]}
+{"label":"UNIT","id":"kahapana_ascii","pattern":[{"LOWER":{"REGEX":"^kahapana(s)?$"}}]}
+{"label":"UNIT","id":"kahaapana_ascii","pattern":[{"LOWER":{"REGEX":"^kahaapana(s)?$"}}]}
