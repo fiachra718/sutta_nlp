@@ -5,7 +5,7 @@ import unicodedata
 # need absolute path here.  Hackish, FIXME
 NE_DATA = Path("/Users/alee/sutta_nlp/ne-data")
 
-MODELS_DIR = NE_DATA / "work/models/1030"
+MODELS_DIR = NE_DATA / "ner-model"
 PATTERNS = NE_DATA / "patterns/entity_ruler"
 LOC_EVENT_PATTERNS = NE_DATA / "patterns" / "span_ruler"
 
@@ -39,7 +39,13 @@ def run_ner(intext):
     text = unicodedata.normalize("NFC", intext.strip())
     doc = nlp(text)
     spans = [
-        {"start": ent.start_char, "end": ent.end_char, "label": ent.label_, "text": ent.text}
+        {
+            "start": ent.start_char,
+            "end": ent.end_char,
+            "label": ent.label_,
+            "text": ent.text,
+        }
         for ent in doc.ents
     ]
+    print({"text": text, "spans": spans})
     return {"text": text, "spans": spans}

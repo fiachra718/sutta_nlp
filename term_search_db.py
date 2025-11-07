@@ -8,15 +8,15 @@ conn = psycopg.connect("dbname=tipitaka user=alee")
 
 term = sys.argv[1]
 if not term:
-	sys.exit(-1)
+    sys.exit(-1)
 
 
 def strip_diacritics(s):
-	return "".join(
-		c
-		for c in unicodedata.normalize("NFD", s)
-		if unicodedata.category(c) != "Mn"
-	)
+    return "".join(
+        c
+        for c in unicodedata.normalize("NFD", s)
+        if unicodedata.category(c) != "Mn"
+    )
 
 
 
@@ -73,14 +73,14 @@ LIMIT 200;
 
 params = {"term": term}
 with conn.cursor() as cur:
-	cur.execute(sql, params)
-	for (paragraph,) in cur:
-		print(paragraph)
+    cur.execute(sql, params)
+    for (paragraph,) in cur:
+        print(paragraph)
 
 s_term = strip_diacritics(term)
 if s_term != term:
-	params = {"term": s_term}
-	with conn.cursor() as cur:
-		cur.execute(sql, params)
-		for (paragraph,) in cur:  # tuple-unpack the single column
-			print(paragraph, flush=True)
+    params = {"term": s_term}
+    with conn.cursor() as cur:
+        cur.execute(sql, params)
+        for (paragraph,) in cur:  # tuple-unpack the single column
+            print(paragraph, flush=True)

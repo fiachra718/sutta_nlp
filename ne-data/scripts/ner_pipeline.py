@@ -124,6 +124,9 @@ def validate_span_record(record: dict) -> List[str]:
 def candidate_record_to_spans(
     record: dict, *, nlp: spacy.language.Language, allow_possessive: bool = True
 ) -> dict:
+    ''' Candidate records are handmade and have a text block and an entities list.
+    the entities list is tuples of (label, text)
+    '''
     text = record.get("text")
     if text is None:
         raise ValueError("Candidate record missing 'text'")

@@ -25,7 +25,6 @@ def training(training_id: str):
     if not doc:
         abort(404)
     text = doc.text
-    # in your view
     spans = [s.model_dump() if hasattr(s, "model_dump") else s for s in doc.spans]
     html = render_highlighted(text, spans)
     # html = render_highlighted(doc.text, [s.model_dump() for s in doc.spans])
@@ -46,7 +45,6 @@ def predict_page():
 
     # run through trained SpaCy NLP
     doc = run_ner(text)
-    print(doc)
     return jsonify({"ok": True, "text": doc.get("text", text), "spans": doc.get("spans", [])})
 
 

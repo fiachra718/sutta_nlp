@@ -87,9 +87,12 @@
 
   <form id="predict-form">
     <textarea id="text-input" placeholder="Paste text to run through the NER model…"></textarea>
-    <div class="controls" style="flex-wrap: wrap;">
+    <div class="controls" style="flex-wrap: wrap; gap: 10px; align-items: center;">
       <button class="primary" type="submit">Run NER</button>
-      <button type="button" id="add-selection-btn">Add selection</button>
+      <div class="add-selection">
+        <button type="button" id="add-selection-btn">Add selection</button>
+        <select id="add-selection-label"></select>
+      </div>
       <button type="button" id="clear-btn">Clear</button>
       <button type="button" id="copy-json-btn">Copy JSON</button>
       <button type="button" id="save-btn">Save to training</button>
@@ -117,13 +120,14 @@
   </section>
 
   <script>
-    const LABELS = ["PERSON", "GPE", "LOC", "NORP", "EVENT"];
+    const LABELS = ["PERSON", "GPE", "LOC", "NORP", "EVENT", "UNIT"];
     const COLORS = {
       PERSON: "#bfdbfe",
       GPE: "#bbf7d0",
       LOC: "#fef08a",
       NORP: "#fed7aa",
-      EVENT: "#fecdd3"
+        EVENT: "#fecdd3",
+        UNIT: "#e9d5ff"
     };
 
     let currentDoc = { text: "", spans: [] };
@@ -135,6 +139,13 @@
     const entitiesPanel = document.getElementById("entities-panel");
     const rawJsonEl = document.getElementById("raw-json");
     const statusEl = document.getElementById("status");
+    const addSelectionLabel = document.getElementById("add-selection-label");
+
+    function populateLabelDropdown(selectEl) {
+      selectEl.innerHTML = LABELS.map(label => `<option value="${label}">${label}</option>`).join("");
+    }
+
+    populateLabelDropdown(addSelectionLabel);
 
     form.addEventListener("submit", async (event) => {
       event.preventDefault();
@@ -162,12 +173,18 @@
         const docText = typeof payload.text === "string" ? payload.text : text;
         const spans = Array.isArray(payload.spans) ? payload.spans : [];
 
-        const normalizedSpans = spans.map(span => ({
-          start: Number(span.start) || 0,
-          end: Number(span.end) || 0,
-          label: String(span.label || ""),
-          text: span.text || docText.slice(span.start, span.end)
-        }));
+        const normalizedSpans = spans.map(span => {
+          const start = Number(span.start) || 0;
+          const end = Number(span.end) || 0;
+          const normalizedLabel = String(span.label || "").toUpperCase().trim();
+          const label = LABELS.includes(normalizedLabel) ? normalizedLabel : LABELS[0];
+          return {
+            start,
+            end,
+            label,
+            text: span.text || docText.slice(start, end),
+          };
+        });
 
         currentDoc = { text: docText, spans: normalizedSpans };
         textInput.value = currentDoc.text;
@@ -197,12 +214,13 @@
     document.getElementById("add-selection-btn").addEventListener("click", () => {
       const start = textInput.selectionStart ?? 0;
       const end = textInput.selectionEnd ?? start;
-      if (end <= start) {
-        statusEl.textContent = "Select some text first.";
+      if (end < start) {
+        statusEl.textContent = "Selection end is before the start.";
         return;
       }
       currentDoc.text = textInput.value;
-      currentDoc.spans.push({ start, end, label: LABELS[0], text: textInput.value.slice(start, end) });
+      const chosenLabel = addSelectionLabel.value || LABELS[0];
+      currentDoc.spans.push({ start, end, label: chosenLabel, text: textInput.value.slice(start, end) });
       statusEl.textContent = "Added span from selection.";
       render();
     });
@@ -363,10 +381,6 @@
         statusEl.textContent = "Nothing to save.";
         return null;
       }
-      if (!currentDoc.spans.length) {
-        statusEl.textContent = "Add at least one span before saving.";
-        return null;
-      }
       const normalized = currentDoc.spans.map((span, idx) => {
         const start = Number(span.start);
         const end = Number(span.end);
@@ -376,8 +390,8 @@
         if (start < 0) {
           throw new Error(`Span ${idx + 1} has a negative start.`);
         }
-        if (end <= start) {
-          throw new Error(`Span ${idx + 1} has end ≤ start.`);
+        if (end < start) {
+          throw new Error(`Span ${idx + 1} has end < start.`);
         }
         if (end > text.length) {
           throw new Error(`Span ${idx + 1} extends past the text.`);

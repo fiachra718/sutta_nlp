@@ -70,6 +70,7 @@ print("NER labels:", list(ner.labels))
 # ---- training loop ----
 optimizer = nlp.resume_training()
 ruler.from_disk(PATTERNS)
+
 for epoch in range(15):
     random.shuffle(examples)
     losses = {}

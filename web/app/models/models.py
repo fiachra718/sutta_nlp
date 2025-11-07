@@ -31,7 +31,7 @@ def _training_row_processor(row):
     return data
 
 
-Label = Literal["PERSON", "GPE", "LOC", "NORP", "EVENT"]
+Label = Literal["PERSON", "GPE", "LOC", "NORP", "EVENT", "UNIT"]
 
 
 class SuttaVerse(BaseModel):
@@ -100,7 +100,7 @@ class TrainingDoc(BaseModel):
     id: Optional[str] = None
     text: str
     text_hash: Optional[str] = None
-    spans: list[Span]        # human-reviewed, overlap-free, slice-checked
+    spans: Optional[list[Span]] = None        # human-reviewed, overlap-free, slice-checked
     spans_hash: Optional[str] = None
     source: Optional[str] | None = None
     from_file: Optional[str] | None = None
@@ -130,8 +130,10 @@ class TrainingDoc(BaseModel):
     def validate_span_bounds(cls, spans, info):
         text = info.data.get("text") or ""
         length = len(text)
-        if not spans:
-            raise ValueError("At least one span is required")
+        if spans is None:
+            return []
+        if len(spans) == 0:
+            return spans
         for idx, span in enumerate(spans, start=1):
             if span.end > length:
                 raise ValueError(f"Span {idx} extends past text length {length}")

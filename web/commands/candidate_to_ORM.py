@@ -1,11 +1,11 @@
 # Importing docs”
-# 	•	Write a tiny importer:
-# 	•	reads NDJSON
-# 	•	normalizes → hashes
-# 	•	converts entities → spans (for the candidate format)
-# 	•	validates
-# 	•	INSERT ... ON CONFLICT DO NOTHING/UPDATE
-# 	•	Keep a manifest (timestamp, counts, label set) per import batch.
+# - Write a tiny importer:
+# - reads NDJSON
+# - normalizes → hashes
+# - converts entities → spans (for the candidate format)
+# - validates
+# - INSERT ... ON CONFLICT DO NOTHING/UPDATE
+# - Keep a manifest (timestamp, counts, label set) per import batch.
 
 import json
 from pathlib import Path

@@ -6,6 +6,7 @@ PALETTE = {
     "LOC":    "#a7f3d0",  # teal/green
     "NORP":   "#fde68a",  # yellow
     "EVENT":  "#fca5a5",  # red-ish
+    "UNIT":   "#e9d5ff",  # lavender
 }
 
 def _as_span_dict(s):
