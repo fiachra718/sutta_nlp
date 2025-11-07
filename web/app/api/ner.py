@@ -20,31 +20,18 @@ def _load_nlp_model():
         if name in nlp.pipe_names:
             nlp.remove_pipe(name)
 
-    # add the NORP patterns from disk
-    ruler = nlp.add_pipe(
-        "entity_ruler", 
-        name="norp_head_ruler", 
-        first=True, 
-        config={"overwrite_ents": False}
-    )
-    ruler.from_disk(NORP_PATTERNS) 
+    er = nlp.add_pipe("entity_ruler", name="entity_ruler", config={"overwrite_ents": False})
+    er.from_disk(str(PATTERNS))
 
-    # add the entity rules
-    er = nlp.add_pipe(
-        "entity_ruler",
-        after="ner",
-        config={"overwrite_ents": False}
-    )
-    er.from_disk(str(PATTERNS))  
+    # Add NORP head rules AFTER ner as well, so they don’t run ahead of model
+    ruler = nlp.add_pipe("entity_ruler", name="norp_head_ruler", after="entity_ruler", config={"overwrite_ents": False})
+    ruler.from_disk(NORP_PATTERNS)
 
-    # add the LOC/span patterns
-    sr = nlp.add_pipe(
-        "span_ruler",
-        after="ner",
-        config={"spans_key": "LOC_PHRASES", "overwrite": False}
-    )
-    sr.from_disk(LOC_EVENT_PATTERNS)  # folder; contains a file named 'patterns'
-    
+    # Add span_ruler (LOC/EVENT phrases) AFTER ner too
+    sr = nlp.add_pipe("span_ruler", name="span_ruler", after="norp_head_ruler",
+                      config={"spans_key": "LOC_PHRASES", "overwrite": False})
+    sr.from_disk(LOC_EVENT_PATTERNS)
+
     return nlp
 
 
