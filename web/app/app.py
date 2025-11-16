@@ -2,12 +2,10 @@ from flask import Flask, render_template, abort, request, jsonify
 from .models.models import CandidateDoc, TrainingDoc
 from .api.ner import run_ner
 from .render import render_highlighted
-from flask_restful import Resource, Api
 import json
 from pydantic import ValidationError
 
 app = Flask(__name__)
-api = Api(app)
 
 @app.route("/")
 def home():
