@@ -1,5 +1,7 @@
-import spacy
+import logging
 from pathlib import Path
+
+import spacy
 import unicodedata
 
 # need absolute path here.  Hackish, FIXME
@@ -9,6 +11,8 @@ MODELS_DIR = NE_DATA / "work" / "models" / "1106"
 PATTERNS = NE_DATA / "patterns/entity_ruler"
 LOC_EVENT_PATTERNS = NE_DATA / "patterns" / "span_ruler"
 NORP_PATTERNS = PATTERNS / "ruler_norp.jsonl" 
+
+logger = logging.getLogger("sutta_nlp.web.api")
 
 
 
@@ -48,5 +52,5 @@ def run_ner(intext):
         }
         for ent in doc.ents
     ]
-    print({"text": text, "spans": spans})
+    logger.debug("NER spans=%d text_length=%d", len(spans), len(text))
     return {"text": text, "spans": spans}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NER Predict</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/ner.css') }}">
+</head>
+<body>
+
+  <h1>NER Predict</h1>
+  <p class="meta" id="meta-info">'{{ initial_doc.meta | tojson | safe }}'</p>
+  <p class="status" id="status"></p>
+
+  <form id="random-form" action="{{ url_for('predict_page') }}" method="post">
+    <textarea id="text-input" name="text" placeholder="Paste text to run through the NER model…">{{ (initial_doc.text if initial_doc else "") | e }}</textarea>
+    {% if initial_doc and initial_doc.meta %}
+    <input type="hidden" name="meta" value='{{ initial_doc.meta | tojson | safe }}'>
+    {% endif %}
+    <div class="controls">
+      <button class="primary" type="submit" id="run-btn">Run NER</button>
+      <button type="button" id="reload-btn">Load Another</button>
+    </div>
+  </form>
+
+  <script>
+    document.getElementById("reload-btn")?.addEventListener("click", () => {
+      window.location.reload();
+    });
+  </script>
+
+</body>
+</html>

@@ -8,6 +8,7 @@ import hashlib
 import unicodedata
 import json
 import uuid
+import re
 
 from psycopg.types.json import Json
 
@@ -34,11 +35,93 @@ def _training_row_processor(row):
 Label = Literal["PERSON", "GPE", "LOC", "NORP", "EVENT", "UNIT"]
 
 
+VERSE_COLUMNS = ("identifier", "verse_num", "text", "text_hash")
+QUOTE_CHARS = "\"'“”‘’‹›«»"
+TRAILING_WRAP_CHARS = QUOTE_CHARS + ")]}›»”’"
+SENTENCE_BOUNDARY_CHARS = ".!?;:…—–-"
+TITLECASE_PATTERN = re.compile(r"\b[A-Z][a-z]+(?:[-'][A-Za-z]+)?\b")
+TITLECASE_STOPWORDS = {
+    "and", "or", "but", "nor", "for", "so", "yet",
+    "the", "a", "an", "this", "that", "these", "those",
+    "now", "then", "thus", "therefore", "because", "before", "after",
+    "when", "while", "where", "here", "there", "why", "what", "which", "whose",
+    "once", "with", "without", "within", "upon",
+}
+
+
+def _verse_row_processor(row):
+    text = row.get("text") or ""
+    return {
+        "identifier": row["identifier"],
+        "verse_num": row["verse_num"],
+        "text": text,
+        "text_hash": row.get("text_hash") or md5(text.encode("utf-8")).hexdigest(),
+    }
+
+
+def _clean_verse_text(text: str) -> str:
+    stripped = (text or "").strip()
+    return stripped.strip(QUOTE_CHARS).strip()
+
+
+def _has_internal_titlecase(text: str) -> bool:
+    if not text:
+        return False
+    for match in TITLECASE_PATTERN.finditer(text):
+        start = match.start()
+        word = match.group(0)
+        lower = word.lower()
+        if word.isupper() or lower in TITLECASE_STOPWORDS:
+            continue
+        preceding = text[:start].rstrip()
+        if not preceding:
+            continue
+        preceding = preceding.rstrip(TRAILING_WRAP_CHARS).rstrip()
+        if not preceding:
+            continue
+        last_char = preceding[-1]
+        if last_char in SENTENCE_BOUNDARY_CHARS:
+            continue
+        return True
+    return False
+
+
 class SuttaVerse(BaseModel):
     identifier: str          # e.g., "mn.001.than"
     verse_num: int
     text: str                # NFC normalized; what you render & annotate
     text_hash: str           # md5 of normalized text
+
+    objects: ClassVar[Manager] = Manager(
+        table="verses",
+        columns=VERSE_COLUMNS,
+        row_processor=_verse_row_processor,
+    )
+
+    @classmethod
+    def random_with_titlecase(cls, *, max_attempts: int = 10):
+        for _ in range(max_attempts):
+            row = cls.objects.random_sutta_verse()
+            if not row:
+                break
+
+            text = _clean_verse_text(row.get("verse_text") or "")
+            if not text or not _has_internal_titlecase(text):
+                continue
+
+            verse_num = row.get("verse_num")
+            identifier = row.get("identifier")
+            if verse_num is None or identifier is None:
+                continue
+
+            return cls(
+                identifier=identifier,
+                verse_num=int(verse_num),
+                text=text,
+                text_hash=md5(text.encode("utf-8")).hexdigest(),
+            )
+
+        return None
 
 
 class Span(BaseModel):

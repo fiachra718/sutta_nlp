@@ -3,115 +3,52 @@
 <head>
   <meta charset="utf-8">
   <title>NER Predict</title>
-  <style>
-    :root {
-      --mono: 13px/1.5 Menlo, Consolas, monospace;
-      --border: #d4d4d8;
-      --bg: #f4f4f5;
-    }
-    body {
-      margin: 24px auto;
-      max-width: 900px;
-      padding: 0 16px;
-      font-family: system-ui, -apple-system, Segoe UI, sans-serif;
-    }
-    h1 { margin-bottom: 8px; }
-    form { display: grid; gap: 12px; margin-bottom: 20px; }
-    textarea {
-      width: 100%;
-      min-height: 160px;
-      resize: vertical;
-      font: var(--mono);
-      padding: 10px;
-      border: 1px solid var(--border);
-      border-radius: 6px;
-    }
-    .controls { display: flex; gap: 8px; }
-    button {
-      padding: 8px 14px;
-      border-radius: 6px;
-      border: 1px solid var(--border);
-      background: white;
-      cursor: pointer;
-    }
-    button.primary { background: #e0f2fe; border-color: #bae6fd; }
-    .status { font-size: 13px; color: #6b7280; min-height: 18px; }
-    .panel {
-      margin-top: 20px;
-      padding: 16px;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      background: white;
-    }
-    .panel h2 { margin: 0 0 12px; font-size: 18px; }
-    #preview {
-      font: var(--mono);
-      white-space: pre-wrap;
-      background: var(--bg);
-      border-radius: 6px;
-      padding: 12px;
-      border: 1px solid var(--border);
-      min-height: 120px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font: 12px/1.4 Menlo, Consolas, monospace;
-    }
-    th, td {
-      border: 1px solid var(--border);
-      padding: 6px 8px;
-      text-align: left;
-    }
-    th { background: #fafafa; }
-    pre {
-      font: var(--mono);
-      background: var(--bg);
-      padding: 12px;
-      border-radius: 6px;
-      border: 1px solid var(--border);
-      overflow-x: auto;
-    }
-    .tag {
-      display: inline-block;
-      padding: 0 2px;
-      border-radius: 4px;
-      font-weight: bold;
-    }
-  </style>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/ner.css') }}">
 </head>
 <body>
 
   <h1>NER Predict</h1>
+  <p class="meta" id="meta-info"></p>
   <p class="status" id="status"></p>
 
-  <form id="predict-form">
-    <textarea id="text-input" placeholder="Paste text to run through the NER model…"></textarea>
-    <div class="controls" style="flex-wrap: wrap; gap: 10px; align-items: center;">
-      <button class="primary" type="submit">Run NER</button>
-      <div class="add-selection">
-        <button type="button" id="add-selection-btn">Add selection</button>
+  <textarea id="text-input" placeholder="Paste text to run through the NER model…"></textarea>
+  <div class="controls">
+    <button class="primary" type="button" id="run-btn">Run NER</button>
+    <button type="button" id="random-btn">Random Verse</button>
+    <div class="selection-controls">
+      <button type="button" id="add-selection-btn">Add selection</button>
+      <label>
+        Label
         <select id="add-selection-label"></select>
-      </div>
-      <button type="button" id="clear-btn">Clear</button>
-      <button type="button" id="copy-json-btn">Copy JSON</button>
-      <button type="button" id="save-btn">Save to training</button>
+      </label>
     </div>
-  </form>
+    <button type="button" id="clear-btn">Clear</button>
+    <button type="button" id="copy-btn">Copy JSON</button>
+    <button type="button" id="save-btn">Save to training</button>
+  </div>
 
   <section class="panel">
     <h2>Preview</h2>
-    <div id="preview"></div>
+    <div id="preview">(no text)</div>
   </section>
 
-  <section class="panel" style="display:none;" id="entities-panel">
-    <h2>Entities</h2>
-    <table>
-      <thead>
-        <tr><th>#</th><th>Start</th><th>End</th><th>Label</th><th>Text</th><th></th></tr>
-      </thead>
-      <tbody id="entities-body"></tbody>
-    </table>
+  <section class="panel" id="entities-panel" hidden>
+    <h2>Spans</h2>
+    <div class="table-scroll">
+      <table class="entities-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Start</th>
+            <th>End</th>
+            <th>Label</th>
+            <th>Text</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="entities-body"></tbody>
+      </table>
+    </div>
   </section>
 
   <section class="panel">
@@ -120,112 +57,130 @@
   </section>
 
   <script>
-    const LABELS = ["PERSON", "GPE", "LOC", "NORP", "EVENT", "UNIT"];
-    const COLORS = {
+    const INITIAL = {{ initial_doc | default(None) | tojson | safe }};
+    const LABEL_COLORS = {
       PERSON: "#bfdbfe",
       GPE: "#bbf7d0",
       LOC: "#fef08a",
       NORP: "#fed7aa",
-        EVENT: "#fecdd3",
-        UNIT: "#e9d5ff"
+      EVENT: "#fecdd3",
+      UNIT: "#e9d5ff",
     };
+    const LABELS = Object.keys(LABEL_COLORS);
+    const DEFAULT_LABEL = LABELS[0];
 
-    let currentDoc = { text: "", spans: [] };
-
-    const form = document.getElementById("predict-form");
-    const textInput = document.getElementById("text-input");
-    const previewEl = document.getElementById("preview");
-    const entitiesBody = document.getElementById("entities-body");
-    const entitiesPanel = document.getElementById("entities-panel");
-    const rawJsonEl = document.getElementById("raw-json");
-    const statusEl = document.getElementById("status");
-    const addSelectionLabel = document.getElementById("add-selection-label");
-
-    function populateLabelDropdown(selectEl) {
-      selectEl.innerHTML = LABELS.map(label => `<option value="${label}">${label}</option>`).join("");
+    function clampValue(value, min, max) {
+      return Math.max(min, Math.min(max, value));
     }
 
+    function clamp(value, min, max) {
+      return clampValue(value, min, max);
+    }
+
+    function toValidLabel(value) {
+      const normalized = typeof value === "string" ? value.toUpperCase().trim() : "";
+      return LABELS.includes(normalized) ? normalized : DEFAULT_LABEL;
+    }
+
+    function escapeHTML(value) {
+      return value.replace(/[&<>"']/g, c => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;",
+      }[c]));
+    }
+
+    let currentDoc = {
+      text: "",
+      spans: [],
+      meta: null,
+    };
+
+    const textInput = document.getElementById("text-input");
+    const previewEl = document.getElementById("preview");
+    const statusEl = document.getElementById("status");
+    const metaEl = document.getElementById("meta-info");
+    const rawJsonEl = document.getElementById("raw-json");
+    const entitiesPanel = document.getElementById("entities-panel");
+    const entitiesBody = document.getElementById("entities-body");
+    const addSelectionLabel = document.getElementById("add-selection-label");
+
+    bootstrap();
+
+    document.getElementById("run-btn").addEventListener("click", runNer);
+    document.getElementById("clear-btn").addEventListener("click", () => {
+      textInput.value = "";
+      currentDoc = { text: "", spans: [], meta: null };
+      statusEl.textContent = "";
+      render();
+    });
+    document.getElementById("copy-btn").addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(rawJsonEl.textContent);
+        statusEl.textContent = "Copied JSON.";
+      } catch {
+        statusEl.textContent = "Unable to copy.";
+      }
+    });
+    document.getElementById("save-btn").addEventListener("click", saveDoc);
+    document.getElementById("add-selection-btn").addEventListener("click", addSelectionFromText);
+    textInput.addEventListener("input", () => {
+      currentDoc.text = textInput.value;
+      render();
+    });
     populateLabelDropdown(addSelectionLabel);
 
-    form.addEventListener("submit", async (event) => {
-      event.preventDefault();
+    function bootstrap() {
+      if (INITIAL && typeof INITIAL.text === "string") {
+        currentDoc = {
+          text: INITIAL.text,
+          spans: normalizeSpans(INITIAL.spans, INITIAL.text),
+          meta: INITIAL.meta || null,
+        };
+        textInput.value = INITIAL.text;
+      }
+      render();
+    }
+
+    function populateLabelDropdown(select) {
+      if (!select) return;
+      select.innerHTML = LABELS.map(label => `<option value="${label}">${label}</option>`).join("");
+    }
+
+    async function runNer() {
       const text = textInput.value;
       if (!text.trim()) {
         statusEl.textContent = "Please enter some text.";
         return;
       }
-
       statusEl.textContent = "Running model…";
-
       try {
         const response = await fetch("/predict", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ text })
+          body: JSON.stringify({ text }),
         });
-
         const payload = await response.json();
         if (!response.ok || payload.ok === false) {
-          const message = payload.error || payload.message || "NER request failed.";
-          throw new Error(message);
+          throw new Error(payload.error || payload.message || "NER failed.");
         }
-
         const docText = typeof payload.text === "string" ? payload.text : text;
-        const spans = Array.isArray(payload.spans) ? payload.spans : [];
-
-        const normalizedSpans = spans.map(span => {
-          const start = Number(span.start) || 0;
-          const end = Number(span.end) || 0;
-          const normalizedLabel = String(span.label || "").toUpperCase().trim();
-          const label = LABELS.includes(normalizedLabel) ? normalizedLabel : LABELS[0];
-          return {
-            start,
-            end,
-            label,
-            text: span.text || docText.slice(start, end),
-          };
-        });
-
-        currentDoc = { text: docText, spans: normalizedSpans };
-        textInput.value = currentDoc.text;
-        statusEl.textContent = `Found ${normalizedSpans.length} span${normalizedSpans.length === 1 ? "" : "s"}.`;
+        currentDoc = {
+          text: docText,
+          spans: normalizeSpans(payload.spans, docText),
+          meta: currentDoc.meta,
+        };
+        textInput.value = docText;
+        statusEl.textContent = `Found ${currentDoc.spans.length} span${currentDoc.spans.length === 1 ? "" : "s"}.`;
         render();
       } catch (error) {
         statusEl.textContent = error.message;
       }
-    });
+    }
 
-    document.getElementById("clear-btn").addEventListener("click", () => {
-      textInput.value = "";
-      currentDoc = { text: "", spans: [] };
-      statusEl.textContent = "";
-      render();
-    });
-
-    document.getElementById("copy-json-btn").addEventListener("click", async () => {
-      try {
-        await navigator.clipboard.writeText(rawJsonEl.textContent);
-        statusEl.textContent = "Copied JSON to clipboard.";
-      } catch (error) {
-        statusEl.textContent = "Unable to copy JSON.";
-      }
-    });
-
-    document.getElementById("add-selection-btn").addEventListener("click", () => {
-      const start = textInput.selectionStart ?? 0;
-      const end = textInput.selectionEnd ?? start;
-      if (end < start) {
-        statusEl.textContent = "Selection end is before the start.";
-        return;
-      }
-      currentDoc.text = textInput.value;
-      const chosenLabel = addSelectionLabel.value || LABELS[0];
-      currentDoc.spans.push({ start, end, label: chosenLabel, text: textInput.value.slice(start, end) });
-      statusEl.textContent = "Added span from selection.";
-      render();
-    });
-
-    document.getElementById("save-btn").addEventListener("click", async () => {
+    async function saveDoc() {
       let payload;
       try {
         payload = buildPayload();
@@ -233,155 +188,209 @@
         statusEl.textContent = error.message;
         return;
       }
-      if (!payload) return;
       statusEl.textContent = "Saving…";
       try {
-        const res = await fetch("/api/training", {
+        const response = await fetch("/api/training", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payload)
+          body: JSON.stringify(payload),
         });
-        const data = await res.json();
-        if (!res.ok || data.ok === false) {
-          const msg = data.message || data.error || "Save failed.";
-          throw new Error(msg);
+        const result = await response.json();
+        if (!response.ok || result.ok === false) {
+          throw new Error(result.message || result.error || "Save failed.");
         }
-        statusEl.textContent = data.message || `Saved as ${data.id}.`;
+        statusEl.textContent = result.message || `Saved as ${result.id}.`;
       } catch (error) {
         statusEl.textContent = error.message;
       }
-    });
+    }
 
-    textInput.addEventListener("input", () => {
+    function addSelectionFromText() {
+      const start = textInput.selectionStart ?? 0;
+      const end = textInput.selectionEnd ?? start;
+      if (end < start) {
+        statusEl.textContent = "Selection end cannot be before start.";
+        return;
+      }
+      const chosenLabel = addSelectionLabel?.value ? toValidLabel(addSelectionLabel.value) : DEFAULT_LABEL;
+      const clampedStart = clampValue(start, 0, textInput.value.length);
+      const clampedEnd = clampValue(end, clampedStart, textInput.value.length);
       currentDoc.text = textInput.value;
-      currentDoc.spans = currentDoc.spans.map(span => ({
-        ...span,
-        text: textInput.value.slice(clamp(span.start, 0, textInput.value.length), clamp(span.end, 0, textInput.value.length))
-      }));
+      currentDoc.spans.push({
+        start: clampedStart,
+        end: clampedEnd,
+        label: chosenLabel,
+        text: textInput.value.slice(clampedStart, clampedEnd),
+      });
+      statusEl.textContent = "Added span from selection.";
       render();
-    });
+    }
+
+    function normalizeSpans(spans, text) {
+      if (!Array.isArray(spans)) {
+        return [];
+      }
+      return spans.map(span => {
+        const start = clampValue(Number(span.start) || 0, 0, text.length);
+        const end = clampValue(Number(span.end) || start, start, text.length);
+        const label = toValidLabel(span.label);
+        const snippet = span.text || text.slice(start, end);
+        return { start, end, label, text: snippet };
+      });
+    }
 
     function render() {
       currentDoc.text = textInput.value;
+      syncSpanTexts();
       renderPreview();
+      renderMeta();
       renderEntities();
       rawJsonEl.textContent = JSON.stringify(currentDoc, null, 2);
     }
 
     function renderPreview() {
-      const { text, spans } = currentDoc;
+      const text = currentDoc.text || "";
       if (!text) {
         previewEl.textContent = "(no text)";
         return;
       }
-
-      const ordered = [...spans].sort((a, b) => a.start - b.start || a.end - b.end);
-      let result = "";
+      const spans = [...currentDoc.spans].sort((a, b) => a.start - b.start || a.end - b.end);
       let cursor = 0;
-
-      for (const span of ordered) {
-        const start = clamp(span.start, 0, text.length);
-        const end = clamp(span.end, 0, text.length);
+      let html = "";
+      spans.forEach(span => {
+        const start = clampValue(span.start, 0, text.length);
+        const end = clampValue(span.end, start, text.length);
         if (start > cursor) {
-          result += escapeHTML(text.slice(cursor, start));
+          html += escapeHTML(text.slice(cursor, start));
         }
-        const highlight = escapeHTML(text.slice(start, end));
-        const color = COLORS[span.label] || "#e5e5e5";
-        result += `<span class="tag" style="background:${color}">${highlight}<small style="margin-left:4px;">${span.label}</small></span>`;
+        const snippet = escapeHTML(text.slice(start, end));
+        const color = LABEL_COLORS[span.label] || "#e5e5e5";
+        html += `<span class="tag" style="background:${color}">${snippet} <small>${span.label}</small></span>`;
         cursor = end;
-      }
-
+      });
       if (cursor < text.length) {
-        result += escapeHTML(text.slice(cursor));
+        html += escapeHTML(text.slice(cursor));
       }
+      previewEl.innerHTML = html;
+    }
 
-      previewEl.innerHTML = result;
+    function renderMeta() {
+      if (!currentDoc.meta) {
+        metaEl.textContent = "";
+        return;
+      }
+      const parts = [];
+      if (currentDoc.meta.identifier) {
+        parts.push(currentDoc.meta.identifier);
+      }
+      if (currentDoc.meta.verse_num !== undefined) {
+        parts.push(`v.${currentDoc.meta.verse_num}`);
+      }
+      metaEl.textContent = parts.join(" — ");
     }
 
     function renderEntities() {
       const spans = currentDoc.spans;
-      entitiesBody.innerHTML = "";
       if (!spans.length) {
-        entitiesPanel.style.display = "none";
+        entitiesBody.innerHTML = "";
+        entitiesPanel.hidden = true;
         return;
       }
 
-      const ordered = currentDoc.spans
+      const ordered = spans
         .map((span, originalIndex) => ({ span, originalIndex }))
         .sort((a, b) => a.span.start - b.span.start || a.span.end - b.span.end);
 
-      ordered.forEach(({ span, originalIndex }, displayIndex) => {
-          const row = document.createElement("tr");
-          const clampedStart = clamp(span.start, 0, currentDoc.text.length);
-          const clampedEnd = clamp(span.end, 0, currentDoc.text.length);
-          const displayText = currentDoc.text.slice(clampedStart, clampedEnd);
-          row.innerHTML = `
+      entitiesBody.innerHTML = ordered.map(({ span, originalIndex }, displayIndex) => {
+        const displayStart = clampValue(span.start, 0, currentDoc.text.length);
+        const displayEnd = clampValue(span.end, displayStart, currentDoc.text.length);
+        const displayText = currentDoc.text.slice(displayStart, displayEnd);
+        return `
+          <tr>
             <td>${displayIndex + 1}</td>
-            <td><input type="number" min="0" value="${span.start}" data-idx="${originalIndex}" data-k="start"></td>
-            <td><input type="number" min="0" value="${span.end}" data-idx="${originalIndex}" data-k="end"></td>
+            <td><input type="number" min="0" value="${span.start}" data-idx="${originalIndex}" data-field="start"></td>
+            <td><input type="number" min="0" value="${span.end}" data-idx="${originalIndex}" data-field="end"></td>
             <td>
-              <select data-idx="${originalIndex}" data-k="label">
+              <select data-idx="${originalIndex}" data-field="label">
                 ${LABELS.map(label => `<option value="${label}" ${label === span.label ? "selected" : ""}>${label}</option>`).join("")}
               </select>
             </td>
             <td>${escapeHTML(displayText)}</td>
             <td><button type="button" data-idx="${originalIndex}" data-action="delete">Delete</button></td>
-          `;
-          entitiesBody.appendChild(row);
-        });
+          </tr>
+        `;
+      }).join("");
 
       entitiesBody.querySelectorAll("input").forEach(input => {
-        input.addEventListener("change", (event) => {
+        input.addEventListener("change", event => {
           const idx = Number(event.target.dataset.idx);
-          const key = event.target.dataset.k;
+          const key = event.target.dataset.field;
           const value = Number(event.target.value);
-          if (!Number.isFinite(value)) return;
+          if (!Number.isFinite(idx) || !key) {
+            return;
+          }
+          if (!Number.isFinite(value)) {
+            statusEl.textContent = "Offsets must be numeric.";
+            return;
+          }
           currentDoc.spans[idx][key] = value;
-          currentDoc.spans[idx].text = currentDoc.text.slice(
-            clamp(currentDoc.spans[idx].start, 0, currentDoc.text.length),
-            clamp(currentDoc.spans[idx].end, 0, currentDoc.text.length)
-          );
           render();
         });
       });
 
       entitiesBody.querySelectorAll("select").forEach(select => {
-        select.addEventListener("change", (event) => {
+        select.addEventListener("change", event => {
           const idx = Number(event.target.dataset.idx);
-          currentDoc.spans[idx].label = event.target.value;
+          const key = event.target.dataset.field;
+          if (!key) {
+            return;
+          }
+          currentDoc.spans[idx][key] = toValidLabel(event.target.value);
           render();
         });
       });
 
-      entitiesBody.querySelectorAll("button[data-action='delete']").forEach(btn => {
-        btn.addEventListener("click", (event) => {
+      entitiesBody.querySelectorAll("button[data-action='delete']").forEach(button => {
+        button.addEventListener("click", event => {
           const idx = Number(event.target.dataset.idx);
+          if (!Number.isFinite(idx)) {
+            return;
+          }
           currentDoc.spans.splice(idx, 1);
           statusEl.textContent = "Removed span.";
           render();
         });
       });
 
-      entitiesPanel.style.display = "";
+      entitiesPanel.hidden = false;
     }
 
-    const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
-    const escapeHTML = (value) => value.replace(/[&<>"']/g, c => ({
-      "&": "&amp;",
-      "<": "&lt;",
-      ">": "&gt;",
-      '"': "&quot;",
-      "'": "&#39;"
-    }[c]));
+    function syncSpanTexts() {
+      currentDoc.spans = currentDoc.spans.map(span => {
+        const start = Number(span.start);
+        const end = Number(span.end);
+        const safeStart = Number.isFinite(start) ? start : 0;
+        const safeEnd = Number.isFinite(end) ? end : safeStart;
+        const label = toValidLabel(span.label);
+        const displayStart = clampValue(safeStart, 0, currentDoc.text.length);
+        const displayEnd = clampValue(safeEnd, displayStart, currentDoc.text.length);
+        return {
+          ...span,
+          start: safeStart,
+          end: safeEnd,
+          label,
+          text: currentDoc.text.slice(displayStart, displayEnd),
+        };
+      });
+    }
 
     function buildPayload() {
       currentDoc.text = textInput.value;
       const text = currentDoc.text;
       if (!text.trim()) {
-        statusEl.textContent = "Nothing to save.";
-        return null;
+        throw new Error("Nothing to save.");
       }
-      const normalized = currentDoc.spans.map((span, idx) => {
+      const spans = currentDoc.spans.map((span, idx) => {
         const start = Number(span.start);
         const end = Number(span.end);
         if (!Number.isFinite(start) || !Number.isFinite(end)) {
@@ -396,15 +405,14 @@
         if (end > text.length) {
           throw new Error(`Span ${idx + 1} extends past the text.`);
         }
-        if (!span.label) {
-          throw new Error(`Span ${idx + 1} is missing a label.`);
-        }
-        return { start, end, label: span.label };
+        return { start, end, label: toValidLabel(span.label) };
       });
-      return { text, spans: normalized };
+      return { text, spans };
     }
 
-    render();
+    document.getElementById("random-btn")?.addEventListener("click", () => {
+      window.location.href = "{{ url_for('random_verse') }}";
+    });
   </script>
 </body>
 </html>

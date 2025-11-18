@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NER Predict</title>
+  <style>
+    :root {
+      --mono: 13px/1.5 Menlo, Consolas, monospace;
+      --border: #d4d4d8;
+      --bg: #f4f4f5;
+    }
+    body {
+      margin: 24px auto;
+      max-width: 900px;
+      padding: 0 16px;
+      font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+    }
+    h1 { margin-bottom: 8px; }
+    form { display: grid; gap: 12px; margin-bottom: 20px; }
+    textarea {
+      width: 100%;
+      min-height: 160px;
+      resize: vertical;
+      font: var(--mono);
+      padding: 10px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+    }
+    .controls { display: flex; gap: 8px; }
+    button {
+      padding: 8px 14px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: white;
+      cursor: pointer;
+    }
+    button.primary { background: #e0f2fe; border-color: #bae6fd; }
+    .status { font-size: 13px; color: #6b7280; min-height: 18px; }
+    .panel {
+      margin-top: 20px;
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: white;
+    }
+    .panel h2 { margin: 0 0 12px; font-size: 18px; }
+    #preview {
+      font: var(--mono);
+      white-space: pre-wrap;
+      background: var(--bg);
+      border-radius: 6px;
+      padding: 12px;
+      border: 1px solid var(--border);
+      min-height: 120px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font: 12px/1.4 Menlo, Consolas, monospace;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 6px 8px;
+      text-align: left;
+    }
+    th { background: #fafafa; }
+    pre {
+      font: var(--mono);
+      background: var(--bg);
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      overflow-x: auto;
+    }
+    .tag {
+      display: inline-block;
+      padding: 0 2px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>NER Predict</h1>
+  <p class="status" id="status"></p>
+
+  <form id="predict-form">
+    <textarea id="text-input" placeholder="Paste text to run through the NER model…"></textarea>
+    <div class="controls" style="flex-wrap: wrap; gap: 10px; align-items: center;">
+      <button class="primary" type="submit">Run NER</button>
+      <div class="add-selection">
+        <button type="button" id="add-selection-btn">Add selection</button>
+        <select id="add-selection-label"></select>
+      </div>
+      <button type="button" id="clear-btn">Clear</button>
+      <button type="button" id="copy-json-btn">Copy JSON</button>
+      <button type="button" id="save-btn">Save to training</button>
+    </div>
+  </form>
+
+  <section class="panel">
+    <h2>Preview</h2>
+    <div id="preview"></div>
+  </section>
+
+  <section class="panel" style="display:none;" id="entities-panel">
+    <h2>Entities</h2>
+    <table>
+      <thead>
+        <tr><th>#</th><th>Start</th><th>End</th><th>Label</th><th>Text</th><th></th></tr>
+      </thead>
+      <tbody id="entities-body"></tbody>
+    </table>
+  </section>
+
+  <section class="panel">
+    <h2>Raw Output</h2>
+    <pre id="raw-json">{}</pre>
+  </section>
+
+  <script>
+    const LABELS = ["PERSON", "GPE", "LOC", "NORP", "EVENT", "UNIT"];
+    const COLORS = {
+      PERSON: "#bfdbfe",
+      GPE: "#bbf7d0",
+      LOC: "#fef08a",
+      NORP: "#fed7aa",
+        EVENT: "#fecdd3",
+        UNIT: "#e9d5ff"
+    };
+
+    let currentDoc = { text: "", spans: [] };
+
+    const form = document.getElementById("predict-form");
+    const textInput = document.getElementById("text-input");
+    const previewEl = document.getElementById("preview");
+    const entitiesBody = document.getElementById("entities-body");
+    const entitiesPanel = document.getElementById("entities-panel");
+    const rawJsonEl = document.getElementById("raw-json");
+    const statusEl = document.getElementById("status");
+    const addSelectionLabel = document.getElementById("add-selection-label");
+
+    function populateLabelDropdown(selectEl) {
+      selectEl.innerHTML = LABELS.map(label => `<option value="${label}">${label}</option>`).join("");
+    }
+
+    populateLabelDropdown(addSelectionLabel);
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const text = textInput.value;
+      if (!text.trim()) {
+        statusEl.textContent = "Please enter some text.";
+        return;
+      }
+
+      statusEl.textContent = "Running model…";
+
+      try {
+        const response = await fetch("/predict", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ text })
+        });
+
+        const payload = await response.json();
+        if (!response.ok || payload.ok === false) {
+          const message = payload.error || payload.message || "NER request failed.";
+          throw new Error(message);
+        }
+
+        const docText = typeof payload.text === "string" ? payload.text : text;
+        const spans = Array.isArray(payload.spans) ? payload.spans : [];
+
+        const normalizedSpans = spans.map(span => {
+          const start = Number(span.start) || 0;
+          const end = Number(span.end) || 0;
+          const normalizedLabel = String(span.label || "").toUpperCase().trim();
+          const label = LABELS.includes(normalizedLabel) ? normalizedLabel : LABELS[0];
+          return {
+            start,
+            end,
+            label,
+            text: span.text || docText.slice(start, end),
+          };
+        });
+
+        currentDoc = { text: docText, spans: normalizedSpans };
+        textInput.value = currentDoc.text;
+        statusEl.textContent = `Found ${normalizedSpans.length} span${normalizedSpans.length === 1 ? "" : "s"}.`;
+        render();
+      } catch (error) {
+        statusEl.textContent = error.message;
+      }
+    });
+
+    document.getElementById("clear-btn").addEventListener("click", () => {
+      textInput.value = "";
+      currentDoc = { text: "", spans: [] };
+      statusEl.textContent = "";
+      render();
+    });
+
+    document.getElementById("copy-json-btn").addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(rawJsonEl.textContent);
+        statusEl.textContent = "Copied JSON to clipboard.";
+      } catch (error) {
+        statusEl.textContent = "Unable to copy JSON.";
+      }
+    });
+
+    document.getElementById("add-selection-btn").addEventListener("click", () => {
+      const start = textInput.selectionStart ?? 0;
+      const end = textInput.selectionEnd ?? start;
+      if (end < start) {
+        statusEl.textContent = "Selection end is before the start.";
+        return;
+      }
+      currentDoc.text = textInput.value;
+      const chosenLabel = addSelectionLabel.value || LABELS[0];
+      currentDoc.spans.push({ start, end, label: chosenLabel, text: textInput.value.slice(start, end) });
+      statusEl.textContent = "Added span from selection.";
+      render();
+    });
+
+    document.getElementById("save-btn").addEventListener("click", async () => {
+      let payload;
+      try {
+        payload = buildPayload();
+      } catch (error) {
+        statusEl.textContent = error.message;
+        return;
+      }
+      if (!payload) return;
+      statusEl.textContent = "Saving…";
+      try {
+        const res = await fetch("/api/training", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+        if (!res.ok || data.ok === false) {
+          const msg = data.message || data.error || "Save failed.";
+          throw new Error(msg);
+        }
+        statusEl.textContent = data.message || `Saved as ${data.id}.`;
+      } catch (error) {
+        statusEl.textContent = error.message;
+      }
+    });
+
+    textInput.addEventListener("input", () => {
+      currentDoc.text = textInput.value;
+      currentDoc.spans = currentDoc.spans.map(span => ({
+        ...span,
+        text: textInput.value.slice(clamp(span.start, 0, textInput.value.length), clamp(span.end, 0, textInput.value.length))
+      }));
+      render();
+    });
+
+    function render() {
+      currentDoc.text = textInput.value;
+      renderPreview();
+      renderEntities();
+      rawJsonEl.textContent = JSON.stringify(currentDoc, null, 2);
+    }
+
+    function renderPreview() {
+      const { text, spans } = currentDoc;
+      if (!text) {
+        previewEl.textContent = "(no text)";
+        return;
+      }
+
+      const ordered = [...spans].sort((a, b) => a.start - b.start || a.end - b.end);
+      let result = "";
+      let cursor = 0;
+
+      for (const span of ordered) {
+        const start = clamp(span.start, 0, text.length);
+        const end = clamp(span.end, 0, text.length);
+        if (start > cursor) {
+          result += escapeHTML(text.slice(cursor, start));
+        }
+        const highlight = escapeHTML(text.slice(start, end));
+        const color = COLORS[span.label] || "#e5e5e5";
+        result += `<span class="tag" style="background:${color}">${highlight}<small style="margin-left:4px;">${span.label}</small></span>`;
+        cursor = end;
+      }
+
+      if (cursor < text.length) {
+        result += escapeHTML(text.slice(cursor));
+      }
+
+      previewEl.innerHTML = result;
+    }
+
+    function renderEntities() {
+      const spans = currentDoc.spans;
+      entitiesBody.innerHTML = "";
+      if (!spans.length) {
+        entitiesPanel.style.display = "none";
+        return;
+      }
+
+      const ordered = currentDoc.spans
+        .map((span, originalIndex) => ({ span, originalIndex }))
+        .sort((a, b) => a.span.start - b.span.start || a.span.end - b.span.end);
+
+      ordered.forEach(({ span, originalIndex }, displayIndex) => {
+          const row = document.createElement("tr");
+          const clampedStart = clamp(span.start, 0, currentDoc.text.length);
+          const clampedEnd = clamp(span.end, 0, currentDoc.text.length);
+          const displayText = currentDoc.text.slice(clampedStart, clampedEnd);
+          row.innerHTML = `
+            <td>${displayIndex + 1}</td>
+            <td><input type="number" min="0" value="${span.start}" data-idx="${originalIndex}" data-k="start"></td>
+            <td><input type="number" min="0" value="${span.end}" data-idx="${originalIndex}" data-k="end"></td>
+            <td>
+              <select data-idx="${originalIndex}" data-k="label">
+                ${LABELS.map(label => `<option value="${label}" ${label === span.label ? "selected" : ""}>${label}</option>`).join("")}
+              </select>
+            </td>
+            <td>${escapeHTML(displayText)}</td>
+            <td><button type="button" data-idx="${originalIndex}" data-action="delete">Delete</button></td>
+          `;
+          entitiesBody.appendChild(row);
+        });
+
+      entitiesBody.querySelectorAll("input").forEach(input => {
+        input.addEventListener("change", (event) => {
+          const idx = Number(event.target.dataset.idx);
+          const key = event.target.dataset.k;
+          const value = Number(event.target.value);
+          if (!Number.isFinite(value)) return;
+          currentDoc.spans[idx][key] = value;
+          currentDoc.spans[idx].text = currentDoc.text.slice(
+            clamp(currentDoc.spans[idx].start, 0, currentDoc.text.length),
+            clamp(currentDoc.spans[idx].end, 0, currentDoc.text.length)
+          );
+          render();
+        });
+      });
+
+      entitiesBody.querySelectorAll("select").forEach(select => {
+        select.addEventListener("change", (event) => {
+          const idx = Number(event.target.dataset.idx);
+          currentDoc.spans[idx].label = event.target.value;
+          render();
+        });
+      });
+
+      entitiesBody.querySelectorAll("button[data-action='delete']").forEach(btn => {
+        btn.addEventListener("click", (event) => {
+          const idx = Number(event.target.dataset.idx);
+          currentDoc.spans.splice(idx, 1);
+          statusEl.textContent = "Removed span.";
+          render();
+        });
+      });
+
+      entitiesPanel.style.display = "";
+    }
+
+    const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
+    const escapeHTML = (value) => value.replace(/[&<>"']/g, c => ({
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;",
+      "'": "&#39;"
+    }[c]));
+
+    function buildPayload() {
+      currentDoc.text = textInput.value;
+      const text = currentDoc.text;
+      if (!text.trim()) {
+        statusEl.textContent = "Nothing to save.";
+        return null;
+      }
+      const normalized = currentDoc.spans.map((span, idx) => {
+        const start = Number(span.start);
+        const end = Number(span.end);
+        if (!Number.isFinite(start) || !Number.isFinite(end)) {
+          throw new Error(`Span ${idx + 1} has invalid offsets.`);
+        }
+        if (start < 0) {
+          throw new Error(`Span ${idx + 1} has a negative start.`);
+        }
+        if (end < start) {
+          throw new Error(`Span ${idx + 1} has end < start.`);
+        }
+        if (end > text.length) {
+          throw new Error(`Span ${idx + 1} extends past the text.`);
+        }
+        if (!span.label) {
+          throw new Error(`Span ${idx + 1} is missing a label.`);
+        }
+        return { start, end, label: span.label };
+      });
+      return { text, spans: normalized };
+    }
+
+    render();
+  </script>
+</body>
+</html>

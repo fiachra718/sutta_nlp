@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Training Doc {{ doc.id }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/ner.css') }}">
+  <style>
+    body { max-width: 960px; margin: 24px auto; padding: 0 16px; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    header { display: flex; flex-direction: column; gap: 4px; margin-bottom: 16px; }
+    .meta { color: #555; font-size: 0.95rem; }
+    .grid { display: flex; flex-direction: column; gap: 16px; }
+    .panel { border: 1px solid #e5e7eb; border-radius: 8px; background: #fff; display: flex; flex-direction: column; }
+    .panel h2 { margin: 0; padding: 12px 16px; border-bottom: 1px solid #e5e7eb; font-size: 1rem; }
+    .panel .body { padding: 16px; }
+    pre.json { font: 13px/1.5 Menlo, Consolas, monospace; max-height: 60vh; overflow: auto; }
+    .viewer { font: 15px/1.6 Georgia, serif; white-space: pre-wrap; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    th, td { padding: 6px 8px; border-bottom: 1px solid #e5e7eb; text-align: left; }
+    th { background: #f9fafb; }
+    .tag { padding: 0 4px; border-radius: 4px; background: #e5e7eb; }
+    .toolbar { display: flex; justify-content: flex-end; padding: 12px 16px 0; }
+    .toolbar button { padding: 6px 10px; border: 1px solid #d1d5db; border-radius: 6px; background: #f8fafc; cursor: pointer; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Training Doc {{ doc.id }}</h1>
+    <p class="meta">
+      Source: {{ doc.source or "manual" }}
+      {% if doc.from_file %} · File: {{ doc.from_file }}{% endif %}
+      {% if doc.created_at %} · Created: {{ doc.created_at }}{% endif %}
+    </p>
+  </header>
+
+  <div class="grid">
+    <div class="panel">
+      <h2>Highlighted Text</h2>
+      <div class="body viewer">{{ html | safe }}</div>
+    </div>
+
+    <div class="panel">
+      <div class="toolbar">
+        <button type="button" id="copy-json">Copy JSON</button>
+      </div>
+      <div class="body">
+        <pre id="json" class="json">{{ raw_json }}</pre>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel" style="margin-top:16px;">
+    <h2>Spans ({{ spans|length }})</h2>
+    <div class="body">
+      {% if spans %}
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Start</th>
+            <th>End</th>
+            <th>Label</th>
+            <th>Text</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for span in spans %}
+          <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ span.start }}</td>
+            <td>{{ span.end }}</td>
+            <td><span class="tag">{{ span.label }}</span></td>
+            <td>{{ span.text }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% else %}
+      <p>No spans.</p>
+      {% endif %}
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("copy-json")?.addEventListener("click", () => {
+      const el = document.getElementById("json");
+      navigator.clipboard.writeText(el.textContent || "").then(() => {
+        const btn = document.getElementById("copy-json");
+        const original = btn.textContent;
+        btn.textContent = "Copied";
+        setTimeout(() => btn.textContent = original, 1000);
+      });
+    });
+  </script>
+</body>
+</html>

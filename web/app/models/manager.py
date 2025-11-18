@@ -5,6 +5,19 @@ from typing import Iterable
 
 from ..db import db
 
+RANDOM_SUTTA_VERSE_SQL = """
+    SELECT
+        s.identifier,
+        s.nikaya,
+        COALESCE(s.vagga, '') AS vagga,
+        ordinality - 1 AS verse_num,
+        verse_elem->>'text' AS verse_text
+    FROM ati_suttas AS s
+    CROSS JOIN LATERAL jsonb_array_elements(s.verses) WITH ORDINALITY AS t(verse_elem, ordinality)
+    WHERE s.doc_type = 'sutta'
+    ORDER BY random()
+    LIMIT 1;
+"""
 
 class _BoundManager:
     def __init__(
@@ -45,6 +58,9 @@ class _BoundManager:
         sql = self._select_sql() + " ORDER BY gen_random_uuid() LIMIT %(n)s"
         rows = db.fetch_all(sql, {"n": n}, dsn=self.dsn)
         return [self.model(**self.row_processor(row)) for row in rows]
+
+    def random_sutta_verse(self):
+        return db.fetch_one(RANDOM_SUTTA_VERSE_SQL, dsn=self.dsn)
 
     def get(self, id_value):
         sql = self._select_sql() + f" WHERE {self.id_column} = %(id)s"

@@ -1,7 +1,6 @@
 # app/db/db.py
 from __future__ import annotations
 
-from functools import lru_cache
 from importlib import import_module
 from typing import Any, Dict, Iterable
 
@@ -10,7 +9,6 @@ from psycopg.errors import UniqueViolation
 from psycopg.rows import dict_row
 
 
-@lru_cache(maxsize=1)
 def default_dsn() -> str:
     """
     Resolve the database connection string from local settings.
@@ -53,7 +51,10 @@ def default_dsn() -> str:
         if value:
             parts.append(f"{conn_key}={value}")
 
-    return " ".join(parts)
+    conninfo = " ".join(parts).strip()
+    if conninfo:
+        return conninfo
+    return "dbname=tipitaka user=alee"
 
 
 def connect(dsn: str | None = None):
