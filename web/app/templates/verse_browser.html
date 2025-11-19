@@ -4,28 +4,14 @@
   <meta charset="utf-8">
   <title>Verse Browser</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/ner.css') }}">
-  <style>
-    body { max-width: 1100px; margin: 24px auto; padding: 0 16px; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
-    h1 { margin-bottom: 1rem; }
-    form.filters { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 20px; }
-    form.filters label { display: flex; flex-direction: column; font-size: 0.9rem; gap: 4px; }
-    form.filters select,
-    form.filters input { border: 1px solid #d1d5db; border-radius: 6px; padding: 6px 8px; font-size: 0.95rem; }
-    form.filters .actions { grid-column: 1 / -1; display: flex; gap: 8px; }
-    button.primary { background: #1d4ed8; color: #fff; border: none; border-radius: 6px; padding: 8px 14px; cursor: pointer; }
-    table { width: 100%; border-collapse: collapse; }
-    th, td { font-size: 0.9rem; text-align: left; padding: 8px; border-bottom: 1px solid #e5e7eb; vertical-align: top; }
-    th { background: #f9fafb; }
-    .meta { color: #475569; font-size: 0.85rem; }
-    .text-snippet { white-space: pre-wrap; }
-  </style>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/verse_browser.css') }}">
 </head>
-<body>
+<body class="verse-browser">
   <h1>Browse Verses</h1>
-  <form class="filters" method="get">
+  <form class="filters" method="get" id="verse-filter-form">
     <label>
       Nikaya
-      <select name="nikaya">
+      <select name="nikaya" id="filter-nikaya">
         <option value="">Any</option>
         {% for item in facets.nikayas %}
         <option value="{{ item }}" {% if filters.nikaya == item %}selected{% endif %}>{{ item }}</option>
@@ -34,7 +20,7 @@
     </label>
     <label>
       Book Number
-      <select name="book_number">
+      <select name="book_number" id="filter-book">
         <option value="">Any</option>
         {% for item in facets.book_numbers %}
         <option value="{{ item }}" {% if filters.book_number == item %}selected{% endif %}>{{ item }}</option>
@@ -43,7 +29,7 @@
     </label>
     <label>
       Vagga
-      <select name="vagga">
+      <select name="vagga" id="filter-vagga">
         <option value="">Any</option>
         {% for item in facets.vaggas %}
         <option value="{{ item }}" {% if filters.vagga == item %}selected{% endif %}>{{ item }}</option>
@@ -102,5 +88,101 @@
       <p>No verses found for this filter set.</p>
     {% endif %}
   </section>
+  <script>
+    (function() {
+      const INITIAL_FILTERS = {{ filters | tojson | safe }};
+      const nikayaSelect = document.getElementById("filter-nikaya");
+      const bookSelect = document.getElementById("filter-book");
+      const vaggaSelect = document.getElementById("filter-vagga");
+
+      function setEnabled(control, enabled) {
+        if (!control) return;
+        control.disabled = !enabled;
+        if (!enabled) {
+          control.value = "";
+        }
+      }
+
+      function populateSelect(select, values, preferred) {
+        if (!select) return;
+        const normalized = Array.isArray(values) ? values.map(String) : [];
+        const previous = select.value;
+        const options = ['<option value="">Any</option>'].concat(
+          normalized.map(val => `<option value="${val}">${val}</option>`)
+        );
+        select.innerHTML = options.join("");
+        let target = "";
+        if (preferred && normalized.includes(preferred)) {
+          target = preferred;
+        } else if (normalized.includes(previous)) {
+          target = previous;
+        }
+        select.value = target;
+      }
+
+      async function refreshFacetOptions() {
+        const nikaya = (nikayaSelect?.value || "").trim();
+        if (!nikaya) {
+          populateSelect(bookSelect, [], "");
+          populateSelect(vaggaSelect, [], "");
+          return;
+        }
+        const params = new URLSearchParams({ nikaya });
+        const bookValue = (bookSelect?.value || "").trim();
+        if (bookValue) {
+          params.append("book_number", bookValue);
+        }
+        try {
+          const response = await fetch(`/api/verses/facets?${params.toString()}`);
+          const payload = await response.json();
+          populateSelect(bookSelect, payload.book_numbers || [], bookValue || INITIAL_FILTERS.book_number);
+          const currentBook = (bookSelect?.value || "").trim();
+          const vaggaPref = (vaggaSelect?.value || "").trim() || INITIAL_FILTERS.vagga;
+          populateSelect(
+            vaggaSelect,
+            payload.vaggas || [],
+            currentBook ? vaggaPref : ""
+          );
+        } catch (error) {
+          console.error("Unable to load facets", error);
+          populateSelect(bookSelect, [], "");
+          populateSelect(vaggaSelect, [], "");
+        }
+      }
+
+      function syncControls() {
+        const value = (nikayaSelect?.value || "").trim().toUpperCase();
+        if (!value) {
+          setEnabled(bookSelect, false);
+          setEnabled(vaggaSelect, false);
+          populateSelect(bookSelect, [], "");
+          populateSelect(vaggaSelect, [], "");
+          return;
+        }
+        if (value === "DN" || value === "MN") {
+          setEnabled(bookSelect, true);
+          setEnabled(vaggaSelect, false);
+        } else if (value === "SN" || value === "AN" || value === "KN") {
+          setEnabled(bookSelect, true);
+          setEnabled(vaggaSelect, true);
+        } else {
+          setEnabled(bookSelect, false);
+          setEnabled(vaggaSelect, false);
+        }
+        refreshFacetOptions();
+      }
+
+      nikayaSelect?.addEventListener("change", () => {
+        bookSelect.value = "";
+        vaggaSelect.value = "";
+        syncControls();
+      });
+      bookSelect?.addEventListener("change", () => {
+        refreshFacetOptions();
+      });
+
+      syncControls();
+    })();
+  </script>
 </body>
 </html>

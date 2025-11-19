@@ -3,11 +3,41 @@ from __future__ import annotations
 
 from importlib import import_module
 from typing import Any, Dict, Iterable
+import re
 
 import psycopg
 from psycopg.errors import UniqueViolation
 from psycopg.rows import dict_row
 from psycopg.types.json import Json
+
+NUMERIC_NIKAYAS = {"DN", "MN", "SN", "AN"}
+CANONICAL_BOOKS = {
+    "DN": [str(i) for i in range(1, 33)],
+    "MN": [str(i) for i in range(1, 153)],
+    "AN": [str(i) for i in range(1, 12)],
+    "SN": [str(i) for i in range(1, 57)],
+}
+CANONICAL_SN_VAGGAS = [str(i) for i in range(1, 57)]
+
+
+def _first_number(value: str | None):
+    if not value:
+        return None
+    match = re.search(r"\d+", value)
+    return int(match.group(0)) if match else None
+
+
+def _numeric_sort_key(value: str):
+    first = _first_number(value)
+    if first is None:
+        return (float("inf"), value)
+    return (first, value.lower())
+
+
+def _matches_numeric(value: str | None, target: str | None):
+    if value is None or target is None:
+        return False
+    return str(_first_number(value)) == str(target)
 
 VERSE_LOOKUP_SQL = """
     SELECT s.identifier,
@@ -71,14 +101,36 @@ def fetch_sutta_verse(identifier, verse_num, *, dsn=None):
 
 
 def search_sutta_verses(*, nikaya=None, book_number=None, vagga=None, verse_num=None, limit=50, dsn=None):
+    clean_book = (book_number or "").strip() or None
+    clean_vagga = (vagga or "").strip() or None
+
     params = {
         "nikaya": nikaya,
-        "book_number": book_number,
-        "vagga": vagga if vagga not in (None, "") else None,
+        "book_number": clean_book,
+        "vagga": clean_vagga,
         "verse_num": verse_num,
         "limit": max(1, min(int(limit), 500)),
     }
-    return fetch_all(VERSE_SEARCH_SQL, params, dsn=dsn)
+    numeric = nikaya and nikaya.upper() in NUMERIC_NIKAYAS
+    book_filter = str(clean_book) if (clean_book and numeric) else None
+    vagga_filter = str(clean_vagga) if (clean_vagga and numeric and nikaya.upper() in {"AN", "SN"}) else None
+
+    sql = VERSE_SEARCH_SQL
+    if numeric and book_filter:
+        sql = sql.replace("AND (CAST(%(book_number)s AS text) IS NULL OR s.book_number = %(book_number)s)", "")
+        params["book_number"] = None
+    if numeric and vagga_filter:
+        sql = sql.replace("AND (CAST(%(vagga)s AS text) IS NULL OR COALESCE(s.vagga, '') = %(vagga)s)", "")
+        params["vagga"] = None
+
+    rows = fetch_all(sql, params, dsn=dsn)
+
+    if book_filter:
+        rows = [row for row in rows if _matches_numeric(row.get("book_number"), book_filter)]
+    if vagga_filter:
+        rows = [row for row in rows if _matches_numeric(row.get("vagga"), vagga_filter)]
+
+    return rows
 
 
 def list_nikayas(*, dsn=None):
@@ -89,20 +141,50 @@ def list_nikayas(*, dsn=None):
     return [row["nikaya"] for row in rows if row.get("nikaya")]
 
 
-def list_book_numbers(*, dsn=None):
-    rows = fetch_all(
-        "SELECT DISTINCT book_number FROM ati_suttas WHERE book_number IS NOT NULL ORDER BY book_number",
-        dsn=dsn,
-    )
-    return [row["book_number"] for row in rows if row.get("book_number")]
+def list_book_numbers(*, nikaya=None, dsn=None):
+    if not nikaya:
+        return []
+    upper = nikaya.upper()
+    if upper in CANONICAL_BOOKS:
+        return CANONICAL_BOOKS[upper]
+
+    where = ["book_number IS NOT NULL", "book_number <> ''", "nikaya = %(nikaya)s"]
+    params: Dict[str, Any] = {"nikaya": nikaya}
+    sql = "SELECT DISTINCT book_number FROM ati_suttas WHERE " + " AND ".join(where)
+    rows = fetch_all(sql, params, dsn=dsn)
+    values = [row["book_number"] for row in rows if row.get("book_number")]
+    return sorted(values)
 
 
-def list_vaggas(*, dsn=None):
-    rows = fetch_all(
-        "SELECT DISTINCT COALESCE(vagga, '') AS vagga FROM ati_suttas WHERE vagga IS NOT NULL AND vagga <> '' ORDER BY vagga",
-        dsn=dsn,
-    )
-    return [row["vagga"] for row in rows if row.get("vagga")]
+def list_vaggas(*, nikaya=None, book_number=None, dsn=None):
+    if not nikaya:
+        return []
+
+    upper = nikaya.upper()
+    if upper in {"DN", "MN"}:
+        return []
+    if upper == "SN":
+        return CANONICAL_SN_VAGGAS
+
+    if upper == "AN":
+        clauses = ["vagga IS NOT NULL", "vagga <> ''", "nikaya = %(nikaya)s"]
+        params: Dict[str, Any] = {"nikaya": nikaya}
+        if book_number:
+            clauses.append("book_number = %(book_number)s")
+            params["book_number"] = book_number
+        sql = "SELECT DISTINCT vagga FROM ati_suttas WHERE " + " AND ".join(clauses)
+        rows = fetch_all(sql, params, dsn=dsn)
+        numbers = sorted(
+            { _first_number(row["vagga"]) for row in rows if _first_number(row.get("vagga")) is not None }
+        )
+        return [str(num) for num in numbers]
+
+    clauses = ["vagga IS NOT NULL", "vagga <> ''", "nikaya = %(nikaya)s"]
+    params = {"nikaya": nikaya}
+    sql = "SELECT DISTINCT vagga FROM ati_suttas WHERE " + " AND ".join(clauses)
+    rows = fetch_all(sql, params, dsn=dsn)
+    values = [row["vagga"] for row in rows if row.get("vagga")]
+    return sorted(values)
 
 
 def get_ner_verse_spans(identifier, *, dsn=None):

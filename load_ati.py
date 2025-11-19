@@ -19,7 +19,8 @@ ROOT_DIR = Path("/Users/alee/Downloads/ati/tipitaka")
 DB_DSN   = "postgresql://localhost/tipitaka?user=alee"
 
 # Walk only these subdirectories under ROOT_DIR
-START_SUBDIRS = ("an", "kn", "dn", "mn", "sn")
+START_SUBDIRS = ("an", "dn", "mn", "sn")
+# START_SUBDIRS = ("kn",)
 
 # Skip these filenames/patterns anywhere
 SKIP_FILE_PATTERNS = (
@@ -53,6 +54,8 @@ META_LINE = re.compile(
 BRACED_BLOCK = re.compile(r'\{(.*?)\}', re.DOTALL)
 
 NUM_PREFIX = re.compile(r'^\s*\(?(\d+(?:\.\d+)*)\)?[\s:,-]*', re.UNICODE)
+ANCHOR_NUM = re.compile(r'(\d+)')
+VERSE_BLOCK_CLASSES = {"freeverse", "poem", "verse", "gatha", "metrical", "poetry"}
 
 NIKAYA_MAP = {
     "dn": "DN", "mn": "MN", "sn": "SN", "an": "AN",
@@ -178,14 +181,41 @@ def extract_vagga(meta: dict, html_path: Path):
 def extract_verses(soup: BeautifulSoup):
     """
     Return [{"num": "1", "text": "..."}...]. Preserve explicit numbers; if missing, assign
-    an auto-incrementing integer per chapter. De-entitize text.
+    an auto-incrementing integer per sutta. De-entitize text.
     """
     verses = []
     root = soup.find(id="COPYRIGHTED_TEXT_CHUNK") or soup
     chapters = root.find_all("div", class_="chapter") or [root]
 
+    # IMPORTANT: one numbering stream for the whole sutta,
+    # not reset per <div class="chapter">.
+    auto_n = 0
+
     for ch in chapters:
-        auto_n = 0
+        # auto_n = 0  # ← this was here before; REMOVE this reset
+
+        # 1) blocks that look like verse/paragraph blocks (_is_verse_block)
+        for block in ch.find_all(_is_verse_block, recursive=True):
+            if _is_within_notes_section(block):
+                continue
+            for chunk in _extract_verse_block_chunks(block):
+                num = chunk.get("num")
+                text = chunk.get("text")
+                if not text:
+                    continue
+                if not num:
+                    auto_n += 1
+                    num = str(auto_n)
+                else:
+                    m0 = re.match(r"(\d+)", num)
+                    if m0:
+                        try:
+                            auto_n = int(m0.group(1))
+                        except ValueError:
+                            pass
+                verses.append({"num": num, "text": text})
+
+        # 2) plain <p> paragraphs inside the chapter
         for p in ch.find_all("p", recursive=True):
             if isinstance(p, Tag) and _is_within_notes_section(p):
                 continue
@@ -197,6 +227,7 @@ def extract_verses(soup: BeautifulSoup):
                 continue
 
             num = None
+
             # explicit number in shallow child spans/sup/a
             for span in p.find_all(["span", "sup", "a"], recursive=False):
                 s = textify(span)
@@ -224,7 +255,71 @@ def extract_verses(soup: BeautifulSoup):
                         pass
 
             verses.append({"num": num, "text": txt})
+
     return verses
+
+
+def _anchor_id_value(tag: Tag | None) -> str | None:
+    if not isinstance(tag, Tag):
+        return None
+    raw = tag.get("id") or textify(tag)
+    if not raw:
+        return None
+    match = ANCHOR_NUM.search(raw)
+    return match.group(1) if match else None
+
+
+def _is_verse_block(tag: Tag) -> bool:
+    if not isinstance(tag, Tag):
+        return False
+    if tag.name not in {"div", "section"}:
+        return False
+    classes = tag.get("class") or []
+    return any(cls in VERSE_BLOCK_CLASSES for cls in classes if isinstance(cls, str))
+
+
+def _extract_verse_block_chunks(block: Tag) -> list[dict[str, str | None]]:
+    chunks: list[dict[str, str | None]] = []
+    previous_anchor = block.find_previous("a", id=True)
+    auto_num = None
+    if previous_anchor:
+        base = _anchor_id_value(previous_anchor)
+        if base and base.isdigit():
+            auto_num = int(base)
+
+    buffer: list[str] = []
+    current_label: str | None = None
+
+    def flush():
+        nonlocal buffer, current_label, auto_num
+        text = deent(" ".join(part for part in buffer if part).strip())
+        if not text:
+            buffer = []
+            current_label = None
+            return
+        label = current_label
+        if label is None and auto_num is not None:
+            label = str(auto_num)
+            auto_num += 1
+        elif isinstance(label, str) and label.isdigit():
+            auto_num = int(label) + 1
+        chunks.append({"num": label, "text": text})
+        buffer = []
+        current_label = None
+
+    for child in block.children:
+        if isinstance(child, Tag) and child.name == "a" and child.get("id"):
+            flush()
+            current_label = _anchor_id_value(child) or current_label
+            txt = textify(child)
+            if txt:
+                buffer.append(txt)
+            continue
+        txt = textify(child)
+        if txt:
+            buffer.append(txt)
+    flush()
+    return chunks
 
 # -------- Notes extraction (DL + P + "See also …")
 _WS = re.compile(r"\s+")

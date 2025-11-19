@@ -209,8 +209,8 @@ def browse_verses():
     )
     facets = {
         "nikayas": list_nikayas(),
-        "book_numbers": list_book_numbers(),
-        "vaggas": list_vaggas(),
+        "book_numbers": list_book_numbers(nikaya=nikaya or None),
+        "vaggas": list_vaggas(nikaya=nikaya or None, book_number=book_number or None),
     }
     return render_template(
         "verse_browser.html",
@@ -243,6 +243,16 @@ def sutta_verse(identifier: str, verse_num: int):
         if value not in (None, ""):
             payload[key] = value
     return jsonify(payload)
+
+
+@app.get("/api/verses/facets")
+def verse_facets():
+    nikaya = request.args.get("nikaya") or None
+    book_number = request.args.get("book_number") or None
+    return jsonify({
+        "book_numbers": list_book_numbers(nikaya=nikaya),
+        "vaggas": list_vaggas(nikaya=nikaya, book_number=book_number),
+    })
 
 
 @app.route("/predict/verse/<string:identifier>/<int:verse_num>")
