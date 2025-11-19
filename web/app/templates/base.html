@@ -6,6 +6,34 @@
 </head>
 
 <body>
-  <h1>Welcome to {{ title }}!</h1>
+  <main style="max-width: 960px; margin: 40px auto; padding: 0 16px; font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;">
+    <header>
+      <h1>NER Utilities</h1>
+      <p>Jump into annotation tools, browse verses, or explore docs.</p>
+    </header>
+    <section>
+      <article>
+        <h2>Annotate</h2>
+        <ul>
+          <li><a href="{{ url_for('predict_page') }}">Predict</a> – Paste arbitrary text and run the NER model.</li>
+          <li><a href="{{ url_for('random_verse') }}">Random Verse</a> – Pulls a random verse and opens it in Predict.</li>
+        </ul>
+      </article>
+      <article>
+        <h2>Verses</h2>
+        <ul>
+          <li><a href="{{ url_for('browse_verses') }}">Browse verses</a> – Filter by Nikaya, book number, vagga, or verse number and send to Predict.</li>
+          <li><a href="{{ url_for('predict_page') }}#save-verse-btn">Save to verse</a> – Use Predict to push edits back into <code>ati_suttas.ner_verse_spans</code>.</li>
+        </ul>
+      </article>
+      <article>
+        <h2>Docs</h2>
+        <ul>
+          <li><a href="{{ url_for('training', training_id='manual:example') }}">View training doc</a> – Replace ID to inspect stored training samples.</li>
+          <li><a href="{{ url_for('training_doc', doc_id='manual:example') }}">Training doc view</a> – Detailed view with spans table and copyable JSON.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
 </body>
 </html>

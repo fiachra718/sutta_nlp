@@ -35,7 +35,17 @@ def _training_row_processor(row):
 Label = Literal["PERSON", "GPE", "LOC", "NORP", "EVENT", "UNIT"]
 
 
-VERSE_COLUMNS = ("identifier", "verse_num", "text", "text_hash")
+VERSE_COLUMNS = ("identifier", 
+                 "verse_num", 
+                 "text", 
+                 "text_hash", 
+                 "nikaya",
+                 "vagga", 
+                 "book_number", 
+                 "translator", 
+                 "title", 
+                 "subtitle"
+            )
 QUOTE_CHARS = "\"'“”‘’‹›«»"
 TRAILING_WRAP_CHARS = QUOTE_CHARS + ")]}›»”’"
 SENTENCE_BOUNDARY_CHARS = ".!?;:…—–-"
@@ -56,6 +66,12 @@ def _verse_row_processor(row):
         "verse_num": row["verse_num"],
         "text": text,
         "text_hash": row.get("text_hash") or md5(text.encode("utf-8")).hexdigest(),
+        "nikaya": row.get("nikaya"),
+        "vagga": row.get("vagga"),
+        "book_number": row.get("book_number"),
+        "translator": row.get("translator"),
+        "title": row.get("title"),
+        "subtitle": row.get("subtitle"),
     }
 
 
@@ -91,9 +107,15 @@ class SuttaVerse(BaseModel):
     verse_num: int
     text: str                # NFC normalized; what you render & annotate
     text_hash: str           # md5 of normalized text
+    translator: Optional[str] | None = None
+    nikaya: Optional[str] | None = None
+    vagga: Optional[str] | None = None
+    book_number: Optional[str] | None = None
+    title: Optional[str] | None = None
+    subtitle: Optional[str] | None = None
 
     objects: ClassVar[Manager] = Manager(
-        table="verses",
+        table="ati_suttas",
         columns=VERSE_COLUMNS,
         row_processor=_verse_row_processor,
     )
@@ -128,6 +150,7 @@ class Span(BaseModel):
     start: int = Field(ge=0)
     end: int = Field(gt=0)
     label: Label
+    text: Optional[str] | None = None
 
     @model_validator(mode="after")
     def check_offsets(self):

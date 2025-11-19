@@ -6,6 +6,13 @@ from .models.models import CandidateDoc, TrainingDoc, SuttaVerse
 from .api.ner import run_ner
 from .render import render_highlighted
 from pydantic import ValidationError
+from .db.db import (
+    list_nikayas,
+    list_book_numbers,
+    list_vaggas,
+    get_ner_verse_spans,
+    update_ner_verse_spans,
+)
 
 app = Flask(__name__)
 
@@ -133,6 +140,7 @@ def save_training_doc():
     data = request.get_json(force=True, silent=True) or {}
     text = data.get("text", "")
     spans = data.get("spans", [])
+    logger.debug(data)
 
     if not isinstance(text, str) or not text.strip():
         return jsonify({"ok": False, "message": "Text is required."}), 400
@@ -176,6 +184,155 @@ def random_verse():
     }
     return render_template("random.html", initial_doc=initial_doc)
 
+@app.route("/verses/browse")
+def browse_verses():
+    nikaya = request.args.get("nikaya") or ""
+    book_number = request.args.get("book_number") or ""
+    vagga = request.args.get("vagga") or ""
+    verse_num_input = request.args.get("verse_num") or ""
+    limit = request.args.get("limit", default=25, type=int)
+    verse_num = None
+    if verse_num_input:
+        try:
+            parsed = int(verse_num_input)
+            if parsed > 0:
+                verse_num = parsed - 1
+        except ValueError:
+            verse_num_input = ""
 
+    verses = SuttaVerse.objects.search_verses(
+        nikaya=nikaya or None,
+        book_number=book_number or None,
+        vagga=vagga or None,
+        verse_num=verse_num,
+        limit=limit or 25,
+    )
+    facets = {
+        "nikayas": list_nikayas(),
+        "book_numbers": list_book_numbers(),
+        "vaggas": list_vaggas(),
+    }
+    return render_template(
+        "verse_browser.html",
+        filters={
+            "nikaya": nikaya,
+            "book_number": book_number,
+            "vagga": vagga,
+            "verse_num": verse_num_input,
+            "limit": limit or 25,
+        },
+        facets=facets,
+        verses=verses,
+    )
+
+
+@app.route("/api/sutta/<string:identifier>/<int:verse_num>")
+def sutta_verse(identifier: str, verse_num: int):
+    verse = SuttaVerse.objects.fetch_sutta_verse(identifier, verse_num)
+    if not verse:
+        abort(404)
+
+    payload = {
+        "identifier": verse.identifier,
+        "verse_num": verse.verse_num,
+        "text": verse.text,
+        "text_hash": verse.text_hash,
+    }
+    for key in ("nikaya", "vagga", "book_number", "translator", "title", "subtitle"):
+        value = getattr(verse, key, None)
+        if value not in (None, ""):
+            payload[key] = value
+    return jsonify(payload)
+
+
+@app.route("/predict/verse/<string:identifier>/<int:verse_num>")
+def predict_verse(identifier: str, verse_num: int):
+    verse = SuttaVerse.objects.fetch_sutta_verse(identifier, verse_num)
+    if not verse:
+        abort(404)
+    text_value = verse.text or ""
+    existing = get_ner_verse_spans(identifier) or []
+    spans = []
+    for entry in existing:
+        if not isinstance(entry, dict):
+            continue
+        if entry.get("verse_num") != verse_num:
+            continue
+        try:
+            start = int(entry.get("start", 0))
+            end = int(entry.get("end", start))
+        except (TypeError, ValueError):
+            continue
+        start = max(0, min(start, len(text_value)))
+        end = max(start, min(end, len(text_value)))
+        label = entry.get("label") or ""
+        text = entry.get("text") or text_value[start:end]
+        spans.append({
+            "start": start,
+            "end": end,
+            "label": label,
+            "text": text,
+        })
+
+    meta = {
+        "identifier": verse.identifier,
+        "verse_num": verse.verse_num,
+    }
+    for key in ("nikaya", "vagga", "book_number", "translator", "title", "subtitle"):
+        value = getattr(verse, key, None)
+        if value not in (None, ""):
+            meta[key] = value
+
+    initial_doc = {
+        "text": text_value,
+        "spans": spans,
+        "meta": meta,
+    }
+    return render_template("predict.html", initial_doc=initial_doc)
+
+
+@app.post("/api/verse/<string:identifier>/<int:verse_num>/ner")
+def save_verse_spans(identifier: str, verse_num: int):
+    verse = SuttaVerse.objects.fetch_sutta_verse(identifier, verse_num)
+    if not verse:
+        abort(404)
+
+    data = request.get_json(force=True, silent=True) or {}
+    spans = data.get("spans", [])
+    if not isinstance(spans, list):
+        return jsonify({"ok": False, "message": "Spans must be a list."}), 400
+
+    text = verse.text or ""
+    length = len(text)
+    normalized = []
+    for idx, span in enumerate(spans, start=1):
+        if not isinstance(span, dict):
+            return jsonify({"ok": False, "message": f"Span {idx} must be an object."}), 400
+        try:
+            start = int(span.get("start"))
+            end = int(span.get("end"))
+        except (TypeError, ValueError):
+            return jsonify({"ok": False, "message": f"Span {idx} has invalid offsets."}), 400
+        if start < 0 or end < start or end > length:
+            return jsonify({"ok": False, "message": f"Span {idx} has out-of-range offsets."}), 400
+        label = span.get("label")
+        if not isinstance(label, str) or not label.strip():
+            return jsonify({"ok": False, "message": f"Span {idx} requires a label."}), 400
+        snippet = span.get("text")
+        if not isinstance(snippet, str) or not snippet:
+            snippet = text[start:end]
+        normalized.append({
+            "verse_num": verse_num,
+            "start": start,
+            "end": end,
+            "label": label.strip().upper(),
+            "text": snippet,
+        })
+
+    success = update_ner_verse_spans(identifier, verse_num, normalized)
+    if not success:
+        abort(404)
+    return jsonify({"ok": True, "saved": len(normalized), "message": "Saved verse annotations."})
+    
 if __name__ == "__main__":
     app.run(debug=True)

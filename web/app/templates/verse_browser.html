@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Verse Browser</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/ner.css') }}">
+  <style>
+    body { max-width: 1100px; margin: 24px auto; padding: 0 16px; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+    h1 { margin-bottom: 1rem; }
+    form.filters { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 20px; }
+    form.filters label { display: flex; flex-direction: column; font-size: 0.9rem; gap: 4px; }
+    form.filters select,
+    form.filters input { border: 1px solid #d1d5db; border-radius: 6px; padding: 6px 8px; font-size: 0.95rem; }
+    form.filters .actions { grid-column: 1 / -1; display: flex; gap: 8px; }
+    button.primary { background: #1d4ed8; color: #fff; border: none; border-radius: 6px; padding: 8px 14px; cursor: pointer; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { font-size: 0.9rem; text-align: left; padding: 8px; border-bottom: 1px solid #e5e7eb; vertical-align: top; }
+    th { background: #f9fafb; }
+    .meta { color: #475569; font-size: 0.85rem; }
+    .text-snippet { white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h1>Browse Verses</h1>
+  <form class="filters" method="get">
+    <label>
+      Nikaya
+      <select name="nikaya">
+        <option value="">Any</option>
+        {% for item in facets.nikayas %}
+        <option value="{{ item }}" {% if filters.nikaya == item %}selected{% endif %}>{{ item }}</option>
+        {% endfor %}
+      </select>
+    </label>
+    <label>
+      Book Number
+      <select name="book_number">
+        <option value="">Any</option>
+        {% for item in facets.book_numbers %}
+        <option value="{{ item }}" {% if filters.book_number == item %}selected{% endif %}>{{ item }}</option>
+        {% endfor %}
+      </select>
+    </label>
+    <label>
+      Vagga
+      <select name="vagga">
+        <option value="">Any</option>
+        {% for item in facets.vaggas %}
+        <option value="{{ item }}" {% if filters.vagga == item %}selected{% endif %}>{{ item }}</option>
+        {% endfor %}
+      </select>
+    </label>
+    <label>
+      Verse #
+      <input type="number" name="verse_num" min="1" step="1" value="{{ filters.verse_num }}">
+    </label>
+    <label>
+      Limit
+      <input type="number" name="limit" min="1" max="500" value="{{ filters.limit }}">
+    </label>
+    <div class="actions">
+      <button class="primary" type="submit">Search</button>
+      <a href="{{ url_for('browse_verses') }}">Reset</a>
+    </div>
+  </form>
+
+  <section>
+    <h2>Results ({{ verses|length }})</h2>
+    {% if verses %}
+    <table>
+      <thead>
+        <tr>
+          <th>Metadata</th>
+          <th>Identifier</th>
+          <th>Verse #</th>
+          <th>Text</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for verse in verses %}
+        <tr>
+          <td class="meta">
+            {% if verse.nikaya %}Nikaya: {{ verse.nikaya }}<br>{% endif %}
+            {% if verse.book_number %}Book: {{ verse.book_number }}<br>{% endif %}
+            {% if verse.vagga %}Vagga: {{ verse.vagga }}<br>{% endif %}
+            {% if verse.title %}Title: {{ verse.title }}{% endif %}
+          </td>
+          <td>{{ verse.identifier }}</td>
+          <td>{{ verse.verse_num + 1 }}</td>
+          <td class="text-snippet">{{ verse.text }}</td>
+          <td>
+            <a href="{{ url_for('sutta_verse', identifier=verse.identifier, verse_num=verse.verse_num) }}" target="_blank">JSON</a>
+            |
+            <a href="{{ url_for('predict_verse', identifier=verse.identifier, verse_num=verse.verse_num) }}" target="_blank">Predict</a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% else %}
+      <p>No verses found for this filter set.</p>
+    {% endif %}
+  </section>
+</body>
+</html>

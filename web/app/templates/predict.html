@@ -25,6 +25,7 @@
     <button type="button" id="clear-btn">Clear</button>
     <button type="button" id="copy-btn">Copy JSON</button>
     <button type="button" id="save-btn">Save to training</button>
+    <button type="button" id="save-verse-btn">Save to verse</button>
   </div>
 
   <section class="panel">
@@ -106,6 +107,7 @@
     const entitiesPanel = document.getElementById("entities-panel");
     const entitiesBody = document.getElementById("entities-body");
     const addSelectionLabel = document.getElementById("add-selection-label");
+    const saveVerseBtn = document.getElementById("save-verse-btn");
 
     bootstrap();
 
@@ -125,10 +127,12 @@
       }
     });
     document.getElementById("save-btn").addEventListener("click", saveDoc);
+    saveVerseBtn?.addEventListener("click", saveVerse);
     document.getElementById("add-selection-btn").addEventListener("click", addSelectionFromText);
     textInput.addEventListener("input", () => {
       currentDoc.text = textInput.value;
       render();
+      updateVerseButtonState();
     });
     populateLabelDropdown(addSelectionLabel);
 
@@ -175,6 +179,7 @@
         textInput.value = docText;
         statusEl.textContent = `Found ${currentDoc.spans.length} span${currentDoc.spans.length === 1 ? "" : "s"}.`;
         render();
+        updateVerseButtonState();
       } catch (error) {
         statusEl.textContent = error.message;
       }
@@ -224,6 +229,7 @@
       });
       statusEl.textContent = "Added span from selection.";
       render();
+      updateVerseButtonState();
     }
 
     function normalizeSpans(spans, text) {
@@ -405,10 +411,63 @@
         if (end > text.length) {
           throw new Error(`Span ${idx + 1} extends past the text.`);
         }
-        return { start, end, label: toValidLabel(span.label) };
+        const snippet = typeof span.text === "string" && span.text.length
+          ? span.text
+          : text.slice(start, end);
+        return { start, end, label: toValidLabel(span.label), text: snippet };
       });
       return { text, spans };
     }
+
+    function hasVerseMeta() {
+      return currentDoc.meta
+        && typeof currentDoc.meta.identifier === "string"
+        && Number.isInteger(Number(currentDoc.meta.verse_num));
+    }
+
+    function updateVerseButtonState() {
+      if (!saveVerseBtn) return;
+      if (hasVerseMeta()) {
+        saveVerseBtn.hidden = false;
+        saveVerseBtn.disabled = false;
+      } else {
+        saveVerseBtn.hidden = true;
+        saveVerseBtn.disabled = true;
+      }
+    }
+
+    async function saveVerse() {
+      if (!hasVerseMeta()) {
+        statusEl.textContent = "No verse metadata to save.";
+        return;
+      }
+      let payload;
+      try {
+        payload = buildPayload();
+      } catch (error) {
+        statusEl.textContent = error.message;
+        return;
+      }
+      const identifier = currentDoc.meta.identifier;
+      const verseNum = currentDoc.meta.verse_num;
+      statusEl.textContent = "Saving verse…";
+      try {
+        const response = await fetch(`/api/verse/${encodeURIComponent(identifier)}/${verseNum}/ner`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ spans: payload.spans }),
+        });
+        const result = await response.json();
+        if (!response.ok || result.ok === false) {
+          throw new Error(result.message || result.error || "Save failed.");
+        }
+        statusEl.textContent = result.message || "Saved verse annotations.";
+      } catch (error) {
+        statusEl.textContent = error.message;
+      }
+    }
+
+    updateVerseButtonState();
 
     document.getElementById("random-btn")?.addEventListener("click", () => {
       window.location.href = "{{ url_for('random_verse') }}";

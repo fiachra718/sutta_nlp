@@ -1,6 +1,5 @@
 import json
 from local_settings import load_model
-from hashlib import md5
 import psycopg
 from psycopg.rows import dict_row
 
@@ -34,10 +33,10 @@ def ne_tag(text, nlp, tag="ALL"):
     results = {}
     entities = []
     for ent in doc.ents:
-        entities.append( [ent.label_, ent.text] )
-        # entities.append({"start": ent.start_char, "end":ent.end_char, "label":ent.label_, "text":ent.text})
+        # entities.append( [ent.label_, ent.text] )
+        entities.append({"start": ent.start_char, "end":ent.end_char, "label":ent.label_, "text":ent.text})
         if len(entities):
-            results = {"text": text, "entities": [ent for ent in entities]}
+            results = {"text": text, "spans": [ent for ent in entities]}
        
     return results
 
@@ -46,7 +45,12 @@ nlp = load_model()
 verses = random_sutta_paragraph()
 # print(verses)
 for verse in verses:
-    if len(verse.get("verse_text")):
-        jsonl = ne_tag(verse["verse_text"].strip(), nlp, tag="ALL")
-        if jsonl:
-            print(json.dumps(jsonl, indent=2, ensure_ascii=False))
+    text = (verse.get("verse_text") or "").strip()
+    if not text:
+        continue
+    jsonl = ne_tag(text, nlp, tag="ALL")
+    if jsonl:
+        jsonl["identifier"] = verse.get("identifier")
+        jsonl["title"] = verse.get("title")
+        jsonl["verse_num"] = verse.get("verse_num")
+        print(json.dumps(jsonl, indent=2, ensure_ascii=False))
