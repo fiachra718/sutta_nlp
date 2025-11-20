@@ -19,8 +19,8 @@ ROOT_DIR = Path("/Users/alee/Downloads/ati/tipitaka")
 DB_DSN   = "postgresql://localhost/tipitaka?user=alee"
 
 # Walk only these subdirectories under ROOT_DIR
-START_SUBDIRS = ("an", "dn", "mn", "sn")
-# START_SUBDIRS = ("kn",)
+# START_SUBDIRS = ("an", "dn", "mn", "sn")
+START_SUBDIRS = ("kn",)
 
 # Skip these filenames/patterns anywhere
 SKIP_FILE_PATTERNS = (
@@ -31,6 +31,10 @@ SKIP_FILE_PATTERNS = (
     "mil_utf8.html",
     "mil.html",
     "miln.html",
+    "miln.intro.kell.html",
+    # "iti.intro.*.html",
+    # "dhp.intro.*.html",
+    "dhp-buddh-than.html",
 )
 
 # ======================
@@ -178,6 +182,7 @@ def extract_vagga(meta: dict, html_path: Path):
         pass
     return vagga
 
+
 def extract_verses(soup: BeautifulSoup):
     """
     Return [{"num": "1", "text": "..."}...]. Preserve explicit numbers; if missing, assign
@@ -185,17 +190,134 @@ def extract_verses(soup: BeautifulSoup):
     """
     verses = []
     root = soup.find(id="COPYRIGHTED_TEXT_CHUNK") or soup
+
+    # Find candidate chapter containers.
+    chapters = root.find_all("div", class_="chapter")
+
+    if not chapters:
+        # No chapter divs at all → treat the whole root as one chapter.
+        chapters = [root]
+    else:
+        # If none of the chapter divs contain verse blocks, but root does,
+        # fall back to scanning the root. This is the Dhammapada case where
+        # freeverse blocks are siblings of a useless trailing div.chapter.
+        has_blocks = False
+        for ch in chapters:
+            if ch.find(_is_verse_block, recursive=True):
+                has_blocks = True
+                break
+        if not has_blocks and root.find(_is_verse_block, recursive=True):
+            chapters = [root]
+
+    # One numbering stream for the whole sutta, not reset per chapter.
+    auto_n = 0
+
+    for ch in chapters:
+        # 1) blocks that look like verse/paragraph blocks (_is_verse_block)
+        blocks = ch.find_all(_is_verse_block, recursive=True)
+
+        # Dhammapada fallback: stanza-number h5 + following div.freeverse
+        if not blocks:
+            h5s = ch.find_all("h5")
+            for h in h5s:
+                anchor = h.find("a", id=True)
+                block = h.find_next_sibling("div", class_="freeverse")
+                if anchor and block:
+                    blocks.append(block)
+
+        for block in blocks:
+            if _is_within_notes_section(block):
+                continue
+            for chunk in _extract_verse_block_chunks(block):
+                num = chunk.get("num")
+                text = chunk.get("text")
+                if not text:
+                    continue
+
+                if not num:
+                    auto_n += 1
+                    num = str(auto_n)
+                else:
+                    m0 = re.match(r"(\d+)", num)
+                    if m0:
+                        try:
+                            auto_n = int(m0.group(1))
+                        except ValueError:
+                            pass
+
+                verses.append({"num": num, "text": text})
+
+        # 2) plain <p> paragraphs inside the chapter
+        for p in ch.find_all("p", recursive=True):
+            if isinstance(p, Tag) and _is_within_notes_section(p):
+                continue
+
+            txt = deent(textify(p))
+            if not txt:
+                continue
+
+            # see if this <p> looks like a verse that belongs with previous
+            # block; current code keeps it simple and treats them as separate
+            num = None
+
+            # explicit number in shallow child spans/sup/a
+            for span in p.find_all(["span", "sup", "a"], recursive=False):
+                s = textify(span)
+                if re.fullmatch(r"\d[\d.\-]*", s):
+                    num = s
+                    break
+
+            # leading numeric prefix
+            if not num:
+                m = NUM_PREFIX.match(txt)
+                if m:
+                    num = m.group(1)
+                    txt = txt[m.end():].strip()
+
+            if not num:
+                auto_n += 1
+                num = str(auto_n)
+            else:
+                m0 = re.match(r"(\d+)", num)
+                if m0:
+                    try:
+                        auto_n = int(m0.group(1))
+                    except ValueError:
+                        pass
+
+            verses.append({"num": num, "text": txt})
+
+    return verses
+
+# def extract_verses(soup: BeautifulSoup):
+    """
+    Return [{"num": "1", "text": "..."}...]. Preserve explicit numbers; if missing, assign
+    an auto-incrementing integer per sutta. De-entitize text.
+    """
+    verses = []
+    root = soup.find(id="COPYRIGHTED_TEXT_CHUNK") or soup
     chapters = root.find_all("div", class_="chapter") or [root]
+    if not chapters:
+        # Dhammapada is different
+        chapters = [root]
 
     # IMPORTANT: one numbering stream for the whole sutta,
     # not reset per <div class="chapter">.
     auto_n = 0
 
     for ch in chapters:
-        # auto_n = 0  # ← this was here before; REMOVE this reset
+        blocks = ch.find_all(_is_verse_block, recursive=True)
+        # But Dhammapada verses have a different structure so:
+        if not blocks:
+            h5s = ch.find_all("h5")
+            for h in h5s:
+                anchor = h.find("a", id=True)
+                block = h.find_next_sibling("div", class_="freeverse")
+                if anchor and block:
+                    blocks.append(block)
 
         # 1) blocks that look like verse/paragraph blocks (_is_verse_block)
-        for block in ch.find_all(_is_verse_block, recursive=True):
+        for block in blocks:
             if _is_within_notes_section(block):
                 continue
             for chunk in _extract_verse_block_chunks(block):
@@ -215,6 +337,7 @@ def extract_verses(soup: BeautifulSoup):
                             pass
                 verses.append({"num": num, "text": text})
 
+        
         # 2) plain <p> paragraphs inside the chapter
         for p in ch.find_all("p", recursive=True):
             if isinstance(p, Tag) and _is_within_notes_section(p):
