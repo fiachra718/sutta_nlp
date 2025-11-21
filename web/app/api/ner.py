@@ -1,6 +1,7 @@
 import spacy
 from pathlib import Path
 import unicodedata
+import en_sutta_ner
 
 # need absolute path here.  Hackish, FIXME
 NE_DATA = Path("/Users/alee/sutta_nlp/ne-data")
@@ -12,24 +13,25 @@ LOC_EVENT_PATTERNS = NE_DATA / "patterns" / "span_ruler"
 
 
 def _load_nlp_model():
-    nlp = spacy.load(MODELS_DIR)
-    for name in ("entity_ruler", "span_ruler"):
-        if name in nlp.pipe_names:
-            nlp.remove_pipe(name)
+    nlp = en_sutta_ner.load()
+    # nlp = spacy.load(MODELS_DIR)
+    # for name in ("entity_ruler", "span_ruler"):
+    #     if name in nlp.pipe_names:
+    #         nlp.remove_pipe(name)
 
-    er = nlp.add_pipe(
-            "entity_ruler",
-            before="ner",
-            config={"overwrite_ents": False}
-        )
-    er.from_disk(str(PATTERNS))
+    # er = nlp.add_pipe(
+    #         "entity_ruler",
+    #         before="ner",
+    #         config={"overwrite_ents": False}
+    #     )
+    # er.from_disk(str(PATTERNS))
 
-    sr = nlp.add_pipe(
-        "span_ruler",
-        after="ner",
-        config={"spans_key": "LOC_PHRASES", "overwrite": False}
-    )
-    sr.from_disk(LOC_EVENT_PATTERNS) 
+    # sr = nlp.add_pipe(
+    #     "span_ruler",
+    #     after="ner",
+    #     config={"spans_key": "LOC_PHRASES", "overwrite": False}
+    # )
+    # sr.from_disk(LOC_EVENT_PATTERNS) 
 
     return nlp
 
