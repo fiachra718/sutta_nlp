@@ -150,7 +150,7 @@ class Span(BaseModel):
     start: int = Field(ge=0)
     end: int = Field(gt=0)
     label: Label
-    text: Optional[str] | None = None
+    text: str
 
     @model_validator(mode="after")
     def check_offsets(self):
@@ -206,7 +206,7 @@ class TrainingDoc(BaseModel):
     id: Optional[str] = None
     text: str
     text_hash: Optional[str] = None
-    spans: Optional[list[Span]] = None        # human-reviewed, overlap-free, slice-checked
+    spans: list[Span] = Field(default_factory=list)
     spans_hash: Optional[str] = None
     source: Optional[str] | None = None
     from_file: Optional[str] | None = None
@@ -230,24 +230,51 @@ class TrainingDoc(BaseModel):
             if not data.get("text_hash"):
                 data["text_hash"] = md5(norm.encode("utf-8")).hexdigest()
         return data
+    
+    @field_validator("spans", mode="before")
+    @classmethod
+    def normalize_spans(cls, v):
+        """
+        Accept None or [] from DB / API and normalize to [].
+        This is where “span list is optional” lives.
+        """
+        if v is None:
+            return []
+        return v
 
-    @field_validator("spans")
+    ######
+    # Make certain that the text in the span 
+    # matches the text in the text field 
+    # and that the start and end points are 
+    # set correctly
+    # this is a pain, but saves later grief
+    @field_validator("spans", mode="after")
     @classmethod
     def validate_span_bounds(cls, spans, info):
         text = info.data.get("text") or ""
         length = len(text)
-        if spans is None:
+
+        if not spans:
             return []
-        if len(spans) == 0:
-            return spans
+
         for idx, span in enumerate(spans, start=1):
             if span.end > length:
                 raise ValueError(f"Span {idx} extends past text length {length}")
+
+            expected = text[span.start:span.end]
+            if expected != span.text:
+                raise ValueError(
+                    f"Span {idx} text mismatch: "
+                    f"got {span.text!r}, expected slice {expected!r}"
+                )
+
         spans_sorted = sorted(spans, key=lambda s: (s.start, s.end))
         for prev, curr in zip(spans_sorted, spans_sorted[1:]):
             if curr.start < prev.end:
                 raise ValueError(f"Spans {prev} and {curr} overlap")
+
         return spans
+
 
     @model_validator(mode="after")
     def compute_hashes(self):
@@ -256,7 +283,7 @@ class TrainingDoc(BaseModel):
             raise ValueError("text_hash does not match normalized text")
         self.text_hash = computed_text_hash
 
-        canonical = self.canonical_spans()
+        canonical = self.sorted_spans()
         computed_spans_hash = hashlib.sha256(
             json.dumps(canonical, separators=(",", ":")).encode("utf-8")
         ).hexdigest()
@@ -265,10 +292,15 @@ class TrainingDoc(BaseModel):
         self.spans_hash = computed_spans_hash
         return self
 
-    def canonical_spans(self) -> list[dict[str, int | str]]:
+    def sorted_spans(self) -> list[dict[str, int | str]]:
         spans_sorted = sorted(self.spans, key=lambda s: (s.start, s.end, s.label))
         return [
-            {"start": int(span.start), "end": int(span.end), "label": span.label}
+            {
+                "start": int(span.start),
+                "end": int(span.end),
+                "label": span.label,
+                "text": span.text,
+            }
             for span in spans_sorted
         ]
 
@@ -279,11 +311,12 @@ class TrainingDoc(BaseModel):
         self.source = source_value
         if from_file is not None:
             self.from_file = from_file
+
         record = {
             "id": self.id,
             "text": self.text,
             "text_hash": self.text_hash,
-            "spans": Json(self.canonical_spans()),
+            "spans": Json(self.sorted_spans()),
             "spans_hash": self.spans_hash,
             "source": source_value,
             "from_file": self.from_file,

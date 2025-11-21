@@ -20,10 +20,7 @@ def main():
     nlp = load_model()
 
     sources = [
-        WORK / "train.spacy",
-        WORK / "gold_training.spacy",
         WORK / "test.spacy",
-        WORK / "dev.spacy"
     ]
 
     examples = []
@@ -34,6 +31,7 @@ def main():
         raise SystemExit("No DocBin examples loaded; nothing to score.")
 
     scores = nlp.evaluate(examples)
+    
     print("ents_p:", scores.get("ents_p"))
     print("ents_r:", scores.get("ents_r"))
     print("ents_f:", scores.get("ents_f"))

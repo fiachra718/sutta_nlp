@@ -8,7 +8,7 @@ from local_settings import MODELS_DIR, WORK, load_model
 from spacy.util import minibatch
 
 CONN = psycopg.connect("dbname=tipitaka user=alee")
-OUTPUT_DIR = WORK / "models" / "1107"
+OUTPUT_DIR = WORK / "models" / "1121"
 
 def db_to_examples(conn, nlp):
     sql = """
