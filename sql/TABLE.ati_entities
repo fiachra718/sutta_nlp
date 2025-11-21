@@ -1,0 +1,17 @@
+   Column    |           Type           | Collation | Nullable |                 Default                  
+-------------+--------------------------+-----------+----------+------------------------------------------
+ id          | bigint                   |           | not null | nextval('ati_entities_id_seq'::regclass)
+ entity_type | text                     |           | not null | 
+ canonical   | text                     |           | not null | 
+ normalized  | text                     |           | not null | 
+ lang        | text                     |           |          | 
+ notes       | text                     |           |          | 
+ source      | text                     |           |          | 
+ created_at  | timestamp with time zone |           | not null | now()
+ updated_at  | timestamp with time zone |           | not null | now()
+Indexes:
+    "ati_entities_pkey" PRIMARY KEY, btree (id)
+    "idx_ati_entities_type_norm" UNIQUE, btree (entity_type, normalized)
+Check constraints:
+    "ati_entities_entity_type_check" CHECK (entity_type = ANY (ARRAY['PERSON'::text, 'GPE'::text, 'LOC'::text]))
+

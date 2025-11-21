@@ -1,0 +1,29 @@
+      Column       |           Type           | Collation | Nullable |                Default                 
+-------------------+--------------------------+-----------+----------+----------------------------------------
+ id                | bigint                   |           | not null | nextval('ati_verses_id_seq'::regclass)
+ gid               | text                     |           | not null | 
+ identifier        | text                     |           | not null | 
+ nikaya            | text                     |           | not null | 
+ book_number       | integer                  |           |          | 
+ vagga             | text                     |           |          | 
+ canon_ref         | text                     |           |          | 
+ verse_num         | integer                  |           | not null | 
+ text              | text                     |           | not null | 
+ ner_span          | jsonb                    |           | not null | '[]'::jsonb
+ created_at        | timestamp with time zone |           | not null | now()
+ updated_at        | timestamp with time zone |           | not null | now()
+ cleaned_text      | text                     |           |          | 
+ cleaned_text_hash | text                     |           |          | 
+ ner_span_hash     | text                     |           |          | 
+Indexes:
+    "ati_verses_pkey" PRIMARY KEY, btree (id)
+    "ati_verses_canon_idx" btree (canon_ref)
+    "ati_verses_gid_idx" btree (gid)
+    "ati_verses_gid_key" UNIQUE CONSTRAINT, btree (gid)
+    "ati_verses_identifier_idx" btree (identifier)
+    "idx_ati_verses_gid" btree (gid)
+    "idx_ati_verses_ner_gin" gin (ner_span)
+    "idx_ati_verses_ner_spans_hash" btree (ner_span_hash)
+    "idx_ati_verses_nikaya_book_vagga_verse" btree (nikaya, book_number, vagga, verse_num)
+Foreign-key constraints:
+    "ati_verses_sutta_fk" FOREIGN KEY (identifier) REFERENCES ati_suttas(identifier) ON DELETE CASCADE
