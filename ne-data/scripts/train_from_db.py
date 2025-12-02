@@ -12,8 +12,7 @@ from spacy.util import fix_random_seed, minibatch
 
 def db_to_examples(conn, nlp):
     sql = """
-        select text, spans from gold_training where id like 'manual%' AND
-         created_at::date > '2025-11-06'  ORDER BY created_at
+        select text, spans from gold_training
     """
     examples = []
     with conn.cursor(row_factory=dict_row) as cur:
@@ -57,7 +56,7 @@ BATCH_SIZE = 16
 DROPOUT = 0.1
 DEV_RATIO = 0.1
 CONN = psycopg.connect("dbname=tipitaka user=alee")
-OUTPUT_DIR = WORK / "models" / "1121"
+OUTPUT_DIR = WORK / "models" / "1202"
 
 
 nlp = load_model()

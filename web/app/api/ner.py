@@ -7,7 +7,7 @@ import unicodedata
 # need absolute path here.  Hackish, FIXME
 NE_DATA = Path("/Users/alee/sutta_nlp/ne-data")
 
-MODELS_DIR = NE_DATA / "work" / "models" / "1107" 
+MODELS_DIR = NE_DATA / "work" / "models" / "1121" 
 PATTERNS = NE_DATA / "patterns/entity_ruler"
 LOC_EVENT_PATTERNS = NE_DATA / "patterns" / "span_ruler"
 NORP_PATTERNS = PATTERNS / "ruler_norp.jsonl" 

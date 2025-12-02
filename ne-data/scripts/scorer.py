@@ -21,6 +21,7 @@ def main():
 
     sources = [
         WORK / "test.spacy",
+        WORK / "test_from_db.spacy"
     ]
 
     examples = []

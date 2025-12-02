@@ -1,2 +1,0 @@
-[spacy_models]
-en_pali_ner = en_pali_ner
