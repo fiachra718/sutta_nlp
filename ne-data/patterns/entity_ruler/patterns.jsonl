@@ -43,7 +43,7 @@
 {"label": "PERSON", "pattern": [{"LOWER": "master"}, {"IS_TITLE": true, "LOWER": {"IN": ["ananda", "ānanda"]}}]}
 {"label": "PERSON", "pattern": [{"LOWER": {"IN": ["ven.", "ven"]}}, {"IS_TITLE": true, "LOWER": {"IN": ["ananda", "ānanda"]}}]}
 {"label": "PERSON", "pattern": [{"LOWER": {"IN": ["ven.", "ven"]}}, {"IS_TITLE": true, "LOWER": {"IN": ["sariputta", "sāriputta"]}}]}
-{"label": "PERSON", "pattern": [ {"LOWER": {"REGEX": "^(king|venerable|master|ven\\.?)$"}}, {"IS_PUNCT": false, "IS_TITLE": true, "OP": "+"} ]}
+{"label": "PERSON", "id": "title_followed_by_name", "pattern": [ {"TEXT": {"REGEX": "^(King|Venerable|Master|Ven\\.)$"}}, {"IS_ALPHA": true, "IS_TITLE": true} ] }
 {"label": "PERSON","pattern":[{"LOWER":"the","OP":"?"}, {"LOWER":{"REGEX":"^arahants?$"},"IS_TITLE":true} ]}
 {"label": "PERSON","pattern":[{"LOWER":{"REGEX":"^(ven\\.?|venerable)$"}},{"IS_TITLE":true},{"IS_TITLE":true,"OP":"?"}]} 
 {"label": "PERSON", "id": "paccekabuddhas", "pattern": [ {"LOWER": {"IN": ["uparittha", "tagarasikhi", "yasassi", "sudassana", "piyadassi", "gandhara", "Pindola", "Upasabha", "Nitha", "Tatha", "Sutava", "Bhavitatta", "Sumbha", "Subha", "Methula", "Atthama", "Megha", "Anigha", "Sudatha" ] } } ] }

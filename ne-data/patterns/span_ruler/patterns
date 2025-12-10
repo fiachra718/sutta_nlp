@@ -1,5 +1,7 @@
 {"label":"LOC","id":"hermitage_of_person_brahman","pattern":[ {"LOWER":"the"}, {"LOWER":"hermitage"}, {"LOWER":"of"}, {"IS_TITLE":true}, {"LOWER":"the"}, {"LOWER":{"REGEX":"brahman|brāhmaṇa"}} ]}
-{ "label":"LOC", "id":"hermitage_of_person_brahman", "pattern": [ {"LOWER":"the"}, {"LOWER":"hermitage"}, {"LOWER":"of"}, {"IS_TITLE":true}, {"LOWER":"the"}, {"LOWER": {"REGEX":"brahman|brāhmaṇa"} } ] }
+
+{ "label": "LOC", "id":"hermitage_of_person_brahman", "pattern": [ {"LOWER":"the"}, {"LOWER":"hermitage"}, {"LOWER":"of"}, {"IS_TITLE":true}, {"LOWER":"the"}, {"LOWER": {"REGEX":"brahman|brāhmaṇa"}} ] } 
+
 { "label":"LOC", "id":"palace_of_person_mother", "pattern": [ {"LOWER":"the"}, {"LOWER":"palace"}, {"LOWER":"of"}, {"IS_TITLE": true}, {"TEXT":"'s"}, {"LOWER": "mother"} ] }
 { "label":"LOC", "id":"kuru_country", "pattern": [ {"LOWER":"kuru"}, {"LOWER":"country"} ] }
 {"label":"LOC", "pattern": [ {"LOWER": "icchanangala"}, {"LOWER": "forest"}, {"LOWER": "grove"} ] }
@@ -16,3 +18,5 @@
 
 {"label":"LOC","pattern":[{"LOWER":"icchanangala"},{"LOWER":"forest"},{"LOWER":"grove"}]}
 {"label": "LOC", "pattern": [ {"LOWER": {"IN": ["debating", "discussion"]}}, {"LOWER": "hall"}, {"LOWER": "near"}, {"LOWER": {"IN": ["tinduka", "tinduka-tree", "tinduka-tree"]}}, {"LOWER": "tree"} ]}
+
+{"label": "LOC", "pattern": [{"TEXT": {"REGEX": "^(?:Ganges|Yamuna|Aciravati|Sarabhu|Mahi)$"}}]}

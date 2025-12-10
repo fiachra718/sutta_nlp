@@ -1,12 +1,11 @@
 import json
-from local_settings import load_model
+# from local_settings import load_model
 import psycopg
 from psycopg.rows import dict_row
-
+import spacy
+import html, unicodedata
 
 conn = psycopg.connect("dbname=tipitaka user=alee")
-
-import html, unicodedata
 
 def normalize_text(s: str) -> str:
     s = s.encode('utf-8', 'backslashreplace').decode('unicode_escape')
@@ -41,9 +40,8 @@ def ne_tag(text, nlp, tag="ALL"):
     return results
 
 
-nlp = load_model()
+nlp = spacy.load("en_sutta_ner") 
 verses = random_sutta_paragraph()
-# print(verses)
 for verse in verses:
     text = (verse.get("verse_text") or "").strip()
     if not text:

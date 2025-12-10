@@ -5,10 +5,7 @@ import spacy
 import config_helpers
 
 
-# ----- choose your anchor -----
-# A) anchor at this file's location (recommended)
-# REPO_ROOT = Path(__file__).resolve().parent  # move this file to your repo root
-# If you place this file in ne-data/scripts/, then do:
+# ----- choose anchor -----
 REPO_ROOT = Path(__file__).resolve().parents[2]  # scripts -> ne-data -> <repo root>
 
 # B) OR allow override via env var (optional)
@@ -19,8 +16,7 @@ NE_DATA     = REPO_ROOT / "ne-data"
 WORK        = NE_DATA / "work"
 SCRIPTS     = NE_DATA / "scripts"
 
-MODELS_DIR  = NE_DATA / "work" / "models" / "1202"
-# CURRENT_MODEL = NE_DATA / "current_model"
+MODELS_DIR  = WORK / "models" / "1210"
 PATTERNS    = NE_DATA / "patterns" / "entity_ruler" / "patterns.jsonl"
 NORP_PATTERNS    = NE_DATA / "patterns" / "entity_ruler" / "ruler_norp.jsonl"
 LOC_EVENT_PATTERNS    = NE_DATA / "patterns" / "span_ruler"
@@ -42,22 +38,44 @@ for p in ( NE_DATA, WORK, SCRIPTS,
 ##################################
 
 def load_model():
+    print(f"Loading local NER model from {MODELS_DIR}")
     nlp = spacy.load(MODELS_DIR)
+
     # clear the pipe
     for name in ("norp_head_ruler", "entity_ruler", "span_ruler"):
         if name in nlp.pipe_names:
+            print("remove", name)
             nlp.remove_pipe(name)
 
-    er = nlp.add_pipe("entity_ruler", name="entity_ruler", config={"overwrite_ents": False})
+    # 1) Main entity_ruler BEFORE ner
+    er = nlp.add_pipe(
+        "entity_ruler",
+        name="entity_ruler",
+        before="ner",
+        config={"overwrite_ents": False},
+    )
+    print("add entity ruler (before ner)")
     er.from_disk(str(PATTERNS))
 
-    # Add NORP head rules AFTER ner as well, so they don’t run ahead of model
-    ruler = nlp.add_pipe("entity_ruler", name="norp_head_ruler", after="entity_ruler", config={"overwrite_ents": False})
-    ruler.from_disk(NORP_PATTERNS)
+    # 2) NORP head ruler AFTER ner
+    norp_ruler = nlp.add_pipe(
+        "entity_ruler",
+        name="norp_head_ruler",
+        after="ner",
+        config={"overwrite_ents": False},
+    )
+    print("add NORP ruler (after ner)")
+    norp_ruler.from_disk(NORP_PATTERNS)
 
-    # Add span_ruler (LOC/EVENT phrases) AFTER ner too
-    sr = nlp.add_pipe("span_ruler", name="span_ruler", after="norp_head_ruler",
-                      config={"spans_key": "LOC_PHRASES", "overwrite": False})
+    # 3) span_ruler at the end
+    sr = nlp.add_pipe(
+        "span_ruler",
+        name="span_ruler",
+        after="norp_head_ruler",
+        config={"spans_key": "LOC_PHRASES", "overwrite": False},
+    )
+    print("add span ruler (LOC, EVENT)")
     sr.from_disk(LOC_EVENT_PATTERNS)
 
+    print("Final pipeline:", nlp.pipe_names)
     return nlp

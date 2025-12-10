@@ -4,11 +4,11 @@ import spacy
 from spacy.training import Example
 import random
 import numpy as np
-from local_settings import MODELS_DIR, WORK, load_model
+from local_settings import load_model
 from spacy.util import minibatch
 
 CONN = psycopg.connect("dbname=tipitaka user=alee")
-OUTPUT_DIR = WORK / "models" / "1121"
+# OUTPUT_DIR = WORK / "models" / "1121"
 
 def db_to_examples(conn, nlp):
     sql = """
@@ -43,4 +43,3 @@ print("ents_p:", scores.get("ents_p"))
 print("ents_r:", scores.get("ents_r"))
 print("ents_f:", scores.get("ents_f"))
 print("per-type:", scores.get("ents_per_type"))
-
