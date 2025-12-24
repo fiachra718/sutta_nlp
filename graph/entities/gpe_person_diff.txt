@@ -1,5 +1,5 @@
 in person but NOT gpe: Seeing One
-in person but NOT gpe: Jhana
+! in person but NOT gpe: Jhana
 in person but NOT gpe: Pabbata
 in person but NOT gpe: Subahu
 in person but NOT gpe: Satullapa
@@ -15,8 +15,8 @@ in person but NOT gpe: Angulimala
 in person but NOT gpe: Rohitassa
 in person but NOT gpe: Hingu
 in person but NOT gpe: Punnaka 's Question
-in person but NOT gpe: Saccaka the Nigaṇṭha-son,
-in person but NOT gpe: Saccaka the Nigaṇṭha-son together
+! in person but NOT gpe: Saccaka the Nigaṇṭha-son,
+! in person but NOT gpe: Saccaka the Nigaṇṭha-son together
 in person but NOT gpe: Brahmas Subrahma
 in person but NOT gpe: Vehapphala
 in person but NOT gpe: Evil One
@@ -45,7 +45,7 @@ in person but NOT gpe: Uttara
 in person but NOT gpe: Surasenas
 in person but NOT gpe: Ghata
 in person but NOT gpe: Sudassa
-in person but NOT gpe: Hastened
+! in person but NOT gpe: Hastened
 in person but NOT gpe: Nigantha Nathaputta
 in person but NOT gpe: Abhibhu
 in person but NOT gpe: Venerable Kaccaana
@@ -150,7 +150,7 @@ in person but NOT gpe: Sunakkhatta
 in person but NOT gpe: Ambapali
 in person but NOT gpe: King Vessavana
 in person but NOT gpe: Nala
-in person but NOT gpe: Saccaka the Nigaṇṭha-son went
+! in person but NOT gpe: Saccaka the Nigaṇṭha-son went
 in person but NOT gpe: Virulha
 in person but NOT gpe: Suriya
 in person but NOT gpe: Alavika
@@ -162,7 +162,7 @@ in person but NOT gpe: Bhaggava
 in person but NOT gpe: Dhammadinna the nun
 in person but NOT gpe: Visakha
 in person but NOT gpe: Pañcakanga
-in person but NOT gpe: Saccaka the Nigaṇṭha-son a
+! in person but NOT gpe: Saccaka the Nigaṇṭha-son a
 in person but NOT gpe: Kambalas
 in person but NOT gpe: Dhammika
 in person but NOT gpe: Mallikā
@@ -347,7 +347,7 @@ in person but NOT gpe: Uddaka
 in person but NOT gpe: Sarakaani
 in person but NOT gpe: Tathagatha
 in person but NOT gpe: Sirima
-in person but NOT gpe: Saccaka, a
+! in person but NOT gpe: Saccaka, a
 in person but NOT gpe: Kāsī
 in person but NOT gpe: Ajita
 in person but NOT gpe: Sumbha
@@ -492,7 +492,7 @@ in person but NOT gpe: Udayin
 in person but NOT gpe: Carpenter Fivetools went
 in person but NOT gpe: Veghanasa
 in person but NOT gpe: Sujata
-in person but NOT gpe: Saccaka the Nigaṇṭha-son said
+! in person but NOT gpe: Saccaka the Nigaṇṭha-son said
 in person but NOT gpe: Venerable Gotama
 in person but NOT gpe: Serisakka
 in person but NOT gpe: Gandharans
@@ -603,7 +603,7 @@ in person but NOT gpe: Devadatta
 in person but NOT gpe: Solar
 in person but NOT gpe: Punna Mantaniputta
 in person but NOT gpe: Punnaka
-in person but NOT gpe: Saccaka the Nigaṇṭha-son's writhings
+! in person but NOT gpe: Saccaka the Nigaṇṭha-son's writhings
 in person but NOT gpe: Accutas
 in person but NOT gpe: Kala-khemaka the Sakyan
 in person but NOT gpe: Ajita Kesakambalin
@@ -636,7 +636,7 @@ in person but NOT gpe: Ven. Susima
 in person but NOT gpe: Ven. Elephant-trainer's Son
 in person but NOT gpe: Rahula
 in person but NOT gpe: Uggahamana
-in person but NOT gpe: Saccaka — afraid
+! in person but NOT gpe: Saccaka — afraid
 in person but NOT gpe: Khemaka
 in person but NOT gpe: Venerable Meghiya
 in person but NOT gpe: Pakudha Kaccayana
@@ -790,7 +790,7 @@ in person but NOT gpe: Comm
 in person but NOT gpe: Uppala
 in person but NOT gpe: Ven. Maha Kaccana
 in person but NOT gpe: Kaccana
-in person but NOT gpe: Saccaka responded.
+! in person but NOT gpe: Saccaka responded.
 in person but NOT gpe: Aromas
 in person but NOT gpe: Ven. Bahuna
 in person but NOT gpe: deva-king!
@@ -917,7 +917,7 @@ in person but NOT gpe: Ven. Upavana
 in person but NOT gpe: Venerable Kāmabhū
 in person but NOT gpe: Ven. Maha Moggallana
 in person but NOT gpe: Ven. Cundaka
-in person but NOT gpe: Saccaka the Nigaṇṭha-son that
+! in person but NOT gpe: Saccaka the Nigaṇṭha-son that
 in person but NOT gpe: Take
 in person but NOT gpe: Fully Enlightened One
 in person but NOT gpe: Ven. Adhimutta
@@ -1038,7 +1038,7 @@ in person but NOT gpe: Capala
 in person but NOT gpe: Tuttha
 in person but NOT gpe: Supreme Buddhas
 in person but NOT gpe: Paccekabuddha
-in person but NOT gpe: Saccaka the Nigaṇṭha-son is
+! in person but NOT gpe: Saccaka the Nigaṇṭha-son is
 in person but NOT gpe: Sāmaṇḍakāni
 in person but NOT gpe: Megha
 in person but NOT gpe: Sumukha
@@ -1057,7 +1057,7 @@ in person but NOT gpe: Bodhi
 in person but NOT gpe: Santusita
 in person but NOT gpe: Paraga
 in person but NOT gpe: Naked
-in person but NOT gpe: Saccaka the Nigaṇṭha-son's monastery
+! in person but NOT gpe: Saccaka the Nigaṇṭha-son's monastery
 in person but NOT gpe: Posala
 in person but NOT gpe: Acela-Kassapa
 in person but NOT gpe: Joined

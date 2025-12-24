@@ -20,6 +20,7 @@ def main():
     nlp = load_model()
 
     sources = [
+        WORK / "dev.spacy",
         WORK / "test.spacy",
         WORK / "test_from_db.spacy"
     ]

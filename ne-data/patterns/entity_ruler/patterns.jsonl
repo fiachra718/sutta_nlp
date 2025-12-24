@@ -65,6 +65,7 @@
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "Asita"}]}
 {"label": "PERSON","id":"possessive_kin","pattern":[ {"IS_TITLE": true}, {"ORTH": "'s"}, {"LOWER": {"IN": ["mother","father","son","daughter","aunt","uncle","niece","nephew", "wife", "husband","sister","brother"]}} ]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "navakammika bharadvaja"}]}
+{"label": "PERSON", "pattern": "Saccaka the Nigaṇṭha-son"}
 
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["savatthi", "sāvatthī"]}}]}
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["rajagaha", "rājagaha"]}}]}

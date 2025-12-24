@@ -11,9 +11,12 @@ from spacy.util import fix_random_seed, minibatch
 
 
 def db_to_examples(conn, nlp):
+    ##
+    #  ADJUST THIS AS NEEDED
+    ##
     sql = """
-        select text, spans from gold_training 
-        where created_at::date > '2025-12-09'
+        select text, spans from gold_training WHERE 
+        created_at::date > '2025-11-30'
     """
     examples = []
     with conn.cursor(row_factory=dict_row) as cur:
@@ -52,17 +55,19 @@ def split_examples(examples: Sequence[Example], *, seed: int, dev_ratio: float )
 # random.seed(42)
 # np.random.seed(42)
 SEED = 42
-EPOCHS = 5
+EPOCHS = 10
 BATCH_SIZE = 16
 DROPOUT = 0.1
 DEV_RATIO = 0.1
 CONN = psycopg.connect("dbname=tipitaka user=alee")
-OUTPUT_DIR = WORK / "models" / "1210"
+# REMEMBER to set this
+OUTPUT_DIR = WORK / "models" / "1224"
 
 random.seed(SEED)
 
-
+# load from dir
 # nlp = load_model()
+# load from installed in dist
 nlp = spacy.load("en_sutta_ner")
 ner = nlp.get_pipe("ner")
 
