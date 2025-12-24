@@ -60,6 +60,9 @@
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "migara rohaneyya"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "devadatta"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "assalayana"}]}
+{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "Nalaka"}]}
+{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "Yama"}]}
+{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "Asita"}]}
 {"label": "PERSON","id":"possessive_kin","pattern":[ {"IS_TITLE": true}, {"ORTH": "'s"}, {"LOWER": {"IN": ["mother","father","son","daughter","aunt","uncle","niece","nephew", "wife", "husband","sister","brother"]}} ]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "navakammika bharadvaja"}]}
 
@@ -88,7 +91,33 @@
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["vebhara", "pandava", "vepulla", "gijjhakuta", "isigili"]}}, {"LOWER": "mountain"}]}
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": "haliddavasana"}]}
 {"label": "GPE", "pattern": "Ñatika"}
-
+{"label": "GPE", "pattern": "Anga"}
+{"label": "GPE", "pattern": "Magadha"}
+{"label": "GPE", "pattern": "Kasi"}
+{"label": "GPE", "pattern": "Kosala"}
+{"label": "GPE", "pattern": "Vajji"}
+{"label": "GPE", "pattern": "Malla"}
+{"label": "GPE", "pattern": "Ceti"}
+{"label": "GPE", "pattern": "Vansa"}
+{"label": "GPE", "pattern": "Kure"}
+{"label": "GPE", "pattern": "Pancala"}
+{"label": "GPE", "pattern": "Maccha"}
+{"label": "GPE", "pattern": "Surasena"}
+{"label": "GPE", "pattern": "Assaka"}
+{"label": "GPE", "pattern": "Avanti"}
+{"label": "GPE", "pattern": "Gandhara"}
+{"label": "GPE", "pattern": "Kamboja"}
+{"label": "GPE", "pattern": "Kesaputta"}
+{"label": "GPE", "pattern": "Alakamanda"}
+{"label": "GPE", "pattern": "Amaravati"}
+{"label": "GPE", "pattern": "Allakappa"}
+{"label": "GPE", "pattern": "Ambagama"}
+{"label": "GPE", "pattern": "Ambalatthika"}
+{"label": "GPE", "pattern": "Ambāṭakavana"}
+{"label": "GPE", "pattern": "Beluva"}
+{"label": "GPE", "pattern": "Dhavajalika"}
+{"label": "GPE", "pattern": "Kapilavattu"}
+{"label": "GPE", "pattern": "Kesaputta"}
 
 {"label":"LOC","id":"kuru_country","pattern":[{"LOWER":"kuru"},{"LOWER":"country"}]}
 {"label":"LOC","id":"koliyan_country","pattern":[{"LOWER":"koliyan"},{"LOWER":"country"}]}

@@ -1,0 +1,862 @@
+        identifier        | nikaya | book_number | vagga |              title               |     left     
+--------------------------+--------+-------------+-------+----------------------------------+--------------
+ an04.001.than.html       | AN     | 1           | 4     | Anubuddha Sutta                  | I have heard
+ an09.001.than.html       | AN     | 1           | 9     | Sambodhi Sutta                   | I have heard
+ an11.001.than.html       | AN     | 1           | 11    | Kimattha Sutta                   | I have heard
+ an11.010.than.html       | AN     | 10          | 11    | Sandha Sutta                     | On one occas
+ an04.010.niza.html       | AN     | 10          | 4     | Yoga Sutta                       | “Monks, ther
+ an04.010.than.html       | AN     | 10          | 4     | Yoga Sutta                       | "Monks, ther
+ an03.100.01-10.than.html | AN     | 100 (i-x)   | 3     | Pansadhovaka Sutta               | "There are t
+ an03.100.11-15.than.html | AN     | 100 (xi-xv) | 3     | Nimitta Sutta                    | "A monk inte
+ an06.102.than.html       | AN     | 102         | 6     | Anodhi Sutta                     | "In seeing s
+ an04.102.than.html       | AN     | 102         | 4     | Valahaka Sutta                   | "There are t
+ an10.103.than.html       | AN     | 103         | 10    | Micchatta Sutta                  | "From wrongn
+ an06.103.than.html       | AN     | 103         | 6     | Anodhi Sutta                     | "In seeing s
+ an06.104.than.html       | AN     | 104         | 6     | Anodhi Sutta                     | "In seeing s
+ an10.104.than.html       | AN     | 104         | 10    | Bija Sutta                       | "When a pers
+ an03.105.than.html       | AN     | 105         | 3     | Kuta Sutta                       | Then Anathap
+ an10.108.than.html       | AN     | 108         | 10    | Virecana (Tikicchaka) Sutta      | "Monks, doct
+ an07.011.than.html       | AN     | 11          | 7     | Anusaya Sutta                    | "Monks, ther
+ an04.111.than.html       | AN     | 111         | 4     | Kesi Sutta                       | Then Kesi th
+ an04.113.wood.html       | AN     | 113         | 4     | Patoda Sutta                     | "Monks, thes
+ an04.113.than.html       | AN     | 113         | 4     | Patoda Sutta                     | "There are t
+ an05.114.than.html       | AN     | 114         | 5     | Andhakavinda Sutta               | On one occas
+ an04.115.than.html       | AN     | 115         | 4     | Thana Sutta                      | "Monks, ther
+ an10.118.niza.html       | AN     | 118         | 10    | Orimatīra Sutta                  | "Monks, I sh
+ an02.119.than.html       | AN     | 119         | 2     | Dullabha Sutta                   | "Monks, thes
+ an11.012.than.html       | AN     | 12          | 11    | Mahanama Sutta                   | I have heard
+ an07.012.than.html       | AN     | 12          | 7     | Anusaya Sutta                    | "Monks, with
+ an06.012.than.html       | AN     | 12          | 6     | Saraniya Sutta                   | "Monks, thes
+ an03.120.than.html       | AN     | 120         | 3     | Moneyya Sutta                    | Monks, there
+ an05.121.than.html       | AN     | 121         | 5     | Gilana Sutta                     | I have heard
+ an03.123.than.html       | AN     | 123         | 3     | Gotamaka-cetiya Sutta            | On one occas
+ an04.123.than.html       | AN     | 123         | 4     | Jhana Sutta                      | "Monks, ther
+ an04.124.than.html       | AN     | 124         | 4     | Jhana Sutta                      | "Monks, ther
+ an04.125.than.html       | AN     | 125         | 4     | Metta Sutta                      | "Monks, ther
+ an04.125.nymo.html       | AN     | 125         | 4     | Metta Sutta                      | ... "Here, b
+ an02.125-126.than.html   | AN     | 125-126     | 2     | Ghosa Suttas                     | "Monks, ther
+ an03.126.than.html       | AN     | 126         | 3     | Katuviya Sutta                   | I have heard
+ an04.126.than.html       | AN     | 126         | 4     | Metta Sutta                      | "Monks, ther
+ an04.126.nymo.html       | AN     | 126         | 4     | Metta Sutta                      | ... Here, bh
+ an05.129.than.html       | AN     | 129         | 5     | Parikuppa Sutta                  | "There are t
+ an11.013.than.html       | AN     | 13          | 11    | Mahanama Sutta                   | I have heard
+ an08.013.than.html       | AN     | 13          | 8     | Ajañña Sutta                     | "Endowed wit
+ an10.013.than.html       | AN     | 13          | 10    | Sanyojana Sutta                  | "There are t
+ an09.013.than.html       | AN     | 13          | 9     | Kotthita Sutta                   | Then Ven. Ma
+ an06.013.than.html       | AN     | 13          | 6     | Nissaraniya Sutta                | "Monks, thes
+ an05.130.than.html       | AN     | 130         | 5     | Sampada Sutta                    | "Monks, ther
+ an03.130.than.html       | AN     | 130         | 3     | Lekha Sutta                      | "Monks, ther
+ an03.134.than.html       | AN     | 134         | 3     | Dhamma-niyama Sutta              | "Monks, whet
+ an05.139.than.html       | AN     | 139         | 5     | Akkhama Sutta                    | "Endowed wit
+ an08.014.than.html       | AN     | 14          | 8     | Khalunga Sutta                   | "Monks, I wi
+ an09.014.than.html       | AN     | 14          | 9     | Samiddhi Sutta                   | Then Ven. Sa
+ an05.140.than.html       | AN     | 140         | 5     | Sotar Sutta                      | "Endowed wit
+ an04.144.than.html       | AN     | 144         | 4     | Obhasa Sutta                     | "There are t
+ an05.148.than.html       | AN     | 148         | 5     | Sappurisadana Sutta              | "These five 
+ an10.015.than.html       | AN     | 15          | 10    | Appamada Sutta                   | "To the exte
+ an03.015.than.html       | AN     | 15          | 3     | Rathakara (Pacetana) Sutta       | On one occas
+ an07.015.than.html       | AN     | 15          | 7     | Udakupama Sutta                  | "Monks, seve
+ an09.015.than.html       | AN     | 15          | 9     | Ganda Sutta                      | "Monks, it's
+ an04.159.than.html       | AN     | 159         | 4     | Bhikkhuni Sutta                  | I have heard
+ an05.159.than.html       | AN     | 159         | 5     | Udayi Sutta                      | I have heard
+ an06.016.than.html       | AN     | 16          | 6     | Nakula Sutta                     | Once the Ble
+ an11.016.piya.html       | AN     | 16          | 11    | Metta (Mettanisamsa) Sutta       | Thus have I 
+ an09.016.than.html       | AN     | 16          | 9     | Sañña Sutta                      | "Monks, thes
+ an11.016.than.html       | AN     | 16          | 11    | Metta (Mettanisamsa) Sutta       | "Monks, for 
+ an05.161.than.html       | AN     | 161         | 5     | Aghatavinaya Sutta               | "There are t
+ an05.161.nymo.html       | AN     | 161         | 5     | Aghatavinaya Sutta               | "Bhikkhus, t
+ an05.162.than.html       | AN     | 162         | 5     | Aghatavinaya Sutta               | Then Ven. Sa
+ an04.162.than.html       | AN     | 162         | 4     | Vitthara Sutta                   | "Monks, ther
+ an04.163.than.html       | AN     | 163         | 4     | Asubha Sutta                     | "Monks, ther
+ an04.164.than.html       | AN     | 164         | 4     | Khama Sutta                      | "Monks, ther
+ an05.165.than.html       | AN     | 165         | 5     | Pañhapuccha Sutta                | Then Ven. Sa
+ an04.165.than.html       | AN     | 165         | 4     | Khama Sutta                      | "Monks, ther
+ an11.017.than.html       | AN     | 17          | 11    | Dasama Sutta                     | On one occas
+ an10.017.than.html       | AN     | 17          | 10    | Natha Sutta                      | "Live with a
+ an04.170.than.html       | AN     | 170         | 4     | Yuganaddha Sutta                 | On one occas
+ an04.174.than.html       | AN     | 174         | 4     | Kotthita Sutta                   | Then Ven. Ma
+ an05.175.than.html       | AN     | 175         | 5     | Candala Sutta                    | "Endowed wit
+ an05.176.than.html       | AN     | 176         | 5     | Piti Sutta                       | Then Anathap
+ an10.176.than.html       | AN     | 176         | 10    | Cunda Kammaraputta Sutta         | I have heard
+ an05.177.than.html       | AN     | 177         | 5     | Vanijja Sutta                    | "Monks, a la
+ an10.177.than.html       | AN     | 177         | 10    | Janussonin Sutta                 | Then Janusso
+ an04.178.than.html       | AN     | 178         | 4     | Jambali Sutta                    | "Monks, thes
+ an05.179.than.html       | AN     | 179         | 5     | Gihi Sutta                       | Then Anathap
+ an04.179.than.html       | AN     | 179         | 4     | Nibbana Sutta                    | Then Ven. An
+ an11.018.than.html       | AN     | 18          | 11    | Gopalaka Sutta                   | "Monks, a co
+ an02.018.than.html       | AN     | 18          | 2     | Ekamsena Sutta                   | Then Ven. An
+ an05.180.than.html       | AN     | 180         | 5     | Gavesin Sutta                    | On one occas
+ an04.181.than.html       | AN     | 181         | 4     | Yodhajiva Sutta                  | "Endowed wit
+ an04.183.than.html       | AN     | 183         | 4     | Suta Sutta                       | I have heard
+ an04.184.than.html       | AN     | 184         | 4     | Abhaya Sutta                     | Then Janusso
+ an04.019.than.html       | AN     | 19          | 4     | Agati Sutta                      | "There are t
+ an06.019.than.html       | AN     | 19          | 6     | Maranassati Sutta                | I have heard
+ an02.019.than.html       | AN     | 19          | 2     | Kusala Sutta                     | "Abandon wha
+ an04.192.than.html       | AN     | 192         | 4     | Thana Sutta                      | "Monks, thes
+ an05.196.than.html       | AN     | 196         | 5     | Supina Sutta                     | "When the Ta
+ an05.198.than.html       | AN     | 198         | 5     | Vaca Sutta                       | "Monks, a st
+ an04.199.than.html       | AN     | 199         | 4     | Tanha Sutta                      | " Monks , I 
+ an05.199.than.html       | AN     | 199         | 5     | Kula Sutta                       | "On the occa
+ an03.002.than.html       | AN     | 2           | 3     | Lakkhana Sutta                   | "Monks, a fo
+ an08.002.than.html       | AN     | 2           | 8     | Pañña Sutta                      | "Monks, thes
+ an05.002.than.html       | AN     | 2           | 5     | Vitthara Sutta                   | "Monks, ther
+ an11.002.than.html       | AN     | 2           | 11    | Cetana Sutta                     | "For a perso
+ an09.020.than.html       | AN     | 20          | 9     | Velāma Sutta                     | On one occas
+ an05.020.than.html       | AN     | 20          | 5     | Hita Sutta                       | "A monk endo
+ an10.020.than.html       | AN     | 20          | 10    | Ariyavasa Sutta                  | I have heard
+ an06.020.than.html       | AN     | 20          | 6     | Maranassati Sutta                | I have heard
+ an05.200.than.html       | AN     | 200         | 5     | Nissaraniya Sutta                | "Five proper
+ an04.200.than.html       | AN     | 200         | 4     | Pema Sutta                       | "Monks, thes
+ an05.202.than.html       | AN     | 202         | 5     | Dhammassavana Sutta              | "There are t
+ an10.208.than.html       | AN     | 208         | 10    | Brahmavihara Sutta               | "Monks, I do
+ an02.021.than.html       | AN     | 21          | 2     | Bala-pandita Sutta               | "Monks, thes
+ an07.021.than.html       | AN     | 21          | 7     | Bhikkhu-aparihaniya Sutta        | I have heard
+ an01.021-040.than.html   | AN     | 21-40       | 1     | Ekadhamma Suttas                 | 21 . "I don'
+ an03.022.than.html       | AN     | 22          | 3     | Gilana Sutta                     | " There are 
+ an02.023.than.html       | AN     | 23          | 2     | Abhasita Sutta                   | "Monks, thes
+ an08.023.than.html       | AN     | 23          | 8     | Hatthaka Sutta                   | On one occas
+ an04.235.than.html       | AN     | 235         | 4     | Ariyamagga Sutta                 | "Monks, thes
+ an08.024.than.html       | AN     | 24          | 8     | Hatthaka Sutta                   | On one occas
+ an10.024.than.html       | AN     | 24          | 10    | Cunda Sutta                      | On one occas
+ an04.024.than.html       | AN     | 24          | 4     | Kalaka Sutta                     | On one occas
+ an04.245.than.html       | AN     | 245         | 4     | Sikkha Sutta                     | "Monks, this
+ an08.025.kuma.html       | AN     | 25          | 8     | Mahanama Sutta                   | Once the Ble
+ an05.025.than.html       | AN     | 25          | 5     | Anuggahita Sutta                 | "Monks, when
+ an02.025.than.html       | AN     | 25          | 2     | Neyyatha Sutta                   | "Monks, thes
+ an04.252.than.html       | AN     | 252         | 4     | Pariyesana Sutta                 | "Monks, thes
+ an05.254.than.html       | AN     | 254-271     | 5     | Macchariya Suttas                | "Monks, ther
+ an04.255.than.html       | AN     | 255         | 4     | Kula Sutta                       | "In every ca
+ an04.259.than.html       | AN     | 259         | 4     | Araññika Sutta                   | "Endowed wit
+ an08.026.than.html       | AN     | 26          | 8     | Jivaka Sutta                     | I have heard
+ an05.027.than.html       | AN     | 27          | 5     | Samadhi Sutta                    | "Wise & mind
+ an10.027x.nypo.html      | AN     | 27          | 10    | Mahapañha Sutta                  | ... Monks, w
+ an08.028.than.html       | AN     | 28          | 8     | Bala Sutta                       | Then Ven. Sa
+ an04.028.than.html       | AN     | 28          | 4     | Ariya-vamsa Sutta                | These four t
+ an05.028.than.html       | AN     | 28          | 5     | Samadhanga Sutta                 | I have heard
+ an05.029.agku.html       | AN     | 29          | 5     | Cankama Sutta                    | Monks, there
+ an10.029.than.html       | AN     | 29          | 10    | Kosala Sutta                     | [1] "Monks, 
+ an05.029.than.html       | AN     | 29          | 5     | Cankama Sutta                    | These are th
+ an02.030.than.html       | AN     | 30          | 2     | Vijja-bhagiya Sutta              | "These two q
+ an08.030.than.html       | AN     | 30          | 8     | Anuruddha Sutta                  | Once the Ble
+ an05.030.than.html       | AN     | 30          | 5     | Nagita Sutta                     | I have heard
+ an04.031.than.html       | AN     | 31          | 4     | Cakka Sutta                      | "There are t
+ an09.031.than.html       | AN     | 31          | 9     | Anupubbanirodha Sutta            | "Monks, ther
+ an07.031.than.html       | AN     | 31          | 7     | Appamada Sutta                   | Then a certa
+ an02.031.than.html       | AN     | 31-32       | 2     | Kataññu Suttas                   | "Monks, I wi
+ an01.031-040x.wood.html  | AN     | 31-40       | 1     | Adanta Suttas                    | 31 . "Monks,
+ an07.032.than.html       | AN     | 32          | 7     | Hirima Sutta                     | "Last night,
+ an04.032.than.html       | AN     | 32          | 4     | Sangaha Sutta                    | "There are t
+ an09.032.than.html       | AN     | 32          | 9     | Vihāra Sutta                     | "Monks, ther
+ an07.033.than.html       | AN     | 33          | 7     | Sovacassata Sutta                | "Last night,
+ an02.033.niza.html       | AN     | 33          | 2     | Aññataro Brāhmaṇo Sutta          | Then a certa
+ an03.033.than.html       | AN     | 33          | 3     | Nidana Sutta                     | "Monks, thes
+ an09.033.than.html       | AN     | 33          | 9     | Vihāra Sutta                     | "Monks, I wi
+ an09.034.than.html       | AN     | 34          | 9     | Nibbana Sutta                    | I have heard
+ an05.034.than.html       | AN     | 34          | 5     | Siha Sutta                       | I have heard
+ an03.034.than.html       | AN     | 34          | 3     | Hatthaka Sutta                   | On one occas
+ an07.034.than.html       | AN     | 34          | 7     | Sovacassata Sutta                | "Last night,
+ an07.035.than.html       | AN     | 35          | 7     | Mitta Sutta                      | "Monks, a fr
+ an09.035.than.html       | AN     | 35          | 9     | Gavi Sutta                       | "Suppose the
+ an04.035.than.html       | AN     | 35          | 4     | Vassakara Sutta                  | On one occas
+ an04.036.than.html       | AN     | 36          | 4     | Dona Sutta                       | On one occas
+ an05.036.than.html       | AN     | 36          | 5     | Kaladana Sutta                   | "There are t
+ an09.036.than.html       | AN     | 36          | 9     | Jhana Sutta                      | "I tell you,
+ an05.037.than.html       | AN     | 37          | 5     | Bhojana Sutta                    | "In giving a
+ an04.037.than.html       | AN     | 37          | 4     | Aparihani Sutta                  | "Endowed wit
+ an09.037.than.html       | AN     | 37          | 9     | Ananda Sutta                     | On one occas
+ an06.037.than.html       | AN     | 37          | 6     | Dana Sutta                       | On one occas
+ an05.038.than.html       | AN     | 38          | 5     | Saddha Sutta                     | "For a lay p
+ an06.038.niza.html       | AN     | 38          | 6     | Attakārī Sutta                   | Then a certa
+ an03.038.than.html       | AN     | 38          | 3     | Sukhamala Sutta                  | "Monks, I li
+ an09.038.than.html       | AN     | 38          | 9     | Brahmana Sutta                   | Then two bra
+ an02.038.than.html       | AN     | 38          | 2     | Kandarayana Sutta                | On one occas
+ an08.039.than.html       | AN     | 39          | 8     | Abhisanda Sutta                  | "Monks, ther
+ an09.039.than.html       | AN     | 39          | 9     | Deva Sutta                       | "Once, monks
+ an09.040.than.html       | AN     | 40          | 9     | Naga Sutta                       | "When elepha
+ an08.040.than.html       | AN     | 40          | 8     | Vipaka Sutta                     | "Monks, the 
+ an03.040.than.html       | AN     | 40          | 3     | Adhipateyya Sutta                | "There are t
+ an08.041.vaka.html       | AN     | 41          | 8     | Uposatha Sutta                   | Thus have I 
+ an04.041.than.html       | AN     | 41          | 4     | Samadhi Sutta                    | "Monks, thes
+ an09.041.than.html       | AN     | 41          | 9     | Tapussa Sutta                    | I have heard
+ an05.041.than.html       | AN     | 41          | 5     | Adiya Sutta                      | Then Anathap
+ an06.041.than.html       | AN     | 41          | 6     | Daruka-khandha Sutta             | I have heard
+ an09.042.than.html       | AN     | 42          | 9     | Pañcala Sutta                    | On one occas
+ an04.042.than.html       | AN     | 42          | 4     | Pañha Sutta                      | "There are t
+ an06.042.than.html       | AN     | 42          | 6     | Nagita Sutta                     | I have heard
+ an08.043.khan.html       | AN     | 43          | 8     | Visakhuposatha Sutta             | Thus have I 
+ an05.043.than.html       | AN     | 43          | 5     | Ittha Sutta                      | Then Anathap
+ an09.043.than.html       | AN     | 43          | 9     | Kayasakkhi Sutta                 | [ Udayin :] 
+ an09.044.than.html       | AN     | 44          | 9     | Paññavimutti Sutta               | [ Udayin :] 
+ an09.045.than.html       | AN     | 45          | 9     | Ubhatobhaga Sutta                | [ Udayin :] 
+ an06.045.than.html       | AN     | 45          | 6     | Ina Sutta                        | "Monks, for 
+ an04.045.than.html       | AN     | 45          | 4     | Rohitassa Sutta                  | On one occas
+ an01.045-046.than.html   | AN     | 45-46       | 1     | Udakarahaka Suttas               | . "Suppose t
+ an06.046.than.html       | AN     | 46          | 6     | Cunda Sutta                      | On one occas
+ an02.046.than.html       | AN     | 46          | 2     | Ukkacita Sutta                   | "Monks, ther
+ an07.046.than.html       | AN     | 46          | 7     | Sañña Sutta                      | "Monks, thes
+ an10.046.than.html       | AN     | 46          | 10    | Sakka Sutta                      | On one occas
+ an06.047.than.html       | AN     | 47          | 6     | Sanditthika Sutta                | Then Moliyas
+ an01.047.than.html       | AN     | 47          | 1     | Mudu Sutta                       | "Just as, of
+ an03.047.than.html       | AN     | 47          | 3     | Sankhata Sutta                   | "Monks, thes
+ an10.048.than.html       | AN     | 48          | 10    | Dasadhamma Sutta                 | "There are t
+ an03.048.than.html       | AN     | 48          | 3     | Pabbata Sutta                    | " Monks , th
+ an10.048.piya.html       | AN     | 48          | 10    | Dasadhamma Sutta                 | Thus have I 
+ an07.048.than.html       | AN     | 48          | 7     | Saññoga Sutta                    | "I will teac
+ an01.048.than.html       | AN     | 48          | 1     | Lahu-parivatta Sutta             | "I don't env
+ an06.049.than.html       | AN     | 49          | 6     | Khema Sutta                      | On one occas
+ an07.049.than.html       | AN     | 49          | 7     | Dana Sutta                       | I have heard
+ an05.049.than.html       | AN     | 49          | 5     | Kosala Sutta                     | Once the Ble
+ an05.049.hekh.html       | AN     | 49          | 5     | Kosala Sutta                     | At one time 
+ an04.049.olen.html       | AN     | 49          | 4     | Vipallasa Sutta                  | ... These fo
+ an04.049.than.html       | AN     | 49          | 4     | Vipallasa Sutta                  | "Monks, ther
+ an01.049.than.html       | AN     | 49-52       | 1     | Pabhassara Sutta                 | "Luminous, m
+ an04.005.than.html       | AN     | 5           | 4     | Anusota Sutta                    | "These four 
+ an02.005.than.html       | AN     | 5           | 2     | Appativana Sutta                 | "Monks, I ha
+ an04.050.than.html       | AN     | 50          | 4     | Upakkilesa Sutta                 | "Monks, ther
+ an05.051.than.html       | AN     | 51          | 5     | Avarana Sutta                    | On one occas
+ an07.051.than.html       | AN     | 51          | 7     | Avyakata Sutta                   | Then a certa
+ an03.051.than.html       | AN     | 51          | 3     | Dvejana Sutta                    | On one occas
+ an06.051.than.html       | AN     | 51          | 6     | Ananda Sutta                     | Then Ven. An
+ an10.051.than.html       | AN     | 51          | 10    | Sacitta Sutta                    | I have heard
+ an03.052.than.html       | AN     | 52          | 3     | Dvejana Sutta                    | On one occas
+ an08.053.than.html       | AN     | 53          | 8     | Gotami Sutta                     | I have heard
+ an05.053.than.html       | AN     | 53          | 5     | Anga Sutta                       | "These are t
+ an10.054.than.html       | AN     | 54          | 10    | Samatha Sutta                    | "Even if a m
+ an06.054.olen.html       | AN     | 54          | 6     | Dhammika Sutta                   | ... In [1] a
+ an08.054.nara.html       | AN     | 54          | 8     | Dighajanu (Vyagghapajja) Sutta   | Thus have I 
+ an08.054.than.html       | AN     | 54          | 8     | Dighajanu (Vyagghapajja) Sutta   | I have heard
+ an04.055.than.html       | AN     | 55          | 4     | Samajivina Sutta                 | Once the Ble
+ an06.055.than.html       | AN     | 55          | 6     | Sona Sutta                       | I have heard
+ an07.056.than.html       | AN     | 56          | 7     | Kimila Sutta                     | I have heard
+ an05.057.than.html       | AN     | 57          | 5     | Upajjhatthana Sutta              | "There are t
+ an03.057.than.html       | AN     | 57          | 3     | Vaccha Sutta                     | Then Vacchag
+ an07.058.than.html       | AN     | 58          | 7     | Capala (Pacala) Sutta            | Once [1] the
+ an10.058.than.html       | AN     | 58          | 10    | Mula Sutta                       | "Monks, if t
+ an08.059.kuma.html       | AN     | 59          | 8     | Pathama Atthapuggala Sutta       | Monks, there
+ an07.006.than.html       | AN     | 6           | 7     | Dhana Sutta                      | "Monks, ther
+ an10.006.than.html       | AN     | 6           | 10    | Samadhi Sutta                    | Then Ven. An
+ an08.006.than.html       | AN     | 6           | 8     | Lokavipatti Sutta                | "Monks, thes
+ an07.060.than.html       | AN     | 60          | 7     | Kodhana Sutta                    | "These seven
+ an07.060.nymo.html       | AN     | 60          | 7     | Kodhana Sutta                    | "Bhikkhus, s
+ an03.060.than.html       | AN     | 60          | 3     | Sangarava Sutta                  | Then the bra
+ an10.060.than.html       | AN     | 60          | 10    | Girimananda Sutta                | I have heard
+ an10.060.piya.html       | AN     | 60          | 10    | Girimananda Sutta                | Thus have I 
+ an03.061.than.html       | AN     | 61          | 3     | Tittha Sutta                     | "Monks, ther
+ an09.062.than.html       | AN     | 62          | 9     | Bhabba Sutta                     | "Monks, one 
+ an04.062.than.html       | AN     | 62          | 4     | Anana Sutta                      | Then Anathap
+ an03.062.than.html       | AN     | 62          | 3     | Bhaya Sutta                      | "Monks, uned
+ an06.063.than.html       | AN     | 63          | 6     | Nibbedhika Sutta                 | "I will teac
+ an09.063.than.html       | AN     | 63          | 9     | Sikkha-dubbalya Sutta            | "Monks, thes
+ an07.063.than.html       | AN     | 63          | 7     | Nagara Sutta                     | "Monks, when
+ an08.063.than.html       | AN     | 63          | 8     | Sankhitta Sutta                  | Then a certa
+ an09.064.than.html       | AN     | 64          | 9     | Nivarana Sutta                   | "Monks, ther
+ an07.064.than.html       | AN     | 64          | 7     | Dhammaññu Sutta                  | "And how is 
+ an05.064.than.html       | AN     | 64          | 5     | Vuddhi Sutta                     | "A female di
+ an03.065.soma.html       | AN     | 65          | 3     | Kalama Sutta                     | . I heard th
+ an10.065.niza.html       | AN     | 65          | 10    | Pathama Sukha Sutta              | At one time,
+ an03.065.than.html       | AN     | 65          | 3     | Kalama Sutta                     | I have heard
+ an03.066.nymo.html       | AN     | 66          | 3     | Salha Sutta                      | Thus I heard
+ an10.066.niza.html       | AN     | 66          | 10    | Dutiya Sukha Sutta               | At one time,
+ an04.067.than.html       | AN     | 67          | 4     | Ahina Sutta                      | On one occas
+ an04.067.piya.html       | AN     | 67          | 4     | Ahi Sutta                        | Thus have I 
+ an03.067.than.html       | AN     | 67          | 3     | Kathavatthu Sutta                | "Monks, ther
+ an03.068.than.html       | AN     | 68          | 3     | Titthiya Sutta                   | "Monks, if y
+ an07.068.yaho.html       | AN     | 68          | 7     | Aggikkhandopama Sutta            | Thus have I 
+ an03.069.than.html       | AN     | 69          | 3     | Mula Sutta                       | "Monks, ther
+ an10.069.than.html       | AN     | 69          | 10    | Kathavatthu Sutta                | I have heard
+ an08.007.than.html       | AN     | 7           | 8     | Devadatta Sutta                  | On one occas
+ an10.007.than.html       | AN     | 7           | 10    | Sariputta Sutta                  | Then Ven. An
+ an07.007.than.html       | AN     | 7           | 7     | Ugga Sutta                       | Then Ugga , 
+ an09.007.than.html       | AN     | 7           | 9     | Sutava Sutta                     | I have heard
+ an03.070.than.html       | AN     | 70          | 3     | Muluposatha Sutta                | I have heard
+ an07.070.than.html       | AN     | 70          | 7     | Arakenanusasani Sutta            | "Once, monks
+ an10.070.than.html       | AN     | 70          | 10    | Kathavatthu Sutta                | I have heard
+ an10.071.than.html       | AN     | 71          | 10    | Akankha Sutta                    | On one occas
+ an03.071.than.html       | AN     | 71          | 3     | Channa Sutta                     | On one occas
+ an03.072.than.html       | AN     | 72          | 3     | Ajivaka Sutta                    | I have heard
+ an05.073.than.html       | AN     | 73          | 5     | Dhamma-viharin Sutta             | Then a certa
+ an04.073.than.html       | AN     | 73          | 4     | Sappurisa Sutta                  | "Monks, a pe
+ an03.073.than.html       | AN     | 73          | 3     | Sakka Sutta                      | I have heard
+ an05.075.than.html       | AN     | 75          | 5     | Yodhajiva Sutta                  | "Monks, ther
+ an03.076.than.html       | AN     | 76          | 3     | Bhava Sutta                      | Then Ven. An
+ an05.076.than.html       | AN     | 76          | 5     | Yodhajiva Sutta                  | "Monks, ther
+ an05.077.than.html       | AN     | 77          | 5     | Anagata-bhayani Sutta            | "Monks, thes
+ an03.077.than.html       | AN     | 77          | 3     | Bhava Sutta                      | Then Ven. An
+ an04.077.than.html       | AN     | 77          | 4     | Acintita Sutta                   | "There are t
+ an03.078.than.html       | AN     | 78          | 3     | Silabbata Sutta                  | Then Ven. An
+ an05.078.than.html       | AN     | 78          | 5     | Anagata-bhayani Sutta            | "Monks, thes
+ an07.079.than.html       | AN     | 79          | 7     | Satthusasana Sutta               | Then Ven. Up
+ an05.079.than.html       | AN     | 79          | 5     | Anagata-bhayani Sutta            | "Monks, thes
+ an04.079.than.html       | AN     | 79          | 4     | Vanijja Sutta                    | Then Ven. Sa
+ an08.008.than.html       | AN     | 8           | 8     | Uttara Sutta                     | On one occas
+ an10.080.than.html       | AN     | 80          | 10    | Aghata Sutta                     | "There are t
+ an08.080.than.html       | AN     | 80          | 8     | Kusita-Arambhavatthu Sutta       | "Monks, ther
+ an05.080.than.html       | AN     | 80          | 5     | Anagata-bhayani Sutta            | "Monks, thes
+ an10.081.than.html       | AN     | 81          | 10    | Bahuna Sutta                     | I have heard
+ an03.081.than.html       | AN     | 81          | 3     | Gadrabha Sutta                   | "Monks, it i
+ an03.083.than.html       | AN     | 83          | 3     | Vajjiputta Sutta                 | On one occas
+ an04.085.than.html       | AN     | 85          | 4     | Tamonata Sutta                   | "There are t
+ an06.085.than.html       | AN     | 85          | 6     | Siti Sutta                       | "A monk endo
+ an03.085.than.html       | AN     | 85          | 3     | Sekhin Sutta                     | "Monks, this
+ an08.086.than.html       | AN     | 86          | 8     | Yasa Sutta                       | I have heard
+ an06.086.than.html       | AN     | 86          | 6     | Avaranata Sutta                  | "Endowed wit
+ an03.086.than.html       | AN     | 86          | 3     | Sekhin Sutta                     | "Monks, this
+ an06.087.than.html       | AN     | 87          | 6     | Kammavaranata Sutta              | "Endowed wit
+ an06.088.than.html       | AN     | 88          | 6     | Sussusa Sutta                    | "Endowed wit
+ an03.088.than.html       | AN     | 88          | 3     | Sikkha Sutta                     | "There are t
+ an03.089.than.html       | AN     | 89          | 3     | Sikkha Sutta                     | "There are t
+ an02.009.than.html       | AN     | 9           | 2     | Lokapala Sutta                   | "Monks, thes
+ an08.009.than.html       | AN     | 9           | 8     | Nanda Sutta                      | "Monks, spea
+ an02.009.irel.html       | AN     | 9           | 2     | Lokapala Sutta                   | "Bhikkhus, t
+ an03.091.than.html       | AN     | 91          | 3     | Accayika Sutta                   | "There are t
+ an10.092.than.html       | AN     | 92          | 10    | Vera Sutta                       | Then Anathap
+ an10.093.than.html       | AN     | 93          | 10    | Ditthi Sutta                     | I have heard
+ an03.094.than.html       | AN     | 94          | 3     | Ajaniya Sutta                    | " Endowed wi
+ an04.094.than.html       | AN     | 94          | 4     | Samadhi Sutta                    | "Monks, thes
+ an10.094.than.html       | AN     | 94          | 10    | Vajjiya Sutta                    | I have heard
+ an05.095.niza.html       | AN     | 95          | 5     | Akuppa Sutta                     | When endowed
+ an04.095.budd.html       | AN     | 95          | 4     | Chavalata Sutta                  | "Monks, thes
+ an04.095.than.html       | AN     | 95          | 4     | Chavalata Sutta                  | "Monks, thes
+ an10.095.than.html       | AN     | 95          | 10    | Uttiya Sutta                     | Then Uttiya 
+ an05.096.than.html       | AN     | 96          | 5     | Sutadhara Sutta                  | "Endowed wit
+ an10.096.than.html       | AN     | 96          | 10    | Kokanuda Sutta                   | On one occas
+ an04.096.than.html       | AN     | 96          | 4     | Raga-vinaya Sutta                | "Monks, thes
+ an05.097.than.html       | AN     | 97          | 5     | Katha Sutta                      | "Endowed wit
+ an06.097.than.html       | AN     | 97          | 6     | Anisansa Sutta                   | "Monks, ther
+ an02.098.than.html       | AN     | 98          | 2     | Bala Sutta                       | "Monks, thes
+ an05.098.than.html       | AN     | 98          | 5     | Arañña Sutta                     | "Endowed wit
+ an04.099.than.html       | AN     | 99          | 4     | Sikkha Sutta                     | "Monks, thes
+ an03.099.than.html       | AN     | 99          | 3     | Lonaphala Sutta                  | "Monks, for 
+ dn.01.0.bodh.html        | DN     | 1           |       | Brahmajāla Sutta                 | 1. Thus have
+ dn.11.0.than.html        | DN     | 11          |       | Kevatta (Kevaddha) Sutta         | I have heard
+ dn.12.0.than.html        | DN     | 12          |       | Lohicca Sutta                    | I have heard
+ dn.15.0.than.html        | DN     | 15          |       | Maha-nidana Sutta                | I have heard
+ dn.16.5-6.than.html      | DN     | 16          |       | Maha-parinibbana Sutta           | ... Then the
+ dn.16.1-6.vaji.html      | DN     | 16          |       | Maha-parinibbana Sutta           | 1. Thus have
+ dn.02.0.than.html        | DN     | 2           |       | Samaññaphala Sutta               | I have heard
+ dn.20.0.piya.html        | DN     | 20          |       | Maha-samaya Sutta                | Thus have I 
+ dn.20.0.than.html        | DN     | 20          |       | Maha-samaya Sutta                | I have heard
+ dn.21.2x.than.html       | DN     | 21          |       | Sakka-pañha Sutta                | ... Having b
+ dn.22.0.bpit.html        | DN     | 22          |       | Maha-satipatthana Sutta          | 372. Thus ha
+ dn.22.0.than.html        | DN     | 22          |       | Maha-satipatthana Sutta          | I have heard
+ dn.26.0.than.html        | DN     | 26          |       | Cakkavatti Sutta                 | ..." Monks ,
+ dn.31.0.ksw0.html        | DN     | 31          |       | Sigalovada Sutta                 | This is what
+ dn.31.0.nara.html        | DN     | 31          |       | Sigalovada Sutta                 | Thus have I 
+ dn.32.0.piya.html        | DN     | 32          |       | Atanatiya Sutta                  | Thus have I 
+ dn.09.0.than.html        | DN     | 9           |       | Potthapada Sutta                 | I have heard
+ mn.001.than.html         | MN     | 1           |       | Mulapariyaya Sutta               | I have heard
+ mn.010.soma.html         | MN     | 10          |       | Satipatthana Sutta               | Thus have I 
+ mn.010.than.html         | MN     | 10          |       | Satipatthana Sutta               | I have heard
+ mn.010.nysa.html         | MN     | 10          |       | Satipatthana Sutta               | Thus have I 
+ mn.101.than.html         | MN     | 101         |       | Devadaha Sutta                   | I have heard
+ mn.105.than.html         | MN     | 105         |       | Sunakkhatta Sutta                | I have heard
+ mn.106.than.html         | MN     | 106         |       | Aneñja-sappaya Sutta             | I have heard
+ mn.107.horn.html         | MN     | 107         |       | Ganakamoggallana Sutta           | Thus I have 
+ mn.108.than.html         | MN     | 108         |       | Gopaka Moggallana Sutta          | I have heard
+ mn.109.than.html         | MN     | 109         |       | Maha-punnama Sutta               | I have heard
+ mn.011.ntbb.html         | MN     | 11          |       | Cula-sihanada Sutta              | . Thus have 
+ mn.110.than.html         | MN     | 110         |       | Cula-punnama Sutta               | I have heard
+ mn.111.than.html         | MN     | 111         |       | Anupada Sutta                    | I have heard
+ mn.113.than.html         | MN     | 113         |       | Sappurisa Sutta                  | I have heard
+ mn.116.piya.html         | MN     | 116         |       | Isigili Sutta                    | Thus have I 
+ mn.117.than.html         | MN     | 117         |       | Maha-cattarisaka Sutta           | I have heard
+ mn.118.than.html         | MN     | 118         |       | Anapanasati Sutta                | I have heard
+ mn.119.than.html         | MN     | 119         |       | Kayagata-sati Sutta              | I have heard
+ mn.012.ntbb.html         | MN     | 12          |       | Maha-sihanada Sutta              | . Thus have 
+ mn.121.than.html         | MN     | 121         |       | Cula-suññata Sutta               | I have heard
+ mn.122.than.html         | MN     | 122         |       | Maha-suññata Sutta               | I have heard
+ mn.125.horn.html         | MN     | 125         |       | Dantabhumi Sutta                 | Thus have I 
+ mn.126.than.html         | MN     | 126         |       | Bhumija Sutta                    | I have heard
+ mn.013.than.html         | MN     | 13          |       | Maha-dukkhakkhandha Sutta        | I have heard
+ mn.130.than.html         | MN     | 130         |       | Devaduta Sutta                   | I have heard
+ mn.131.nana.html         | MN     | 131         |       | Bhaddekaratta Sutta              | Thus have I 
+ mn.131.than.html         | MN     | 131         |       | Bhaddekaratta Sutta              | "Yes, lord,"
+ mn.135.nymo.html         | MN     | 135         |       | Cula-kammavibhanga Sutta         | . Thus have 
+ mn.135.than.html         | MN     | 135         |       | Cula-kammavibhanga Sutta         | I have heard
+ mn.136.than.html         | MN     | 136         |       | Maha Kammavibhanga Sutta         | I have heard
+ mn.136.nymo.html         | MN     | 136         |       | Maha Kammavibhanga Sutta         | . Thus have 
+ mn.137.than.html         | MN     | 137         |       | Salayatana-vibhanga Sutta        | I have heard
+ mn.138.than.html         | MN     | 138         |       | Uddesa-vibhanga Sutta            | I have heard
+ mn.014.than.html         | MN     | 14          |       | Cula-dukkhakkhandha Sutta        | I have heard
+ mn.140.than.html         | MN     | 140         |       | Dhatu-vibhanga Sutta             | I have heard
+ mn.141.than.html         | MN     | 141         |       | Saccavibhanga Sutta              | I have heard
+ mn.141.piya.html         | MN     | 141         |       | Saccavibhanga Sutta              | Thus have I 
+ mn.143x.olen.html        | MN     | 143         |       | Anathapindikovada Sutta          | On one occas
+ mn.143.than.html         | MN     | 143         |       | Anathapindikovada Sutta          | I have heard
+ mn.146.than.html         | MN     | 146         |       | Nandakovada Sutta                | I have heard
+ mn.147.than.html         | MN     | 147         |       | Cula-Rahulovada Sutta            | I have heard
+ mn.148.than.html         | MN     | 148         |       | Chachakka Sutta                  | I have heard
+ mn.149.than.html         | MN     | 149         |       | Maha-salayatanika Sutta          | I have heard
+ mn.152.than.html         | MN     | 152         |       | Indriya-bhavana Sutta            | I have heard
+ mn.018.than.html         | MN     | 18          |       | Madhupindika Sutta               | I have heard
+ mn.019.than.html         | MN     | 19          |       | Dvedhavitakka Sutta              | I have heard
+ mn.002.bpit.html         | MN     | 2           |       | Sabbasava Sutta                  | 14. Thus hav
+ mn.002.than.html         | MN     | 2           |       | Sabbasava Sutta                  | I have heard
+ mn.020.soma.html         | MN     | 20          |       | Vitakkasanthana Sutta            | Thus have I 
+ mn.020.than.html         | MN     | 20          |       | Vitakkasanthana Sutta            | I have heard
+ mn.021x.budd.html        | MN     | 21          |       | Kakacupama Sutta                 | ... "Phaggun
+ mn.021x.than.html        | MN     | 21          |       | Kakacupama Sutta                 | ... "Once, m
+ mn.022.than.html         | MN     | 22          |       | Alagaddupama Sutta               | I have heard
+ mn.022.nypo.html         | MN     | 22          |       | Alagaddupama Sutta               | Thus have I 
+ mn.024.than.html         | MN     | 24          |       | Ratha-vinita Sutta               | I have heard
+ mn.026.than.html         | MN     | 26          |       | Ariyapariyesana Sutta            | I have heard
+ mn.027.than.html         | MN     | 27          |       | Cula-hatthipadopama Sutta        | I have heard
+ mn.028.than.html         | MN     | 28          |       | Maha-hatthipadopama Sutta        | I have heard
+ mn.029.than.html         | MN     | 29          |       | Maha Saropama Sutta              | In have hear
+ mn.030.than.html         | MN     | 30          |       | Cula Saropama Sutta              | I have heard
+ mn.033.than.html         | MN     | 33          |       | Maha-gopalaka Sutta              | I have heard
+ mn.034x.olen.html        | MN     | 34          |       | Culagopalika Sutta               | ...
+ mn.035.than.html         | MN     | 35          |       | Cula-Saccaka Sutta               | I have heard
+ mn.036.than.html         | MN     | 36          |       | Maha-Saccaka Sutta               | I have heard
+ mn.038.than.html         | MN     | 38          |       | Mahatanhasankhaya Sutta          | I have heard
+ mn.039.than.html         | MN     | 39          |       | Maha-Assapura Sutta              | I have heard
+ mn.004.than.html         | MN     | 4           |       | Bhaya-bherava Sutta              | I have heard
+ mn.041.than.html         | MN     | 41          |       | Saleyyaka Sutta                  | I have heard
+ mn.041.nymo.html         | MN     | 41          |       | Saleyyaka Sutta                  | . Thus have 
+ mn.043.than.html         | MN     | 43          |       | Mahavedalla Sutta                | I have heard
+ mn.044.than.html         | MN     | 44          |       | Culavedalla Sutta                | I have heard
+ mn.045.than.html         | MN     | 45          |       | Cula-dhammasamadana Sutta        | I have heard
+ mn.049.than.html         | MN     | 49          |       | Brahma-nimantanika Sutta         | I have heard
+ mn.052.than.html         | MN     | 52          |       | Atthakanagara Sutta              | I have heard
+ mn.053.than.html         | MN     | 53          |       | Sekha-patipada Sutta             | I have heard
+ mn.054x.than.html        | MN     | 54          |       | Potaliya Sutta                   | ... " Suppos
+ mn.057.nymo.html         | MN     | 57          |       | Kukkuravatika Sutta              | . Thus have 
+ mn.058.than.html         | MN     | 58          |       | Abhaya Sutta                     | I have heard
+ mn.059.nypo.html         | MN     | 59          |       | Bahuvedaniya Sutta               | Thus have I 
+ mn.059.than.html         | MN     | 59          |       | Bahuvedaniya Sutta               | I have heard
+ mn.060.than.html         | MN     | 60          |       | Apannaka  Sutta                  | I have heard
+ mn.061.than.html         | MN     | 61          |       | Ambalatthika-rahulovada Sutta    | I have heard
+ mn.062.than.html         | MN     | 62          |       | Maha-Rahulovada Sutta            | I have heard
+ mn.063.than.html         | MN     | 63          |       | Cula-Malunkyovada Sutta          | I have heard
+ mn.066.than.html         | MN     | 66          |       | Latukikopama Sutta               | I have heard
+ mn.007.nypo.html         | MN     | 7           |       | Vatthupama Sutta                 | . Thus have 
+ mn.070.than.html         | MN     | 70          |       | Kitagiri Sutta                   | I have heard
+ mn.072.than.html         | MN     | 72          |       | Aggi-Vacchagotta Sutta           | I have heard
+ mn.074.than.html         | MN     | 74          |       | Dighanaka Sutta                  | I have heard
+ mn.075x.than.html        | MN     | 75          |       | Magandiya Sutta                  | " Magandiya 
+ mn.078.than.html         | MN     | 78          |       | Samana-Mundika Sutta             | I have heard
+ mn.008.nypo.html         | MN     | 8           |       | Sallekha Sutta                   | . Thus have 
+ mn.082.than.html         | MN     | 82          |       | Ratthapala Sutta                 | I have heard
+ mn.086.than.html         | MN     | 86          |       | Angulimala Sutta                 | I have heard
+ mn.087.than.html         | MN     | 87          |       | Piyajatika Sutta                 | I have heard
+ mn.009.ntbb.html         | MN     | 9           |       | Sammaditthi Sutta                | . Thus have 
+ mn.009.than.html         | MN     | 9           |       | Sammaditthi Sutta                | I have heard
+ mn.090.than.html         | MN     | 90          |       | Kannakatthala Sutta              | I have heard
+ mn.093.than.html         | MN     | 93          |       | Assalayana Sutta                 | I have heard
+ mn.095x.nymo.html        | MN     | 95          |       | Canki Sutta                      | ... There ar
+ mn.095x.than.html        | MN     | 95          |       | Canki Sutta                      | ... Now at t
+ mn.097.than.html         | MN     | 97          |       | Dhanañjani Sutta                 | I have heard
+ Majjhima_Index.html      | MN     |             |       | An Index to the Majjhima Nikaya  | 
+ sn55.001.than.html       | SN     | 1           | 55    | Raja Sutta                       | At Savatthi 
+ sn05.001.bodh.html       | SN     | 1           | 5     | Alavika Sutta                    | Thus have I 
+ sn36.001.nypo.html       | SN     | 1           | 36    | Samadhi Sutta                    | "There are, 
+ sn09.001.than.html       | SN     | 1           | 9     | Viveka Sutta                     | I have heard
+ sn06.001.than.html       | SN     | 1           | 6     | Ayacana Sutta                    | I have heard
+ sn03.001.than.html       | SN     | 1           | 3     | Dahara Sutta                     | I have heard
+ sn13.001.than.html       | SN     | 1           | 13    | Nakhasikha Sutta                 | I have heard
+ sn21.001.than.html       | SN     | 1           | 21    | Kolita Sutta                     | I have heard
+ sn05.001.than.html       | SN     | 1           | 5     | Alavika Sutta                    | At Savatthi 
+ sn46.001.than.html       | SN     | 1           | 46    | Himavanta Sutta                  | "Monks, it i
+ sn44.001.than.html       | SN     | 1           | 44    | Khema Sutta                      | On one occas
+ sn16.001.wlsh.html       | SN     | 1           | 16    | Santu.t.tha.m Sutta              | "Monks, Kass
+ sn45.001.than.html       | SN     | 1           | 45    | Avijja Sutta                     | I have heard
+ sn01.001.than.html       | SN     | 1           | 1     | Ogha-tarana Sutta                | I have heard
+ sn07.001.wlsh.html       | SN     | 1           | 7     | Dhanañjaanii Sutta               | Thus have I 
+ sn25.001.than.html       | SN     | 1           | 25    | Cakkhu Sutta                     | At Savatthi.
+ sn22.001.than.html       | SN     | 1           | 22    | Nakulapita Sutta                 | I have heard
+ sn27.001-010.than.html   | SN     | 1-10        | 27    | Upakkilesa Samyutta              | At Savatthi.
+ sn01.010.olen.html       | SN     | 10          | 1     | Arañña Sutta                     | [Devata:] [T
+ sn52.010.than.html       | SN     | 10          | 52    | Gilana Sutta                     | I have heard
+ sn47.010.olen.html       | SN     | 10          | 47    | Bhikkhunupassaya Sutta           | The venerabl
+ sn05.010.bodh.html       | SN     | 10          | 5     | Vajira Sutta                     | Setting at S
+ sn47.010.wlsh.html       | SN     | 10          | 47    | Bhikkhunivasako Sutta            | ... "In this
+ sn02.010.piya.html       | SN     | 10          | 2     | Suriya Sutta                     | Thus have I 
+ sn48.010.than.html       | SN     | 10          | 48    | Indriya-vibhanga Sutta           | " Monks, the
+ sn36.010.nypo.html       | SN     | 10          | 36    | Phassamulaka Sutta               | "There are, 
+ sn05.010.than.html       | SN     | 10          | 5     | Vajira Sutta                     | At Savatthi 
+ sn41.010.than.html       | SN     | 10          | 41    | Gilana Sutta                     | On that occa
+ sn25.010.than.html       | SN     | 10          | 25    | Khandha Sutta                    | At Savatthi.
+ sn12.010.wlsh.html       | SN     | 10          | 12    | Mahaa Sakyamuni Gotamo Sutta     | [1] "Monks, 
+ sn41.010.wlsh.html       | SN     | 10          | 41    | Gilaana-dassana.m Sutta          | At that time
+ sn44.010.than.html       | SN     | 10          | 44    | Ananda Sutta                     | Then the wan
+ sn01.010.than.html       | SN     | 10          | 1     | Arañña Sutta                     | Standing to 
+ sn21.010.than.html       | SN     | 10          | 21    | Theranama Sutta                  | On one occas
+ sn42.010.than.html       | SN     | 10          | 42    | Maniculaka Sutta                 | On one occas
+ sn01.010.irel.html       | SN     | 10          | 1     | Arañña Sutta                     | Thus have I 
+ sn22.100.than.html       | SN     | 100         | 22    | Gaddula Sutta                    | At Savatthi 
+ sn35.101.than.html       | SN     | 101         | 35    | Na Tumhaka Sutta                 | "Whatever is
+ sn22.101.than.html       | SN     | 101         | 22    | Nava Sutta                       | At Savatthi 
+ sn56.102-113.than.html   | SN     | 102-113     | 56    | Pansu Suttas                     | Then the Ble
+ sn22.109.wlsh.html       | SN     | 109         | 22    | Sotaapanno Sutta                 | [ At Saavatt
+ sn09.011.than.html       | SN     | 11          | 9     | Ayoniso-manasikara Sutta         | I have heard
+ sn56.011.harv.html       | SN     | 11          | 56    | Dhammacakkappavattana Sutta      | Translator's
+ sn42.011.than.html       | SN     | 11          | 42    | Gandhabhaka (Bhadraka) Sutta     | On one occas
+ sn56.011.than.html       | SN     | 11          | 56    | Dhammacakkappavattana Sutta      | I have heard
+ sn12.011.than.html       | SN     | 11          | 12    | Ahara Sutta                      | I have heard
+ sn44.011.than.html       | SN     | 11          | 44    | Sabhiya Sutta                    | On one occas
+ sn12.011.nypo.html       | SN     | 11          | 12    | Ahara Sutta                      | At Savatthi.
+ sn07.011.than.html       | SN     | 11          | 7     | Kasi Bharadvaja Sutta            | I have heard
+ sn56.011.piya.html       | SN     | 11          | 56    | Dhammacakkappavattana Sutta      | Thus have I 
+ sn36.011.than.html       | SN     | 11          | 36    | Rahogata Sutta                   | Then a certa
+ sn14.011.than.html       | SN     | 11          | 14    | Sattadhatu Sutta                 | At Savatthi.
+ sn56.011.nymo.html       | SN     | 11          | 56    | Dhammacakkappavattana Sutta      | Thus I heard
+ sn36.011.nypo.html       | SN     | 11          | 36    | Rahogata Sutta                   | Once a certa
+ sn15.011.than.html       | SN     | 11          | 15    | Duggata Sutta                    | At Savatthi 
+ sn07.011.piya.html       | SN     | 11          | 7     | Kasi Bharadvaja Sutta            | Thus have I 
+ sn22.110.wlsh.html       | SN     | 110         | 22    | Araha.m Sutta                    | [ As above (
+ sn35.115.than.html       | SN     | 115         | 35    | Marapasa Sutta                   | "There are f
+ sn10.012.than.html       | SN     | 12          | 10    | Alavaka Sutta                    | I have heard
+ sn15.012.than.html       | SN     | 12          | 15    | Sukhita Sutta                    | At Savatthi 
+ sn07.012.olen.html       | SN     | 12          | 7     | Udaya Sutta                      | 
+ sn10.012.piya.html       | SN     | 12          | 10    | Alavaka Sutta                    | Thus have I 
+ sn36.012.nypo.html       | SN     | 12          | 36    | Akasa Sutta                      | "In the sky,
+ sn12.012.nypo.html       | SN     | 12          | 12    | Phagguna Sutta                   | "There are, 
+ sn12.012.than.html       | SN     | 12          | 12    | Phagguna Sutta                   | Dwelling at 
+ sn35.120.wlsh.html       | SN     | 120         | 35    | Sariputto Sutta                  | [ At Saavatt
+ sn22.121.than.html       | SN     | 121         | 22    | Upadana Sutta                    | At Savatthi 
+ sn22.122.than.html       | SN     | 122         | 22    | Silavant Sutta                   | On one occas
+ sn35.127.wlsh.html       | SN     | 127         | 35    | Bhaaradvaajo Sutta               | [ King Udena
+ sn35.127.than.html       | SN     | 127         | 35    | Bharadvaja Sutta                 | On one occas
+ sn03.013.wlsh.html       | SN     | 13          | 3     | Do.napaaka Sutta                 | The King Pas
+ sn47.013.nypo.html       | SN     | 13          | 47    | Cunda Sutta                      | Once the Ble
+ sn54.013.than.html       | SN     | 13          | 54    | Ananda Sutta                     | I have heard
+ sn03.013.olen.html       | SN     | 13          | 3     | Donapaka Sutta                   | Once when th
+ sn04.013.than.html       | SN     | 13          | 4     | Sakalika Sutta                   | I have heard
+ sn06.013.olen.html       | SN     | 13          | 6     | Andhakavinda Sutta               | At one time 
+ sn16.013.wlsh.html       | SN     | 13          | 16    | Saddhamma-pa.tiruupaka.m Sutta   | [ At Saavatt
+ sn16.013.than.html       | SN     | 13          | 16    | Saddhammapatirupaka Sutta        | On one occas
+ sn15.013.than.html       | SN     | 13          | 15    | Timsa Sutta                      | Now on that 
+ sn47.013.than.html       | SN     | 13          | 47    | Cunda Sutta                      | On one occas
+ sn35.132.wlsh.html       | SN     | 132         | 35    | Lohicco Sutta                    | [ The Pupils
+ sn35.133.wlsh.html       | SN     | 133         | 35    | Verahaccaani Sutta               | [ The Brahma
+ sn35.135.than.html       | SN     | 135         | 35    | Khana Sutta                      | "It's a gain
+ sn09.014.olen.html       | SN     | 14          | 9     | Gandhatthena Sutta               | [A devata:] 
+ sn47.014.nypo.html       | SN     | 14          | 47    | Cunda Sutta                      | Once the Ble
+ sn46.014.than.html       | SN     | 14          | 46    | Gilana Sutta                     | I have heard
+ sn46.014.piya.html       | SN     | 14          | 46    | Gilana Sutta                     | Thus have I 
+ sn36.014.nypo.html       | SN     | 14          | 36    | Agara Sutta                      | "In a guest 
+ sn07.014.than.html       | SN     | 14          | 7     | Maha-sala Sutta                  | At Savatthi.
+ sn38.014.than.html       | SN     | 14          | 38    | Dukkha Sutta                     | On one occas
+ sn03.014.than.html       | SN     | 14          | 3     | Sangama Sutta                    | Staying at S
+ sn09.014.than.html       | SN     | 14          | 9     | Gandhatthena Sutta               | I have heard
+ sn15.014.than.html       | SN     | 14-19       | 15    | Mata Sutta                       | At Savatthi 
+ sn35.145.wlsh.html       | SN     | 145         | 35    | Kamma.m Sutta                    | "Monks, I wi
+ sn35.145.than.html       | SN     | 145         | 35    | Kamma Sutta                      | "Monks, I wi
+ sn12.015.than.html       | SN     | 15          | 12    | Kaccayanagotta Sutta             | Dwelling at 
+ sn36.015.nypo.html       | SN     | 15          | 36    | Santaka Sutta                    | Once the Ven
+ sn03.015.than.html       | SN     | 15          | 3     | Sangama Sutta                    | Staying at S
+ sn12.015.wlsh.html       | SN     | 15          | 12    | Kaccaayanagotto Sutta            | [ At Saavatt
+ sn51.015.than.html       | SN     | 15          | 51    | Brahmana Sutta                   | I have heard
+ sn06.015.than.html       | SN     | 15          | 6     | Parinibbana Sutta                | On one occas
+ sn35.152.wlsh.html       | SN     | 152         | 35    | Atthinukhopariyaayo Sutta        | [1] "Is ther
+ sn35.153.than.html       | SN     | 153         | 35    | Indriya Sutta                    | Then a certa
+ sn45.159.wlsh.html       | SN     | 159         | 45    | Agantuka Sutta                   | "Suppose, mo
+ sn46.016.piya.html       | SN     | 16          | 46    | Gilana Sutta                     | Thus have I 
+ sn12.016.wlsh.html       | SN     | 16          | 12    | Dhammakathiko Sutta              | [ A monk sai
+ sn45.165.wlsh.html       | SN     | 165         | 45    | Dukkhata Sutta                   | "Monks, ther
+ sn12.017x.wlsh.html      | SN     | 17          | 12    | Acela Sutta                      | [ At Veluvan
+ sn03.017.than.html       | SN     | 17          | 3     | Appamada Sutta                   | At Savatthi.
+ sn12.017.than.html       | SN     | 17          | 12    | Acela Sutta                      | I have heard
+ sn01.017.wlsh.html       | SN     | 17          | 1     | Dukkara.m (Kummo) Sutta          | ...the deva 
+ sn07.017.than.html       | SN     | 17          | 7     | Navakammika Sutta                | On one occas
+ sn45.171.than.html       | SN     | 171         | 45    | Ogha Sutta                       | At Savatthi 
+ sn07.018.than.html       | SN     | 18          | 7     | Katthaharaka Sutta               | On one occas
+ sn01.018.than.html       | SN     | 18          | 1     | Hiri Sutta                       | 
+ sn07.018.olen.html       | SN     | 18          | 7     | Katthaharaka Sutta               | [A Brahman:]
+ sn35.187.wlsh.html       | SN     | 187         | 35    | Samuddo (1) Sutta                | "'The ocean,
+ sn35.189.than.html       | SN     | 189         | 35    | Balisika Sutta                   | "Monks, just
+ sn04.019.than.html       | SN     | 19          | 4     | Kassaka Sutta                    | At Savatthi.
+ sn03.019.than.html       | SN     | 19          | 3     | Aputtaka Sutta                   | At Savatthi.
+ sn47.019.than.html       | SN     | 19          | 47    | Sedaka Sutta                     | I have heard
+ sn12.019.than.html       | SN     | 19          | 12    | Bala-pandita Sutta               | Dwelling at 
+ sn36.019.nypo.html       | SN     | 19          | 36    | Pañcakanga Sutta                 | Once Carpent
+ sn47.019.olen.html       | SN     | 19          | 47    | Sedaka Sutta                     | [The Buddha 
+ sn36.019.than.html       | SN     | 19          | 36    | Pañcakanga Sutta                 | Then Pañcaka
+ sn02.019.than.html       | SN     | 19          | 2     | Uttara Sutta                     | At Rajagaha 
+ sn35.191.than.html       | SN     | 191         | 35    | Kotthita Sutta                   | Once, Ven. S
+ sn35.191.wlsh.html       | SN     | 191         | 35    | Ko.t.thiko Sutta                 | [ At Isipata
+ sn35.193.than.html       | SN     | 193         | 35    | Udayin Sutta                     | On one occas
+ sn35.197.than.html       | SN     | 197         | 35    | Asivisa Sutta                    | I have heard
+ sn35.199.than.html       | SN     | 199         | 35    | Kumma Sutta                      | "Once upon a
+ sn05.002.than.html       | SN     | 2           | 5     | Soma Sutta                       | At Savatthi 
+ sn07.002.budd.html       | SN     | 2           | 7     | Akkosa Sutta                     | Once the Ble
+ sn07.002.than.html       | SN     | 2           | 7     | Akkosa Sutta                     | I have heard
+ sn07.002.wlsh.html       | SN     | 2           | 7     | Akkoso Sutta                     | ... Now Akko
+ sn36.002.nypo.html       | SN     | 2           | 36    | Sukha Sutta                      | "There are, 
+ sn44.002.than.html       | SN     | 2           | 44    | Anuradha Sutta                   | I have heard
+ sn21.002.than.html       | SN     | 2           | 21    | Upatissa Sutta                   | At Savatthi.
+ sn45.002.than.html       | SN     | 2           | 45    | Upaddha Sutta                    | I have heard
+ sn06.002.than.html       | SN     | 2           | 6     | Garava Sutta                     | I have heard
+ sn16.002.wlsh.html       | SN     | 2           | 16    | Anottaapi Sutta                  | Thus have I 
+ sn20.002.than.html       | SN     | 2           | 20    | Nakhasikha Sutta                 | Staying at S
+ sn42.002.than.html       | SN     | 2           | 42    | Talaputa Sutta                   | On one occas
+ sn23.002.than.html       | SN     | 2           | 23    | Satta Sutta                      | I have heard
+ sn05.002.olen.html       | SN     | 2           | 5     | Soma Sutta                       | [Soma replie
+ sn12.002.than.html       | SN     | 2           | 12    | Paticca-samuppada-vibhanga Sutta | Dwelling at 
+ sn05.002.bodh.html       | SN     | 2           | 5     | Soma Sutta                       | Setting at S
+ sn13.002.than.html       | SN     | 2           | 13    | Pokkharani Sutta                 | Staying at S
+ sn22.002.than.html       | SN     | 2           | 22    | Devadaha Sutta                   | I have heard
+ sn25.002.than.html       | SN     | 2           | 25    | Rupa Sutta                       | At Savatthi.
+ sn01.020.than.html       | SN     | 20          | 1     | Samiddhi Sutta                   | I have heard
+ sn56.020.than.html       | SN     | 20          | 56    | Tatha Sutta                      | "Monks, thes
+ sn03.020.than.html       | SN     | 20          | 3     | Aputtaka Sutta                   | At Savatthi.
+ sn47.020.than.html       | SN     | 20          | 47    | Sedaka Sutta                     | I have heard
+ sn01.020.wlsh.html       | SN     | 20          | 1     | Samiddhi Sutta                   | Thus have I 
+ sn04.020.than.html       | SN     | 20          | 4     | Rajja Sutta                      | I have heard
+ sn12.020.than.html       | SN     | 20          | 12    | Paccaya Sutta                    | Dwelling at 
+ sn51.020.than.html       | SN     | 20          | 51    | Iddhipada-vibhanga Sutta         | "These four 
+ sn35.200.than.html       | SN     | 200         | 35    | Daruka-khandha Sutta             | On one occas
+ sn35.202.than.html       | SN     | 202         | 35    | Avassuta Sutta                   | I have heard
+ sn35.203x.wlsh.html      | SN     | 203         | 35    | Dukkhadhammaa Sutta              | [1] "Monks, 
+ sn35.204.wlsh.html       | SN     | 204         | 35    | Ki.msukaa Sutta                  | [1] A certai
+ sn35.204.than.html       | SN     | 204         | 35    | Kimsuka Sutta                    | A certain mo
+ sn35.205.than.html       | SN     | 205         | 35    | Vina Sutta                       | "Monks, in w
+ sn35.205x.wlsh.html      | SN     | 205         | 35    | Vii.naa Sutta                    | "Suppose, mo
+ sn35.206x.wlsh.html      | SN     | 206         | 35    | Chapaa.na Sutta                  | "Suppose, mo
+ sn35.206.than.html       | SN     | 206         | 35    | Chappana Sutta                   | "Suppose tha
+ sn35.207.than.html       | SN     | 207         | 35    | Yavakalapi Sutta                 | " Suppose , 
+ sn36.021.nypo.html       | SN     | 21          | 36    | Sivaka Sutta                     | Once the Ble
+ sn55.021.than.html       | SN     | 21          | 55    | Mahanama Sutta                   | I have heard
+ sn07.021.wlsh.html       | SN     | 21          | 7     | Sangaarava Sutta                 | [ At Saavatt
+ sn36.021.than.html       | SN     | 21          | 36    | Sivaka Sutta                     | On one occas
+ sn22.022.than.html       | SN     | 22          | 22    | Bhāra Sutta                      | At Savatthi.
+ sn12.022x.wlsh.html      | SN     | 22          | 12    | Dasabalaa (2) Sutta              | "It is not b
+ sn36.022.nypo.html       | SN     | 22          | 36    | Atthasatapariyaya Sutta          | "I shall sho
+ sn36.022.than.html       | SN     | 22          | 36    | Atthasata Sutta                  | "Monks, I wi
+ sn22.022.wlsh.html       | SN     | 22          | 22    | Bhāra Sutta                      | "Monks, I wi
+ sn56.022x.wlsh.html      | SN     | 22          | 56    | Vijja Sutta                      | 
+ sn22.022.niza.html       | SN     | 22          | 22    | Bhāra Sutta                      | At Sāvatthī.
+ sn55.022.than.html       | SN     | 22          | 55    | Mahanama Sutta                   | I have heard
+ sn35.023.than.html       | SN     | 23          | 35    | Sabba Sutta                      | "Monks, I wi
+ sn12.023.than.html       | SN     | 23          | 12    | Upanisa Sutta                    | Dwelling at 
+ sn12.023.bodh.html       | SN     | 23          | 12    | Upanisa Sutta                    | While stayin
+ sn36.023.than.html       | SN     | 23          | 36    | Bhikkhu Sutta                    | Then a certa
+ sn12.023x.wlsh.html      | SN     | 23          | 12    | Upanisaa Sutta                   | [1] [ At Saa
+ sn03.023.than.html       | SN     | 23          | 3     | Loka Sutta                       | At Savatthi.
+ sn22.023.than.html       | SN     | 23          | 22    | Pariñña Sutta                    | At Savatthi.
+ sn55.024.wlsh.html       | SN     | 24          | 55    | Sarakaani Sutta                  | [ At Kapilav
+ sn35.024.than.html       | SN     | 24          | 35    | Pahanaya Sutta                   | "Monks, I wi
+ sn03.024.than.html       | SN     | 24          | 3     | Issattha Sutta                   | At Savatthi.
+ sn12.025.than.html       | SN     | 25          | 12    | Bhumija Sutta                    | Staying at S
+ sn03.025.than.html       | SN     | 25          | 3     | Pabbatopama Sutta                | At Savatthi 
+ sn01.025.wlsh.html       | SN     | 25          | 1     | Araha.m Sutta                    | [Deva:] [The
+ sn03.025.olen.html       | SN     | 25          | 3     | Pabbatopama Sutta                | 
+ sn02.025.wlsh.html       | SN     | 25          | 2     | Jantu Sutta                      | Thus have I 
+ sn02.026.than.html       | SN     | 26          | 2     | Rohitassa Sutta                  | On one occas
+ sn35.028.nymo.html       | SN     | 28          | 35    | Adittapariyaya Sutta             | Thus I heard
+ sn35.028.than.html       | SN     | 28          | 35    | Adittapariyaya Sutta             | I have heard
+ sn22.003.than.html       | SN     | 3           | 22    | Haliddakani Sutta                | I have heard
+ sn42.003.than.html       | SN     | 3           | 42    | Yodhajiva Sutta                  | Then Yodhaji
+ sn44.003.than.html       | SN     | 3           | 44    | Sariputta-Kotthita Sutta         | On one occas
+ sn05.003.bodh.html       | SN     | 3           | 5     | Gotami Sutta                     | Setting at S
+ sn17.003.than.html       | SN     | 3           | 17    | Kumma Sutta                      | Staying at S
+ sn05.003.than.html       | SN     | 3           | 5     | Gotami Sutta                     | At Savatthi.
+ sn11.003.than.html       | SN     | 3           | 11    | Dhajagga Sutta                   | On one occas
+ sn01.003.wlsh.html       | SN     | 3           | 1     | Upaneyya.m Sutta                 | Thus have I 
+ sn11.003.piya.html       | SN     | 3           | 11    | Dhajagga Sutta                   | Thus have I 
+ sn25.003.than.html       | SN     | 3           | 25    | Viññana Sutta                    | At Savatthi.
+ sn15.003.than.html       | SN     | 3           | 15    | Assu Sutta                       | At Savatthi 
+ sn36.003.nypo.html       | SN     | 3           | 36    | Pahana Sutta                     | "In the case
+ sn41.003.than.html       | SN     | 3           | 41    | Isidatta Sutta                   | On one occas
+ sn55.030.than.html       | SN     | 30          | 55    | Licchavi Sutta                   | On one occas
+ sn56.031.wlsh.html       | SN     | 31          | 56    | Simsapa Sutta                    | At one time 
+ sn36.031.than.html       | SN     | 31          | 36    | Niramisa Sutta                   | "Monks, ther
+ sn12.031x.nypo.html      | SN     | 31          | 12    | Bhutamidam Sutta                 | ... "'This h
+ sn55.031.than.html       | SN     | 31          | 55    | Abhisanda Sutta                  | "Monks, ther
+ sn56.031.than.html       | SN     | 31          | 56    | Simsapa Sutta                    | Once the Ble
+ sn36.031.nypo.html       | SN     | 31          | 36    | Niramisa Sutta                   | "There is, O
+ sn12.031.than.html       | SN     | 31          | 12    | Bhutamidam Sutta                 | On one occas
+ sn55.032.than.html       | SN     | 32          | 55    | Abhisanda Sutta                  | "Monks, ther
+ sn55.033.than.html       | SN     | 33          | 55    | Abhisanda Sutta                  | "Monks, ther
+ sn47.035.than.html       | SN     | 35          | 47    | Sata Sutta                       | At Savatthi.
+ sn12.035.than.html       | SN     | 35          | 12    | Avijjapaccaya Sutta              | Staying at S
+ sn56.035.than.html       | SN     | 35          | 56    | Sattisata Sutta                  | "Monks, supp
+ sn56.036.than.html       | SN     | 36          | 56    | Pana Sutta                       | "Monks, supp
+ sn22.036.than.html       | SN     | 36          | 22    | Bhikkhu Sutta                    | At Savatthi 
+ sn47.037.than.html       | SN     | 37          | 47    | Chanda Sutta                     | At Savatthi.
+ sn01.038.than.html       | SN     | 38          | 1     | Sakalika Sutta                   | I have heard
+ sn48.038.than.html       | SN     | 38          | 48    | Vibhanga Sutta                   | "Monks, ther
+ sn12.038.than.html       | SN     | 38          | 12    | Cetana Sutta                     | Staying at S
+ sn12.038.wlsh.html       | SN     | 38          | 12    | Cetanaa Sutta                    | [1] [ At Saa
+ sn47.038.than.html       | SN     | 38          | 47    | Pariñña Sutta                    | "Monks, ther
+ sn48.039.than.html       | SN     | 39          | 48    | Katthopama Sutta                 | "Monks, ther
+ sn22.039.than.html       | SN     | 39          | 22    | Anudhamma Sutta                  | At Savatthi.
+ sn11.004.olen.html       | SN     | 4           | 11    | Vepacitti Sutta                  | [Matali:] [S
+ sn44.004.than.html       | SN     | 4           | 44    | Sariputta-Kotthita Sutta         | On one occas
+ sn37.034.than.html       | SN     | 4           | 37    | Vaddha Sutta                     | "A female di
+ sn08.004.than.html       | SN     | 4           | 8     | Ananda Sutta                     | On one occas
+ sn36.004.than.html       | SN     | 4           | 36    | Patala Sutta                     | "Monks, when
+ sn36.004.nypo.html       | SN     | 4           | 36    | Patala Sutta                     | "When, O mon
+ sn41.004.than.html       | SN     | 4           | 41    | Mahaka Sutta                     | On one occas
+ sn20.004.than.html       | SN     | 4           | 20    | Okkha Sutta                      | Staying at S
+ sn25.004.than.html       | SN     | 4           | 25    | Phassa Sutta                     | At Savatthi.
+ sn03.004.than.html       | SN     | 4           | 3     | Piya Sutta                       | At Savatthi 
+ sn05.004.than.html       | SN     | 4           | 5     | Vijaya Sutta                     | At Savatthi.
+ sn05.004.bodh.html       | SN     | 4           | 5     | Vijaya Sutta                     | Setting at S
+ sn55.040.than.html       | SN     | 40          | 55    | Nandiya Sutta                    | On one occas
+ sn22.040.than.html       | SN     | 40          | 22    | Anudhamma Sutta                  | At Savatthi.
+ sn47.040.than.html       | SN     | 40          | 47    | Satipatthana-vibhanga Sutta      | "I will teac
+ sn22.041.than.html       | SN     | 41          | 22    | Anudhamma Sutta                  | At Savatthi.
+ sn48.041.than.html       | SN     | 41          | 48    | Jara Sutta                       | I have heard
+ sn47.041.than.html       | SN     | 41          | 47    | Amata Sutta                      | At Savatthi.
+ sn01.041.than.html       | SN     | 41          | 1     | Aditta Sutta                     | I have heard
+ sn01.042.than.html       | SN     | 42          | 1     | Kindada Sutta                    | [A deva:] [T
+ sn47.042.than.html       | SN     | 42          | 47    | Samudaya Sutta                   | I have heard
+ sn56.042.than.html       | SN     | 42          | 56    | Papata Sutta                     | On one occas
+ sn48.042.wlsh.html       | SN     | 42          | 48    | Unnabho Brahmano Sutta           | [ At Saavatt
+ sn22.042.than.html       | SN     | 42          | 22    | Anudhamma Sutta                  | At Savatthi.
+ sn22.043.wlsh.html       | SN     | 43          | 22    | Attadiipaa Sutta                 | "Monks, be i
+ sn48.044.than.html       | SN     | 44          | 48    | Pubbakotthaka Sutta              | I have heard
+ sn12.044.than.html       | SN     | 44          | 12    | Loka Sutta                       | Dwelling at 
+ sn56.044.than.html       | SN     | 44          | 56    | Kuta Sutta                       | "Monks, if a
+ sn56.045.than.html       | SN     | 45          | 56    | Vala Sutta                       | On one occas
+ sn47.046.wlsh.html       | SN     | 46          | 47    | Paa.timokkha Sutta               | [ A certain 
+ sn12.046.than.html       | SN     | 46          | 12    | Aññatra Sutta                    | Dwelling at 
+ sn56.046.than.html       | SN     | 46          | 56    | Andhakara Sutta                  | "There is, m
+ sn22.047.wlsh.html       | SN     | 47          | 22    | Samanupassanaa Sutta             | "Monks, thos
+ sn22.047.than.html       | SN     | 47          | 22    | Samanupassana Sutta              | At Savatthi 
+ sn56.048.than.html       | SN     | 48          | 56    | Chiggala Sutta                   | "Monks, supp
+ sn22.048.than.html       | SN     | 48          | 22    | Khandha Sutta                    | At Savatthi 
+ sn12.048.than.html       | SN     | 48          | 12    | Lokayatika Sutta                 | Staying at S
+ sn22.049.wlsh.html       | SN     | 49          | 22    | So.no Sutta                      | [ At Veluvan
+ sn17.005.wlsh.html       | SN     | 5           | 17    | Piḷhika Sutta                    | "A fatal thi
+ sn22.005.than.html       | SN     | 5           | 22    | Samadhi Sutta                    | I have heard
+ sn20.005.than.html       | SN     | 5           | 20    | Satti Sutta                      | Staying at S
+ sn25.005.than.html       | SN     | 5           | 25    | Vedana Sutta                     | At Savatthi.
+ sn11.005.than.html       | SN     | 5           | 11    | Subhasita-jaya Sutta             | On one occas
+ sn16.005.than.html       | SN     | 5           | 16    | Jinna Sutta                      | I have heard
+ sn44.005.than.html       | SN     | 5           | 44    | Sariputta-Kotthita Sutta         | On one occas
+ sn03.005.than.html       | SN     | 5           | 3     | Atta-rakkhita Sutta              | At Savatthi 
+ sn36.005.nypo.html       | SN     | 5           | 36    | Datthabba Sutta                  | "There are, 
+ sn05.005.than.html       | SN     | 5           | 5     | Uppalavanna Sutta                | At Savatthi.
+ sn05.005.bodh.html       | SN     | 5           | 5     | Uppalavanna Sutta                | Setting at S
+ sn41.005.niza.html       | SN     | 5           | 41    | Pathama Kamabhu                  | At one time,
+ sn17.005.than.html       | SN     | 5           | 17    | Pilahaka Sutta                   | Dwelling at 
+ sn46.051.than.html       | SN     | 51          | 46    | Ahara Sutta                      | "Monks, I wi
+ sn12.052.than.html       | SN     | 52          | 12    | Upadana Sutta                    | Dwelling at 
+ sn46.053.than.html       | SN     | 53          | 46    | Aggi Sutta                       | On one occas
+ sn22.053.than.html       | SN     | 53          | 22    | Upaya Sutta                      | At Savatthi 
+ sn48.053.than.html       | SN     | 53          | 48    | Sekha Sutta                      | I have heard
+ sn46.053.wlsh.html       | SN     | 53          | 46    | Aggi Sutta                       | "At such tim
+ sn46.054x.wlsh.html      | SN     | 54          | 46    | Mettam Sutta                     | ... "And how
+ sn55.054.than.html       | SN     | 54          | 55    | Gilana Sutta                     | On one occas
+ sn22.054.than.html       | SN     | 54          | 22    | Bija Sutta                       | At Savatthi 
+ sn48.054.wlsh.html       | SN     | 54          | 48    | Pade Sutta                       | "Just as mon
+ sn46.054.than.html       | SN     | 54          | 46    | Metta Sutta                      | On one occas
+ sn46.055.wlsh.html       | SN     | 55          | 46    | Sangaravo Sutta                  | [ At Saavatt
+ sn22.055.than.html       | SN     | 55          | 22    | Udana Sutta                      | At Savatthi 
+ sn48.056.than.html       | SN     | 56          | 48    | Patitthita Sutta                 | "Monks, when
+ sn22.056.than.html       | SN     | 56          | 22    | Parivatta Sutta                  | At Savatthi 
+ sn22.057.than.html       | SN     | 57          | 22    | Sattatthana Sutta                | I have heard
+ sn22.058.than.html       | SN     | 58          | 22    | Buddha Sutta                     | At Savatthi.
+ sn22.059.than.html       | SN     | 59          | 22    | Pañcavaggi Sutta                 | I have heard
+ sn22.059.nymo.html       | SN     | 59          | 22    | Anatta-lakkhana Sutta            | Thus I heard
+ sn22.059.mend.html       | SN     | 59          | 22    | Anatta-lakkhana Sutta            | Thus it was 
+ sn03.006.than.html       | SN     | 6           | 3     | Appaka Sutta                     | At Savatthi.
+ sn25.006.than.html       | SN     | 6           | 25    | Sañña Sutta                      | At Savatthi.
+ sn36.006.than.html       | SN     | 6           | 36    | Sallatha Sutta                   | "Monks, an u
+ sn09.006.than.html       | SN     | 6           | 9     | Anuruddha Sutta                  | I have heard
+ sn07.006.than.html       | SN     | 6           | 7     | Jata Sutta                       | At Savatthi 
+ sn36.006.nypo.html       | SN     | 6           | 36    | Sallatha Sutta                   | "An untaught
+ sn21.006.niza.html       | SN     | 6           | 21    | Lakuntaka Bhaddiya Sutta         | Dwelling in 
+ sn42.006.than.html       | SN     | 6           | 42    | Paccha-bhumika Sutta             | On one occas
+ sn20.006.than.html       | SN     | 6           | 20    | Dhanuggaha Sutta                 | Staying at S
+ sn41.006.than.html       | SN     | 6           | 41    | Kamabhu Sutta                    | On one occas
+ sn02.006.olen.html       | SN     | 6           | 2     | Kamada Sutta                     | [Kamada:] [B
+ sn44.006.than.html       | SN     | 6           | 44    | Sariputta-Kotthita Sutta         | On one occas
+ sn47.006.than.html       | SN     | 6           | 47    | Sakunagghi Sutta                 | "Once a hawk
+ sn54.006.than.html       | SN     | 6           | 54    | Arittha Sutta                    | At Savatthi.
+ sn05.006.than.html       | SN     | 6           | 5     | Cala Sutta                       | At Savatthi 
+ sn05.006.bodh.html       | SN     | 6           | 5     | Cala Sutta                       | Setting at S
+ sn22.060.than.html       | SN     | 60          | 22    | Mahali Sutta                     | I have heard
+ sn12.060x.wlsh.html      | SN     | 60          | 12    | Nidaana.m Sutta                  | The Blessed 
+ sn12.061.than.html       | SN     | 61          | 12    | Assutavā Sutta                   | I have heard
+ sn12.061.niza.html       | SN     | 61          | 12    | Assutavā Sutta                   | Thus it has 
+ sn35.063.than.html       | SN     | 63          | 35    | Migajala Sutta                   | At Savatthi 
+ sn12.063.than.html       | SN     | 63          | 12    | Puttamansa Sutta                 | At Savatthi 
+ sn12.063.nypo.html       | SN     | 63          | 12    | Puttamansa Sutta                 | At Savatthi.
+ sn35.063.wlsh.html       | SN     | 63          | 35    | Migajaalena Sutta                | [ At Saavatt
+ sn22.063.wlsh.html       | SN     | 63          | 22    | Upaadiyamaano Sutta              | [ At Saavatt
+ sn12.064.than.html       | SN     | 64          | 12    | Atthi Raga Sutta                 | At Savatthi 
+ sn12.064.nypo.html       | SN     | 64          | 12    | Atthi Raga Sutta                 | At Savatthi.
+ sn12.065.than.html       | SN     | 65          | 12    | Nagara Sutta                     | Dwelling at 
+ sn12.067.than.html       | SN     | 67          | 12    | Nalakalapiyo Sutta               | On one occas
+ sn12.068.than.html       | SN     | 68          | 12    | Kosambi Sutta                    | On one occas
+ sn35.069.than.html       | SN     | 69          | 35    | Upasena Sutta                    | Once Ven. Sa
+ sn01.069.than.html       | SN     | 69          | 1     | Iccha Sutta                      | [A deva:] [T
+ sn44.007.than.html       | SN     | 7           | 44    | Moggallana Sutta                 | Then Vacchag
+ sn25.007.than.html       | SN     | 7           | 25    | Cetana Sutta                     | At Savatthi.
+ sn22.007.wlsh.html       | SN     | 7           | 22    | Upaadaaparitassanaa Sutta        | [ At Saavatt
+ sn03.007.than.html       | SN     | 7           | 3     | Atthakarana Sutta                | At Savatthi.
+ sn47.007.than.html       | SN     | 7           | 47    | Makkata Sutta                    | "There are i
+ sn47.007.olen.html       | SN     | 7           | 47    | Makkata Sutta                    | 
+ sn05.007.than.html       | SN     | 7           | 5     | Upacala Sutta                    | At Savatthi.
+ sn05.007.bodh.html       | SN     | 7           | 5     | Upacala Sutta                    | Setting at S
+ sn02.007.than.html       | SN     | 7           | 2     | Pañcalacanda Sutta               | At Savatthi.
+ sn20.007.than.html       | SN     | 7           | 20    | Ani Sutta                        | Staying at S
+ sn42.007.wlsh.html       | SN     | 7           | 42    | Desanaa Sutta                    | [ At Naaland
+ sn41.007.than.html       | SN     | 7           | 41    | Godatta Sutta                    | On one occas
+ sn36.007.nypo.html       | SN     | 7           | 36    | Gelañña Sutta                    | Once the Ble
+ sn36.007.than.html       | SN     | 7           | 36    | Gelañña Sutta                    | I have heard
+ sn12.070.than.html       | SN     | 70          | 12    | Susima Sutta                     | I have heard
+ sn01.071.than.html       | SN     | 71          | 1     | Ghatva Sutta                     | As she was s
+ sn35.074.than.html       | SN     | 74          | 35    | Gilana Sutta                     | At Savatthi.
+ sn35.075.than.html       | SN     | 75          | 35    | Gilana Sutta                     | At Savatthi.
+ sn22.079.than.html       | SN     | 79          | 22    | Khajjaniya Sutta                 | At Savatthi 
+ sn03.008.wlsh.html       | SN     | 8           | 3     | Mallikaa Sutta                   | [ The Blesse
+ sn21.008.wlsh.html       | SN     | 8           | 21    | Nando Sutta                      | [ At Saavatt
+ sn44.008.than.html       | SN     | 8           | 44    | Vacchagotta Sutta                | Then Vacchag
+ sn05.008.than.html       | SN     | 8           | 5     | Sisupacala Sutta                 | At Savatthi.
+ sn13.008.than.html       | SN     | 8           | 13    | Samudda Sutta                    | Staying at S
+ sn02.008.wlsh.html       | SN     | 8           | 2     | Taayano Sutta                    | Thus have I 
+ sn05.008.bodh.html       | SN     | 8           | 5     | Sisupacala Sutta                 | Setting at S
+ sn10.008.than.html       | SN     | 8           | 10    | Sudatta Sutta                    | I have heard
+ sn25.008.than.html       | SN     | 8           | 25    | Tanha Sutta                      | At Savatthi.
+ sn17.008.than.html       | SN     | 8           | 17    | Sigala Sutta                     | Dwelling at 
+ sn54.008.than.html       | SN     | 8           | 54    | Dipa Sutta                       | "Monks, conc
+ sn47.008.than.html       | SN     | 8           | 47    | Suda Sutta                       | "Suppose tha
+ sn36.008.nypo.html       | SN     | 8           | 36    | Gelañña Sutta                    | Once the Ble
+ sn45.008.than.html       | SN     | 8           | 45    | Magga-vibhanga Sutta             | I have heard
+ sn42.008.than.html       | SN     | 8           | 42    | Sankha Sutta                     | On one occas
+ sn04.008.than.html       | SN     | 8           | 4     | Nandana Sutta                    | I have heard
+ sn35.080.than.html       | SN     | 80          | 35    | Avijja Sutta                     | Then a certa
+ sn22.080.than.html       | SN     | 80          | 22    | Pindolya Sutta                   | On one occas
+ sn22.080.wlsh.html       | SN     | 80          | 22    | Pi.n.dolya.m Sutta               | "This, monks
+ sn22.081.than.html       | SN     | 81          | 22    | Parileyyaka Sutta                | I have heard
+ sn35.082.than.html       | SN     | 82          | 35    | Loka Sutta                       | Then a certa
+ sn22.083.than.html       | SN     | 83          | 22    | Ananda Sutta                     | At Savatthi.
+ sn22.084.than.html       | SN     | 84          | 22    | Tissa Sutta                      | At Savatthi.
+ sn22.084x.wlsh.html      | SN     | 84          | 22    | Tisso Sutta                      | [ The Ven. T
+ sn35.085.than.html       | SN     | 85          | 35    | Suñña Sutta                      | Then Ven. An
+ sn22.085.than.html       | SN     | 85          | 22    | Yamaka Sutta                     | I have heard
+ sn22.086.wlsh.html       | SN     | 86          | 22    | Anuraadho Sutta                  | [ The Ven. A
+ sn22.086.than.html       | SN     | 86          | 22    | Anuradha Sutta                   | I have heard
+ sn22.087x.wlsh.html      | SN     | 87          | 22    | Vakkali Sutta                    | [ The Buddha
+ sn35.088.than.html       | SN     | 88          | 35    | Punna Sutta                      | Then Ven. Pu
+ sn22.089x.wlsh.html      | SN     | 89          | 22    | Khemo Sutta                      | [ The other 
+ sn22.089.than.html       | SN     | 89          | 22    | Khemaka Sutta                    | On one occas
+ sn01.009.wlsh.html       | SN     | 9           | 1     | Maanakaamo Sutta                 | ...the deva 
+ sn09.009.than.html       | SN     | 9           | 9     | Vajjiputta Sutta                 | On one occas
+ sn54.009.than.html       | SN     | 9           | 54    | Vesali Sutta                     | I have heard
+ sn36.009.nypo.html       | SN     | 9           | 36    | Anicca Sutta                     | "The three k
+ sn25.009.than.html       | SN     | 9           | 25    | Dhatu Sutta                      | At Savatthi.
+ sn42.009.than.html       | SN     | 9           | 42    | Kula Sutta                       | On one occas
+ sn56.009.wlsh.html       | SN     | 9           | 56    | Viggahika Sutta                  | "Monks, do n
+ sn40.009.wlsh.html       | SN     | 9           | 40    | Animitto Sutta                   | [1] [ The Ve
+ sn05.009.than.html       | SN     | 9           | 5     | Sela Sutta                       | At Savatthi.
+ sn02.009.piya.html       | SN     | 9           | 2     | Candima Sutta                    | Thus have I 
+ sn05.009.bodh.html       | SN     | 9           | 5     | Sela Sutta                       | Setting at S
+ sn15.009.than.html       | SN     | 9           | 15    | Danda Sutta                      | At Savatthi 
+ sn44.009.than.html       | SN     | 9           | 44    | Kutuhalasala Sutta               | Then Vacchag
+ sn22.090.than.html       | SN     | 90          | 22    | Channa Sutta                     | On one occas
+ sn35.093.than.html       | SN     | 93          | 35    | Dvaya Sutta                      | "It's in dep
+ sn22.093.than.html       | SN     | 93          | 22    | Nadi Sutta                       | At Savatthi 
+ sn22.095.than.html       | SN     | 95          | 22    | Phena Sutta                      | On one occas
+ sn35.095.wlsh.html       | SN     | 95          | 35    | Maalunkyaputta Sutta             | [ The Ven. M
+ sn35.095.than.html       | SN     | 95          | 35    | Malunkyaputta Sutta              | Then Ven. Ma
+ sn35.097.than.html       | SN     | 97          | 35    | Pamadaviharin Sutta              | "Monks, I wi
+ sn22.097.than.html       | SN     | 97          | 22    | Nakhasikha Sutta                 | At Savatthi 
+ sn35.099.than.html       | SN     | 99          | 35    | Samadhi Sutta                    | "Develop con
+ sn22.099.than.html       | SN     | 99          | 22    | Gaddula Sutta                    | At Savatthi 
+(858 rows)
+
