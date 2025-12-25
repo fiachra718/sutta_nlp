@@ -23,3 +23,5 @@ Flask==3.1.2
 Jinja2==3.1.6
 
 neo4j==6.0.3
+
+en_sutta_ner @ file:///Users/alee/sutta_nlp/dist/en_sutta_ner-1.1.3/dist/en_sutta_ner-1.1.3-py3-none-any.whl#sha256=3fba3db3b4062fd5cf1e66dea79a83b2d18f12a4d0145512d0f3a8933134b517

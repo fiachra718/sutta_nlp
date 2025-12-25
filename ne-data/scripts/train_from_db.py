@@ -12,7 +12,7 @@ from spacy.util import fix_random_seed, minibatch
 
 def db_to_examples(conn, nlp):
     ##
-    #  ADJUST THIS AS NEEDED
+    #  ADJUST THIS select AS NEEDED
     ##
     sql = """
         select text, spans from gold_training WHERE 
@@ -32,6 +32,8 @@ def db_to_examples(conn, nlp):
                     spans.append(span)
             gold_doc.ents = spans
             example = Example(pred_doc, gold_doc)
+            # blow this up!
+            print(example)
             examples.append(example)
     if not examples:
         raise ValueError("Candidate records did not yield any training examples.")
@@ -61,7 +63,7 @@ DROPOUT = 0.1
 DEV_RATIO = 0.1
 CONN = psycopg.connect("dbname=tipitaka user=alee")
 # REMEMBER to set this
-OUTPUT_DIR = WORK / "models" / "1224"
+OUTPUT_DIR = WORK / "models" / "1225"
 
 random.seed(SEED)
 

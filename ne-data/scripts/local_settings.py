@@ -16,7 +16,7 @@ NE_DATA     = REPO_ROOT / "ne-data"
 WORK        = NE_DATA / "work"
 SCRIPTS     = NE_DATA / "scripts"
 
-MODELS_DIR  = WORK / "models" / "1224"
+MODELS_DIR  = WORK / "models" / "1225"
 PATTERNS    = NE_DATA / "patterns" / "entity_ruler" / "patterns.jsonl"
 NORP_PATTERNS    = NE_DATA / "patterns" / "entity_ruler" / "ruler_norp.jsonl"
 LOC_EVENT_PATTERNS    = NE_DATA / "patterns" / "span_ruler"
@@ -47,11 +47,11 @@ def load_model():
             print("remove", name)
             nlp.remove_pipe(name)
 
-    # 1) Main entity_ruler BEFORE ner
+    # 1) Main entity_ruler AFTER <!BEFORE> ner
     er = nlp.add_pipe(
         "entity_ruler",
         name="entity_ruler",
-        before="ner",
+        after="ner",
         config={"overwrite_ents": False},
     )
     print("add entity ruler (before ner)")
@@ -61,7 +61,7 @@ def load_model():
     norp_ruler = nlp.add_pipe(
         "entity_ruler",
         name="norp_head_ruler",
-        after="ner",
+        after="entity_ruler",
         config={"overwrite_ents": False},
     )
     print("add NORP ruler (after ner)")
@@ -71,7 +71,7 @@ def load_model():
     sr = nlp.add_pipe(
         "span_ruler",
         name="span_ruler",
-        after="norp_head_ruler",
+        last=True,
         config={"spans_key": "LOC_PHRASES", "overwrite": False},
     )
     print("add span ruler (LOC, EVENT)")

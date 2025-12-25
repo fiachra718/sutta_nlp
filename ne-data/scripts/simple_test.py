@@ -33,7 +33,8 @@ def load_my_ner():
     print("Pipeline:", nlp.pipe_names)
     return nlp
 
-nlp = load_model()
+# nlp = load_model()
+nlp = spacy.load('en_sutta_ner')
 
 texts = [
     "They met at Simsapā Grove.",

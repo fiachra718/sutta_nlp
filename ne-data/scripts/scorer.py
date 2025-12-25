@@ -17,27 +17,33 @@ def docbin_to_examples(path, nlp):
 
 
 def main():
-    nlp = load_model()
+    for model in ('local', 'package'):
+        if model == 'local':
+            nlp = load_model()
+        if model == "package":
+            nlp = spacy.load('en_sutta_ner')
+        # nlp = load_model()
+        # nlp = spacy.load('en_sutta_ner')
+        
+        sources = [
+            WORK / "gold_training.spacy",
+            WORK / "test.spacy",
+            WORK / "test_from_db.spacy"
+        ]
 
-    sources = [
-        WORK / "dev.spacy",
-        WORK / "test.spacy",
-        WORK / "test_from_db.spacy"
-    ]
+        examples = []
+        for path in sources:
+            examples.extend(docbin_to_examples(path, nlp))
 
-    examples = []
-    for path in sources:
-        examples.extend(docbin_to_examples(path, nlp))
+        if not examples:
+            raise SystemExit("No DocBin examples loaded; nothing to score.")
 
-    if not examples:
-        raise SystemExit("No DocBin examples loaded; nothing to score.")
-
-    scores = nlp.evaluate(examples)
-    
-    print("ents_p:", scores.get("ents_p"))
-    print("ents_r:", scores.get("ents_r"))
-    print("ents_f:", scores.get("ents_f"))
-    print("per-type:", scores.get("ents_per_type"))
+        scores = nlp.evaluate(examples)
+        
+        print("ents_p:", scores.get("ents_p"))
+        print("ents_r:", scores.get("ents_r"))
+        print("ents_f:", scores.get("ents_f"))
+        print("per-type:", scores.get("ents_per_type"))
 
 
 if __name__ == "__main__":

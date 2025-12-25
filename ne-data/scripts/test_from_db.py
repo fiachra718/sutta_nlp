@@ -2,8 +2,6 @@ import psycopg
 from psycopg.rows import dict_row
 import spacy
 from spacy.training import Example
-import random
-import numpy as np
 from local_settings import load_model
 from spacy.util import minibatch
 
@@ -33,7 +31,8 @@ def db_to_examples(conn, nlp):
         raise ValueError("Candidate records did not yield any training examples.")
     return examples
 
-nlp = load_model()
+# nlp = load_model()
+nlp = spacy.load('en_sutta_ner')
 examples = db_to_examples(CONN, nlp)
 
 test_examples = db_to_examples(CONN, nlp)
