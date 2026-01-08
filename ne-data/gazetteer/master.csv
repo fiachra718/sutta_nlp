@@ -1,0 +1,11 @@
+id,type,canonical,aliases,parent_id,variant_regex
+pers.sariputta,PERSON,Sāriputta,"Sariputta; Sari-putta; Sariputta Thera",,
+pers.mahamoggallana,PERSON,Mahā Moggallāna,"Maha Moggallana; Moggallana; Moggallāna; Mahā Moggallāna",,
+pers.ratthapala,PERSON,Raṭṭhapāla,"Ratthapala; Raṭṭhapāla Thera",,
+gpe.kosala,GPE_KINGDOM,Kosala,"Kosala; Kosalan kingdom",,
+gpe.savatthi,GPE_CITY,Sāvatthī,"Savatthi; Sāvatthi; Savatthī",gpe.kosala,
+gpe.kosambi,GPE_CITY,Kosambī,"Kosambi; Kosambī",,
+gpe.thullakotthita,GPE_TOWN,Thullakoṭṭhita,"Thullakotthita; Thullakotthitaṁ",,
+loc.ghosita_park,LOC_MONASTERY,Ghosita's Park,"Ghositarāma; Ghositarama; Ghosita Park",gpe.kosambi,
+title.blessed_one,TITLE,Blessed One,"the Blessed One; Bhagavā; the Exalted One",,"(Blessed\s+Ones?)|(Enlightened\s+Ones?)"
+realm.tusita,REALM_CELESTIAL,Tuṣita,"Tusita; Tushita; Tusitā",,label,id,pattern_text,pattern_json

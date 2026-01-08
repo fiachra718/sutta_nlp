@@ -120,52 +120,6 @@
 {"label": "GPE", "pattern": "Kapilavattu"}
 {"label": "GPE", "pattern": "Kesaputta"}
 
-{"label":"LOC","id":"kuru_country","pattern":[{"LOWER":"kuru"},{"LOWER":"country"}]}
-{"label":"LOC","id":"koliyan_country","pattern":[{"LOWER":"koliyan"},{"LOWER":"country"}]}
-{"label":"LOC","id":"icchānangala_forest_grove","pattern":[{"LOWER":{"REGEX":"icch[aā]na?ṅgala"}},{"LOWER":"forest"},{"LOWER":"grove"}]}
-{"label":"LOC","id":"jetavana","pattern":[{"LOWER":{"REGEX":"jetavana"}}]}
-{"label":"LOC","id":"jeta_possessive_grove_park","pattern":[{"LOWER":"jeta"},{"LOWER":{"IN":["'s","’s"]}},{"LOWER":{"IN":["grove","park"]}}]}
-{"label":"LOC","id":"anathapindika_possessive","pattern":[{"LOWER":{"REGEX":"an[aā]thapiṇḍika|anathapindika"}},{"LOWER":{"IN":["'s","’s"]}},{"LOWER":{"IN":["park","grove","monastery"]}}]}
-{"label":"LOC","id":"jīvaka_mango_grove","pattern":[{"LOWER":{"REGEX":"j[īi]vaka"}},{"LOWER":{"IN":["'s","’s"]}},{"LOWER":"mango"},{"LOWER":"grove"}]}
-{"label":"LOC","id":"cunda_silversmith_mango_grove","pattern":[{"LOWER":"cunda"},{"LOWER":"the"},{"LOWER":"silversmith"},{"LOWER":{"IN":["'s","’s"]}},{"LOWER":"mango"},{"LOWER":"grove"}]}
-{"label":"LOC","id":"bamboo_grove","pattern":[{"LOWER":"bamboo"},{"LOWER":{"IN":["grove","park"]}}]}
-{"label":"LOC","id":"banyan_grove_park","pattern":[{"LOWER":"banyan"},{"LOWER":{"IN":["grove","park"]}}]}
-{"label":"LOC","id":"simsapa_grove","pattern":[{"LOWER":{"REGEX":"simsap[aā]" }},{"LOWER":"grove"}]}
-{"label":"LOC","id":"bhesakala_grove","pattern":[{"LOWER":{"REGEX":"bhesaka[ḷl]a"}},{"LOWER":"grove"}]}
-{"label":"LOC","id":"blind_mans_grove","pattern":[{"LOWER":"blind"},{"LOWER":"man"},{"LOWER":{"IN":["'s","’s"]}},{"LOWER":"grove"}]}
-{"label":"LOC","id":"deer_park_generic","pattern":[{"LOWER":"deer"},{"LOWER":"park"}]}
-{"label":"LOC","id":"deer_park_isipatana","pattern":[{"LOWER":"deer"},{"LOWER":"park"},{"LOWER":"at"},{"LOWER":{"REGEX":"isipatana"}}]}
-{"label":"LOC","id":"varanasi_deer_park","pattern":[{"LOWER":{"REGEX":"v[āa]r[āa]ṇas[īi]|varanasi"}},{"LOWER":{"IN":["'s","’s"]}},{"LOWER":"deer"},{"LOWER":"park"}]}
-{"label":"LOC","pattern":[{"LOWER":{"IN":["capala","sarandada","bahuputta","sattambaka","gotamaka","cāpāla"]}},{"LOWER":{"IN":["shrine","shrines","sanctuary","park","grove"]}}]}
-{"label":"LOC","id":"squirrels_sanctuary","pattern":[{"LOWER":{"REGEX":"squirrel|squirrels|squirrel's|squirrels'"}},{"LOWER":{"IN":["sanctuary","park","refuge"]}}]}
-{"label":"LOC","id":"tapoda_springs","pattern":[{"LOWER":"tapoda"},{"LOWER":{"IN":["spring","springs"]}}]}
-{"label":"LOC","id":"tapoda_monastery","pattern":[{"LOWER":"tapoda"},{"LOWER":{"IN":["monastery","vihara"]}}]}
-{"label":"LOC","id":"vultures_peak","pattern":[{"LOWER":"vulture"},{"LOWER":{"IN":["'s","’s"]},"OP":"?"},{"LOWER":"peak"},{"LOWER":"mountain","OP":"?"}]}
-{"label":"LOC","id":"gotamaka_shrine","pattern":[{"LOWER":"gotamaka"},{"LOWER":"shrine"}]}
-{"label":"LOC","id":"cāpāla_shrine","pattern":[{"LOWER":{"REGEX":"c[āa]p[āa]la"}},{"LOWER":"shrine"}]}
-{"label":"LOC","id":"crocodile_haunt","pattern":[{"LOWER":"crocodile"},{"LOWER":"haunt"}]}
-{"label":"LOC","id":"game_refuge","pattern":[{"LOWER":"game"},{"LOWER":"refuge"}]}
-{"label":"LOC","id":"pigeon_cave","pattern":[{"LOWER":"pigeon"},{"LOWER":"cave"}]}
-{"label":"LOC","id":"pipphali_cave","pattern":[{"LOWER":"pipphali"},{"LOWER":"cave"}]}
-{"label":"LOC","id":"eastern_monastery","pattern":[{"LOWER":"eastern"},{"LOWER":"monastery"}]}
-{"label":"LOC","id":"western_monastery","pattern":[{"LOWER":"western"},{"LOWER":"monastery"}]}
-{"label":"LOC","id":"tusita_realm","pattern":[{"LOWER":{"REGEX":"tusita"}}]}
-{"label":"LOC","id":"tavatimsa_realm","pattern":[{"LOWER":{"REGEX":"t[āa]vatiṃsa|tavatimsa"}}]}
-{"label":"LOC","id":"nimmanarati_realm","pattern":[{"LOWER":{"REGEX":"nimm[āa]narati|nimmanarati"}}]}
-{"label":"LOC","id":"paranimmitavasavatti_realm","pattern":[{"LOWER":{"REGEX":"paranimmita-?vasavatti"}}]}
-{"label":"LOC","id":"yama_realm","pattern":[{"LOWER":"yama"}]}
-{"label":"LOC","id":"brahma_worlds_generic","pattern":[{"LOWER":"brahma"},{"LOWER":{"IN":["parisajja","purohita","maha"]},"OP":"?"}]}
-{"label":"LOC","id":"hermitage_of_person_brahman","pattern":[{"LOWER":"the"},{"LOWER":"hermitage"},{"LOWER":"of"},{"IS_TITLE":true},{"LOWER":"the"},{"LOWER":{"REGEX":"br[āa]hmaṇa|brahman"}}]}
-{"label":"LOC","id":"palace_of_person_mother","pattern":[{"LOWER":"the"},{"LOWER":"palace"},{"LOWER":"of"},{"IS_TITLE":true},{"LOWER":{"IN":["'s","’s"]}},{"LOWER":"mother"}]}
-{"label": "LOC", "pattern":[{"LOWER": "ten world-systems"}]}
-{"label": "LOC", "pattern": [ {"LOWER": "migara"}, {"LOWER": "'s", "OP": "?"}, {"LOWER": "mother"}, {"LOWER": "'s", "OP": "?"}, {"LOWER": "palace"} ]}
-{"label": "LOC", "pattern": [ {"LOWER": {"IN": ["mallika", "mallika’s", "mallikas"]}}, {"LOWER": {"IN": ["park", "garden", "grove"]}} ]}
-{"label": "LOC", "pattern": [{"LOWER": "river"}, {"LOWER": "ganges"}]}
-{"label":"LOC","pattern":[{"LOWER":"realm"},{"LOWER":"of"},{"LOWER":"the"},{"LOWER":{"REGEX":"thirty[- ]three"}}]}
-{"label":"LOC","pattern":[{"LOWER":{"REGEX":"suddhav[āa]sa"}},{"ORTH":"(","OP":"?"},{"LOWER":{"IN":["pure","of","abodes","abode"]},"OP":"*"},{"ORTH":")","OP":"?"}]}
-{"label":"LOC","pattern":[{"LOWER":"brahma"},{"LOWER":{"IN":["world","heaven","retinue"]}}]}
-{"label":"LOC","pattern":[{"LOWER":"heaven"},{"LOWER":"of"},{"LOWER":"the"},{"LOWER":"thirty-three"}]}
-
 {"label":"EVENT","id":"uposatha","pattern":[{"LOWER":{"REGEX":"^uposatha$"}}]}
 {"label":"EVENT","id":"vassa","pattern":[{"LOWER":{"REGEX":"^vassa$"}}]}
 {"label":"EVENT","id":"rains_retreat","pattern":[{"LOWER":{"REGEX":"^rains$"}},{"LOWER":{"IN":["retreat","season"]}}]}

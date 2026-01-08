@@ -1,0 +1,180 @@
+SELECT
+  ent->>'text'  AS text,
+  ent->>'label' AS label,
+  COUNT(*)      AS freq
+FROM ati_verses v
+CROSS JOIN LATERAL jsonb_array_elements(v.ner_span) AS ent
+WHERE ent->>'label' = 'GPE'
+GROUP BY ent->>'text', ent->>'label'
+ORDER BY freq DESC;
+
+
+
+        text         | label | freq 
+---------------------+-------+------
+ Savatthi            | GPE   |  376 ✅  
+ Sāvatthī            | GPE   |  116 ✅  
+ Rajagaha            | GPE   |  107 ✅
+ Kusinara            | GPE   |   95 ✅
+ Vesali              | GPE   |   72 ✅
+ Magadha             | GPE   |   59 ✅
+ Kapilavatthu        | GPE   |   57 ✅
+ Varanasi            | GPE   |   36 ✅
+ Rājagaha            | GPE   |   28 ✅
+ Icchanangala        | GPE   |   27 ✅
+ Kasi                | GPE   |   27 ✅
+ Kosambi             | GPE   |   24 ✅
+ Kosala              | GPE   |   20 ✅
+ Pava                | GPE   |   16 ✅
+ Benares             | GPE   |   16 ✅
+ Sala                | GPE   |   15 ✅
+ Pataligama          | GPE   |   15
+ Nalanda             | GPE   |   15
+ Saketa              | GPE   |   15
+ Kesaputta           | GPE   |   14
+ Thullakotthita      | GPE   |   13
+ Campa               | GPE   |   10
+ Uruvela             | GPE   |   10
+ Alavi               | GPE   |    9
+ Uruvelakappa        | GPE   |    9
+ Atthakanagara       | GPE   |    8
+ Vesālī              | GPE   |    7
+! Yama                | GPE   |    7
+ Veluvagamaka        | GPE   |    6
+ Toranavatthu        | GPE   |    6
+! Isigili mountain    | GPE   |    6
+ Kammasadhamma       | GPE   |    6
+ Saavatthii          | GPE   |    6
+ Isipatana           | GPE   |    6
+ Pipphalivana        | GPE   |    6
+ Kusavati            | GPE   |    6
+ Nadika              | GPE   |    6
+ Uruvelā             | GPE   |    6
+ Pataliputta         | GPE   |    6
+ Kosambī             | GPE   |    6
+ Ekanala             | GPE   |    5
+ Apana               | GPE   |    5
+ Ukkattha            | GPE   |    5
+! Mahisavatthu        | GPE   |    5 -- LOC??
+ Gaya                | GPE   |    5
+! Sunīdha             | GPE   |    4
+ Sāvatthi            | GPE   |    4
+! Licchavin           | GPE   |    4
+ Bhoganagara         | GPE   |    4
+ Macchikasanda       | GPE   |    4
+ Kashmir             | GPE   |    4
+! Kalinga             | GPE   |    4
+! Atanata             | GPE   |    4
+! Vehapphala          | GPE   |    4
+ Thuna               | GPE   |    4
+ Kallavalaputta      | GPE   |    3
+ Salavatika          | GPE   |    3
+ Pāṭali Village      | GPE   |    3
+ Alakamanda          | GPE   |    3
+ Jantu Village       | GPE   |    3
+ Bhandagama          | GPE   |    3
+ Avanti              | GPE   |    3
+ Haliddavasana       | GPE   |    3
+ Pāvā                | GPE   |    3
+ Gayā                | GPE   |    3
+ Saavatthi           | GPE   |    3
+ Raajagaha           | GPE   |    3
+ Parileyyaka         | GPE   |    3
+ Payaga              | GPE   |    3
+ Kusinarā            | GPE   |    3
+! Kanha               | GPE   |    2
+ Kapilavattu         | GPE   |    2
+! Pandava mountain    | GPE   |    2
+ Upavattana          | GPE   |    2
+! Sesavati            | GPE   |    2
+ Kakkarapatta        | GPE   |    2
+ Tacchaka            | GPE   |    2
+ Nalaka              | GPE   |    2
+ Pukkusati           | GPE   |    2
+ Avantī              | GPE   |    2
+! Ajita               | GPE   |    2
+ Bārāṇasī            | GPE   |    2
+ Kammasadamma        | GPE   |    2
+ Sunidha             | GPE   |    2
+ Kosalan             | GPE   |    2
+! Sariputta           | GPE   |    2
+ Kotigama            | GPE   |    2
+ Devadaha            | GPE   |    2
+ Simbali             | GPE   |    2
+ Allakappa           | GPE   |    2
+ Dhanapalaka         | GPE   |    2
+ Tathāgatas          | GPE   |    2
+ Hatthigama          | GPE   |    2
+ Kappa               | GPE   |    2
+ Kuru                | GPE   |    2
+ Ramagama            | GPE   |    2
+ Gandhara            | GPE   |    1
+ Vebhara             | GPE   |    1
+ Dhavajalika         | GPE   |    1
+ Udañña              | GPE   |    1
+!  India               | GPE   |    1
+ Tandulapala         | GPE   |    1
+ Gandharapura        | GPE   |    1
+ Ambāṭakavana        | GPE   |    1
+ Sahajati            | GPE   |    1
+ Mantaniputta        | GPE   |    1
+! Ajatasattu          | GPE   |    1
+ Jambudipa           | GPE   |    1
+ Savatthia           | GPE   |    1
+ Madhura             | GPE   |    1
+! Unmade              | GPE   |    1
+ Calika              | GPE   |    1
+ Subhakinha          | GPE   |    1
+ Assapura            | GPE   |    1
+! Oriental            | GPE   |    1
+ Kamboja             | GPE   |    1
+ Bhesakala           | GPE   |    1
+ Ukkacela            | GPE   |    1
+ Isigili             | GPE   |    1
+! Theri               | GPE   |    1
+ Brahmajala          | GPE   |    1
+ Kuṇḍiya             | GPE   |    1
+ Visana              | GPE   |    1
+ Okkala              | GPE   |    1
+ Gutijjita           | GPE   |    1
+ Pāva                | GPE   |    1
+ Giribbaja           | GPE   |    1
+! Pali                | GPE   |    1
+ Ajjheya             | GPE   |    1
+! Kali                | GPE   |    1
+ Icchānaṅgalaka      | GPE   |    1
+ Rajagala            | GPE   |    1
+ Jantu               | GPE   |    1
+ Kankharevata        | GPE   |    1
+ Palileyyaka         | GPE   |    1
+ Bhagalavati         | GPE   |    1
+ Vanarasi            | GPE   |    1
+ Anupiyā             | GPE   |    1
+ Assatara            | GPE   |    1
+! Vepulla mountain    | GPE   |    1
+ Kimila              | GPE   |    1
+! Maara               | GPE   |    1
+! Abhibhu             | GPE   |    1
+ Kalasigama          | GPE   |    1
+! Kingdom of          | GPE   |    1
+ Akanittha           | GPE   |    1
+ Uppala              | GPE   |    1
+! Pasenadi            | GPE   |    1
+ Kapilavasthu        | GPE   |    1
+! Yamuna              | GPE   |    1
+! Visali              | GPE   |    1
+ Andhakavinda        | GPE   |    1
+ Potthapada          | GPE   |    1
+ Kanhagotamaka       | GPE   |    1
+ Sumangala           | GPE   |    1
+ Anupiya             | GPE   |    1
+ Supparaka           | GPE   |    1
+ Kitagiri            | GPE   |    1
+ Rajagir             | GPE   |    1
+ Sanjatiya           | GPE   |    1
+ Kosambii            | GPE   |    1
+ Uggahamana          | GPE   |    1
+! Gijjhakuta mountain | GPE   |    1
+ Kambala             | GPE   |    1
+(164 rows)
+

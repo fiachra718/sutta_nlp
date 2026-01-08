@@ -1,0 +1,21 @@
+string | count in ati_verses
+Master Gotama            |   406
+Blessed One              |  4483
+Tathagata                |   966
+Lord                     |   704
+Buddha                   |   606
+Gotama                   |   329
+Teacher                  |   145
+the Arahant              |   110
+Awakened One             |   100
+Tathāgata                |    79
+Exalted One              |    56
+Venerable Gotama         |    54
+Arahant                  |    31
+Venerable Sir            |    21
+Fortunate One            |    18
+master Gotama            |    18
+Venerable One            |    14
+Unrivalled One           |    12
+Great Sage               |    10
+Fully Enlightened One    |     9

@@ -16,7 +16,7 @@ NE_DATA     = REPO_ROOT / "ne-data"
 WORK        = NE_DATA / "work"
 SCRIPTS     = NE_DATA / "scripts"
 
-MODELS_DIR  = WORK / "models" / "1225"
+MODELS_DIR  = WORK / "models" / "2026_01_08"
 PATTERNS    = NE_DATA / "patterns" / "entity_ruler" / "patterns.jsonl"
 NORP_PATTERNS    = NE_DATA / "patterns" / "entity_ruler" / "ruler_norp.jsonl"
 LOC_EVENT_PATTERNS    = NE_DATA / "patterns" / "span_ruler"

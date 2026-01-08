@@ -1,0 +1,138 @@
+Yeah, this is a great instinct to formalize instead of just vaguely “looking for names.”
+
+Let me turn what you just said into something you can actually wire into your pipeline.
+
+⸻
+
+1. “Skip verses with no TitleCase words”
+
+As a queue filter for annotation, this is totally sane.
+
+Implementation-wise, you can do something like:
+
+Option A: Filter in Python
+
+import re
+
+IGNORE_TITLECASE = {
+    "On", "Then", "And", "Now", "Thus", "As", "So", "But", "This", "That",
+    "He", "She", "They", "When", "If", "There", "It", "In", "At", "From"
+    # add more as needed
+}
+
+def has_interesting_titlecase(text: str) -> bool:
+    for token in re.findall(r"\w[\w']*", text):
+        if token.istitle() and token not in IGNORE_TITLECASE:
+            return True
+    return False
+
+Then when you build your annotation queue:
+
+candidate_verses = []
+for verse in all_verses:
+    if has_interesting_titlecase(verse.text):
+        candidate_verses.append(verse)
+
+You could even tighten it to:
+	•	Require at least one titlecase token not sentence-initial, or
+	•	Require that the token is in your gazetteer of known PERSON/GPE/LOC/NORP strings.
+
+But even the simple filter will massively cut your queue down.
+
+Option B: Filter in SQL
+
+If your verses are in Postgres:
+
+SELECT *
+FROM verses
+WHERE regexp_matches(text, '\y[A-Z][a-z]+', 'g') IS NOT NULL;
+
+You can refine later with a stoplist or join against a lexicon table, but even this gets you “contains some TitleCase word” cheaply.
+
+⸻
+
+2. Watch out for training vs. review use
+
+You’re talking about two different uses of verses:
+	1.	Verses to review / correct / gold-label
+→ Totally fine to bias hard toward titlecase-rich verses. That’s annotation triage.
+	2.	Verses used as training examples
+	•	Your model does need some negative examples where there are no entities at all.
+	•	If you only train on verses that already contain TitleCase, the model sees fewer “nothing here” contexts and might over-predict.
+
+So I’d do:
+	•	For human review: use your “has_interesting_titlecase” filter aggressively.
+	•	For training set construction:
+	•	Take all reviewed verses with entities (from that queue).
+	•	Plus a randomly sampled chunk of “all lowercase / no titlecase” verses with empty entity lists as pure negatives.
+
+That way your sanity is preserved, and the model still learns what “no entities” looks like.
+
+⸻
+
+3. NORP: make it ruthlessly rule-based and proper
+
+Your plan for NORP is also right on: keep it strict and proper-noun only for now.
+
+So:
+	•	YES NORP:
+	•	Sakyans, Kosalans, Kurus, Videhans, Magadhans, Licchavis, Mallas, etc.
+	•	NO NORP (for now):
+	•	monks, nuns, brahmans, devas, kings, householders, wanderers, ascetics, etc.
+
+Implementation: use an entity_ruler with a very tight gazetteer:
+
+norp_groups = [
+    "Sakyans", "Sakyan",
+    "Kosalans", "Kosalan",
+    "Kurus", "Kuru",
+    "Videhans", "Videhan",
+    "Magadhans", "Magadhan",
+    "Licchavis", "Licchavi",
+    "Mallas", "Malla",
+]
+
+patterns = [{"label": "NORP", "pattern": group} for group in norp_groups]
+ruler.add_patterns(patterns)
+
+And don’t let the statistical NER learn NORP at all yet:
+	•	Either:
+	•	Leave NORP out of the NER labels entirely, and treat it as ruler-only, or
+	•	Include it but almost all positives come from gazetteer spans, so it just reinforces the rule.
+
+Later, when you decide to tackle “audience types” more fully, you can:
+	•	Add generic group labels (MONASTIC_GROUP, COSMIC_BEING, ROYALTY, etc.) as separate labels or as attributes.
+	•	Or keep NORP for “ethno-political group” and invent a separate taxonomy for audience.
+
+⸻
+
+4. How this feeds your graph
+
+Given your priorities:
+	1.	PERSON with rich aliases
+	•	Use titlecase + gazetteer + NER.
+	•	Store canonical_id (e.g., person:ananda) and all aliases in your graph.
+	2.	GPE / LOC clean and trustworthy
+	•	Use titlecase filter + curated gazetteer.
+	•	Map each mention to place:kosambi, place:savatthi, etc.
+	3.	NORP (proper groups only)
+	•	Attach them as group-audience nodes later, or just keep them in entity_mentions for now.
+	•	Example: edge (:Discourse)-[:ADDRESSED_TO]->(:Group {name:'Sakyans'}).
+
+And because you’re skipping verses with no interesting titlecase when building your review queue, you’ll:
+	•	Spend your time on verses most likely to contribute actual edges.
+	•	Get a reasonably dense PERSON–PLACE layer for graph clustering and exploring “who talks where with whom.”
+
+⸻
+
+5. Summary back in your own language
+	•	Yes: filter candidate verses by “has at least one non-trivial TitleCase token.”
+	•	Yes: make NORP = specific proper demonyms only, via simple rules.
+	•	Yes: focus your annotation energy on PERSON / GPE / LOC and good aliases.
+	•	Caveat: keep some all-lowercase/boring verses as negatives for training, but don’t waste your eyeballs hand-checking all of them.
+
+If you want, I can write a small end-to-end script that:
+	•	Pulls verses from Postgres,
+	•	Filters them with your titlecase heuristic,
+	•	Runs your current spaCy model,
+	•	Writes out a JSONL of just candidate verses for your annotation web app.

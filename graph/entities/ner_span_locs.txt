@@ -1,0 +1,340 @@
+ label |                  entity                  | cnt 
+-------+------------------------------------------+-----
+ LOC   | Jeta's Grove                             | 184
+ LOC   | Anathapindika's monastery                |  69
+ LOC   | Anāthapiṇḍika's monastery                |  53
+ LOC   | Thirty-three                             |  43
+ LOC   | Bamboo Grove                             |  40
+ LOC   | Anathapindika 's monastery               |  31
+ LOC   | Pure Abodes                              |  27
+ LOC   | Brahma worlds                            |  25
+ LOC   | Nagasena                                 |  21
+ LOC   | Squirrels' Sanctuary                     |  21
+ LOC   | Great Forest                             |  20
+ LOC   | Great Wood                               |  18
+ LOC   | river Ganges                             |  18
+ LOC   | Brahma world                             |  17
+ LOC   | Deer Park at Isipatana                   |  17
+ LOC   | Jeta Grove                               |  16
+ LOC   | Game Refuge at Isipatana                 |  15
+ ! LOC   | brahma                                   |  15
+ LOC   | Banyan Park                              |  13
+ LOC   | Eastern Monastery                        |  13
+ LOC   | Grove of the Blind                       |  13
+ LOC   | Jeta Wood                                |  13
+ LOC   | Ganges                                   |  12
+ LOC   | Jetavana                                 |  12
+ ! LOC   | Pāṭali Village                           |  12
+ LOC   | Crocodile Haunt                          |  11
+ LOC   | Himalayas                                |  11
+ LOC   | Deer Park at Bhesakala Grove             |  10
+ LOC   | Vulture Peak Mountain                    |   9
+ LOC   | Gabled Hall                              |   8
+ LOC   | Paranimmitavasavatti                     |   8
+ ! LOC   | Parinibbana of the                       |   8
+ ! LOC   | the palace of Migara's mother            |   8
+ LOC   | Blind Men's Grove                        |   7
+! LOC   | Brahma                                   |   7
+ LOC   | Brahma-world                             |   7
+ LOC   | Ghosita's Park                           |   7
+ LOC   | River Vaggamudā                          |   7
+ LOC   | Sala Grove                               |   7
+ LOC   | Tavatimsa                                |   7
+ LOC   | Tusita                                   |   7
+ LOC   | Anathapindika's Monastery                |   6
+ LOC   | Bahuka River                             |   6
+ LOC   | Deer Park                                |   6
+ LOC   | Ganges River                             |   6
+ LOC   | Nerañjarā River                          |   6
+ LOC   | Vulture's Peak                           |   6
+ LOC   | Western lands                            |   6
+ ? LOC   | Yama                                     |   6
+ LOC   | heaven of the Thirty-three               |   6
+ LOC   | Ghosita's monastery                      |   5
+ LOC   | Migacira                                 |   5
+ LOC   | Mount Meru                               |   5
+ LOC   | Mount Vepulla                            |   5
+ LOC   | Pāvāla shrine                            |   5
+ LOC   | Sankheyyaka Mountain                     |   5
+ LOC   | Upavattana                               |   5
+ LOC   | Vultures' Peak                           |   5
+ LOC   | Ambapali's grove                         |   4
+ LOC   | Anathapindika's park                     |   4
+ LOC   | Brick Hall                               |   4
+ LOC   | Dakkhinagiri                             |   4
+ LOC   | Eastern Bamboo Park                      |   4
+ LOC   | Eastern Gatehouse                        |   4
+ ! LOC   | Great Seer                               |   4
+ ! LOC   | Kosalan brahman                          |   4
+ LOC   | Kuru country                             |   4
+ LOC   | Tapoda Hot Springs                       |   4
+ LOC   | Wild Mango Grove                         |   4
+ ? LOC   | heaven of                                |   4
+ LOC   | river Nerañjara                          |   4
+ LOC   | Anathapindika 's Park                    |   3
+ LOC   | Capala shrine                            |   3
+ LOC   | Cool Wood                                |   3
+ LOC   | Gabled Pavilion                          |   3
+ LOC   | Gaggara Lake                             |   3
+ LOC   | Hall of the Gabled Pavilion              |   3
+ LOC   | Hot Springs                              |   3
+ LOC   | Kakuttha River                           |   3
+ LOC   | Kosalan country                          |   3
+ LOC   | Kukuṭa River                             |   3
+ LOC   | Matanga wilds                            |   3
+ LOC   | Nerañjara River                          |   3
+ LOC   | Nigrodha's Park                          |   3
+ LOC   | Peaked Roof Pavilion                     |   3
+ LOC   | Pipphali Cave                            |   3
+ LOC   | River Ganges                             |   3
+ LOC   | Squirrel's Feeding Place                 |   3
+ LOC   | Tapoda monastery                         |   3
+ LOC   | Vanquisher                               |   3
+ LOC   | Vulture's Peak Mountain                  |   3
+ ! LOC   | Yamataggi                                |   3
+ LOC   | Yamuna                                   |   3
+ LOC   | Aciravati                                |   2
+ LOC   | Aggalava Shrine                          |   2
+ LOC   | Ambalaṭṭhika garden                      |   2
+ LOC   | Ananda shrine                            |   2
+ LOC   | Bahuputta                                |   2
+ ! LOC   | Black Rock on                            |   2
+ LOC   | Blind Man's Grove                        |   2
+ LOC   | Brahma realm                             |   2
+ ! LOC   | Brahma-faring                            |   2
+ LOC   | Brick House                              |   2
+ ! LOC   | Candana                                  |   2
+ LOC   | Capala                                   |   2
+ ! LOC   | Capala shrine the                        |   2
+ LOC   | Cool Forest                              |   2
+ LOC   | Cool Grove                               |   2
+ LOC   | Eastern Direction                        |   2
+ LOC   | Eastern Park                             |   2
+ LOC   | Gabled House                             |   2
+ LOC   | Ghosita 's Park                          |   2
+ LOC   | Ghosita 's monastery                     |   2
+ LOC   | Goatherd's Banyan Tree                   |   2
+ LOC   | Gotama Gate                              |   2
+ LOC   | Gotamaka                                 |   2
+ LOC   | Gotamaka shrine                          |   2
+ LOC   | Great Roruva                             |   2
+ LOC   | Heaven of the Thirty-three               |   2
+!  LOC   | High Divinity's retinue                  |   2
+ LOC   | Hiraññavati River                        |   2
+ LOC   | Jeta Forest                              |   2
+ LOC   | Jivaka's Mango Grove                     |   2
+ LOC   | Kimikālā River                           |   2
+ LOC   | Kosala country                           |   2
+ LOC   | Kukuṭa river                             |   2
+!  LOC   | Kuru people                              |   2
+! LOC   | Licchavi-son                             |   2
+ LOC   | Maddakucchi Deer Reserve                 |   2
+ LOC   | Magadhan country                         |   2
+ LOC   | Mahi                                     |   2
+ LOC   | ManySon shrine                           |   2
+ LOC   | Mount Pandava                            |   2
+! LOC   | Nikata                                   |   2 -- GPE
+ LOC   | Niraya                                   |   2  -- Niraya hell, Niraya -hell
+ LOC   | Pavarika Mango Grove                     |   2
+ LOC   | Peaked Roofed Pavilion                   |   2
+!  LOC   | Pure Ones                                |   2
+!  LOC   | Pure,                                    |   2
+!  LOC   | Qualities of the                         |   2
+!  LOC   | Qualities of the Sangha                  |   2
+!  LOC   | Sage.                                    |   2
+
+
+ LOC   | Sarabhu                                  |   2
+ LOC   | Sarandada                                |   2
+ LOC   | Sattamba shrine                          |   2
+ LOC   | Sattambaka                               |   2
+ LOC   | Squirrels' Feeding Place                 |   2
+ LOC   | Squirrels' refuge                        |   2
+ LOC   | Subhaga forest                           |   2
+ LOC   | Sāranda shrine                           |   2
+ LOC   | Tapodaa Park                             |   2
+ LOC   | Tusita realm                             |   2
+ LOC   | Udena                                    |   2
+ LOC   | Udena shrine                             |   2
+ LOC   | Untrodden Land                           |   2
+! LOC   | Upright Ones                             |   2
+ LOC   | Yamunā                                   |   2
+ LOC   | bamboo grove                             |   2
+ LOC   | brahma world                             |   2
+ LOC   | hall of the Gabled House                 |   2
+ LOC   | river Kimikala                           |   2
+ LOC   | squirrels' sanctuary                     |   2
+ ! LOC   | the palace of Migara 's mother           |   2
+ LOC   | Ajakalāpaka [Herd-of-Goats] shrine       |   1
+ LOC   | Akaniṭṭha heaven                         |   1
+ LOC   | Anaathapi.n.dika's monastery             |   1
+ LOC   | Anaathapindika's monastery               |   1
+ LOC   | Anathapindika 's Monastery               |   1
+ LOC   | Anathapindika's Park                     |   1
+ LOC   | Anathapindika's Pleasance                |   1
+ LOC   | Anathapindika's monstery                 |   1
+ LOC   | Anathpindika's monastery                 |   1
+ LOC   | Anāthapiṇḍika's park                     |   1
+!  LOC   | Ariyan discipline                        |   1
+ LOC   | Bamboo Grove Monastery                   |   1
+ LOC   | Bamboo-Grove Monastery                   |   1
+ LOC   | Banyan Grove                             |   1
+! LOC   | Beautifully Lustrous Devas               |   1
+! LOC   | Bhanda Village                           |   1
+ LOC   | Bhesakala Grove                          |   1
+ LOC   | Black Forest                             |   1
+ LOC   | Black Rock of Isigili                    |   1
+ LOC   | Boar's Cave                              |   1
+ LOC   | Brahma Parisajja                         |   1
+ LOC   | Brahma Purohita                          |   1
+!  LOC   | Brahma attitudes                         |   1
+! LOC   | Brahma-Uposatha                          |   1
+! LOC   | Brahman                                  |   1
+ LOC   | Calika Hill                              |   1
+ LOC   | Cool Forest's                            |   1
+ LOC   | Dark Forest                              |   1
+ LOC   | Deer Park at Kannakatthala               |   1
+ LOC   | Deer Park in Isipatana                   |   1
+! LOC   | Deva-Uposatha                            |   1
+ LOC   | Eastern Park at Migara's mother          |   1
+ LOC   | Eastern clime                            |   1
+ LOC   | Eastern monastery                        |   1
+ LOC   | Forest Hut                               |   1
+ LOC   | Game Refuge                              |   1
+ LOC   | Gaya Head                                |   1
+ LOC   | Gayasisa                                 |   1
+ LOC   | Gayā Head                                |   1
+ LOC   | Ghosita monastery                        |   1
+ LOC   | Gijjhakuta mountain                      |   1
+ LOC   | Giribbaja                                |   1
+ LOC   | Giribbaja's peaks                        |   1
+ LOC   | Giribbaja's wilds                        |   1
+ LOC   | Gotama-ford                              |   1
+ LOC   | Gotamaka Shrine                          |   1
+ LOC   | Great Hell                               |   1
+ ! LOC   | Greatest Sage's Sasana                   |   1
+ ! LOC   | Group of Thirty                          |   1
+ LOC   | Gunda Forest                             |   1
+ LOC   | Haragaja                                 |   1
+ LOC   | Hemavata                                 |   1
+ LOC   | Himalayan district                       |   1
+ LOC   | Himalayan mountain                       |   1
+ ! LOC   | Hiraññavati ,                            |   1
+ LOC   | Jeta 's Grove                            |   1
+ LOC   | Jeta Grove at Anathapindika 's monastery |   1
+ LOC   | Jeta's grove                             |   1
+ LOC   | Jetavana monastery                       |   1
+ LOC   | Jewel Discourse                          |   1
+ ! LOC   | Jivaka Komarabhacca 's mango             |   1
+ LOC   | Jujube Tree Park                         |   1
+ LOC   | Kakuttha's river                         |   1
+ LOC   | Kalaka's park                            |   1
+ ! LOC   | Khuddaka Nikaya                          |   1
+ ! LOC   | Kosalan                                  |   1
+ LOC   | Kosita's monastery                       |   1
+ ! LOC   | Kumbhira                                 |   1
+ ! LOC   | Kure                                     |   1
+ LOC   | Kuru Country                             |   1
+ LOC   | Lake Nabhasa                             |   1
+ ! LOC   | Maara                                    |   1
+ LOC   | Magadha country                          |   1
+ LOC   | Maha-vana                                |   1
+ LOC   | Mahavana                                 |   1
+ LOC   | Mango Grove                              |   1
+!  LOC   | Matika. Having                           |   1
+ LOC   | Migara 's Mother's Palace                |   1
+ ! LOC   | Migara 's mother                         |   1
+!  LOC   | Migara's mother                          |   1
+!  LOC   | Mind Like Fire Unbound                   |   1
+ LOC   | Mount Meru's summit                      |   1
+ LOC   | Mount Vulture Peak                       |   1
+ LOC   | Mucalinda Tree                           |   1
+ LOC   | Muccalinda tree                          |   1
+!  LOC   | Nagaraka                                 |   1
+! LOC   | Nalaka Village                           |   1
+ LOC   | Nandana grove                            |   1
+ ! LOC   | Nigrodha Park at Kapilavatthu            |   1
+ LOC   | Northern clime                           |   1
+ LOC   | Osprey's Haunt                           |   1
+!  LOC   | Pali phrase                              |   1
+! LOC   | Pava                                     |   1
+ LOC   | Pavarika 's mango grove                  |   1
+ LOC   | Pavarika's Mango Grove                   |   1
+ LOC   | Pavatta Mountain                         |   1
+ LOC   | Peaked Pavilion                          |   1
+ LOC   | Peaked Roof Hall                         |   1
+ LOC   | Pepper Tree Cave                         |   1
+ LOC   | Pigeon Cave                              |   1
+ LOC   | Plum-Mango Grove                         |   1
+ LOC   | Pure Abode                               |   1
+! LOC   | Raja                                     |   1
+ LOC   | Realm of the Thirty-three                |   1
+!  LOC   | Retinue of High Divinity                 |   1
+ LOC   | River Yamuna                             |   1
+ LOC   | Robbers' Cliff                           |   1
+! LOC   | Sage Renounces                           |   1
+! LOC   | Sakya clan                               |   1
+ LOC   | Sal Tree Grove                           |   1
+ LOC   | Sarandada shrine                         |   1
+ LOC   | Sarasvati                                |   1
+ LOC   | Sata's mountain                          |   1
+ LOC   | Sattapanni Cave                          |   1
+ LOC   | Sayha                                    |   1
+ LOC   | Serpents' Pool                           |   1
+ LOC   | Sheer-face Peak                          |   1
+ LOC   | Small Nook                               |   1
+ LOC   | Squirrel's Sanctuary                     |   1
+ LOC   | Squirrels' Feeding Ground                |   1
+ LOC   | Squirrels' Feeding Sanctuary             |   1
+ LOC   | Squirrels' Feeding-Place                 |   1
+ LOC   | Squirrels' Feeding-ground                |   1
+ LOC   | Squirrels' feeding ground                |   1
+ LOC   | Squirrels' sanctuary                     |   1
+ LOC   | Subhakinha                               |   1
+ LOC   | Suddhavasa                               |   1
+! LOC   | Sugata [                                 |   1
+ LOC   | Sunaparanta country                      |   1
+ LOC   | Sword-leaf                               |   1
+ LOC   | Tapoda Grove                             |   1
+ LOC   | Tathaagata are moderately                |   1
+ LOC   | Thirty-Three                             |   1
+ LOC   | Triple Gem                               |   1
+! LOC   | True Nature of                           |   1
+ LOC   | Tushita heaven                           |   1
+ LOC   | Tusita heaven                            |   1
+! LOC   | Twelve Sense-Bases                       |   1
+ LOC   | Tāvatiṃsa                                |   1
+! LOC   | Unmade                                   |   1
+ LOC   | Upakala                                  |   1
+ LOC   | Vajji                                    |   1
+ LOC   | Vajji country                            |   1
+ LOC   | Vebhara Mountain                         |   1
+ LOC   | Vebhara mountain                         |   1
+ LOC   | Vepulla mountain                         |   1
+ LOC   | Vepulla's Mountain                       |   1
+ LOC   | Verambha wind                            |   1
+ LOC   | Very Blessed Grove                       |   1
+ LOC   | Very Fruitful                            |   1
+ LOC   | Vessamitta mountain                      |   1
+ LOC   | Vettha Island                            |   1
+ LOC   | Vipassi                                  |   1
+ LOC   | Vulture Peak mountain                    |   1
+ LOC   | Vultures Peak                            |   1
+ LOC   | Western Direction                        |   1
+ LOC   | Western clime                            |   1
+ LOC   | World of High Divinity                   |   1
+ LOC   | Yana                                     |   1
+ LOC   | brahma-world                             |   1
+ LOC   | deer park                                |   1
+ LOC   | deva world                               |   1
+ LOC   | heaven world                             |   1
+ LOC   | heaven worlds                            |   1
+ LOC   | lake Nabhasa                             |   1
+ LOC   | northern country                         |   1
+ LOC   | pure abodes                              |   1
+ LOC   | river Hiraññavati                        |   1
+ LOC   | squirrels' feeding ground                |   1
+ LOC   | squirrels' feeding place                 |   1
+ LOC   | Ābhassara Brahma-world                   |   1
+(334 rows)
+

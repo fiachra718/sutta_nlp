@@ -1,0 +1,204 @@
+        ?column?         | count 
+--------------------------+-------
+Blessed One              |  4483
+*Tathagata                |   966
+*Lord                     |   704
+*Buddha                   |   606
+Ananda                   |   474
+*Master Gotama            |   406
+Mara                     |   356
+*Gotama                   |   329
+Ven. Ananda              |   222
+Brahma                   |   209
+Ven. Sariputta           |   184
+Sariputta                |   156
+Evil One                 |   153
+* Teacher                  |   145
+Venerable Ananda         |   123
+*the Arahant              |   110
+*Awakened One             |   100
+Sakka                    |    86
+Aggivessana              |    84
+Cunda                    |    83
+*Tathāgata                |    79
+Kassapa                  |    78
+King Pasenadi Kosala     |    74
+Anathapindika            |    60
+Ven. Ānanda              |    56
+*Exalted One              |    56
+Nanda                    |    55
+*Venerable Gotama         |    54
+Citta                    |    52
+Mahanama                 |    52
+Alavaka                  |    51
+Ānanda                   |    48
+Lohicca                  |    47
+Visakha                  |    46
+Arittha                  |    43
+Dhanañjanin              |    42
+Ratthapala               |    42
+King Pasenadi            |    41
+Subhadda                 |    40
+Venerable Sariputta      |    38
+Potthapada               |    37
+Ven. Udayin              |    37
+Moggallana               |    34
+Angulimala               |    34
+Assalayana               |    32
+Ven. Anuruddha           |    32
+Pañcakanga               |    31
+* Arahant                  |    31
+Tissa                    |    30
+Suppavāsā                |    30
+Master Ananda            |    30
+Ven. Ratthapala          |    30
+Magandiya                |    28
+King Ajatasattu          |    27
+Susima                   |    27
+Devadatta                |    26
+Rahula                   |    26
+Nigantha Nataputta       |    26
+Bhaddiya                 |    26
+Pajapati                 |    25
+Bharadvaja               |    24
+Kali                     |    24
+Meghiya                  |    24
+Brahmas                  |    23
+Ven. Mahā Kaccāyana      |    23
+King Yama                |    23
+Vepacitti                |    23
+Rahu                     |    22
+Master Ratthapala        |    22
+* Venerable Sir            |    21
+Prince Jayasena          |    21
+Ajita                    |    21
+Vassakara                |    21
+Ven. Rahula              |    20
+Godha                    |    20
+Venerable Nanda          |    20
+Kasi Bharadvaja          |    20
+Ven. Sāriputta           |    20
+Punna                    |    19
+Ven. Maha Kotthita       |    19
+Soma                     |    19
+Potaliputta              |    19
+Udayin                   |    19
+Khemaka                  |    19
+* Fortunate One            |    18
+Alara Kalama             |    18
+Bahiya                   |    18
+Vacchagotta              |    18
+* master Gotama            |    18
+Ven. Maha Kaccana        |    18
+Tathagatas               |    18
+Ven. Maha Moggallana     |    17
+Punnaka                  |    17
+Ven. Samiddhi            |    17
+Brahma Sahampati         |    17
+Baka Brahma              |    17
+Venerable Nagasena       |    17
+Great Brahma             |    17
+Ven. Nanda               |    16
+Queen Mallika            |    16
+Sunakkhatta              |    16
+Ven. Anuradha            |    16
+Seniya                   |    16
+Saccaka the Nigaṇṭha-son |    16
+Kevatta                  |    15
+Vaccha                   |    15
+Ven. Maha Kassapa        |    15
+Ven. Khemaka             |    15
+Māra                     |    15
+Purana Kassapa           |    14
+Ven. Bhaddiya            |    14
+Anuradha                 |    14
+* Venerable One            |    14
+Vasitthas                |    14
+Ambapali                 |    14
+Ven. Mahā Kassapa        |    13
+Pukkusa                  |    13
+Candima                  |    13
+Kasibharadvaja           |    13
+Ven. Uttara              |    13
+venerable Ananda         |    13
+Nakula's mother          |    13
+Venerable Udayi          |    12
+Venerable Meghiya        |    12
+Kotthita                 |    12
+Ven. Kamabhu             |    12
+* Unrivalled One           |    12
+Gavesin                  |    12
+Hatthaka of Alavi        |    12
+Makkhali Gosala          |    12
+!! Look                     |    12
+Venerable Maha Kassapa   |    12
+Suppabuddha              |    11
+Jivaka                   |    11
+Venerable Anuruddha      |    11
+Malunkyaputta            |    11
+!! Saavatthii               |    11
+Vyagghapajja             |    11
+Sāti                     |    11
+Ven. Nandaka             |    11
+Ven. Angulimala          |    11
+Aciravata                |    11
+Subha                    |    11
+Dona                     |    10
+Kondañña                 |    10
+Ven. Yamaka              |    10
+Ven. Meghiya             |    10
+Ven. Mahā Moggallāna     |    10
+Inda                     |    10
+Ven. Sona                |    10
+Pakudha Kaccayana        |    10
+Vassakāra                |    10
+Kuvera                   |    10
+Uddaka                   |    10
+* Great Sage               |    10
+Yamaka                   |    10
+Master Mahā Kaccāyana    |     9
+Virupakkha               |     9
+Master Kaccana           |     9
+Nandaka                  |     9
+Sāti the Fisherman's Son |     9
+Nagita                   |     9
+Uggahamana               |     9
+* Fully Enlightened One    |     9
+Asibandhakaputta         |     9
+Dhotaka                  |     9
+Ven. Narada              |     9
+Venerable Bhaddiya       |     9
+Ciravasi                 |     9
+Janussonin               |     9
+Sañjaya Belatthaputta    |     9
+Private Buddha           |     9
+Piyadassi                |     9
+Varuna                   |     9
+Matali                   |     9
+Ajita Kesakambalin       |     9
+Alavika                  |     8
+Sakula                   |     8
+Kesi                     |     8
+Pingiya                  |     8
+Ven. Soṇa                |     8
+Ven. Bhumija             |     8
+Uttiya                   |     8
+Master Bhumija           |     8
+Uddaka Ramaputta         |     8
+Ven. Upasena             |     8
+Ven. Saṅgāmaji           |     8
+Rama                     |     8
+Rammaka                  |     8
+Vajjiya Mahita           |     8
+Visākhā                  |     8
+Ven. Punna Mantaniputta  |     8
+Venerable Sāriputta      |     8
+venerable Samiddhi       |     8
+Dasama                   |     8
+King Seniya Bimbisara    |     8
+Udayi                    |     8
+! Pāṭimokkha               |     8
+Ven. Dasaka              |     8
+Ven. Mahaka              |     8
+(200 rows)
+

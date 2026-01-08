@@ -1,0 +1,228 @@
+{
+  "text": "Hearing these words of the earth deities, all the Catummaharajika devas proclaimed: \"The Matchless Wheel of Truth that cannot be set in motion by recluse, brahmana, deva, Mara, Brahma, or any one in the world, is set in motion by the Blessed One in the Deer Park at Isipatana near Varanasi.\" These words were heard in the upper deva realms, and from Catummaharajika it was proclaimed in Tavatimsa... Yama... Tusita... Nimmanarati... Paranimmita-vasavatti... and the Brahmas of Brahma Parisajja... Brahma Purohita... Maha Brahma... Parittabha... Appamanabha... Abhassara... Parittasubha... Appamana subha... Subhakinna... Vehapphala... Aviha... Atappa... Sudassa... Sudassi... and in Akanittha: \"The Matchless Wheel of Truth that cannot be set in motion by recluse, brahmana, deva, Mara, Brahma, or any one in the world, is set in motion by the Blessed One in the Deer Park at Isipatana near Varanasi.\"",
+  "spans": [
+    {
+      "start": 66,
+      "end": 71,
+      "label": "NORP",
+      "text": "devas"
+    },
+    {
+      "start": 165,
+      "end": 169,
+      "label": "NORP",
+      "text": "deva"
+    },
+    {
+      "start": 171,
+      "end": 175,
+      "label": "PERSON",
+      "text": "Mara"
+    },
+    {
+      "start": 177,
+      "end": 183,
+      "label": "PERSON",
+      "text": "Brahma"
+    },
+    {
+      "start": 234,
+      "end": 245,
+      "label": "PERSON",
+      "text": "Blessed One"
+    },
+    {
+      "start": 253,
+      "end": 275,
+      "label": "LOC",
+      "text": "Deer Park at Isipatana"
+    },
+    {
+      "start": 281,
+      "end": 289,
+      "label": "GPE",
+      "text": "Varanasi"
+    },
+    {
+      "start": 328,
+      "end": 332,
+      "label": "NORP",
+      "text": "deva"
+    },
+    {
+      "start": 387,
+      "end": 396,
+      "label": "LOC",
+      "text": "Tavatimsa"
+    },
+    {
+      "start": 400,
+      "end": 404,
+      "label": "LOC",
+      "text": "Yama"
+    },
+    {
+      "start": 408,
+      "end": 414,
+      "label": "LOC",
+      "text": "Tusita"
+    },
+    {
+      "start": 418,
+      "end": 429,
+      "label": "LOC",
+      "text": "Nimmanarati"
+    },
+    {
+      "start": 466,
+      "end": 473,
+      "label": "PERSON",
+      "text": "Brahmas"
+    },
+    {
+      "start": 477,
+      "end": 493,
+      "label": "LOC",
+      "text": "Brahma Parisajja"
+    },
+    {
+      "start": 497,
+      "end": 512,
+      "label": "LOC",
+      "text": "Brahma Purohita"
+    },
+    {
+      "start": 516,
+      "end": 527,
+      "label": "PERSON",
+      "text": "Maha Brahma"
+    },
+    {
+      "start": 573,
+      "end": 585,
+      "label": "LOC",
+      "text": "Parittasubha"
+    },
+    {
+      "start": 621,
+      "end": 631,
+      "label": "LOC",
+      "text": "Vehapphala"
+    },
+    {
+      "start": 683,
+      "end": 692,
+      "label": "LOC",
+      "text": "Akanittha"
+    },
+    {
+      "start": 775,
+      "end": 779,
+      "label": "NORP",
+      "text": "deva"
+    },
+    {
+      "start": 781,
+      "end": 785,
+      "label": "PERSON",
+      "text": "Mara"
+    },
+    {
+      "start": 787,
+      "end": 793,
+      "label": "PERSON",
+      "text": "Brahma"
+    },
+    {
+      "start": 844,
+      "end": 855,
+      "label": "PERSON",
+      "text": "Blessed One"
+    },
+    {
+      "start": 863,
+      "end": 885,
+      "label": "LOC",
+      "text": "Deer Park at Isipatana"
+    },
+    {
+      "start": 891,
+      "end": 899,
+      "label": "GPE",
+      "text": "Varanasi"
+    },
+    {
+      "start": 433,
+      "end": 454,
+      "label": "LOC",
+      "text": "Paranimmita-vasavatti"
+    },
+    {
+      "start": 531,
+      "end": 541,
+      "label": "LOC",
+      "text": "Parittabha"
+    },
+    {
+      "start": 545,
+      "end": 556,
+      "label": "LOC",
+      "text": "Appamanabha"
+    },
+    {
+      "start": 560,
+      "end": 569,
+      "label": "LOC",
+      "text": "Abhassara"
+    },
+    {
+      "start": 589,
+      "end": 603,
+      "label": "LOC",
+      "text": "Appamana subha"
+    },
+    {
+      "start": 607,
+      "end": 617,
+      "label": "LOC",
+      "text": "Subhakinna"
+    },
+    {
+      "start": 635,
+      "end": 640,
+      "label": "LOC",
+      "text": "Aviha"
+    },
+    {
+      "start": 644,
+      "end": 650,
+      "label": "LOC",
+      "text": "Atappa"
+    },
+    {
+      "start": 654,
+      "end": 661,
+      "label": "LOC",
+      "text": "Sudassa"
+    },
+    {
+      "start": 665,
+      "end": 672,
+      "label": "LOC",
+      "text": "Sudassi"
+    },
+    {
+      "start": 50,
+      "end": 65,
+      "label": "LOC",
+      "text": "Catummaharajika"
+    },
+    {
+      "start": 350,
+      "end": 365,
+      "label": "LOC",
+      "text": "Catummaharajika"
+    }
+  ],
+  "meta": null
+}

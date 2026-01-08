@@ -15,8 +15,7 @@ def db_to_examples(conn, nlp):
     #  ADJUST THIS select AS NEEDED
     ##
     sql = """
-        select text, spans from gold_training WHERE 
-        created_at::date > '2025-11-30'
+        select text, spans from gold_training
     """
     examples = []
     with conn.cursor(row_factory=dict_row) as cur:
@@ -63,7 +62,7 @@ DROPOUT = 0.1
 DEV_RATIO = 0.1
 CONN = psycopg.connect("dbname=tipitaka user=alee")
 # REMEMBER to set this
-OUTPUT_DIR = WORK / "models" / "1225"
+OUTPUT_DIR = WORK / "models" / "2026_01_08"
 
 random.seed(SEED)
 
