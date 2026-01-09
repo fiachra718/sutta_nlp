@@ -79,6 +79,9 @@ class _BoundManager:
         )
         return [self.model(**self.row_processor(row)) for row in rows]
 
+    def facet_search(self, *, label: str, terms: Iterable[str], limit: int = 200):
+        return db.facet_search(label=label, terms=terms, limit=limit, dsn=self.dsn)
+
     def save(self, obj, **kwargs):
         if not self._save_handler:
             raise NotImplementedError("Save operation not configured for this manager")

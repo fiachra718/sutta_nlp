@@ -2,7 +2,9 @@
 from __future__ import annotations
 
 from importlib import import_module
-from typing import Any, Dict, Iterable
+from typing import Any, Dict, Iterable, Sequence
+import html
+import unicodedata
 import re
 
 import psycopg
@@ -38,6 +40,7 @@ def _matches_numeric(value: str | None, target: str | None):
     if value is None or target is None:
         return False
     return str(_first_number(value)) == str(target)
+
 
 VERSE_LOOKUP_SQL = """
     SELECT s.identifier,
@@ -336,3 +339,216 @@ def save_training_record(record: Dict[str, Any], *, dsn: str | None = None):
                 }
 
             raise
+
+
+FACET_SQL = """
+    SELECT
+        v.identifier,
+        v.nikaya,
+        v.book_number,
+        v.vagga,
+        v.canon_ref,
+        v.verse_num,
+        v.text
+    FROM ati_verses AS v
+    WHERE EXISTS (
+        SELECT 1
+        FROM jsonb_array_elements(v.ner_span) AS ent
+        WHERE ent->>'label' = %(label)s
+          AND ent->>'text' = ANY(%(terms)s)
+    )
+    ORDER BY v.identifier, v.verse_num
+    LIMIT %(limit)s
+"""
+
+
+def _normalize_entity_term(value: str) -> str:
+    decoded = html.unescape(value or "")
+    normalized = unicodedata.normalize("NFD", decoded)
+    stripped = "".join(ch for ch in normalized if not unicodedata.combining(ch))
+    return unicodedata.normalize("NFC", stripped).lower().strip()
+
+
+def _list_entities_by_label(label: str, limit: int, *, dsn=None):
+    rows = fetch_all(
+        """
+        SELECT canonical
+        FROM ati_entities
+        WHERE entity_type = %(label)s
+        ORDER BY canonical
+        LIMIT %(limit)s
+        """,
+        {"label": label, "limit": limit},
+        dsn=dsn,
+    )
+    return [row["canonical"] for row in rows if row.get("canonical")]
+
+def list_entities_by_label(label: str, limit: int = 200, *, dsn=None):
+    return _list_entities_by_label(label, max(1, min(int(limit), 1000)), dsn=dsn)
+
+
+def facet_search(*, label: str, terms: Sequence[str], limit: int = 200, dsn=None):
+    clean_terms = [term.strip() for term in terms if term and term.strip()]
+    if not clean_terms:
+        return []
+    params = {
+        "label": label,
+        "terms": clean_terms,
+        "limit": max(1, min(int(limit), 1000)),
+    }
+    return fetch_all(FACET_SQL, params, dsn=dsn)
+
+
+FACET_CONTEXT_SQL = """
+    WITH selected_terms AS (
+        SELECT label, term
+        FROM unnest(%(labels)s::text[], %(terms)s::text[]) AS t(label, term)
+    ),
+    entity_names AS (
+        SELECT e.id AS entity_id, e.entity_type AS label, e.normalized AS normalized
+        FROM ati_entities e
+        UNION ALL
+        SELECT a.entity_id, e.entity_type AS label, a.normalized AS normalized
+        FROM ati_entity_aliases a
+        JOIN ati_entities e ON e.id = a.entity_id
+    ),
+    matched AS (
+        SELECT m.verse_id, st.label
+        FROM selected_terms st
+        JOIN entity_names en
+          ON en.label = st.label
+         AND en.normalized = st.term
+        JOIN ati_entity_mentions m
+          ON m.entity_id = en.entity_id
+        GROUP BY m.verse_id, st.label
+    ),
+    qualified AS (
+        SELECT verse_id
+        FROM matched
+        GROUP BY verse_id
+        HAVING COUNT(DISTINCT label) = (SELECT COUNT(DISTINCT label) FROM selected_terms)
+    ),
+    facets AS (
+        SELECT e.entity_type AS label, e.canonical AS name
+        FROM qualified q
+        JOIN ati_entity_mentions m ON m.verse_id = q.verse_id
+        JOIN ati_entities e ON e.id = m.entity_id
+        WHERE e.entity_type IN ('PERSON', 'GPE', 'LOC')
+    ),
+    ranked AS (
+        SELECT label,
+               name,
+               ROW_NUMBER() OVER (PARTITION BY label ORDER BY name) AS rn
+        FROM (SELECT DISTINCT label, name FROM facets) deduped
+    )
+    SELECT label, name
+    FROM ranked
+    WHERE rn <= %(limit)s
+    ORDER BY label, name
+"""
+
+
+def facet_context(
+    *,
+    label_terms: Dict[str, Sequence[str]],
+    limit: int = 200,
+    dsn=None,
+):
+    clean_pairs: list[tuple[str, str]] = []
+    for label, terms in (label_terms or {}).items():
+        for term in terms or []:
+            norm = _normalize_entity_term(term)
+            if norm:
+                clean_pairs.append((label, norm))
+
+    limited = max(1, min(int(limit), 1000))
+    if not clean_pairs:
+        return {
+            "PERSON": _list_entities_by_label("PERSON", limited, dsn=dsn),
+            "GPE": _list_entities_by_label("GPE", limited, dsn=dsn),
+            "LOC": _list_entities_by_label("LOC", limited, dsn=dsn),
+        }
+
+    labels = [label for label, _ in clean_pairs]
+    terms = [term for _, term in clean_pairs]
+    rows = fetch_all(
+        FACET_CONTEXT_SQL,
+        {"labels": labels, "terms": terms, "limit": limited},
+        dsn=dsn,
+    )
+    facets = {"PERSON": [], "GPE": [], "LOC": []}
+    for row in rows:
+        label = row.get("label")
+        name = row.get("name")
+        if label in facets and name:
+            facets[label].append(name)
+    return facets
+
+
+FACET_VERSES_SQL = """
+    WITH selected_terms AS (
+        SELECT label, term
+        FROM unnest(%(labels)s::text[], %(terms)s::text[]) AS t(label, term)
+    ),
+    entity_names AS (
+        SELECT e.id AS entity_id, e.entity_type AS label, e.normalized AS normalized
+        FROM ati_entities e
+        UNION ALL
+        SELECT a.entity_id, e.entity_type AS label, a.normalized AS normalized
+        FROM ati_entity_aliases a
+        JOIN ati_entities e ON e.id = a.entity_id
+    ),
+    matched AS (
+        SELECT m.verse_id, st.label
+        FROM selected_terms st
+        JOIN entity_names en
+          ON en.label = st.label
+         AND en.normalized = st.term
+        JOIN ati_entity_mentions m
+          ON m.entity_id = en.entity_id
+        GROUP BY m.verse_id, st.label
+    ),
+    qualified AS (
+        SELECT verse_id
+        FROM matched
+        GROUP BY verse_id
+        HAVING COUNT(DISTINCT label) = (SELECT COUNT(DISTINCT label) FROM selected_terms)
+    )
+    SELECT
+        v.identifier,
+        v.nikaya,
+        v.book_number,
+        v.vagga,
+        v.canon_ref,
+        v.verse_num,
+        v.text
+    FROM qualified q
+    JOIN ati_verses v ON v.id = q.verse_id
+    ORDER BY v.identifier, v.verse_num
+    LIMIT %(limit)s
+"""
+
+
+def facet_verses(
+    *,
+    label_terms: Dict[str, Sequence[str]],
+    limit: int = 50,
+    dsn=None,
+):
+    clean_pairs: list[tuple[str, str]] = []
+    for label, terms in (label_terms or {}).items():
+        for term in terms or []:
+            norm = _normalize_entity_term(term)
+            if norm:
+                clean_pairs.append((label, norm))
+
+    if not clean_pairs:
+        return []
+
+    labels = [label for label, _ in clean_pairs]
+    terms = [term for _, term in clean_pairs]
+    return fetch_all(
+        FACET_VERSES_SQL,
+        {"labels": labels, "terms": terms, "limit": max(1, min(int(limit), 500))},
+        dsn=dsn,
+    )

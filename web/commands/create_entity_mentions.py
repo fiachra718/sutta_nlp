@@ -1,3 +1,6 @@
+import html
+import unicodedata
+
 import psycopg
 
 conn = psycopg.connect("dbname=tipitaka user=alee")
@@ -14,7 +17,11 @@ def normalize_name(s: str) -> str:
     for prefix in ("Ven. ", "Venerable ", "the Venerable ", "Master ", "master "):
         if s.startswith(prefix):
             s = s[len(prefix):]
-    return s.lower()
+    s = html.unescape(s)
+    s = unicodedata.normalize("NFD", s)
+    s = "".join(ch for ch in s if not unicodedata.combining(ch))
+    s = unicodedata.normalize("NFC", s)
+    return s.lower().strip()
 
 batch_size = 100
 count = 0

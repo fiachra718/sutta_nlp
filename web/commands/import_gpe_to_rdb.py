@@ -16,7 +16,7 @@ def normalize_pali(s: str) -> str:
     return s.lower().strip()
 
 
-path = "./graph/entities/loc.json"
+path = "./graph/entities/gpe.json"
 insert_entity = """
     INSERT INTO ati_entities (entity_type, canonical, normalized, lang, source)
     VALUES (%s, %s, %s, %s, %s)
@@ -34,11 +34,11 @@ with conn.cursor() as cur, open(path, "r", encoding="utf-8") as f:
         loc_name = record["name"].strip()
         normalized_name = normalize_pali(loc_name)
         try:
-            cur.execute(insert_entity, ("LOC", loc_name, normalized_name, "en", "manual"))
+            cur.execute(insert_entity, ("GPE", loc_name, normalized_name, "en", "manual"))
             entity_id = cur.fetchone()[0]
         except psycopg.errors.UniqueViolation as exc:
             print(f"Entity duplicate ({loc_name}): {exc}")
-            cur.execute(find_entity, ("LOC", normalized_name))
+            cur.execute(find_entity, ("GPE", normalized_name))
             row = cur.fetchone()
             if not row:
                 continue

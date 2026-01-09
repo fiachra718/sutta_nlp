@@ -6,6 +6,7 @@ from .models.models import CandidateDoc, TrainingDoc, SuttaVerse
 from .api.ner import run_ner
 from .render import render_highlighted
 from pydantic import ValidationError
+from .db import db
 from .db.db import (
     list_nikayas,
     list_book_numbers,
@@ -184,6 +185,34 @@ def random_verse():
     }
     return render_template("random.html", initial_doc=initial_doc)
 
+@app.route("/verses/facets", methods=["GET", "POST"])
+def facets():
+    if request.method == "GET":
+        initial_doc = None
+        return render_template("facet_form.html", initial_doc=initial_doc)
+    data = request.get_json(force=True, silent=True) or {}
+    label = (data.get("label") or "").strip().upper()
+    terms = data.get("terms") or data.get("term") or []
+    if not label:
+        for key in ("person", "gpe", "loc"):
+            value = data.get(key)
+            if value:
+                label = key.upper()
+                terms = value
+                break
+    if isinstance(terms, str):
+        terms = [term.strip() for term in terms.split(",")]
+
+    allowed_labels = {"PERSON", "GPE", "LOC"}
+    if label not in allowed_labels:
+        return jsonify({"ok": False, "error": f"label must be one of {sorted(allowed_labels)}"}), 400
+    if not terms:
+        return jsonify({"ok": False, "error": "terms is required"}), 400
+
+    rows = SuttaVerse.objects.facet_search(label=label, terms=terms)
+    return jsonify({"ok": True, "count": len(rows), "items": rows})
+
+
 @app.route("/verses/browse")
 def browse_verses():
     nikaya = request.args.get("nikaya") or ""
@@ -253,6 +282,43 @@ def verse_facets():
         "book_numbers": list_book_numbers(nikaya=nikaya),
         "vaggas": list_vaggas(nikaya=nikaya, book_number=book_number),
     })
+
+
+@app.post("/api/facets/context")
+def facet_context():
+    data = request.get_json(force=True, silent=True) or {}
+    label_terms = {}
+    for key in ("person", "gpe", "loc"):
+        value = data.get(key)
+        if isinstance(value, str) and value.strip():
+            label_terms[key.upper()] = [value.strip()]
+        elif isinstance(value, list):
+            label_terms[key.upper()] = [item for item in value if isinstance(item, str)]
+    if not label_terms:
+        return jsonify({
+            "ok": True,
+            "facets": {
+                "PERSON": db.list_entities_by_label("PERSON"),
+                "GPE": [],
+                "LOC": [],
+            },
+        })
+    return jsonify({"ok": True, "facets": db.facet_context(label_terms=label_terms)})
+
+
+@app.post("/api/facets/verses")
+def facet_verses():
+    data = request.get_json(force=True, silent=True) or {}
+    label_terms = {}
+    for key in ("person", "gpe", "loc"):
+        value = data.get(key)
+        if isinstance(value, str) and value.strip():
+            label_terms[key.upper()] = [value.strip()]
+        elif isinstance(value, list):
+            label_terms[key.upper()] = [item for item in value if isinstance(item, str)]
+    limit = data.get("limit", 50)
+    items = db.facet_verses(label_terms=label_terms, limit=limit)
+    return jsonify({"ok": True, "count": len(items), "items": items})
 
 
 @app.route("/predict/verse/<string:identifier>/<int:verse_num>")
