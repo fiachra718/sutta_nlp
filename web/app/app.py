@@ -299,8 +299,8 @@ def facet_context():
             "ok": True,
             "facets": {
                 "PERSON": db.list_entities_by_label("PERSON"),
-                "GPE": [],
-                "LOC": [],
+                "GPE": db.list_entities_by_label("GPE"),
+                "LOC": db.list_entities_by_label("LOC"),
             },
         })
     return jsonify({"ok": True, "facets": db.facet_context(label_terms=label_terms)})

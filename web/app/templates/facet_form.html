@@ -81,7 +81,10 @@
         <option value="">Select gpe</option>
       </select>
     </div>
-    <button type="submit">Submit</button>
+    <div>
+      <button type="submit">Submit</button>
+      <button type="button" id="clear-selection">Clear</button>
+    </div>
   </form>
   <div id="results"></div>
   <script>
@@ -90,12 +93,16 @@
     const gpeSelect = document.querySelector("#gpe");
     const form = document.querySelector("#facet-form");
     const results = document.querySelector("#results");
+    const clearButton = document.querySelector("#clear-selection");
 
     function setOptions(select, values, selectedValue) {
       const placeholder = select.querySelector("option[value=\"\"]");
       select.innerHTML = "";
       if (placeholder) {
         select.appendChild(placeholder);
+      }
+      if (selectedValue && !values.includes(selectedValue)) {
+        values = [selectedValue, ...values];
       }
       values.forEach((value) => {
         const option = document.createElement("option");
@@ -111,27 +118,11 @@
       }
     }
 
-    async function loadPersons() {
-      try {
-        const response = await fetch("/api/facets/context", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({}),
-        });
-        const data = await response.json();
-        if (!data.ok) {
-          throw new Error(data.error || "facet request failed");
-        }
-        const facets = data.facets || {};
-        setOptions(personSelect, facets.PERSON || [], personSelect.value || "");
-      } catch (error) {
-        console.error("Failed to refresh facets", error);
-      }
-    }
-
-    async function refreshDependentFacets() {
+    async function refreshFacets() {
       const payload = {
         person: personSelect.value || null,
+        gpe: gpeSelect.value || null,
+        loc: locSelect.value || null,
       };
       try {
         const response = await fetch("/api/facets/context", {
@@ -144,20 +135,29 @@
           throw new Error(data.error || "facet request failed");
         }
         const facets = data.facets || {};
-        if (payload.person) {
-          setOptions(gpeSelect, facets.GPE || [], gpeSelect.value || "");
-          setOptions(locSelect, facets.LOC || [], locSelect.value || "");
-        } else {
-          setOptions(gpeSelect, [], "");
-          setOptions(locSelect, [], "");
-        }
+        const keepPerson = personSelect.value || "";
+        const keepGpe = gpeSelect.value || "";
+        const keepLoc = locSelect.value || "";
+        setOptions(personSelect, facets.PERSON || [], keepPerson);
+        setOptions(gpeSelect, facets.GPE || [], keepGpe);
+        setOptions(locSelect, facets.LOC || [], keepLoc);
       } catch (error) {
         console.error("Failed to refresh facets", error);
       }
     }
 
-    personSelect.addEventListener("change", refreshDependentFacets);
-    loadPersons().then(refreshDependentFacets);
+    personSelect.addEventListener("change", refreshFacets);
+    gpeSelect.addEventListener("change", refreshFacets);
+    locSelect.addEventListener("change", refreshFacets);
+    refreshFacets();
+
+    clearButton.addEventListener("click", () => {
+      personSelect.value = "";
+      gpeSelect.value = "";
+      locSelect.value = "";
+      results.innerHTML = "";
+      refreshFacets();
+    });
 
     function renderResults(items) {
       if (!items.length) {
