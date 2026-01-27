@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Speaker Span</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/ner.css') }}">
+</head>
+<body>
+
+  <h1>Speaker Span</h1>
+  <p class="meta" id="meta-info"></p>
+  <p class="status" id="status"></p>
+
+  <textarea id="text-input" placeholder="Select text and mark the speaker span…"></textarea>
+  <div class="selection-controls">
+    <label>
+      Identifier
+      <input id="meta-identifier" type="text" placeholder="mn10_tha">
+    </label>
+    <label>
+      Verse #
+      <input id="meta-verse-num" type="number" min="0" step="1" placeholder="0">
+    </label>
+  </div>
+  <div class="controls">
+    <button type="button" id="random-btn">Random Verse</button>
+    <button type="button" id="clear-btn">Clear</button>
+    <button type="button" id="copy-btn">Copy JSON</button>
+    <button type="button" id="save-btn">Save speaker span</button>
+  </div>
+  <div class="selection-controls">
+    <button class="primary" type="button" id="mark-span-btn">Mark Span</button>
+    <div class="selection-controls">
+      <button type="button" id="label-speaker-btn">Label speaker</button>
+      <label>
+        <select id="speaker-label"></select>
+      </label>
+    </div>
+    <div class="selection-controls">
+      <button type="button" id="label-interlocuter-btn">Label interlocuter</button>
+      <label>
+        <select id="interlocuter-label"></select>
+      </label>
+    </div>
+    <div class="selection-controls">
+      <button type="button" id="label-audience-btn">Label audience</button>
+      <label>
+        <select id="audience-label"></select>
+      </label>
+    </div>
+  </div>
+
+  <section class="panel">
+    <h2>Preview</h2>
+    <div id="preview">(no text)</div>
+  </section>
+
+  <section class="panel">
+    <h2>Raw Output</h2>
+    <pre id="raw-json">{}</pre>
+  </section>
+
+  <script>
+    const INITIAL = {{ initial_doc | default(None) | tojson | safe }};
+    const LABEL_COLORS = {
+      PERSON: "#bfdbfe",
+      NORP: "#fed7aa",
+      SPAN: "#fde68a",
+    };
+    const ROLE_LABELS = {
+      speaker: ["PERSON"],
+      interlocuter: ["PERSON", "NORP"],
+      audience: ["PERSON", "NORP"],
+    };
+    const ROLE_TITLES = {
+      speaker: "Speaker",
+      interlocuter: "Interlocuter",
+      audience: "Audience",
+    };
+
+    function clampValue(value, min, max) {
+      return Math.max(min, Math.min(max, value));
+    }
+
+    function clamp(value, min, max) {
+      return clampValue(value, min, max);
+    }
+
+    function toValidLabel(value) {
+      const normalized = typeof value === "string" ? value.toUpperCase().trim() : "";
+      return normalized;
+    }
+
+    function escapeHTML(value) {
+      return value.replace(/[&<>"']/g, c => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;",
+      }[c]));
+    }
+
+    let currentDoc = {
+      text: "",
+      meta: null,
+      speaker_span: null,
+      roles: {
+        speaker: null,
+        interlocuter: null,
+        audience: null,
+      },
+    };
+
+    const textInput = document.getElementById("text-input");
+    const previewEl = document.getElementById("preview");
+    const statusEl = document.getElementById("status");
+    const metaEl = document.getElementById("meta-info");
+    const rawJsonEl = document.getElementById("raw-json");
+    const metaIdentifierInput = document.getElementById("meta-identifier");
+    const metaVerseInput = document.getElementById("meta-verse-num");
+    const speakerLabel = document.getElementById("speaker-label");
+    const interlocuterLabel = document.getElementById("interlocuter-label");
+    const audienceLabel = document.getElementById("audience-label");
+
+    bootstrap();
+
+    document.getElementById("mark-span-btn").addEventListener("click", markSpeakerSpan);
+    document.getElementById("label-speaker-btn").addEventListener("click", () => labelRoleFromSelection("speaker"));
+    document.getElementById("label-interlocuter-btn").addEventListener("click", () => labelRoleFromSelection("interlocuter"));
+    document.getElementById("label-audience-btn").addEventListener("click", () => labelRoleFromSelection("audience"));
+    document.getElementById("clear-btn").addEventListener("click", () => {
+      textInput.value = "";
+      currentDoc = {
+        text: "",
+        meta: null,
+        speaker_span: null,
+        roles: {
+          speaker: null,
+          interlocuter: null,
+          audience: null,
+        },
+      };
+      if (metaIdentifierInput) metaIdentifierInput.value = "";
+      if (metaVerseInput) metaVerseInput.value = "";
+      statusEl.textContent = "";
+      render();
+    });
+    document.getElementById("copy-btn").addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(rawJsonEl.textContent);
+        statusEl.textContent = "Copied JSON.";
+      } catch {
+        statusEl.textContent = "Unable to copy.";
+      }
+    });
+    document.getElementById("save-btn").addEventListener("click", saveSpeakerSpan);
+    textInput.addEventListener("input", () => {
+      currentDoc.text = textInput.value;
+      render();
+    });
+    populateRoleDropdowns();
+    updateRoleButtonColors();
+
+    function bootstrap() {
+      if (INITIAL && typeof INITIAL.text === "string") {
+        currentDoc = {
+          text: INITIAL.text,
+          meta: INITIAL.meta || null,
+          speaker_span: null,
+          roles: {
+            speaker: null,
+            interlocuter: null,
+            audience: null,
+          },
+        };
+        textInput.value = INITIAL.text;
+        if (metaIdentifierInput && currentDoc.meta?.identifier) {
+          metaIdentifierInput.value = currentDoc.meta.identifier;
+        }
+        if (metaVerseInput && currentDoc.meta?.verse_num !== undefined) {
+          metaVerseInput.value = currentDoc.meta.verse_num;
+        }
+      }
+      render();
+    }
+
+    function populateRoleDropdowns() {
+      if (speakerLabel) {
+        speakerLabel.innerHTML = ROLE_LABELS.speaker.map(label => `<option value="${label}">${label}</option>`).join("");
+      }
+      if (interlocuterLabel) {
+        interlocuterLabel.innerHTML = ROLE_LABELS.interlocuter.map(label => `<option value="${label}">${label}</option>`).join("");
+      }
+      if (audienceLabel) {
+        audienceLabel.innerHTML = ROLE_LABELS.audience.map(label => `<option value="${label}">${label}</option>`).join("");
+      }
+    }
+
+    async function saveSpeakerSpan() {
+      let payload;
+      try {
+        payload = buildPayload({ requireSpan: true });
+      } catch (error) {
+        statusEl.textContent = error.message;
+        return;
+      }
+      statusEl.textContent = "Saving…";
+      try {
+        const response = await fetch("/speaker_span", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+        const result = await response.json();
+        if (!response.ok || result.ok === false) {
+          throw new Error(result.message || result.error || "Save failed.");
+        }
+        statusEl.textContent = result.message || "Saved speaker span.";
+      } catch (error) {
+        statusEl.textContent = error.message;
+      }
+    }
+
+    function getSelectionOffsets() {
+      const start = textInput.selectionStart ?? 0;
+      const end = textInput.selectionEnd ?? start;
+      if (end < start) {
+        statusEl.textContent = "Selection end cannot be before start.";
+        return null;
+      }
+      const clampedStart = clampValue(start, 0, textInput.value.length);
+      const clampedEnd = clampValue(end, clampedStart, textInput.value.length);
+      if (clampedEnd === clampedStart) {
+        statusEl.textContent = "Selection is empty.";
+        return null;
+      }
+      return { start: clampedStart, end: clampedEnd };
+    }
+
+    function markSpeakerSpan() {
+      const offsets = getSelectionOffsets();
+      if (!offsets) return;
+      currentDoc.text = textInput.value;
+      currentDoc.speaker_span = offsets;
+      statusEl.textContent = "Marked speaker span.";
+      render();
+      updateVerseNavigationState();
+    }
+
+    function labelRoleFromSelection(role) {
+      const offsets = getSelectionOffsets();
+      if (!offsets) return;
+      currentDoc.text = textInput.value;
+      const label = getRoleLabelValue(role);
+      currentDoc.roles[role] = {
+        ...offsets,
+        text: textInput.value.slice(offsets.start, offsets.end),
+        type: label,
+      };
+      statusEl.textContent = `Labeled ${ROLE_TITLES[role] || role}.`;
+      render();
+    }
+
+    function render() {
+      currentDoc.text = textInput.value;
+      syncSelectionTexts();
+      renderPreview();
+      renderMeta();
+      rawJsonEl.textContent = JSON.stringify(buildPayload(), null, 2);
+    }
+
+    function renderPreview() {
+      const text = currentDoc.text || "";
+      if (!text) {
+        previewEl.textContent = "(no text)";
+        return;
+      }
+      const spans = collectPreviewSpans()
+        .sort((a, b) => a.start - b.start || a.end - b.end);
+      let cursor = 0;
+      let html = "";
+      spans.forEach(span => {
+        const start = clampValue(span.start, 0, text.length);
+        const end = clampValue(span.end, start, text.length);
+        if (start > cursor) {
+          html += escapeHTML(text.slice(cursor, start));
+        }
+        const snippet = escapeHTML(text.slice(start, end));
+        const color = LABEL_COLORS[span.label] || "#e5e5e5";
+        html += `<span class="tag" style="background:${color}">${snippet} <small>${span.displayLabel}</small></span>`;
+        cursor = end;
+      });
+      if (cursor < text.length) {
+        html += escapeHTML(text.slice(cursor));
+      }
+      previewEl.innerHTML = html;
+    }
+
+    function collectPreviewSpans() {
+      const spans = [];
+      if (currentDoc.speaker_span) {
+        spans.push({
+          start: currentDoc.speaker_span.start,
+          end: currentDoc.speaker_span.end,
+          label: "SPAN",
+          displayLabel: "Span",
+        });
+      }
+      Object.entries(currentDoc.roles).forEach(([role, entry]) => {
+        if (!entry) return;
+        spans.push({
+          start: entry.start,
+          end: entry.end,
+          label: entry.type,
+          displayLabel: ROLE_TITLES[role] || role,
+        });
+      });
+      return spans;
+    }
+
+    function renderMeta() {
+      if (!currentDoc.meta) {
+        metaEl.textContent = "";
+        return;
+      }
+      const parts = [];
+      if (currentDoc.meta.identifier) {
+        parts.push(currentDoc.meta.identifier);
+      }
+      if (currentDoc.meta.verse_num !== undefined) {
+        parts.push(`v.${currentDoc.meta.verse_num}`);
+      }
+      metaEl.textContent = parts.join(" — ");
+    }
+
+    function ensureMeta() {
+      if (!currentDoc.meta) {
+        currentDoc.meta = {};
+      }
+      return currentDoc.meta;
+    }
+
+    function updateMetaFromInputs() {
+      const meta = ensureMeta();
+      if (metaIdentifierInput) {
+        meta.identifier = metaIdentifierInput.value.trim() || null;
+      }
+      if (metaVerseInput) {
+        const raw = metaVerseInput.value;
+        meta.verse_num = raw === "" ? null : Number(raw);
+      }
+      render();
+    }
+
+    function syncSelectionTexts() {
+      if (currentDoc.speaker_span) {
+        const start = Number(currentDoc.speaker_span.start);
+        const end = Number(currentDoc.speaker_span.end);
+        currentDoc.speaker_span = {
+          start: Number.isFinite(start) ? start : 0,
+          end: Number.isFinite(end) ? end : Number.isFinite(start) ? start : 0,
+        };
+      }
+      Object.entries(currentDoc.roles).forEach(([role, entry]) => {
+        if (!entry) return;
+        const start = Number(entry.start);
+        const end = Number(entry.end);
+        const safeStart = Number.isFinite(start) ? start : 0;
+        const safeEnd = Number.isFinite(end) ? end : safeStart;
+        const displayStart = clampValue(safeStart, 0, currentDoc.text.length);
+        const displayEnd = clampValue(safeEnd, displayStart, currentDoc.text.length);
+        currentDoc.roles[role] = {
+          ...entry,
+          start: safeStart,
+          end: safeEnd,
+          text: currentDoc.text.slice(displayStart, displayEnd),
+        };
+      });
+    }
+
+    function buildPayload({ requireSpan = false } = {}) {
+      currentDoc.text = textInput.value;
+      const text = currentDoc.text;
+      if (!text.trim() && requireSpan) {
+        throw new Error("Nothing to save.");
+      }
+      const span = currentDoc.speaker_span;
+      if (!span && requireSpan) {
+        throw new Error("Speaker span is required.");
+      }
+      const start = span ? Number(span.start) : null;
+      const end = span ? Number(span.end) : null;
+      if (requireSpan) {
+        if (!Number.isFinite(start) || !Number.isFinite(end)) {
+          throw new Error("Speaker span offsets must be numbers.");
+        }
+        if (start < 0) {
+          throw new Error("Speaker span start cannot be negative.");
+        }
+        if (end < start) {
+          throw new Error("Speaker span end cannot be before start.");
+        }
+        if (end > text.length) {
+          throw new Error("Speaker span extends past the text.");
+        }
+      }
+      return {
+        meta: currentDoc.meta,
+        text,
+        span: span ? { start, end } : null,
+        speaker: currentDoc.roles.speaker
+          ? { type: currentDoc.roles.speaker.type || null, text: currentDoc.roles.speaker.text || null }
+          : null,
+        interlocutor: currentDoc.roles.interlocuter
+          ? { type: currentDoc.roles.interlocuter.type || null, text: currentDoc.roles.interlocuter.text || null }
+          : null,
+        audience: currentDoc.roles.audience
+          ? { type: currentDoc.roles.audience.type || null, text: currentDoc.roles.audience.text || null }
+          : null,
+      };
+    }
+
+    function getRoleLabelValue(role) {
+      if (role === "speaker") {
+        return toValidLabel(speakerLabel?.value || ROLE_LABELS.speaker[0]);
+      }
+      if (role === "interlocuter") {
+        return toValidLabel(interlocuterLabel?.value || ROLE_LABELS.interlocuter[0]);
+      }
+      return toValidLabel(audienceLabel?.value || ROLE_LABELS.audience[0]);
+    }
+
+    function updateRoleButtonColors() {
+      const markSpanBtn = document.getElementById("mark-span-btn");
+      const speakerBtn = document.getElementById("label-speaker-btn");
+      const interlocuterBtn = document.getElementById("label-interlocuter-btn");
+      const audienceBtn = document.getElementById("label-audience-btn");
+      setButtonColor(markSpanBtn, "SPAN");
+      setButtonColor(speakerBtn, getRoleLabelValue("speaker"));
+      setButtonColor(interlocuterBtn, getRoleLabelValue("interlocuter"));
+      setButtonColor(audienceBtn, getRoleLabelValue("audience"));
+    }
+
+    function setButtonColor(button, label) {
+      if (!button) return;
+      const color = LABEL_COLORS[label] || "#e5e5e5";
+      button.style.background = color;
+      button.style.borderColor = color;
+    }
+
+    speakerLabel?.addEventListener("change", updateRoleButtonColors);
+    interlocuterLabel?.addEventListener("change", updateRoleButtonColors);
+    audienceLabel?.addEventListener("change", updateRoleButtonColors);
+    metaIdentifierInput?.addEventListener("input", updateMetaFromInputs);
+    metaVerseInput?.addEventListener("input", updateMetaFromInputs);
+
+    document.getElementById("random-btn")?.addEventListener("click", () => {
+      window.location.href = "{{ url_for('random_verse') }}";
+    });
+  </script>
+</body>
+</html>

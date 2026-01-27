@@ -1,0 +1,332 @@
+              norp              
+--------------------------------
+ Abhassara devas
+ Ajivaka
+ Akasa
+ Angas
+ Anguttarapan
+ Anguttarapans
+ Arahants
+ Arahats
+ Ariyas
+ Assataras
+ Asuras
+ Avantis
+ Awakened Ones
+ Beautiful Black devas
+ Beautiful devas
+ Bhaaradvaaja Brahmans
+ Bharadvaja clan
+ Bhikkhu
+ Bhikkhu Sangha
+ Bhikkhus
+ Blessed Ones
+ Brahma's retinue
+ Brahman
+ Brahmans
+ Brahmas
+ Buddhas
+ Bulis
+ Buliyans
+ Cetis
+ Chabyaputta
+ Chabyaputtas
+ Contented Devas
+ Cālikans
+ Dasarahas
+ Deva
+ Devas
+ Devata
+ Erapatha
+ Erapathas
+ Four Great Kings
+ Fully Enlightened Ones
+ Gandhabba
+ Gandhabbas
+ Gandharans
+ Ghandhabbas
+ Great Forty
+ Householders
+ Jain
+ Jains
+ Kajjangalas
+ Kalamas
+ Kambalas
+ Kambojans
+ Kanhagotamaka
+ Kasis
+ Koliyan
+ Koliyans
+ Kosalans
+ Kumbhanda
+ Kumbhandas
+ Kurus
+ Licchavi
+ Licchavis
+ Macchas
+ Magadhan
+ Magadhans
+ Maghadans
+ Malla clan
+ Mallan
+ Mallans
+ Mallas
+ Maras
+ Monks
+ Moriyans
+ Naga
+ Nagas
+ Niganthas
+ Nimmanaratis
+ Noble Disciple
+ Noble Ones
+ Paranimmitavasavattis
+ Payagas
+ Pañcalas
+ Pure Ones
+ Radiant devas
+ Sakyan
+ Sakyan lay followers
+ Sakyan son
+ Sakyan-son contemplatives
+ Sakyans
+ Sakyas
+ Sangha
+ Sire
+ Sky-fruit devas
+ Subhakinha devas
+ Suddhavasa deities
+ Sunerus
+ Surasenas
+ Thirty-three
+ Tusitas
+ Vajjians
+ Vajjis
+ Vansans
+ Vasetthas
+ Vehapphala devas
+ Virupakkha
+ Virupakkhas
+ Vulture-Killers
+ Yakkha
+ Yakkhas
+ Yama Devas
+ Yama devas
+ Yama's minions
+ Yamas
+ arahant monks
+ arahants
+ arahats
+ ascetic
+ ascetics
+ asura
+ asuras
+ bhikkhu-sangha
+ bhikkhus
+ brahman
+ brahman householders
+ brahman seers
+ brahmanas
+ brahmans
+ brahmas
+ brahmin
+ brahmins
+ brahmās
+ celestial
+ community of monks
+ contemplative
+ contemplatives
+ deities
+ demon
+ demons
+ deva
+ deva kings
+ deva-king
+ devaputtas
+ devas
+ devas of Immeasurable Beauty
+ devas of Immeasurable Radiance
+ devas of Limited Beauty
+ devas of Limited Radiance
+ devas of Streaming Radiance
+ devata
+ devatas
+ disciples
+ female lay followers
+ four great Kings
+ four great kings
+ gandhabba
+ gandhabbas
+ gods
+ householder
+ householders
+ human beings
+ hungry ghosts
+ hungry shades
+ khattiyas
+ kings
+ lay follower
+ lay followers
+ male & female lay followers
+ male & female slaves
+ male and female lay followers
+ male and female lay-followers
+ male lay followers
+ maras
+ merchant
+ monastery attendants
+ monk
+ monks
+ māras
+ naga
+ nagas
+ noble disciple
+ noble ones
+ noble sons
+ noble warrior
+ noble warriors
+ nobles
+ novices
+ nuns
+ nymph
+ nymphs
+ paccekabuddha
+ paccekabuddhas
+ recluses
+ retinue of Brahma
+ royal ministers
+ sectarians
+ seers
+ timi
+ timingala
+ timirapingala
+ wanderer
+ wanderers
+ warriors
+ yakkha
+ yakkhas
+(205 rows)
+
+      side       |          norp          
+-----------------+------------------------
+ ati_not_in_gold | Ariyan disciple
+ ati_not_in_gold | Atthaka
+ ati_not_in_gold | Ayojjhans
+ ati_not_in_gold | Beautiful Black Devas
+ ati_not_in_gold | Bhaaradvaaja Brahman
+ ati_not_in_gold | Bhaggas
+ ati_not_in_gold | Brahmaas
+ ati_not_in_gold | Contemplatives
+ ati_not_in_gold | Contented devas
+ ati_not_in_gold | Danaveghasa asuras
+ ati_not_in_gold | Four Great King devas
+ ati_not_in_gold | Four Kings
+ ati_not_in_gold | Householder
+ ati_not_in_gold | Indras
+ ati_not_in_gold | Jotinamas
+ ati_not_in_gold | Maaras
+ ati_not_in_gold | Manomaya
+ ati_not_in_gold | Manusa
+ ati_not_in_gold | Master Licchavis
+ ati_not_in_gold | Monk
+ ati_not_in_gold | Moriyas
+ ati_not_in_gold | Māras
+ ati_not_in_gold | Nagasena
+ ati_not_in_gold | Nighandu
+ ati_not_in_gold | Nimmanarati devas
+ ati_not_in_gold | Noble disciple
+ ati_not_in_gold | Noble ones
+ ati_not_in_gold | Nobles
+ ati_not_in_gold | Pajjunna
+ ati_not_in_gold | Paraga
+ ati_not_in_gold | Paragas
+ ati_not_in_gold | Pathavi
+ ati_not_in_gold | Perfected Ones
+ ati_not_in_gold | Punna
+ ati_not_in_gold | Radiant Devas
+ ati_not_in_gold | Radiant Gods
+ ati_not_in_gold | Radiant gods
+ ati_not_in_gold | Sakyan Sage
+ ati_not_in_gold | Sakyan clan
+ ati_not_in_gold | Sakyan contemplative
+ ati_not_in_gold | Sakyan contemplatives
+ ati_not_in_gold | Seers
+ ati_not_in_gold | Sidari
+ ati_not_in_gold | Suleyyas
+ ati_not_in_gold | Sumbhan
+ ati_not_in_gold | Sumbhas
+ ati_not_in_gold | Sunaparantans
+ ati_not_in_gold | Supannas
+ ati_not_in_gold | Supreme Buddhas
+ ati_not_in_gold | Suttantas
+ ati_not_in_gold | Tathāgatas
+ ati_not_in_gold | Tusita devas
+ ati_not_in_gold | Udaññans
+ ati_not_in_gold | Varunas
+ ati_not_in_gold | Vasitthas
+ ati_not_in_gold | Vataraga
+ ati_not_in_gold | Wanderer
+ ati_not_in_gold | Wanderers
+ ati_not_in_gold | Yasassi
+ ati_not_in_gold | Yugandhara
+ ati_not_in_gold | Yāma devas
+ ati_not_in_gold | bhikkhu
+ ati_not_in_gold | bhikkhu Kaccayanagotta
+ ati_not_in_gold | bhikkhu concentrates
+ ati_not_in_gold | bhikkhu-friends
+ ati_not_in_gold | bojjhanga
+ ati_not_in_gold | brahman Nalijangha
+ ati_not_in_gold | brahman kings
+ ati_not_in_gold | brilliant ones
+ ati_not_in_gold | canvas
+ ati_not_in_gold | celestial beings
+ ati_not_in_gold | citicita
+ ati_not_in_gold | dependents
+ ati_not_in_gold | female lay disciple
+ ati_not_in_gold | female lay-followers
+ ati_not_in_gold | female probationers
+ ati_not_in_gold | forty
+ ati_not_in_gold | four Great Kings
+ ati_not_in_gold | fully Enlightened Ones
+ ati_not_in_gold | future ones
+ ati_not_in_gold | girls
+ ati_not_in_gold | guardians
+ ati_not_in_gold | houseless ones
+ ati_not_in_gold | kshatriya
+ ati_not_in_gold | kshatriyas
+ ati_not_in_gold | lay men
+ ati_not_in_gold | male and female slaves
+ ati_not_in_gold | male lay follower
+ ati_not_in_gold | male lay-followers
+ ati_not_in_gold | neutral ones
+ ati_not_in_gold | niganthas
+ ati_not_in_gold | noble Ariya
+ ati_not_in_gold | noble follower
+ ati_not_in_gold | noble one
+ ati_not_in_gold | noble-warriors
+ ati_not_in_gold | nāga
+ ati_not_in_gold | nāgas
+ ati_not_in_gold | renunciant
+ ati_not_in_gold | retinue of
+ ati_not_in_gold | royal clan
+ ati_not_in_gold | royal elephant
+ ati_not_in_gold | royal messengers
+ ati_not_in_gold | royal seers
+ gold_not_in_ati | Bulis
+ gold_not_in_ati | Chabyaputta
+ gold_not_in_ati | Chabyaputtas
+ gold_not_in_ati | Erapatha
+ gold_not_in_ati | Kambalas
+ gold_not_in_ati | Kanhagotamaka
+ gold_not_in_ati | Pure Ones
+ gold_not_in_ati | Thirty-three
+ gold_not_in_ati | Vajjis
+ gold_not_in_ati | Virupakkha
+ gold_not_in_ati | Virupakkhas
+ gold_not_in_ati | Yama's minions
+ gold_not_in_ati | arahant monks
+ gold_not_in_ati | deva kings
+ gold_not_in_ati | deva-king
+ gold_not_in_ati | warriors
+(119 rows)
+

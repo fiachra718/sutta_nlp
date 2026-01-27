@@ -47,6 +47,11 @@ def _parse_meta_value(value):
     return None
 
 
+def fetch_entity_id(entity_type: str, name: str, *, dsn: str | None = None) -> int | None:
+    manager = SuttaVerse.objects.using(dsn) if dsn else SuttaVerse.objects
+    return manager.fetch_entity_id(entity_type, name)
+
+
 def _build_predict_payload(text: str, meta=None):
     doc = run_ner(text)
     payload = {
@@ -108,6 +113,110 @@ def training_doc(doc_id: str):
         abort(404)
     context = _build_training_doc_context(doc)
     return render_template("training_doc.html", **context)
+
+
+'''
+typical payload to the /speaker_span endpoint
+{
+  "meta": {
+    "identifier": "mn10_tha",
+    "verse_num": 12
+  },
+  "text": "Monks, this is the direct path…",
+  "span": { "start": 123, "end": 210 },
+
+  "speaker": { "type": "PERSON", "entity_id": 1, "text": "The Blessed One" },
+  "interlocutor": { "type": "PERSON", "entity_id": 17, "text": "Ānanda" },
+  "audience": { "type": "NORP", "entity_id": 991, "text": "bhikkhus" }
+}
+'''
+@app.route("/speaker_span", methods=["GET", "POST"])
+def speaker_span():
+    if request.method == "GET":
+        return render_template("speaker_span.html")
+    data = request.get_json(force=True, silent=True) or {}
+    meta = data.get("meta") if isinstance(data.get("meta"), dict) else {}
+    identifier = (meta.get("identifier") or "").strip()
+    verse_num = meta.get("verse_num")
+    text = data.get("text") or ""
+    span = data.get("span") or {}
+
+    start = span.get("start")
+    end = span.get("end")
+    if not isinstance(start, int) or not isinstance(end, int) or end <= start:
+        return jsonify({"ok": False, "message": "Span start/end must be integers with end > start."}), 400
+
+    verse_row = None
+    if identifier and verse_num is None:
+        return jsonify({"ok": False, "message": "Verse number is required when identifier is provided."}), 400
+    if identifier and verse_num is not None:
+        try:
+            verse_num = int(verse_num)
+        except (TypeError, ValueError):
+            return jsonify({"ok": False, "message": "Verse number must be an integer."}), 400
+        verse_row = SuttaVerse.objects.fetch_verse_by_identifier(identifier, verse_num)
+        if not verse_row:
+            return jsonify({"ok": False, "message": "Verse not found for identifier/verse_num."}), 404
+    else:
+        if not isinstance(text, str) or not text.strip():
+            return jsonify({"ok": False, "message": "Text is required to resolve verse."}), 400
+        verse_row = SuttaVerse.objects.fetch_verse_by_cleaned_text(text)
+        if not verse_row:
+            return jsonify({"ok": False, "message": "Unable to resolve verse from cleaned text."}), 404
+        identifier = verse_row.get("identifier")
+        verse_num = verse_row.get("verse_num")
+
+    meta = {
+        "identifier": identifier,
+        "verse_num": verse_num,
+        "verse_id": verse_row.get("id") if verse_row else None,
+    }
+
+    def resolve_entity(role_name: str, required: bool):
+        payload = data.get(role_name)
+        if payload is None:
+            if required:
+                return None, f"{role_name} is required."
+            return None, None
+        if not isinstance(payload, dict):
+            return None, f"{role_name} must be an object."
+        role_type = (payload.get("type") or "").strip().upper()
+        role_text = (payload.get("text") or "").strip()
+        if not role_type or not role_text:
+            return None, f"{role_name} requires both type and text."
+        if role_type not in {"PERSON", "NORP"}:
+            return None, f"{role_name} type must be PERSON or NORP."
+        entity_id = fetch_entity_id(role_type, role_text)
+        if not entity_id:
+            return None, f"{role_name} not found in canonical entities."
+        return {"type": role_type, "text": role_text, "entity_id": entity_id}, None
+
+    speaker, error = resolve_entity("speaker", True)
+    if error:
+        return jsonify({"ok": False, "message": error}), 400
+    interlocutor, error = resolve_entity("interlocutor", False)
+    if error:
+        return jsonify({"ok": False, "message": error}), 400
+    audience, error = resolve_entity("audience", False)
+    if error:
+        return jsonify({"ok": False, "message": error}), 400
+
+    resolved = {
+        "meta": meta,
+        "text": text,
+        "span": {"start": start, "end": end},
+        "speaker": speaker,
+        "interlocutor": interlocutor,
+        "audience": audience,
+    }
+    verse_id = meta.get("verse_id")
+    if verse_id is None:
+        return jsonify({"ok": False, "message": "Unable to resolve verse id."}), 400
+    result = SuttaVerse.objects.update_discourse_spans(verse_id, resolved)
+    if not result.get("ok"):
+        return jsonify({"ok": False, "message": result.get("message", "Update failed.")}), 400
+    return jsonify({"ok": True, "payload": resolved, "updated": result.get("updated", 0)})
+
 
 @app.route("/predict", methods=["GET", "POST"])
 def predict_page():
@@ -365,6 +474,28 @@ def predict_verse(identifier: str, verse_num: int):
         "meta": meta,
     }
     return render_template("predict.html", initial_doc=initial_doc)
+
+
+@app.route("/speaker_span/verse/<string:identifier>/<int:verse_num>")
+def speaker_span_verse(identifier: str, verse_num: int):
+    verse = SuttaVerse.objects.fetch_sutta_verse(identifier, verse_num)
+    if not verse:
+        abort(404)
+
+    meta = {
+        "identifier": verse.identifier,
+        "verse_num": verse.verse_num,
+    }
+    for key in ("nikaya", "vagga", "book_number", "translator", "title", "subtitle"):
+        value = getattr(verse, key, None)
+        if value not in (None, ""):
+            meta[key] = value
+
+    initial_doc = {
+        "text": verse.text or "",
+        "meta": meta,
+    }
+    return render_template("speaker_span.html", initial_doc=initial_doc)
 
 
 @app.post("/api/verse/<string:identifier>/<int:verse_num>/ner")

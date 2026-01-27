@@ -35,6 +35,7 @@ SKIP_FILE_PATTERNS = (
     # "iti.intro.*.html",
     # "dhp.intro.*.html",
     "dhp-buddh-than.html",
+    "wheel*.html",
 )
 
 # ======================

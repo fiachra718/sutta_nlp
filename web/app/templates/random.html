@@ -19,6 +19,10 @@
     <div class="controls">
       <button class="primary" type="submit" id="run-btn">Run NER</button>
       <button type="button" id="reload-btn">Load Another</button>
+      {% if initial_doc and initial_doc.meta %}
+      <a class="button-link" href="{{ url_for('speaker_span_verse', identifier=initial_doc.meta.identifier, verse_num=initial_doc.meta.verse_num) }}">Open in Speaker Span</a>
+      <a class="button-link" href="{{ url_for('predict_verse', identifier=initial_doc.meta.identifier, verse_num=initial_doc.meta.verse_num) }}">Open in Predict</a>
+      {% endif %}
     </div>
   </form>
 

@@ -82,6 +82,18 @@ class _BoundManager:
     def facet_search(self, *, label: str, terms: Iterable[str], limit: int = 200):
         return db.facet_search(label=label, terms=terms, limit=limit, dsn=self.dsn)
 
+    def fetch_entity_id(self, entity_type: str, name: str):
+        return db.fetch_entity_id(entity_type, name, dsn=self.dsn)
+
+    def fetch_verse_by_cleaned_text(self, text: str):
+        return db.fetch_verse_by_cleaned_text(text, dsn=self.dsn)
+
+    def fetch_verse_by_identifier(self, identifier: str, verse_num: int):
+        return db.fetch_verse_by_identifier(identifier, verse_num, dsn=self.dsn)
+
+    def update_discourse_spans(self, verse_id: int, payload: dict):
+        return db.update_discourse_spans(verse_id, payload, dsn=self.dsn)
+
     def save(self, obj, **kwargs):
         if not self._save_handler:
             raise NotImplementedError("Save operation not configured for this manager")

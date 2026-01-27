@@ -369,6 +369,90 @@ def _normalize_entity_term(value: str) -> str:
     return unicodedata.normalize("NFC", stripped).lower().strip()
 
 
+def fetch_entity_id(entity_type: str, name: str, *, dsn: str | None = None):
+    if not entity_type or not name:
+        return None
+    label = entity_type.strip().upper()
+    normalized = _normalize_entity_term(name)
+    if not normalized:
+        return None
+    row = fetch_one(
+        """
+        WITH matches AS (
+            SELECT e.id, 0 AS priority
+            FROM ati_entities e
+            WHERE e.entity_type = %(label)s
+              AND e.normalized = %(term)s
+            UNION ALL
+            SELECT a.entity_id AS id, 1 AS priority
+            FROM ati_entity_aliases a
+            JOIN ati_entities e ON e.id = a.entity_id
+            WHERE e.entity_type = %(label)s
+              AND a.normalized = %(term)s
+        )
+        SELECT id
+        FROM matches
+        ORDER BY priority, id
+        LIMIT 1
+        """,
+        {"label": label, "term": normalized},
+        dsn=dsn,
+    )
+    return row["id"] if row else None
+
+
+def fetch_verse_by_cleaned_text(text: str, *, dsn: str | None = None):
+    if not text:
+        return None
+    row = fetch_one(
+        """
+        SELECT id, identifier, verse_num
+        FROM ati_verses
+        WHERE cleaned_text_hash = md5(
+            regexp_replace(unaccent(lower(%(text)s)), '[^a-z0-9]+', ' ', 'g')
+        )
+        LIMIT 1
+        """,
+        {"text": text},
+        dsn=dsn,
+    )
+    return row
+
+
+def fetch_verse_by_identifier(identifier: str, verse_num: int, *, dsn: str | None = None):
+    if not identifier:
+        return None
+    row = fetch_one(
+        """
+        SELECT id, identifier, verse_num
+        FROM ati_verses
+        WHERE identifier = %(identifier)s
+          AND verse_num = %(verse_num)s
+        LIMIT 1
+        """,
+        {"identifier": identifier, "verse_num": verse_num},
+        dsn=dsn,
+    )
+    return row
+
+
+def update_discourse_spans(verse_id: int, payload: dict, *, dsn: str | None = None):
+    if verse_id is None:
+        return {"ok": False, "message": "verse_id is required"}
+    rowcount = execute(
+        """
+        UPDATE ati_verses
+        SET discourse_spans = %(payload)s
+        WHERE id = %(verse_id)s
+        """,
+        {"payload": Json(payload), "verse_id": verse_id},
+        dsn=dsn,
+    )
+    if rowcount < 1:
+        return {"ok": False, "message": "Verse not found."}
+    return {"ok": True, "updated": rowcount}
+
+
 def _list_entities_by_label(label: str, limit: int, *, dsn=None):
     rows = fetch_all(
         """

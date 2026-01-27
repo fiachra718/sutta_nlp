@@ -1,0 +1,394 @@
+              norp              | freq 
+--------------------------------+------
+ brahmans                       |  634
+ noble ones                     |  577
+ brahman                        |  567
+ bhikkhus                       |  546
+ devas                          |  529
+ Monks                          |  488
+ contemplatives                 |  453
+ householder                    |  381
+ Sangha                         |  304
+ monks                          |  256
+ deva                           |  177
+ Bhikkhus                       |  155
+ recluses                       |  151
+ householders                   |  136
+ wanderers                      |  120
+ arahants                       |  119
+ brahmins                       |  102
+ noble disciple                 |  100
+ wanderer                       |   97
+ Noble Ones                     |   97
+ Devas                          |   90
+ contemplative                  |   85
+ ascetic                        |   69
+ asuras                         |   68
+ Sakyans                        |   67
+ monk                           |   61
+ devata                         |   61
+ hungry shades                  |   59
+ Mallans                        |   52
+ Mallas                         |   51
+ Brahman                        |   51
+ Kalamas                        |   50
+ ascetics                       |   50
+ Sakyan                         |   46
+ gods                           |   43
+ kings                          |   42
+ Niganthas                      |   41
+ Maras                          |   39
+ Buddhas                        |   38
+ noble warriors                 |   37
+ noble warrior                  |   37
+ community of                   |   36
+ Brahmas                        |   35
+ Kosalans                       |   33
+ yakkha                         |   33
+ Yakkhas                        |   32
+ Brahmans                       |   32
+ nobles                         |   32
+ Licchavis                      |   32
+ nuns                           |   29
+ seers                          |   29
+ nymphs                         |   27
+ sectarians                     |   27
+ Four Great Kings               |   27
+ brahmin                        |   25
+ Noble One                      |   25
+ Sakyan-son contemplatives      |   24
+ devatas                        |   24
+ lay followers                  |   24
+ Koliyan                        |   21
+ royal ministers                |   20
+ brahmas                        |   20
+ Householder                    |   19
+ naga                           |   17
+ brahman seers                  |   17
+ Arahants                       |   15
+ demons                         |   15
+ Vasetthas                      |   15
+ Yakkha                         |   14
+ Vulture-Killers                |   14
+ Asuras                         |   14
+ Koliyans                       |   13
+ Nagas                          |   13
+ Kurus                          |   12
+ gandhabba                      |   12
+ Householders                   |   12
+ Magadhans                      |   12
+ maras                          |   12
+ brahman householders           |   11
+ merchant                       |   11
+ Bhaggas                        |   11
+ female lay followers           |   10
+ yakkhas                        |   10
+ lay follower                   |   10
+ nagas                          |   10
+ Naga                           |    9
+ kshatriyas                     |    9
+ Yama devas                     |    9
+ celestial                      |    9
+ gandhabbas                     |    9
+ Nagasena                       |    8
+ disturbed                      |    8
+ Fully Enlightened Ones         |    8
+ Vajjians                       |    8
+ disciples                      |    8
+ hungry ghosts                  |    8
+ Nimmanarati devas              |    7
+ Ariyan disciple                |    7
+ Wanderer                       |    7
+ arahats                        |    7
+ male & female lay followers    |    7
+ male lay followers             |    7
+ lake                           |    7
+ Deva                           |    7
+ dazzles                        |    7
+ Cetis                          |    7
+ plowman                        |    6
+ paccekabuddhas                 |    6
+ Kasis                          |    6
+ Gandhabba                      |    6
+ Malla clan                     |    6
+ Akasa                          |    6
+ Fisherman's Son                |    6
+ Devata                         |    6
+ Sakyas                         |    5
+ Jains                          |    5
+ Anuruddha                      |    5
+ Licchavi                       |    5
+ Jain                           |    5
+ Sakyan Sage                    |    5
+ nymph                          |    5
+ deities                        |    5
+ Tusita devas                   |    5
+ Mallan                         |    5
+ Ariyas                         |    4
+ brahmanas                      |    4
+ paccekabuddha                  |    4
+ nāga                           |    4
+ Kumbhandas                     |    4
+ Magadhan                       |    4
+ Great Forty                    |    4
+ Wanderers                      |    4
+ Atthaka                        |    4
+ Bharadvaja clan                |    4
+ retinue of                     |    4
+ Awakened Ones                  |    4
+ Sakyan clan                    |    3
+ Sakyan heard                   |    3
+ royal elephant                 |    3
+ necklace                       |    3
+ Angas                          |    3
+ Yama Devas                     |    3
+ Radiant Devas                  |    3
+ Sakyan son                     |    3
+ Arahats                        |    3
+ Bhikkhu Sangha                 |    3
+ mantras                        |    3
+ Gandhabbas                     |    3
+ Sisters                        |    3
+ Four Great King devas          |    3
+ Abhassara devas                |    3
+ crocodile                      |    3
+ dwellings                      |    3
+ noble dwellings                |    3
+ community of monks             |    3
+ human beings                   |    3
+ Sire                           |    3
+ nāgas                          |    3
+ Noble Disciple                 |    3
+ Contented Devas                |    3
+ kshatriya                      |    3
+ Yamas                          |    2
+ noble growth                   |    2
+ citicita                       |    2
+ Fully Enlightened One          |    2
+ Perfected Ones                 |    2
+ Dasarahas                      |    2
+ demon                          |    2
+ flaws                          |    2
+ girls                          |    2
+ enmity                         |    2
+ Tusitas                        |    2
+ Ajivaka                        |    2
+ Sakyan contemplative           |    2
+ noses                          |    2
+ bhikkhu-sangha                 |    2
+ female probationers            |    2
+ rake                           |    2
+ Four Kings                     |    2
+ wiles                          |    2
+ Nimmanaratis                   |    2
+ royal clan                     |    2
+ male and female lay followers  |    2
+ regions                        |    2
+ noble sons                     |    2
+ Sumbhan                        |    2
+ Suddhavasa deities             |    2
+ Ghandhabbas                    |    2
+ Kumbhanda                      |    2
+ draws                          |    2
+ Dabba                          |    2
+ Subhakinha devas               |    2
+ Moriyans                       |    2
+ guardians                      |    2
+ noble follower                 |    2
+ spiders                        |    2
+ brahman kings                  |    2
+ male and female lay-followers  |    2
+ Contemplatives                 |    2
+ brahmās                        |    2
+ noble virtue                   |    2
+ Sumbhas                        |    2
+ noble                          |    2
+ Tathāgatas                     |    2
+ novices                        |    2
+ niganthas                      |    2
+ Blessed Ones                   |    2
+ bhikkhu                        |    2
+ nose                           |    2
+ developments                   |    2
+ nightfall                      |    2
+ supporters                     |    2
+ Sky-fruit devas                |    2
+ concerned                      |    2
+ eats                           |    2
+ māras                          |    2
+ Buliyans                       |    2
+ determinations                 |    2
+ Monk                           |    2
+ Bhaaradvaaja Brahman           |    2
+ Moriyas                        |    2
+ future ones                    |    2
+ Vehapphala devas               |    2
+ four Great Kings               |    2
+ Radiant Gods                   |    2
+ Paranimmitavasavattis          |    1
+ venerable ones                 |    1
+ Sakyan asks                    |    1
+ Allakappa                      |    1
+ noble Queen                    |    1
+ commitments                    |    1
+ Vansans                        |    1
+ timingala                      |    1
+ Erapathas                      |    1
+ Udaññans                       |    1
+ Indras                         |    1
+ monastery attendants           |    1
+ Sakyan countryside             |    1
+ brahman Nalijangha             |    1
+ Asavas                         |    1
+ Kambojans                      |    1
+ canvas                         |    1
+ elders                         |    1
+ devas of Immeasurable Beauty   |    1
+ devas of Streaming Radiance    |    1
+ Yasassi                        |    1
+ Sakyan delighted               |    1
+ by night                       |    1
+ Anguttarapans                  |    1
+ Paraga                         |    1
+ Noble ones                     |    1
+ Suttantas                      |    1
+ Sakyan had recovered           |    1
+ their ministers                |    1
+ noble morality                 |    1
+ Beautiful Black devas          |    1
+ Payagas                        |    1
+ Sakyan'                        |    1
+ Sakyan reported                |    1
+ washed                         |    1
+ female lay disciple            |    1
+ dispellers                     |    1
+ timi                           |    1
+ Brahmaas                       |    1
+ Suleyyas                       |    1
+ ineffectual                    |    1
+ Seers                          |    1
+ retinue of Brahma              |    1
+ Pañcalas                       |    1
+ butter                         |    1
+ Sidari                         |    1
+ Sakyan lay followers           |    1
+ female lay-followers           |    1
+ houseless ones                 |    1
+ khattiyas                      |    1
+ present ones                   |    1
+ Contented devas                |    1
+ Cālikans                       |    1
+ Vasitthas                      |    1
+ male and female slaves         |    1
+ splinters                      |    1
+ basket                         |    1
+ Nighandu                       |    1
+ craves                         |    1
+ Asayha                         |    1
+ four great Kings               |    1
+ Radiant devas                  |    1
+ Macchas                        |    1
+ Maaras                         |    1
+ Punna                          |    1
+ Five Khandhas                  |    1
+ lay men                        |    1
+ cosmetics                      |    1
+ Sakyan responded               |    1
+ male lay-followers             |    1
+ company                        |    1
+ Vataraga                       |    1
+ Bhaaradvaaja Brahmans          |    1
+ Supreme Buddhas                |    1
+ four determinations            |    1
+ Ayojjhans                      |    1
+ fully Enlightened Ones         |    1
+ Kajjangalas                    |    1
+ Gandharans                     |    1
+ Varunas                        |    1
+ Pajjunna                       |    1
+ Kappa                          |    1
+ devaputtas                     |    1
+ Brahma's retinue               |    1
+ takers                         |    1
+ Malla                          |    1
+ Sakyan said thus               |    1
+ noble-warriors                 |    1
+ devas of Limited Beauty        |    1
+ bhikkhu Kaccayanagotta         |    1
+ neutral ones                   |    1
+ Prince                         |    1
+ Malla of                       |    1
+ Ketumbaraga                    |    1
+ Pathavi                        |    1
+ Nobles                         |    1
+ brilliant ones                 |    1
+ noble one                      |    1
+ night                          |    1
+ royal                          |    1
+ forty                          |    1
+ believe                        |    1
+ Manusa                         |    1
+ Bhikkhu                        |    1
+ Beautiful Black Devas          |    1
+ Radiant gods                   |    1
+ Jeta                           |    1
+ royal seers                    |    1
+ renunciant                     |    1
+ celestial beings               |    1
+ Avantis                        |    1
+ Nigaṇṭha Nāṭaputta             |    1
+ Radiant                        |    1
+ devas of Immeasurable Radiance |    1
+ friend                         |    1
+ scatters                       |    1
+ Yāma devas                     |    1
+ Digha                          |    1
+ four great kings               |    1
+ bojjhanga                      |    1
+ noble Ariya                    |    1
+ Assataras                      |    1
+ Sakyan contemplatives          |    1
+ bhikkhu-friends                |    1
+ devas of Limited Radiance      |    1
+ Deva Odatagayha                |    1
+ Gratified                      |    1
+ Sky-fruit                      |    1
+ Manomaya                       |    1
+ Noble disciple                 |    1
+ male & female slaves           |    1
+ Sunerus                        |    1
+ murderer                       |    1
+ Sunaparantans                  |    1
+ Jotinamas                      |    1
+ sunshades                      |    1
+ backbiters                     |    1
+ male lay follower              |    1
+ Māras                          |    1
+ Paragas                        |    1
+ Anguttarapan                   |    1
+ royal messengers               |    1
+ asura                          |    1
+ bhikkhu concentrates           |    1
+ Beautiful Black                |    1
+ drinks                         |    1
+ heedful                        |    1
+ Maghadans                      |    1
+ Karumha                        |    1
+ Sakyan — shaking               |    1
+ Feast of Cleansing             |    1
+ rising                         |    1
+ displeasure                    |    1
+ Master Licchavis               |    1
+ Uposathas                      |    1
+ Surasenas                      |    1
+ Yugandhara                     |    1
+ blind                          |    1
+ Danaveghasa asuras             |    1
+ Beautiful devas                |    1
+ Supannas                       |    1
+ dependents                     |    1
+ community                      |    1
+ chews & savors                 |    1
+ timirapingala                  |    1
+(390 rows)
+
