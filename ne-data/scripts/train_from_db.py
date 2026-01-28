@@ -16,7 +16,6 @@ def db_to_examples(conn, nlp):
     ##
     sql = """
         select text, spans from gold_training
-        WHERE created_at::date > '2025-12-20'
     """
     examples = []
     with conn.cursor(row_factory=dict_row) as cur:
@@ -63,7 +62,7 @@ DROPOUT = 0.1
 DEV_RATIO = 0.1
 CONN = psycopg.connect("dbname=tipitaka user=alee")
 # REMEMBER to set this
-OUTPUT_DIR = WORK / "models" / "2026_01_08.v2"
+OUTPUT_DIR = WORK / "models" / "2026_01_27.v2"
 
 random.seed(SEED)
 
@@ -71,18 +70,9 @@ random.seed(SEED)
 # nlp = load_model()
 # load from installed in dist
 nlp = spacy.load("en_sutta_ner")
-assert nlp.meta.get("version") == "1.2.0", "Wrong en_sutta_ner version installed!"
+assert nlp.meta.get("version") == "1.2.2", "Wrong en_sutta_ner version installed!"
+
 ner = nlp.get_pipe("ner")
-
-
-# 2) Remove pretrained NER
-# if "ner" in nlp.pipe_names:
-#     nlp.remove_pipe("ner")
-
-# # 3) Add fresh NER
-# ner = nlp.add_pipe("ner")
-# print(f"Loading local NER model from {MODELS_DIR}")
-# nlp = spacy.load(MODELS_DIR)
 
 # 4) Build gold examples USING THIS nlp for tokenizer
 examples = db_to_examples(CONN, nlp)

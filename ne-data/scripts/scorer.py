@@ -4,6 +4,7 @@ import spacy
 
 from local_settings import WORK, load_model
 
+
 def docbin_to_examples(path, nlp):
     if not path.exists():
         print(f"Skipping missing DocBin: {path}")
@@ -28,7 +29,8 @@ def main():
         sources = [
             WORK / "gold_training.spacy",
             WORK / "test.spacy",
-            WORK / "test_from_db.spacy"
+            WORK / "test_from_db.spacy",
+            WORK / "train.spacy", 
         ]
 
         examples = []

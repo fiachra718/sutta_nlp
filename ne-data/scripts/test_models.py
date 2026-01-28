@@ -4,7 +4,7 @@ from spacy.pipeline import EntityRuler
 import json
 from pathlib import Path
 from local_settings import MODELS_DIR, WORK  # , PATTERNS, SPAN_PATTERNS
-from local_settings import load_model
+# from local_settings import load_model
 
 ENTITY_PATTERNS = Path("ne-data/patterns/entity_ruler/patterns.jsonl")
 SPAN_PATTERNS = Path("ne-data/patterns/span_ruler/loc_phrases.json")
@@ -50,9 +50,8 @@ with open(WORK / "text" / "lines.txt", "r", encoding="utf-8") as f:
     for line in f:
         sentences.append(line.strip())
 
-# nlp = load_my_ner()
-
-nlp = load_model()
+nlp = spacy.load("en_sutta_ner")  # should be 1.2.3
+assert nlp.meta.get("version") == "1.2.3", "Wrong en_sutta_ner version installed!"
 
 for s in sentences:
     doc = nlp(s)

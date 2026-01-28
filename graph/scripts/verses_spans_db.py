@@ -9,7 +9,9 @@ import json
 conn = psycopg.connect("dbname=tipitaka user=alee")
 conn.autocommit = False
 
-nlp = spacy.load("en_sutta_ner")  # should be 1.1.3
+nlp = spacy.load("en_sutta_ner")  # should be 1.2.2
+assert nlp.meta.get("version") == "1.2.2", "Wrong en_sutta_ner version installed!"
+
 
 select = "SELECT id, text FROM ati_verses"
 update = "UPDATE ati_verses SET ner_span = %s WHERE id = %s" 
