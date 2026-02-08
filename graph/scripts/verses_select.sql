@@ -1,26 +1,25 @@
 \copy (
   SELECT
-    s.identifier,
+    v.identifier,
     CASE
-      WHEN s.nikaya IN ('AN','SN') THEN
-        s.nikaya || ' ' || s.book_number || '.' || s.vagga
-      WHEN s.nikaya IN ('MN','DN') THEN
-        s.nikaya || ' ' || s.book_number
-      WHEN s.nikaya = 'KN' THEN
-        s.vagga || ' ' || s.book_number
+      WHEN v.nikaya IN ('AN','SN') THEN
+        v.nikaya || ' ' || v.book_number || '.' || v.vagga
+      WHEN v.nikaya IN ('MN','DN') THEN
+        v.nikaya || ' ' || v.book_number
+      WHEN v.nikaya = 'KN' THEN
+        v.vagga || ' ' || v.book_number
       ELSE
-        s.nikaya || ' ' || s.book_number
+        v.nikaya || ' ' || v.book_number
     END AS sutta_ref,
     v.verse_num,
-    v.verse_text
-  FROM ati_suttas AS s
+    v.text
+  FROM ati_verses AS v
   CROSS JOIN LATERAL (
     SELECT
-      t.elem->>'text' AS verse_text,
-      t.ord::int      AS verse_num
-    FROM jsonb_array_elements(s.verses) WITH ORDINALITY AS t(elem, ord)
-  ) AS v
-  WHERE s.doc_type = 'sutta'
-  ORDER BY s.nikaya, s.book_number, v.verse_num
+      t.elem->>'text' AS ner_text, t.elem->>'label' as ner_label
+    FROM jsonb_array_elements(v.ner_span) WITH ORDINALITY AS t(elem, ord)
+  ) AS n
+  WHERE length(v.text) > 128 AND v.ner_span <> '[]'::jsonb
+  ORDER BY v.nikaya, v.book_number, v.verse_num 
 ) TO '/tmp/verses.csv'
   WITH (FORMAT csv, HEADER true)

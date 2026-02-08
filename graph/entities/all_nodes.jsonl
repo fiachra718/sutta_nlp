@@ -1,0 +1,469 @@
+ {"type": "NORP", "canonical_name": "Abhassara devas", "normalized_name": "abhassara devas"}
+ {"type": "LOC", "canonical_name": "Aggalava Shrine", "normalized_name": "aggalava shrine"}
+ {"type": "LOC", "aliases": [{"canonical_alias": "Ajakalāpaka [Herd-of-Goats] shrine", "normalized_alias": "ajakalapaka [herd-of-goats] shrine"}], "canonical_name": "Ajakalāpaka", "normalized_name": "ajakalapaka"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Ajita", "normalized_alias": "ajita"}, {"canonical_alias": "Ajita Kesakambala", "normalized_alias": "ajita kesakambala"}, {"canonical_alias": "Ajita Kesakambali", "normalized_alias": "ajita kesakambali"}], "canonical_name": "Ajita Kesakambalin", "normalized_name": "ajita kesakambalin"}
+ {"type": "NORP", "canonical_name": "Ajivaka", "normalized_name": "ajivaka"}
+ {"type": "GPE", "canonical_name": "Ajjheya", "normalized_name": "ajjheya"}
+ {"type": "NORP", "canonical_name": "Akasa", "normalized_name": "akasa"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Akkosaka", "normalized_alias": "akkosaka"}, {"canonical_alias": "Akkosa Bharadvaja", "normalized_alias": "akkosa bharadvaja"}, {"canonical_alias": "Bharadvaja", "normalized_alias": "bharadvaja"}, {"canonical_alias": "Venerable Akkosa Bharadvaja", "normalized_alias": "venerable akkosa bharadvaja"}, {"canonical_alias": "Venerable Bharadvaja", "normalized_alias": "venerable bharadvaja"}], "canonical_name": "Akkosaka Bharadvaja", "normalized_name": "akkosaka bharadvaja"}
+ {"type": "GPE", "aliases": [{"canonical_alias": "Kingdom of Alakamanda", "normalized_alias": "kingdom of alakamanda"}], "canonical_name": "Alakamanda", "normalized_name": "alakamanda"}
+ {"type": "PERSON", "canonical_name": "Alara Kalama", "normalized_name": "alara kalama"}
+ {"type": "GPE", "canonical_name": "Alavaka", "normalized_name": "alavaka"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Alavika", "normalized_alias": "alavika"}], "canonical_name": "Alavaka", "normalized_name": "alavaka"}
+ {"type": "GPE", "canonical_name": "Alavi", "normalized_name": "alavi"}
+ {"type": "GPE", "canonical_name": "Allakappa", "normalized_name": "allakappa"}
+ {"type": "GPE", "canonical_name": "Ambalatthika", "normalized_name": "ambalatthika"}
+ {"type": "PERSON", "canonical_name": "Ambapali", "normalized_name": "ambapali"}
+ {"type": "LOC", "canonical_name": "Ananda shrine", "normalized_name": "ananda shrine"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Anāthapiṇḍika", "normalized_alias": "anathapindika"}], "canonical_name": "Anathapindika", "normalized_name": "anathapindika"}
+ {"type": "GPE", "canonical_name": "Andhakavinda", "normalized_name": "andhakavinda"}
+ {"type": "PERSON", "canonical_name": "Andhakavinda", "normalized_name": "andhakavinda"}
+ {"type": "GPE", "canonical_name": "Anga", "normalized_name": "anga"}
+ {"type": "NORP", "canonical_name": "Angas", "normalized_name": "angas"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Ven. Angulimala", "normalized_alias": "ven. angulimala"}], "canonical_name": "Angulimala", "normalized_name": "angulimala"}
+ {"type": "PERSON", "canonical_name": "Anigha", "normalized_name": "anigha"}
+ {"type": "GPE", "aliases": [{"canonical_alias": "Anupiyā", "normalized_alias": "anupiya"}], "canonical_name": "Anupiya", "normalized_name": "anupiya"}
+ {"type": "PERSON", "canonical_name": "Anuradha", "normalized_name": "anuradha"}
+ {"type": "LOC", "aliases": [{"canonical_alias": "Anathapindika's park", "normalized_alias": "anathapindika's park"}, {"canonical_alias": "Anathapindika's monastery", "normalized_alias": "anathapindika's monastery"}, {"canonical_alias": "Anathapindika 's monastery", "normalized_alias": "anathapindika 's monastery"}, {"canonical_alias": "Anathapindika's Monastery", "normalized_alias": "anathapindika's monastery"}, {"canonical_alias": "Anathapindika 's Park", "normalized_alias": "anathapindika 's park"}], "canonical_name": "Anāthapiṇḍika's monastery", "normalized_name": "anathapindika's monastery"}
+ {"type": "GPE", "canonical_name": "Apana", "normalized_name": "apana"}
+ {"type": "NORP", "canonical_name": "Arahants", "normalized_name": "arahants"}
+ {"type": "PERSON", "canonical_name": "Arittha", "normalized_name": "arittha"}
+ {"type": "NORP", "canonical_name": "Ariyan disciple", "normalized_name": "ariyan disciple"}
+ {"type": "NORP", "canonical_name": "Ariyas", "normalized_name": "ariyas"}
+ {"type": "PERSON", "canonical_name": "Asibandhakaputta", "normalized_name": "asibandhakaputta"}
+ {"type": "GPE", "canonical_name": "Assaka", "normalized_name": "assaka"}
+ {"type": "PERSON", "canonical_name": "Assalayana", "normalized_name": "assalayana"}
+ {"type": "GPE", "canonical_name": "Assapura", "normalized_name": "assapura"}
+ {"type": "GPE", "canonical_name": "Assatara", "normalized_name": "assatara"}
+ {"type": "GPE", "canonical_name": "Atanata", "normalized_name": "atanata"}
+ {"type": "GPE", "canonical_name": "Atthakanagara", "normalized_name": "atthakanagara"}
+ {"type": "PERSON", "canonical_name": "Atthama", "normalized_name": "atthama"}
+ {"type": "GPE", "aliases": [{"canonical_alias": "Avanti", "normalized_alias": "avanti"}], "canonical_name": "Avantī", "normalized_name": "avanti"}
+ {"type": "NORP", "canonical_name": "Awakened Ones", "normalized_name": "awakened ones"}
+ {"type": "LOC", "canonical_name": "Bahuputta", "normalized_name": "bahuputta"}
+ {"type": "PERSON", "canonical_name": "Baka Brahma", "normalized_name": "baka brahma"}
+ {"type": "LOC", "canonical_name": "Bamboo Grove", "normalized_name": "bamboo grove"}
+ {"type": "LOC", "canonical_name": "Bamboo-Grove Monastery", "normalized_name": "bamboo-grove monastery"}
+ {"type": "PERSON", "canonical_name": "Bandhuma", "normalized_name": "bandhuma"}
+ {"type": "LOC", "aliases": [{"canonical_alias": "Banyan Park", "normalized_alias": "banyan park"}], "canonical_name": "Banyan Grove", "normalized_name": "banyan grove"}
+ {"type": "NORP", "canonical_name": "Bhaggas", "normalized_name": "bhaggas"}
+ {"type": "GPE", "aliases": [{"canonical_alias": "Bhandagama", "normalized_alias": "bhandagama"}], "canonical_name": "Bhanda Village", "normalized_name": "bhanda village"}
+ {"type": "PERSON", "canonical_name": "Bhañña", "normalized_name": "bhanna"}
+ {"type": "GPE", "canonical_name": "Bhesakala", "normalized_name": "bhesakala"}
+ {"type": "NORP", "canonical_name": "Bhikkhu Sangha", "normalized_name": "bhikkhu sangha"}
+ {"type": "GPE", "canonical_name": "Bhoganagara", "normalized_name": "bhoganagara"}
+ {"type": "LOC", "canonical_name": "Black Rock of Isigili", "normalized_name": "black rock of isigili"}
+ {"type": "NORP", "canonical_name": "Blessed Ones", "normalized_name": "blessed ones"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Great Brahma", "normalized_alias": "great brahma"}, {"canonical_alias": "Brahmā", "normalized_alias": "brahma"}], "canonical_name": "Brahma", "normalized_name": "brahma"}
+ {"type": "PERSON", "canonical_name": "Brahma Harita", "normalized_name": "brahma harita"}
+ {"type": "PERSON", "canonical_name": "Brahma Parisajja", "normalized_name": "brahma parisajja"}
+ {"type": "PERSON", "canonical_name": "Brahma Purohita", "normalized_name": "brahma purohita"}
+ {"type": "PERSON", "canonical_name": "Brahma Sahampati", "normalized_name": "brahma sahampati"}
+ {"type": "LOC", "canonical_name": "Brahma-world", "normalized_name": "brahma-world"}
+ {"type": "PERSON", "canonical_name": "Brahmadatta", "normalized_name": "brahmadatta"}
+ {"type": "NORP", "canonical_name": "Brahman", "normalized_name": "brahman"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Awakened One", "normalized_alias": "awakened one"}, {"canonical_alias": "Blessed One", "normalized_alias": "blessed one"}, {"canonical_alias": "Exalted One", "normalized_alias": "exalted one"}, {"canonical_alias": "Fully Awakened One", "normalized_alias": "fully awakened one"}, {"canonical_alias": "Fortunate One", "normalized_alias": "fortunate one"}, {"canonical_alias": "Gotama,Lord", "normalized_alias": "gotama,lord"}, {"canonical_alias": "Master", "normalized_alias": "master"}, {"canonical_alias": "master Gotama", "normalized_alias": "master gotama"}, {"canonical_alias": "Master Gotama", "normalized_alias": "master gotama"}, {"canonical_alias": "Venerable Gotama", "normalized_alias": "venerable gotama"}, {"canonical_alias": "Tathagata", "normalized_alias": "tathagata"}, {"canonical_alias": "Tathāgata", "normalized_alias": "tathagata"}, {"canonical_alias": "Teacher", "normalized_alias": "teacher"}, {"canonical_alias": "the Arahant", "normalized_alias": "the arahant"}, {"canonical_alias": "One Well-gone", "normalized_alias": "one well-gone"}, {"canonical_alias": "Gotama", "normalized_alias": "gotama"}, {"canonical_alias": "Lord", "normalized_alias": "lord"}, {"canonical_alias": "Buddha Gotama", "normalized_alias": "buddha gotama"}, {"canonical_alias": "Bhagava", "normalized_alias": "bhagava"}, {"canonical_alias": "Bhaggava", "normalized_alias": "bhaggava"}], "canonical_name": "Buddha", "normalized_name": "buddha"}
+ {"type": "NORP", "canonical_name": "Buddhas", "normalized_name": "buddhas"}
+ {"type": "NORP", "canonical_name": "Bulis", "normalized_name": "bulis"}
+ {"type": "NORP", "canonical_name": "Buliyans", "normalized_name": "buliyans"}
+ {"type": "PERSON", "canonical_name": "Bāhiya", "normalized_name": "bahiya"}
+ {"type": "GPE", "canonical_name": "Calika", "normalized_name": "calika"}
+ {"type": "GPE", "canonical_name": "Campa", "normalized_name": "campa"}
+ {"type": "PERSON", "canonical_name": "Candima", "normalized_name": "candima"}
+ {"type": "LOC", "canonical_name": "Capala", "normalized_name": "capala"}
+ {"type": "GPE", "canonical_name": "Ceti", "normalized_name": "ceti"}
+ {"type": "NORP", "canonical_name": "Cetis", "normalized_name": "cetis"}
+ {"type": "NORP", "canonical_name": "Chabyaputtas", "normalized_name": "chabyaputtas"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Channa the Wanderer", "normalized_alias": "channa the wanderer"}], "canonical_name": "Channa", "normalized_name": "channa"}
+ {"type": "PERSON", "canonical_name": "Citta", "normalized_name": "citta"}
+ {"type": "NORP", "canonical_name": "Contented Devas", "normalized_name": "contented devas"}
+ {"type": "LOC", "aliases": [{"canonical_alias": "Cool Wood", "normalized_alias": "cool wood"}], "canonical_name": "Cool Forest", "normalized_name": "cool forest"}
+ {"type": "NORP", "canonical_name": "Dasarahas", "normalized_name": "dasarahas"}
+ {"type": "LOC", "aliases": [{"canonical_alias": "Deer Park", "normalized_alias": "deer park"}], "canonical_name": "Deer Park at Isipatana", "normalized_name": "deer park at isipatana"}
+ {"type": "NORP", "canonical_name": "Deva", "normalized_name": "deva"}
+ {"type": "GPE", "canonical_name": "Devadaha", "normalized_name": "devadaha"}
+ {"type": "PERSON", "canonical_name": "Devadatta", "normalized_name": "devadatta"}
+ {"type": "NORP", "canonical_name": "Devas", "normalized_name": "devas"}
+ {"type": "NORP", "canonical_name": "Devata", "normalized_name": "devata"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Dhammadinna the nun", "normalized_alias": "dhammadinna the nun"}], "canonical_name": "Dhammadinna", "normalized_name": "dhammadinna"}
+ {"type": "PERSON", "canonical_name": "Dhanañjanin", "normalized_name": "dhananjanin"}
+ {"type": "PERSON", "canonical_name": "Dhaniya", "normalized_name": "dhaniya"}
+ {"type": "LOC", "aliases": [{"canonical_alias": "lake Dharani", "normalized_alias": "lake dharani"}], "canonical_name": "Dharani", "normalized_name": "dharani"}
+ {"type": "PERSON", "canonical_name": "Dhatarattha", "normalized_name": "dhatarattha"}
+ {"type": "GPE", "canonical_name": "Dhavajalika", "normalized_name": "dhavajalika"}
+ {"type": "PERSON", "canonical_name": "Dhotaka", "normalized_name": "dhotaka"}
+ {"type": "PERSON", "canonical_name": "Dighajanu", "normalized_name": "dighajanu"}
+ {"type": "PERSON", "canonical_name": "Dona", "normalized_name": "dona"}
+ {"type": "LOC", "canonical_name": "Eastern clime", "normalized_name": "eastern clime"}
+ {"type": "GPE", "canonical_name": "Ekanala", "normalized_name": "ekanala"}
+ {"type": "NORP", "canonical_name": "Erapathas", "normalized_name": "erapathas"}
+ {"type": "NORP", "canonical_name": "Four Great King devas", "normalized_name": "four great king devas"}
+ {"type": "PERSON", "canonical_name": "Four Great Kings", "normalized_name": "four great kings"}
+ {"type": "NORP", "canonical_name": "Four Kings", "normalized_name": "four kings"}
+ {"type": "NORP", "canonical_name": "Fully Enlightened Ones", "normalized_name": "fully enlightened ones"}
+ {"type": "LOC", "canonical_name": "Gabled Hall", "normalized_name": "gabled hall"}
+ {"type": "LOC", "canonical_name": "Gaggara Lake", "normalized_name": "gaggara lake"}
+ {"type": "NORP", "canonical_name": "Gandhabba", "normalized_name": "gandhabba"}
+ {"type": "GPE", "canonical_name": "Gandhara", "normalized_name": "gandhara"}
+ {"type": "GPE", "canonical_name": "Gandharapura", "normalized_name": "gandharapura"}
+ {"type": "LOC", "canonical_name": "Ganges", "normalized_name": "ganges"}
+ {"type": "PERSON", "canonical_name": "Gavesin", "normalized_name": "gavesin"}
+ {"type": "GPE", "aliases": [{"canonical_alias": "Gaya", "normalized_alias": "gaya"}], "canonical_name": "Gayā", "normalized_name": "gaya"}
+ {"type": "LOC", "canonical_name": "Gayā Head", "normalized_name": "gaya head"}
+ {"type": "NORP", "canonical_name": "Ghandhabbas", "normalized_name": "ghandhabbas"}
+ {"type": "GPE", "canonical_name": "Giribbaja", "normalized_name": "giribbaja"}
+ {"type": "LOC", "canonical_name": "Goatherd's Banyan Tree", "normalized_name": "goatherd's banyan tree"}
+ {"type": "LOC", "aliases": [{"canonical_alias": "Gotamaka", "normalized_alias": "gotamaka"}], "canonical_name": "Gotamaka Shrine", "normalized_name": "gotamaka shrine"}
+ {"type": "LOC", "aliases": [{"canonical_alias": "Mahavana", "normalized_alias": "mahavana"}, {"canonical_alias": "Great Wood", "normalized_alias": "great wood"}], "canonical_name": "Great Forest", "normalized_name": "great forest"}
+ {"type": "NORP", "canonical_name": "Great Forty", "normalized_name": "great forty"}
+ {"type": "LOC", "aliases": [{"canonical_alias": "Blind Men's Grove", "normalized_alias": "blind men's grove"}, {"canonical_alias": "Blind Man's Grove", "normalized_alias": "blind man's grove"}], "canonical_name": "Grove of the Blind", "normalized_name": "grove of the blind"}
+ {"type": "GPE", "canonical_name": "Haliddavasana", "normalized_name": "haliddavasana"}
+ {"type": "LOC", "canonical_name": "Hall of the Gabled Pavilion", "normalized_name": "hall of the gabled pavilion"}
+ {"type": "PERSON", "canonical_name": "Hatthaka of Alavi", "normalized_name": "hatthaka of alavi"}
+ {"type": "GPE", "canonical_name": "Hatthigama", "normalized_name": "hatthigama"}
+ {"type": "LOC", "aliases": [{"canonical_alias": "World of High Divinity", "normalized_alias": "world of high divinity"}], "canonical_name": "High Divinity", "normalized_name": "high divinity"}
+ {"type": "LOC", "aliases": [{"canonical_alias": "Himalayas", "normalized_alias": "himalayas"}], "canonical_name": "Himalayan district", "normalized_name": "himalayan district"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Hingu", "normalized_alias": "hingu"}], "canonical_name": "Hinga", "normalized_name": "hinga"}
+ {"type": "LOC", "canonical_name": "Hiraññavati River", "normalized_name": "hirannavati river"}
+ {"type": "LOC", "canonical_name": "Hot Springs", "normalized_name": "hot springs"}
+ {"type": "NORP", "canonical_name": "Householder", "normalized_name": "householder"}
+ {"type": "NORP", "canonical_name": "Householders", "normalized_name": "householders"}
+ {"type": "GPE", "aliases": [{"canonical_alias": "Icchānaṅgalaka", "normalized_alias": "icchanangalaka"}], "canonical_name": "Icchanangala", "normalized_name": "icchanangala"}
+ {"type": "GPE", "canonical_name": "Isipatana", "normalized_name": "isipatana"}
+ {"type": "NORP", "canonical_name": "Jain", "normalized_name": "jain"}
+ {"type": "NORP", "canonical_name": "Jains", "normalized_name": "jains"}
+ {"type": "GPE", "canonical_name": "Jambudipa", "normalized_name": "jambudipa"}
+ {"type": "PERSON", "canonical_name": "Janavasabha", "normalized_name": "janavasabha"}
+ {"type": "PERSON", "canonical_name": "Janesabha", "normalized_name": "janesabha"}
+ {"type": "GPE", "canonical_name": "Jantu Village", "normalized_name": "jantu village"}
+ {"type": "PERSON", "canonical_name": "Janussonin", "normalized_name": "janussonin"}
+ {"type": "LOC", "aliases": [{"canonical_alias": "Jetavana", "normalized_alias": "jetavana"}], "canonical_name": "Jeta's Grove", "normalized_name": "jeta's grove"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Jivaka Komarabhacca", "normalized_alias": "jivaka komarabhacca"}], "canonical_name": "Jivaka", "normalized_name": "jivaka"}
+ {"type": "LOC", "canonical_name": "Jivaka's Mango Grove", "normalized_name": "jivaka's mango grove"}
+ {"type": "GPE", "canonical_name": "Kakkarapatta", "normalized_name": "kakkarapatta"}
+ {"type": "PERSON", "canonical_name": "Kakusanda", "normalized_name": "kakusanda"}
+ {"type": "NORP", "canonical_name": "Kalamas", "normalized_name": "kalamas"}
+ {"type": "GPE", "canonical_name": "Kalasigama", "normalized_name": "kalasigama"}
+ {"type": "GPE", "canonical_name": "Kalinga", "normalized_name": "kalinga"}
+ {"type": "GPE", "canonical_name": "Kallavalaputta", "normalized_name": "kallavalaputta"}
+ {"type": "GPE", "aliases": [{"canonical_alias": "Kambala", "normalized_alias": "kambala"}], "canonical_name": "Kamboja", "normalized_name": "kamboja"}
+ {"type": "GPE", "canonical_name": "Kammasadhamma", "normalized_name": "kammasadhamma"}
+ {"type": "PERSON", "canonical_name": "Kapadika", "normalized_name": "kapadika"}
+ {"type": "GPE", "aliases": [{"canonical_alias": "Kapilavasthu", "normalized_alias": "kapilavasthu"}, {"canonical_alias": "Kapilavattu", "normalized_alias": "kapilavattu"}], "canonical_name": "Kapilavatthu", "normalized_name": "kapilavatthu"}
+ {"type": "GPE", "canonical_name": "Kashmir", "normalized_name": "kashmir"}
+ {"type": "GPE", "canonical_name": "Kasi", "normalized_name": "kasi"}
+ {"type": "NORP", "canonical_name": "Kasis", "normalized_name": "kasis"}
+ {"type": "GPE", "canonical_name": "Kesaputta", "normalized_name": "kesaputta"}
+ {"type": "LOC", "canonical_name": "Kimikālā River", "normalized_name": "kimikala river"}
+ {"type": "GPE", "canonical_name": "Kimila", "normalized_name": "kimila"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "King Ajātasattu", "normalized_alias": "king ajatasattu"}, {"canonical_alias": "King Ajatasattu Vedehiputta", "normalized_alias": "king ajatasattu vedehiputta"}, {"canonical_alias": "King Ajātasattu Vedehiputta", "normalized_alias": "king ajatasattu vedehiputta"}], "canonical_name": "King Ajatasattu", "normalized_name": "king ajatasattu"}
+ {"type": "PERSON", "canonical_name": "King Koravya", "normalized_name": "king koravya"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Maha Sudassana", "normalized_alias": "maha sudassana"}, {"canonical_alias": "Mahasudassana", "normalized_alias": "mahasudassana"}], "canonical_name": "King Maha Sudassana", "normalized_name": "king maha sudassana"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Milinda", "normalized_alias": "milinda"}], "canonical_name": "King Milinda", "normalized_name": "king milinda"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Nala", "normalized_alias": "nala"}], "canonical_name": "King Nala", "normalized_name": "king nala"}
+ {"type": "PERSON", "canonical_name": "King Pacetana", "normalized_name": "king pacetana"}
+ {"type": "PERSON", "canonical_name": "King Pajjota", "normalized_name": "king pajjota"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "King Pasenadi", "normalized_alias": "king pasenadi"}], "canonical_name": "King Pasenadi Kosala", "normalized_name": "king pasenadi kosala"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "King Seniya Bimbisāra", "normalized_alias": "king seniya bimbisara"}], "canonical_name": "King Seniya Bimbisara", "normalized_name": "king seniya bimbisara"}
+ {"type": "PERSON", "canonical_name": "King Udena", "normalized_name": "king udena"}
+ {"type": "PERSON", "canonical_name": "King Vessavana", "normalized_name": "king vessavana"}
+ {"type": "PERSON", "canonical_name": "King Yama", "normalized_name": "king yama"}
+ {"type": "GPE", "aliases": [{"canonical_alias": "Alakamanda", "normalized_alias": "alakamanda"}], "canonical_name": "Kingdom of Alakamanda", "normalized_name": "kingdom of alakamanda"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Kisa Gotami the nun", "normalized_alias": "kisa gotami the nun"}], "canonical_name": "Kisagotami", "normalized_name": "kisagotami"}
+ {"type": "NORP", "canonical_name": "Koliyan", "normalized_name": "koliyan"}
+ {"type": "NORP", "canonical_name": "Koliyans", "normalized_name": "koliyans"}
+ {"type": "GPE", "canonical_name": "Kosala", "normalized_name": "kosala"}
+ {"type": "NORP", "canonical_name": "Kosalan brahman", "normalized_name": "kosalan brahman"}
+ {"type": "NORP", "canonical_name": "Kosalans", "normalized_name": "kosalans"}
+ {"type": "GPE", "aliases": [{"canonical_alias": "Kosambii", "normalized_alias": "kosambii"}], "canonical_name": "Kosambī", "normalized_name": "kosambi"}
+ {"type": "GPE", "canonical_name": "Kotigama", "normalized_name": "kotigama"}
+ {"type": "NORP", "canonical_name": "Kumbhanda", "normalized_name": "kumbhanda"}
+ {"type": "NORP", "canonical_name": "Kumbhandas", "normalized_name": "kumbhandas"}
+ {"type": "GPE", "aliases": [{"canonical_alias": "Kuru", "normalized_alias": "kuru"}], "canonical_name": "Kure", "normalized_name": "kure"}
+ {"type": "LOC", "canonical_name": "Kuru country", "normalized_name": "kuru country"}
+ {"type": "NORP", "canonical_name": "Kurus", "normalized_name": "kurus"}
+ {"type": "GPE", "canonical_name": "Kusavati", "normalized_name": "kusavati"}
+ {"type": "GPE", "aliases": [{"canonical_alias": "Kusinarā", "normalized_alias": "kusinara"}], "canonical_name": "Kusinara", "normalized_name": "kusinara"}
+ {"type": "GPE", "canonical_name": "Kuṇḍiya", "normalized_name": "kundiya"}
+ {"type": "NORP", "canonical_name": "Licchavi", "normalized_name": "licchavi"}
+ {"type": "NORP", "canonical_name": "Licchavis", "normalized_name": "licchavis"}
+ {"type": "GPE", "canonical_name": "Maccha", "normalized_name": "maccha"}
+ {"type": "GPE", "canonical_name": "Macchikasanda", "normalized_name": "macchikasanda"}
+ {"type": "PERSON", "canonical_name": "Maddakucchi", "normalized_name": "maddakucchi"}
+ {"type": "GPE", "canonical_name": "Madhura", "normalized_name": "madhura"}
+ {"type": "GPE", "canonical_name": "Magadha", "normalized_name": "magadha"}
+ {"type": "NORP", "canonical_name": "Magadhan", "normalized_name": "magadhan"}
+ {"type": "NORP", "canonical_name": "Magadhans", "normalized_name": "magadhans"}
+ {"type": "PERSON", "canonical_name": "Magandiya", "normalized_name": "magandiya"}
+ {"type": "GPE", "canonical_name": "Mahisavatthu", "normalized_name": "mahisavatthu"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Makkhali Gosāla", "normalized_alias": "makkhali gosala"}], "canonical_name": "Makkhali Gosala", "normalized_name": "makkhali gosala"}
+ {"type": "GPE", "canonical_name": "Malla", "normalized_name": "malla"}
+ {"type": "NORP", "canonical_name": "Malla clan", "normalized_name": "malla clan"}
+ {"type": "NORP", "canonical_name": "Mallan", "normalized_name": "mallan"}
+ {"type": "LOC", "canonical_name": "Mallan sal grove", "normalized_name": "mallan sal grove"}
+ {"type": "NORP", "canonical_name": "Mallans", "normalized_name": "mallans"}
+ {"type": "NORP", "canonical_name": "Mallas", "normalized_name": "mallas"}
+ {"type": "LOC", "canonical_name": "ManySon shrine", "normalized_name": "manyson shrine"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Evil One", "normalized_alias": "evil one"}, {"canonical_alias": "Dark One", "normalized_alias": "dark one"}], "canonical_name": "Mara", "normalized_name": "mara"}
+ {"type": "PERSON", "canonical_name": "Megha", "normalized_name": "megha"}
+ {"type": "PERSON", "canonical_name": "Methula", "normalized_name": "methula"}
+ {"type": "PERSON", "canonical_name": "Migajaala", "normalized_name": "migajaala"}
+ {"type": "PERSON", "canonical_name": "Moggallana the Guardsman", "normalized_name": "moggallana the guardsman"}
+ {"type": "PERSON", "canonical_name": "Moliya Sivaka", "normalized_name": "moliya sivaka"}
+ {"type": "NORP", "canonical_name": "Moriyans", "normalized_name": "moriyans"}
+ {"type": "NORP", "canonical_name": "Moriyas", "normalized_name": "moriyas"}
+ {"type": "LOC", "canonical_name": "Mount Vepulla", "normalized_name": "mount vepulla"}
+ {"type": "PERSON", "canonical_name": "Mucalinda", "normalized_name": "mucalinda"}
+ {"type": "GPE", "canonical_name": "Nadika", "normalized_name": "nadika"}
+ {"type": "GPE", "canonical_name": "Nagaraka", "normalized_name": "nagaraka"}
+ {"type": "NORP", "canonical_name": "Nagas", "normalized_name": "nagas"}
+ {"type": "PERSON", "canonical_name": "Nakula's father", "normalized_name": "nakula's father"}
+ {"type": "PERSON", "canonical_name": "Nakula's mother", "normalized_name": "nakula's mother"}
+ {"type": "PERSON", "canonical_name": "Nakulapita", "normalized_name": "nakulapita"}
+ {"type": "PERSON", "canonical_name": "Nala", "normalized_name": "nala"}
+ {"type": "GPE", "canonical_name": "Nalanda", "normalized_name": "nalanda"}
+ {"type": "PERSON", "canonical_name": "Namuci", "normalized_name": "namuci"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "bhikkhuni Nanda", "normalized_alias": "bhikkhuni nanda"}], "canonical_name": "Nanda", "normalized_name": "nanda"}
+ {"type": "PERSON", "canonical_name": "Nandaka", "normalized_name": "nandaka"}
+ {"type": "LOC", "canonical_name": "Nerañjara River", "normalized_name": "neranjara river"}
+ {"type": "PERSON", "canonical_name": "Nigantha Nathaputta", "normalized_name": "nigantha nathaputta"}
+ {"type": "PERSON", "canonical_name": "Nimmanarati", "normalized_name": "nimmanarati"}
+ {"type": "NORP", "canonical_name": "Nimmanaratis", "normalized_name": "nimmanaratis"}
+ {"type": "LOC", "canonical_name": "Niraya", "normalized_name": "niraya"}
+ {"type": "GPE", "canonical_name": "Okkala", "normalized_name": "okkala"}
+ {"type": "PERSON", "canonical_name": "Paccekabuddha Sudassana", "normalized_name": "paccekabuddha sudassana"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Pajaapati", "normalized_alias": "pajaapati"}, {"canonical_alias": "deva-king Pajapati", "normalized_alias": "deva-king pajapati"}], "canonical_name": "Pajapati", "normalized_name": "pajapati"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Pakudha Kaccāyana", "normalized_alias": "pakudha kaccayana"}], "canonical_name": "Pakudha Kaccayana", "normalized_name": "pakudha kaccayana"}
+ {"type": "GPE", "canonical_name": "Pancala", "normalized_name": "pancala"}
+ {"type": "PERSON", "canonical_name": "Paranimmita", "normalized_name": "paranimmita"}
+ {"type": "NORP", "canonical_name": "Paranimmitavasavatti devas", "normalized_name": "paranimmitavasavatti devas"}
+ {"type": "PERSON", "canonical_name": "Parasiri", "normalized_name": "parasiri"}
+ {"type": "GPE", "canonical_name": "Pataligama", "normalized_name": "pataligama"}
+ {"type": "GPE", "canonical_name": "Pataliputta", "normalized_name": "pataliputta"}
+ {"type": "LOC", "canonical_name": "Pavarika Mango Grove", "normalized_name": "pavarika mango grove"}
+ {"type": "LOC", "canonical_name": "Pavatta Mountain", "normalized_name": "pavatta mountain"}
+ {"type": "GPE", "canonical_name": "Payaga", "normalized_name": "payaga"}
+ {"type": "PERSON", "canonical_name": "Pañcakanga", "normalized_name": "pancakanga"}
+ {"type": "PERSON", "canonical_name": "Pañcasikha", "normalized_name": "pancasikha"}
+ {"type": "LOC", "canonical_name": "Peaked Roofed Pavilion", "normalized_name": "peaked roofed pavilion"}
+ {"type": "NORP", "canonical_name": "Perfected Ones", "normalized_name": "perfected ones"}
+ {"type": "GPE", "canonical_name": "Pipphalivana", "normalized_name": "pipphalivana"}
+ {"type": "PERSON", "canonical_name": "Pukkusa", "normalized_name": "pukkusa"}
+ {"type": "PERSON", "canonical_name": "Purana Kassapa", "normalized_name": "purana kassapa"}
+ {"type": "LOC", "aliases": [{"canonical_alias": "Suddhavasa", "normalized_alias": "suddhavasa"}], "canonical_name": "Pure Abodes", "normalized_name": "pure abodes"}
+ {"type": "NORP", "canonical_name": "Pure Ones", "normalized_name": "pure ones"}
+ {"type": "PERSON", "canonical_name": "Purindada", "normalized_name": "purindada"}
+ {"type": "GPE", "aliases": [{"canonical_alias": "Pava", "normalized_alias": "pava"}], "canonical_name": "Pāva", "normalized_name": "pava"}
+ {"type": "LOC", "canonical_name": "Pāvāla shrine", "normalized_name": "pavala shrine"}
+ {"type": "GPE", "aliases": [{"canonical_alias": "Pataligama", "normalized_alias": "pataligama"}], "canonical_name": "Pāṭali Village", "normalized_name": "patali village"}
+ {"type": "PERSON", "canonical_name": "Queen Videha", "normalized_name": "queen videha"}
+ {"type": "NORP", "canonical_name": "Radiant Devas", "normalized_name": "radiant devas"}
+ {"type": "PERSON", "canonical_name": "Rahu", "normalized_name": "rahu"}
+ {"type": "GPE", "canonical_name": "Rajagir", "normalized_name": "rajagir"}
+ {"type": "GPE", "canonical_name": "Ramagama", "normalized_name": "ramagama"}
+ {"type": "PERSON", "canonical_name": "Ratthapala", "normalized_name": "ratthapala"}
+ {"type": "LOC", "canonical_name": "River Vaggamudā", "normalized_name": "river vaggamuda"}
+ {"type": "LOC", "canonical_name": "Robbers' Cliff", "normalized_name": "robbers' cliff"}
+ {"type": "PERSON", "canonical_name": "Rohitassa", "normalized_name": "rohitassa"}
+ {"type": "GPE", "aliases": [{"canonical_alias": "Raajagaha", "normalized_alias": "raajagaha"}, {"canonical_alias": "Rajagaha", "normalized_alias": "rajagaha"}, {"canonical_alias": "Rajagala", "normalized_alias": "rajagala"}], "canonical_name": "Rājagaha", "normalized_name": "rajagaha"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Saccaka", "normalized_alias": "saccaka"}], "canonical_name": "Saccaka the Nigaṇṭha-son", "normalized_name": "saccaka the nigantha-son"}
+ {"type": "GPE", "canonical_name": "Sahajati", "normalized_name": "sahajati"}
+ {"type": "GPE", "canonical_name": "Saketa", "normalized_name": "saketa"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Inda", "normalized_alias": "inda"}, {"canonical_alias": "Indra", "normalized_alias": "indra"}, {"canonical_alias": "deva-chief Sakka", "normalized_alias": "deva-chief sakka"}], "canonical_name": "Sakka", "normalized_name": "sakka"}
+ {"type": "PERSON", "canonical_name": "Sakula", "normalized_name": "sakula"}
+ {"type": "NORP", "canonical_name": "Sakyan", "normalized_name": "sakyan"}
+ {"type": "NORP", "canonical_name": "Sakyan clan", "normalized_name": "sakyan clan"}
+ {"type": "NORP", "canonical_name": "Sakyan son", "normalized_name": "sakyan son"}
+ {"type": "NORP", "canonical_name": "Sakyan-son contemplatives", "normalized_name": "sakyan-son contemplatives"}
+ {"type": "NORP", "canonical_name": "Sakyans", "normalized_name": "sakyans"}
+ {"type": "NORP", "canonical_name": "Sakyas", "normalized_name": "sakyas"}
+ {"type": "GPE", "canonical_name": "Sala", "normalized_name": "sala"}
+ {"type": "LOC", "canonical_name": "Sala Grove", "normalized_name": "sala grove"}
+ {"type": "GPE", "canonical_name": "Salavatika", "normalized_name": "salavatika"}
+ {"type": "NORP", "canonical_name": "Sangha", "normalized_name": "sangha"}
+ {"type": "GPE", "canonical_name": "Sanjatiya", "normalized_name": "sanjatiya"}
+ {"type": "LOC", "canonical_name": "Sarandada", "normalized_name": "sarandada"}
+ {"type": "LOC", "canonical_name": "Sattamba shrine", "normalized_name": "sattamba shrine"}
+ {"type": "LOC", "canonical_name": "Sattambaka", "normalized_name": "sattambaka"}
+ {"type": "LOC", "canonical_name": "Sattapanni Cave", "normalized_name": "sattapanni cave"}
+ {"type": "PERSON", "canonical_name": "Satullapa", "normalized_name": "satullapa"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Sanjaya Belatthaputta", "normalized_alias": "sanjaya belatthaputta"}, {"canonical_alias": "Sañjaya Belatthaputta", "normalized_alias": "sanjaya belatthaputta"}, {"canonical_alias": "Sanjaya Velatthaputta", "normalized_alias": "sanjaya velatthaputta"}, {"canonical_alias": "Sañjaya Velatthaputta", "normalized_alias": "sanjaya velatthaputta"}, {"canonical_alias": "Sañjaya Velaṭṭhaputta", "normalized_alias": "sanjaya velatthaputta"}, {"canonical_alias": "Sañjaya Belaṭṭhaputta", "normalized_alias": "sanjaya belatthaputta"}, {"canonical_alias": "Master Sañjaya Belatthaputta", "normalized_alias": "master sanjaya belatthaputta"}, {"canonical_alias": "Ven. Sañjaya Belatthaputta", "normalized_alias": "ven. sanjaya belatthaputta"}, {"canonical_alias": "Venerable Sañjaya Belatthaputta", "normalized_alias": "venerable sanjaya belatthaputta"}], "canonical_name": "Sañjaya Belaṭṭhaputta", "normalized_name": "sanjaya belatthaputta"}
+ {"type": "NORP", "canonical_name": "Seers", "normalized_name": "seers"}
+ {"type": "PERSON", "canonical_name": "Sena", "normalized_name": "sena"}
+ {"type": "PERSON", "canonical_name": "Seniya", "normalized_name": "seniya"}
+ {"type": "LOC", "canonical_name": "Serpents' Pool", "normalized_name": "serpents' pool"}
+ {"type": "PERSON", "canonical_name": "Sigalaka", "normalized_name": "sigalaka"}
+ {"type": "GPE", "canonical_name": "Simbali", "normalized_name": "simbali"}
+ {"type": "NORP", "canonical_name": "Sire", "normalized_name": "sire"}
+ {"type": "NORP", "canonical_name": "Sky-fruit devas", "normalized_name": "sky-fruit devas"}
+ {"type": "LOC", "canonical_name": "Small Nook", "normalized_name": "small nook"}
+ {"type": "PERSON", "canonical_name": "Soma", "normalized_name": "soma"}
+ {"type": "LOC", "aliases": [{"canonical_alias": "Squirrels' Feeding-ground", "normalized_alias": "squirrels' feeding-ground"}, {"canonical_alias": "Squirrel's Feeding Place", "normalized_alias": "squirrel's feeding place"}], "canonical_name": "Squirrels' Sanctuary", "normalized_name": "squirrels' sanctuary"}
+ {"type": "PERSON", "canonical_name": "Subha", "normalized_name": "subha"}
+ {"type": "PERSON", "canonical_name": "Subhadda", "normalized_name": "subhadda"}
+ {"type": "GPE", "canonical_name": "Subhaga", "normalized_name": "subhaga"}
+ {"type": "LOC", "canonical_name": "Subhaga forest", "normalized_name": "subhaga forest"}
+ {"type": "NORP", "canonical_name": "Subhakinha devas", "normalized_name": "subhakinha devas"}
+ {"type": "PERSON", "canonical_name": "Sudatha", "normalized_name": "sudatha"}
+ {"type": "NORP", "canonical_name": "Suddhavasa deities", "normalized_name": "suddhavasa deities"}
+ {"type": "PERSON", "canonical_name": "Sumbha", "normalized_name": "sumbha"}
+ {"type": "NORP", "canonical_name": "Sumbhas", "normalized_name": "sumbhas"}
+ {"type": "LOC", "canonical_name": "Sunaparanta country", "normalized_name": "sunaparanta country"}
+ {"type": "PERSON", "canonical_name": "Sundarī", "normalized_name": "sundari"}
+ {"type": "GPE", "canonical_name": "Supparaka", "normalized_name": "supparaka"}
+ {"type": "PERSON", "canonical_name": "Suppavāsā", "normalized_name": "suppavasa"}
+ {"type": "PERSON", "canonical_name": "Suppiya", "normalized_name": "suppiya"}
+ {"type": "GPE", "canonical_name": "Surasena", "normalized_name": "surasena"}
+ {"type": "PERSON", "canonical_name": "Suriyavaccasa", "normalized_name": "suriyavaccasa"}
+ {"type": "PERSON", "canonical_name": "Susima", "normalized_name": "susima"}
+ {"type": "PERSON", "canonical_name": "Sāranda", "normalized_name": "saranda"}
+ {"type": "LOC", "canonical_name": "Sāranda shrine", "normalized_name": "saranda shrine"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Sāti", "normalized_alias": "sati"}], "canonical_name": "Sāti the Fisherman's Son", "normalized_name": "sati the fisherman's son"}
+ {"type": "GPE", "aliases": [{"canonical_alias": "Savatthi", "normalized_alias": "savatthi"}, {"canonical_alias": "Saavatthi", "normalized_alias": "saavatthi"}], "canonical_name": "Sāvatthī", "normalized_name": "savatthi"}
+ {"type": "GPE", "canonical_name": "Tacchaka", "normalized_name": "tacchaka"}
+ {"type": "PERSON", "canonical_name": "Tagarasikhi", "normalized_name": "tagarasikhi"}
+ {"type": "LOC", "aliases": [{"canonical_alias": "Tapodaa Park", "normalized_alias": "tapodaa park"}], "canonical_name": "Tapoda Grove", "normalized_name": "tapoda grove"}
+ {"type": "NORP", "canonical_name": "Thirty-three", "normalized_name": "thirty-three"}
+ {"type": "GPE", "canonical_name": "Thullakotthita", "normalized_name": "thullakotthita"}
+ {"type": "PERSON", "canonical_name": "Timbaru", "normalized_name": "timbaru"}
+ {"type": "GPE", "canonical_name": "Toranavatthu", "normalized_name": "toranavatthu"}
+ {"type": "NORP", "canonical_name": "Tusita devas", "normalized_name": "tusita devas"}
+ {"type": "LOC", "aliases": [{"canonical_alias": "Udena shrine", "normalized_alias": "udena shrine"}], "canonical_name": "Udena", "normalized_name": "udena"}
+ {"type": "GPE", "canonical_name": "Ukkacela", "normalized_name": "ukkacela"}
+ {"type": "GPE", "canonical_name": "Ukkattha", "normalized_name": "ukkattha"}
+ {"type": "PERSON", "canonical_name": "Upavattana", "normalized_name": "upavattana"}
+ {"type": "GPE", "canonical_name": "Upavattana", "normalized_name": "upavattana"}
+ {"type": "NORP", "canonical_name": "Upright Ones", "normalized_name": "upright ones"}
+ {"type": "GPE", "aliases": [{"canonical_alias": "Uruvelā", "normalized_alias": "uruvela"}], "canonical_name": "Uruvela", "normalized_name": "uruvela"}
+ {"type": "GPE", "canonical_name": "Uruvelakappa", "normalized_name": "uruvelakappa"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Thunderbolt-in-Hand", "normalized_alias": "thunderbolt-in-hand"}], "canonical_name": "Vajirapāṇin", "normalized_name": "vajirapanin"}
+ {"type": "GPE", "canonical_name": "Vajji", "normalized_name": "vajji"}
+ {"type": "NORP", "canonical_name": "Vajjians", "normalized_name": "vajjians"}
+ {"type": "NORP", "canonical_name": "Vajjis", "normalized_name": "vajjis"}
+ {"type": "PERSON", "canonical_name": "Vajjiya Mahita", "normalized_name": "vajjiya mahita"}
+ {"type": "GPE", "canonical_name": "Vansa", "normalized_name": "vansa"}
+ {"type": "GPE", "aliases": [{"canonical_alias": "Bārāṇasī", "normalized_alias": "baranasi"}, {"canonical_alias": "Vārāṇasī", "normalized_alias": "varanasi"}, {"canonical_alias": "Benares", "normalized_alias": "benares"}], "canonical_name": "Varanasi", "normalized_name": "varanasi"}
+ {"type": "PERSON", "canonical_name": "Vasava", "normalized_name": "vasava"}
+ {"type": "PERSON", "canonical_name": "Vasavatthi", "normalized_name": "vasavatthi"}
+ {"type": "PERSON", "canonical_name": "Vasavatti", "normalized_name": "vasavatti"}
+ {"type": "NORP", "canonical_name": "Vasetthas", "normalized_name": "vasetthas"}
+ {"type": "PERSON", "canonical_name": "Vassakara", "normalized_name": "vassakara"}
+ {"type": "LOC", "canonical_name": "Vebhara Mountain", "normalized_name": "vebhara mountain"}
+ {"type": "LOC", "canonical_name": "Vehapphala", "normalized_name": "vehapphala"}
+ {"type": "NORP", "canonical_name": "Vehapphala devas", "normalized_name": "vehapphala devas"}
+ {"type": "GPE", "canonical_name": "Veluvagamaka", "normalized_name": "veluvagamaka"}
+ {"type": "PERSON", "canonical_name": "Ven. Anuradha", "normalized_name": "ven. anuradha"}
+ {"type": "PERSON", "canonical_name": "Ven. Kaccayana Gotta", "normalized_name": "ven. kaccayana gotta"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Khema", "normalized_alias": "khema"}, {"canonical_alias": "bhikkhuni Khema", "normalized_alias": "bhikkhuni khema"}], "canonical_name": "Ven. Khema", "normalized_name": "ven. khema"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Kondañña", "normalized_alias": "kondanna"}, {"canonical_alias": "Añña Knondañña", "normalized_alias": "anna knondanna"}], "canonical_name": "Ven. Kondañña", "normalized_name": "ven. kondanna"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Venerable Maha Cunda", "normalized_alias": "venerable maha cunda"}, {"canonical_alias": "Ven. Mahā Cunda", "normalized_alias": "ven. maha cunda"}], "canonical_name": "Ven. Maha Cunda", "normalized_name": "ven. maha cunda"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Maha Kaccana", "normalized_alias": "maha kaccana"}, {"canonical_alias": "Maha Kaccayana", "normalized_alias": "maha kaccayana"}, {"canonical_alias": "Master Mahā Kaccāyana", "normalized_alias": "master maha kaccayana"}], "canonical_name": "Ven. Mahā Kaccāyana", "normalized_name": "ven. maha kaccayana"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Kassapa", "normalized_alias": "kassapa"}], "canonical_name": "Ven. Mahā Kassapa", "normalized_name": "ven. maha kassapa"}
+ {"type": "PERSON", "canonical_name": "Ven. Meghiya", "normalized_name": "ven. meghiya"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Moggallana", "normalized_alias": "moggallana"}, {"canonical_alias": "Moggallāna", "normalized_alias": "moggallana"}, {"canonical_alias": "Ven. Moggallāna", "normalized_alias": "ven. moggallana"}, {"canonical_alias": "Ven. Mahā Moggallāna", "normalized_alias": "ven. maha moggallana"}, {"canonical_alias": "Venerable Mahamoggallana", "normalized_alias": "venerable mahamoggallana"}, {"canonical_alias": "Maha Moggallana", "normalized_alias": "maha moggallana"}], "canonical_name": "Ven. Moggallana", "normalized_name": "ven. moggallana"}
+ {"type": "PERSON", "canonical_name": "Ven. Nandaka", "normalized_name": "ven. nandaka"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Nandā", "normalized_alias": "nanda"}, {"canonical_alias": "bhikkhuni Nandā", "normalized_alias": "bhikkhuni nanda"}], "canonical_name": "Ven. Nandā", "normalized_name": "ven. nanda"}
+ {"type": "PERSON", "canonical_name": "Ven. Piṇḍola Bhāradvāja", "normalized_name": "ven. pindola bharadvaja"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Ven. Punna", "normalized_alias": "ven. punna"}], "canonical_name": "Ven. Punna Mantaniputta", "normalized_name": "ven. punna mantaniputta"}
+ {"type": "PERSON", "canonical_name": "Ven. Ratthapala", "normalized_name": "ven. ratthapala"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Soṇa", "normalized_alias": "sona"}, {"canonical_alias": "Soṇa Koṭikaṇṇa", "normalized_alias": "sona kotikanna"}], "canonical_name": "Ven. Sona", "normalized_name": "ven. sona"}
+ {"type": "PERSON", "canonical_name": "Ven. Sumana", "normalized_name": "ven. sumana"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Venerable Sariputta", "normalized_alias": "venerable sariputta"}, {"canonical_alias": "Sariputta", "normalized_alias": "sariputta"}], "canonical_name": "Ven. Sāriputta", "normalized_name": "ven. sariputta"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Udayin", "normalized_alias": "udayin"}], "canonical_name": "Ven. Udayin", "normalized_name": "ven. udayin"}
+ {"type": "PERSON", "aliases": [{"canonical_alias": "Ānanda", "normalized_alias": "ananda"}, {"canonical_alias": "Venerable Ananda", "normalized_alias": "venerable ananda"}, {"canonical_alias": "Ananda", "normalized_alias": "ananda"}, {"canonical_alias": "Ven. Ananda", "normalized_alias": "ven. ananda"}], "canonical_name": "Ven. Ānanda", "normalized_name": "ven. ananda"}
+ {"type": "PERSON", "canonical_name": "Venerable Samiddhi", "normalized_name": "venerable samiddhi"}
+ {"type": "PERSON", "canonical_name": "Venerable Upavana", "normalized_name": "venerable upavana"}
+ {"type": "PERSON", "canonical_name": "Vepacitti", "normalized_name": "vepacitti"}
+ {"type": "PERSON", "canonical_name": "Vessabhu", "normalized_name": "vessabhu"}
+ {"type": "LOC", "canonical_name": "Vessamitta mountain", "normalized_name": "vessamitta mountain"}
+ {"type": "GPE", "canonical_name": "Vessavana", "normalized_name": "vessavana"}
+ {"type": "PERSON", "canonical_name": "Vessavana", "normalized_name": "vessavana"}
+ {"type": "GPE", "aliases": [{"canonical_alias": "Vesali", "normalized_alias": "vesali"}, {"canonical_alias": "Visali", "normalized_alias": "visali"}], "canonical_name": "Vesālī", "normalized_name": "vesali"}
+ {"type": "PERSON", "canonical_name": "Virulhaka", "normalized_name": "virulhaka"}
+ {"type": "PERSON", "canonical_name": "Virupakkha", "normalized_name": "virupakkha"}
+ {"type": "NORP", "canonical_name": "Virupakkhas", "normalized_name": "virupakkhas"}
+ {"type": "PERSON", "canonical_name": "Visakha", "normalized_name": "visakha"}
+ {"type": "GPE", "canonical_name": "Visana", "normalized_name": "visana"}
+ {"type": "LOC", "aliases": [{"canonical_alias": "Vulture's Peak", "normalized_alias": "vulture's peak"}], "canonical_name": "Vulture Peak Mountain", "normalized_name": "vulture peak mountain"}
+ {"type": "NORP", "canonical_name": "Vulture-Killers", "normalized_name": "vulture-killers"}
+ {"type": "NORP", "canonical_name": "Wanderer", "normalized_name": "wanderer"}
+ {"type": "LOC", "canonical_name": "Western lands", "normalized_name": "western lands"}
+ {"type": "NORP", "canonical_name": "Yakkha", "normalized_name": "yakkha"}
+ {"type": "NORP", "canonical_name": "Yakkhas", "normalized_name": "yakkhas"}
+ {"type": "NORP", "canonical_name": "Yama Devas", "normalized_name": "yama devas"}
+ {"type": "NORP", "canonical_name": "Yama gods", "normalized_name": "yama gods"}
+ {"type": "NORP", "canonical_name": "Yamas", "normalized_name": "yamas"}
+ {"type": "NORP", "canonical_name": "arahats", "normalized_name": "arahats"}
+ {"type": "NORP", "canonical_name": "ascetic", "normalized_name": "ascetic"}
+ {"type": "NORP", "canonical_name": "ascetics", "normalized_name": "ascetics"}
+ {"type": "NORP", "canonical_name": "asuras", "normalized_name": "asuras"}
+ {"type": "PERSON", "canonical_name": "bhikkhuni Nanda", "normalized_name": "bhikkhuni nanda"}
+ {"type": "PERSON", "canonical_name": "bhikkhuni Sisupacala", "normalized_name": "bhikkhuni sisupacala"}
+ {"type": "PERSON", "canonical_name": "bhikkhuni Upacala", "normalized_name": "bhikkhuni upacala"}
+ {"type": "PERSON", "canonical_name": "bhikkhuni Uppalavanna", "normalized_name": "bhikkhuni uppalavanna"}
+ {"type": "PERSON", "canonical_name": "bhikkhuni Vajira", "normalized_name": "bhikkhuni vajira"}
+ {"type": "PERSON", "canonical_name": "bhikkhuni Vijaya", "normalized_name": "bhikkhuni vijaya"}
+ {"type": "NORP", "canonical_name": "bhikkhus", "normalized_name": "bhikkhus"}
+ {"type": "NORP", "canonical_name": "brahman householders", "normalized_name": "brahman householders"}
+ {"type": "NORP", "canonical_name": "brahman seers", "normalized_name": "brahman seers"}
+ {"type": "NORP", "canonical_name": "brahmans", "normalized_name": "brahmans"}
+ {"type": "NORP", "canonical_name": "brahmas", "normalized_name": "brahmas"}
+ {"type": "NORP", "canonical_name": "brahmin", "normalized_name": "brahmin"}
+ {"type": "NORP", "canonical_name": "brahmins", "normalized_name": "brahmins"}
+ {"type": "NORP", "canonical_name": "brahmās", "normalized_name": "brahmās"}
+ {"type": "NORP", "canonical_name": "community of monks", "normalized_name": "community of monks"}
+ {"type": "NORP", "canonical_name": "contemplative", "normalized_name": "contemplative"}
+ {"type": "NORP", "canonical_name": "contemplatives", "normalized_name": "contemplatives"}
+ {"type": "NORP", "canonical_name": "demon", "normalized_name": "demon"}
+ {"type": "NORP", "canonical_name": "demons", "normalized_name": "demons"}
+ {"type": "LOC", "canonical_name": "deva realm", "normalized_name": "deva realm"}
+ {"type": "PERSON", "canonical_name": "deva-king Isana", "normalized_name": "deva-king isana"}
+ {"type": "PERSON", "canonical_name": "deva-king Varuna", "normalized_name": "deva-king varuna"}
+ {"type": "NORP", "canonical_name": "devatas", "normalized_name": "devatas"}
+ {"type": "NORP", "canonical_name": "disciples", "normalized_name": "disciples"}
+ {"type": "NORP", "canonical_name": "female lay followers", "normalized_name": "female lay followers"}
+ {"type": "NORP", "canonical_name": "female probationers", "normalized_name": "female probationers"}
+ {"type": "NORP", "canonical_name": "four Great Kings", "normalized_name": "four great kings"}
+ {"type": "NORP", "canonical_name": "gandhabbas", "normalized_name": "gandhabbas"}
+ {"type": "NORP", "canonical_name": "gods", "normalized_name": "gods"}
+ {"type": "LOC", "aliases": [{"canonical_alias": "Thirty-three", "normalized_alias": "thirty-three"}], "canonical_name": "heaven of the Thirty-three", "normalized_name": "heaven of the thirty-three"}
+ {"type": "NORP", "canonical_name": "hungry ghosts", "normalized_name": "hungry ghosts"}
+ {"type": "NORP", "canonical_name": "hungry shades", "normalized_name": "hungry shades"}
+ {"type": "NORP", "canonical_name": "kings", "normalized_name": "kings"}
+ {"type": "NORP", "canonical_name": "kshatriya", "normalized_name": "kshatriya"}
+ {"type": "NORP", "canonical_name": "kshatriyas", "normalized_name": "kshatriyas"}
+ {"type": "LOC", "canonical_name": "lake Nabhasa", "normalized_name": "lake nabhasa"}
+ {"type": "NORP", "canonical_name": "lay follower", "normalized_name": "lay follower"}
+ {"type": "NORP", "canonical_name": "lay followers", "normalized_name": "lay followers"}
+ {"type": "NORP", "canonical_name": "lay men", "normalized_name": "lay men"}
+ {"type": "NORP", "canonical_name": "male & female lay followers", "normalized_name": "male & female lay followers"}
+ {"type": "NORP", "canonical_name": "male & female slaves", "normalized_name": "male & female slaves"}
+ {"type": "NORP", "canonical_name": "male and female lay followers", "normalized_name": "male and female lay followers"}
+ {"type": "NORP", "canonical_name": "male and female lay-followers", "normalized_name": "male and female lay-followers"}
+ {"type": "NORP", "canonical_name": "male lay followers", "normalized_name": "male lay followers"}
+ {"type": "NORP", "canonical_name": "maras", "normalized_name": "maras"}
+ {"type": "NORP", "canonical_name": "monks", "normalized_name": "monks"}
+ {"type": "NORP", "canonical_name": "māras", "normalized_name": "māras"}
+ {"type": "NORP", "canonical_name": "naga", "normalized_name": "naga"}
+ {"type": "NORP", "canonical_name": "niganthas", "normalized_name": "niganthas"}
+ {"type": "NORP", "canonical_name": "noble disciple", "normalized_name": "noble disciple"}
+ {"type": "NORP", "canonical_name": "noble ones", "normalized_name": "noble ones"}
+ {"type": "NORP", "canonical_name": "noble sons", "normalized_name": "noble sons"}
+ {"type": "NORP", "canonical_name": "noble warrior", "normalized_name": "noble warrior"}
+ {"type": "NORP", "canonical_name": "noble warriors", "normalized_name": "noble warriors"}
+ {"type": "NORP", "canonical_name": "nobles", "normalized_name": "nobles"}
+ {"type": "NORP", "canonical_name": "novices", "normalized_name": "novices"}
+ {"type": "NORP", "canonical_name": "nuns", "normalized_name": "nuns"}
+ {"type": "NORP", "canonical_name": "nymph", "normalized_name": "nymph"}
+ {"type": "NORP", "canonical_name": "nymphs", "normalized_name": "nymphs"}
+ {"type": "NORP", "canonical_name": "nāga", "normalized_name": "nāga"}
+ {"type": "NORP", "canonical_name": "nāgas", "normalized_name": "nāgas"}
+ {"type": "NORP", "canonical_name": "paccekabuddha", "normalized_name": "paccekabuddha"}
+ {"type": "NORP", "canonical_name": "paccekabuddhas", "normalized_name": "paccekabuddhas"}
+ {"type": "NORP", "canonical_name": "recluses", "normalized_name": "recluses"}
+ {"type": "LOC", "canonical_name": "river Ganges", "normalized_name": "river ganges"}
+ {"type": "NORP", "canonical_name": "royal ministers", "normalized_name": "royal ministers"}
+ {"type": "NORP", "canonical_name": "sectarians", "normalized_name": "sectarians"}
+ {"type": "PERSON", "canonical_name": "venerable Seniya", "normalized_name": "venerable seniya"}
+ {"type": "NORP", "canonical_name": "wanderers", "normalized_name": "wanderers"}
+ {"type": "LOC", "canonical_name": "Ābhassara Brahma-world", "normalized_name": "abhassara brahma-world"}

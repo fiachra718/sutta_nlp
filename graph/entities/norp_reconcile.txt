@@ -1,87 +1,79 @@
-    diff_type    |            norp            
------------------+----------------------------
- ati_not_in_gold | Ariyan
- ati_not_in_gold | Aryan
- ati_not_in_gold | Bhaggas
- ati_not_in_gold | Bhummattha devas
- ati_not_in_gold | Contemplative
- ati_not_in_gold | Contemplatives
- ati_not_in_gold | Contented devas
- ati_not_in_gold | Four Great King devas
- ati_not_in_gold | Four Noble Truths
- ati_not_in_gold | Four Perversions set
- ati_not_in_gold | Fully Enlightened Ones.
- ati_not_in_gold | Generals
- ati_not_in_gold | Great Paragas
- ati_not_in_gold | Householder
- ati_not_in_gold | Indras
- ati_not_in_gold | Kapilavatthu Sakyans
- ati_not_in_gold | Kosalan
- ati_not_in_gold | Kuru people
- ati_not_in_gold | Maaras
- ati_not_in_gold | Moriyas
- ati_not_in_gold | Māras
- ati_not_in_gold | Nimmanarati devas
- ati_not_in_gold | Noble disciple
- ati_not_in_gold | Noble ones
- ati_not_in_gold | Nobles
- ati_not_in_gold | Paccekabuddha
- ati_not_in_gold | Paragas
- ati_not_in_gold | Paranimmitavasavatti devas
- ati_not_in_gold | Pupils
- ati_not_in_gold | Pure Abodes
- ati_not_in_gold | Radiant Devas
- ati_not_in_gold | Sahabhu devas
- ati_not_in_gold | Sakyan contemplatives
- ati_not_in_gold | Sidari
- ati_not_in_gold | Sisters
- ati_not_in_gold | Sumbhas
- ati_not_in_gold | Sunaparantans
- ati_not_in_gold | Suttantas
- ati_not_in_gold | Tathāgatas
- ati_not_in_gold | Thirty-three devas
- ati_not_in_gold | Thirty-three gods
- ati_not_in_gold | Tusita devas
- ati_not_in_gold | Udaññans
- ati_not_in_gold | Vajjian
- ati_not_in_gold | Vasitthas
- ati_not_in_gold | Vipassi
- ati_not_in_gold | Wanderer
- ati_not_in_gold | Wanderers
- ati_not_in_gold | Yama gods
- ati_not_in_gold | Yāma devas
- ati_not_in_gold | bhikkhu
- ati_not_in_gold | bhikkhu Kaccayanagotta
- ati_not_in_gold | bhikkhu examines
- ati_not_in_gold | bhikkhu-friends
- ati_not_in_gold | commander
- ati_not_in_gold | deva hosts
- ati_not_in_gold | deva-son
- ati_not_in_gold | female probationers
- ati_not_in_gold | four Great Kings
- ati_not_in_gold | guardians
- ati_not_in_gold | kshatriya
- ati_not_in_gold | kshatriyas
- ati_not_in_gold | male lay follower
- ati_not_in_gold | male lay-followers
- ati_not_in_gold | neutral ones
- ati_not_in_gold | niganthas
- ati_not_in_gold | noble follower
- ati_not_in_gold | noble one
- ati_not_in_gold | noble-warriors
- ati_not_in_gold | nāga
- ati_not_in_gold | nāgas
- ati_not_in_gold | petas
- ati_not_in_gold | venerable Niganthas
- ati_not_in_gold | venerable ones
- gold_not_in_ati | Anguttarapan
- gold_not_in_ati | Kalakañjas
- gold_not_in_ati | Licchavi
- gold_not_in_ati | Sire
- gold_not_in_ati | arahant monks
- gold_not_in_ati | brahmanas
- gold_not_in_ati | deities
- gold_not_in_ati | deva kings
- gold_not_in_ati | retinue of Brahma
-(83 rows)
+WITH gold_norp AS (
+    SELECT
+        lower(btrim(s->>'text')) AS norp,
+        COUNT(*) AS gold_freq
+    FROM gold_training gt
+    CROSS JOIN LATERAL jsonb_array_elements(gt.spans) AS s
+    WHERE s->>'label' = 'NORP'
+      AND btrim(s->>'text') <> ''
+    GROUP BY 1
+),
+ati_norp AS (
+    SELECT
+        lower(btrim(s->>'text')) AS norp,
+        COUNT(*) AS ati_freq
+    FROM ati_verses av
+    CROSS JOIN LATERAL jsonb_array_elements(av.ner_span) AS s
+    WHERE s->>'label' = 'NORP'
+      AND btrim(s->>'text') <> ''
+    GROUP BY 1
+)
+SELECT
+    COALESCE(a.norp, g.norp) AS norp,
+    g.gold_freq,
+    a.ati_freq,
+    CASE
+      WHEN g.norp IS NULL THEN 'ati_not_in_gold'
+      WHEN a.norp IS NULL THEN 'gold_not_in_ati'
+    END AS diff_type
+FROM gold_norp g
+FULL OUTER JOIN ati_norp a USING (norp)
+WHERE g.norp IS NULL OR a.norp IS NULL
+ORDER BY COALESCE(a.ati_freq, 0) DESC,
+         COALESCE(g.gold_freq, 0) DESC,
+         norp;
 
+
+         norp          | gold_freq | ati_freq |    diff_type    
+-----------------------+-----------+----------+-----------------
+ nāga                  |           |        4 | ati_not_in_gold
+ four great king devas |           |        3 | ati_not_in_gold
+ kosalan brahman       |           |        3 | ati_not_in_gold
+ lay men               |           |        3 | ati_not_in_gold
+ nāgas                 |           |        3 | ati_not_in_gold
+ perfected ones        |           |        2 | ati_not_in_gold
+ sakyan clan           |           |        2 | ati_not_in_gold
+ upright ones          |           |        2 | ati_not_in_gold
+ yama gods             |           |        2 | ati_not_in_gold
+ ariyan                |           |        1 | ati_not_in_gold
+ ariyan discipline     |           |        1 | ati_not_in_gold
+ aryan                 |           |        1 | ati_not_in_gold
+ brahmaas              |           |        1 | ati_not_in_gold
+ indras                |           |        1 | ati_not_in_gold
+ maaras                |           |        1 | ati_not_in_gold
+ male lay follower     |           |        1 | ati_not_in_gold
+ male lay-followers    |           |        1 | ati_not_in_gold
+ noble ariya           |           |        1 | ati_not_in_gold
+ noble queen           |           |        1 | ati_not_in_gold
+ noble-warriors        |           |        1 | ati_not_in_gold
+ paragas               |           |        1 | ati_not_in_gold
+ sahabhu devas         |           |        1 | ati_not_in_gold
+ sakya clan            |           |        1 | ati_not_in_gold
+ sakyan contemplative  |           |        1 | ati_not_in_gold
+ sakyan contemplatives |           |        1 | ati_not_in_gold
+ subhakinha            |           |        1 | ati_not_in_gold
+ sunaparantans         |           |        1 | ati_not_in_gold
+ suttantas             |           |        1 | ati_not_in_gold
+ udaññans              |           |        1 | ati_not_in_gold
+ anguttarapan          |         2 |          | gold_not_in_ati
+ bhaaradvaaja brahmans |         2 |          | gold_not_in_ati
+ bhikkhu-sangha        |         2 |          | gold_not_in_ati
+ female novices        |         2 |          | gold_not_in_ati
+ merchant              |         2 |          | gold_not_in_ati
+ arahant monks         |         1 |          | gold_not_in_ati
+ brahmanas             |         1 |          | gold_not_in_ati
+ deities               |         1 |          | gold_not_in_ati
+ deva-king             |         1 |          | gold_not_in_ati
+ kalakañjas            |         1 |          | gold_not_in_ati
+ warriors              |         1 |          | gold_not_in_ati
+(40 rows)

@@ -23,7 +23,7 @@ def _load_nlp_model():
     # Location: /Users/alee/sutta_nlp/venv/lib/python3.12/site-packages
     # Requires: spacy
     # Required-by: 
-    assert nlp.meta.get("version") == "1.2.2", "Wrong en_sutta_ner version installed!"
+    assert nlp.meta.get("version") == "1.2.3", "Wrong en_sutta_ner version installed!"
     return nlp
 
 
