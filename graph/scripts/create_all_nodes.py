@@ -1,7 +1,7 @@
 import psycopg
 from psycopg.rows import dict_row
 from neo4j import GraphDatabase
-from neo4j.exceptions import Neo4jError
+from normalize import load_alias_index_pg, resolve_span
 
 '''
 This is a NASTY one-off script that will
@@ -14,7 +14,8 @@ Neo
 # CONSTs
 URI = "bolt://localhost:7687"
 AUTH = ("neo4j", "testtest")
-CONN = psycopg.connect("dbname=tipitaka user=alee", row_factory=dict_row)
+PG_DSN = "dbname=tipitaka user=alee"
+CONN = psycopg.connect(PG_DSN, row_factory=dict_row)
 
 driver = GraphDatabase.driver(URI, auth=AUTH, max_connection_pool_size=50)
 driver.verify_connectivity()
@@ -52,10 +53,10 @@ def db_entity_generator(entity_type='PERSON'):
                     CASE
                         WHEN COUNT(ea.alias) FILTER (WHERE ea.alias IS NOT NULL) = 0 THEN NULL
                         ELSE jsonb_agg(
-                        jsonb_build_object(
-                            'canonical_alias', ea.alias,
-                            'normalized_alias', ea.normalized
-                        )
+                            jsonb_build_object(
+                                'canonical_alias', ea.alias,
+                                'normalized_alias', ea.normalized
+                            )
                         ) FILTER (WHERE ea.alias IS NOT NULL)
                     END
                     )
@@ -128,7 +129,7 @@ def verse_generator(batch_size=2000):
         v.id   AS verse_id,
         v.gid  AS global_id,
         CASE
-          WHEN v.nikaya IN ('AN','SN') THEN v.nikaya || ' ' || v.book_number || '.' || v.vagga
+          WHEN v.nikaya IN ('AN','SN') THEN v.nikaya || ' ' || v.vagga || '.' || v.book_number
           WHEN v.nikaya IN ('MN','DN') THEN v.nikaya || ' ' || v.book_number
           WHEN v.nikaya = 'KN'         THEN v.vagga  || ' ' || v.book_number
           ELSE                              v.nikaya || ' ' || v.book_number
@@ -174,29 +175,19 @@ def create_entity_node(driver, entity_type, entity_id, canonical_name, normalize
     assert entity_type in ("PERSON", "GPE", "LOC", "NORP")
 
     query = """
-    MERGE (e:Entity {entity_id: $entity_id})
+    MERGE (e:Entity {id: $entity_id})
     ON CREATE SET
+      e.entity_id      = $entity_id,
       e.entity_type    = $entity_type,
       e.canonical_name = $canonical_name,
       e.display_name   = $canonical_name,
       e.normalized     = $normalized_name
     ON MATCH SET
+      e.entity_id      = coalesce(e.entity_id, $entity_id),
       e.entity_type    = $entity_type,
       e.canonical_name = coalesce(e.canonical_name, $canonical_name),
       e.display_name   = coalesce(e.display_name, $canonical_name),
       e.normalized     = coalesce(e.normalized, $normalized_name)
-
-    WITH e, coalesce($aliases, []) AS aliases
-    UNWIND aliases AS a
-    WITH e, a
-    WHERE a IS NOT NULL
-      AND a.normalized_alias IS NOT NULL
-      AND a.canonical_alias IS NOT NULL
-
-    MERGE (al:Alias {alias_norm: a.normalized_alias})
-    ON CREATE SET al.alias_text = a.canonical_alias
-
-    MERGE (e)-[:HAS_ALIAS]->(al)
     RETURN e
     """
     res = driver.execute_query(
@@ -205,7 +196,6 @@ def create_entity_node(driver, entity_type, entity_id, canonical_name, normalize
         entity_type=entity_type,
         canonical_name=canonical_name,
         normalized_name=normalized_name,
-        aliases=aliases,
         database_="neo4j",
     )
     summary = res.summary
@@ -215,53 +205,6 @@ def create_entity_node(driver, entity_type, entity_id, canonical_name, normalize
         f"props_set={summary.counters.properties_set}, "
         f"time_ms={summary.result_available_after}"
     )
-
-# ------------
-# lookup_entity
-# ------------
-def lookup_entity(driver, entity_type, canonical_name, aliases=[]):
-    """
-    Docstring for lookup_entity
-    
-    :param entity_type: One of LOC, GPE, NORP or PERSON
-    :param canonical_name: The primary name of the Entity
-    :param aliases: List of aliases for the ewntity
-    """
-    cypher = '''
-        MATCH (e:Entity)
-        WHERE e.entity_type = $entity_type
-        AND ( e.canonical_name = $canonical_name
-            OR EXISTS {
-                MATCH (e)-[:HAS_ALIAS]->(a:Alias)
-                WHERE a.alias_text IN $aliases }
-        ) RETURN 
-            elementId(e) AS neo_id,
-            e.canonical_name AS canonical,
-            e.normalized AS normalized;
-    '''
-    # driver.verify_connectivity()
-    res = driver.execute_query(
-        cypher,
-        entity_type=entity_type,
-        canonical_name=canonical_name,
-        aliases=aliases,
-        database_="neo4j"
-    )
-    # print(
-    #     f"nodes_created={res.summary.counters.nodes_created}, "
-    #     f"rels_created={res.summary.counters.relationships_created}, "
-    #     f"props_set={res.summary.counters.properties_set}, "
-    #     f"time_ms={res.summary.result_available_after}"
-    # )
-    rows = [
-        {
-            "neo_id": record["neo_id"],
-            "canonical": record["canonical"],
-            "normalized": record["normalized"],
-        }
-        for record in res.records
-    ]
-    return rows
 
 # -------------------
 #  create_verse_node
@@ -274,18 +217,28 @@ def create_verse_node(driver, verse_id, global_id, sutta_ref, verse_num, text):
     text is the raw text from postgres
     """
     cypher = """
-        MERGE (v:Verse {verse_id: $verse_id})
-            ON CREATE SET
-                v.global_id = $global_id,
-                v.sutta_ref = $sutta_ref,
-                v.number = $verse_num,
-                v.text = $text
-            ON MATCH SET
-                v.sutta_ref = $sutta_ref,
-                v.number = $verse_num,
-                v.text   = $text
-            return v.verse_id as verse_id
-        """
+        MERGE (s:Sutta {sutta_ref: $sutta_ref})
+        ON CREATE SET
+            s.display_name = $sutta_ref
+        ON MATCH SET
+            s.display_name = coalesce(s.display_name, $sutta_ref)
+
+        MERGE (v:Verse {id: $verse_id})
+        ON CREATE SET
+            v.verse_id = $verse_id,
+            v.global_id = $global_id,
+            v.sutta_ref = $sutta_ref,
+            v.number = $verse_num,
+            v.text = $text
+        ON MATCH SET
+            v.verse_id = coalesce(v.verse_id, $verse_id),
+            v.sutta_ref = $sutta_ref,
+            v.number = $verse_num,
+            v.text = $text
+
+        MERGE (s)-[:HAS_VERSE]->(v)
+        RETURN v.id as verse_id
+    """
     # driver.verify_connectivity()
     res = driver.execute_query(
         cypher,
@@ -311,28 +264,41 @@ def create_verse_node(driver, verse_id, global_id, sutta_ref, verse_num, text):
 ##  create_mention_edge
 ##
 ####################################################
-def create_mention_edge(driver, verse_id, entity_id):
+def create_mention_edge(
+    driver,
+    verse_id,
+    entity_id,
+    label,
+    surface,
+    normalized,
+    span_key,
+    start=None,
+    end=None,
+):
     """
-    Given the starting and nodes' IDs (elementId)
-    create a mention edge between them.
-    If this entity has been mentioned in this verse before
-    increment the mention number
+    Create one deterministic MENTIONS edge per extracted span.
+    Matching is on stable IDs: Verse.verse_id and Entity.entity_id.
     """
     cypher = """
-        MATCH (v:Verse {verse_id: $verse_id})
-        MATCH (e)
-        WHERE elementId(e) = $entity_id
-        MERGE (v)-[r:MENTIONS]->(e)
+        MERGE (v:Verse {id: $verse_id})
+        MERGE (e:Entity {id: $entity_id})
+        MERGE (v)-[r:MENTIONS {ner_label: $label}]->(e)
         ON CREATE SET r.ref_count = 1
-        ON MATCH  SET r.ref_count = coalesce(r.ref_count, 0) + 1
-        RETURN v.verse_id as verse_id, r.ref_count AS ref_count;
+        ON MATCH SET r.ref_count = r.ref_count + 1
+        RETURN v.id as verse_id, r.ref_count AS ref_count
     """
-    print("CYPHER BEING RUN:\n", cypher)
     # driver.verify_connectivity()
     res = driver.execute_query(
         cypher,
         verse_id=verse_id,
-        entity_id=entity_id
+        entity_id=entity_id,
+        span_key=span_key,
+        label=label,
+        surface=surface,
+        normalized=normalized,
+        start=start,
+        end=end,
+        database_="neo4j",
     )
     print(
         f"nodes_created={res.summary.counters.nodes_created}, "
@@ -349,20 +315,71 @@ def create_mention_edge(driver, verse_id, entity_id):
 ##
 ##########################
 if __name__ == "__main__":
-    with driver.session(database="neo4j") as session:
-        for e_type in ['PERSON', 'GPE', 'NORP', 'LOC']:
-            for (entity_id, elem, aliases) in db_entity_generator(entity_type=e_type):
-                print(f"id: {entity_id}, name: {elem['canonical_name']}, norm: {elem['normalized_name']}, Aliases: {aliases}")
-                # create_entity_node(driver, e_type, entity_id, elem['canonical_name'], elem['normalized_name'], aliases)
-        for verse_id, global_id, sutta_ref, verse_num, text, ner_ref in verse_generator():
-            print(f"verse_id: {verse_id}, gid: {global_id}, sutta ref: {sutta_ref}, verse number: {verse_num}")
-            assert verse_id != None
-            # verse_id = create_verse_node(driver, verse_id, global_id, sutta_ref, verse_num, text)
-            for ne_block in ner_ref:
-                if ne_block['label'] in ('GPE', 'LOC', 'PERSON'):
-                    rows = lookup_entity(driver, ne_block['label'], ne_block['text'], [])  # skip aliases for now
-                    for r in rows:
-                        # neo_id is elementId(e), machine generated ID of entity e
-                        print(f"id: {r.get('neo_id')}, Label: {r.get('normalized')}, Text: {r.get('canonical')}")
-                        create_mention_edge(driver, verse_id, r.get('neo_id'))
+    alias_index, collisions = load_alias_index_pg(PG_DSN)
+    manual_review = []
+    stats = {
+        "verses_seen": 0,
+        "spans_seen": 0,
+        "resolved": 0,
+        "ambiguous": 0,
+        "unresolved": 0,
+        "invalid": 0,
+        "edges_created_or_matched": 0,
+    }
+
+    for e_type in ['PERSON', 'GPE', 'NORP', 'LOC']:
+        for (entity_id, elem, aliases) in db_entity_generator(entity_type=e_type):
+            print(f"id: {entity_id}, name: {elem['canonical_name']}, norm: {elem['normalized_name']}, Aliases: {aliases}")
+            create_entity_node(driver, e_type, entity_id, elem['canonical_name'], elem['normalized_name'], aliases)
+    for verse_id, global_id, sutta_ref, verse_num, text, ner_ref in verse_generator():
+        stats["verses_seen"] += 1
+        print(f"verse_id: {verse_id}, gid: {global_id}, sutta ref: {sutta_ref}, verse number: {verse_num}")
+        assert verse_id is not None
+        create_verse_node(driver, verse_id, global_id, sutta_ref, verse_num, text)
+        for ne_block in ner_ref:
+            label = ne_block.get("label")
+            if label not in ("PERSON", "GPE", "LOC", "NORP"):
+                continue
+
+            stats["spans_seen"] += 1
+            surface = ne_block.get("text", "")
+            norm = resolve_span(alias_index, collisions, label, surface)["normalized"]
+            key = (label, norm)
+            entity_id = alias_index.get(key)
+
+            if key in collisions:
+                stats["ambiguous"] += 1
+                manual_review.append(
+                    {
+                        "verse_id": verse_id,
+                        "label": label,
+                        "surface": surface,
+                        "normalized": norm,
+                        "candidates": collisions[key],
+                    }
+                )
+                continue
+            if not entity_id:
+                stats["unresolved"] += 1
+                continue
+
+            stats["resolved"] += 1
+
+            create_mention_edge(
+                driver=driver,
+                verse_id=verse_id,
+                entity_id=entity_id,
+                label=label,
+                surface=surface,
+                normalized=norm,
+                span_key=f"{label}:{ne_block.get('start', '')}:{ne_block.get('end', '')}:{norm}",
+                start=ne_block.get("start"),
+                end=ne_block.get("end"),
+            )
+            stats["edges_created_or_matched"] += 1
+
+    print("Done.")
+    print(stats)
+    if manual_review:
+        print(f"manual_review_count={len(manual_review)}")
     driver.close()

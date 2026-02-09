@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: radial-gradient(circle at top, #f8fff7 0%, #edf8f0 45%, #e3f0e8 100%);
+  color: #1e293b;
+}
+
+.wrap {
+  max-width: 1280px;
+  margin: 20px auto;
+  padding: 0 16px 24px;
+}
+
+.header h1 {
+  margin: 0 0 8px;
+  font-size: 1.45rem;
+}
+
+.meta {
+  margin: 0;
+  color: #475569;
+}
+
+.panel {
+  margin-top: 14px;
+  border: 1px solid #d3dfd8;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(30, 64, 42, 0.08);
+}
+
+#graph {
+  width: 100%;
+  height: 78vh;
+  min-height: 560px;
+  background: linear-gradient(180deg, #ffffff 0%, #f5fbf8 100%);
+}
+
+.legend {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #eef6f1;
+  color: #334155;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 800px) {
+  #graph {
+    height: 68vh;
+    min-height: 420px;
+  }
+}

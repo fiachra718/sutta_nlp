@@ -2,7 +2,7 @@
   SELECT
     v.identifier,
     CASE
-      WHEN v.nikaya IN ('AN','SN') THEN v.nikaya || ' ' || v.book_number || '.' || v.vagga
+      WHEN v.nikaya IN ('AN','SN') THEN v.nikaya || ' ' || v.vagga || '.' || v.book_number
       WHEN v.nikaya IN ('MN','DN') THEN v.nikaya || ' ' || v.book_number
       WHEN v.nikaya = 'KN'          THEN v.vagga || ' ' || v.book_number
       ELSE                               v.nikaya || ' ' || v.book_number
@@ -25,7 +25,7 @@ SELECT
   v.verse_num,
 CASE
   WHEN v.nikaya IN ('AN','SN')
-    THEN COALESCE(v.nikaya,'') || ' ' || COALESCE(v.book_number::text,'') || '.' || COALESCE(v.vagga::text,'')
+    THEN COALESCE(v.nikaya,'') || ' ' || COALESCE(v.vagga::text,'') || '.' || COALESCE(v.book_number::text,'')
   WHEN v.nikaya IN ('MN','DN')
     THEN COALESCE(v.nikaya,'') || ' ' || COALESCE(v.book_number::text,'')
   WHEN v.gid LIKE 'dhp.%'
@@ -45,3 +45,4 @@ FROM ati_verses AS v
     AND jsonb_array_length(v.ner_span) > 0
     ORDER BY v.nikaya, v.book_number,
          nullif(regexp_replace(v.verse_num::text, '\D.*$', ''), '')::int
+         

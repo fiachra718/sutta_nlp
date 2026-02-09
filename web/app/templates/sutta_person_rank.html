@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/sutta_person_rank.css') }}">
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>Sutta Ranking by PERSON Mentions</h1>
+      <p id="meta" class="meta">Loading top {{ limit }} suttas...</p>
+    </header>
+    <section class="panel">
+      <table id="rank-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Sutta</th>
+            <th>Total Weighted Mentions</th>
+            <th>Unique Persons</th>
+            <th>Avg Weight / Person</th>
+          </tr>
+        </thead>
+        <tbody id="rank-body"></tbody>
+      </table>
+    </section>
+  </main>
+  <script>
+    window.RANK_DATA_URL = "{{ data_url }}";
+  </script>
+  <script src="{{ url_for('static', filename='js/sutta_person_rank.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/verses_top_connected.css') }}">
+  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>Top Connected Verses</h1>
+      <p class="meta" id="meta">Loading graph for top {{ limit }} verses...</p>
+    </header>
+    <section class="panel">
+      <div id="graph"></div>
+    </section>
+    <section class="legend">
+      <div><strong>Verse node size</strong>: average PERSON PageRank in the verse</div>
+      <div><strong>Person node size</strong>: entity PageRank</div>
+      <div><strong>Edge width</strong>: mention relationship ref_count</div>
+      <div><strong>Tip</strong>: URL parameter `?limit=25` controls how many top verses are included.</div>
+    </section>
+  </main>
+  <script>
+    window.GRAPH_DATA_URL = "{{ data_url }}";
+  </script>
+  <script src="{{ url_for('static', filename='js/verses_top_connected.js') }}"></script>
+</body>
+</html>

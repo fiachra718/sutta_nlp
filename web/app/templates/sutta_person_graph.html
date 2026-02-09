@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/sutta_person_graph.css') }}">
+  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>{{ sutta_ref }}: PERSON Mentions</h1>
+      <p id="meta" class="meta">Loading graph...</p>
+      <p class="back"><a href="{{ url_for('sutta_person_rank_view') }}">Back to ranking</a></p>
+    </header>
+    <section class="panel">
+      <div id="graph"></div>
+    </section>
+  </main>
+  <script>
+    window.SUTTA_GRAPH_URL = "{{ data_url }}";
+  </script>
+  <script src="{{ url_for('static', filename='js/sutta_person_graph.js') }}"></script>
+</body>
+</html>

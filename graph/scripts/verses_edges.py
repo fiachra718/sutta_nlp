@@ -57,7 +57,7 @@ SQL = """
   SELECT
     v.identifier,
     CASE
-      WHEN v.nikaya IN ('AN','SN') THEN v.nikaya || ' ' || v.book_number || '.' || v.vagga
+      WHEN v.nikaya IN ('AN','SN') THEN v.nikaya || ' ' || v.vagga || '.' || v.book_number
       WHEN v.nikaya IN ('MN','DN') THEN v.nikaya || ' ' || v.book_number
       WHEN v.nikaya = 'KN'          THEN v.vagga || ' ' || v.book_number
       ELSE                               v.nikaya || ' ' || v.book_number

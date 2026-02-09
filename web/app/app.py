@@ -1,7 +1,9 @@
 import json
 import logging
 import os
-from flask import Flask, render_template, abort, request, jsonify
+from flask import Flask, render_template, abort, request, jsonify, url_for
+from neo4j import GraphDatabase
+from neo4j.exceptions import Neo4jError
 from .models.models import CandidateDoc, TrainingDoc, SuttaVerse
 from .api.ner import run_ner
 from .render import render_highlighted
@@ -89,6 +91,462 @@ def _build_training_doc_context(doc: TrainingDoc):
 @app.route("/")
 def home():
     return render_template("base.html", title="Jinja and Flask")
+
+
+def _neo4j_settings():
+    return {
+        "uri": os.environ.get("NEO4J_URI", "bolt://localhost:7687"),
+        "user": os.environ.get("NEO4J_USER", "neo4j"),
+        "password": os.environ.get("NEO4J_PASSWORD", "testtest"),
+        "database": os.environ.get("NEO4J_DATABASE", "neo4j"),
+    }
+
+
+def _fetch_center(tx, center_name: str):
+    return tx.run(
+        """
+        MATCH (e:Entity {entity_type: 'PERSON'})
+        WHERE toLower(e.canonical_name) = toLower($center_name)
+        RETURN
+          e.id AS id,
+          e.canonical_name AS canonical_name,
+          e.community_person_louvain AS community_id
+        LIMIT 1
+        """,
+        center_name=center_name,
+    ).single()
+
+
+def _fetch_nodes(tx, community_id: int):
+    return tx.run(
+        """
+        MATCH (e:Entity {entity_type: 'PERSON', community_person_louvain: $community_id})
+        OPTIONAL MATCH (e)-[r:CO_MENTION_PERSON]-(:Entity {entity_type: 'PERSON', community_person_louvain: $community_id})
+        WITH e, coalesce(sum(r.weight), 0) AS strength
+        RETURN
+          e.id AS id,
+          e.canonical_name AS label,
+          e.pagerank AS pagerank,
+          strength
+        ORDER BY strength DESC, label
+        """,
+        community_id=community_id,
+    ).data()
+
+
+def _fetch_edges(tx, community_id: int):
+    return tx.run(
+        """
+        MATCH (a:Entity {entity_type: 'PERSON', community_person_louvain: $community_id})
+              -[r:CO_MENTION_PERSON]-
+              (b:Entity {entity_type: 'PERSON', community_person_louvain: $community_id})
+        WHERE a.id < b.id
+        RETURN
+          a.id AS source,
+          b.id AS target,
+          r.weight AS weight
+        ORDER BY weight DESC
+        """,
+        community_id=community_id,
+    ).data()
+
+
+def _load_community_payload(community_id: int, center_name: str):
+    settings = _neo4j_settings()
+    driver = GraphDatabase.driver(settings["uri"], auth=(settings["user"], settings["password"]))
+    driver.verify_connectivity()
+
+    with driver.session(database=settings["database"]) as session:
+        center = session.execute_read(_fetch_center, center_name)
+        if center is None:
+            raise RuntimeError(f"Center entity '{center_name}' not found among PERSON entities.")
+
+        requested_community = community_id
+        effective_community = requested_community
+        nodes = session.execute_read(_fetch_nodes, effective_community)
+
+        if not nodes:
+            effective_community = center["community_id"]
+            nodes = session.execute_read(_fetch_nodes, effective_community)
+
+        edges = session.execute_read(_fetch_edges, effective_community)
+
+    driver.close()
+
+    max_strength = max((n.get("strength") or 0 for n in nodes), default=0)
+    max_weight = max((e.get("weight") or 0 for e in edges), default=0)
+
+    return {
+        "meta": {
+            "requested_community": requested_community,
+            "effective_community": effective_community,
+            "center_label": center["canonical_name"],
+            "center_id": center["id"],
+            "fallback_used": requested_community != effective_community,
+            "max_strength": max_strength,
+            "max_weight": max_weight,
+        },
+        "nodes": nodes,
+        "edges": edges,
+    }
+
+
+def _fetch_top_verses(tx, limit: int):
+    return tx.run(
+        """
+        MATCH (v:Verse)-[:MENTIONS]->(e:Entity {entity_type: 'PERSON'})
+        WHERE e.pagerank IS NOT NULL
+        WITH v, count(DISTINCT e) AS person_degree, avg(e.pagerank) AS avg_person_pagerank
+        ORDER BY person_degree DESC, avg_person_pagerank DESC
+        LIMIT $limit
+        RETURN
+          v.id AS verse_id,
+          v.sutta_ref AS sutta_ref,
+          v.number AS verse_num,
+          v.text AS verse_text,
+          person_degree,
+          avg_person_pagerank
+        """,
+        limit=limit,
+    ).data()
+
+
+def _fetch_mentions_for_verses(tx, verse_ids: list[int]):
+    return tx.run(
+        """
+        UNWIND $verse_ids AS verse_id
+        MATCH (v:Verse {id: verse_id})-[m:MENTIONS]->(p:Entity {entity_type: 'PERSON'})
+        RETURN
+          v.id AS verse_id,
+          p.id AS person_id,
+          p.canonical_name AS person_name,
+          p.pagerank AS person_pagerank,
+          coalesce(m.ref_count, 1) AS ref_count
+        ORDER BY verse_id, person_name
+        """,
+        verse_ids=verse_ids,
+    ).data()
+
+
+def _load_top_connected_verses_payload(limit: int):
+    settings = _neo4j_settings()
+    driver = GraphDatabase.driver(settings["uri"], auth=(settings["user"], settings["password"]))
+    driver.verify_connectivity()
+
+    with driver.session(database=settings["database"]) as session:
+        verses = session.execute_read(_fetch_top_verses, limit)
+        verse_ids = [v["verse_id"] for v in verses if v.get("verse_id") is not None]
+        mentions = session.execute_read(_fetch_mentions_for_verses, verse_ids) if verse_ids else []
+
+    driver.close()
+
+    nodes = []
+    edges = []
+    person_nodes: dict[int, dict] = {}
+
+    max_avg = max((v.get("avg_person_pagerank") or 0 for v in verses), default=0)
+    max_degree = max((v.get("person_degree") or 0 for v in verses), default=0)
+    max_person_pr = max((m.get("person_pagerank") or 0 for m in mentions), default=0)
+    max_ref_count = max((m.get("ref_count") or 0 for m in mentions), default=0)
+
+    for v in verses:
+        nodes.append(
+            {
+                "id": f"verse:{v['verse_id']}",
+                "kind": "verse",
+                "verse_id": v["verse_id"],
+                "label": f"{v.get('sutta_ref') or 'Verse'}:{v.get('verse_num')}",
+                "sutta_ref": v.get("sutta_ref"),
+                "verse_num": v.get("verse_num"),
+                "text": v.get("verse_text") or "",
+                "person_degree": v.get("person_degree") or 0,
+                "avg_person_pagerank": v.get("avg_person_pagerank") or 0.0,
+            }
+        )
+
+    for m in mentions:
+        person_id = m["person_id"]
+        if person_id not in person_nodes:
+            person_nodes[person_id] = {
+                "id": f"person:{person_id}",
+                "kind": "person",
+                "person_id": person_id,
+                "label": m.get("person_name") or f"Person {person_id}",
+                "person_pagerank": m.get("person_pagerank") or 0.0,
+            }
+
+        edges.append(
+            {
+                "id": f"verse:{m['verse_id']}->person:{person_id}",
+                "source": f"verse:{m['verse_id']}",
+                "target": f"person:{person_id}",
+                "ref_count": m.get("ref_count") or 1,
+            }
+        )
+
+    nodes.extend(person_nodes.values())
+
+    return {
+        "meta": {
+            "limit": limit,
+            "verse_count": len(verses),
+            "person_count": len(person_nodes),
+            "edge_count": len(edges),
+            "max_avg_person_pagerank": max_avg,
+            "max_person_degree": max_degree,
+            "max_person_pagerank": max_person_pr,
+            "max_ref_count": max_ref_count,
+        },
+        "nodes": nodes,
+        "edges": edges,
+    }
+
+
+def _fetch_sutta_person_rank_rows(tx, limit: int):
+    return tx.run(
+        """
+        MATCH (s:Sutta)-[:HAS_VERSE]->(v:Verse)-[m:MENTIONS]->(p:Entity {entity_type: 'PERSON'})
+        WITH s, p, sum(coalesce(m.ref_count, 1)) AS person_weight
+        WITH
+          s,
+          sum(person_weight) AS total_weighted_mentions,
+          count(p) AS unique_persons,
+          avg(person_weight) AS avg_weight_per_person
+        RETURN
+          s.sutta_ref AS sutta_ref,
+          total_weighted_mentions,
+          unique_persons,
+          avg_weight_per_person
+        ORDER BY total_weighted_mentions DESC, unique_persons DESC
+        LIMIT $limit
+        """,
+        limit=limit,
+    ).data()
+
+
+def _load_sutta_person_rank_payload(limit: int):
+    settings = _neo4j_settings()
+    driver = GraphDatabase.driver(settings["uri"], auth=(settings["user"], settings["password"]))
+    driver.verify_connectivity()
+    with driver.session(database=settings["database"]) as session:
+        rows = session.execute_read(_fetch_sutta_person_rank_rows, limit)
+    driver.close()
+    return {"meta": {"limit": limit, "count": len(rows)}, "rows": rows}
+
+
+def _fetch_sutta_person_graph_rows(tx, sutta_ref: str):
+    return tx.run(
+        """
+        MATCH (s:Sutta {sutta_ref: $sutta_ref})
+        MATCH (s)-[:HAS_VERSE]->(v:Verse)-[m:MENTIONS]->(p:Entity {entity_type: 'PERSON'})
+        WITH
+          s, p,
+          count(DISTINCT v) AS verse_count,
+          sum(coalesce(m.ref_count, 1)) AS weight,
+          avg(p.pagerank) AS avg_person_pagerank
+        RETURN
+          s.sutta_ref AS sutta_ref,
+          p.id AS person_id,
+          p.canonical_name AS person_name,
+          weight,
+          verse_count,
+          p.pagerank AS pagerank,
+          avg_person_pagerank
+        ORDER BY weight DESC, person_name
+        """,
+        sutta_ref=sutta_ref,
+    ).data()
+
+
+def _fetch_sutta_verse_count(tx, sutta_ref: str):
+    return tx.run(
+        """
+        MATCH (s:Sutta {sutta_ref: $sutta_ref})-[:HAS_VERSE]->(v:Verse)
+        RETURN count(DISTINCT v) AS verse_count
+        """,
+        sutta_ref=sutta_ref,
+    ).single()
+
+
+def _load_sutta_person_graph_payload(sutta_ref: str):
+    settings = _neo4j_settings()
+    driver = GraphDatabase.driver(settings["uri"], auth=(settings["user"], settings["password"]))
+    driver.verify_connectivity()
+    with driver.session(database=settings["database"]) as session:
+        rows = session.execute_read(_fetch_sutta_person_graph_rows, sutta_ref)
+        verse_count_row = session.execute_read(_fetch_sutta_verse_count, sutta_ref)
+    driver.close()
+
+    if not rows:
+        raise RuntimeError(f"Sutta '{sutta_ref}' not found or has no PERSON mentions.")
+
+    nodes = [
+        {
+            "id": f"sutta:{sutta_ref}",
+            "kind": "sutta",
+            "label": sutta_ref,
+        }
+    ]
+    edges = []
+    max_weight = max((r.get("weight") or 0 for r in rows), default=0)
+    max_pagerank = max((r.get("pagerank") or 0 for r in rows), default=0)
+
+    for r in rows:
+        person_id = r["person_id"]
+        nodes.append(
+            {
+                "id": f"person:{person_id}",
+                "kind": "person",
+                "person_id": person_id,
+                "label": r["person_name"] or f"Person {person_id}",
+                "pagerank": r.get("pagerank") or 0.0,
+                "weight": r.get("weight") or 0,
+                "verse_count": r.get("verse_count") or 0,
+            }
+        )
+        edges.append(
+            {
+                "id": f"sutta:{sutta_ref}->person:{person_id}",
+                "source": f"sutta:{sutta_ref}",
+                "target": f"person:{person_id}",
+                "weight": r.get("weight") or 0,
+                "verse_count": r.get("verse_count") or 0,
+            }
+        )
+
+    return {
+        "meta": {
+            "sutta_ref": sutta_ref,
+            "verse_count": verse_count_row["verse_count"] if verse_count_row else 0,
+            "person_count": len(rows),
+            "edge_count": len(edges),
+            "max_weight": max_weight,
+            "max_pagerank": max_pagerank,
+        },
+        "nodes": nodes,
+        "edges": edges,
+    }
+
+
+@app.route("/community/<int:community_id>")
+def community_view(community_id: int):
+    center = (request.args.get("center") or "Buddha").strip() or "Buddha"
+    return render_template(
+        "community_graph.html",
+        title=f"Community {community_id} Graph",
+        requested_community=community_id,
+        center=center,
+        data_url=url_for("community_data", community_id=community_id, center=center),
+    )
+
+
+@app.route("/api/community/<int:community_id>")
+def community_data(community_id: int):
+    center = (request.args.get("center") or "Buddha").strip() or "Buddha"
+    try:
+        payload = _load_community_payload(community_id, center)
+    except RuntimeError as e:
+        return jsonify({"ok": False, "message": str(e)}), 404
+    except Neo4jError:
+        logger.exception("Neo4j query failed for community=%s center=%s", community_id, center)
+        return jsonify({"ok": False, "message": "Neo4j query failed."}), 500
+    except Exception:
+        logger.exception("Unexpected error loading community graph")
+        return jsonify({"ok": False, "message": "Unexpected server error."}), 500
+
+    return jsonify(payload)
+
+
+@app.route("/suttas/person-rank")
+def sutta_person_rank_view():
+    limit = request.args.get("limit", 50, type=int) or 50
+    if limit < 1:
+        limit = 1
+    if limit > 500:
+        limit = 500
+    return render_template(
+        "sutta_person_rank.html",
+        title="Sutta Person Rank",
+        limit=limit,
+        data_url=url_for("sutta_person_rank_data", limit=limit),
+    )
+
+
+@app.route("/api/suttas/person-rank")
+def sutta_person_rank_data():
+    limit = request.args.get("limit", 50, type=int) or 50
+    if limit < 1:
+        limit = 1
+    if limit > 500:
+        limit = 500
+    try:
+        payload = _load_sutta_person_rank_payload(limit)
+    except Neo4jError:
+        logger.exception("Neo4j query failed for sutta person rank limit=%s", limit)
+        return jsonify({"ok": False, "message": "Neo4j query failed."}), 500
+    except Exception:
+        logger.exception("Unexpected error loading sutta person rank")
+        return jsonify({"ok": False, "message": "Unexpected server error."}), 500
+    return jsonify(payload)
+
+
+@app.route("/suttas/<path:sutta_ref>/persons")
+def sutta_person_graph_view(sutta_ref: str):
+    return render_template(
+        "sutta_person_graph.html",
+        title=f"{sutta_ref}: PERSON Mentions",
+        sutta_ref=sutta_ref,
+        data_url=url_for("sutta_person_graph_data", sutta_ref=sutta_ref),
+    )
+
+
+@app.route("/api/suttas/<path:sutta_ref>/persons")
+def sutta_person_graph_data(sutta_ref: str):
+    try:
+        payload = _load_sutta_person_graph_payload(sutta_ref)
+    except RuntimeError as e:
+        return jsonify({"ok": False, "message": str(e)}), 404
+    except Neo4jError:
+        logger.exception("Neo4j query failed for sutta_ref=%s", sutta_ref)
+        return jsonify({"ok": False, "message": "Neo4j query failed."}), 500
+    except Exception:
+        logger.exception("Unexpected error loading sutta person graph for %s", sutta_ref)
+        return jsonify({"ok": False, "message": "Unexpected server error."}), 500
+    return jsonify(payload)
+
+
+@app.route("/verses/top-connected")
+def top_connected_verses_view():
+    limit = request.args.get("limit", 25, type=int) or 25
+    if limit < 1:
+        limit = 1
+    if limit > 200:
+        limit = 200
+    return render_template(
+        "verses_top_connected.html",
+        title="Top Connected Verses",
+        limit=limit,
+        data_url=url_for("top_connected_verses_data", limit=limit),
+    )
+
+
+@app.route("/api/verses/top-connected")
+def top_connected_verses_data():
+    limit = request.args.get("limit", 25, type=int) or 25
+    if limit < 1:
+        limit = 1
+    if limit > 200:
+        limit = 200
+    try:
+        payload = _load_top_connected_verses_payload(limit)
+    except Neo4jError:
+        logger.exception("Neo4j query failed for top connected verses limit=%s", limit)
+        return jsonify({"ok": False, "message": "Neo4j query failed."}), 500
+    except Exception:
+        logger.exception("Unexpected error loading top connected verses graph")
+        return jsonify({"ok": False, "message": "Unexpected server error."}), 500
+
+    return jsonify(payload)
 
 
 @app.route("/candidate/<int:candidate_id>")
