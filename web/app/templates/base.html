@@ -33,6 +33,17 @@
           <li><a href="{{ url_for('training_doc', doc_id='manual:example') }}">Training doc view</a> – Detailed view with spans table and copyable JSON.</li>
         </ul>
       </article>
+      <article>
+        <h2>Graph Views</h2>
+        <ul>
+          <li><a href="{{ url_for('sutta_related_ati_view') }}">ATI study pairs</a> – Ranked discourse pairs with relatedness graph context.</li>
+          <li><a href="{{ url_for('sutta_related_ati_view', limit=500, min_cosine=0.35) }}">ATI study pairs (dense)</a> – Example with higher limit and stricter cosine threshold.</li>
+          <li><a href="{{ url_for('sutta_person_rank_view') }}">Sutta person rank</a> – Suttas ranked by PERSON-network connectivity.</li>
+          <li><a href="{{ url_for('top_connected_verses_view') }}">Top connected verses</a> – Most connected verses in the mention graph.</li>
+          <li><a href="{{ url_for('community_view', community_id=1, center='Buddha') }}">Community graph example</a> – Person community view centered on Buddha.</li>
+          <li><a href="{{ url_for('sutta_person_graph_view', sutta_ref='AN 1.1') }}">Sutta PERSON graph example</a> – Focused PERSON network for one sutta.</li>
+        </ul>
+      </article>
     </section>
   </main>
 </body>

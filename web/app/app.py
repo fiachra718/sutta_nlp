@@ -1,9 +1,12 @@
 import json
 import logging
 import os
+import re
 from flask import Flask, render_template, abort, request, jsonify, url_for
 from neo4j import GraphDatabase
 from neo4j.exceptions import Neo4jError
+import psycopg
+from psycopg.rows import dict_row
 from .models.models import CandidateDoc, TrainingDoc, SuttaVerse
 from .api.ner import run_ner
 from .render import render_highlighted
@@ -102,6 +105,149 @@ def _neo4j_settings():
     }
 
 
+def _pg_dsn():
+    return os.environ.get("PG_DSN", "dbname=tipitaka user=alee")
+
+
+_AN_SN_ID_RE = re.compile(r"^(an|sn)(\d{2})\.(\d{3})", re.IGNORECASE)
+_MN_DN_ID_RE = re.compile(r"^(mn|dn)\.(\d{3})", re.IGNORECASE)
+
+
+def _identifier_to_sutta_ref(identifier: str | None) -> str | None:
+    s = (identifier or "").strip()
+    m = _AN_SN_ID_RE.match(s)
+    if m:
+        nikaya = m.group(1).upper()
+        book = int(m.group(2))
+        sutta = int(m.group(3))
+        return f"{nikaya} {book}.{sutta}"
+    m = _MN_DN_ID_RE.match(s)
+    if m:
+        nikaya = m.group(1).upper()
+        sutta = int(m.group(2))
+        return f"{nikaya} {sutta}"
+    return None
+
+
+def _format_sutta_ref(nikaya: str | None, vagga: str | None, book_number: str | None) -> str | None:
+    if not nikaya or not book_number:
+        return None
+    nikaya = nikaya.strip().upper()
+    book_number = str(book_number).strip()
+    vagga = (vagga or "").strip()
+    if nikaya in {"AN", "SN"}:
+        if not vagga:
+            return None
+        return f"{nikaya} {vagga}.{book_number}"
+    if nikaya in {"MN", "DN"}:
+        return f"{nikaya} {book_number}"
+    if nikaya == "KN" and vagga:
+        return f"{vagga} {book_number}"
+    return f"{nikaya} {book_number}"
+
+
+def _load_ati_related_payload(limit: int, min_cosine: float):
+    sql = """
+    SELECT
+      rl.id,
+      rl.from_identifier,
+      rl.to_identifier,
+      rl.source_kind,
+      rl.confidence,
+      rl.baseline_cosine,
+      rl.baseline_jaccard,
+      rl.baseline_weighted_jaccard,
+      rl.baseline_person_overlap,
+      rl.baseline_person_union,
+      s1.nikaya AS from_nikaya,
+      s1.vagga AS from_vagga,
+      s1.book_number AS from_book_number,
+      s2.nikaya AS to_nikaya,
+      s2.vagga AS to_vagga,
+      s2.book_number AS to_book_number
+    FROM ati_related_links rl
+    LEFT JOIN ati_suttas s1 ON s1.identifier = rl.from_identifier
+    LEFT JOIN ati_suttas s2 ON s2.identifier = rl.to_identifier
+    WHERE rl.baseline_cosine IS NOT NULL
+      AND rl.baseline_cosine >= %(min_cosine)s
+    ORDER BY rl.baseline_cosine DESC, rl.confidence DESC, rl.id
+    LIMIT %(limit)s;
+    """
+
+    with psycopg.connect(_pg_dsn(), row_factory=dict_row) as conn:
+        with conn.cursor() as cur:
+            cur.execute(sql, {"limit": limit, "min_cosine": min_cosine})
+            rows = cur.fetchall()
+
+    node_map: dict[str, dict] = {}
+    edges: list[dict] = []
+    ranked_pairs: list[dict] = []
+    cos_values: list[float] = []
+
+    for r in rows:
+        from_ref = _format_sutta_ref(r["from_nikaya"], r["from_vagga"], r["from_book_number"]) or _identifier_to_sutta_ref(r["from_identifier"])
+        to_ref = _format_sutta_ref(r["to_nikaya"], r["to_vagga"], r["to_book_number"]) or _identifier_to_sutta_ref(r["to_identifier"])
+        if not from_ref or not to_ref:
+            continue
+
+        node_map.setdefault(
+            from_ref,
+            {"id": f"sutta:{from_ref}", "label": from_ref, "kind": "sutta"},
+        )
+        node_map.setdefault(
+            to_ref,
+            {"id": f"sutta:{to_ref}", "label": to_ref, "kind": "sutta"},
+        )
+
+        cosine = float(r["baseline_cosine"] or 0.0)
+        cos_values.append(cosine)
+        edge_id = f"rl:{r['id']}"
+        from_node_id = f"sutta:{from_ref}"
+        to_node_id = f"sutta:{to_ref}"
+
+        edges.append(
+            {
+                "id": edge_id,
+                "source": from_node_id,
+                "target": to_node_id,
+                "cosine": cosine,
+                "confidence": float(r["confidence"] or 0.0),
+                "source_kind": r["source_kind"] or "",
+            }
+        )
+        ranked_pairs.append(
+            {
+                "id": edge_id,
+                "from_ref": from_ref,
+                "to_ref": to_ref,
+                "from_node_id": from_node_id,
+                "to_node_id": to_node_id,
+                "cosine": cosine,
+                "jaccard": float(r["baseline_jaccard"] or 0.0),
+                "weighted_jaccard": float(r["baseline_weighted_jaccard"] or 0.0),
+                "confidence": float(r["confidence"] or 0.0),
+                "source_kind": r["source_kind"] or "",
+                "person_overlap": int(r["baseline_person_overlap"] or 0),
+                "person_union": int(r["baseline_person_union"] or 0),
+            }
+        )
+
+    return {
+        "meta": {
+            "limit": limit,
+            "min_cosine": min_cosine,
+            "node_count": len(node_map),
+            "edge_count": len(edges),
+            "pair_count": len(ranked_pairs),
+            "max_cosine": max(cos_values, default=0.0),
+            "min_cosine_seen": min(cos_values, default=0.0),
+        },
+        "nodes": list(node_map.values()),
+        "edges": edges,
+        "ranked_pairs": ranked_pairs,
+    }
+
+
 def _fetch_center(tx, center_name: str):
     return tx.run(
         """
@@ -195,8 +341,10 @@ def _fetch_top_verses(tx, limit: int):
     return tx.run(
         """
         MATCH (v:Verse)-[:MENTIONS]->(e:Entity {entity_type: 'PERSON'})
-        WHERE e.pagerank IS NOT NULL
-        WITH v, count(DISTINCT e) AS person_degree, avg(e.pagerank) AS avg_person_pagerank
+        WITH
+          v,
+          count(DISTINCT e) AS person_degree,
+          avg(coalesce(e.pagerank, 0.0)) AS avg_person_pagerank
         ORDER BY person_degree DESC, avg_person_pagerank DESC
         LIMIT $limit
         RETURN
@@ -454,6 +602,54 @@ def community_data(community_id: int):
         logger.exception("Unexpected error loading community graph")
         return jsonify({"ok": False, "message": "Unexpected server error."}), 500
 
+    return jsonify(payload)
+
+
+@app.route("/suttas/related-ati")
+def sutta_related_ati_view():
+    limit = request.args.get("limit", 300, type=int) or 300
+    min_cosine = request.args.get("min_cosine", 0.20, type=float)
+    if limit < 1:
+        limit = 1
+    if limit > 5000:
+        limit = 5000
+    if min_cosine is None:
+        min_cosine = 0.20
+    if min_cosine < 0.0:
+        min_cosine = 0.0
+    if min_cosine > 1.0:
+        min_cosine = 1.0
+    return render_template(
+        "sutta_related_ati.html",
+        title="ATI Related Suttas",
+        limit=limit,
+        min_cosine=min_cosine,
+        data_url=url_for("sutta_related_ati_data", limit=limit, min_cosine=min_cosine),
+    )
+
+
+@app.route("/api/suttas/related-ati")
+def sutta_related_ati_data():
+    limit = request.args.get("limit", 300, type=int) or 300
+    min_cosine = request.args.get("min_cosine", 0.20, type=float)
+    if limit < 1:
+        limit = 1
+    if limit > 5000:
+        limit = 5000
+    if min_cosine is None:
+        min_cosine = 0.20
+    if min_cosine < 0.0:
+        min_cosine = 0.0
+    if min_cosine > 1.0:
+        min_cosine = 1.0
+    try:
+        payload = _load_ati_related_payload(limit, min_cosine)
+    except psycopg.Error:
+        logger.exception("Postgres query failed for ATI related graph limit=%s min_cosine=%s", limit, min_cosine)
+        return jsonify({"ok": False, "message": "Postgres query failed."}), 500
+    except Exception:
+        logger.exception("Unexpected error loading ATI related graph")
+        return jsonify({"ok": False, "message": "Unexpected server error."}), 500
     return jsonify(payload)
 
 

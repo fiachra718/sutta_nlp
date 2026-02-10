@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/sutta_related_ati.css') }}">
+  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+</head>
+<body>
+  <main class="wrap">
+    <header class="header">
+      <h1>ATI Sutta Study Pairs</h1>
+      <p class="subhead">Start with the strongest discourse pairs, then use the graph to explore nearby reading paths.</p>
+      <p id="meta" class="meta">Loading pairs (limit={{ limit }}, min_cosine={{ min_cosine }})...</p>
+    </header>
+    <section class="content">
+      <section class="pairs">
+        <h2>Ranked Discourse Pairs</h2>
+        <p class="panel-note">Ordered by baseline cosine similarity. Click a pair to highlight it in the graph.</p>
+        <div class="table-wrap">
+          <table id="pairs-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Pair</th>
+                <th>Cosine</th>
+                <th>Shared Persons</th>
+                <th>Signal</th>
+              </tr>
+            </thead>
+            <tbody id="pairs-body"></tbody>
+          </table>
+        </div>
+      </section>
+      <section class="graph-panel">
+        <h2>Relationship Map</h2>
+        <p class="panel-note">Use for context after identifying a pair worth studying.</p>
+        <div id="graph"></div>
+      </section>
+    </section>
+    <section class="legend">
+      <div><strong>How to read this</strong>: start at rank #1 and work downward.</div>
+      <div><strong>Signal</strong>: blends cosine + extraction confidence.</div>
+      <div><strong>Shared Persons</strong>: overlap / union from baseline vectors.</div>
+      <div><strong>Tip</strong>: use URL params, e.g. `?limit=500&min_cosine=0.35`</div>
+    </section>
+  </main>
+  <script>
+    window.ATI_RELATED_DATA_URL = "{{ data_url }}";
+  </script>
+  <script src="{{ url_for('static', filename='js/sutta_related_ati.js') }}"></script>
+</body>
+</html>

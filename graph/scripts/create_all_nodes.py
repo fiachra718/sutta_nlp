@@ -1,7 +1,7 @@
 import psycopg
 from psycopg.rows import dict_row
 from neo4j import GraphDatabase
-from normalize import load_alias_index_pg, resolve_span
+from normalize import load_alias_index_pg, resolve_span, normalize_mention
 
 '''
 This is a NASTY one-off script that will
@@ -19,6 +19,33 @@ CONN = psycopg.connect(PG_DSN, row_factory=dict_row)
 
 driver = GraphDatabase.driver(URI, auth=AUTH, max_connection_pool_size=50)
 driver.verify_connectivity()
+
+
+class UnionFind:
+    def __init__(self):
+        self.parent = {}
+
+    def add(self, x):
+        if x not in self.parent:
+            self.parent[x] = x
+
+    def find(self, x):
+        self.add(x)
+        p = self.parent[x]
+        if p != x:
+            self.parent[x] = self.find(p)
+        return self.parent[x]
+
+    def union(self, a, b):
+        ra = self.find(a)
+        rb = self.find(b)
+        if ra == rb:
+            return ra
+        # Stable canonical root: smaller numeric entity id wins.
+        root = ra if int(ra) < int(rb) else rb
+        other = rb if root == ra else ra
+        self.parent[other] = root
+        return root
 
 #
 # db_entity_generator
@@ -78,6 +105,52 @@ def db_entity_generator(entity_type='PERSON'):
             # yield row.get('entity_id'), row.get('person'), row.get('aliases') # , row.get('canonical_name'), row.get('aliases') 
             yield entity_id, elem, aliases
 
+
+def _entity_norm_keys(entity_type, elem, aliases):
+    keys = set()
+    for cand in (
+        elem.get("normalized_name"),
+        elem.get("canonical_name"),
+    ):
+        norm = normalize_mention(cand or "")
+        if norm:
+            keys.add((entity_type, norm))
+
+    for alias_obj in aliases or []:
+        for cand in (alias_obj.get("normalized_alias"), alias_obj.get("canonical_alias")):
+            norm = normalize_mention(cand or "")
+            if norm:
+                keys.add((entity_type, norm))
+    return keys
+
+
+def build_entity_equivalence_classes(entity_records):
+    """
+    Build implicit eq classes by alias overlap:
+      if two entities of the same type share any normalized canonical/alias key,
+      they belong to the same equivalence class.
+    Returns map: entity_id -> entity_eq_class (e.g., PERSON:775)
+    """
+    uf = UnionFind()
+    key_owner = {}
+    entity_type_by_id = {}
+
+    for entity_type, entity_id, elem, aliases in entity_records:
+        entity_type_by_id[entity_id] = entity_type
+        uf.add(entity_id)
+        for key in _entity_norm_keys(entity_type, elem, aliases):
+            owner = key_owner.get(key)
+            if owner is None:
+                key_owner[key] = entity_id
+            else:
+                uf.union(entity_id, owner)
+
+    eq_class_map = {}
+    for entity_id, entity_type in entity_type_by_id.items():
+        root = uf.find(entity_id)
+        eq_class_map[entity_id] = f"{entity_type}:{root}"
+    return eq_class_map
+
 # def verse_generator():
 #     '''
 #     SO, we select ALL verses from ati_verse
@@ -131,8 +204,9 @@ def verse_generator(batch_size=2000):
         CASE
           WHEN v.nikaya IN ('AN','SN') THEN v.nikaya || ' ' || v.vagga || '.' || v.book_number
           WHEN v.nikaya IN ('MN','DN') THEN v.nikaya || ' ' || v.book_number
-          WHEN v.nikaya = 'KN'         THEN v.vagga  || ' ' || v.book_number
-          ELSE                              v.nikaya || ' ' || v.book_number
+          WHEN v.gid LIKE 'dhp.%'      THEN 'Dhp ' || coalesce(v.book_number::text, split_part(v.gid, '.', 2))
+          WHEN v.nikaya = 'KN'         THEN concat_ws(' ', v.vagga, v.book_number::text)
+          ELSE                              concat_ws(' ', v.nikaya, v.book_number::text)
         END AS sutta_ref,
         v.verse_num,
         v.text,
@@ -169,7 +243,7 @@ def verse_generator(batch_size=2000):
 # ------------------
 #  create_entity_node
 # ------------------
-def create_entity_node(driver, entity_type, entity_id, canonical_name, normalized_name, aliases):
+def create_entity_node(driver, entity_type, entity_id, canonical_name, normalized_name, aliases, entity_eq_class):
     """
     """ 
     assert entity_type in ("PERSON", "GPE", "LOC", "NORP")
@@ -181,13 +255,15 @@ def create_entity_node(driver, entity_type, entity_id, canonical_name, normalize
       e.entity_type    = $entity_type,
       e.canonical_name = $canonical_name,
       e.display_name   = $canonical_name,
-      e.normalized     = $normalized_name
+      e.normalized     = $normalized_name,
+      e.entity_eq_class = $entity_eq_class
     ON MATCH SET
       e.entity_id      = coalesce(e.entity_id, $entity_id),
       e.entity_type    = $entity_type,
       e.canonical_name = coalesce(e.canonical_name, $canonical_name),
       e.display_name   = coalesce(e.display_name, $canonical_name),
-      e.normalized     = coalesce(e.normalized, $normalized_name)
+      e.normalized     = coalesce(e.normalized, $normalized_name),
+      e.entity_eq_class = $entity_eq_class
     RETURN e
     """
     res = driver.execute_query(
@@ -196,6 +272,7 @@ def create_entity_node(driver, entity_type, entity_id, canonical_name, normalize
         entity_type=entity_type,
         canonical_name=canonical_name,
         normalized_name=normalized_name,
+        entity_eq_class=entity_eq_class,
         database_="neo4j",
     )
     summary = res.summary
@@ -327,14 +404,34 @@ if __name__ == "__main__":
         "edges_created_or_matched": 0,
     }
 
+    entity_records = []
     for e_type in ['PERSON', 'GPE', 'NORP', 'LOC']:
         for (entity_id, elem, aliases) in db_entity_generator(entity_type=e_type):
-            print(f"id: {entity_id}, name: {elem['canonical_name']}, norm: {elem['normalized_name']}, Aliases: {aliases}")
-            create_entity_node(driver, e_type, entity_id, elem['canonical_name'], elem['normalized_name'], aliases)
+            entity_records.append((e_type, entity_id, elem, aliases))
+
+    eq_class_map = build_entity_equivalence_classes(entity_records)
+
+    for e_type, entity_id, elem, aliases in entity_records:
+        print(
+            f"id: {entity_id}, name: {elem['canonical_name']}, "
+            f"norm: {elem['normalized_name']}, eq_class: {eq_class_map.get(entity_id)}"
+        )
+        create_entity_node(
+            driver,
+            e_type,
+            entity_id,
+            elem['canonical_name'],
+            elem['normalized_name'],
+            aliases,
+            eq_class_map.get(entity_id, f"{e_type}:{entity_id}"),
+        )
     for verse_id, global_id, sutta_ref, verse_num, text, ner_ref in verse_generator():
         stats["verses_seen"] += 1
         print(f"verse_id: {verse_id}, gid: {global_id}, sutta ref: {sutta_ref}, verse number: {verse_num}")
         assert verse_id is not None
+        if not sutta_ref:
+            print(f"[SKIP] verse_id={verse_id} gid={global_id} missing sutta_ref")
+            continue
         create_verse_node(driver, verse_id, global_id, sutta_ref, verse_num, text)
         for ne_block in ner_ref:
             label = ne_block.get("label")

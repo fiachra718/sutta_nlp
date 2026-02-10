@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: radial-gradient(circle at top, #f9faf5 0%, #ecf1e3 48%, #dee7d5 100%);
+  color: #1b2a21;
+}
+
+.wrap {
+  max-width: 1480px;
+  margin: 20px auto;
+  padding: 0 14px 20px;
+}
+
+.header h1 {
+  margin: 0 0 8px;
+  font-size: 1.52rem;
+}
+
+.meta {
+  margin: 0;
+  color: #48593f;
+}
+
+.subhead {
+  margin: 0 0 8px;
+  color: #2f4235;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: minmax(360px, 0.95fr) minmax(500px, 1.35fr);
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.pairs,
+.graph-panel {
+  border: 1px solid #cdd8c0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(58, 78, 50, 0.11);
+  background: rgba(252, 255, 248, 0.92);
+}
+
+.pairs h2,
+.graph-panel h2 {
+  margin: 0;
+  padding: 10px 12px 4px;
+  font-size: 1rem;
+  color: #223228;
+}
+
+.panel-note {
+  margin: 0;
+  padding: 0 12px 10px;
+  font-size: 0.88rem;
+  color: #51654f;
+}
+
+.table-wrap {
+  max-height: 76vh;
+  overflow: auto;
+}
+
+#pairs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+#pairs-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #dfe8cf;
+  color: #2a3b2c;
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid #c5d2b3;
+}
+
+#pairs-table tbody td {
+  padding: 7px 10px;
+  border-bottom: 1px solid #e2e9d8;
+}
+
+#pairs-table tbody tr {
+  cursor: pointer;
+}
+
+#pairs-table tbody tr:hover {
+  background: #f0f6e5;
+}
+
+#pairs-table tbody tr.selected {
+  background: #dcecc5;
+}
+
+#graph {
+  width: 100%;
+  height: 76vh;
+  min-height: 500px;
+  background: linear-gradient(180deg, #fbfff5 0%, #edf5e2 100%);
+}
+
+.legend {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #e6efda;
+  color: #304636;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 800px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .table-wrap {
+    max-height: 46vh;
+  }
+
+  #graph {
+    height: 56vh;
+    min-height: 360px;
+  }
+}
