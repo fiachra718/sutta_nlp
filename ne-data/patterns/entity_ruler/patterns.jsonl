@@ -22,7 +22,6 @@
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "tapussa"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "tissa"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "udayin"}]}
-{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "bhante"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["ananda", "ānanda"]}}]}
 {"label": "PERSON", "id": "ananda_the_elder_ascii", "pattern": [{"IS_TITLE": true, "LOWER": "ananda"}, {"LOWER": "the"}, {"IS_TITLE": true, "LOWER": "elder"}]}
 {"label": "PERSON", "id": "ananda_the_elder_diacritic", "pattern": [{"IS_TITLE": true, "LOWER": "ānanda"}, {"LOWER": "the"}, {"IS_TITLE": true, "LOWER": "elder"}]}
@@ -48,10 +47,8 @@
 {"label": "PERSON", "pattern": [{"LOWER": "master"}, {"IS_TITLE": true, "LOWER": {"IN": ["ananda", "ānanda"]}}]}
 {"label": "PERSON", "pattern": [{"LOWER": {"IN": ["ven.", "ven"]}}, {"IS_TITLE": true, "LOWER": {"IN": ["ananda", "ānanda"]}}]}
 {"label": "PERSON", "pattern": [{"LOWER": {"IN": ["ven.", "ven"]}}, {"IS_TITLE": true, "LOWER": {"IN": ["sariputta", "sāriputta"]}}]}
-{"label": "PERSON", "id": "title_followed_by_name", "pattern": [ {"TEXT": {"REGEX": "^(King|Venerable|Master|Ven\\.)$"}}, {"IS_ALPHA": true, "IS_TITLE": true} ] }
 {"label": "PERSON","pattern":[{"LOWER":"the","OP":"?"}, {"LOWER":{"REGEX":"^arahants?$"},"IS_TITLE":true} ]}
-{"label": "PERSON","pattern":[{"LOWER":{"REGEX":"^(ven\\.?|venerable)$"}},{"IS_TITLE":true},{"IS_TITLE":true,"OP":"?"}]} 
-{"label": "PERSON", "id": "paccekabuddhas", "pattern": [ {"LOWER": {"IN": ["uparittha", "tagarasikhi", "yasassi", "sudassana", "piyadassi", "gandhara", "Pindola", "Upasabha", "Nitha", "Tatha", "Sutava", "Bhavitatta", "Sumbha", "Subha", "Methula", "Atthama", "Megha", "Anigha", "Sudatha" ] } } ] }
+{"label": "PERSON", "id": "paccekabuddhas", "pattern": [ {"LOWER": {"IN": ["uparittha", "tagarasikhi", "yasassi", "sudassana", "piyadassi", "gandhara", "pindola", "upasabha", "nitha", "tatha", "sutava", "bhavitatta", "sumbha", "subha", "methula", "atthama", "megha", "anigha", "sudatha" ] } } ] }
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "moliyasivaka"}]}
 {"label": "PERSON", "id": "moliya_phagguna", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["moliya", "moḷiya"]}}, {"ORTH": "-", "OP": "?"}, {"IS_TITLE": true, "LOWER": {"IN": ["phagguna", "phagguṇa"]}}]}
 {"label": "PERSON", "id": "ven_moliya_phagguna", "pattern": [{"LOWER": {"IN": ["ven", "ven."]}}, {"ORTH": "-", "OP": "?"}, {"IS_TITLE": true, "LOWER": {"IN": ["moliya", "moḷiya"]}}, {"ORTH": "-", "OP": "?"}, {"IS_TITLE": true, "LOWER": {"IN": ["phagguna", "phagguṇa"]}}]}
@@ -59,7 +56,7 @@
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "janussonin"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "vyagghapajja"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "citta"}]}
-{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "citta the householder"}]}
+{"label": "PERSON", "id": "citta_the_householder", "pattern": [{"IS_TITLE": true, "LOWER": "citta"}, {"LOWER": "the"}, {"LOWER": "householder"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "vajjiya mahita"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "ugga"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "vacchagotta"}]}
@@ -68,10 +65,10 @@
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "migara rohaneyya"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "devadatta"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "assalayana"}]}
-{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "Nalaka"}]}
-{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "Yama"}]}
-{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "Asita"}]}
-{"label": "PERSON","id":"possessive_kin","pattern":[ {"IS_TITLE": true}, {"ORTH": "'s"}, {"LOWER": {"IN": ["mother","father","son","daughter","aunt","uncle","niece","nephew", "wife", "husband","sister","brother"]}} ]}
+{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "nalaka"}]}
+{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "yama"}]}
+{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "asita"}]}
+{"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "pajapati"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "navakammika bharadvaja"}]}
 {"label": "PERSON", "pattern": "Saccaka the Nigaṇṭha-son"}
 
@@ -85,7 +82,6 @@
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["vesali", "vesālī"]}}]}
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": "atthakanagara"}]}
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": "kapilavatthu"}]}
-{"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": "kammasadhamma"}]}
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["pataliputta", "pāṭaliputta"]}}]}
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["nalanda", "nālandā"]}}]}
 {"label": "GPE", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["benares", "varanasi", "vāraṇasī"]}}]}
@@ -116,7 +112,6 @@
 {"label": "GPE", "pattern": "Avanti"}
 {"label": "GPE", "pattern": "Gandhara"}
 {"label": "GPE", "pattern": "Kamboja"}
-{"label": "GPE", "pattern": "Kesaputta"}
 {"label": "GPE", "pattern": "Alakamanda"}
 {"label": "GPE", "pattern": "Amaravati"}
 {"label": "GPE", "pattern": "Allakappa"}
@@ -126,7 +121,6 @@
 {"label": "GPE", "pattern": "Beluva"}
 {"label": "GPE", "pattern": "Dhavajalika"}
 {"label": "GPE", "pattern": "Kapilavattu"}
-{"label": "GPE", "pattern": "Kesaputta"}
 
 {"label":"EVENT","id":"uposatha","pattern":[{"LOWER":{"REGEX":"^uposatha$"}}]}
 {"label":"EVENT","id":"vassa","pattern":[{"LOWER":{"REGEX":"^vassa$"}}]}

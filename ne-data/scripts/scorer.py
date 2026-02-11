@@ -22,15 +22,17 @@ def main():
         if model == 'local':
             nlp = load_model()
         if model == "package":
+            print("Loading installed en_sutta_ner")
             nlp = spacy.load('en_sutta_ner')
         # nlp = load_model()
         # nlp = spacy.load('en_sutta_ner')
         
         sources = [
             WORK / "gold_training.spacy",
-            WORK / "test.spacy",
+            # WORK / "test.spacy",
             WORK / "test_from_db.spacy",
-            WORK / "train.spacy", 
+            # WORK / "train.spacy", 
+            WORK / "gold_training_predicted.spacy",
         ]
 
         examples = []
@@ -41,7 +43,7 @@ def main():
             raise SystemExit("No DocBin examples loaded; nothing to score.")
 
         scores = nlp.evaluate(examples)
-        
+        print("\n\n")
         print("ents_p:", scores.get("ents_p"))
         print("ents_r:", scores.get("ents_r"))
         print("ents_f:", scores.get("ents_f"))

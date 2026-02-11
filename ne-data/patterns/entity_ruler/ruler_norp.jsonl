@@ -10,3 +10,7 @@
 {"label":"NORP","pattern":[{"LOWER":{"REGEX":"^ascetic(s)?$"}}]}
 {"label":"NORP","pattern":[{"LOWER":{"REGEX":"^wanderer(s)?$"}}]}
 {"label":"NORP","pattern":[{"LOWER":{"REGEX":"^nigantha(s)?$|^nirgrantha(s)?$"}}]}
+{"label":"NORP","pattern":[{"LOWER":{"REGEX":"^bhikkhu(s)?$"}}]}
+{"label":"NORP","pattern":[{"LOWER":{"REGEX":"^bhikkhun[iī](s)?$"}}]}
+{"label":"NORP","pattern":[{"LOWER":{"REGEX":"^monk(s)?$"}}]}
+{"label":"NORP","pattern":[{"LOWER":{"REGEX":"^nun(s)?$"}}]}

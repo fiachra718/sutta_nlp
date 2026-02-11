@@ -1,0 +1,69 @@
+
+Ran python -m py_compile ne-data/scripts/export_missing_entity_resolution.py
+
+
+Worked for 1m 37s
+Implemented the SQL + script combo.
+
+What I added:
+
+audit_missing_entity_resolution.sql
+
+Focused on graph-safe labels only: PERSON, LOC, GPE
+Builds tmp_missing_entity_resolution
+Classifies misses into:
+likely_missing_alias_for_existing
+likely_missing_canonical_entity
+likely_noise_or_bad_ner
+Includes suggested_canonical heuristic via normalized-key matching
+Outputs totals, bucket summary, top misses, and verse-level rows
+export_missing_entity_resolution.py
+
+Runs equivalent queries and writes CSVs:
+missing_resolution_summary.csv
+missing_resolution_top.csv
+missing_resolution_details.csv
+Tunable with --top-limit
+How to run:
+
+SQL direct:
+psql -d tipitaka -f graph/entities/audit_missing_entity_resolution.sql
+Export CSVs:
+python ne-data/scripts/export_missing_entity_resolution.py
+Optional:
+
+python ne-data/scripts/export_missing_entity_resolution.py --top-limit 1000
+This gives you a repeatable loop for alias backfills and canonical adds before reloading mentions/graph stats.
+
+
+2 files changed
++446
+-0
+Undo
+
+Review
+graph/entities/audit_missing_entity_resolution.sql
+ne-data/scripts/export_missing_entity_resolution.py
+Put a pin in it here.  Make a note of where we paused
+
+Paused here.
+
+Checkpoint:
+
+Model/ruler state is strong (ents_f ~0.886 on scorer; ~0.938 on full gold_training eval), with remaining caution on NORP precision.
+Rule cleanup applied in:
+patterns.jsonl
+ruler_norp.jsonl
+Regression and cleanup SQL in place:
+select_ner_regression_verses.sql
+link_ner_error_retrain.sql
+audit_missing_entity_resolution.sql
+Export tool added:
+export_missing_entity_resolution.py
+outputs to *.csv
+Natural next step when you resume:
+
+Run export_missing_entity_resolution.py
+Backfill top alias/canonical gaps
+Rebuild mentions/graph stats
+Re-run regression verse set and scorer.

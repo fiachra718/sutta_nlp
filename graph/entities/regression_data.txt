@@ -1,0 +1,164 @@
+                  reason                   |        identifier        | verse_num | route_verse_num |                           predict_url                           
+-------------------------------------------+--------------------------+-----------+-----------------+-----------------------------------------------------------------
+ target_mismatch:LOC:supreme               | an04.067.piya.html       |         6 |               5 | http://127.0.0.1:5000/predict/verse/an04.067.piya.html/5
+ target_mismatch:GPE:yama                  | dhp.04.budd.html         |         1 |               0 | http://127.0.0.1:5000/predict/verse/dhp.04.budd.html/0
+ target_mismatch:GPE:yama                  | dhp.04.budd.html         |        44 |               1 | http://127.0.0.1:5000/predict/verse/dhp.04.budd.html/1
+ target_mismatch:GPE:yama                  | dhp.04.budd.html         |        45 |               2 | http://127.0.0.1:5000/predict/verse/dhp.04.budd.html/2
+ target_mismatch:PERSON:long               | dhp.05.than.html         |        60 |               0 | http://127.0.0.1:5000/predict/verse/dhp.05.than.html/0
+ target_mismatch:PERSON:void               | dhp.07.budd.html         |         1 |               0 | http://127.0.0.1:5000/predict/verse/dhp.07.budd.html/0
+ target_mismatch:PERSON:void               | dhp.07.budd.html         |        92 |               3 | http://127.0.0.1:5000/predict/verse/dhp.07.budd.html/3
+ target_mismatch:PERSON:void               | dhp.07.budd.html         |        93 |               4 | http://127.0.0.1:5000/predict/verse/dhp.07.budd.html/4
+ target_mismatch:LOC:supreme               | dhp.08.budd.html         |         1 |               0 | http://127.0.0.1:5000/predict/verse/dhp.08.budd.html/0
+ target_mismatch:LOC:supreme               | dhp.08.budd.html         |       115 |              15 | http://127.0.0.1:5000/predict/verse/dhp.08.budd.html/15
+ target_mismatch:PERSON:awakened           | dhp.14.than.html         |       183 |               4 | http://127.0.0.1:5000/predict/verse/dhp.14.than.html/4
+ target_mismatch:PERSON:awakened           | dhp.14.than.html         |       184 |               5 | http://127.0.0.1:5000/predict/verse/dhp.14.than.html/5
+ target_mismatch:PERSON:awakened           | dhp.14.than.html         |       185 |               6 | http://127.0.0.1:5000/predict/verse/dhp.14.than.html/6
+ target_mismatch:PERSON:awakened           | dhp.18.than.html         |       255 |              18 | http://127.0.0.1:5000/predict/verse/dhp.18.than.html/18
+ focus:dhp_route_index                     | dhp.19.budd.html         |         1 |               0 | http://127.0.0.1:5000/predict/verse/dhp.19.budd.html/0
+ target_mismatch:PERSON:elder              | dhp.19.budd.html         |         1 |               0 | http://127.0.0.1:5000/predict/verse/dhp.19.budd.html/0
+ focus:dhp_route_index                     | dhp.19.budd.html         |       256 |               1 | http://127.0.0.1:5000/predict/verse/dhp.19.budd.html/1
+ focus:dhp_route_index                     | dhp.19.budd.html         |       257 |               2 | http://127.0.0.1:5000/predict/verse/dhp.19.budd.html/2
+ focus:dhp_route_index                     | dhp.19.budd.html         |       258 |               3 | http://127.0.0.1:5000/predict/verse/dhp.19.budd.html/3
+ focus:dhp_route_index                     | dhp.19.budd.html         |       259 |               4 | http://127.0.0.1:5000/predict/verse/dhp.19.budd.html/4
+ focus:dhp_route_index                     | dhp.19.budd.html         |       260 |               5 | http://127.0.0.1:5000/predict/verse/dhp.19.budd.html/5
+ focus:dhp_route_index                     | dhp.19.budd.html         |       261 |               6 | http://127.0.0.1:5000/predict/verse/dhp.19.budd.html/6
+ target_mismatch:PERSON:elder              | dhp.19.budd.html         |       261 |               6 | http://127.0.0.1:5000/predict/verse/dhp.19.budd.html/6
+ focus:dhp_route_index                     | dhp.19.budd.html         |       262 |               7 | http://127.0.0.1:5000/predict/verse/dhp.19.budd.html/7
+ focus:dhp_route_index                     | dhp.19.budd.html         |       263 |               8 | http://127.0.0.1:5000/predict/verse/dhp.19.budd.html/8
+ focus:dhp_route_index                     | dhp.19.budd.html         |       264 |               9 | http://127.0.0.1:5000/predict/verse/dhp.19.budd.html/9
+ focus:dhp_route_index                     | dhp.19.budd.html         |       265 |              10 | http://127.0.0.1:5000/predict/verse/dhp.19.budd.html/10
+ focus:dhp_route_index                     | dhp.19.budd.html         |       266 |              11 | http://127.0.0.1:5000/predict/verse/dhp.19.budd.html/11
+ focus:dhp_route_index                     | dhp.19.budd.html         |       267 |              12 | http://127.0.0.1:5000/predict/verse/dhp.19.budd.html/12
+ focus:dhp_route_index                     | dhp.19.budd.html         |       268 |              13 | http://127.0.0.1:5000/predict/verse/dhp.19.budd.html/13
+ focus:dhp_route_index                     | dhp.19.budd.html         |       269 |              14 | http://127.0.0.1:5000/predict/verse/dhp.19.budd.html/14
+ focus:dhp_route_index                     | dhp.19.budd.html         |       270 |              15 | http://127.0.0.1:5000/predict/verse/dhp.19.budd.html/15
+ focus:dhp_route_index                     | dhp.19.budd.html         |       271 |              16 | http://127.0.0.1:5000/predict/verse/dhp.19.budd.html/16
+ target_mismatch:PERSON:nalanda            | dn.01.0.bodh.html        |         1 |               0 | http://127.0.0.1:5000/predict/verse/dn.01.0.bodh.html/0
+ target_mismatch:PERSON:nalanda            | dn.11.0.than.html        |         4 |               5 | http://127.0.0.1:5000/predict/verse/dn.11.0.than.html/5
+ target_mismatch:LOC:brahma                | dn.16.5-6.than.html      |        76 |              75 | http://127.0.0.1:5000/predict/verse/dn.16.5-6.than.html/75
+ target_mismatch:LOC:brahma                | dn.16.5-6.than.html      |        77 |              76 | http://127.0.0.1:5000/predict/verse/dn.16.5-6.than.html/76
+ target_mismatch:LOC:brahma                | dn.20.0.than.html        |        90 |              89 | http://127.0.0.1:5000/predict/verse/dn.20.0.than.html/89
+ target_mismatch:PERSON:arahant            | iti.3.072-090x.irel.html |        93 |              27 | http://127.0.0.1:5000/predict/verse/iti.3.072-090x.irel.html/27
+ target_mismatch:PERSON:long               | khp.9.budd.html          |         1 |               0 | http://127.0.0.1:5000/predict/verse/khp.9.budd.html/0
+ target_mismatch:PERSON:arahant            | miln.5x.horn.html        |        14 |              13 | http://127.0.0.1:5000/predict/verse/miln.5x.horn.html/13
+ target_mismatch:PERSON:arahant            | miln.5x.horn.html        |        20 |              19 | http://127.0.0.1:5000/predict/verse/miln.5x.horn.html/19
+ target_mismatch:PERSON:arahant            | mn.026.than.html         |        45 |              47 | http://127.0.0.1:5000/predict/verse/mn.026.than.html/47
+ target_mismatch:PERSON:awakened           | mn.035.than.html         |        72 |              71 | http://127.0.0.1:5000/predict/verse/mn.035.than.html/71
+ target_mismatch:LOC:brahma                | mn.049.than.html         |        21 |              14 | http://127.0.0.1:5000/predict/verse/mn.049.than.html/14
+ target_mismatch:LOC:brahma                | mn.049.than.html         |        22 |              15 | http://127.0.0.1:5000/predict/verse/mn.049.than.html/15
+ target_mismatch:LOC:brahma                | mn.049.than.html         |        24 |              17 | http://127.0.0.1:5000/predict/verse/mn.049.than.html/17
+ target_mismatch:LOC:brahma                | mn.049.than.html         |        25 |              18 | http://127.0.0.1:5000/predict/verse/mn.049.than.html/18
+ target_mismatch:LOC:brahma                | mn.049.than.html         |        27 |              20 | http://127.0.0.1:5000/predict/verse/mn.049.than.html/20
+ target_mismatch:LOC:brahma                | mn.049.than.html         |        32 |              25 | http://127.0.0.1:5000/predict/verse/mn.049.than.html/25
+ target_mismatch:LOC:brahma                | mn.049.than.html         |        33 |              26 | http://127.0.0.1:5000/predict/verse/mn.049.than.html/26
+ target_mismatch:LOC:brahma                | mn.049.than.html         |        41 |              34 | http://127.0.0.1:5000/predict/verse/mn.049.than.html/34
+ target_mismatch:PERSON:ratthapala's       | mn.082.than.html         |        20 |              13 | http://127.0.0.1:5000/predict/verse/mn.082.than.html/13
+ target_mismatch:PERSON:ratthapala's       | mn.082.than.html         |        22 |              15 | http://127.0.0.1:5000/predict/verse/mn.082.than.html/15
+ target_mismatch:PERSON:ratthapala's       | mn.082.than.html         |        26 |              19 | http://127.0.0.1:5000/predict/verse/mn.082.than.html/19
+ target_mismatch:PERSON:ratthapala's       | mn.082.than.html         |        29 |              22 | http://127.0.0.1:5000/predict/verse/mn.082.than.html/22
+ target_mismatch:PERSON:ratthapala's       | mn.082.than.html         |        33 |              26 | http://127.0.0.1:5000/predict/verse/mn.082.than.html/26
+ target_mismatch:PERSON:apparently         | mn.093.than.html         |         5 |               4 | http://127.0.0.1:5000/predict/verse/mn.093.than.html/4
+ target_mismatch:PERSON:elder              | mn.136.than.html         |         8 |               7 | http://127.0.0.1:5000/predict/verse/mn.136.than.html/7
+ target_mismatch:LOC:tathagatha            | mn.141.than.html         |         3 |               2 | http://127.0.0.1:5000/predict/verse/mn.141.than.html/2
+ target_mismatch:LOC:tathagatha            | mn.141.than.html         |         8 |               7 | http://127.0.0.1:5000/predict/verse/mn.141.than.html/7
+ target_mismatch:LOC:tathagatha            | mn.141.than.html         |        35 |              34 | http://127.0.0.1:5000/predict/verse/mn.141.than.html/34
+ target_mismatch:PERSON:arahant            | sn01.020.wlsh.html       |        20 |              20 | http://127.0.0.1:5000/predict/verse/sn01.020.wlsh.html/20
+ target_mismatch:PERSON:arahant            | sn06.001.than.html       |         7 |               6 | http://127.0.0.1:5000/predict/verse/sn06.001.than.html/6
+ target_mismatch:PERSON:arahant            | sn06.002.than.html       |         9 |               8 | http://127.0.0.1:5000/predict/verse/sn06.002.than.html/8
+ target_mismatch:PERSON:arahant            | sn07.001.wlsh.html       |         3 |               2 | http://127.0.0.1:5000/predict/verse/sn07.001.wlsh.html/2
+ target_mismatch:PERSON:arahant            | sn07.001.wlsh.html       |         5 |               4 | http://127.0.0.1:5000/predict/verse/sn07.001.wlsh.html/4
+ target_mismatch:PERSON:arahant            | sn07.001.wlsh.html       |        10 |               9 | http://127.0.0.1:5000/predict/verse/sn07.001.wlsh.html/9
+ target_mismatch:PERSON:arahant            | sn07.002.wlsh.html       |        12 |               9 | http://127.0.0.1:5000/predict/verse/sn07.002.wlsh.html/9
+ target_mismatch:PERSON:arahant            | sn07.002.wlsh.html       |        15 |              12 | http://127.0.0.1:5000/predict/verse/sn07.002.wlsh.html/12
+ focus:sn12_011_012_related                | sn12.011.nypo.html       |         1 |               0 | http://127.0.0.1:5000/predict/verse/sn12.011.nypo.html/0
+ focus:sn12_011_012_related                | sn12.011.nypo.html       |         2 |               1 | http://127.0.0.1:5000/predict/verse/sn12.011.nypo.html/1
+ focus:sn12_011_012_related                | sn12.011.nypo.html       |         3 |               2 | http://127.0.0.1:5000/predict/verse/sn12.011.nypo.html/2
+ focus:sn12_011_012_related                | sn12.011.nypo.html       |         4 |               3 | http://127.0.0.1:5000/predict/verse/sn12.011.nypo.html/3
+ focus:sn12_011_012_related                | sn12.011.nypo.html       |         5 |               4 | http://127.0.0.1:5000/predict/verse/sn12.011.nypo.html/4
+ focus:sn12_011_012_related                | sn12.011.nypo.html       |         6 |               5 | http://127.0.0.1:5000/predict/verse/sn12.011.nypo.html/5
+ focus:sn12_011_012_related                | sn12.011.nypo.html       |         7 |               6 | http://127.0.0.1:5000/predict/verse/sn12.011.nypo.html/6
+ focus:sn12_011_012_related                | sn12.011.nypo.html       |         8 |               7 | http://127.0.0.1:5000/predict/verse/sn12.011.nypo.html/7
+ focus:sn12_011_012_related                | sn12.011.nypo.html       |         9 |               8 | http://127.0.0.1:5000/predict/verse/sn12.011.nypo.html/8
+ focus:sn12_011_012_related                | sn12.011.nypo.html       |        10 |               9 | http://127.0.0.1:5000/predict/verse/sn12.011.nypo.html/9
+ focus:sn12_011_012_related                | sn12.011.nypo.html       |        11 |              10 | http://127.0.0.1:5000/predict/verse/sn12.011.nypo.html/10
+ focus:sn12_011_012_related                | sn12.011.nypo.html       |        12 |              11 | http://127.0.0.1:5000/predict/verse/sn12.011.nypo.html/11
+ focus:sn12_011_012_related                | sn12.011.nypo.html       |        13 |              12 | http://127.0.0.1:5000/predict/verse/sn12.011.nypo.html/12
+ focus:sn12_011_012_related                | sn12.011.than.html       |         1 |               0 | http://127.0.0.1:5000/predict/verse/sn12.011.than.html/0
+ focus:sn12_011_012_related                | sn12.011.than.html       |         2 |               1 | http://127.0.0.1:5000/predict/verse/sn12.011.than.html/1
+ focus:sn12_011_012_related                | sn12.011.than.html       |         3 |               2 | http://127.0.0.1:5000/predict/verse/sn12.011.than.html/2
+ focus:sn12_011_012_related                | sn12.011.than.html       |         4 |               3 | http://127.0.0.1:5000/predict/verse/sn12.011.than.html/3
+ focus:sn12_011_012_related                | sn12.011.than.html       |         5 |               4 | http://127.0.0.1:5000/predict/verse/sn12.011.than.html/4
+ focus:sn12_011_012_related                | sn12.011.than.html       |         6 |               5 | http://127.0.0.1:5000/predict/verse/sn12.011.than.html/5
+ focus:sn12_011_012_related                | sn12.011.than.html       |         7 |               6 | http://127.0.0.1:5000/predict/verse/sn12.011.than.html/6
+ focus:sn12_011_012_related                | sn12.011.than.html       |         8 |               7 | http://127.0.0.1:5000/predict/verse/sn12.011.than.html/7
+ focus:sn12_011_012_related                | sn12.011.than.html       |         9 |               8 | http://127.0.0.1:5000/predict/verse/sn12.011.than.html/8
+ focus:sn12_011_012_related                | sn12.011.than.html       |        10 |               9 | http://127.0.0.1:5000/predict/verse/sn12.011.than.html/9
+ focus:sn12_011_012_related                | sn12.011.than.html       |        11 |              10 | http://127.0.0.1:5000/predict/verse/sn12.011.than.html/10
+ focus:sn12_011_012_related                | sn12.011.than.html       |        12 |              11 | http://127.0.0.1:5000/predict/verse/sn12.011.than.html/11
+ focus:sn12_011_012_related                | sn12.011.than.html       |        13 |              12 | http://127.0.0.1:5000/predict/verse/sn12.011.than.html/12
+ focus:sn12_011_012_related                | sn12.011.than.html       |        14 |              13 | http://127.0.0.1:5000/predict/verse/sn12.011.than.html/13
+ focus:sn12_011_012_related                | sn12.011.than.html       |        15 |              14 | http://127.0.0.1:5000/predict/verse/sn12.011.than.html/14
+ focus:sn12_011_012_related                | sn12.011.than.html       |        16 |              15 | http://127.0.0.1:5000/predict/verse/sn12.011.than.html/15
+ focus:sn12_011_012_related                | sn12.011.than.html       |        17 |              16 | http://127.0.0.1:5000/predict/verse/sn12.011.than.html/16
+ focus:sn12_011_012_related                | sn12.011.than.html       |        18 |              17 | http://127.0.0.1:5000/predict/verse/sn12.011.than.html/17
+ focus:sn12_011_012_related                | sn12.011.than.html       |        19 |              18 | http://127.0.0.1:5000/predict/verse/sn12.011.than.html/18
+ focus:sn12_011_012_related                | sn12.011.than.html       |        20 |              19 | http://127.0.0.1:5000/predict/verse/sn12.011.than.html/19
+ focus:sn12_011_012_related                | sn12.011.than.html       |        21 |              20 | http://127.0.0.1:5000/predict/verse/sn12.011.than.html/20
+ focus:sn12_011_012_related                | sn12.012.nypo.html       |         1 |               0 | http://127.0.0.1:5000/predict/verse/sn12.012.nypo.html/0
+ focus:sn12_011_012_related                | sn12.012.nypo.html       |         2 |               1 | http://127.0.0.1:5000/predict/verse/sn12.012.nypo.html/1
+ focus:sn12_011_012_related                | sn12.012.nypo.html       |         3 |               2 | http://127.0.0.1:5000/predict/verse/sn12.012.nypo.html/2
+ focus:sn12_011_012_related                | sn12.012.nypo.html       |         4 |               3 | http://127.0.0.1:5000/predict/verse/sn12.012.nypo.html/3
+ focus:sn12_011_012_related                | sn12.012.nypo.html       |         5 |               4 | http://127.0.0.1:5000/predict/verse/sn12.012.nypo.html/4
+ focus:sn12_011_012_related                | sn12.012.nypo.html       |         6 |               5 | http://127.0.0.1:5000/predict/verse/sn12.012.nypo.html/5
+ focus:sn12_011_012_related                | sn12.012.nypo.html       |         7 |               6 | http://127.0.0.1:5000/predict/verse/sn12.012.nypo.html/6
+ focus:sn12_011_012_related                | sn12.012.nypo.html       |         8 |               7 | http://127.0.0.1:5000/predict/verse/sn12.012.nypo.html/7
+ focus:sn12_011_012_related                | sn12.012.nypo.html       |         9 |               8 | http://127.0.0.1:5000/predict/verse/sn12.012.nypo.html/8
+ focus:sn12_011_012_related                | sn12.012.nypo.html       |        10 |               9 | http://127.0.0.1:5000/predict/verse/sn12.012.nypo.html/9
+ focus:sn12_011_012_related                | sn12.012.nypo.html       |        11 |              10 | http://127.0.0.1:5000/predict/verse/sn12.012.nypo.html/10
+ focus:sn12_011_012_related                | sn12.012.nypo.html       |        12 |              11 | http://127.0.0.1:5000/predict/verse/sn12.012.nypo.html/11
+ focus:sn12_011_012_related                | sn12.012.nypo.html       |        13 |              12 | http://127.0.0.1:5000/predict/verse/sn12.012.nypo.html/12
+ focus:sn12_011_012_related                | sn12.012.nypo.html       |        14 |              13 | http://127.0.0.1:5000/predict/verse/sn12.012.nypo.html/13
+ focus:sn12_011_012_related                | sn12.012.than.html       |         1 |               0 | http://127.0.0.1:5000/predict/verse/sn12.012.than.html/0
+ focus:sn12_011_012_related                | sn12.012.than.html       |         2 |               1 | http://127.0.0.1:5000/predict/verse/sn12.012.than.html/1
+ focus:sn12_011_012_related                | sn12.012.than.html       |         3 |               2 | http://127.0.0.1:5000/predict/verse/sn12.012.than.html/2
+ focus:sn12_011_012_related                | sn12.012.than.html       |         4 |               3 | http://127.0.0.1:5000/predict/verse/sn12.012.than.html/3
+ focus:sn12_011_012_related                | sn12.012.than.html       |         5 |               4 | http://127.0.0.1:5000/predict/verse/sn12.012.than.html/4
+ focus:sn12_011_012_related                | sn12.012.than.html       |         6 |               5 | http://127.0.0.1:5000/predict/verse/sn12.012.than.html/5
+ focus:sn12_011_012_related                | sn12.012.than.html       |         7 |               6 | http://127.0.0.1:5000/predict/verse/sn12.012.than.html/6
+ focus:sn12_011_012_related                | sn12.012.than.html       |         8 |               7 | http://127.0.0.1:5000/predict/verse/sn12.012.than.html/7
+ focus:sn12_011_012_related                | sn12.012.than.html       |         9 |               8 | http://127.0.0.1:5000/predict/verse/sn12.012.than.html/8
+ focus:sn12_011_012_related                | sn12.012.than.html       |        10 |               9 | http://127.0.0.1:5000/predict/verse/sn12.012.than.html/9
+ focus:sn12_011_012_related                | sn12.012.than.html       |        11 |              10 | http://127.0.0.1:5000/predict/verse/sn12.012.than.html/10
+ focus:sn12_011_012_related                | sn12.012.than.html       |        12 |              11 | http://127.0.0.1:5000/predict/verse/sn12.012.than.html/11
+ target_mismatch:PERSON:arahant            | sn12.017x.wlsh.html      |        16 |              15 | http://127.0.0.1:5000/predict/verse/sn12.017x.wlsh.html/15
+ target_mismatch:PERSON:elder              | sn21.010.than.html       |         7 |               5 | http://127.0.0.1:5000/predict/verse/sn21.010.than.html/5
+ target_mismatch:PERSON:elder              | sn21.010.than.html       |        11 |               9 | http://127.0.0.1:5000/predict/verse/sn21.010.than.html/9
+ target_mismatch:PERSON:arahant            | sn22.084x.wlsh.html      |         3 |               2 | http://127.0.0.1:5000/predict/verse/sn22.084x.wlsh.html/2
+ target_mismatch:PERSON:arahant            | sn22.089x.wlsh.html      |         1 |               0 | http://127.0.0.1:5000/predict/verse/sn22.089x.wlsh.html/0
+ target_mismatch:PERSON:arahant            | sn35.095.wlsh.html       |        15 |              11 | http://127.0.0.1:5000/predict/verse/sn35.095.wlsh.html/11
+ target_mismatch:PERSON:arahant            | sn35.127.wlsh.html       |         2 |               1 | http://127.0.0.1:5000/predict/verse/sn35.127.wlsh.html/1
+ target_mismatch:PERSON:apparently         | sn42.002.than.html       |         5 |               4 | http://127.0.0.1:5000/predict/verse/sn42.002.than.html/4
+ target_mismatch:PERSON:apparently         | sn42.003.than.html       |         4 |               3 | http://127.0.0.1:5000/predict/verse/sn42.003.than.html/3
+ target_mismatch:PERSON:nalanda            | sn42.009.than.html       |         2 |               1 | http://127.0.0.1:5000/predict/verse/sn42.009.than.html/1
+ target_mismatch:LOC:squirrels' sanctuary. | sn46.014.than.html       |         1 |               0 | http://127.0.0.1:5000/predict/verse/sn46.014.than.html/0
+ target_mismatch:PERSON:arahant            | sn47.046.wlsh.html       |         7 |               6 | http://127.0.0.1:5000/predict/verse/sn47.046.wlsh.html/6
+ target_mismatch:LOC:... &                 | sn54.013.than.html       |        10 |               9 | http://127.0.0.1:5000/predict/verse/sn54.013.than.html/9
+ target_mismatch:LOC:... &                 | sn54.013.than.html       |        11 |              10 | http://127.0.0.1:5000/predict/verse/sn54.013.than.html/10
+ target_mismatch:LOC:... &                 | sn54.013.than.html       |        12 |              11 | http://127.0.0.1:5000/predict/verse/sn54.013.than.html/11
+ target_mismatch:LOC:... &                 | sn54.013.than.html       |        13 |              12 | http://127.0.0.1:5000/predict/verse/sn54.013.than.html/12
+ target_mismatch:LOC:stream-winner         | sn55.024.wlsh.html       |         1 |               0 | http://127.0.0.1:5000/predict/verse/sn55.024.wlsh.html/0
+ target_mismatch:LOC:stream-winner         | sn55.024.wlsh.html       |         6 |               5 | http://127.0.0.1:5000/predict/verse/sn55.024.wlsh.html/5
+ target_mismatch:PERSON:long               | snp.1.08.budd.html       |         1 |               0 | http://127.0.0.1:5000/predict/verse/snp.1.08.budd.html/0
+ target_mismatch:LOC:knower (              | snp.2.01.piya.html       |        13 |              12 | http://127.0.0.1:5000/predict/verse/snp.2.01.piya.html/12
+ target_mismatch:PERSON:master's           | thig.14.01.than.html     |         1 |               0 | http://127.0.0.1:5000/predict/verse/thig.14.01.than.html/0
+ target_mismatch:LOC:squirrels' sanctuary. | ud.1.06.than.html        |         3 |               2 | http://127.0.0.1:5000/predict/verse/ud.1.06.than.html/2
+ target_mismatch:PERSON:arahant            | ud.1.10.irel.html        |         6 |               5 | http://127.0.0.1:5000/predict/verse/ud.1.10.irel.html/5
+ target_mismatch:PERSON:arahant            | ud.1.10.irel.html        |         7 |               6 | http://127.0.0.1:5000/predict/verse/ud.1.10.irel.html/6
+ target_mismatch:LOC:mango grove.          | ud.2.10.than.html        |         2 |               1 | http://127.0.0.1:5000/predict/verse/ud.2.10.than.html/1
+ target_mismatch:LOC:squirrels' sanctuary. | ud.3.07.than.html        |         3 |               1 | http://127.0.0.1:5000/predict/verse/ud.3.07.than.html/1
+ target_mismatch:LOC:squirrels' sanctuary. | ud.4.04.than.html        |         2 |               2 | http://127.0.0.1:5000/predict/verse/ud.4.04.than.html/2
+ target_mismatch:LOC:squirrels' sanctuary. | ud.4.09.than.html        |         3 |               3 | http://127.0.0.1:5000/predict/verse/ud.4.09.than.html/3
+ target_mismatch:LOC:squirrels' sanctuary. | ud.5.03.than.html        |         3 |               2 | http://127.0.0.1:5000/predict/verse/ud.5.03.than.html/2
+ target_mismatch:LOC:squirrels' sanctuary. | ud.6.08.than.html        |         3 |               3 | http://127.0.0.1:5000/predict/verse/ud.6.08.than.html/3
+(160 rows)
+

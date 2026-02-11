@@ -1,0 +1,501 @@
+label,norm,example_surface,suggested_canonical,bucket,freq
+PERSON,cunda,Cunda,,likely_missing_canonical_entity,89
+PERSON,aggivessana,Aggivessana,,likely_missing_canonical_entity,85
+PERSON,bhaddiya,Bhaddiya,,likely_missing_canonical_entity,54
+PERSON,mahanama,Mahanama,,likely_missing_canonical_entity,52
+PERSON,nagasena,Nagasena,,likely_missing_canonical_entity,49
+PERSON,anuruddha,Anuruddha,,likely_missing_canonical_entity,48
+PERSON,lohicca,Lohicca,,likely_missing_canonical_entity,47
+PERSON,meghiya,Meghiya,,likely_missing_canonical_entity,46
+PERSON,samiddhi,Samiddhi,,likely_missing_canonical_entity,46
+PERSON,rahula,Rahula,,likely_missing_canonical_entity,44
+PERSON,potthapada,Potthapada,,likely_missing_canonical_entity,42
+PERSON,maha kassapa,Ven. Maha Kassapa,,likely_missing_canonical_entity,40
+PERSON,tissa,Tissa,,likely_missing_canonical_entity,37
+PERSON,punna,Punna,,likely_missing_canonical_entity,36
+PERSON,khemaka,Khemaka,,likely_missing_canonical_entity,35
+PERSON,arahant,Arahant,,likely_noise_or_bad_ner,31
+PERSON,vaccha,Vaccha,,likely_missing_canonical_entity,31
+PERSON,sir,Ven. Sir,,likely_noise_or_bad_ner,30
+PERSON,brahmas,Brahmas,,likely_missing_canonical_entity,27
+PERSON,nigantha nataputta,Nigantha Nataputta,,likely_missing_canonical_entity,27
+LOC,brahma worlds,Brahma worlds,,likely_missing_canonical_entity,25
+PERSON,kali,Kali,,likely_missing_canonical_entity,25
+PERSON,noble one,Noble One,,likely_noise_or_bad_ner,25
+PERSON,maha kotthita,Maha Kotthita,,likely_missing_canonical_entity,24
+PERSON,tathagatas,Tathagatas,,likely_noise_or_bad_ner,22
+PERSON,prince jayasena,Prince Jayasena,,likely_missing_canonical_entity,21
+PERSON,vedehika,Vedehika,,likely_missing_canonical_entity,21
+PERSON,godha,Godha,,likely_missing_canonical_entity,20
+PERSON,kasi bharadvaja,Kasi Bharadvaja,,likely_missing_canonical_entity,20
+PERSON,udayi,Udayi,,likely_missing_canonical_entity,20
+PERSON,uttara,Uttara,,likely_missing_canonical_entity,20
+PERSON,yamaka,Ven. Yamaka,,likely_missing_canonical_entity,20
+PERSON,girimananda,Girimananda,,likely_missing_canonical_entity,19
+PERSON,potaliputta,Potaliputta,,likely_missing_canonical_entity,19
+PERSON,punnaka,Punnaka,,likely_missing_canonical_entity,19
+PERSON,queen mallika,Queen Mallika,,likely_missing_canonical_entity,19
+PERSON,bhumija,Bhumija,,likely_missing_canonical_entity,18
+PERSON,malunkyaputta,Malunkyaputta,,likely_missing_canonical_entity,18
+PERSON,nagita,Nagita,,likely_missing_canonical_entity,18
+PERSON,vacchagotta,Vacchagotta,,likely_missing_canonical_entity,18
+LOC,jeta grove,Jeta Grove,,likely_missing_canonical_entity,17
+PERSON,kamabhu,Ven. Kamabhu,,likely_missing_canonical_entity,17
+PERSON,sunidha,Sunidha,,likely_missing_canonical_entity,17
+LOC,brahma,Brahma,,likely_missing_canonical_entity,16
+PERSON,sunakkhatta,Sunakkhatta,,likely_missing_canonical_entity,16
+LOC,brahma world,Brahma world,Brahma-world,likely_missing_alias_for_existing,15
+LOC,game refuge at isipatana,Game Refuge at Isipatana,,likely_missing_canonical_entity,15
+PERSON,kasibharadvaja,Kasibharadvaja,,likely_missing_canonical_entity,15
+PERSON,kevatta,Kevatta,,likely_missing_canonical_entity,15
+PERSON,mallika,Mallika,,likely_missing_canonical_entity,15
+PERSON,suriya,Suriya,,likely_missing_canonical_entity,15
+PERSON,vasitthas,Vasitthas,,likely_missing_canonical_entity,15
+LOC,... &,... &,,likely_noise_or_bad_ner,14
+LOC,eastern monastery,Eastern Monastery,,likely_missing_canonical_entity,14
+LOC,palace of migara's mother,palace of Migara's mother,,likely_missing_canonical_entity,14
+PERSON,fully enlightened one,Fully Enlightened One,,likely_noise_or_bad_ner,14
+PERSON,one,Venerable One,,likely_noise_or_bad_ner,14
+PERSON,pingiya,Pingiya,,likely_missing_canonical_entity,14
+LOC,jeta wood,Jeta Wood,,likely_missing_canonical_entity,13
+PERSON,dasaka,Dasaka,,likely_missing_canonical_entity,13
+PERSON,tathaagata,Tathaagata,,likely_missing_canonical_entity,13
+PERSON,cundaka,Cundaka,,likely_missing_canonical_entity,12
+PERSON,kaccana,Kaccana,,likely_missing_canonical_entity,12
+PERSON,kotthita,Kotthita,,likely_missing_canonical_entity,12
+PERSON,lady vedehika,Lady Vedehika,,likely_missing_canonical_entity,12
+PERSON,mahaka,Mahaka,,likely_missing_canonical_entity,12
+PERSON,mettagu,Mettagu,,likely_missing_canonical_entity,12
+PERSON,unrivalled one,Unrivalled One,,likely_missing_canonical_entity,12
+LOC,patali village,Pāṭali Village,,likely_missing_canonical_entity,11
+PERSON,aciravata,Aciravata,,likely_missing_canonical_entity,11
+PERSON,assaji,Assaji,,likely_missing_canonical_entity,11
+PERSON,great sage,Great Sage,,likely_missing_canonical_entity,11
+PERSON,isidatta,Isidatta,,likely_missing_canonical_entity,11
+PERSON,nagasamala,Nagasamala,,likely_missing_canonical_entity,11
+PERSON,narada,Narada,,likely_missing_canonical_entity,11
+PERSON,pavittha,Pavittha,,likely_missing_canonical_entity,11
+PERSON,saavatthii,Saavatthii,,likely_missing_canonical_entity,11
+PERSON,suppabuddha,Suppabuddha,,likely_missing_canonical_entity,11
+PERSON,vyagghapajja,Vyagghapajja,,likely_missing_canonical_entity,11
+LOC,crocodile haunt,Crocodile Haunt,,likely_missing_canonical_entity,10
+LOC,deer park at bhesakala grove,Deer Park at Bhesakala Grove,,likely_missing_canonical_entity,10
+LOC,nimmanarati,Nimmanarati,,likely_missing_canonical_entity,10
+PERSON,kamada,Kamada,,likely_missing_canonical_entity,10
+PERSON,kuvera,Kuvera,,likely_missing_canonical_entity,10
+PERSON,musila,Musila,,likely_missing_canonical_entity,10
+PERSON,punna mantaniputta,Punna Mantaniputta,,likely_missing_canonical_entity,10
+PERSON,rama,Rama,,likely_missing_canonical_entity,10
+PERSON,sage,Sage,,likely_missing_canonical_entity,10
+PERSON,seeing one,Seeing One,,likely_missing_canonical_entity,10
+PERSON,uddaka,Uddaka,,likely_missing_canonical_entity,10
+PERSON,uggahamana,Uggahamana,,likely_missing_canonical_entity,10
+PERSON,uttiya,Uttiya,,likely_missing_canonical_entity,10
+PERSON,vangisa,Vangisa,,likely_missing_canonical_entity,10
+PERSON,varuna,Varuna,,likely_missing_canonical_entity,10
+PERSON,cala,Cala,,likely_missing_canonical_entity,9
+PERSON,great seer,Great Seer,,likely_missing_canonical_entity,9
+PERSON,matali,Matali,,likely_missing_canonical_entity,9
+PERSON,private buddha,Private Buddha,,likely_missing_canonical_entity,9
+PERSON,sangamaji,Master Saṅgāmaji,,likely_missing_canonical_entity,9
+PERSON,upacala,Upacala,,likely_missing_canonical_entity,9
+PERSON,uppalavanna,Uppalavanna,,likely_missing_canonical_entity,9
+PERSON,vakkali,Vakkali,,likely_missing_canonical_entity,9
+LOC,upavattana,Upavattana,,likely_missing_canonical_entity,8
+PERSON,,Master,,likely_missing_canonical_entity,8
+PERSON,aananda,Aananda,,likely_missing_canonical_entity,8
+PERSON,ajatasattu,Ajatasattu,,likely_missing_canonical_entity,8
+PERSON,bhaaradvaaja,Bhaaradvaaja,,likely_missing_canonical_entity,8
+PERSON,bodhisatta,Bodhisatta,,likely_missing_canonical_entity,8
+PERSON,ciravasi,Ciravasi,,likely_missing_canonical_entity,8
+PERSON,dasama,Dasama,,likely_missing_canonical_entity,8
+PERSON,elder,Elder,,likely_noise_or_bad_ner,8
+PERSON,kesi,Kesi,,likely_missing_canonical_entity,8
+PERSON,pataliputta,Pataliputta,,likely_missing_canonical_entity,8
+PERSON,pukkusati,Pukkusati,,likely_missing_canonical_entity,8
+PERSON,rammaka,Rammaka,,likely_missing_canonical_entity,8
+PERSON,sisupacala,Sisupacala,,likely_missing_canonical_entity,8
+PERSON,sugata,Sugata,,likely_noise_or_bad_ner,8
+PERSON,sumana,Sumana,,likely_missing_canonical_entity,8
+PERSON,udaayii,Udaayii,,likely_missing_canonical_entity,8
+PERSON,uddaka ramaputta,Uddaka Ramaputta,,likely_missing_canonical_entity,8
+PERSON,upasena,Ven. Upasena,,likely_missing_canonical_entity,8
+PERSON,upasiva,Upasiva,,likely_missing_canonical_entity,8
+PERSON,vajira,Vajira,,likely_missing_canonical_entity,8
+PERSON,vijaya,Vijaya,,likely_missing_canonical_entity,8
+LOC,ghosita's park,Ghosita's Park,,likely_missing_canonical_entity,7
+LOC,squirrels' sanctuary.,Squirrels' Sanctuary.,Squirrels' Sanctuary,likely_missing_alias_for_existing,7
+PERSON,awakened,Awakened,,likely_missing_canonical_entity,7
+PERSON,consummate one,Consummate One,,likely_noise_or_bad_ner,7
+PERSON,general vidudabha,General Vidudabha,,likely_missing_canonical_entity,7
+PERSON,kaccayana,Kaccayana,,likely_missing_canonical_entity,7
+PERSON,maha cunda,Ven. Maha Cunda,,likely_missing_canonical_entity,7
+PERSON,medakathalika,Medakathalika,,likely_missing_canonical_entity,7
+PERSON,mogharaja,Mogharaja,,likely_missing_canonical_entity,7
+PERSON,nigantha,Nigantha,,likely_missing_canonical_entity,7
+PERSON,one-well-gone,One-Well-Gone,Buddha,likely_missing_alias_for_existing,7
+PERSON,punnika,Punnika,,likely_missing_canonical_entity,7
+PERSON,ramagama,Ramagama,,likely_missing_canonical_entity,7
+PERSON,saariputta,Saariputta,,likely_missing_canonical_entity,7
+PERSON,saccaka the nigantha-,Saccaka the Nigaṇṭha-,,likely_missing_canonical_entity,7
+PERSON,sangarava,Sangarava,,likely_missing_canonical_entity,7
+PERSON,sivaka,Sivaka,,likely_missing_canonical_entity,7
+PERSON,supreme buddha,Supreme Buddha,,likely_missing_canonical_entity,7
+GPE,sunaparanta,Sunaparanta,,likely_missing_canonical_entity,6
+LOC,bahuka river,Bahuka River,,likely_missing_canonical_entity,6
+LOC,ganges river,Ganges River,,likely_missing_canonical_entity,6
+LOC,great hell,Great Hell,,likely_missing_canonical_entity,6
+LOC,isigili mountain,Isigili mountain,,likely_missing_canonical_entity,6
+LOC,tavatimsa,Tavatimsa,,likely_missing_canonical_entity,6
+LOC,wild mango grove,Wild Mango Grove,,likely_missing_canonical_entity,6
+LOC,yamuna,Yamuna,,likely_missing_canonical_entity,6
+PERSON,anuraadha,Anuraadha,,likely_missing_canonical_entity,6
+PERSON,dabba mallaputta,Dabba Mallaputta,,likely_missing_canonical_entity,6
+PERSON,kaligodha's son,Kāḷigodhā's son,,likely_missing_canonical_entity,6
+PERSON,migara's mother,Migara's Mother,,likely_missing_canonical_entity,6
+PERSON,nalaka,Nalaka,,likely_missing_canonical_entity,6
+PERSON,nibbana,Nibbana,,likely_missing_canonical_entity,6
+PERSON,patacara,Patacara,,likely_missing_canonical_entity,6
+PERSON,punabbasu,Punabbasu,,likely_missing_canonical_entity,6
+PERSON,rohini's father,Rohini's father,,likely_missing_canonical_entity,6
+PERSON,sanjaya,Sañjaya,,likely_missing_canonical_entity,6
+PERSON,sarakaani,Sarakaani,,likely_missing_canonical_entity,6
+PERSON,"sati, the fisherman's son","Sāti, the Fisherman's Son",Sāti the Fisherman's Son,likely_missing_alias_for_existing,6
+PERSON,sela,Sela,,likely_missing_canonical_entity,6
+PERSON,sudassana,Sudassana,,likely_missing_canonical_entity,6
+PERSON,udaya,Udaya,,likely_missing_canonical_entity,6
+PERSON,upavana,Ven. Upavana,,likely_missing_canonical_entity,6
+PERSON,vasettha,Vasettha,,likely_missing_canonical_entity,6
+GPE,saavatthii,Saavatthii,,likely_missing_canonical_entity,5
+LOC,capala shrine,Capala shrine,,likely_missing_canonical_entity,5
+LOC,ghosita's monastery,Ghosita's monastery,,likely_missing_canonical_entity,5
+LOC,kukuta river,Kukuṭa River,,likely_missing_canonical_entity,5
+LOC,mount meru,Mount Meru,,likely_missing_canonical_entity,5
+LOC,paranimmitavasavatti,Paranimmitavasavatti,,likely_missing_canonical_entity,5
+LOC,sankheyyaka mountain,Sankheyyaka Mountain,,likely_missing_canonical_entity,5
+LOC,supreme,Supreme,,likely_missing_canonical_entity,5
+LOC,tathagatha,Tathagatha,,likely_missing_canonical_entity,5
+LOC,tusita,Tusita,,likely_missing_canonical_entity,5
+LOC,vultures' peak,Vultures' Peak,Vulture Peak Mountain,likely_missing_alias_for_existing,5
+PERSON,bhadda,Bhadda,,likely_missing_canonical_entity,5
+PERSON,devala,Devala,,likely_missing_canonical_entity,5
+PERSON,enlightened one,Enlightened One,,likely_missing_canonical_entity,5
+PERSON,kalama,Kalama,,likely_missing_canonical_entity,5
+PERSON,lord gotama,Lord Gotama,,likely_missing_canonical_entity,5
+PERSON,mahaanaama,Mahaanaama,,likely_missing_canonical_entity,5
+PERSON,nalanda,Nalanda,,likely_missing_canonical_entity,5
+PERSON,nandiya,Nandiya,,likely_missing_canonical_entity,5
+PERSON,perfect one,Perfect One,,likely_noise_or_bad_ner,5
+PERSON,pilindavaccha,Ven. Pilindavaccha,,likely_missing_canonical_entity,5
+PERSON,piyadassi,Piyadassi,,likely_missing_canonical_entity,5
+PERSON,prince abhaya,Prince Abhaya,,likely_missing_canonical_entity,5
+PERSON,radha,Radha,,likely_missing_canonical_entity,5
+PERSON,ratthapala's,Ratthapala's,,likely_missing_canonical_entity,5
+PERSON,revata,Revata,,likely_missing_canonical_entity,5
+PERSON,rosika,Rosika,,likely_missing_canonical_entity,5
+PERSON,saccaka the nigantha,Saccaka the Nigantha,,likely_missing_canonical_entity,5
+PERSON,u.n.naabha,U.n.naabha,,likely_missing_canonical_entity,5
+PERSON,vesali,Vesālī,,likely_missing_canonical_entity,5
+PERSON,vessamitta,Vessamitta,,likely_missing_canonical_entity,5
+PERSON,virulha,Virulha,,likely_missing_canonical_entity,5
+PERSON,yasoja,Ven. Yasoja,,likely_missing_canonical_entity,5
+GPE,licchavin,Licchavin,,likely_missing_canonical_entity,4
+GPE,rosika,Rosika,,likely_missing_canonical_entity,4
+GPE,thuna,Thuna,,likely_missing_canonical_entity,4
+GPE,yama,Yama,,likely_missing_canonical_entity,4
+LOC,ambapali's grove,Ambapali's grove,,likely_missing_canonical_entity,4
+LOC,brick hall,Brick Hall,,likely_missing_canonical_entity,4
+LOC,dakkhinagiri,Dakkhinagiri,,likely_missing_canonical_entity,4
+LOC,eastern bamboo park,Eastern Bamboo Park,,likely_missing_canonical_entity,4
+LOC,eastern gatehouse,Eastern Gatehouse,,likely_missing_canonical_entity,4
+LOC,gabled house,Gabled House,,likely_missing_canonical_entity,4
+LOC,mahi,Mahi,,likely_missing_canonical_entity,4
+LOC,piyadassi,Piyadassi,,likely_missing_canonical_entity,4
+LOC,river neranjara,river Nerañjara,,likely_missing_canonical_entity,4
+LOC,stream-winner,Stream-Winner,,likely_missing_canonical_entity,4
+LOC,tapoda hot springs,Tapoda Hot Springs,,likely_missing_canonical_entity,4
+PERSON,'s,Master's,,likely_missing_canonical_entity,4
+PERSON,adhimutta,Ven. Adhimutta,,likely_missing_canonical_entity,4
+PERSON,angirasa,Angirasa,,likely_missing_canonical_entity,4
+PERSON,asita,Asita,,likely_missing_canonical_entity,4
+PERSON,bhante,Bhante,,likely_missing_canonical_entity,4
+PERSON,ganaka-moggallana,Ganaka-Moggallana,,likely_missing_canonical_entity,4
+PERSON,great one,Great One,,likely_missing_canonical_entity,4
+PERSON,isana,Isana,,likely_missing_canonical_entity,4
+PERSON,kaccaayana,Kaccaayana,,likely_missing_canonical_entity,4
+PERSON,kala-khemaka,Kala-khemaka,,likely_missing_canonical_entity,4
+PERSON,kappayana,Kappayana,,likely_missing_canonical_entity,4
+PERSON,long,Long,,likely_missing_canonical_entity,4
+PERSON,maara,Maara,,likely_missing_canonical_entity,4
+PERSON,mahali,Mahali,,likely_missing_canonical_entity,4
+PERSON,makuta-bandhana,Makuta-bandhana,,likely_missing_canonical_entity,4
+PERSON,matanga,Matanga,,likely_missing_canonical_entity,4
+PERSON,novice cunda,Novice Cunda,,likely_missing_canonical_entity,4
+PERSON,pancalacanda,Pañcalacanda,,likely_missing_canonical_entity,4
+PERSON,phagguna,Phagguna,,likely_missing_canonical_entity,4
+PERSON,pindola bharadvaja,Ven. Pindola Bharadvaja,,likely_missing_canonical_entity,4
+PERSON,salavatika,Salavatika,,likely_missing_canonical_entity,4
+PERSON,samanas,Samanas,,likely_missing_canonical_entity,4
+PERSON,samandakani,Sāmaṇḍakāni,,likely_missing_canonical_entity,4
+PERSON,sandha,Sandha,,likely_missing_canonical_entity,4
+PERSON,sangaarava,Sangaarava,,likely_missing_canonical_entity,4
+PERSON,sirima,Sirima,,likely_missing_canonical_entity,4
+PERSON,sumangala,Sumangala,,likely_missing_canonical_entity,4
+PERSON,sundarika bharadvaja,Sundarika Bharadvaja,,likely_missing_canonical_entity,4
+PERSON,tapussa,Tapussa,,likely_missing_canonical_entity,4
+PERSON,ugga,Ugga,,likely_missing_canonical_entity,4
+PERSON,upaka,Upaka,,likely_missing_canonical_entity,4
+PERSON,upatissa,Upatissa,,likely_missing_canonical_entity,4
+PERSON,vepacitta,Vepacitta,,likely_missing_canonical_entity,4
+PERSON,verahaccaani,Verahaccaani,,likely_missing_canonical_entity,4
+PERSON,void,Void,,likely_missing_canonical_entity,4
+PERSON,yama,Yama,,likely_missing_canonical_entity,4
+GPE,beluva,Beluva,,likely_missing_canonical_entity,3
+GPE,kappa,Kappa,,likely_missing_canonical_entity,3
+GPE,nalaka,Nalaka,,likely_missing_canonical_entity,3
+GPE,parileyyaka,Parileyyaka,,likely_missing_canonical_entity,3
+LOC,gabled pavilion,Gabled Pavilion,,likely_missing_canonical_entity,3
+LOC,kakuttha river,Kakuttha River,,likely_missing_canonical_entity,3
+LOC,knower (,Knower (,,likely_missing_canonical_entity,3
+LOC,kosalan country,Kosalan country,,likely_missing_canonical_entity,3
+LOC,mango grove.,Mango Grove.,,likely_missing_canonical_entity,3
+LOC,nigrodha's park,Nigrodha's Park,,likely_missing_canonical_entity,3
+LOC,peaked roof pavilion,Peaked Roof Pavilion,,likely_missing_canonical_entity,3
+LOC,pipphali cave,Pipphali Cave,,likely_missing_canonical_entity,3
+LOC,squirrels' feeding ground,Squirrels' Feeding Ground,Squirrels' Sanctuary,likely_missing_alias_for_existing,3
+LOC,squirrels' feeding place,Squirrels' Feeding Place,Squirrels' Sanctuary,likely_missing_alias_for_existing,3
+LOC,tapoda monastery,Tapoda monastery,,likely_missing_canonical_entity,3
+LOC,tusita realm,Tusita realm,,likely_missing_canonical_entity,3
+LOC,vulture's peak mountain,Vulture's Peak Mountain,,likely_missing_canonical_entity,3
+PERSON,apparently,Apparently,,likely_missing_canonical_entity,3
+PERSON,atthaka,Atthaka,,likely_missing_canonical_entity,3
+PERSON,atula,Atula,,likely_missing_canonical_entity,3
+PERSON,awakened ones,Awakened Ones,,likely_missing_canonical_entity,3
+PERSON,bhagu,Bhagu,,likely_missing_canonical_entity,3
+PERSON,candana,Candana,,likely_missing_canonical_entity,3
+PERSON,dhanapalaka,Dhanapalaka,,likely_missing_canonical_entity,3
+PERSON,dhavajalika,Dhavajalika,,likely_missing_canonical_entity,3
+PERSON,greatest sage,Greatest Sage,,likely_missing_canonical_entity,3
+PERSON,hemaka,Hemaka,,likely_missing_canonical_entity,3
+PERSON,jetavana,Jetavana,,likely_missing_canonical_entity,3
+PERSON,kaccaana,Ven. Kaccaana,,likely_missing_canonical_entity,3
+PERSON,kaligodha,Kaligodha,,likely_missing_canonical_entity,3
+PERSON,kimila,Kimila,,likely_missing_canonical_entity,3
+PERSON,kinnughandu,Kinnughandu,,likely_missing_canonical_entity,3
+PERSON,kumbhira,Kumbhira,,likely_missing_canonical_entity,3
+PERSON,kusavati,Kusavati,,likely_missing_canonical_entity,3
+PERSON,macchikasanda,Macchikasanda,,likely_missing_canonical_entity,3
+PERSON,mahamoggallana,Venerable Mahamoggallana,Ven. Moggallana,likely_missing_alias_for_existing,3
+PERSON,mahapajapati gotami,Mahapajapati Gotami,,likely_missing_canonical_entity,3
+PERSON,moggallaana,Moggallaana,,likely_missing_canonical_entity,3
+PERSON,moliyasivaka,Moliyasivaka,Moliya Sivaka,likely_missing_alias_for_existing,3
+PERSON,nalijangha,Nalijangha,,likely_missing_canonical_entity,3
+PERSON,palileyyaka,Palileyyaka,,likely_missing_canonical_entity,3
+PERSON,parileyyaka,Parileyyaka,,likely_missing_canonical_entity,3
+PERSON,pasenadi kosala,Pasenadi Kosala,,likely_missing_canonical_entity,3
+PERSON,princess vajiri,Princess Vajiri,,likely_missing_canonical_entity,3
+PERSON,sigala,Sigala,,likely_missing_canonical_entity,3
+PERSON,siha,Siha,,likely_missing_canonical_entity,3
+PERSON,sikhi,Sikhi,,likely_missing_canonical_entity,3
+PERSON,soon,Soon,,likely_missing_canonical_entity,3
+PERSON,stainless one,Stainless One,,likely_missing_canonical_entity,3
+PERSON,sudatta,Sudatta,,likely_missing_canonical_entity,3
+PERSON,sujata,Sujata,,likely_missing_canonical_entity,3
+PERSON,supreme being,Supreme Being,,likely_missing_canonical_entity,3
+PERSON,sutavan,Sutavan,,likely_missing_canonical_entity,3
+PERSON,talaputa,Talaputa,,likely_missing_canonical_entity,3
+PERSON,tatha,Tatha,,likely_missing_canonical_entity,3
+PERSON,todeyya's son,Todeyya's son,,likely_missing_canonical_entity,3
+PERSON,universal seer,Universal Seer,,likely_missing_canonical_entity,3
+PERSON,upali,Upali,,likely_missing_canonical_entity,3
+PERSON,vacchayana,Master Vacchayana,,likely_missing_canonical_entity,3
+PERSON,vamadeva,Vamadeva,,likely_missing_canonical_entity,3
+PERSON,vamaka,Vamaka,,likely_missing_canonical_entity,3
+PERSON,vanquisher,Vanquisher,,likely_missing_canonical_entity,3
+PERSON,varunas,Varunas,,likely_missing_canonical_entity,3
+PERSON,velukandaki,Velukandaki,,likely_missing_canonical_entity,3
+PERSON,videhi queen,Videhi queen,,likely_missing_canonical_entity,3
+PERSON,wanderer,Wanderer,,likely_missing_canonical_entity,3
+PERSON,yamataggi,Yamataggi,,likely_missing_canonical_entity,3
+GPE,greed,Greed,,likely_missing_canonical_entity,2
+GPE,india,India,,likely_missing_canonical_entity,2
+GPE,kammasadamma,Kammasadamma,,likely_missing_canonical_entity,2
+GPE,pavarika,Pavarika,,likely_missing_canonical_entity,2
+GPE,pingalakoccha,Piṅgalakoccha,,likely_missing_canonical_entity,2
+GPE,sedaka,Sedaka,,likely_missing_canonical_entity,2
+GPE,sesavati,Sesavati,,likely_missing_canonical_entity,2
+GPE,tathagatas,Tathāgatas,,likely_missing_canonical_entity,2
+LOC,abhassara plane,Ābhassara plane,,likely_missing_canonical_entity,2
+LOC,aciravati,Aciravati,,likely_missing_canonical_entity,2
+LOC,ambalatthika garden,Ambalaṭṭhika garden,,likely_missing_canonical_entity,2
+LOC,bahuka,Bahuka,,likely_missing_canonical_entity,2
+LOC,black rock on,Black Rock on,,likely_missing_canonical_entity,2
+LOC,brahma realm,Brahma realm,,likely_missing_canonical_entity,2
+LOC,brick house,Brick House,,likely_missing_canonical_entity,2
+LOC,catummaharajika,Catummaharajika,,likely_missing_canonical_entity,2
+LOC,cool grove,Cool Grove,,likely_missing_canonical_entity,2
+LOC,eastern direction,Eastern Direction,,likely_missing_canonical_entity,2
+LOC,eastern park,Eastern Park,,likely_missing_canonical_entity,2
+LOC,ghosita 's monastery,Ghosita 's monastery,,likely_missing_canonical_entity,2
+LOC,ghosita 's park,Ghosita 's Park,,likely_missing_canonical_entity,2
+LOC,gijjhakuta mountain,Gijjhakuta mountain,,likely_missing_canonical_entity,2
+LOC,great,Great,,likely_missing_canonical_entity,2
+LOC,great roruva hell,Great Roruva hell,,likely_missing_canonical_entity,2
+LOC,isigili,Isigili,,likely_missing_canonical_entity,2
+LOC,jeta forest,Jeta Forest,,likely_missing_canonical_entity,2
+LOC,kosala country,Kosala country,,likely_missing_canonical_entity,2
+LOC,kuru people,Kuru people,,likely_missing_canonical_entity,2
+LOC,licchavi-son,Licchavi-son,,likely_missing_canonical_entity,2
+LOC,macchikasanda.,Macchikasanda.,,likely_missing_canonical_entity,2
+LOC,maddakucchi deer,Maddakucchi Deer,,likely_missing_canonical_entity,2
+LOC,magadhan country,Magadhan country,,likely_missing_canonical_entity,2
+LOC,makuta-bandhana,Makuta-bandhana,,likely_missing_canonical_entity,2
+LOC,matanga wilds,Matanga wilds,,likely_missing_canonical_entity,2
+LOC,migacira,Migacira,,likely_missing_canonical_entity,2
+LOC,monastery of anathapindika,monastery of Anathapindika,,likely_missing_canonical_entity,2
+LOC,niraya -hell,Niraya -hell,,likely_missing_canonical_entity,2
+LOC,palace of migara 's mother,palace of Migara 's mother,,likely_missing_canonical_entity,2
+LOC,pandava mountain,Pandava mountain,,likely_missing_canonical_entity,2
+LOC,pure,Pure,,likely_missing_canonical_entity,2
+LOC,rama declared,Rama declared,,likely_missing_canonical_entity,2
+LOC,river kimikala,river Kimikala,,likely_missing_canonical_entity,2
+LOC,sal tree,Sal Tree,,likely_missing_canonical_entity,2
+LOC,sala forest,sala forest,,likely_missing_canonical_entity,2
+LOC,sala.,Sala.,,likely_missing_canonical_entity,2
+LOC,sarabhu,Sarabhu,,likely_missing_canonical_entity,2
+LOC,sesavati,Sesavati,,likely_missing_canonical_entity,2
+LOC,squirrels' refuge,Squirrels' refuge,,likely_missing_canonical_entity,2
+LOC,tavatimsa heaven,Tavatimsa heaven,,likely_missing_canonical_entity,2
+LOC,tusita heaven,Tusita heaven,,likely_missing_canonical_entity,2
+LOC,untrodden land,Untrodden Land,,likely_missing_canonical_entity,2
+LOC,vepulla mountain,Vepulla mountain,,likely_missing_canonical_entity,2
+LOC,yama,Yama,,likely_missing_canonical_entity,2
+PERSON,accuta,Accuta,,likely_missing_canonical_entity,2
+PERSON,aciravati,Aciravatī,,likely_missing_canonical_entity,2
+PERSON,aggikabharadvaja,Aggikabharadvaja,,likely_missing_canonical_entity,2
+PERSON,ajakalapaka,Ajakalāpaka,,likely_missing_canonical_entity,2
+PERSON,amaravati,Amaravati,,likely_missing_canonical_entity,2
+PERSON,anna-kondanna,Añña-Kondañña,,likely_missing_canonical_entity,2
+PERSON,annata kondanna,Ven. Aññāta Koṇḍañña,,likely_missing_canonical_entity,2
+PERSON,asama,Asama,,likely_missing_canonical_entity,2
+PERSON,atanata,Atanata,,likely_missing_canonical_entity,2
+PERSON,bahuna,Bahuna,,likely_missing_canonical_entity,2
+PERSON,bali,Bali,,likely_missing_canonical_entity,2
+PERSON,bhaaradvaaja brahman,Bhaaradvaaja Brahman,,likely_missing_canonical_entity,2
+PERSON,bhadravudha,Bhadravudha,,likely_missing_canonical_entity,2
+PERSON,bhikkhu salha,bhikkhu Salha,,likely_missing_canonical_entity,2
+PERSON,buddharakkhita,Buddharakkhita,,likely_missing_canonical_entity,2
+PERSON,carpenter fivetool,Carpenter Fivetool,,likely_missing_canonical_entity,2
+PERSON,citra,Citra,,likely_missing_canonical_entity,2
+PERSON,cittasena,Cittasena,,likely_missing_canonical_entity,2
+PERSON,cula,Ven. Cūḷa,,likely_missing_canonical_entity,2
+PERSON,dandapani,Dandapani,,likely_missing_canonical_entity,2
+PERSON,deity,Deity,,likely_missing_canonical_entity,2
+PERSON,dhammika,Dhammika,,likely_missing_canonical_entity,2
+PERSON,elder kondanna,Elder Kondañña,,likely_missing_canonical_entity,2
+PERSON,eraka,Eraka,,likely_missing_canonical_entity,2
+PERSON,fully enlightened ones,Fully Enlightened Ones,,likely_missing_canonical_entity,2
+PERSON,gandhabhaka,Gandhabhaka,,likely_missing_canonical_entity,2
+PERSON,gather,Gather,,likely_missing_canonical_entity,2
+PERSON,general siha,General Siha,,likely_missing_canonical_entity,2
+PERSON,gentle,Gentle,,likely_missing_canonical_entity,2
+PERSON,ghata,Ghata,,likely_missing_canonical_entity,2
+PERSON,godatta,Ven. Godatta,,likely_missing_canonical_entity,2
+PERSON,great king vessavana,Great King Vessavana,,likely_missing_canonical_entity,2
+PERSON,hatthaka,Hatthaka,,likely_missing_canonical_entity,2
+PERSON,jata bharadvaja,Jata Bharadvaja,,likely_missing_canonical_entity,2
+PERSON,jatukannin,Jatukannin,,likely_missing_canonical_entity,2
+PERSON,kakudha,Kakudha,,likely_missing_canonical_entity,2
+PERSON,kalakanjas,Kalakanjas,,likely_missing_canonical_entity,2
+PERSON,kamasettha,Kamasettha,,likely_missing_canonical_entity,2
+PERSON,kandarayana,Kandarayana,,likely_missing_canonical_entity,2
+PERSON,kanha,Kanha,,likely_missing_canonical_entity,2
+PERSON,kappa,Kappa,,likely_missing_canonical_entity,2
+PERSON,katissabha,Katissabha,,likely_missing_canonical_entity,2
+PERSON,king,King,,likely_missing_canonical_entity,2
+PERSON,king of,King of,,likely_missing_canonical_entity,2
+PERSON,kitagiri,Kitagiri,,likely_missing_canonical_entity,2
+PERSON,koravya,Koravya,,likely_missing_canonical_entity,2
+PERSON,kukkata monastery,Kukkata Monastery,,likely_missing_canonical_entity,2
+PERSON,kutendu,Kutendu,,likely_missing_canonical_entity,2
+PERSON,maha kappina,Ven. Maha Kappina,,likely_missing_canonical_entity,2
+PERSON,mahacunda,Ven. MahaCunda,,likely_missing_canonical_entity,2
+PERSON,mantani,Mantani,,likely_missing_canonical_entity,2
+PERSON,maya,Maya,,likely_missing_canonical_entity,2
+PERSON,migacira,Migacira,,likely_missing_canonical_entity,2
+PERSON,migajala,Migajala,,likely_missing_canonical_entity,2
+PERSON,miln,Miln,,likely_missing_canonical_entity,2
+PERSON,moliya-phagguna,Ven.-Moliya-Phagguna,,likely_missing_canonical_entity,2
+PERSON,mortality,Mortality,,likely_missing_canonical_entity,2
+PERSON,muccalinda,Muccalinda,,likely_missing_canonical_entity,2
+PERSON,mundika,Mundika,,likely_missing_canonical_entity,2
+PERSON,nanamoli,Ñanamoli,,likely_missing_canonical_entity,2
+PERSON,nighandu,Nighandu,,likely_missing_canonical_entity,2
+PERSON,nikata,Nikata,,likely_missing_canonical_entity,2
+PERSON,opamanna,Opamanna,,likely_missing_canonical_entity,2
+PERSON,paccekabuddha,Paccekabuddha,,likely_missing_canonical_entity,2
+PERSON,paharada,Paharada,,likely_missing_canonical_entity,2
+PERSON,panada,Panada,,likely_missing_canonical_entity,2
+PERSON,pandava,Pandava,,likely_missing_canonical_entity,2
+PERSON,panthaka,Panthaka,,likely_missing_canonical_entity,2
+PERSON,paritta,Paritta,,likely_missing_canonical_entity,2
+PERSON,peaceful sage,Peaceful Sage,,likely_missing_canonical_entity,2
+PERSON,pilotika,Pilotika,,likely_missing_canonical_entity,2
+PERSON,posala,Posala,,likely_missing_canonical_entity,2
+PERSON,prince udayibhadda,Prince Udayibhadda,,likely_missing_canonical_entity,2
+PERSON,private buddhas,Private Buddhas,,likely_missing_canonical_entity,2
+PERSON,rable bharadvaja,Venrable Bharadvaja,,likely_missing_canonical_entity,2
+PERSON,raja,Raja,,likely_missing_canonical_entity,2
+PERSON,sabhiya kaccana,Ven. Sabhiya Kaccana,,likely_missing_canonical_entity,2
+PERSON,saccaka responded,Saccaka responded,,likely_missing_canonical_entity,2
+PERSON,sadamatta,Sadamatta,,likely_missing_canonical_entity,2
+PERSON,sahali,Sahali,,likely_missing_canonical_entity,2
+PERSON,sahampati brahma,Sahampati Brahma,,likely_missing_canonical_entity,2
+PERSON,salha,Salha,,likely_missing_canonical_entity,2
+PERSON,samavati,Sāmāvatī,,likely_missing_canonical_entity,2
+PERSON,sanankumara,Sanankumara,,likely_missing_canonical_entity,2
+PERSON,santuttha,Santuttha,,likely_missing_canonical_entity,2
+PERSON,sarabhu,Sarabhū,,likely_missing_canonical_entity,2
+PERSON,sarandada,Sarandada,,likely_missing_canonical_entity,2
+PERSON,sela the nun,Sela the nun,,likely_missing_canonical_entity,2
+PERSON,setabya,Setabya,,likely_missing_canonical_entity,2
+PERSON,sindhu,Sindhu,,likely_missing_canonical_entity,2
+PERSON,sona kotikanna's,Soṇa Koṭikaṇṇa's,,likely_missing_canonical_entity,2
+PERSON,sopaka,Sopaka,,likely_missing_canonical_entity,2
+PERSON,strewn,Strewn,,likely_missing_canonical_entity,2
+PERSON,strong,Strong,,likely_missing_canonical_entity,2
+PERSON,subhuti,Ven. Subhūti,,likely_missing_canonical_entity,2
+PERSON,sucitti,Sucitti,,likely_missing_canonical_entity,2
+PERSON,sundara,Sundara,,likely_missing_canonical_entity,2
+PERSON,sunimmita,Sunimmita,,likely_missing_canonical_entity,2
+PERSON,suppavasa's,Suppavāsā's,,likely_missing_canonical_entity,2
+PERSON,supremely enlightened one,Supremely Enlightened One,,likely_missing_canonical_entity,2
+PERSON,sword,Sword,,likely_missing_canonical_entity,2
+PERSON,taayana,Taayana,,likely_missing_canonical_entity,2
+PERSON,tagarasikhin,Tagarasikhin,,likely_missing_canonical_entity,2
+PERSON,tranquil sage,Tranquil Sage,,likely_missing_canonical_entity,2
+PERSON,tuttha,Tuttha,,likely_missing_canonical_entity,2
+PERSON,unburdened,Unburdened,,likely_missing_canonical_entity,2
+PERSON,uparittha,Uparittha,,likely_missing_canonical_entity,2
+PERSON,upasena vangantaputta,Ven. Upasena Vaṅgantaputta,,likely_missing_canonical_entity,2
+PERSON,vasavatti mara,Vasavatti Mara,,likely_missing_canonical_entity,2
+PERSON,veluvana,Veluvana,,likely_missing_canonical_entity,2
+PERSON,veroca,Veroca,,likely_missing_canonical_entity,2
+PERSON,years,years,,likely_missing_canonical_entity,2
+GPE,abhibhu,Abhibhu,,likely_missing_canonical_entity,1
+GPE,ambagama,Ambagama,,likely_missing_canonical_entity,1
+GPE,ambara,Ambara,,likely_missing_canonical_entity,1
+GPE,asita,Asita,,likely_missing_canonical_entity,1
+GPE,asura,Asura,,likely_missing_canonical_entity,1
+GPE,atuma,Atuma,,likely_missing_canonical_entity,1
+GPE,elder,Elder,,likely_noise_or_bad_ner,1
+GPE,haliddavasa,Haliddavasa,,likely_missing_canonical_entity,1
+GPE,hurry,Hurry,,likely_missing_canonical_entity,1
+GPE,jambugama,Jambugama,,likely_missing_canonical_entity,1
+GPE,kitagiri,Kitagiri,,likely_missing_canonical_entity,1
+GPE,natika,Ñatika,,likely_missing_canonical_entity,1
+GPE,navanavati,Navanavati,,likely_missing_canonical_entity,1
+GPE,oriental,Oriental,,likely_missing_canonical_entity,1
+GPE,palileyyaka,Palileyyaka,,likely_missing_canonical_entity,1
+GPE,pigeon,Pigeon,,likely_missing_canonical_entity,1
+GPE,pindola,Pindola,,likely_missing_canonical_entity,1

@@ -62,7 +62,7 @@ DROPOUT = 0.1
 DEV_RATIO = 0.1
 CONN = psycopg.connect("dbname=tipitaka user=alee")
 # REMEMBER to set this
-OUTPUT_DIR = WORK / "models" / "2026_01_27.v2"
+OUTPUT_DIR = WORK / "models" / "2026_02_10" 
 
 random.seed(SEED)
 
@@ -70,7 +70,7 @@ random.seed(SEED)
 # nlp = load_model()
 # load from installed in dist
 nlp = spacy.load("en_sutta_ner")
-assert nlp.meta.get("version") == "1.2.2", "Wrong en_sutta_ner version installed!"
+assert nlp.meta.get("version") == "1.2.3", "Wrong en_sutta_ner version installed!"
 
 ner = nlp.get_pipe("ner")
 

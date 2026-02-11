@@ -1,0 +1,236 @@
+Savatthi
+Sāvatthī
+Rajagaha
+Kusinara
+Vesali
+Magadha
+Kapilavatthu
+Varanasi
+Icchanangala
+Kasi
+Rājagaha
+Kosala
+Kosambi
+Thullakotthita
+Saketa
+Pataligama
+Benares
+Nalanda
+Pava
+Campa
+Kesaputta
+Sala
+Kusavati
+Toranavatthu
+Uruvelakappa
+Alavi
+Vesālī
+Uruvela
+Alakamanda
+Atthakanagara
+Kosambī
+Apana
+Gayā
+Kammasadhamma
+Pataliputta
+Ukkattha
+Uruvelā
+Veluvagamaka
+Isipatana
+Nadika
+Pipphalivana
+Bhoganagara
+Ekanala
+Gaya
+Kashmir
+Macchikasanda
+Saavatthii
+Avanti
+Bhandagama
+Haliddavasana
+Kalinga
+Kallavalaputta
+Mahisavatthu
+Saavatthi
+Salavatika
+Ambalatthika
+Atanata
+Jantu Village
+Kusinarā
+Payaga
+Pāṭali Village
+Raajagaha
+Sāvatthi
+Yama
+Isigili mountain
+Kapilavattu
+Thuna
+Ajjheya
+Allakappa
+Andhakavinda
+Avantī
+Calika
+Dhavajalika
+Gandharapura
+Hatthigama
+Icchānaṅgalaka
+Kakkarapatta
+Kalasigama
+Kapilavasthu
+Kimila
+Kingdom of Alakamanda
+Kosambii
+Kotigama
+Kuru
+Kuṇḍiya
+Madhura
+Parileyyaka
+Pāvā
+Sahajati
+Sanjatiya
+Simbali
+Supparaka
+Ukkacela
+Upavattana
+Visana
+Anupiya
+Anupiyā
+Assapura
+Assatara
+Bhesakala
+Bārāṇasī
+Devadaha
+Gandhara
+Giribbaja
+Jambudipa
+Kambala
+Kamboja
+Licchavin
+Okkala
+Pāva
+Rajagala
+Rajagir
+Ramagama
+Sunīdha
+Tacchaka
+Vehapphala
+Alavaka
+Anga
+Assaka
+Bhanda Village
+Ceti
+Kammasadamma
+Kure
+Maccha
+Malla
+Nagaraka
+Pancala
+Subhaga
+Surasena
+Vajji
+Vanarasi
+Vansa
+Visali
+! Licchavin
+Ambāṭakavana
+COUNT(*) AS freq
+Kappa
+Kosalan
+Nalaka
+ORDER BY freq DESC;
+Palileyyaka
+Savatthia
+Sumangala
+Sunidha
+Tathāgatas
+Uppala
+Vessavana
+Vārāṇasī
+! Abhibhu
+! Ajatasattu
+! Ajita
+! Atanata
+! Gijjhakuta mountain
+! India
+! Isigili mountain
+! Kali
+! Kalinga
+! Kanha
+! Kingdom of
+! Maara
+! Mahisavatthu
+! Oriental
+! Pali
+! Pandava mountain
+! Pasenadi
+! Sariputta
+! Sesavati
+! Sunīdha
+! Theri
+! Unmade
+! Vehapphala
+! Vepulla mountain
+! Visali
+! Yama
+! Yamuna
+Abhibhu
+Add:
+Ajatasattu (King Ajatasattu)
+Ajita (Ajita Kesakambalin)
+Akanittha
+Akanittha (one of the heavens)
+Allakappa (Buliyans of Allakappa)
+Amaravati
+Ambagama -- mango village
+Ambāṭakavana (the Plum-Mango Grove)
+Anupiya, Anupiyā
+Assapura (Now, the Angas have a town named Assapura)
+Beluva
+Bhagalavati
+Bhagalavati (hall named Bhagalavati where the Yakkhas assemble.)
+Brahmajala
+Brahmajala (Brahmajala Sutta, DN 1)
+CROSS JOIN LATERAL jsonb_array_elements(g.spans) AS s
+CROSS JOIN LATERAL jsonb_array_elements(v.ner_span) AS ent
+Dhanapalaka
+Dhanapalaka (the tusker named Dhanapalaka)
+ent->>'label' AS label,
+ent->>'text' AS text,
+Giribbaja ( the ancient capital of Magadha in the Buddha’s time.
+GPE marked as PERSON
+GROUP BY ent->>'text', ent->>'label'
+GROUP BY s->>'text'
+Gutijjita
+Gutijjita (paccekabuddha)
+India
+Isigili
+Isigili (moujntain)
+Isipatana (Game Refuge at Isipatana)
+Jantu
+Jantu (Jantu village, -OR- Now Jantu, son of the devas, on a fifteenth-day Uposatha)
+Kanhagotamaka
+Kanhagotamaka (The royal tribe of snakes called Virupakkha, Erapatha, Chabyaputta, and Kanhagotamaka)
+Kankharevata
+Kankharevata Kankharevata = Revata the Doubter).
+Kitagiri
+Kitagiri (a Kasi town called Kitagiri)
+Mantaniputta
+Mantaniputta (Ven. Punna Mantaniputta, Master Gagga Mantaniputta)
+Potthapada
+Potthapada ("Then, Potthapada, your self would be mind-made,)
+Pukkusati
+Pukkusati (clansman named Pukkusati)
+s->>'text' AS text,
+So it refers to a real historical city and surrounding fortified hills.)
+Subhakinha
+Subhakinha (the body named Subhakinha (Beautiful Black/Refulgent Glory)
+sunaparanta
+Tandulapala
+Tandulapala ( Tandulapala Gate)
+text
+Udañña
+Udañña ( staying among the Udaññans)
+Uggahamana
+Uggahamana (Uggahamana , a follower of Mundika the contemplative)
+Vebhara
+Vebhara (Vebhara mountain)
