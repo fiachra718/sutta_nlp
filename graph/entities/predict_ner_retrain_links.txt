@@ -1,0 +1,112 @@
+ verse_id |        identifier        | verse_num | target_label |      target_text      | found_label |      found_text       | route_verse_num |                           predict_url                           
+----------+--------------------------+-----------+--------------+-----------------------+-------------+-----------------------+-----------------+-----------------------------------------------------------------
+    17146 | an04.067.piya.html       |         6 | LOC          | supreme               | LOC         | Supreme               |               5 | http://127.0.0.1:5000/predict/verse/an04.067.piya.html/5
+    29546 | dhp.04.budd.html         |         1 | GPE          | yama                  | GPE         | Yama                  |               0 | http://127.0.0.1:5000/predict/verse/dhp.04.budd.html/0
+    29546 | dhp.04.budd.html         |         1 | GPE          | yama                  | GPE         | Yama                  |               0 | http://127.0.0.1:5000/predict/verse/dhp.04.budd.html/0
+    29547 | dhp.04.budd.html         |        44 | GPE          | yama                  | GPE         | Yama                  |               1 | http://127.0.0.1:5000/predict/verse/dhp.04.budd.html/1
+    29548 | dhp.04.budd.html         |        45 | GPE          | yama                  | GPE         | Yama                  |               2 | http://127.0.0.1:5000/predict/verse/dhp.04.budd.html/2
+    29595 | dhp.05.than.html         |        60 | PERSON       | long                  | PERSON      | Long                  |               0 | http://127.0.0.1:5000/predict/verse/dhp.05.than.html/0
+    29637 | dhp.07.budd.html         |         1 | PERSON       | void                  | PERSON      | Void                  |               0 | http://127.0.0.1:5000/predict/verse/dhp.07.budd.html/0
+    29637 | dhp.07.budd.html         |         1 | PERSON       | void                  | PERSON      | Void                  |               0 | http://127.0.0.1:5000/predict/verse/dhp.07.budd.html/0
+    29640 | dhp.07.budd.html         |        92 | PERSON       | void                  | PERSON      | Void                  |               3 | http://127.0.0.1:5000/predict/verse/dhp.07.budd.html/3
+    29641 | dhp.07.budd.html         |        93 | PERSON       | void                  | PERSON      | Void                  |               4 | http://127.0.0.1:5000/predict/verse/dhp.07.budd.html/4
+    29657 | dhp.08.budd.html         |         1 | LOC          | supreme               | LOC         | Supreme               |               0 | http://127.0.0.1:5000/predict/verse/dhp.08.budd.html/0
+    29657 | dhp.08.budd.html         |         1 | LOC          | supreme               | LOC         | Supreme               |               0 | http://127.0.0.1:5000/predict/verse/dhp.08.budd.html/0
+    29672 | dhp.08.budd.html         |       115 | LOC          | supreme               | LOC         | Supreme               |              15 | http://127.0.0.1:5000/predict/verse/dhp.08.budd.html/15
+    29672 | dhp.08.budd.html         |       115 | LOC          | supreme               | LOC         | Supreme               |              15 | http://127.0.0.1:5000/predict/verse/dhp.08.budd.html/15
+    29833 | dhp.14.than.html         |       183 | PERSON       | awakened              | PERSON      | Awakened              |               4 | http://127.0.0.1:5000/predict/verse/dhp.14.than.html/4
+    29834 | dhp.14.than.html         |       184 | PERSON       | awakened              | PERSON      | Awakened              |               5 | http://127.0.0.1:5000/predict/verse/dhp.14.than.html/5
+    29835 | dhp.14.than.html         |       185 | PERSON       | awakened              | PERSON      | Awakened              |               6 | http://127.0.0.1:5000/predict/verse/dhp.14.than.html/6
+    29959 | dhp.18.than.html         |       255 | PERSON       | awakened              | PERSON      | Awakened              |              18 | http://127.0.0.1:5000/predict/verse/dhp.18.than.html/18
+    29960 | dhp.19.budd.html         |         1 | PERSON       | elder                 | PERSON      | Elder                 |               0 | http://127.0.0.1:5000/predict/verse/dhp.19.budd.html/0
+    29966 | dhp.19.budd.html         |       261 | PERSON       | elder                 | PERSON      | Elder                 |               6 | http://127.0.0.1:5000/predict/verse/dhp.19.budd.html/6
+    19647 | dn.01.0.bodh.html        |         1 | PERSON       | nalanda               | PERSON      | Nālandā               |               0 | http://127.0.0.1:5000/predict/verse/dn.01.0.bodh.html/0
+    19647 | dn.01.0.bodh.html        |         1 | PERSON       | nalanda               | PERSON      | Nālandā               |               0 | http://127.0.0.1:5000/predict/verse/dn.01.0.bodh.html/0
+    20010 | dn.11.0.than.html        |         4 | PERSON       | nalanda               | PERSON      | Nalanda               |               5 | http://127.0.0.1:5000/predict/verse/dn.11.0.than.html/5
+    20461 | dn.16.5-6.than.html      |        76 | LOC          | brahma                | LOC         | brahma                |              75 | http://127.0.0.1:5000/predict/verse/dn.16.5-6.than.html/75
+    20462 | dn.16.5-6.than.html      |        77 | LOC          | brahma                | LOC         | brahma                |              76 | http://127.0.0.1:5000/predict/verse/dn.16.5-6.than.html/76
+    20689 | dn.20.0.than.html        |        90 | LOC          | brahma                | LOC         | brahma                |              89 | http://127.0.0.1:5000/predict/verse/dn.20.0.than.html/89
+    30543 | iti.3.072-090x.irel.html |        93 | PERSON       | arahant               | PERSON      | Arahant               |              27 | http://127.0.0.1:5000/predict/verse/iti.3.072-090x.irel.html/27
+    30646 | khp.9.budd.html          |         1 | PERSON       | long                  | PERSON      | Long                  |               0 | http://127.0.0.1:5000/predict/verse/khp.9.budd.html/0
+    30775 | miln.5x.horn.html        |        14 | PERSON       | arahant               | PERSON      | Arahant               |              13 | http://127.0.0.1:5000/predict/verse/miln.5x.horn.html/13
+    30781 | miln.5x.horn.html        |        20 | PERSON       | arahant               | PERSON      | Arahant               |              19 | http://127.0.0.1:5000/predict/verse/miln.5x.horn.html/19
+    22108 | mn.026.than.html         |        45 | PERSON       | arahant               | PERSON      | Arahant               |              47 | http://127.0.0.1:5000/predict/verse/mn.026.than.html/47
+    22406 | mn.035.than.html         |        72 | PERSON       | awakened              | PERSON      | Awakened              |              71 | http://127.0.0.1:5000/predict/verse/mn.035.than.html/71
+    22945 | mn.049.than.html         |        21 | LOC          | brahma                | LOC         | brahma                |              14 | http://127.0.0.1:5000/predict/verse/mn.049.than.html/14
+    22946 | mn.049.than.html         |        22 | LOC          | brahma                | LOC         | brahma                |              15 | http://127.0.0.1:5000/predict/verse/mn.049.than.html/15
+    22946 | mn.049.than.html         |        22 | LOC          | brahma                | LOC         | brahma                |              15 | http://127.0.0.1:5000/predict/verse/mn.049.than.html/15
+    22948 | mn.049.than.html         |        24 | LOC          | brahma                | LOC         | brahma                |              17 | http://127.0.0.1:5000/predict/verse/mn.049.than.html/17
+    22948 | mn.049.than.html         |        24 | LOC          | brahma                | LOC         | brahma                |              17 | http://127.0.0.1:5000/predict/verse/mn.049.than.html/17
+    22948 | mn.049.than.html         |        24 | LOC          | brahma                | LOC         | brahma                |              17 | http://127.0.0.1:5000/predict/verse/mn.049.than.html/17
+    22949 | mn.049.than.html         |        25 | LOC          | brahma                | LOC         | brahma                |              18 | http://127.0.0.1:5000/predict/verse/mn.049.than.html/18
+    22951 | mn.049.than.html         |        27 | LOC          | brahma                | LOC         | brahma                |              20 | http://127.0.0.1:5000/predict/verse/mn.049.than.html/20
+    22951 | mn.049.than.html         |        27 | LOC          | brahma                | LOC         | brahma                |              20 | http://127.0.0.1:5000/predict/verse/mn.049.than.html/20
+    22956 | mn.049.than.html         |        32 | LOC          | brahma                | LOC         | brahma                |              25 | http://127.0.0.1:5000/predict/verse/mn.049.than.html/25
+    22957 | mn.049.than.html         |        33 | LOC          | brahma                | LOC         | brahma                |              26 | http://127.0.0.1:5000/predict/verse/mn.049.than.html/26
+    22965 | mn.049.than.html         |        41 | LOC          | brahma                | LOC         | Brahma                |              34 | http://127.0.0.1:5000/predict/verse/mn.049.than.html/34
+    22965 | mn.049.than.html         |        41 | LOC          | brahma                | LOC         | brahma                |              34 | http://127.0.0.1:5000/predict/verse/mn.049.than.html/34
+    23514 | mn.082.than.html         |        20 | PERSON       | ratthapala's          | PERSON      | Ratthapala's          |              13 | http://127.0.0.1:5000/predict/verse/mn.082.than.html/13
+    23516 | mn.082.than.html         |        22 | PERSON       | ratthapala's          | PERSON      | Ratthapala's          |              15 | http://127.0.0.1:5000/predict/verse/mn.082.than.html/15
+    23520 | mn.082.than.html         |        26 | PERSON       | ratthapala's          | PERSON      | Ratthapala's          |              19 | http://127.0.0.1:5000/predict/verse/mn.082.than.html/19
+    23523 | mn.082.than.html         |        29 | PERSON       | ratthapala's          | PERSON      | Ratthapala's          |              22 | http://127.0.0.1:5000/predict/verse/mn.082.than.html/22
+    23527 | mn.082.than.html         |        33 | PERSON       | ratthapala's          | PERSON      | Ratthapala's          |              26 | http://127.0.0.1:5000/predict/verse/mn.082.than.html/26
+    23749 | mn.093.than.html         |         5 | PERSON       | apparently            | PERSON      | Apparently            |               4 | http://127.0.0.1:5000/predict/verse/mn.093.than.html/4
+    24696 | mn.136.than.html         |         8 | PERSON       | elder                 | PERSON      | Elder                 |               7 | http://127.0.0.1:5000/predict/verse/mn.136.than.html/7
+    24896 | mn.141.than.html         |         3 | LOC          | tathagatha            | LOC         | Tathagatha            |               2 | http://127.0.0.1:5000/predict/verse/mn.141.than.html/2
+    24896 | mn.141.than.html         |         3 | LOC          | tathagatha            | LOC         | Tathagatha            |               2 | http://127.0.0.1:5000/predict/verse/mn.141.than.html/2
+    24901 | mn.141.than.html         |         8 | LOC          | tathagatha            | LOC         | Tathagatha            |               7 | http://127.0.0.1:5000/predict/verse/mn.141.than.html/7
+    24901 | mn.141.than.html         |         8 | LOC          | tathagatha            | LOC         | Tathagatha            |               7 | http://127.0.0.1:5000/predict/verse/mn.141.than.html/7
+    24928 | mn.141.than.html         |        35 | LOC          | tathagatha            | LOC         | Tathagatha            |              34 | http://127.0.0.1:5000/predict/verse/mn.141.than.html/34
+    25267 | sn01.020.wlsh.html       |        20 | PERSON       | arahant               | PERSON      | Arahant               |              20 | http://127.0.0.1:5000/predict/verse/sn01.020.wlsh.html/20
+    25646 | sn06.001.than.html       |         7 | PERSON       | arahant               | PERSON      | Arahant               |               6 | http://127.0.0.1:5000/predict/verse/sn06.001.than.html/6
+    25659 | sn06.002.than.html       |         9 | PERSON       | arahant               | PERSON      | Arahant               |               8 | http://127.0.0.1:5000/predict/verse/sn06.002.than.html/8
+    25676 | sn07.001.wlsh.html       |         3 | PERSON       | arahant               | PERSON      | Arahant               |               2 | http://127.0.0.1:5000/predict/verse/sn07.001.wlsh.html/2
+    25678 | sn07.001.wlsh.html       |         5 | PERSON       | arahant               | PERSON      | Arahant               |               4 | http://127.0.0.1:5000/predict/verse/sn07.001.wlsh.html/4
+    25683 | sn07.001.wlsh.html       |        10 | PERSON       | arahant               | PERSON      | Arahant               |               9 | http://127.0.0.1:5000/predict/verse/sn07.001.wlsh.html/9
+    25721 | sn07.002.wlsh.html       |        12 | PERSON       | arahant               | PERSON      | Arahant               |               9 | http://127.0.0.1:5000/predict/verse/sn07.002.wlsh.html/9
+    25724 | sn07.002.wlsh.html       |        15 | PERSON       | arahant               | PERSON      | Arahant               |              12 | http://127.0.0.1:5000/predict/verse/sn07.002.wlsh.html/12
+    26068 | sn12.017x.wlsh.html      |        16 | PERSON       | arahant               | PERSON      | Arahant               |              15 | http://127.0.0.1:5000/predict/verse/sn12.017x.wlsh.html/15
+    26592 | sn21.010.than.html       |         7 | PERSON       | elder                 | PERSON      | Elder                 |               5 | http://127.0.0.1:5000/predict/verse/sn21.010.than.html/5
+    26596 | sn21.010.than.html       |        11 | PERSON       | elder                 | PERSON      | Elder                 |               9 | http://127.0.0.1:5000/predict/verse/sn21.010.than.html/9
+    27150 | sn22.084x.wlsh.html      |         3 | PERSON       | arahant               | PERSON      | Arahant               |               2 | http://127.0.0.1:5000/predict/verse/sn22.084x.wlsh.html/2
+    27326 | sn22.089x.wlsh.html      |         1 | PERSON       | arahant               | PERSON      | Arahant               |               0 | http://127.0.0.1:5000/predict/verse/sn22.089x.wlsh.html/0
+    27757 | sn35.095.wlsh.html       |        15 | PERSON       | arahant               | PERSON      | Arahant               |              11 | http://127.0.0.1:5000/predict/verse/sn35.095.wlsh.html/11
+    27819 | sn35.127.wlsh.html       |         2 | PERSON       | arahant               | PERSON      | Arahant               |               1 | http://127.0.0.1:5000/predict/verse/sn35.127.wlsh.html/1
+    28433 | sn42.002.than.html       |         5 | PERSON       | apparently            | PERSON      | Apparently            |               4 | http://127.0.0.1:5000/predict/verse/sn42.002.than.html/4
+    28440 | sn42.003.than.html       |         4 | PERSON       | apparently            | PERSON      | Apparently            |               3 | http://127.0.0.1:5000/predict/verse/sn42.003.than.html/3
+    28480 | sn42.009.than.html       |         2 | PERSON       | nalanda               | PERSON      | Nalanda               |               1 | http://127.0.0.1:5000/predict/verse/sn42.009.than.html/1
+    28799 | sn46.014.than.html       |         1 | LOC          | squirrels' sanctuary. | LOC         | Squirrels' Sanctuary. |               0 | http://127.0.0.1:5000/predict/verse/sn46.014.than.html/0
+    29052 | sn47.046.wlsh.html       |         7 | PERSON       | arahant               | PERSON      | Arahant               |               6 | http://127.0.0.1:5000/predict/verse/sn47.046.wlsh.html/6
+    29218 | sn54.013.than.html       |        10 | LOC          | ... &                 | LOC         | ... &                 |               9 | http://127.0.0.1:5000/predict/verse/sn54.013.than.html/9
+    29218 | sn54.013.than.html       |        10 | LOC          | ... &                 | LOC         | ... &                 |               9 | http://127.0.0.1:5000/predict/verse/sn54.013.than.html/9
+    29219 | sn54.013.than.html       |        11 | LOC          | ... &                 | LOC         | ... &                 |              10 | http://127.0.0.1:5000/predict/verse/sn54.013.than.html/10
+    29219 | sn54.013.than.html       |        11 | LOC          | ... &                 | LOC         | ... &                 |              10 | http://127.0.0.1:5000/predict/verse/sn54.013.than.html/10
+    29219 | sn54.013.than.html       |        11 | LOC          | ... &                 | LOC         | ... &                 |              10 | http://127.0.0.1:5000/predict/verse/sn54.013.than.html/10
+    29219 | sn54.013.than.html       |        11 | LOC          | ... &                 | LOC         | ... &                 |              10 | http://127.0.0.1:5000/predict/verse/sn54.013.than.html/10
+    29220 | sn54.013.than.html       |        12 | LOC          | ... &                 | LOC         | ... &                 |              11 | http://127.0.0.1:5000/predict/verse/sn54.013.than.html/11
+    29220 | sn54.013.than.html       |        12 | LOC          | ... &                 | LOC         | ... &                 |              11 | http://127.0.0.1:5000/predict/verse/sn54.013.than.html/11
+    29220 | sn54.013.than.html       |        12 | LOC          | ... &                 | LOC         | ... &                 |              11 | http://127.0.0.1:5000/predict/verse/sn54.013.than.html/11
+    29220 | sn54.013.than.html       |        12 | LOC          | ... &                 | LOC         | ... &                 |              11 | http://127.0.0.1:5000/predict/verse/sn54.013.than.html/11
+    29221 | sn54.013.than.html       |        13 | LOC          | ... &                 | LOC         | ... &                 |              12 | http://127.0.0.1:5000/predict/verse/sn54.013.than.html/12
+    29221 | sn54.013.than.html       |        13 | LOC          | ... &                 | LOC         | ... &                 |              12 | http://127.0.0.1:5000/predict/verse/sn54.013.than.html/12
+    29221 | sn54.013.than.html       |        13 | LOC          | ... &                 | LOC         | ... &                 |              12 | http://127.0.0.1:5000/predict/verse/sn54.013.than.html/12
+    29221 | sn54.013.than.html       |        13 | LOC          | ... &                 | LOC         | ... &                 |              12 | http://127.0.0.1:5000/predict/verse/sn54.013.than.html/12
+    29257 | sn55.024.wlsh.html       |         1 | LOC          | stream-winner         | LOC         | Stream-Winner         |               0 | http://127.0.0.1:5000/predict/verse/sn55.024.wlsh.html/0
+    29257 | sn55.024.wlsh.html       |         1 | LOC          | stream-winner         | LOC         | Stream-Winner         |               0 | http://127.0.0.1:5000/predict/verse/sn55.024.wlsh.html/0
+    29257 | sn55.024.wlsh.html       |         1 | LOC          | stream-winner         | LOC         | Stream-Winner         |               0 | http://127.0.0.1:5000/predict/verse/sn55.024.wlsh.html/0
+    29262 | sn55.024.wlsh.html       |         6 | LOC          | stream-winner         | LOC         | Stream-Winner         |               5 | http://127.0.0.1:5000/predict/verse/sn55.024.wlsh.html/5
+    30982 | snp.1.08.budd.html       |         1 | PERSON       | long                  | PERSON      | Long                  |               0 | http://127.0.0.1:5000/predict/verse/snp.1.08.budd.html/0
+    31064 | snp.2.01.piya.html       |        13 | LOC          | knower (              | LOC         | Knower (              |              12 | http://127.0.0.1:5000/predict/verse/snp.2.01.piya.html/12
+    31870 | thig.14.01.than.html     |         1 | PERSON       | master's              | PERSON      | Master's              |               0 | http://127.0.0.1:5000/predict/verse/thig.14.01.than.html/0
+    31934 | ud.1.06.than.html        |         3 | LOC          | squirrels' sanctuary. | LOC         | Squirrels' Sanctuary. |               2 | http://127.0.0.1:5000/predict/verse/ud.1.06.than.html/2
+    31957 | ud.1.10.irel.html        |         6 | PERSON       | arahant               | PERSON      | Arahant               |               5 | http://127.0.0.1:5000/predict/verse/ud.1.10.irel.html/5
+    31958 | ud.1.10.irel.html        |         7 | PERSON       | arahant               | PERSON      | Arahant               |               6 | http://127.0.0.1:5000/predict/verse/ud.1.10.irel.html/6
+    31958 | ud.1.10.irel.html        |         7 | PERSON       | arahant               | PERSON      | Arahant               |               6 | http://127.0.0.1:5000/predict/verse/ud.1.10.irel.html/6
+    32069 | ud.2.10.than.html        |         2 | LOC          | mango grove.          | LOC         | Mango Grove.          |               1 | http://127.0.0.1:5000/predict/verse/ud.2.10.than.html/1
+    32170 | ud.3.07.than.html        |         3 | LOC          | squirrels' sanctuary. | LOC         | Squirrels' Sanctuary. |               1 | http://127.0.0.1:5000/predict/verse/ud.3.07.than.html/1
+    32266 | ud.4.04.than.html        |         2 | LOC          | squirrels' sanctuary. | LOC         | Squirrels' Sanctuary. |               2 | http://127.0.0.1:5000/predict/verse/ud.4.04.than.html/2
+    32323 | ud.4.09.than.html        |         3 | LOC          | squirrels' sanctuary. | LOC         | Squirrels' Sanctuary. |               3 | http://127.0.0.1:5000/predict/verse/ud.4.09.than.html/3
+    32342 | ud.5.03.than.html        |         3 | LOC          | squirrels' sanctuary. | LOC         | Squirrels' Sanctuary. |               2 | http://127.0.0.1:5000/predict/verse/ud.5.03.than.html/2
+    32539 | ud.6.08.than.html        |         3 | LOC          | squirrels' sanctuary. | LOC         | Squirrels' Sanctuary. |               3 | http://127.0.0.1:5000/predict/verse/ud.6.08.than.html/3
+(108 rows)
+

@@ -1,0 +1,55 @@
+ LOC    | knower (                     | Knower (                     |    3
+ LOC    | mango grove.                 | Mango Grove.                 |    3
+ PERSON | apparently                   | Apparently                   |    3
+ PERSON | void                         | Void                         |    4
+ PERSON | master's                     | Master's                     |    4
+ PERSON | long                         | Long                         |    4
+ LOC    | stream-winner                | Stream-Winner                |    4
+ GPE    | yama                         | Yama                         |    4
+ PERSON | ratthapala's                 | Ratthapala's                 |    5
+ PERSON | nalanda                      | Nalanda                      |    5
+ PERSON | elder                        | Elder                        |    5
+ LOC    | tathagatha                   | Tathagatha                   |    5
+ LOC    | supreme                      | Supreme                      |    5
+ PERSON | awakened                     | Awakened                     |    7
+ LOC    | squirrels' sanctuary.        | Squirrels' Sanctuary.        |    7
+ LOC    | ... &                        | ... &                        |   14
+ LOC    | brahma                       | Brahma                       |   16
+ PERSON | arahant                      | Arahant                      |   31
+
+WITH targets(label, needle) AS (
+  VALUES
+    ('LOC', 'knower ('),
+    ('LOC', 'mango grove.'),
+    ('PERSON', 'apparently'),
+    ('PERSON', 'void'),
+    ('PERSON', 'master''s'),
+    ('PERSON', 'long'),
+    ('LOC', 'stream-winner'),
+    ('GPE', 'yama'),
+    ('PERSON', 'ratthapala''s'),
+    ('PERSON', 'nalanda'),
+    ('PERSON', 'elder'),
+    ('LOC', 'tathagatha'),
+    ('LOC', 'supreme'),
+    ('PERSON', 'awakened'),
+    ('LOC', 'squirrels'' sanctuary.'),
+    ('LOC', '... &'),
+    ('LOC', 'brahma'),
+    ('PERSON', 'arahant')
+)
+SELECT
+  v.id,
+  v.identifier,
+  v.verse_num,
+  ent->>'label' AS label,
+  ent->>'text'  AS span_text,
+  (ent->>'start')::int AS start_char,
+  (ent->>'end')::int   AS end_char,
+  v.text
+FROM ati_verses v
+CROSS JOIN LATERAL jsonb_array_elements(v.ner_span) ent
+JOIN targets t
+  ON t.label = ent->>'label'
+ AND lower(unaccent(trim(ent->>'text'))) = lower(unaccent(t.needle))
+ORDER BY t.label, t.needle, v.identifier, v.verse_num, start_char;

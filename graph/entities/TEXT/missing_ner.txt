@@ -1,0 +1,204 @@
+ label  |             norm             |       example_surface        | freq 
+--------+------------------------------+------------------------------+------
+ PERSON | cunda                        | Cunda                        |   89
+ PERSON | aggivessana                  | Aggivessana                  |   85
+ PERSON | bhaddiya                     | Bhaddiya                     |   54
+ PERSON | mahanama                     | Mahanama                     |   52
+ PERSON | nagasena                     | Nagasena                     |   49
+ PERSON | anuruddha                    | Anuruddha                    |   48
+ PERSON | lohicca                      | Lohicca                      |   47
+ PERSON | samiddhi                     | Samiddhi                     |   46
+ PERSON | meghiya                      | Meghiya                      |   46
+ PERSON | rahula                       | Rahula                       |   44
+ PERSON | potthapada                   | Potthapada                   |   42
+ PERSON | maha kassapa                 | Ven. Maha Kassapa            |   40
+ PERSON | tissa                        | Tissa                        |   37
+ PERSON | punna                        | Punna                        |   36
+ PERSON | khemaka                      | Khemaka                      |   35
+ PERSON | vaccha                       | Vaccha                       |   31
+ PERSON | arahant                      | Arahant                      |   31
+ PERSON | sir                          | Ven. Sir                     |   30
+ PERSON | brahmas                      | Brahmas                      |   27
+ PERSON | nigantha nataputta           | Nigantha Nataputta           |   27
+ PERSON | noble one                    | Noble One                    |   25
+ LOC    | brahma worlds                | Brahma worlds                |   25
+ PERSON | kali                         | Kali                         |   25
+ PERSON | maha kotthita                | Maha Kotthita                |   24
+ PERSON | tathagatas                   | Tathagatas                   |   22
+ PERSON | vedehika                     | Vedehika                     |   21
+ PERSON | prince jayasena              | Prince Jayasena              |   21
+ PERSON | godha                        | Godha                        |   20
+ PERSON | uttara                       | Uttara                       |   20
+ PERSON | kasi bharadvaja              | Kasi Bharadvaja              |   20
+ PERSON | yamaka                       | Ven. Yamaka                  |   20
+ PERSON | udayi                        | Udayi                        |   20
+ PERSON | girimananda                  | Girimananda                  |   19
+ PERSON | potaliputta                  | Potaliputta                  |   19
+ PERSON | queen mallika                | Queen Mallika                |   19
+ PERSON | punnaka                      | Punnaka                      |   19
+ PERSON | nagita                       | Nagita                       |   18
+ PERSON | bhumija                      | Bhumija                      |   18
+ PERSON | vacchagotta                  | Vacchagotta                  |   18
+ PERSON | malunkyaputta                | Malunkyaputta                |   18
+ LOC    | jeta grove                   | Jeta Grove                   |   17
+ PERSON | kamabhu                      | Ven. Kamabhu                 |   17
+ PERSON | sunidha                      | Sunidha                      |   17
+ PERSON | sunakkhatta                  | Sunakkhatta                  |   16
+ LOC    | brahma                       | Brahma                       |   16
+ PERSON | vasitthas                    | Vasitthas                    |   15
+ PERSON | suriya                       | Suriya                       |   15
+ LOC    | brahma world                 | Brahma world                 |   15
+ PERSON | mallika                      | Mallika                      |   15
+ PERSON | kasibharadvaja               | Kasibharadvaja               |   15
+ PERSON | kevatta                      | Kevatta                      |   15
+ LOC    | game refuge at isipatana     | Game Refuge at Isipatana     |   15
+ LOC    | palace of migara's mother    | palace of Migara's mother    |   14
+ PERSON | fully enlightened one        | Fully Enlightened One        |   14
+ PERSON | pingiya                      | Pingiya                      |   14
+ LOC    | eastern monastery            | Eastern Monastery            |   14
+ PERSON | one                          | Venerable One                |   14
+ LOC    | ... &                        | ... &                        |   14
+ PERSON | dasaka                       | Dasaka                       |   13
+ PERSON | tathaagata                   | Tathaagata                   |   13
+ LOC    | jeta wood                    | Jeta Wood                    |   13
+ PERSON | kotthita                     | Kotthita                     |   12
+ PERSON | cundaka                      | Cundaka                      |   12
+ PERSON | unrivalled one               | Unrivalled One               |   12
+ PERSON | mettagu                      | Mettagu                      |   12
+ PERSON | mahaka                       | Mahaka                       |   12
+ PERSON | kaccana                      | Kaccana                      |   12
+ PERSON | lady vedehika                | Lady Vedehika                |   12
+ PERSON | nagasamala                   | Nagasamala                   |   11
+ PERSON | pavittha                     | Pavittha                     |   11
+ PERSON | vyagghapajja                 | Vyagghapajja                 |   11
+ PERSON | narada                       | Narada                       |   11
+ PERSON | saavatthii                   | Saavatthii                   |   11
+ PERSON | assaji                       | Assaji                       |   11
+ PERSON | aciravata                    | Aciravata                    |   11
+ PERSON | suppabuddha                  | Suppabuddha                  |   11
+ PERSON | isidatta                     | Isidatta                     |   11
+ LOC    | patali village               | Pāṭali Village               |   11
+ PERSON | great sage                   | Great Sage                   |   11
+ PERSON | seeing one                   | Seeing One                   |   10
+ PERSON | vangisa                      | Vangisa                      |   10
+ PERSON | varuna                       | Varuna                       |   10
+ LOC    | deer park at bhesakala grove | Deer Park at Bhesakala Grove |   10
+ LOC    | crocodile haunt              | Crocodile Haunt              |   10
+ PERSON | uggahamana                   | Uggahamana                   |   10
+ PERSON | uddaka                       | Uddaka                       |   10
+ PERSON | uttiya                       | Uttiya                       |   10
+ PERSON | sage                         | Sage                         |   10
+ PERSON | punna mantaniputta           | Punna Mantaniputta           |   10
+ PERSON | rama                         | Rama                         |   10
+ PERSON | kuvera                       | Kuvera                       |   10
+ PERSON | kamada                       | Kamada                       |   10
+ PERSON | musila                       | Musila                       |   10
+ LOC    | nimmanarati                  | Nimmanarati                  |   10
+ PERSON | vakkali                      | Vakkali                      |    9
+ PERSON | sangamaji                    | Master Saṅgāmaji             |    9
+ PERSON | uppalavanna                  | Uppalavanna                  |    9
+ PERSON | cala                         | Cala                         |    9
+ PERSON | matali                       | Matali                       |    9
+ PERSON | upacala                      | Upacala                      |    9
+ PERSON | private buddha               | Private Buddha               |    9
+ PERSON | great seer                   | Great Seer                   |    9
+ PERSON | vijaya                       | Vijaya                       |    8
+ PERSON | pataliputta                  | Pataliputta                  |    8
+ PERSON | sisupacala                   | Sisupacala                   |    8
+ PERSON | dasama                       | Dasama                       |    8
+ PERSON | elder                        | Elder                        |    8
+ PERSON | upasiva                      | Upasiva                      |    8
+ PERSON | upasena                      | Ven. Upasena                 |    8
+ PERSON | bhaaradvaaja                 | Bhaaradvaaja                 |    8
+ PERSON | udaayii                      | Udaayii                      |    8
+ PERSON | ajatasattu                   | Ajatasattu                   |    8
+ PERSON | rammaka                      | Rammaka                      |    8
+ PERSON | aananda                      | Aananda                      |    8
+ PERSON |                              | Master                       |    8
+ PERSON | bodhisatta                   | Bodhisatta                   |    8
+ PERSON | ciravasi                     | Ciravasi                     |    8
+ LOC    | upavattana                   | Upavattana                   |    8
+ PERSON | kesi                         | Kesi                         |    8
+ PERSON | sumana                       | Sumana                       |    8
+ PERSON | sugata                       | Sugata                       |    8
+ PERSON | pukkusati                    | Pukkusati                    |    8
+ PERSON | uddaka ramaputta             | Uddaka Ramaputta             |    8
+ PERSON | vajira                       | Vajira                       |    8
+ LOC    | ghosita's park               | Ghosita's Park               |    7
+ PERSON | general vidudabha            | General Vidudabha            |    7
+ PERSON | one-well-gone                | One-Well-Gone                |    7
+ PERSON | nigantha                     | Nigantha                     |    7
+ PERSON | sangarava                    | Sangarava                    |    7
+ PERSON | mogharaja                    | Mogharaja                    |    7
+ PERSON | sivaka                       | Sivaka                       |    7
+ PERSON | medakathalika                | Medakathalika                |    7
+ PERSON | saariputta                   | Saariputta                   |    7
+ PERSON | awakened                     | Awakened                     |    7
+ PERSON | saccaka the nigantha-        | Saccaka the Nigaṇṭha-        |    7
+ PERSON | maha cunda                   | Ven. Maha Cunda              |    7
+ PERSON | consummate one               | Consummate One               |    7
+ PERSON | punnika                      | Punnika                      |    7
+ PERSON | supreme buddha               | Supreme Buddha               |    7
+ LOC    | squirrels' sanctuary.        | Squirrels' Sanctuary.        |    7
+ PERSON | kaccayana                    | Kaccayana                    |    7
+ PERSON | ramagama                     | Ramagama                     |    7
+ PERSON | patacara                     | Patacara                     |    6
+ LOC    | ganges river                 | Ganges River                 |    6
+ PERSON | sela                         | Sela                         |    6
+ PERSON | sati, the fisherman's son    | Sāti, the Fisherman's Son    |    6
+ PERSON | sanjaya                      | Sañjaya                      |    6
+ PERSON | nibbana                      | Nibbana                      |    6
+ PERSON | nalaka                       | Nalaka                       |    6
+ PERSON | sarakaani                    | Sarakaani                    |    6
+ PERSON | vasettha                     | Vasettha                     |    6
+ PERSON | dabba mallaputta             | Dabba Mallaputta             |    6
+ PERSON | upavana                      | Ven. Upavana                 |    6
+ PERSON | anuraadha                    | Anuraadha                    |    6
+ PERSON | rohini's father              | Rohini's father              |    6
+ PERSON | udaya                        | Udaya                        |    6
+ LOC    | wild mango grove             | Wild Mango Grove             |    6
+ LOC    | isigili mountain             | Isigili mountain             |    6
+ LOC    | tavatimsa                    | Tavatimsa                    |    6
+ LOC    | yamuna                       | Yamuna                       |    6
+ GPE    | sunaparanta                  | Sunaparanta                  |    6
+ LOC    | bahuka river                 | Bahuka River                 |    6
+ PERSON | sudassana                    | Sudassana                    |    6
+ LOC    | great hell                   | Great Hell                   |    6
+ PERSON | migara's mother              | Migara's Mother              |    6
+ PERSON | kaligodha's son              | Kāḷigodhā's son              |    6
+ PERSON | punabbasu                    | Punabbasu                    |    6
+ LOC    | ghosita's monastery          | Ghosita's monastery          |    5
+ PERSON | perfect one                  | Perfect One                  |    5
+ PERSON | pilindavaccha                | Ven. Pilindavaccha           |    5
+ PERSON | vessamitta                   | Vessamitta                   |    5
+ GPE    | saavatthii                   | Saavatthii                   |    5
+ PERSON | virulha                      | Virulha                      |    5
+ PERSON | enlightened one              | Enlightened One              |    5
+ PERSON | vesali                       | Vesālī                       |    5
+ PERSON | devala                       | Devala                       |    5
+ PERSON | nandiya                      | Nandiya                      |    5
+ PERSON | nalanda                      | Nalanda                      |    5
+ PERSON | piyadassi                    | Piyadassi                    |    5
+ LOC    | capala shrine                | Capala shrine                |    5
+ LOC    | mount meru                   | Mount Meru                   |    5
+ PERSON | bhadda                       | Bhadda                       |    5
+ PERSON | saccaka the nigantha         | Saccaka the Nigantha         |    5
+ PERSON | mahaanaama                   | Mahaanaama                   |    5
+ PERSON | u.n.naabha                   | U.n.naabha                   |    5
+ PERSON | lord gotama                  | Lord Gotama                  |    5
+ LOC    | kukuta river                 | Kukuṭa River                 |    5
+ PERSON | ratthapala's                 | Ratthapala's                 |    5
+ PERSON | rosika                       | Rosika                       |    5
+ PERSON | revata                       | Revata                       |    5
+ LOC    | vultures' peak               | Vultures' Peak               |    5
+ PERSON | radha                        | Radha                        |    5
+ LOC    | tusita                       | Tusita                       |    5
+ LOC    | tathagatha                   | Tathagatha                   |    5
+ LOC    | supreme                      | Supreme                      |    5
+ PERSON | kalama                       | Kalama                       |    5
+ LOC    | sankheyyaka mountain         | Sankheyyaka Mountain         |    5
+ LOC    | paranimmitavasavatti         | Paranimmitavasavatti         |    5
+ PERSON | prince abhaya                | Prince Abhaya                |    5
+ PERSON | yasoja                       | Ven. Yasoja                  |    5
+(200 rows)
+

@@ -24,6 +24,8 @@
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "udayin"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "bhante"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["ananda", "ānanda"]}}]}
+{"label": "PERSON", "id": "ananda_the_elder_ascii", "pattern": [{"IS_TITLE": true, "LOWER": "ananda"}, {"LOWER": "the"}, {"IS_TITLE": true, "LOWER": "elder"}]}
+{"label": "PERSON", "id": "ananda_the_elder_diacritic", "pattern": [{"IS_TITLE": true, "LOWER": "ānanda"}, {"LOWER": "the"}, {"IS_TITLE": true, "LOWER": "elder"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["anathapindika", "anāthapiṇḍika"]}}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["dhanañjanin", "dhananjanin"]}}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["jivaka", "jīvaka"]}}, {"IS_TITLE": true, "LOWER": {"IN": ["komarabhacca", "komārabhacca"]}}]}
@@ -38,6 +40,9 @@
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["sujata", "sujātā"]}}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["sumana", "sumanā"]}}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["tathagata", "tathāgata"]}}]}
+{"label": "PERSON", "id": "awakened_one", "pattern": [{"IS_TITLE": true, "LOWER": "awakened"}, {"IS_TITLE": true, "LOWER": "one"}]}
+{"label": "PERSON", "id": "fully_enlightened_one", "pattern": [{"IS_TITLE": true, "LOWER": "fully"}, {"IS_TITLE": true, "LOWER": "enlightened"}, {"IS_TITLE": true, "LOWER": "one"}]}
+{"label": "PERSON", "id": "fully_self_enlightened_one", "pattern": [{"IS_TITLE": true, "LOWER": "fully"}, {"IS_TITLE": true, "LOWER": "self"}, {"ORTH": "-", "OP": "?"}, {"IS_TITLE": true, "LOWER": "enlightened"}, {"IS_TITLE": true, "LOWER": "one"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["vassakara", "vassakāra"]}}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["visakha", "visākhā"]}}]}
 {"label": "PERSON", "pattern": [{"LOWER": "master"}, {"IS_TITLE": true, "LOWER": {"IN": ["ananda", "ānanda"]}}]}
@@ -48,6 +53,9 @@
 {"label": "PERSON","pattern":[{"LOWER":{"REGEX":"^(ven\\.?|venerable)$"}},{"IS_TITLE":true},{"IS_TITLE":true,"OP":"?"}]} 
 {"label": "PERSON", "id": "paccekabuddhas", "pattern": [ {"LOWER": {"IN": ["uparittha", "tagarasikhi", "yasassi", "sudassana", "piyadassi", "gandhara", "Pindola", "Upasabha", "Nitha", "Tatha", "Sutava", "Bhavitatta", "Sumbha", "Subha", "Methula", "Atthama", "Megha", "Anigha", "Sudatha" ] } } ] }
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "moliyasivaka"}]}
+{"label": "PERSON", "id": "moliya_phagguna", "pattern": [{"IS_TITLE": true, "LOWER": {"IN": ["moliya", "moḷiya"]}}, {"ORTH": "-", "OP": "?"}, {"IS_TITLE": true, "LOWER": {"IN": ["phagguna", "phagguṇa"]}}]}
+{"label": "PERSON", "id": "ven_moliya_phagguna", "pattern": [{"LOWER": {"IN": ["ven", "ven."]}}, {"ORTH": "-", "OP": "?"}, {"IS_TITLE": true, "LOWER": {"IN": ["moliya", "moḷiya"]}}, {"ORTH": "-", "OP": "?"}, {"IS_TITLE": true, "LOWER": {"IN": ["phagguna", "phagguṇa"]}}]}
+{"label": "PERSON", "id": "venerable_moliya_phagguna", "pattern": [{"LOWER": "venerable"}, {"IS_TITLE": true, "LOWER": {"IN": ["moliya", "moḷiya"]}}, {"ORTH": "-", "OP": "?"}, {"IS_TITLE": true, "LOWER": {"IN": ["phagguna", "phagguṇa"]}}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "janussonin"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "vyagghapajja"}]}
 {"label": "PERSON", "pattern": [{"IS_TITLE": true, "LOWER": "citta"}]}
