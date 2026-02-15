@@ -1,7 +1,26 @@
+import argparse
 import spacy
 from spacy.training import Example
 import json
 
+from config_utils import resolve_config_path, testing_model_from_config
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Evaluate model on ne-data/work/random_verses.txt examples."
+    )
+    parser.add_argument(
+        "--config",
+        default=None,
+        help="Path to shared train/test TOML config. Defaults to ne-data/config/train_from_db.toml.",
+    )
+    parser.add_argument(
+        "--test-file",
+        default="./ne-data/work/random_verses.txt",
+        help="Path to pipe-delimited gold eval file.",
+    )
+    return parser.parse_args()
 
 
 def load_examples(file_name, nlp):
@@ -33,12 +52,29 @@ def load_examples(file_name, nlp):
     print(f"There were {bad} bum records of {total}")
     return examples
 
-nlp = spacy.load("en_sutta_ner")
-test_file = "./ne-data/work/random_verses.txt"
+def main() -> None:
+    args = parse_args()
+    cfg_path = resolve_config_path(args.config)
+    source, model_target, expected_version = testing_model_from_config(cfg_path)
 
-examples = load_examples(test_file, nlp)
-scores = nlp.evaluate(examples)
-print("ents_p:", scores.get("ents_p"))
-print("ents_r:", scores.get("ents_r"))
-print("ents_f:", scores.get("ents_f"))
-print("per-type:", scores.get("ents_per_type"))
+    nlp = spacy.load(model_target)
+    loaded_version = nlp.meta.get("version")
+    if expected_version is not None and loaded_version != expected_version:
+        raise RuntimeError(
+            f"Expected {model_target}=={expected_version}, found {loaded_version}"
+        )
+    print(
+        f"Loaded model ({source}): {model_target} "
+        f"(version={loaded_version or 'unknown'})"
+    )
+
+    examples = load_examples(args.test_file, nlp)
+    scores = nlp.evaluate(examples)
+    print("ents_p:", scores.get("ents_p"))
+    print("ents_r:", scores.get("ents_r"))
+    print("ents_f:", scores.get("ents_f"))
+    print("per-type:", scores.get("ents_per_type"))
+
+
+if __name__ == "__main__":
+    main()

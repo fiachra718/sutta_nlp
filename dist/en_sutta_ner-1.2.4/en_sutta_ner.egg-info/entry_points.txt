@@ -1,2 +1,0 @@
-[spacy_models]
-en_sutta_ner = en_sutta_ner

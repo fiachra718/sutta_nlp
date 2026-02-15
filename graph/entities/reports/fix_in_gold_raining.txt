@@ -1,0 +1,8 @@
+Fix these:
+
+manual:dfe59aed8d37	GPE	Ramagama	(128-136)
+manual:e63c971f0043	PERSON	Ramagama	(128-136)
+manual:881a9a46a43d	GPE	Ramagama	(46-54)
+manual:58f238cc4597	PERSON	Ramagama	(46-54)
+
+!!! Is a LOC not a PERSON	Great Roruva	3  "Great Roruva hell" -sn03.020.than.html

@@ -1,0 +1,26 @@
+[db]
+dsn = "dbname=tipitaka user=alee"
+
+[model]
+name = "en_sutta_ner"
+expected_version = "1.2.5"
+
+[testing]
+source = "path"
+path = "ne-data/work/models/2026_02_15"
+# Use this when source = "system" (or omit; falls back to [model].name):
+# system_model = "en_sutta_ner"
+# Optional expected version override for testing:
+# expected_version = "1.2.5"
+
+[output]
+dir = "ne-data/work/models/2026_02_15"
+
+[training]
+created_after = "2025-01-01"
+seed = 42
+epochs = 11
+batch_size = 13
+dropout = 0.1
+dev_ratio = 0.1
+confirm_before_run = true

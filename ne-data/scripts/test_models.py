@@ -50,8 +50,8 @@ with open(WORK / "text" / "lines.txt", "r", encoding="utf-8") as f:
     for line in f:
         sentences.append(line.strip())
 
-nlp = spacy.load("en_sutta_ner")  # should be 1.2.3
-assert nlp.meta.get("version") == "1.2.3", "Wrong en_sutta_ner version installed!"
+nlp = spacy.load("en_sutta_ner")  # should be 1.2.5
+assert nlp.meta.get("version") == "1.2.5", "Wrong en_sutta_ner version installed!"
 
 for s in sentences:
     doc = nlp(s)

@@ -18,69 +18,41 @@ def strip_diacritics(s):
         if unicodedata.category(c) != "Mn"
     )
 
-
-
-# sql = """
-#     WITH q AS (
-#     SELECT websearch_to_tsquery('english', %(term)s) AS tsq
-#     ),
-#     para AS (
-#     SELECT
-#         s.nikaya,
-#         s.identifier,
-#         s.title,
-#         (e.elem->>'text') AS ptext
-#     FROM ati_suttas s
-#     CROSS JOIN LATERAL jsonb_array_elements(s.verses) AS e(elem)
-#     ),
-#     hits AS (
-#     SELECT p.nikaya, p.identifier, p.title, p.ptext,
-#             ts_rank_cd(to_tsvector('english', p.ptext), q.tsq) AS rank
-#     FROM para p
-#     CROSS JOIN q
-#     WHERE to_tsvector('english', p.ptext) @@ q.tsq
-#     )
-#     SELECT regexp_replace(trim(ptext), E'[\\t\\n\\r]+', ' ', 'g') AS paragraph
-#     FROM hits
-#     ORDER BY rank DESC, length(ptext) DESC LIMIT 200;
-# """
-
-
 sql = '''
-WITH q AS (
-  SELECT websearch_to_tsquery('english', %(term)s) AS tsq
-),
-para AS (  -- flatten with ordinality
-  SELECT s.nikaya, s.identifier, s.title,
-         t.ord AS verse_num, (t.v->>'text') AS ptext
-  FROM ati_suttas s
-  CROSS JOIN LATERAL jsonb_array_elements(s.verses) WITH ORDINALITY AS t(v, ord)
-),
-sutta_hits AS (
-  SELECT p.nikaya, p.identifier, p.title,
-         SUM(ts_rank_cd(to_tsvector('english', p.ptext), q.tsq)) AS rank,
-         STRING_AGG(p.ptext, E'\n' ORDER BY p.verse_num)        AS paragraph
-  FROM para p
-  CROSS JOIN q
-  WHERE to_tsvector('english', p.ptext) @@ q.tsq
-  GROUP BY p.nikaya, p.identifier, p.title
-)
-SELECT regexp_replace(trim(paragraph), E'[\\t\\n\\r]+', ' ', 'g') AS paragraph
-FROM sutta_hits
-ORDER BY rank DESC, length(paragraph) DESC, gen_random_uuid()
-LIMIT 200;
+    WITH q AS (
+    SELECT websearch_to_tsquery('english', %(term)s) AS tsq
+    ),
+    para AS (  -- flatten with ordinality
+    SELECT s.nikaya, s.identifier, s.title,
+            t.ord AS verse_num, (t.v->>'text') AS ptext
+    FROM ati_suttas s
+    CROSS JOIN LATERAL jsonb_array_elements(s.verses) WITH ORDINALITY AS t(v, ord)
+    ),
+    sutta_hits AS (
+    SELECT p.nikaya, p.identifier, p.title,
+            SUM(ts_rank_cd(to_tsvector('english', p.ptext), q.tsq)) AS rank,
+            STRING_AGG(p.ptext, E'\n' ORDER BY p.verse_num)        AS paragraph
+    FROM para p
+    CROSS JOIN q
+    WHERE to_tsvector('english', p.ptext) @@ q.tsq
+    GROUP BY p.nikaya, p.identifier, p.title
+    )
+    SELECT sh.identifier, regexp_replace(trim(paragraph), E'[\\t\\n\\r]+', ' ', 'g') AS paragraph
+    FROM sutta_hits as sh
+    ORDER BY rank DESC, length(paragraph) DESC, gen_random_uuid()
+    LIMIT 5;
 '''
 
 params = {"term": term}
 with conn.cursor() as cur:
     cur.execute(sql, params)
-    for (paragraph,) in cur:
-        print(paragraph)
+    for (paragraph, identifier, ) in cur:
+        print(paragraph, identifier)
 
 s_term = strip_diacritics(term)
 if s_term != term:
     params = {"term": s_term}
     with conn.cursor() as cur:
         cur.execute(sql, params)
-        for (paragraph,) in cur:  # tuple-unpack the single column
-            print(paragraph, flush=True)
+        for (paragraph, identifier, ) in cur:  # tuple-unpack the columns
+            print(f"Stripped diacritics: {paragraph}, {identifier}", flush=True)

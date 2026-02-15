@@ -1,0 +1,14 @@
+LOC	brahma	15
+LOC	Rains	3
+LOC	Brahma	2
+LOC	Brahma-faring	2
+LOC	Disgrace	2
+LOC	Licchavi-son	2
+LOC	Paranimmitavasavatti devas	2
+LOC	Pure	2
+LOC	Beautifully Lustrous Devas	1
+LOC	High Divinity's retinue	1
+LOC	Matika	1
+LOC	Migara 's mother	1
+
+
