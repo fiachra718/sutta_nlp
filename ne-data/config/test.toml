@@ -3,18 +3,16 @@ dsn = "dbname=tipitaka user=alee"
 
 [model]
 name = "en_sutta_ner"
-expected_version = "1.2.4"
 
 [testing]
 source = "path"
-path = "ne-data/work/models/2026_02_15"
+path = "ne-data/work/models/2026_02_16"
 # Use this when source = "system" (or omit; falls back to [model].name):
 # system_model = "en_sutta_ner"
 # Optional expected version override for testing:
-# expected_version = "1.2.4"
 
 [output]
-dir = "ne-data/work/models/2026_02_15"
+dir = "ne-data/work/models/2026_02_16"
 
 [training]
 created_after = "2026-02-01"

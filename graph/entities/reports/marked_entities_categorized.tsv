@@ -1,0 +1,42 @@
+line_no	category	action	target_label	bucket	label	norm	example_surface	suggested_canonical	freq	sample_refs	note
+3	checked_pending_decision	review		likely_missing_canonical_entity	LOC	brahma	Brahma		21	an08.041.vaka.html:5, dn.11.0.than.html:117, dn.11.0.than.html:125, dn.16.5-6.than.html:76, dn.16.5-6.than.html:77, dn.20.0.than.html:90, mn.049.than.html:21, mn.049.than.html:22, mn.049.than.html:24, mn.049.than.html:25, mn.049.than.html:27, mn.049.than.html:32, mn.049.than.html:33, mn.049.than.html:41	checked
+189	entity_resolution_alias	add_alias	PERSON	likely_missing_alias_for_existing	PERSON	one self-awakened &	One Self-awakened &	Buddha	1	snp.3.02.than.html:4	
+13	mislabel_relabel_to_LOC	relabel	LOC	likely_missing_canonical_entity	GPE	neranjara	Nerañjara		4	snp.3.02.irel.html:1, snp.3.02.than.html:1, ud.1.01.irel.html:3, ud.2.01.irel.html:2	Should be LOC, added to gold
+9	mislabel_relabel_to_NORP	relabel	NORP	likely_missing_canonical_entity	LOC	paranimmitavasavatti devas	Paranimmitavasavatti devas		5	an08.043.khan.html:27, mn.097.than.html:48, mn.097.than.html:49, mn.097.than.html:50	Should be NORP
+101	mislabel_relabel_to_NORP	relabel	NORP	likely_missing_canonical_entity	PERSON	awakened ones	Awakened Ones		2	ud.5.06.than.html:12, ud.5.06.than.html:9	should be NORP
+115	mislabel_relabel_to_NORP	relabel	NORP	likely_missing_canonical_entity	PERSON	fully enlightened ones	Fully Enlightened Ones		2	dn.16.1-6.vaji.html:17, dn.16.1-6.vaji.html:24	
+149	mislabel_relabel_to_NORP	relabel	NORP	likely_missing_canonical_entity	PERSON	private buddhas	Private Buddhas		2	an09.020.than.html:12, an09.020.than.html:18	should be NORP
+5	mislabel_relabel_to_NORP	relabel	NORP	likely_noise_or_bad_ner	PERSON	tathagatas	Tathagatas		9	dn.16.1-6.vaji.html:2, dn.16.5-6.than.html:55, dn.16.5-6.than.html:56, mn.082.than.html:17, mn.087.than.html:16, ud.6.10.than.html:3, ud.6.10.than.html:4	should be NORP
+197	needs_manual_review	review		likely_missing_canonical_entity	GPE	oriental	Oriental		1	sn56.011.harv.html:21	
+70	needs_manual_review	review		likely_missing_canonical_entity	GPE	skill	Skill		2	mn.035.than.html:80, mn.136.than.html:39	
+216	needs_manual_review	review		likely_missing_canonical_entity	LOC	ariyan discipline	Ariyan discipline		1	sn35.187.wlsh.html:4	
+72	needs_manual_review	review		likely_missing_canonical_entity	LOC	brahma-faring	Brahma-faring		2	an08.041.vaka.html:4, mn.125.horn.html:34	
+229	needs_manual_review	review		likely_missing_canonical_entity	LOC	brahma-uposatha	Brahma-Uposatha		1	an03.070.than.html:9	
+235	needs_manual_review	review		likely_missing_canonical_entity	LOC	eastern park at migara's mother	Eastern Park at Migara's mother		1	ud.5.05.irel.html:2	
+243	needs_manual_review	review		likely_missing_canonical_entity	LOC	group of thirty	Group of Thirty		1	snp.3.11.than.html:1	
+245	needs_manual_review	review		likely_missing_canonical_entity	LOC	high divinity's retinue	High Divinity's retinue		1	an04.125.nymo.html:3	
+80	needs_manual_review	review		likely_missing_canonical_entity	LOC	licchavi-son	Licchavi-son		2	mn.035.than.html:60, mn.035.than.html:63	
+81	needs_manual_review	review		likely_missing_canonical_entity	LOC	maddakucchi deer	Maddakucchi Deer		2	sn01.038.than.html:2, sn04.013.than.html:2	
+260	needs_manual_review	review		likely_missing_canonical_entity	LOC	migara 's mother	Migara 's mother		1	an08.043.khan.html:1	
+266	needs_manual_review	review		likely_missing_canonical_entity	LOC	mulapariyaya sutta	Mulapariyaya Sutta		1	an03.123.than.html:5	
+268	needs_manual_review	review		likely_missing_canonical_entity	LOC	nimmanarati devas	Nimmanarati devas		1	an08.043.khan.html:26	
+269	needs_manual_review	review		likely_missing_canonical_entity	LOC	nimmanarati gods	Nimmanarati gods		1	dn.11.0.than.html:109	
+275	needs_manual_review	review		likely_missing_canonical_entity	LOC	paranimmita-vasavatti devas	Paranimmita-vasavatti devas		1	sn56.011.than.html:14	
+107	needs_manual_review	review		likely_missing_canonical_entity	PERSON	bound	Bound		2	thag.21.00x.hekh.html:1, ud.7.10.than.html:1	
+196	obvious_misfire_noise	drop_span		likely_missing_canonical_entity	GPE	night	night		1	an08.043.khan.html:14	noise, updated gold
+182	obvious_misfire_noise	drop_span		likely_missing_alias_for_existing	LOC	bahuka?	Bahuka?	Bahuka	1	mn.007.nypo.html:12	
+221	obvious_misfire_noise	drop_span		likely_missing_canonical_entity	LOC	beautifully lustrous devas.	Beautifully Lustrous Devas.		1	dn.15.0.than.html:95	
+71	obvious_misfire_noise	drop_span		likely_missing_canonical_entity	LOC	brahma-	Brahma-		2	iti.4.100-112.than.html:112, iti.4.106-112x.irel.html:112	
+233	obvious_misfire_noise	drop_span		likely_missing_canonical_entity	LOC	calika mountain.	Cālikā Mountain.		1	ud.4.01.than.html:2	
+241	obvious_misfire_noise	drop_span		likely_missing_canonical_entity	LOC	gotama-	Gotama-		1	dn.16.1-6.vaji.html:32	
+253	obvious_misfire_noise	drop_span		likely_noise_or_bad_ner	LOC	mango grove of	Mango Grove of		1	dn.16.1-6.vaji.html:14	
+254	obvious_misfire_noise	drop_span		likely_noise_or_bad_ner	LOC	mango grove.	Mango Grove.		1	ud.2.10.than.html:2	
+257	obvious_misfire_noise	drop_span		likely_noise_or_bad_ner	LOC	mango stone.	Mango Stone.		1	mn.061.than.html:2	
+258	obvious_misfire_noise	drop_span		likely_missing_canonical_entity	LOC	matika.	Matika.		1	an06.051.than.html:7	
+302	obvious_misfire_noise	drop_span		likely_noise_or_bad_ner	LOC	tathagata does	Tathagata does		1	iti.4.106-112x.irel.html:117	
+119	obvious_misfire_noise	drop_span		likely_missing_canonical_entity	PERSON	health	Health		2	dhp.15.budd.html:1, dhp.15.budd.html:204	this is noise, I added correction to gold
+134	obvious_misfire_noise	drop_span		likely_missing_canonical_entity	PERSON	mindful	Mindful		2	mn.010.soma.html:8, sn06.013.olen.html:1	this is noise, I added to gold
+181	obvious_misfire_noise	drop_span		likely_noise_or_bad_ner	PERSON	one	One		2	thag.21.00.irel.html:12, thag.21.00.irel.html:1252	
+140	obvious_misfire_noise	drop_span		likely_missing_canonical_entity	PERSON	one-with-	One-with-		2	dn.20.0.than.html:6, dn.20.0.than.html:91	
+153	obvious_misfire_noise	drop_span		likely_missing_canonical_entity	PERSON	saccaka the nigantha-son went	Saccaka the Nigaṇṭha-son went		2	mn.035.than.html:5, mn.035.than.html:8	Noise, I added to gold
+20	valid_keep	keep		likely_missing_canonical_entity	PERSON	kalama	Kalama		4	mn.026.than.html:22, mn.026.than.html:26, mn.036.than.html:20, mn.036.than.html:24	this is fine; Alara Kalama

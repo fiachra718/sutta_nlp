@@ -1,0 +1,306 @@
+              bucket               | label  |              norm               |         example_surface         |    suggested_canonical    | freq |                                                                                                                                                   sample_refs                                                                                                                                                    
+-----------------------------------+--------+---------------------------------+---------------------------------+---------------------------+------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+! (Should be NORP)  likely_missing_canonical_entity   | LOC    | paranimmitavasavatti devas      | Paranimmitavasavatti devas      |                           |    5 | an08.043.khan.html:27, mn.097.than.html:48, mn.097.than.html:49, mn.097.than.html:50
+ ! (should be NORP) likely_missing_canonical_entity   | PERSON | awakened ones                   | Awakened Ones                   |                           |    2 | ud.5.06.than.html:12, ud.5.06.than.html:9
+!(should be NORP)  likely_missing_canonical_entity   | PERSON | private buddhas                 | Private Buddhas                 |                           |    2 | an09.020.than.html:12, an09.020.than.html:18
+! (should be NORP) likely_noise_or_bad_ner           | PERSON | tathagatas                      | Tathagatas                      |                           |    9 | dn.16.1-6.vaji.html:2, dn.16.5-6.than.html:55, dn.16.5-6.than.html:56, mn.082.than.html:17, mn.087.than.html:16, ud.6.10.than.html:3, ud.6.10.than.html:4
+!  (Should be LOC, added to gold) likely_missing_canonical_entity   | GPE    | neranjara                       | Nerañjara                       |                           |    4 | snp.3.02.irel.html:1, snp.3.02.than.html:1, ud.1.01.irel.html:3, ud.2.01.irel.html:2
+! (Noise, I added to gold)  likely_missing_canonical_entity   | PERSON | saccaka the nigantha-son went   | Saccaka the Nigaṇṭha-son went   |                           |    2 | mn.035.than.html:5, mn.035.than.html:8
+! (noise, updated gold) likely_missing_canonical_entity   | GPE    | night                           | night                           |                           |    1 | an08.043.khan.html:14
+ ! (this is noise, I added correction to gold)  likely_missing_canonical_entity   | PERSON | health                          | Health                          |                           |    2 | dhp.15.budd.html:1, dhp.15.budd.html:204
+ ! (this is noise, I added to gold)  likely_missing_canonical_entity   | PERSON | mindful                         | Mindful                         |                           |    2 | mn.010.soma.html:8, sn06.013.olen.html:1
+(don't care, this is noise)  likely_missing_canonical_entity   | GPE    | india                           | India                           |                           |    2 | sn56.036.than.html:1
+! (checked) likely_missing_canonical_entity   | LOC    | brahma                          | Brahma                          |                           |   21 | an08.041.vaka.html:5, dn.11.0.than.html:117, dn.11.0.than.html:125, dn.16.5-6.than.html:76, dn.16.5-6.than.html:77, dn.20.0.than.html:90, mn.049.than.html:21, mn.049.than.html:22, mn.049.than.html:24, mn.049.than.html:25, mn.049.than.html:27, mn.049.than.html:32, mn.049.than.html:33, mn.049.than.html:41
+! (this is fine)  (Alara Kalama)likely_missing_canonical_entity   | PERSON | kalama                          | Kalama                          |                           |    4 | mn.026.than.html:22, mn.026.than.html:26, mn.036.than.html:20, mn.036.than.html:24
+!  likely_missing_alias_for_existing | LOC    | bahuka?                         | Bahuka?                         | Bahuka                    |    1 | mn.007.nypo.html:12
+! likely_missing_alias_for_existing | PERSON | one self-awakened &             | One Self-awakened &             | Buddha                    |    1 | snp.3.02.than.html:4
+! likely_missing_canonical_entity   | GPE    | oriental                        | Oriental                        |                           |    1 | sn56.011.harv.html:21
+! likely_missing_canonical_entity   | GPE    | skill                           | Skill                           |                           |    2 | mn.035.than.html:80, mn.136.than.html:39
+! likely_missing_canonical_entity   | LOC    | ariyan discipline               | Ariyan discipline               |                           |    1 | sn35.187.wlsh.html:4
+! likely_missing_canonical_entity   | LOC    | beautifully lustrous devas.     | Beautifully Lustrous Devas.     |                           |    1 | dn.15.0.than.html:95
+
+
+ ! likely_missing_canonical_entity   | LOC    | brahma-                         | Brahma-                         |                           |    2 | iti.4.100-112.than.html:112, iti.4.106-112x.irel.html:112
+ ! likely_missing_canonical_entity   | LOC    | brahma-faring                   | Brahma-faring                   |                           |    2 | an08.041.vaka.html:4, mn.125.horn.html:34
+! likely_missing_canonical_entity   | LOC    | brahma-uposatha                 | Brahma-Uposatha                 |                           |    1 | an03.070.than.html:9
+! likely_missing_canonical_entity   | LOC    | calika mountain.                | Cālikā Mountain.                |                           |    1 | ud.4.01.than.html:2
+! likely_missing_canonical_entity   | LOC    | eastern park at migara's mother | Eastern Park at Migara's mother |                           |    1 | ud.5.05.irel.html:2
+! likely_missing_canonical_entity   | LOC    | gotama-                         | Gotama-                         |                           |    1 | dn.16.1-6.vaji.html:32
+! likely_missing_canonical_entity   | LOC    | group of thirty                 | Group of Thirty                 |                           |    1 | snp.3.11.than.html:1
+! likely_missing_canonical_entity   | LOC    | high divinity's retinue         | High Divinity's retinue         |                           |    1 | an04.125.nymo.html:3
+ ! likely_missing_canonical_entity   | LOC    | licchavi-son                    | Licchavi-son                    |                           |    2 | mn.035.than.html:60, mn.035.than.html:63
+ ! likely_missing_canonical_entity   | LOC    | maddakucchi deer                | Maddakucchi Deer                |                           |    2 | sn01.038.than.html:2, sn04.013.than.html:2
+! likely_missing_canonical_entity   | LOC    | matika.                         | Matika.                         |                           |    1 | an06.051.than.html:7
+! likely_missing_canonical_entity   | LOC    | migara 's mother                | Migara 's mother                |                           |    1 | an08.043.khan.html:1
+! likely_missing_canonical_entity   | LOC    | mulapariyaya sutta              | Mulapariyaya Sutta              |                           |    1 | an03.123.than.html:5
+! likely_missing_canonical_entity   | LOC    | nimmanarati devas               | Nimmanarati devas               |                           |    1 | an08.043.khan.html:26
+! likely_missing_canonical_entity   | LOC    | nimmanarati gods                | Nimmanarati gods                |                           |    1 | dn.11.0.than.html:109
+! likely_missing_canonical_entity   | LOC    | paranimmita-vasavatti devas     | Paranimmita-vasavatti devas     |                           |    1 | sn56.011.than.html:14
+ ! likely_missing_canonical_entity   | PERSON | bound                           | Bound                           |                           |    2 | thag.21.00x.hekh.html:1, ud.7.10.than.html:1
+ ! likely_missing_canonical_entity   | PERSON | fully enlightened ones          | Fully Enlightened Ones          |                           |    2 | dn.16.1-6.vaji.html:17, dn.16.1-6.vaji.html:24
+!  likely_missing_canonical_entity   | PERSON | one-with-                       | One-with-                       |                           |    2 | dn.20.0.than.html:6, dn.20.0.than.html:91
+! likely_noise_or_bad_ner           | LOC    | mango grove of                  | Mango Grove of                  |                           |    1 | dn.16.1-6.vaji.html:14
+! likely_noise_or_bad_ner           | LOC    | mango grove.                    | Mango Grove.                    |                           |    1 | ud.2.10.than.html:2
+! likely_noise_or_bad_ner           | LOC    | mango stone.                    | Mango Stone.                    |                           |    1 | mn.061.than.html:2
+! likely_noise_or_bad_ner           | LOC    | tathagata does                  | Tathagata does                  |                           |    1 | iti.4.106-112x.irel.html:117
+ ! likely_noise_or_bad_ner           | PERSON | one                             | One                             |                           |    2 | thag.21.00.irel.html:12, thag.21.00.irel.html:1252
+ !  likely_missing_canonical_entity   | PERSON | verbal                          | Verbal                          |                           |    3 | dn.21.2x.than.html:21, dn.21.2x.than.html:23
+ (! label creep) likely_missing_canonical_entity   | PERSON | suppavasa's                     | Suppavāsā's                     |                           |    2 | ud.2.08.than.html:7, ud.2.08.than.html:8
+! (noise, but from a comment section, so who cares)  likely_missing_canonical_entity   | LOC    | khuddaka nikaya                 | Khuddaka Nikaya                 |                           |    1 | khp.1-9.than.html:1
+ ! (should be PERSON) likely_missing_canonical_entity   | LOC    | pindola                         | Pindola                         |                           |    1 | mn.116.piya.html:17
+ ! likely_missing_canonical_entity   | LOC    | retinue of high divinity        | Retinue of High Divinity        |                           |    1 | sn56.011.nymo.html:16
+ ! (error, I updated this)likely_missing_canonical_entity   | LOC    | saavatthii a                    | Saavatthii a                    |                           |    2 | sn22.063.wlsh.html:1, sn35.120.wlsh.html:1
+! ( oddballs, ignore ) likely_missing_canonical_entity   | PERSON | brahman                         | Brahman                         |                           |    3 | mn.107.horn.html:2, sn46.055.wlsh.html:11, sn46.055.wlsh.html:3
+ (! should be NORP )likely_missing_canonical_entity   | PERSON | rightly self-awakened ones      | Rightly Self-awakened Ones      |                           |    3 | sn12.065.than.html:7
+ ! ( label creep) likely_missing_canonical_entity   | PERSON | saccaka responded               | Saccaka responded               |                           |    2 | mn.036.than.html:12, mn.036.than.html:68
+
+
+ likely_missing_alias_for_existing | LOC    | bamboo grove monastery          | Bamboo Grove Monastery          | Bamboo-Grove Monastery    |    1 | sn36.021.than.html:4
+ likely_missing_alias_for_existing | LOC    | ghosita 's park                 | Ghosita 's Park                 | Ghosita's Park            |    2 | an04.159.than.html:1, sn51.015.than.html:1
+ likely_missing_alias_for_existing | LOC    | jeta 's grove                   | Jeta 's Grove                   | Jeta's Grove              |    1 | sn35.101.than.html:8
+ likely_missing_alias_for_existing | LOC    | maha-vana                       | Maha-vana                       | Great Forest              |    1 | dn.20.0.piya.html:2
+ likely_missing_alias_for_existing | LOC    | palace of migara 's mother      | palace of Migara 's mother      | palace of Migara's mother |    2 | mn.118.than.html:1, mn.121.than.html:1
+ likely_missing_alias_for_existing | LOC    | pavarika's mango grove          | Pavarika's Mango Grove          | Pavarika 's mango grove   |    1 | sn42.009.than.html:1
+ likely_missing_alias_for_existing | LOC    | vultures peak                   | Vultures Peak                   | Vulture Peak Mountain     |    1 | thag.10.02.olen.html:1
+ likely_missing_alias_for_existing | PERSON | mahabrahma                      | Mahabrahma                      | Maha Brahma               |    1 | dn.20.0.piya.html:62
+ likely_missing_alias_for_existing | PERSON | ven.-moliya-phagguna            | Ven.-Moliya-Phagguna            | Moliya-Phagguna           |    1 | sn12.012.than.html:2
+ likely_missing_canonical_entity   | GPE    | agga.lava                       | Agga.lava                       |                           |    2 | thag.21.00.irel.html:1263, thag.21.00.irel.html:15
+ likely_missing_canonical_entity   | GPE    | ambara                          | Ambara                          |                           |    1 | dn.32.0.piya.html:40
+ likely_missing_canonical_entity   | GPE    | gayasisa                        | Gayasisa                        |                           |    1 | sn35.028.nymo.html:1
+ likely_missing_canonical_entity   | GPE    | gutijjita                       | Gutijjita                       |                           |    1 | mn.116.piya.html:22
+ likely_missing_canonical_entity   | GPE    | jali                            | Jali                            |                           |    1 | mn.116.piya.html:21
+ likely_missing_canonical_entity   | GPE    | kappa                           | Kappa                           |                           |    4 | thag.21.00.irel.html:1272, thag.21.00.irel.html:1273, thag.21.00.irel.html:15
+ likely_missing_canonical_entity   | GPE    | licchavin                       | Licchavin                       |                           |    1 | mn.105.than.html:38
+ likely_missing_canonical_entity   | GPE    | parileyyaka                     | Parileyyaka                     |                           |    4 | sn22.081.than.html:4, sn22.081.than.html:6, ud.4.05.irel.html:3
+ likely_missing_canonical_entity   | GPE    | passage                         | Passage                         |                           |    1 | khp.1-9.than.html:1
+ likely_missing_canonical_entity   | GPE    | pavarika                        | Pavarika                        |                           |    1 | dn.16.1-6.vaji.html:17
+ likely_missing_canonical_entity   | GPE    | rahula                          | Rahula                          |                           |    1 | mn.062.than.html:1
+ likely_missing_canonical_entity   | GPE    | rama                            | Rama                            |                           |    2 | mn.026.than.html:34, mn.036.than.html:32
+ likely_missing_canonical_entity   | GPE    | rosika                          | Rosika                          |                           |    8 | dn.12.0.than.html:3, dn.12.0.than.html:4, dn.12.0.than.html:6, dn.12.0.than.html:7, dn.12.0.than.html:8, dn.12.0.than.html:9
+ likely_missing_canonical_entity   | GPE    | sacca                           | Sacca                           |                           |    1 | mn.116.piya.html:21
+ likely_missing_canonical_entity   | GPE    | savatthia                       | Savatthia                       |                           |    1 | sn44.001.than.html:1
+ likely_missing_canonical_entity   | GPE    | setabya                         | Setabya                         |                           |    1 | an04.036.than.html:3
+ likely_missing_canonical_entity   | GPE    | sindh                           | Sindh                           |                           |    1 | dhp.23.than.html:322
+ likely_missing_canonical_entity   | GPE    | sunaparanta                     | Sunaparanta                     |                           |    7 | sn35.088.than.html:17, sn35.088.than.html:18, sn35.088.than.html:19, sn35.088.than.html:21, sn35.088.than.html:23, sn35.088.than.html:25, sn35.088.than.html:27
+ likely_missing_canonical_entity   | GPE    | suttanta                        | Suttanta                        |                           |    1 | mn.008.nypo.html:8
+ likely_missing_canonical_entity   | GPE    | theravada                       | Theravada                       |                           |    1 | khp.1-9.than.html:1
+ likely_missing_canonical_entity   | GPE    | tusita                          | Tusita                          |                           |    1 | snp.4.16.than.html:1
+ likely_missing_canonical_entity   | GPE    | vebhara                         | Vebhara                         |                           |    1 | thag.01.00x.than.html:41
+ likely_missing_canonical_entity   | GPE    | vethadipa                       | Vethadipa                       |                           |    1 | dn.16.1-6.vaji.html:42
+ likely_missing_canonical_entity   | GPE    | yana                            | Yana                            |                           |    1 | mn.093.than.html:9
+ likely_missing_canonical_entity   | LOC    | abhassara                       | Abhassara                       |                           |    1 | sn56.011.piya.html:17
+ likely_missing_canonical_entity   | LOC    | akanittha                       | Akanittha                       |                           |    1 | sn56.011.piya.html:17
+ likely_missing_canonical_entity   | LOC    | ambatakavana                    | Ambāṭakavana                    |                           |    1 | sn41.005.niza.html:9
+ likely_missing_canonical_entity   | LOC    | appamana subha                  | Appamana subha                  |                           |    1 | sn56.011.piya.html:17
+ likely_missing_canonical_entity   | LOC    | appamanabha                     | Appamanabha                     |                           |    1 | sn56.011.piya.html:17
+ likely_missing_canonical_entity   | LOC    | atappa                          | Atappa                          |                           |    1 | sn56.011.piya.html:17
+ likely_missing_canonical_entity   | LOC    | aviha                           | Aviha                           |                           |    1 | sn56.011.piya.html:17
+ likely_missing_canonical_entity   | LOC    | bahumati                        | Bahumati                        |                           |    1 | mn.007.nypo.html:12
+ likely_missing_canonical_entity   | LOC    | balava-abyss                    | Balava-abyss                    |                           |    1 | thag.19.00.khan.html:1
+ likely_missing_canonical_entity   | LOC    | bhagalavati                     | Bhagalavati                     |                           |    1 | dn.32.0.piya.html:40
+ likely_missing_canonical_entity   | LOC    | black forest                    | Black Forest                    |                           |    1 | an09.037.than.html:10
+ likely_missing_canonical_entity   | LOC    | boar's cave                     | Boar's Cave                     |                           |    1 | mn.074.than.html:1
+ likely_missing_canonical_entity   | LOC    | bodhi tree                      | Bodhi Tree                      |                           |    1 | ud.1.01.irel.html:3
+ likely_missing_canonical_entity   | LOC    | brahma he                       | Brahmā he                       |                           |    1 | ud.7.06.than.html:1
+ likely_missing_canonical_entity   | LOC    | brahma parisajja                | Brahma Parisajja                |  One of the heavens                           |    1 | sn56.011.piya.html:17
+ likely_missing_canonical_entity   | LOC    | brahma purohita                 | Brahma Purohita                 |  Heaven                         |    1 | sn56.011.piya.html:17
+ likely_missing_canonical_entity   | LOC    | brick house                     | Brick House                     |                           |    2 | dn.16.1-6.vaji.html:11, dn.16.1-6.vaji.html:6
+ likely_missing_canonical_entity   | LOC    | buddha-sasana                   | Buddha-sasana                   |                           |    1 | thag.19.00.khan.html:2
+ likely_missing_canonical_entity   | LOC    | buffalo ground                  | Buffalo Ground                  |                           |    1 | an08.008.than.html:1
+ likely_missing_canonical_entity   | LOC    | calika hill                     | Calika Hill                     |                           |    1 | ud.4.01.irel.html:2
+ likely_missing_canonical_entity   | LOC    | catummaharajika                 | Catummaharajika                 |                           |    2 | sn56.011.piya.html:17
+ likely_missing_canonical_entity   | LOC    | cool grove                      | Cool Grove                      |                           |    2 | sn10.008.than.html:10, sn10.008.than.html:5
+ likely_missing_canonical_entity   | LOC    | dakkhinagiri                    | Dakkhinagiri                    | Monastery                          |    4 | sn07.011.piya.html:3, sn07.011.than.html:4, snp.1.04.piya.html:22, snp.1.04.than.html:4
+ likely_missing_canonical_entity   | LOC    | deer park at bhesakala grove    | Deer Park at Bhesakala Grove    |                           |   10 | an04.055.than.html:2, an06.016.than.html:1, an06.016.than.html:5, an06.016.than.html:6, an06.016.than.html:7, an07.058.than.html:1, an08.030.than.html:10, an08.030.than.html:2, an08.030.than.html:3
+ likely_missing_canonical_entity   | LOC    | deer park in isipatana          | Deer Park in Isipatana          |                           |    1 | mn.026.than.html:57
+ likely_missing_canonical_entity   | LOC    | eastern park                    | Eastern Park                    |                           |    2 | mn.026.than.html:10, mn.026.than.html:8
+ likely_missing_canonical_entity   | LOC    | forest hut                      | Forest Hut                      |                           |    1 | mn.125.horn.html:1
+ likely_missing_canonical_entity   | LOC    | game refuge                     | Game Refuge                     |                           |    1 | an09.037.than.html:10
+ likely_missing_canonical_entity   | LOC    | giribbaja's                     | Giribbaja's                     |                           |    1 | thag.19.00.khan.html:2
+ likely_missing_canonical_entity   | LOC    | giribbaja's wilds               | Giribbaja's wilds               |                           |    1 | thag.19.00.khan.html:1
+ likely_missing_canonical_entity   | LOC    | gotama ford                     | Gotama Ford                     |                           |    1 | ud.8.06.than.html:33
+ likely_missing_canonical_entity   | LOC    | gotama gate                     | Gotama Gate                     |                           |    2 | ud.8.06.than.html:33, ud.8.06.than.html:34
+ likely_missing_canonical_entity   | LOC    | gotama-ford                     | Gotama-ford                     |                           |    1 | dn.16.1-6.vaji.html:32
+ likely_missing_canonical_entity   | LOC    | great roruva hell               | Great Roruva hell               |                           |    3 | sn03.020.than.html:7, sn03.020.than.html:8, sn03.020.than.html:9
+ likely_missing_canonical_entity   | LOC    | gunda forest                    | Gunda Forest                    |                           |    1 | an02.038.than.html:1
+ likely_missing_canonical_entity   | LOC    | hirannavati                     | Hiraññavati                     | Hiraññavati River                          |    1 | dn.16.1-6.vaji.html:1
+ likely_missing_canonical_entity   | LOC    | inspiration peak                | Inspiration Peak                |                           |    1 | sn56.042.than.html:3
+ likely_missing_canonical_entity   | LOC    | isipatana                       | Isipatana                       |                           |    3 | mn.141.piya.html:39, mn.141.piya.html:8, sn22.059.mend.html:1
+ likely_missing_canonical_entity   | LOC    | jeta forest                     | Jeta Forest                     |                           |    2 | sn12.061.niza.html:1, ud.7.05.niza.html:3
+ likely_missing_canonical_entity   | LOC    | jivaka's                        | Jivaka's                        |                           |    1 | thig.14.01.than.html:147
+ likely_missing_canonical_entity   | LOC    | jujube tree park                | Jujube Tree Park                |                           |    1 | sn22.089.than.html:1
+ likely_missing_canonical_entity   | LOC    | kukkata monastery               | Kukkata Monastery               |                           |    2 | an11.017.than.html:1, mn.052.than.html:1
+ likely_missing_canonical_entity   | LOC    | mahisavatthu                    | Mahisavatthu                    |  Water Buffalo Ground                         |    1 | an08.008.than.html:3
+ likely_missing_canonical_entity   | LOC    | makuta-bandhana                 | Makuta-bandhana                 |  Mallans' memorial called Makuta-bandhana                         |    6 | dn.16.1-6.vaji.html:23, dn.16.1-6.vaji.html:25, dn.16.1-6.vaji.html:30, dn.16.5-6.than.html:112, dn.16.5-6.than.html:114, dn.16.5-6.than.html:131
+ likely_missing_canonical_entity   | LOC    | mango grove                     | Mango Grove                     |                           |    1 | dn.16.1-6.vaji.html:53
+ likely_missing_canonical_entity   | LOC    | mango orchard                   | Mango Orchard                   |                           |    1 | ud.2.10.irel.html:2
+ likely_missing_canonical_entity   | LOC    | mango stone                     | Mango Stone                     |                           |    1 | mn.061.than.html:2
+ likely_missing_canonical_entity   | LOC    | matanga wilds                   | Matanga wilds                   |                           |    2 | dhp.23.than.html:329, dhp.23.than.html:330
+ likely_missing_canonical_entity   | LOC    | migacira pleasure garden        | Migacira pleasure garden        |                           |    1 | mn.082.than.html:62
+ likely_missing_canonical_entity   | LOC    | mount meru's summit             | Mount Meru's summit             |                           |    1 | snp.3.11.than.html:4
+ likely_missing_canonical_entity   | LOC    | mount pandava                   | Mount Pandava                   |                           |    2 | snp.3.01.than.html:7, snp.3.01.than.html:8
+ likely_missing_canonical_entity   | LOC    | mount sata                      | Mount Sata                      |                           |    1 | dn.20.0.than.html:8
+ likely_missing_canonical_entity   | LOC    | mount sineru                    | Mount Sineru                    |                           |    1 | thig.14.01.than.html:3
+ likely_missing_canonical_entity   | LOC    | mount vulture peak              | Mount Vulture Peak              |                           |    1 | thig.05.09.hekh.html:1
+ likely_missing_canonical_entity   | LOC    | mucalinda tree                  | Mucalinda Tree                  |                           |    1 | ud.2.01.irel.html:2
+ likely_missing_canonical_entity   | LOC    | nigrodha park                   | Nigrodha Park                   |                           |    1 | an08.025.kuma.html:1
+ likely_missing_canonical_entity   | LOC    | niraya -hell                    | Niraya -hell                    |                           |    2 | snp.2.06.irel.html:1, snp.2.10.irel.html:3
+ likely_missing_canonical_entity   | LOC    | niraya hell                     | Niraya hell                     |                           |    1 | mn.125.horn.html:33
+ likely_missing_canonical_entity   | LOC    | northern clime                  | Northern clime                  |                           |    1 | dn.20.0.piya.html:25
+ likely_missing_canonical_entity   | LOC    | osprey's haunt                  | Osprey's Haunt                  |                           |    1 | sn22.003.than.html:3
+ likely_missing_canonical_entity   | LOC    | palace of brahma                | palace of Brahmā                |                           |    1 | dn.01.0.bodh.html:41
+ likely_missing_canonical_entity   | LOC    | paranimmita-vasavatti           | Paranimmita-vasavatti           |                           |    1 | sn56.011.piya.html:17
+ likely_missing_canonical_entity   | LOC    | paranimmitavasavatti            | Paranimmitavasavatti            |                           |    2 | dn.11.0.than.html:111, dn.11.0.than.html:112
+ likely_missing_canonical_entity   | LOC    | parittabha                      | Parittabha                      |                           |    1 | sn56.011.piya.html:17
+ likely_missing_canonical_entity   | LOC    | parittasubha                    | Parittasubha                    |                           |    1 | sn56.011.piya.html:17
+ likely_missing_canonical_entity   | LOC    | payaga                          | Payaga                          |                           |    1 | mn.007.nypo.html:12
+ likely_missing_canonical_entity   | LOC    | peaked pavilion                 | Peaked Pavilion                 |                           |    1 | mn.105.than.html:1
+ likely_missing_canonical_entity   | LOC    | peaked roof hall                | Peaked Roof Hall                |                           |    1 | an08.053.than.html:1
+ likely_missing_canonical_entity   | LOC    | pepper tree cave                | Pepper Tree Cave                |                           |    1 | sn46.014.than.html:1
+ likely_missing_canonical_entity   | LOC    | pigeon cave                     | Pigeon Cave                     |                           |    1 | ud.4.04.than.html:2
+ likely_missing_canonical_entity   | LOC    | piyadassi                       | Piyadassi                       |                           |    2 | khp.1-9.than.html:6, mn.116.piya.html:17
+ likely_missing_canonical_entity   | LOC    | plum-mango grove                | Plum-Mango Grove                |                           |    1 | sn41.005.niza.html:9
+ likely_missing_canonical_entity   | LOC    | realm of the thirty-three       | Realm of the Thirty-three       |                           |    1 | mn.041.nymo.html:19
+ likely_missing_canonical_entity   | LOC    | river hirannavati               | river Hiraññavati               |                           |    1 | dn.16.1-6.vaji.html:2
+ likely_missing_canonical_entity   | LOC    | river kimikala                  | river Kimikala                  |                           |    2 | ud.4.01.irel.html:4, ud.4.01.irel.html:5
+ likely_missing_canonical_entity   | LOC    | river yamuna                    | River Yamuna                    |                           |    1 | dn.20.0.than.html:38
+ likely_missing_canonical_entity   | LOC    | sal tree                        | Sal Tree                        |                           |    2 | sn22.081.than.html:4, sn22.081.than.html:6
+ likely_missing_canonical_entity   | LOC    | sal tree grove                  | Sal Tree Grove                  |                           |    1 | sn06.015.than.html:5
+ likely_missing_canonical_entity   | LOC    | samandakani                     | Sāmaṇḍakāni                     |                           |    2 | an10.065.niza.html:1, an10.066.niza.html:1
+ likely_missing_canonical_entity   | LOC    | sarabhu                         | Sarabhu                         |                           |    4 | an10.015.than.html:10, ud.5.05.irel.html:4, ud.5.05.than.html:14, ud.5.05.than.html:24
+ likely_missing_canonical_entity   | LOC    | sarasvati                       | Sarasvati                       |                           |    1 | thag.19.00.khan.html:1
+ likely_missing_canonical_entity   | LOC    | sayha                           | Sayha                           |                           |    1 | mn.116.piya.html:25
+ likely_missing_canonical_entity   | LOC    | setabya                         | Setabya                         |                           |    1 | an04.036.than.html:3
+ likely_missing_canonical_entity   | LOC    | sheer-face peak                 | Sheer-face Peak                 |                           |    1 | sn22.003.than.html:3
+ likely_missing_canonical_entity   | LOC    | simbali forest                  | Simbali Forest                  |                           |    1 | mn.130.than.html:56
+ likely_missing_canonical_entity   | LOC    | squirrels' refuge               | Squirrels' refuge               |                           |    2 | ud.3.06.than.html:2, ud.5.08.than.html:2
+ likely_missing_canonical_entity   | LOC    | subhakinna                      | Subhakinna                      |                           |    1 | sn56.011.piya.html:17
+ likely_missing_canonical_entity   | LOC    | sudassa                         | Sudassa                         |                           |    1 | sn56.011.piya.html:17
+ likely_missing_canonical_entity   | LOC    | sudassana                       | Sudassana                       |                           |    1 | mn.116.piya.html:17
+ likely_missing_canonical_entity   | LOC    | sudassi                         | Sudassi                         |                           |    1 | sn56.011.piya.html:17
+ likely_missing_canonical_entity   | LOC    | sundarika                       | Sundarika                       |                           |    1 | mn.007.nypo.html:12
+ likely_missing_canonical_entity   | LOC    | super manusas                   | Super Manusas                   |                           |    1 | dn.20.0.than.html:70
+ likely_missing_canonical_entity   | LOC    | sword-leaf forest               | Sword-leaf Forest               |                           |    2 | mn.130.than.html:56, mn.130.than.html:57
+ likely_missing_canonical_entity   | LOC    | tandulapala gate                | Tandulapala Gate                |                           |    1 | mn.097.than.html:5
+ likely_missing_canonical_entity   | LOC    | tusita                          | Tusita                          |  Heaven                          |    3 | dn.20.0.piya.html:56, sn56.011.piya.html:17, ud.5.02.than.html:2
+ likely_missing_canonical_entity   | PERSON | abhassara                       | Ābhassara                       |                           |    2 | dn.01.0.bodh.html:40, dn.01.0.bodh.html:41
+ likely_missing_canonical_entity   | PERSON | accuta                          | Accuta                          |                           |    2 | dn.20.0.piya.html:48, mn.116.piya.html:24
+ likely_missing_canonical_entity   | PERSON | aggikabharadvaja                | Aggikabharadvaja                |                           |    2 | snp.1.07.piya.html:2, snp.1.07.piya.html:28
+ likely_missing_canonical_entity   | PERSON | ajakalapaka                     | Ajakalāpaka                     |                           |    2 | ud.1.07.than.html:2, ud.1.07.than.html:3
+ likely_missing_canonical_entity   | PERSON | amaravati                       | Amaravati                       |                           |    2 | khp.1-9.than.html:10, khp.1-9x.piya.html:10
+ likely_missing_canonical_entity   | PERSON | anna-kondanna                   | Añña-Kondañña                   |                           |    2 | sn56.011.nymo.html:17, sn56.011.than.html:16
+ likely_missing_canonical_entity   | PERSON | araka                           | Araka                           |                           |    2 | an07.070.than.html:1, an07.070.than.html:9
+ likely_missing_canonical_entity   | PERSON | asama                           | Asama                           |                           |    2 | dn.20.0.piya.html:43, dn.20.0.than.html:56
+ likely_missing_canonical_entity   | PERSON | atula                           | Atula                           |                           |    3 | dhp.17.budd.html:1, dhp.17.budd.html:227, dhp.17.than.html:227
+ likely_missing_canonical_entity   | PERSON | bali                            | Bali                            |                           |    2 | dn.20.0.piya.html:39, dn.20.0.than.html:50
+ likely_missing_canonical_entity   | PERSON | bhaaradvaaja brahman            | Bhaaradvaaja Brahman            |                           |    2 | sn07.001.wlsh.html:3, sn07.001.wlsh.html:9
+ likely_missing_canonical_entity   | PERSON | bhadravudha                     | Bhadravudha                     |                           |    2 | snp.5.12.than.html:1, snp.5.12.than.html:2
+ likely_missing_canonical_entity   | PERSON | bhante                          | Bhante                          |                           |    4 | an04.067.piya.html:4, an10.060.piya.html:4, dn.32.0.piya.html:32, mn.116.piya.html:2
+ likely_missing_canonical_entity   | PERSON | bhavitatta                      | Bhavitatta                      |                           |    2 | mn.116.piya.html:17, mn.116.piya.html:19
+ likely_missing_canonical_entity   | PERSON | bhikkhu salha                   | bhikkhu Salha                   |                           |    2 | dn.16.1-6.vaji.html:6, dn.16.1-6.vaji.html:7
+ likely_missing_canonical_entity   | PERSON | buddharakkhita                  | Buddharakkhita                  |                           |    2 | khp.1-9.than.html:10, khp.1-9x.piya.html:10
+ likely_missing_canonical_entity   | PERSON | candana                         | Candana                         |                           |    3 | dn.20.0.piya.html:30, dn.20.0.than.html:22, dn.32.0.piya.html:24
+ likely_missing_canonical_entity   | PERSON | carpenter fivetools             | Carpenter Fivetools             |                           |    4 | mn.059.nypo.html:1, mn.059.nypo.html:6, sn36.019.nypo.html:1, sn36.019.nypo.html:6
+ likely_missing_canonical_entity   | PERSON | citra                           | Citra                           |                           |    2 | dn.20.0.piya.html:35, dn.20.0.than.html:41
+ likely_missing_canonical_entity   | PERSON | cittasena                       | Cittasena                       |                           |    2 | dn.20.0.than.html:27, dn.32.0.piya.html:24
+ likely_missing_canonical_entity   | PERSON | dandapani                       | Dandapani                       |                           |    2 | mn.018.than.html:2, mn.018.than.html:4
+ likely_missing_canonical_entity   | PERSON | dhammika                        | Dhammika                        |                           |    2 | snp.2.14.irel.html:2
+ likely_missing_canonical_entity   | PERSON | dhavajalika                     | Dhavajalika                     |                           |    3 | an08.008.than.html:1, an08.008.than.html:3
+ likely_missing_canonical_entity   | PERSON | elder kondanna                  | Elder Kondañña                  |                           |    2 | thag.21.00.irel.html:10, thag.21.00.irel.html:1246
+ likely_missing_canonical_entity   | PERSON | eraka                           | Eraka                           |                           |    2 | thag.01.00x.than.html:93
+ likely_missing_canonical_entity   | PERSON | gandhabhaka                     | Gandhabhaka                     |                           |    2 | sn42.011.than.html:1, sn42.011.than.html:3
+ likely_missing_canonical_entity   | PERSON | ghata                           | Ghata                           |                           |    2 | mn.122.than.html:2
+ likely_missing_canonical_entity   | PERSON | hatthaka                        | Hatthaka                        |                           |    2 | an08.024.than.html:1, an08.024.than.html:3
+ likely_missing_canonical_entity   | PERSON | hemaka                          | Hemaka                          |                           |    3 | snp.5.08.than.html:1, snp.5.08.than.html:2
+ likely_missing_canonical_entity   | PERSON | honorable kondanna              | honorable Koṇḍañña              |                           |    2 | sn56.011.harv.html:20
+ likely_missing_canonical_entity   | PERSON | jata bharadvaja                 | Jata Bharadvaja                 |                           |    2 | sn07.006.than.html:5, sn07.006.than.html:6
+ likely_missing_canonical_entity   | PERSON | kakudha                         | Kakudha                         |                           |    2 | dn.16.1-6.vaji.html:11, dn.16.1-6.vaji.html:6
+ likely_missing_canonical_entity   | PERSON | kala-khemaka                    | Kala-khemaka                    |                           |    4 | mn.122.than.html:1, mn.122.than.html:2, mn.122.than.html:3
+ likely_missing_canonical_entity   | PERSON | kaligodha                       | Kaligodha                       |                           |    3 | ud.2.10.irel.html:2, ud.2.10.irel.html:3, ud.2.10.irel.html:6
+ likely_missing_canonical_entity   | PERSON | kamasettha                      | Kamasettha                      |                           |    2 | dn.20.0.piya.html:30, dn.32.0.piya.html:24
+ likely_missing_canonical_entity   | PERSON | kandarayana                     | Kandarayana                     |                           |    2 | an02.038.than.html:1, an02.038.than.html:4
+ likely_missing_canonical_entity   | PERSON | kanha                           | Kanha                           |                           |    2 | dn.20.0.piya.html:64, mn.116.piya.html:28
+ likely_missing_canonical_entity   | PERSON | kappayana                       | Kappayana                       |                           |    2 | thag.21.00.irel.html:1274, thag.21.00.irel.html:15
+ likely_missing_canonical_entity   | PERSON | katissabha                      | Katissabha                      |                           |    2 | dn.16.1-6.vaji.html:12, dn.16.1-6.vaji.html:6
+ likely_missing_canonical_entity   | PERSON | kinnughandu                     | Kinnughandu                     |                           |    3 | dn.20.0.piya.html:30, dn.20.0.than.html:23, dn.32.0.piya.html:24
+ likely_missing_canonical_entity   | PERSON | kitagiri                        | Kitagiri                        |                           |    2 | mn.070.than.html:3
+ likely_missing_canonical_entity   | PERSON | koravya                         | Koravya                         |                           |    2 | an06.054.olen.html:4, an06.054.olen.html:7
+ likely_missing_canonical_entity   | PERSON | kumbhira                        | Kumbhira                        |                           |    3 | dn.20.0.piya.html:18, dn.20.0.than.html:10, dn.20.0.than.html:12
+ likely_missing_canonical_entity   | PERSON | kutendu                         | Kutendu                         |                           |    2 | dn.20.0.piya.html:29, dn.20.0.than.html:18
+ likely_missing_canonical_entity   | PERSON | lady vedehika                   | Lady Vedehika                   |                           |    3 | mn.021x.than.html:15, mn.021x.than.html:3, mn.021x.than.html:9
+ likely_missing_canonical_entity   | PERSON | longnails                       | LongNails                       |                           |    2 | mn.074.than.html:1, mn.074.than.html:17
+ likely_missing_canonical_entity   | PERSON | mahali                          | Mahali                          |                           |    4 | sn22.060.than.html:1, sn22.060.than.html:10, sn22.060.than.html:2, sn22.060.than.html:4
+ likely_missing_canonical_entity   | PERSON | mantani                         | Mantani                         |                           |    2 | mn.024.than.html:3, mn.086.than.html:31
+ likely_missing_canonical_entity   | PERSON | master vacchayana               | Master Vacchayana               |                           |    3 | mn.027.than.html:1, mn.027.than.html:5, mn.027.than.html:7
+ likely_missing_canonical_entity   | PERSON | matanga                         | Matanga                         |                           |    4 | mn.116.piya.html:24, snp.1.03.than.html:4, snp.1.07.piya.html:22, snp.1.07.piya.html:23
+ likely_missing_canonical_entity   | PERSON | maya                            | Maya                            |                           |    2 | dn.20.0.than.html:17, thig.06.06.olen.html:1
+ likely_missing_canonical_entity   | PERSON | mundika                         | Mundika                         |                           |    2 | mn.078.than.html:1
+ likely_missing_canonical_entity   | PERSON | nighandu                        | Nighandu                        |                           |    2 | dn.20.0.piya.html:30, dn.20.0.than.html:24
+ likely_missing_canonical_entity   | PERSON | nigrodhakappa                   | Nigrodhakappa                   |                           |    2 | thag.21.00.irel.html:1264, thag.21.00.irel.html:15
+ likely_missing_canonical_entity   | PERSON | nikata                          | Nikata                          |                           |    2 | dn.16.1-6.vaji.html:12, dn.16.1-6.vaji.html:6
+ likely_missing_canonical_entity   | PERSON | nitha                           | Nitha                           |                           |    2 | mn.116.piya.html:17, mn.116.piya.html:19
+ likely_missing_canonical_entity   | PERSON | opamanna                        | Opamanna                        |                           |    2 | dn.20.0.piya.html:30, dn.32.0.piya.html:24
+ likely_missing_canonical_entity   | PERSON | paharada                        | Paharada                        |                           |    2 | dn.20.0.piya.html:38, dn.20.0.than.html:48
+ likely_missing_canonical_entity   | PERSON | panada                          | Panada                          |                           |    2 | dn.20.0.piya.html:30, dn.20.0.than.html:25
+ likely_missing_canonical_entity   | PERSON | pandava                         | Pandava                         |                           |    2 | snp.3.01.than.html:7, thag.01.00x.than.html:41
+ likely_missing_canonical_entity   | PERSON | parileyyaka                     | Parileyyaka                     |                           |    2 | ud.4.05.irel.html:3, ud.4.05.irel.html:5
+ likely_missing_canonical_entity   | PERSON | paritta                         | Paritta                         |                           |    2 | dn.32.0.piya.html:4, dn.32.0.piya.html:5
+ likely_missing_canonical_entity   | PERSON | pataliputta                     | Pataliputta                     |                           |    3 | dn.16.1-6.vaji.html:28, ud.8.06.than.html:29
+ likely_missing_canonical_entity   | PERSON | pilotika                        | Pilotika                        |                           |    2 | mn.027.than.html:1, mn.027.than.html:21
+ likely_missing_canonical_entity   | PERSON | posala                          | Posala                          |                           |    2 | snp.5.14.than.html:1, snp.5.14.than.html:3
+ likely_missing_canonical_entity   | PERSON | raja                            | Raja                            |                           |    2 | dn.32.0.piya.html:24, dn.32.0.piya.html:40
+ likely_missing_canonical_entity   | PERSON | ramagama                        | Ramagama                        |                           |    5 | dn.16.1-6.vaji.html:37, dn.16.1-6.vaji.html:42, dn.16.5-6.than.html:136, dn.16.5-6.than.html:149
+ likely_missing_canonical_entity   | PERSON | saavatthii the brahman          | Saavatthii the Brahman          |                           |    2 | sn46.055.wlsh.html:1, sn48.042.wlsh.html:1
+ likely_missing_canonical_entity   | PERSON | sadamatta                       | Sadamatta                       |                           |    2 | dn.20.0.piya.html:54, dn.20.0.than.html:74
+ likely_missing_canonical_entity   | PERSON | sahali                          | Sahali                          |                           |    2 | dn.20.0.piya.html:43, dn.20.0.than.html:55
+ likely_missing_canonical_entity   | PERSON | salha                           | Salha                           |                           |    2 | an03.066.nymo.html:1, an03.066.nymo.html:2
+ likely_missing_canonical_entity   | PERSON | samandakani                     | Sāmaṇḍakāni                     |                           |    2 | an10.065.niza.html:1, an10.066.niza.html:1
+ likely_missing_canonical_entity   | PERSON | samavati                        | Sāmāvatī                        |                           |    2 | ud.7.10.than.html:2, ud.7.10.than.html:3
+ likely_missing_canonical_entity   | PERSON | sanankumara                     | Sanankumara                     |                           |    2 | dn.20.0.piya.html:61, dn.20.0.than.html:89
+ likely_missing_canonical_entity   | PERSON | sangaarava                      | Sangaarava                      |                           |    3 | sn07.021.wlsh.html:2, sn07.021.wlsh.html:8, sn46.055.wlsh.html:1
+ likely_missing_canonical_entity   | PERSON | santusita                       | Santusita                       |                           |    2 | dn.11.0.than.html:108, dn.11.0.than.html:109
+ likely_missing_canonical_entity   | PERSON | santuttha                       | Santuttha                       |                           |    2 | dn.16.1-6.vaji.html:12, dn.16.1-6.vaji.html:6
+ likely_missing_canonical_entity   | PERSON | sesavati                        | Sesavati                        |                           |    4 | vv.3.07.irel.html:1, vv.3.07.irel.html:10, vv.3.07.irel.html:13
+ likely_missing_canonical_entity   | PERSON | sigala                          | Sigala                          |                           |    4 | dn.31.0.nara.html:13, dn.31.0.nara.html:38, dn.31.0.nara.html:7, dn.31.0.nara.html:8
+ likely_missing_canonical_entity   | PERSON | siha                            | Siha                            |                           |    3 | an05.034.than.html:10, an05.034.than.html:3, an05.034.than.html:8
+ likely_missing_canonical_entity   | PERSON | sikhi                           | Sikhi                           |                           |    3 | dn.32.0.piya.html:1, dn.32.0.piya.html:4, mn.116.piya.html:26
+ likely_missing_canonical_entity   | PERSON | sirima                          | Sirima                          |                           |    4 | vv.1.16.irel.html:1, vv.1.16.irel.html:10, vv.1.16.irel.html:5
+ likely_missing_canonical_entity   | PERSON | sister sisupacala               | Sister Sisupacala               |                           |    2 | sn05.008.than.html:1, sn05.008.than.html:6
+ likely_missing_canonical_entity   | PERSON | sister upacala                  | Sister Upacala                  |                           |    2 | sn05.007.than.html:1, sn05.007.than.html:6
+ likely_missing_canonical_entity   | PERSON | sopaka                          | Sopaka                          |                           |    2 | snp.1.07.piya.html:22, snp.1.07.piya.html:24
+ likely_missing_canonical_entity   | PERSON | sucitti                         | Sucitti                         |                           |    2 | dn.20.0.piya.html:38, dn.20.0.than.html:47
+ likely_missing_canonical_entity   | PERSON | sudatta                         | Sudatta                         |                           |    3 | dn.16.1-6.vaji.html:6, dn.16.1-6.vaji.html:9, sn10.008.than.html:10
+ likely_missing_canonical_entity   | PERSON | sujata                          | Sujata                          |                           |    3 | dn.16.1-6.vaji.html:10, dn.16.1-6.vaji.html:6, ud.3.07.than.html:5
+ likely_missing_canonical_entity   | PERSON | sumangala                       | Sumangala                       |                           |    5 | mn.116.piya.html:24, thag.01.00x.than.html:43, thig.02.03.than.html:4
+ likely_missing_canonical_entity   | PERSON | sundara                         | Sundara                         |                           |    2 | mn.116.piya.html:26, mn.116.piya.html:27
+ likely_missing_canonical_entity   | PERSON | sundarika bharadvaja            | Sundarika Bharadvaja            |                           |    4 | mn.007.nypo.html:15, mn.007.nypo.html:16, mn.007.nypo.html:17, mn.007.nypo.html:19
+ likely_missing_canonical_entity   | PERSON | sunimmita                       | Sunimmita                       |                           |    2 | dn.11.0.than.html:110, dn.11.0.than.html:111
+ likely_missing_canonical_entity   | PERSON | supremely enlightened one       | Supremely Enlightened One       |                           |    2 | dhp.04.budd.html:1, dhp.04.budd.html:59
+ likely_missing_canonical_entity   | PERSON | sutava                          | Sutava                          |                           |    2 | mn.116.piya.html:17, mn.116.piya.html:19
+ likely_missing_canonical_entity   | PERSON | sutavan                         | Sutavan                         |                           |    3 | an09.007.than.html:1, an09.007.than.html:2
+ likely_missing_canonical_entity   | PERSON | taayana                         | Taayana                         |                           |    2 | sn02.008.wlsh.html:8, sn02.008.wlsh.html:9
+ likely_missing_canonical_entity   | PERSON | tagarasikhin                    | Tagarasikhin                    |                           |    2 | ud.5.03.than.html:10
+ likely_missing_canonical_entity   | PERSON | talaputa                        | Talaputa                        |                           |    3 | sn42.002.than.html:2, sn42.002.than.html:4, sn42.002.than.html:6
+ likely_missing_canonical_entity   | PERSON | tapussa                         | Tapussa                         |                           |    4 | an09.041.than.html:4, an09.041.than.html:6, an09.041.than.html:7
+ likely_missing_canonical_entity   | PERSON | tatha                           | Tatha                           |                           |    3 | mn.116.piya.html:17, mn.116.piya.html:19, mn.116.piya.html:21
+ likely_missing_canonical_entity   | PERSON | todeyya                         | Todeyya                         |                           |    4 | snp.5.09.than.html:1, snp.5.09.than.html:2, snp.5.09.than.html:4
+ likely_missing_canonical_entity   | PERSON | todeyya's son                   | Todeyya's son                   |                           |    3 | mn.135.nymo.html:21, mn.135.than.html:1, mn.135.than.html:22
+ likely_missing_canonical_entity   | PERSON | tuttha                          | Tuttha                          |                           |    2 | dn.16.1-6.vaji.html:12, dn.16.1-6.vaji.html:6
+ likely_missing_canonical_entity   | PERSON | ugga                            | Ugga                            |                           |    4 | an07.007.than.html:2, an07.007.than.html:3, an07.007.than.html:5
+ likely_missing_canonical_entity   | PERSON | universal seer                  | Universal Seer                  |                           |    3 | dn.01.0.bodh.html:42, dn.01.0.bodh.html:43, dn.01.0.bodh.html:44
+ likely_missing_canonical_entity   | PERSON | upaka                           | Upaka                           |                           |    4 | mn.026.than.html:4, mn.026.than.html:53, mn.026.than.html:54, mn.026.than.html:56
+ likely_missing_canonical_entity   | PERSON | uparittha                       | Uparittha                       |                           |    2 | mn.116.piya.html:17, mn.116.piya.html:19
+ likely_missing_canonical_entity   | PERSON | upatissa                        | Upatissa                        |                           |    2 | mn.024.than.html:40, mn.116.piya.html:26
+ likely_missing_canonical_entity   | PERSON | vanquisher                      | Vanquisher                      |                           |    3 | dn.01.0.bodh.html:42, dn.01.0.bodh.html:43, dn.01.0.bodh.html:44
+ likely_missing_canonical_entity   | PERSON | varunas                         | Varunas                         |                           |    3 | dn.20.0.than.html:51, dn.20.0.than.html:62
+ likely_missing_canonical_entity   | PERSON | vasavatti mara                  | Vasavatti Mara                  |                           |    2 | dn.20.0.piya.html:38, dn.20.0.piya.html:65
+ likely_missing_canonical_entity   | PERSON | vehapphala                      | Vehapphala                      |                           |    3 | an04.123.than.html:5, an04.125.than.html:5, mn.049.than.html:25
+ likely_missing_canonical_entity   | PERSON | velukandaki                     | Velukandaki                     |                           |    3 | an06.037.than.html:4
+ likely_missing_canonical_entity   | PERSON | veluvana                        | Veluvana                        |                           |    2 | sn12.017x.wlsh.html:1, sn22.049.wlsh.html:1
+ likely_missing_canonical_entity   | PERSON | ven. elder                      | Ven. Elder                      |                           |    3 | sn21.010.than.html:12, sn21.010.than.html:6, sn21.010.than.html:7
+ likely_missing_canonical_entity   | PERSON | ven. sir                        | Ven. Sir                        |                           |    2 | sn46.014.piya.html:5, sn46.016.piya.html:6
+ likely_missing_canonical_entity   | PERSON | vepacitta                       | Vepacitta                       |                           |    4 | sn02.009.piya.html:9, sn02.010.piya.html:10
+ likely_missing_canonical_entity   | PERSON | verahaccaani                    | Verahaccaani                    |                           |    4 | sn35.133.wlsh.html:1, sn35.133.wlsh.html:10, sn35.133.wlsh.html:2
+ likely_missing_canonical_entity   | PERSON | veroca                          | Veroca                          |                           |    2 | dn.20.0.piya.html:39, dn.20.0.than.html:51
+ likely_missing_canonical_entity   | PERSON | videhi queen                    | Videhi queen                    |                           |    3 | dn.16.1-6.vaji.html:1, dn.16.1-6.vaji.html:33, dn.16.1-6.vaji.html:42
+ likely_noise_or_bad_ner           | PERSON | elder                           | Elder                           |                           |    2 | sn21.010.than.html:5, sn21.010.than.html:7
