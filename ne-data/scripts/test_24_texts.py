@@ -25,13 +25,20 @@ def parse_args() -> argparse.Namespace:
 
 def load_examples(file_name, nlp):
     examples = []
-    total = bad = 0
+    total = bad = bad_lines = 0
     with open(file_name, 'r', encoding='utf-8') as f:
-        for line in f:
-            (text, span) = line.split('|')
+        for lineno, line in enumerate(f, start=1):
+            if "|" not in line:
+                continue
+            text, span = line.split("|", 1)
             pred_doc = nlp.make_doc(text.strip())
             gold_doc = nlp.make_doc(text)     # reference Doc
-            pred = json.loads(span.strip())
+            try:
+                pred = json.loads(span.strip())
+            except json.JSONDecodeError as exc:
+                bad_lines += 1
+                print(f"Skipping malformed JSON at {file_name}:{lineno} ({exc})")
+                continue
             # print(pred)
             spans = []
             for e in pred:
@@ -50,6 +57,8 @@ def load_examples(file_name, nlp):
             examples.append(example)
 
     print(f"There were {bad} bum records of {total}")
+    if bad_lines:
+        print(f"Skipped {bad_lines} malformed input lines")
     return examples
 
 def main() -> None:

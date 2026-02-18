@@ -157,7 +157,19 @@ def main() -> None:
     random.seed(config.seed)
     fix_random_seed(config.seed)
 
-    nlp = spacy.load(config.model_name)
+    is_blank_model = False
+    if config.model_name.startswith("blank:"):
+        lang = config.model_name.split(":", 1)[1].strip()
+        if not lang:
+            raise ValueError("model.name='blank:<lang>' requires a language code.")
+        nlp = spacy.blank(lang)
+        is_blank_model = True
+    elif config.model_name in {"en", "de", "fr", "es", "it", "pt", "nl", "xx"}:
+        # Convenience for blank-language runs from config.
+        nlp = spacy.blank(config.model_name)
+        is_blank_model = True
+    else:
+        nlp = spacy.load(config.model_name)
     loaded_version = nlp.meta.get("version")
     if config.expected_version:
         assert (
@@ -175,27 +187,26 @@ def main() -> None:
     wait_for_keypress(config.confirm_before_run)
 
     conn = psycopg.connect(config.db_dsn)
-    ner = nlp.get_pipe("ner")
+    created_ner_pipe = False
+    if "ner" in nlp.pipe_names:
+        ner = nlp.get_pipe("ner")
+    else:
+        ner = nlp.add_pipe("ner", last=True)
+        created_ner_pipe = True
 
     examples = db_to_examples(conn, nlp, created_after=config.created_after)
-
-    for ex in examples:
-        for ent in ex.reference.ents:
-            ner.add_label(ent.label_)
-
-    optimizer = nlp.resume_training()
-
     train_examples, dev_examples = split_examples(
         examples, seed=config.seed, dev_ratio=config.dev_ratio
     )
 
-    for example in train_examples:
-        for span in example.reference.ents:
-            ner.add_label(span.label_)
+    for ex in train_examples + dev_examples:
+        for ent in ex.reference.ents:
+            ner.add_label(ent.label_)
 
-    for example in dev_examples:
-        for span in example.reference.ents:
-            ner.add_label(span.label_)
+    if is_blank_model or created_ner_pipe:
+        optimizer = nlp.initialize(get_examples=lambda: train_examples)
+    else:
+        optimizer = nlp.resume_training()
 
     other_pipes = [pipe for pipe in nlp.pipe_names if pipe != "ner"]
 

@@ -6,19 +6,7 @@ name = "en_sutta_ner"
 
 [testing]
 source = "path"
-path = "ne-data/work/models/2026_02_16"
+path = "ne-data/work/models/2026_02_19"
 # Use this when source = "system" (or omit; falls back to [model].name):
 # system_model = "en_sutta_ner"
 # Optional expected version override for testing:
-
-[output]
-dir = "ne-data/work/models/2026_02_16"
-
-[training]
-created_after = "2026-02-01"
-seed = 108
-epochs = 20
-batch_size = 16
-dropout = 0.1
-dev_ratio = 0.1
-confirm_before_run = true
