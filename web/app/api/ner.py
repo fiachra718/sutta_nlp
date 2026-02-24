@@ -9,7 +9,7 @@ logger = logging.getLogger("sutta_nlp.web.api")
 
 def _load_nlp_model():
     nlp = spacy.load("en_sutta_ner")
-    assert nlp.meta.get("version") == "1.2.6", "Wrong en_sutta_ner version installed!"
+    assert nlp.meta.get("version") == "1.3.2", "Wrong en_sutta_ner version installed!"
     return nlp
 
 

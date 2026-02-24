@@ -299,11 +299,17 @@ def execute(sql: str, params: Dict[str, Any] | Iterable[Any] | None = None, *, d
 def save_training_record(record: Dict[str, Any], *, dsn: str | None = None):
     """
     Insert a training record into gold_training. Returns a dict describing the result.
-    The record must include: id, text, text_hash, spans (Json), spans_hash, source, from_file.
+    The record must include id/text/span fields and may include source_identifier/source_verse_num/source_meta.
     """
     insert_sql = """
-        INSERT INTO gold_training (id, text, text_hash, spans, spans_hash, source, from_file)
-        VALUES (%(id)s, %(text)s, %(text_hash)s, %(spans)s, %(spans_hash)s, %(source)s, %(from_file)s)
+        INSERT INTO gold_training (
+            id, text, text_hash, spans, spans_hash, source,
+            source_identifier, source_verse_num, source_meta, from_file
+        )
+        VALUES (
+            %(id)s, %(text)s, %(text_hash)s, %(spans)s, %(spans_hash)s, %(source)s,
+            %(source_identifier)s, %(source_verse_num)s, %(source_meta)s, %(from_file)s
+        )
     """
     conflict_sql = """
         SELECT id FROM gold_training

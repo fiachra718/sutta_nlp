@@ -416,7 +416,7 @@
           : text.slice(start, end);
         return { start, end, label: toValidLabel(span.label), text: snippet };
       });
-      return { text, spans };
+      return { text, spans, meta: currentDoc.meta || null };
     }
 
     function hasVerseMeta() {

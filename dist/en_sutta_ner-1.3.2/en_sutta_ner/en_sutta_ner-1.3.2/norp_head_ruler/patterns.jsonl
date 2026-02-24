@@ -1,0 +1,12 @@
+{"label":"NORP","pattern":[{"LOWER":{"REGEX":"^deva(s)?$"}}]}
+{"label":"NORP","pattern":[{"LOWER":{"REGEX":"^yakkha(s)?$"}}]}
+{"label":"NORP","pattern":[{"LOWER":{"REGEX":"^gandhabba(s)?$"}}]}
+{"label":"NORP","pattern":[{"LOWER":{"REGEX":"^n[\u0101a]ga(s)?$"}}]}
+{"label":"NORP","pattern":[{"LOWER":{"REGEX":"^kumbha\u1e47\u1e0da(s)?$"}}]}
+{"label":"NORP","pattern":[{"LOWER":{"REGEX":"^br[\u0101a]hma\u1e47?a(s)?$|^brahmin(s)?$"}}]}
+{"label":"NORP","pattern":[{"LOWER":{"REGEX":"^k\u1e63?sh?atriya(s)?$"}}]}
+{"label":"NORP","pattern":[{"LOWER":{"REGEX":"^s[\u0101a]kyan(s)?$"}}]}
+{"label":"NORP","pattern":[{"LOWER":{"REGEX":"^householder(s)?$"}}]}
+{"label":"NORP","pattern":[{"LOWER":{"REGEX":"^ascetic(s)?$"}}]}
+{"label":"NORP","pattern":[{"LOWER":{"REGEX":"^wanderer(s)?$"}}]}
+{"label":"NORP","pattern":[{"LOWER":{"REGEX":"^nigantha(s)?$|^nirgrantha(s)?$"}}]}

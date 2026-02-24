@@ -1,6 +1,6 @@
 # models.py
 from datetime import datetime
-from typing import List, Literal, Optional, ClassVar
+from typing import Any, List, Literal, Optional, ClassVar
 
 from pydantic import BaseModel, Field, field_validator, model_validator
 from hashlib import md5
@@ -17,7 +17,19 @@ from .manager import Manager
 
 
 CANDIDATE_COLUMNS = ("id", "source_identifier", "source_verse_num", "text", "text_hash", "entities")
-TRAINING_COLUMNS = ("id", "text", "text_hash", "spans", "spans_hash", "source", "from_file", "created_at")
+TRAINING_COLUMNS = (
+    "id",
+    "text",
+    "text_hash",
+    "spans",
+    "spans_hash",
+    "source",
+    "source_identifier",
+    "source_verse_num",
+    "source_meta",
+    "from_file",
+    "created_at",
+)
 
 
 def _candidate_row_processor(row):
@@ -29,6 +41,7 @@ def _candidate_row_processor(row):
 def _training_row_processor(row):
     data = {col: row.get(col) for col in TRAINING_COLUMNS}
     data["spans"] = data.get("spans") or []
+    data["source_meta"] = data.get("source_meta") or None
     return data
 
 
@@ -209,6 +222,9 @@ class TrainingDoc(BaseModel):
     spans: list[Span] = Field(default_factory=list)
     spans_hash: Optional[str] = None
     source: Optional[str] | None = None
+    source_identifier: Optional[str] | None = None
+    source_verse_num: Optional[int] | None = None
+    source_meta: Optional[dict[str, Any]] | None = None
     from_file: Optional[str] | None = None
     created_at: Optional[datetime] = None
     objects: ClassVar[Manager] = Manager(
@@ -292,6 +308,39 @@ class TrainingDoc(BaseModel):
         self.spans_hash = computed_spans_hash
         return self
 
+    @model_validator(mode="after")
+    def normalize_source_meta(self):
+        meta = self.source_meta
+        if not isinstance(meta, dict):
+            self.source_identifier = None
+            self.source_verse_num = None
+            self.source_meta = None
+            return self
+
+        identifier = meta.get("identifier")
+        if isinstance(identifier, str):
+            identifier = identifier.strip()
+        if not identifier:
+            identifier = None
+
+        verse_num = meta.get("verse_num")
+        parsed_verse_num = None
+        if isinstance(verse_num, int):
+            parsed_verse_num = verse_num
+        elif isinstance(verse_num, str):
+            verse_num = verse_num.strip()
+            if verse_num.isdigit():
+                parsed_verse_num = int(verse_num)
+
+        if parsed_verse_num is not None and parsed_verse_num <= 0:
+            parsed_verse_num = None
+
+        self.source_identifier = identifier
+        self.source_verse_num = parsed_verse_num
+        if self.source_identifier is None and self.source_verse_num is None:
+            self.source_meta = None
+        return self
+
     def sorted_spans(self) -> list[dict[str, int | str]]:
         spans_sorted = sorted(self.spans, key=lambda s: (s.start, s.end, s.label))
         return [
@@ -319,6 +368,9 @@ class TrainingDoc(BaseModel):
             "spans": Json(self.sorted_spans()),
             "spans_hash": self.spans_hash,
             "source": source_value,
+            "source_identifier": self.source_identifier,
+            "source_verse_num": self.source_verse_num,
+            "source_meta": Json(self.source_meta) if self.source_meta else None,
             "from_file": self.from_file,
         }
         return record

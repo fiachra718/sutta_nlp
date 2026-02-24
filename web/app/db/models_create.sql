@@ -41,6 +41,9 @@ CREATE TABLE IF NOT EXISTS gold_training (
   spans           jsonb NOT NULL,        -- validated spans
   spans_hash     text      NOT NULL,     -- hash of canonical span list
   source         text,                   -- "candidate" | "manual" | "import"
+  source_identifier text,
+  source_verse_num  int,
+  source_meta       jsonb,
   from_file      text,
   created_at      timestamptz DEFAULT now(),
   UNIQUE (text_hash, spans_hash)
@@ -48,6 +51,13 @@ CREATE TABLE IF NOT EXISTS gold_training (
 
 CREATE INDEX IF NOT EXISTS idx_gold_text_hash       ON gold_training(text_hash);
 CREATE INDEX IF NOT EXISTS idx_gold_spans_gin ON gold_training USING GIN (spans);
+CREATE INDEX IF NOT EXISTS idx_gold_source_ref ON gold_training(source_identifier, source_verse_num);
 
+ALTER TABLE gold_training
+  ADD COLUMN IF NOT EXISTS source_identifier text;
+ALTER TABLE gold_training
+  ADD COLUMN IF NOT EXISTS source_verse_num int;
+ALTER TABLE gold_training
+  ADD COLUMN IF NOT EXISTS source_meta jsonb;
 
 

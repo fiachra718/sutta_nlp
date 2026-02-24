@@ -34,7 +34,7 @@ class AppApiTests(unittest.TestCase):
         }
         payload = {
             "text": "Blessed One",
-            "spans": [{"start": 0, "end": 7, "label": "PERSON"}],
+            "spans": [{"start": 0, "end": 11, "label": "PERSON", "text": "Blessed One"}],
         }
 
         response = self.client.post("/api/training", json=payload)
@@ -56,7 +56,7 @@ class AppApiTests(unittest.TestCase):
         }
         payload = {
             "text": "Blessed One",
-            "spans": [{"start": 0, "end": 7, "label": "PERSON"}],
+            "spans": [{"start": 0, "end": 11, "label": "PERSON", "text": "Blessed One"}],
         }
 
         response = self.client.post("/api/training", json=payload)
@@ -67,6 +67,28 @@ class AppApiTests(unittest.TestCase):
         self.assertEqual(data["id"], "existing-doc")
         self.assertEqual(data["message"], "duplicate entry")
         mock_save_training.assert_called_once()
+
+    @patch("app.models.models.db.save_training_record")
+    def test_api_training_saves_source_meta_when_valid(self, mock_save_training):
+        mock_save_training.return_value = {
+            "ok": True,
+            "id": "manual:testdoc2",
+            "created": True,
+        }
+        payload = {
+            "text": "Blessed One",
+            "spans": [{"start": 0, "end": 11, "label": "PERSON", "text": "Blessed One"}],
+            "meta": {"identifier": "an08.041.vaka.html", "verse_num": 5},
+        }
+
+        response = self.client.post("/api/training", json=payload)
+        self.assertEqual(response.status_code, 201)
+        mock_save_training.assert_called_once()
+
+        saved_record = mock_save_training.call_args.args[0]
+        self.assertEqual(saved_record["source_identifier"], "an08.041.vaka.html")
+        self.assertEqual(saved_record["source_verse_num"], 5)
+        self.assertIsNotNone(saved_record["source_meta"])
 
 
 if __name__ == "__main__":

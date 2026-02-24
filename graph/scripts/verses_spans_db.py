@@ -10,7 +10,7 @@ conn = psycopg.connect("dbname=tipitaka user=alee")
 conn.autocommit = False
 
 nlp = spacy.load("en_sutta_ner")  # should be 1.2.5
-assert nlp.meta.get("version") == "1.2.5", "Wrong en_sutta_ner version installed!"
+assert nlp.meta.get("version") == "1.3.2", "Wrong en_sutta_ner version installed!"
 
 
 select = "SELECT id, text FROM ati_verses"

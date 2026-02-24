@@ -32,8 +32,7 @@ SKIP_FILE_PATTERNS = (
     "mil.html",
     "miln.html",
     "miln.intro.kell.html",
-    # "iti.intro.*.html",
-    # "dhp.intro.*.html",
+    "*.intro.*.html",
     "dhp-buddh-than.html",
     "wheel*.html",
 )
@@ -50,7 +49,11 @@ def textify(node):
     if node is None:
         return ""
     txt = node.get_text(" ", strip=True) if hasattr(node, "get_text") else str(node)
-    return re.sub(r"\s+", " ", txt).strip()
+    txt = re.sub(r"\s+", " ", txt).strip()
+    # Undo tokenization artifacts like "Migara 's" and "Ghosita 's".
+    txt = re.sub(r"(\w)\s+'(s|d|t|ll|re|ve|m)\b", r"\1'\2", txt, flags=re.I)
+    txt = re.sub(r"\s+([,.;:!?])", r"\1", txt)
+    return txt
 
 META_LINE = re.compile(
     r'^\s*(?:<!--\s*)?\[(?P<key>[A-Z0-9_]+)\]\s*=\s*(?P<blocks>(?:\{.*?\}\s*)*)(?:\s*-->)?\s*$',
@@ -199,6 +202,10 @@ def extract_verses(soup: BeautifulSoup):
         # No chapter divs at all → treat the whole root as one chapter.
         chapters = [root]
     else:
+        canonical_chapters = [ch for ch in chapters if not _is_non_canonical_chapter(ch)]
+        if canonical_chapters:
+            chapters = canonical_chapters
+
         # If none of the chapter divs contain verse blocks, but root does,
         # fall back to scanning the root. This is the Dhammapada case where
         # freeverse blocks are siblings of a useless trailing div.chapter.
@@ -250,7 +257,10 @@ def extract_verses(soup: BeautifulSoup):
 
         # 2) plain <p> paragraphs inside the chapter
         for p in ch.find_all("p", recursive=True):
-            if isinstance(p, Tag) and _is_within_notes_section(p):
+            if isinstance(p, Tag) and (_is_within_notes_section(p) or _is_within_non_canonical_section(p)):
+                continue
+            if _has_ancestor(p, _is_verse_block):
+                # Avoid duplicating verse text already captured from verse blocks.
                 continue
 
             txt = deent(textify(p))
@@ -402,6 +412,59 @@ def _is_verse_block(tag: Tag) -> bool:
     return any(cls in VERSE_BLOCK_CLASSES for cls in classes if isinstance(cls, str))
 
 
+def _has_ancestor(tag: Tag, predicate) -> bool:
+    current = tag.parent if isinstance(tag, Tag) else None
+    while isinstance(current, Tag):
+        if predicate(current):
+            return True
+        current = current.parent
+    return False
+
+
+NON_CANONICAL_LABEL_SNIPPETS = (
+    "contents",
+    "translator",
+    "preface",
+    "introduction",
+    "glossary",
+    "commentary",
+    "notes",
+    "copyright",
+)
+
+
+def _chapter_heading_text(chapter: Tag) -> str:
+    heading = chapter.find(re.compile(r"^h[1-6]$"))
+    if heading:
+        return textify(heading).lower()
+    classes = chapter.get("class") or []
+    if any(isinstance(cls, str) and cls.lower() == "preface" for cls in classes):
+        return "preface"
+    return ""
+
+
+def _is_non_canonical_chapter(chapter: Tag) -> bool:
+    heading = _chapter_heading_text(chapter)
+    if chapter.find("div", class_="preface"):
+        return True
+    first_bold = chapter.find("b")
+    if first_bold and "translator" in textify(first_bold).lower():
+        return True
+    if not heading:
+        classes = chapter.get("class") or []
+        return any(isinstance(cls, str) and cls.lower() == "preface" for cls in classes)
+    return any(snippet in heading for snippet in NON_CANONICAL_LABEL_SNIPPETS)
+
+
+def _is_within_non_canonical_section(tag: Tag) -> bool:
+    current = tag.parent if isinstance(tag, Tag) else None
+    while isinstance(current, Tag):
+        if current.name == "div" and "chapter" in (current.get("class") or []):
+            return _is_non_canonical_chapter(current)
+        current = current.parent
+    return False
+
+
 def _extract_verse_block_chunks(block: Tag) -> list[dict[str, str | None]]:
     chunks: list[dict[str, str | None]] = []
     previous_anchor = block.find_previous("a", id=True)
@@ -432,6 +495,10 @@ def _extract_verse_block_chunks(block: Tag) -> list[dict[str, str | None]]:
         current_label = None
 
     for child in block.children:
+        if isinstance(child, Tag) and child.name == "a":
+            classes = child.get("class") or []
+            if any(isinstance(cls, str) and cls.lower() == "notetag" for cls in classes):
+                continue
         if isinstance(child, Tag) and child.name == "a" and child.get("id"):
             flush()
             current_label = _anchor_id_value(child) or current_label

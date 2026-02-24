@@ -914,6 +914,7 @@ def save_training_doc():
             "id": data.get("id"),
             "text": text,
             "spans": spans,
+            "source_meta": data.get("meta"),
             "source": "manual",
         })
     except ValidationError as exc:

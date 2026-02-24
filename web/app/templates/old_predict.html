@@ -401,7 +401,7 @@
         }
         return { start, end, label: span.label };
       });
-      return { text, spans: normalized };
+      return { text, spans: normalized, meta: currentDoc.meta || null };
     }
 
     render();

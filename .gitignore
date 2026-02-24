@@ -26,3 +26,8 @@ tfidf_*/
 bundles/
 **/doc_index.json
 **/manifest.json
+
+# comma tab and pipe seperated val
+*.tsv
+*.psv
+*.csv
