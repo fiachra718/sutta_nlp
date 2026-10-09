@@ -91,11 +91,6 @@ def _build_training_doc_context(doc: TrainingDoc):
         "raw_json": raw_json,
     }
 
-@app.route("/")
-def home():
-    return render_template("base.html", title="Jinja and Flask")
-
-
 def _neo4j_settings():
     return {
         "uri": os.environ.get("NEO4J_URI", "bolt://localhost:7687"),
@@ -575,6 +570,39 @@ def _load_sutta_person_graph_payload(sutta_ref: str):
         "edges": edges,
     }
 
+@app.route("/")
+def home():
+    return render_template("base.html", title="Jinja and Flask")
+
+@app.route("/kesaputta_mentions")
+def city_mentions():
+    """ 
+        start with kesaputta
+    """
+    sql = """
+        select
+            v.identifier,
+            v.text, 
+            m.verse_id
+        from 
+            ati_entity_mentions as m 
+        LEFT JOIN 
+            ati_entities as e on m.entity_id = e.id
+        LEFT JOIN
+            ati_verses as v ON v.id = m.verse_id 
+        where 
+            e.canonical = 'Kesaputta';
+    """
+    with psycopg.connect(_pg_dsn(), row_factory=dict_row) as conn:
+        with conn.cursor() as cur:
+            cur.execute(sql, {})
+            rows = cur.fetchall()
+
+    return render_template(
+         "kesaputta_verses.html",
+         verses=rows
+
+    )   
 
 @app.route("/community/<int:community_id>")
 def community_view(community_id: int):

@@ -59,11 +59,11 @@ def iter_links(url: str, soup: BeautifulSoup) -> Iterable[str]:
 
 
 def fetch_with_retries(
-    session: requests.Session,
-    url: str,
-    retries: int,
-    timeout: int,
-) -> requests.Response:
+        session: requests.Session,
+        url: str,
+        retries: int,
+        timeout: int,
+            ) -> requests.Response:
     last_err: Exception | None = None
     for attempt in range(retries + 1):
         try:
